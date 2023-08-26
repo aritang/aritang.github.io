@@ -1,0 +1,23 @@
+baseURL: ""
+languageCode: en-us
+title: ariana's blog
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: 'hi'
+    Content: i don't know what i'll do without u in my life
+  cover:
+    linkFullImages: True
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 10
+
