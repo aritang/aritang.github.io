@@ -5,19 +5,24 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: 'hi'
-    Content: i don't know what i'll do without u in my life
-  cover:
-    linkFullImages: True
+    Title: 'the sweetener collection'
+    Content: >
+      say i don't know what i'll do without u in my life
+
+      - it'd be so sour
+
+      - i'm hoping that everybody can experience
+
+      - what we have in ours
+
 
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
     - identifier: tags
       name: tags
       url: /tags/
+      weight: 10
+    - name: archive
+      url: archives
       weight: 10
 

@@ -1,15 +1,18 @@
 ---
-title: "Definition"
+title: "Definition - ariana's blog"
 date: 2023-08-26T16:52:42+08:00
 draft: false
 cover:
-    image: definition/definition01.png
-    alt: 'alt placeholder'
-    caption: 'caption placeholder'
-tags: ["ariana"]
+    image: definition/cover.jpeg
+    alt: ''
+    caption: 'Hoover Tower in the afterglow'
+tags: ["point of view"]
+summary: In memory of the midsummer night's dream of 2023.
 ---
 
 We dream in summer.
+
+![green_corridor](/definition/green_corridor.jpeg)
 
 During the summer of 2023, I visited Stanford University and was very fortunate to meet several brilliant human beings who undoubtedly influenced me so much that in certain way, changed my life. 
 
