@@ -43,8 +43,10 @@ What about the result? The mechanism doesn’t have an obvious dominant strategy
 
 What a game! The second stage is quite novel because I didn’t have any impression of something similar back in my days. Though seemingly complicated, judging from my friend’s experience, the new mechanism certainly benefited some students and provided more geographical diversity among the admitted population. But I would also like to point out that since the second stage admission (school-wise assigned admission headcount) is based on the Boston mechanism and takes place within every middle school, there might be an incentive and potential for schools to strategize—coordinating students explicitly through open negotiations, so as to avoid the waste of headcount and stuff as many students into ideal high schools as possible.
 
+## Anyway...
+
 The Boston-flavored high school admission mechanism in Guangzhou has been running for decades, and I’m so happy to see that it’s evolving and my friend got admitted into his dream school because of the improvement. The strategic nature of the admission process would force the students and their parents to thoroughly study their potential future high schools, thus possibly making more rational decisions. From another perspective, the headcount lottery would improve geographical diversity and equity among the city’s high schools. Nice.
 
-Anyway, congratulations to my outstanding little fellow for achieving a milestone in his academic career and best wishes for his upcoming high school life! And hopefully, the blog contributes some insightful viewpoints to my dearest hometown.
+Again, congratulations to my outstanding little fellow for achieving a milestone in his academic career and best wishes for his upcoming high school life! And hopefully, the blog contributes some insightful viewpoints to my dearest hometown.
 
-Fun fact: family decisions are usually highly involved in the decision making process of high-school application. In our case, my friend's mother helped and controlled throughout the process. BUT interestingly, his dad had **completely no idea** what is going on, at all.
+*Fun fact*: family decisions are usually highly involved in the decision making process of high-school application. In our case, my friend's mother helped and controlled throughout the process. BUT interestingly, his dad had **completely no idea** what is going on, at all.
