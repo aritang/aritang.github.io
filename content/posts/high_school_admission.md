@@ -27,7 +27,7 @@ Thanks to my dad’s obsession with luscious cuisine, our family gathered for a 
 ![eel](/high_school_admission/eel.jpeg)
 *sautéed boneless eel with green onions and ginger*
 
-***Disclaimer**: Having been a high school student in Guangzhou, I experienced the admission process myself years ago, where the mechanism was slightly different. The content today is based on a dinner talk and serves only for research purposes. In case of any potential mistakes, I apologize beforehand.*
+***Disclaimer**: Having been a high school student in Guangzhou, I experienced the admission process myself years ago, where the mechanism was slightly different. The content today is based on a dinner talk and serves **only for research purposes**. In case of any potential mistakes, I apologize beforehand.*
 
 ## Now, let's hit the topic...
 

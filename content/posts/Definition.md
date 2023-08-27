@@ -1,5 +1,5 @@
 ---
-title: "Definition - ariana's blog"
+title: "definition - ariana's blog"
 date: 2023-08-26T16:52:42+08:00
 draft: false
 cover:
