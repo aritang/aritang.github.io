@@ -5,7 +5,7 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: 'the sweetener collection'
+    Title: "it's a blog about research, art and life"
     Content: >
       say i don't know what i'll do without u in my life
 
