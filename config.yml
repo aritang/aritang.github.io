@@ -5,17 +5,15 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: "it's a blog about research, art and life"
-    Content: >
-      say i don't know what i'll do without u in my life
-
-      - it'd be so sour
-
-      - i'm hoping that everybody can experience
-
-      - what we have in ours
-
-
+    Title: "a blog about research, art and life"
+    Content:
+      - say i don't know what i'll do without you in my life. 
+        it'd be so sour.
+      - i'm hoping that everybody can experience, 
+        what we have in ours
+      - hey, what happened to the butterflies?
+      - so i'm daydreamin'. it's about you, only you.
+      - excuse me, i love u
 menu:
   main:
     - identifier: tags
