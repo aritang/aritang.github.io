@@ -7,7 +7,7 @@ cover:
     alt: ''
     caption: 'matrix pic'
 tags: ["point of view", "market design"]
-summary: It's a too quick an unravel market with four programs having exam on the exact same time, followed by exploding offers. But this is how I got in - Mi familia académica!
+summary: It's a too quick an unravel market with four programs having exams on the exact same time, followed by exploding offers. But this is how I got in - Mi familia académica!
 ---
 
 The 2023-24 school year is about to begin. Two years ago, I was the rookie, but now I’m anticipating those rookies - it is simply so much fun watching those freshmen undergrads unavoidably repeat every mistake and stupid decision I’ve made. Welcome!
@@ -31,8 +31,8 @@ Wait, the story isn’t over yet. Currently, as a member of one of the pilot cla
 
 ![matrix_pic](/pilot_class_market/matrix.jpeg)
 
-For me, I got in with almost no hesitation because my parents forced me to study economics, but I hated it and wanted to escape - so I took my chance - and now I’m doing market design, behavioral economics, and game theory… But the choice was tough in general, for a young, 18-year-old college freshman to decide his/her future in less than a minute.
+For me, I got in with almost no hesitation because my parents forced me to study economics, but I hated it and wanted to escape - so I took my chance - and now I’m doing market design, behavioral economics, and game theory… But after all the choice was tough in general, for a young, 18-year-old college freshman to decide his/her future in less than a minute.
 
-In summary, the pilot class admission market is where similar programs operate exams at the same time, followed by explodarding offers for a life-time decision. It kinda reminds me of the early medical residency market mentioned in Al Roth’s brilliant book “Who Gets What and Why” - insecure departments (hospitals) and students, quick-unraveling and explodarding offers. There’s a lot of room for coordination and improvement for sure. Perhaps, by coordinating every program’s exam to make it feasible for students to participate in multiple programs’ exams, and running a joint deferred-acceptance afterward with all the programs and students, the pilot class program admission market would be thicker, information would be more transparent, and it would be much easier a time for students and the committees.
+In summary, the pilot class admission market is where similar programs operate exams at the same time, followed by exploding offers for a life-time decision. It kinda reminds me of the early medical residency market mentioned in Al Roth’s brilliant book “Who Gets What and Why” - insecure departments (hospitals) and students, quick-unraveling and explodarding offers. There’s a lot of room for coordination and improvement for sure. Perhaps, by coordinating every program’s exam to make it feasible for students to participate in multiple programs’ exams, and running a joint deferred-acceptance afterward with all the programs and students, the pilot class program admission market would be thicker, information would be more transparent, and it would be much easier a time for students and the committees.
 
 BUT - I’m grateful for the program that admitted me and introduced me to my current field of research. The man who yelled on the other side of the phone for the exploding offer is now my favorite professor. **Mi familia académica!** And, I love economics and computer science now, honestly.
