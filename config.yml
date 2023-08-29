@@ -7,13 +7,17 @@ params:
   homeInfoParams:
     Title: "a blog about research, art and life"
     Content:
-      - say i don't know what i'll do without you in my life. 
-        it'd be so sour.
-      - i'm hoping that everybody can experience, 
-        what we have in ours
+      - say i don't know what i'll do without you in my life. it'd be so sour.
+      - i'm hoping that everybody can experience, what we have in ours
       - hey, what happened to the butterflies?
-      - so i'm daydreamin'. it's about you, only you.
-      - excuse me, i love u
+      - imagine a world like that.
+      - hey, right when i think that we've found it, but that's when we start turnin' around. 
+      - you're saying that baby don't worry, but we're still going the wrong way.
+      - so i'm daydreamin', with my chin in the palm of my hands. it's about you! you... only you.
+      - excuse me, i love u.
+      - i'm under pressure 'cause i can't have u the way that i want. let's just go back to the way it was, when we were on honeymoon avenue. 
+
+
 menu:
   main:
     - identifier: tags
