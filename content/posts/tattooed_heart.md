@@ -10,6 +10,9 @@ tags: ["ariana grande", "music comment"]
 summary: The aesthetic is awesome and clever as Ariana Grande always was. The vocal is... acceptable but not as good as her Sweetener era.
 ---
 
+> Kiss me underneath the moonlight.
+> Darhling let me trace the lines on your tattooed heart.❤
+
 Ariana Grande has been absent from the music scene for quite some time, at least in terms of releasing new music to the public. Currently, she is engrossed in her cosmetic product line and the production of the Wicked movie. Her most recent album, *Positions*, harkens back to 2020, and her latest musical offering was the collaborative remix *Die For You* with The Weeknd. However, I must admit that it doesn't quite measure up to their earlier joint venture, *Save Your Tears*. It appears that the artists might be attempting to replicate their prior success, yet this endeavor seems to fall short, revealing the discerning nature of Arianators, her dedicated fan base.
 
 Finally, the moment we've all been waiting for has arrived. 
@@ -44,11 +47,7 @@ Particularly focusing on the song "Tattooed Heart," it's worth noting that Arian
 
     ![tattooed_heart_swt_live_2](/tattooed_heart/tattooed_heart_swt_live_2.jpeg)
 
-    But the atmosphere setting and stage lighting design is oh-my-god-ly insane. Cause, there's a line in the song:
-
-    > Kiss me underneath the moonlight.
-
-    And they really did blow up a (balloon) moon on the top of a sea of flash lights for her:
+    But the atmosphere setting and stage lighting design is oh-my-god-ly insane. At the live performance in London, Ariana stood beneath the moon, delivering a grand and romantic performance that nearly surpassed the studio recording version.
 
     ![tattooed_heart_swt_live_1](/tattooed_heart/tattooed_heart_swt_live_1.jpeg)
 
