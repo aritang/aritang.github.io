@@ -27,4 +27,7 @@ menu:
     - name: archive
       url: archives
       weight: 10
+    - name: about
+      url: about
+      weight: 5
 
