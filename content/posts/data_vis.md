@@ -39,8 +39,8 @@ Behind any fancy data illustration, there are essential components:
 
 (2) A mathematical core idea that unveils the data's intrinsic logic.
 
-(3) Some aesthetics that emphasize the visualization and prevent it from being intolerably ugly.
+(3) Some aesthetics that emphasize the visualization and prevent it from being intolerably unaesthetic.
 
 The suggestion would be to master a data processing technique—whether it's R, Python, or an Excel spreadsheet. Though the last option might seem inferior, it exists for a reason, and I'll leave it here. Then, you can process the data and feed it into whatever visualization tool you're comfortable with—whether it's those fancy online plotting platforms, etc. Methods are infinite, but the overall logic remains the same: Our principle theorem tells us that one needs to understand the underlying mathematical logic to create effective visualizations. 
 
-Last but not least, integrate a bit of artistic sense into the final product—it doesn't have to be a masterpiece of art, but certainly, don't make it pathetically unaesthetic.
+Last but not least, integrate a bit of artistic sense into the final product—it doesn't have to be a masterpiece of art, but certainly, don't make it pathetically ugly.
