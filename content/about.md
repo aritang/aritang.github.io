@@ -4,10 +4,6 @@ date: 2023-09-02T09:53:17+08:00
 draft: false
 ---
 
-$$
-test_i^t = \mathcal R
-$$
-
 Hi, I'm Ariana Tang. Welcome to my personal website.
 
 I write things about my research, my artistic viewpoints and occasionally my life. If you happen to be interested in any of these following topics:
