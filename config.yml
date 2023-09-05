@@ -2,8 +2,10 @@ baseURL: ""
 languageCode: en-us
 title: ariana's blog
 theme: PaperMod
-
+math: true
 params:
+  math: true
+  katexPath : "katex"
   homeInfoParams:
     Title: "a blog about research, art and life"
     Content:
