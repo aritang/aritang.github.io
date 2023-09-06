@@ -2,8 +2,6 @@
 title: "dating w.r.t. opportunity cost"
 date: 2023-09-05T17:25:16+08:00
 draft: false
-cover:
-    image: procrastinator/IMG_0448.jpeg
 summary: Some people are less happy than they could have been because they focus on opportunity cost rather than pure utility. Here's a mathematic model to explain why.
 ---
 
