@@ -4,7 +4,7 @@ date: 2023-09-11T19:44:58+08:00
 draft: false
 cover:
     image: new_plan/magic.jpeg
-summary: So I took a Sunday afternoon, sat down at Peet's Coffee and get the job down... It's a heuristic, and heuristics are meant to be developed in a magical afternoon.
+summary: So I took a Sunday afternoon, sat down at Peet's Coffee and got the job done... It's a heuristic, and heuristics are meant to be developed in a magical afternoon.
 ---
 
 Ariana Grande mentioned in one of her recent interviews (part of the Yours Truly 10th-anniversary Q&A sessions) that recording Yours Truly took her three years:
