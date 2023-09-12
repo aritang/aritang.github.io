@@ -21,14 +21,14 @@ So, how does this all work? Well, first of all, there's a significant mismatch b
 
 Let's consider a patient located near hospital A who needs a specific type of surgery. Typically, there would be junior doctors at hospital A who are relatively less busy and can schedule a surgery right away. However, if, let's say, she insists on having a senior surgeon perform the surgery, she'll probably have to wait in line for half a year (which is pretty common!).
 
-But there's sometimes a third option. If that unlucky but particular patient near hospital A happens to know someone in the local medical industry, perhaps somebody at another hospital, say, hospital B, then the six-month wait won't be a problem. She can reach out to them, and this will set off a chain reaction of "pleading for favors" within the doctors' network. Usually, it's just a sequence of calls from one doctor to another, and the process is typically completed within three or four calls, max – it's like that Taylor Swift lyric:
+But there's sometimes a third option. If that unlucky but particular patient near hospital A happens to know someone in the local medical industry, perhaps somebody at another hospital, say, hospital B, then the six-month wait won't be a problem. She can reach out to them, and this will set off a chain reaction of "pleading for favors" within the doctors' network. Usually, it's just a sequence of calls from one doctor to another, like that Taylor Swift lyric:
 
 > "You go talk to your friends talk to my friends talk to me."
 
-But in this version:
+But in a doctor's version:
 
 > "A doctor talks to his doctor friends, who talk to their friends and finally someone reach the targeted senior doctor at hospital A."
 
-The search stops when they reach the target. That senior doctor at the end of the chain accepts the plea and "makes some adjustments," managing to fit in one more surgery for the patient between their already packed schedule. So, the surgery that would have been scheduled six months later can now be done right away, like next week.
+The search stops when they reach the target, where the chain is typically completed within three or four calls, max. That senior doctor at the end of the chain accepts the plea and "makes some adjustments," managing to fit in one more surgery for the patient between their already packed schedule. So, the surgery that would have been scheduled six months later can now be done right away, like next week.
 
 But the network's job isn't finished yet. After that, the patient herself and all the doctors in the plea chain will have to repay the favor, in the backward order, resulting in another round of those dinner parties with "too much drinks."
