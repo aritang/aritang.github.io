@@ -5,11 +5,15 @@
     </header>
     <div class="entry-content">
         <p id="randomSentencePlaceholder"></p>
-        <script>
+	<script>
             const sentences = {{ .Content }};
-            const randomIndex = Math.floor(Math.random() * sentences.length);
-            const randomSentence = sentences[randomIndex];
-            document.getElementById("randomSentencePlaceholder").textContent = randomSentence;
+	    const formattedSentences = sentences.map(sentence => sentence.replace(/\*/g, '\n'));
+	   // console.log(formattedSentences)
+            const randomIndex = Math.floor(Math.random() * formattedSentences.length);
+            const randomSentence = formattedSentences[randomIndex].replace(/\n/g, '<br>');
+	console.log(randomSentence)
+           // document.getElementById("randomSentencePlaceholder").textContent = randomSentence;
+	    document.getElementById("randomSentencePlaceholder").innerHTML = `<p>${randomSentence}</p>`;
         </script>
     </div>
     <footer class="entry-footer">
@@ -17,4 +21,3 @@
     </footer>
 </article>
 {{- end -}}
-
