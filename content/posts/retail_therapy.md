@@ -11,11 +11,9 @@ summary: The beauty of retail therapy is its irrationality. And I doubt any econ
 
 Ariana Grande's *7 rings* is all about self-love, confidence, and femininity rather than just consumerism. But let's be honest, retail therapy works wonderfully for beating Friday fatigue.
 
-The magic of retail therapy is irrationality. Like today, I'm done with being a utility maximizer and for the last two hours I were just casually walking around and spending money buying crazy clothes that I would probably never wear ever again after the first time. The happiest shopping memories are all impulse-driven. Just like in *7 rings* sings "I want it, I got it", even one second of consideration will ruin the fun.
-
 ![retail_therapy](/complaints/retail_therapy.jpeg)
 
-*I'm done with academic! Well... at least for tonight.*
+*I'm done with math and Econ! Well... at least for tonight.*
 
 The beauty of retail therapy is its irrationality. Today, I threw away my "maximize utility" mindset and spent the last two hours casually buying crazy clothes that I'll probably never wear again after the first time. The best shopping memories are impulse driven. As "7 rings" says, "I want it, I got it." Overthinking just kills the fun.
 
