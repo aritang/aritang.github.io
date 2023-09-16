@@ -31,9 +31,7 @@ Professor Xu's talk brought to mind another presentation I attended at Stanford 
 >
 > Abstract of abstract of Dessein, Frankel, and Kartik's 2023 paper, *Test-Optional Admissions*.
 
-The paper is comprehensive and rich, they even looked into the influence of this shift-of-strategy on the student's side. What's exciting about it is that it's a three-party model - although the paper kind of simplified the students' side's strategic-ness - it introduced a passive "critic" - the society (in general speaking, scrutinizer of college's admissions such as anxious parents, gossiping reporters, even local courts) that have a slightly different objective in terms of what kind of students that colleges should admit. For example, universities would want its students to be more diversified, like a combo of elite kids, clever geeks and outstanding athletes, but society want the university to be "fairer" and admit just more outstanding high school students other than the priviledged ones.
-
-This comprehensive study delves into the influence of this shift, introducing a three-party model, including societal "critics." While universities seek diverse student bodies, society values fairness. Conflicts arise, but information design can enable universities to admit preferred students while minimizing criticism, even if their admission criteria are public.
+This comprehensive study delves into the influence of this shift, introducing a three-party model, including societal "critics" (like, scrutinizer of college's admissions such as anxious parents, gossiping reporters, even local courts). While universities seek diverse student bodies, society values fairness. Conflicts arise, but information design can enable universities to admit preferred students while minimizing criticism, even if their admission criteria are public.
 
 To be honest, I wasn't enthralled by this research at the first sight - I was still in the aftermath of another heart transplant market design research work earlier by then. However, my interest reignited before Professor Xu's talk. This type of research genuinely captivates me.
 
