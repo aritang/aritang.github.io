@@ -9,20 +9,21 @@ params:
   homeInfoParams:
     Title: "a blog about research, art and life"
     Content:
-      - say i don't know what i'll do without you in my life.* 
-        it'd be so sour.*
-        i'm hoping that everybody can experience, what we have in ours.*
+      - i'm over here doing what i like,*
+        i'm over here working day and night.*
+        if my real ain't real enough,*
+        i don't know what is.
+        # - say i don't know what i'll do without you in my life.* 
+        # it'd be so sour.*
+        # i'm hoping that everybody can experience, what we have in ours.*
       - hey, what happened to the butterflies?
       - imagine a world like that.
-        # - hey, right when i think that we've found it, but that's when we start turnin' around. you're saying that baby don't worry, but we're still going the wrong way.
-        # - i'm a princess to the public but a freak when it's time
       - couldn't ever imagine even having doubt,* 
         but, not everything works out.
         # - down like six thirty (yuh), down like sunset (hmm)
       - say it's tricky at the top,*
-        gotta have a slim ego for a thick wallet.  
-      - listen to the goddamn, qualified scientists.
-
+        gotta have a slim ego for a thick wallet.
+      
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
