@@ -1,5 +1,5 @@
 ---
-title: "commenting on a recent blog and new about kidney transplant"
+title: "on kidney transplant - personal pov"
 date: 2023-09-20T22:52:51+08:00
 draft: false
 summary: It is my belief that, for anyone working in or around the healthcare industry, we possess a sense of inherent humanity within us. To cure sometimes, to relieve often, to comfort always.
@@ -13,13 +13,13 @@ Reading the blog [here](http://marketdesigner.blogspot.com/2023/09/organ-transpl
 
 > A total of 19449 organ transplants have been performed nationwide in 2019, including 6170 liver transplants and 12124 kidney transplants.
 
-Even more exciting is the central role that my hometown, Guangzhou, plays in the field of transplantation throughout China. This discovery came as quite a surprise to me. While I was aware of Guangzhou's excellent medical infrastructure, I had always assumed Shanghai would be the pioneer in this area. Nevertheless, congratulations to my hometown!
+Even more exciting is the central role that my hometown, **Guangzhou**, plays in the field of transplantation throughout China. This discovery came as quite a surprise to me. While I was aware of Guangzhou's excellent medical infrastructure, I had always assumed Shanghai would be the pioneer in this area. Nevertheless, congratulations to my hometown!
 
 ![organ_trans](/bio/organ_trans.jpeg)
 
-*The First Affiliated Hospital of Sun Yat-sen University in Guangzhou is one of the most recognized academic medical centers in China and the birthplace of organ transplantation in the country, having performed the first successful kidney transplant in China, the first combined liver and kidney transplantation, and the first multiple organ transplantation in Asia.*
+*(The First Affiliated Hospital of Sun Yat-sen University in Guangzhou, where a lot of the transplantation took place, is one of the most recognized academic medical centers in China.)*
 
-I aspire to pursue a future in healthcare market design. My connection to this field runs deep; originally, my dream was to enter the medical industry (see this [post](https://aritang.github.io/posts/hospital/) for detail) and both my parents are accomplished surgeons. Moreover, I want to apply my intelligence and insights to make meaningful impact. While well-intentioned individuals in my circle have gently advised me to consider more practical paths during my undergraduate studies (true, totally agree). Nevertheless, I am committed to laying the groundwork and seeing how I can make this vision a reality.
+I aspire to pursue a future in healthcare market design. My connection to this field runs deep: originally, my dream was to enter the medical industry (see this [post](https://aritang.github.io/posts/hospital/) for detail) and both my parents are accomplished surgeons. Moreover, I want to apply my intelligence and insights to make a meaningful impact. Some well-intentioned individuals in my circle have gently advised me to consider more practical paths during my undergraduate studies (true, totally agree, suggestion accepted). Nevertheless, I am committed, and we'll see this vision be made into reality.
 
 What drives this ambition, you may wonder? It is my belief that, for anyone working in or around the healthcare industry, whether they specialize in transplantation surgery or work in the broader healthcare sector, we possess a sense of inherent humanity within us. As articulated in the *Hippocratic Oath*, or the famous 19th-century saying:
 
