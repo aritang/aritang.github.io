@@ -33,18 +33,16 @@ Btw, Ariana Grande is an expert in this, as she sings in one of her hit single *
 
 Chill. In a bilateral matching market, it's been proven that a stable matching always exists. Denote the set of all possible stable matchings as $\mathcal S$, $\mathcal S\ne \empty$.
 
-Now, the fun part comes in. There can be multiple possible stable matchings. But which one's better? We can define a partial order on the space $\mathcal S$, based on all the girls' preferences. Given two stable matches, $\mu_1$ and $\mu_2$, we say $\mu_1 \succ_W \mu_2$ if all the girls like $\mu_1$ as much as $\mu_2$, with some of them stricly prefer $\mu_1$ over $\mu_2$:
+Now, the fun part comes in. There can be multiple possible stable matchings. But which one's better? We can define a partial order on the space $\mathcal S$, based on all the girls' preferences. Given two stable matches, $\mu_1$ and $\mu_2$, we say $\mu_1 \succ_W \mu_2$ if all the girls like $\mu_1$ as much as $\mu_2$, with at least some of them stricly preferring $\mu_1$ over $\mu_2$. I.e. $\mu_1\succ_W \mu_2 \text{ if and only if:}$
 $$
-\mu_1\succ_W \mu_2 \text{ if and only if:}\\
-
-\mu_1(w)\succeq_w \mu_2(w),\forall w\in W\\
+\mu_1(w)\succeq_w \mu_2(w),\forall w\in W\newline
 \mu_1(w)\succ_w \mu_2(w),\exists w\in W
 $$
 The same partial order can be set up w.r.t. boys. But say, the teacher is a bit biased and favors the girls. She has two stable matches, $\mu_1$ and $\mu_2$ in her hands. Now, if $\mu_1\succ_W \mu_2$, she can just choose $\mu_1$ over $\mu_2$. But what if $\mu_1$ is incomparable to $\mu_2$ w.r.t. girls, i.e. some girls prefer $\mu_1$ while others prefer $\mu_2$? In this case, we merge the two stable matching $\mu_1, \mu_2$ that we have in favours of the girls. 
 
 Formally, define $\lambda := \mu_1 \vee_W \mu_2$ where
 $$
-\lambda (w) = \mu_1(w)\text{, if } \mu_1(w)\succeq_w\mu_2(w)\text{ and vice versa}\\
+\lambda (w) = \mu_1(w)\text{, if } \mu_1(w)\succeq_w\mu_2(w)\text{ and vice versa}\newline
 \lambda (m) = \mu_1(m)\text{, if } \mu_1(m)\preceq_m\mu_2(m)\text{ and vice versa}
 $$
 Notice that the operation $\vee_W$ leans towards the girls. Moreover, it can be proved that $\lambda$ is also a stable matching. And all the girls are happier with $\lambda$, i.e. $\lambda\succ_W \mu_1$ and $\lambda\succ_W \mu_2$.
