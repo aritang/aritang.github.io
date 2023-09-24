@@ -2,7 +2,7 @@
 title: "stuck on a greedy algorithm"
 date: 2023-09-24T23:34:32+08:00
 draft: false
-summary: Him saying, "Whose paper is it? Let me see... Hmm, well, it's very unlikely that it's them making a mistake Ariana..."
+summary: Him saying, "Whose paper is it? Let me see... Hmm, well, it's very unlikely that it's him who is making a mistake Ariana..."
 ---
 
 This afternoon, I had a little tête-à-tête in my office with a buddy who's a math whiz turned TCS enthusiast.
