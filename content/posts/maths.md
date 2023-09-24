@@ -5,9 +5,9 @@ draft: false
 summary: Him saying, "Whose paper is it? Let me see... Hmm, well, it's very unlikely that it's him who is making a mistake Ariana..."
 ---
 
-This afternoon, I had a little tête-à-tête in my office with a buddy who's a math whiz turned TCS enthusiast.
+This afternoon, I had a little tête-à-tête in my office with a buddy who was a math major turned TCS enthusiast.
 
-> I'm scratching my head here. The author of this paper I'm reading just casually skipped another proof. I'm starting to think they might be off track.
+> Me: I'm scratching my head here. The author of this paper I'm reading just casually skipped another proof. I'm starting to think they might be off track.
 
 > Him: Whose paper is it? Let me see... Hmm, well, it's very unlikely that it's him who is making a mistake Ariana...
 
