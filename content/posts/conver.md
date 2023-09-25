@@ -13,7 +13,7 @@ I have some memories of enlightening conversations - moments between friends tha
 
 ![friend](/conversations/friend.jpeg)
 
-> Me: u know, i have had a very tumultuous era of my life, lost and bored. the solution then was retail therapy. so i used to shop a lot, like really hours and hours walking aimlessly between poop stores.
+> Me: u know, i have had a very tumultuous era of my life, lost and bored. the solution then was retail therapy. so i used to shop a lot, like really hours and hours walking aimlessly between fancy stores.
 
 > Him: (chuckles) I can picture that. Do you still do that these days?
 
