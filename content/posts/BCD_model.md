@@ -2,6 +2,8 @@
 title: "BCD model"
 date: 2023-09-27T23:38:10+08:00
 draft: false
+cover:
+    image: complaints/Subway_Senior_Watching_Phone.jpg
 summary: i was like, what in the world is this?! anyway here's the model. without literature review or intro.
 ---
 
