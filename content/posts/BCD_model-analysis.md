@@ -20,8 +20,6 @@ When $G_\mu(\epsilon_i, p_i) - c \geq 0$, it incentivizes the consumer to keep s
 
 For the firm $i$, if he sneakily sets his price at $p_i$  (so while consumer search they still assume $p^{\star}$ for every firms, only accepting $p_i$ after they searched company $i$), his demand would be
 
-Now, for firm $i$, if they slyly set their price at $p_i$ (while consumers assume for all firms, only accepting $p_i$ after searching at firm $i$), their demand becomes:
-
 $$
 D(p_i, p_{-i}^{\star}) = \sum_{t = 1}^{n} \frac{1}n F^{t-1}(\hat \epsilon^{\star})(1 - F(\hat \epsilon_i)) + \int_{\max(a, p_i)}^{\hat \epsilon_i} F^{n-1}(\epsilon_i - (p^{\star} - p_i)/\mu)\ dF(\epsilon_i)
 $$
@@ -39,7 +37,7 @@ recall that $\mu \hat \epsilon^{\star} - p^{\star} = \hat u$ where $\hat u$ is t
 
 For economists, the next steps involve the riveting adventure of diving into the abyss of taking limits to scrutinize extreme cases (yawn...) and studying social welfare (like figuring out the optimal market size (aka $n$) based on the delicate balance between welfare and search costs) and tracking the trend dynamic of price, revenue, or market size with respect to various parameters.
 
-Now, from my humble perspective, delving into what happens when $\mu \to 0$ feels like chasing after the world's tiniest unicorn because, well, that's when all products become clones of each other. Plus, $c$ and $\mu$ seem to be playing a cat and mouse game because you can normalize one of them w.r.t. another. Correct me if I'm wrong.
+Now, from my humble perspective, delving into what happens when $\mu \to 0$ feels like chasing after the world's tiniest unicorn because, well, that's when all products become clones of each other. Plus, $c$ and $\mu$ seem to be, redundant if normalize one of them w.r.t. another. Correct me if I'm wrong.
 
 But say, fix search cost $c$, when product heterogeneity (or simply, it's just the variance scale of the value distribution...) $\mu$ goes from some lower bound $\mu_0$ (that minimum product variation that incentivize search-then-buy) to sufficiently large, the price and market size in equilibrium would be interesting result to look into (I vaguely recall it's like a dip and then a rise...or something like that?). It will be fascinating to read the rest of the paper in detail but quite a mental marathon.
 
