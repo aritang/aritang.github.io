@@ -18,11 +18,13 @@ params:
         # i'm hoping that everybody can experience, what we have in ours.*
       - hey, what happened to the butterflies?
       - imagine a world like that.
-      - couldn't ever imagine even having doubt,* 
-        but, not everything works out.
+        # - couldn't ever imagine even having doubt,* 
+        # but, not everything works out.
         # - down like six thirty (yuh), down like sunset (hmm)
       - say it's tricky at the top,*
         gotta have a slim ego for a thick wallet.
+      - if i were you*
+        i'd wanna be me too.
       
   fuseOpts:
     isCaseSensitive: false
