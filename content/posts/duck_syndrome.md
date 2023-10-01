@@ -3,6 +3,7 @@ title: "duck syndrome"
 date: 2023-09-26T23:37:53+08:00
 draft: false
 summary: (sometimes) way too good at camouflage, can't see what i am i just see what i'm not.
+tags: ["conversations"]
 ---
 
 The Stanford Duck Syndrome:

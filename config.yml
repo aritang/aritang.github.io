@@ -23,9 +23,14 @@ params:
         # - down like six thirty (yuh), down like sunset (hmm)
       - say it's tricky at the top,*
         gotta have a slim ego for a thick wallet.
-      - if i were you*
-        i'd wanna be me too.
-      
+      - if i were you, i'd wanna be me too.*
+      - so long as i live, i love u, will have and hold you.*
+        you look so beautiful in white.*
+        what we have is timeless, my love is endless.*
+        with all my heart, i mean every word.
+      - say i don't know what i'll do without u in my life, but it'd be so sour.*
+        i'm hopin that everybody can experience what we have in ours.*
+              
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true

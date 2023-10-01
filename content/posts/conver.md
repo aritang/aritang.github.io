@@ -5,6 +5,7 @@ draft: false
 summary: I have some memories of enlightening conversations with people. Here’s one, and there’ll be more of them in the future.
 cover: 
     image: conversations/friend.jpeg
+tags: ["conversations"]
 ---
 
 It’s cheat day of the week, let’s do something special.
