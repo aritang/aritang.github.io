@@ -43,15 +43,17 @@ Here's the fun part, now let's explicitly state the important assumptions made i
 
 Moving on, we consider how prices adjust over time. Assume that consumers who persist in the market gradually raise their cutoff prices over time by a constant non-degenerate fraction, such as $q^{h\tau}_{t + 1} > q^{h \tau}_t+ \eta$, where $\eta > 0$.
 
-Now, for the tricky part: we posit that for consumers of the same type $h$ across different generations, say, $\tau = t$ and $\tau' = t + 1$, their cutoff prices are related as follows: $q^{h\tau'}_{t + 1}$ falls between $q_t^{h\tau}$ and $q^{*h}$, where
-$$
-u^h(q^{*h}, 1) = u^h(p_t, 2)
-$$
+Now, for the tricky part: we posit that for consumers of the same type $h$ across different generations, say, $\tau = t$ and $\tau' = t + 1$, their cutoff prices are related as follows: $q^{h\tau}_{t + 1}$ falls between $q_t^{h\tau}$ and $q^{* h}$, where
+
+$$u^h(q^{*h}, 1) = u^h(p_t, 2)$$
+
 so the new generation knows the current period's price $p_t$ and anticipate that firms will maintain similar pricing in the next period. Assume they select a cutoff price that falls within a certain range, satisfying the following condition:
-$$
-q^{*h}\le q^{h\tau'}_{t+1}\le q^{h\tau}_t\text{ or }q^{h\tau}_t \le q^{h\tau'}_{t+1}\le q^{*h}
-$$
-Continuing from the above, we can establish that if $\bar p_t \le p_t$, then $\bar p_{t+1} > \bar p_t$. Given our earlier demonstration that $\bar p_t \le p_t \le p^*$, we conclude that the sequence ${\bar p_\tau}_{\tau = 1}^\infty$ converges to $p^*$. This analysis forms a crucial part of our discussion.
+
+$$q^{*h}\le q^{h\tau'}_{t+1}\le q^{h\tau}_t$$
+
+or reversed.
+
+Continuing from the above, we can establish that if $\bar p_t \le p_t$, then $\bar p_{t+1} > \bar p_t$. Given our earlier demonstration that $\bar p_t \le p_t \le p^\*$, we conclude that the sequence ${\bar p_{\tau}}_{\tau = 1}^\infty$ converges to $p^*$. This analysis forms a crucial part of our discussion.
 
 In a market where consumers anticipate stability with prices like $p^*$ persisting, firms can strategically increment their prices while maintaining demand levels. Sneaky, right? This continues until equilibrium is reached, possibly at a monopoly price if it is initially lower.
 
