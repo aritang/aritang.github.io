@@ -2,13 +2,14 @@
 title: "the author's pick"
 date: 2023-10-01T22:14:34+08:00
 draft: false
-weight: 1
 summary: the roadmap to a collection of interesting historical posts. freshly updated.
 cover:
     image: definition/think.jpeg
 ---
 
-Here are my favourite posts over the history. If you wanna get to know a little bit more about me, this is the perfect place to start.
+Hi, my name is Ariana. This is a personal blog, where I write things about my research, my artistic viewpoints and occasionally my life. You can see my [preference](https://aritang.github.io/posts/sweetener_philosophy/) here. In general, I like music, math, Econ (part of them), delicious food.
+
+Here are my favourite posts over the history. If you wanna get to know a little bit more about me, this is the perfect place to start. And, maybe check the [archive](https://aritang.github.io/archives/) for further fun.
 
 ### One and only most favourite post so far:
 
@@ -29,3 +30,5 @@ Here are my favourite posts over the history. If you wanna get to know a little 
 ### Music and Art
 
 > Check the homepage's lyrics. Have you noticed? They change everytime you reload the page.
+>
+> I'm a fan of Ariana Grande. Will write about her in depth someday.

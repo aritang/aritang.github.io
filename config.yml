@@ -57,10 +57,10 @@ menu:
     - name: archive
       url: archives
       weight: 10
-    - name: about
-      url: about
-      weight: 5
     - name: search
       url: /search
       weight: 1
+    - name: author's pick
+      url: /posts/pinned
+      weight: 11
 
