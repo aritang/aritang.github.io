@@ -23,6 +23,8 @@ Here are my favourite posts over the history. If you wanna get to know a little 
 
 > I'm a big fan of Al Roth: [on kidney transplant](http://localhost:1313/posts/kidney/). 
 >
+> {{< figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="2023 summer, when i was visiting Stanford. from left to right: Al Roth, Ariana Tang (aka, me), Alex Chan (his kidney mechanism design paper is sooooooo awesome)." >}}
+>
 > I have passion for **health econ** and **market design**. My current focus is **Econ** and **auction theory**. To comment or discuss about research, feel free to shoot a quick email to ariana_tang@outlook.com.
 >
 > Generally you can hear a lot of [complaints](http://localhost:1313/tags/complaints/) that I made day to day about things I do, lol.
