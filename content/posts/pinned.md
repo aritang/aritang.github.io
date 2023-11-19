@@ -7,30 +7,17 @@ cover:
     image: definition/think.jpeg
 ---
 
-Hi, my name is Ariana. This is a personal blog, where I write things about my research, my artistic viewpoints and occasionally my life. You can see my [preference](https://aritang.github.io/posts/sweetener_philosophy/) here. In general, I like music, math, Econ (part of them), delicious food.
+Hi, my name is Ariana Tang, and this is my blog where I write things about my research, my artistic viewpoints and occasionally my life. 
 
-Here are my favourite posts over the history. If you wanna get to know a little bit more about me, this is the perfect place to start. And, maybe check the [archive](https://aritang.github.io/archives/) for further fun.
+As a junior undergrad student majoring in CS in Shanghai University of Finance and Economics, I have broad interest in the interdisciplinary of computer science and economic. Especially, I'm a fan of professor Alvin Roth and economic [researches in health industry](https://aritang.github.io/posts/kidney/), and [I've started my blog because of his inspiration](https://aritang.github.io/posts/definition/).
 
-### One and only most favourite post so far:
+{{< figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan. Taken 2023 summer." >}}
 
-> [dating w.r.t. oppo. cost](http://localhost:1313/posts/oppoc/)
+Here are my favourite posts over the history. If you wanna get to know a little bit more about me, feel free to [email](ariana_tang@outlook.com) me. Maybe check the [archive](https://aritang.github.io/archives/) for further fun.
 
-### Life
-
-> Beautiful moments and memories: the [conversation series](http://localhost:1313/tags/conversations/).
-
-### Research
-
-> I'm a big fan of Al Roth: [on kidney transplant](http://localhost:1313/posts/kidney/). 
+> As an existentialist, I adore Ariana Grande's sweetener philosophy that, "**it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. Sweetening the situation.**" Also, [my work ethic](https://aritang.github.io/posts/just_like_magic/) originates from her as well.
 >
-> {{< figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="2023 summer, when i was visiting Stanford. from left to right: Al Roth, Ariana Tang (aka, me), Alex Chan (his kidney mechanism design paper is sooooooo awesome)." >}}
+> Btw, I'm [TAing a graduate-level mechanism design class](https://aritang.github.io/posts/ta/) this term, pretty cool right? Hit me with interesting finale exam problems if you please~
 >
-> I have passion for **health econ** and **market design**. My current focus is **Econ** and **auction theory**. To comment or discuss about research, feel free to shoot a quick email to ariana_tang@outlook.com.
->
-> Generally you can hear a lot of [complaints](http://localhost:1313/tags/complaints/) that I made day to day about things I do, lol.
+> For research? Here's my [recent reading list](https://aritang.github.io/posts/upcominng_topics/). Check them out.
 
-### Music and Art
-
-> Check the homepage's lyrics. Have you noticed? They change everytime you reload the page.
->
-> I'm a fan of Ariana Grande. Will write about her in depth someday.
