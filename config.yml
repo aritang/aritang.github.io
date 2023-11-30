@@ -62,7 +62,7 @@ menu:
     - name: search
       url: /search
       weight: 1
-    - name: author's pick
+    - name: about me
       url: /posts/pinned
       weight: 11
 
