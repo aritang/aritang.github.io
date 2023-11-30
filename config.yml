@@ -52,10 +52,10 @@ outputs:
 
 menu:
   main:
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 10
+    #- identifier: tags
+    #  name: tags
+    #  url: /tags/
+    #  weight: 10
     - name: archive
       url: archives
       weight: 10
