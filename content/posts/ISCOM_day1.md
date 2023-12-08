@@ -1,5 +1,5 @@
 ---
-title: "ISCOM_day1"
+title: "ISCOM day1"
 date: 2023-12-02T22:35:26+08:00
 draft: false
 summary: Our paper got second place in the data competition. Coolness.
