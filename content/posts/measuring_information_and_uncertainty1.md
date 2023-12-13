@@ -62,9 +62,9 @@ Notice that in the above, we consider **ex post** value/cost of information/unce
 
 #### Consistency
 
-Because $H$ is concave, we have $H(q) + \Delta H(q) \cdot(p -q)\ge H(p)$.  A *Bregman divergence* of it be, some function mapping from $(p, q)$ to real numbers which equal to
+Because $H$ is concave, we have $H(q) + \nabla H(q) \cdot(p -q)\ge H(p)$.  A *Bregman divergence* of it be, some function mapping from $(p, q)$ to real numbers which equal to
 $$
-g(p, q) = H(q) - H(p) + \Delta(q)\cdot (p -q)
+g(p, q) = H(q) - H(p) + \nabla H(q)\cdot (p -q)
 $$
 **[Theorem]** Given a **valid** measure of information $d$ and a **valid** measure of uncertainty $H$, these following conditions are equivalent to each other
 
@@ -93,9 +93,9 @@ g(p, q) + g(q, t) \ge g(p, t)
 $$
 which implies
 $$
-H(q) - H(p)  + H(t) - H(q) + \Delta H\cdot (q) (p - q) + \Delta H(t) \cdot (q - t)\ge H(t) - H(p) + \Delta H(t) (p - t)
+H(q) - H(p)  + H(t) - H(q) + \nabla H\cdot (q) (p - q) + \nabla H(t) \cdot (q - t)\ge H(t) - H(p) + \nabla H(t) (p - t)
 $$
-and further implies $\Delta H(q) <= \Delta H(t)$ If this measure is nontrivial, that sometimes the inequality holds strictly, then it yields a contradiction.
+and further implies $\nabla H(q) <= \nabla H(t)$ If this measure is nontrivial, that sometimes the inequality holds strictly, then it yields a contradiction.
 
 **[Corollary]** If a measure of information is a metric on $\Delta (\Omega)$, it does not satisfy Order-invariance and thus cannot be valid.
 
