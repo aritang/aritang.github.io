@@ -17,7 +17,7 @@ There's an intriguing paper featured in WINE2023's tutorials:
 
 So, ArguGPT is an AI designed to discriminate whether essays, particularly argumentative ones, and responses to GRE and TOEFL writing tasks, are penned by humans or GPTs. Its author team diverses among machine learning experts as well as profs. and students from the School of Foreign Language, SJTU. Hence using some student essay corpus would be quite handy a choice.
 
-From an undergraduate perspective, I find the ArguGPT tool they developed particularly intriguing. The authors have generously open-sourced their software and even established an online platform on HuggingFace for public experimentation. So, I tested it with some GPT-generated content from my collection, including my application essay:
+From an undergraduate perspective, I find the ArguGPT tool they developed somewhat interesting. The authors have generously open-sourced their software and even established an online platform on HuggingFace for public experimentation. So, I tested it with some GPT-generated content from my collection, including my application essay:
 
 (take a look, and at the end we'll unveil how much it's GPT-generated)
 
@@ -29,4 +29,4 @@ From an undergraduate perspective, I find the ArguGPT tool they developed partic
 
 {{<figure align="center" src="/new_plan/ArguGPT.jpeg" caption="the prediction result of ArguGPT">}}
 
-According to ArguGPT, the essay appears to be entirely human-written, with only one sentence flagged as potentially AI-generated. But here's the twist: that lone sentence is actually the only part I wrote myself! Ha!
+According to ArguGPT, the essay appears to be entirely human-written, with only one sentence flagged as potentially AI-generated. But here's the twist: that lone sentence is actually the only part that is not written by GPT. Ha!
