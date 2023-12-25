@@ -1,7 +1,7 @@
 ---
 title: "how to read a paper"
 date: 2023-12-24T23:53:01+08:00
-draft: true
+draft: false
 ---
 
 Here's an immensely useful paper on the almost cliché yet rarely studied question ***how to read a paper***, where it outlines a practical and efficient three-pass method for reading research papers.

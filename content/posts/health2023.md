@@ -1,7 +1,7 @@
 ---
 title: "the biggest health and medicine stories of 2023"
 date: 2023-12-23T22:51:31+08:00
-draft: true
+draft: false
 ---
 
 Here's Scientific America's [The Biggest Health and Medicine Stories of 2023](https://www.scientificamerican.com/article/the-biggest-health-and-medicine-stories-of-2023/) by [TANYA LEWIS](https://www.scientificamerican.com/author/tanya-lewis/). It's always thrilling to look into the advances in medical field. These narratives are much more than mere stories—they represent the collective efforts of families, patients, and medical professionals who have integrated centuries of human knowledge to make life possible. In awe I read, as the opening of the article goes
