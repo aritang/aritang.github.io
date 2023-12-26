@@ -5,6 +5,7 @@ draft: false
 cover: 
     image: tattooed_heart/work_ethic.jpeg
 summary: Think I've kind of learned that the more authentic and genuine it is, the better it will work for you.
+weight: 2
 
 ---
 
