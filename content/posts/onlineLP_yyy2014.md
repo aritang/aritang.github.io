@@ -12,12 +12,12 @@ At the end of the talk, Professor Ye mentioned a paper of his about online LP. H
 Consider an LP in the following format:
 $$
 \begin{align}
-\max \ & \sum_{t = 1}^n \pi_t x_t\\
-s.t. \ &\sum_{t = 1}^n a_{it} x_t \le b_i, i = 1, ..., m\\
-& 0\le  x_t\le 1, \forall t = 1, ..., n\\
+\max \ & \sum_{t = 1}^n \pi_t x_t\cr
+s.t. \ &\sum_{t = 1}^n a_{it} x_t \le b_i, i = 1, ..., m\cr
+& 0\le  x_t\le 1, \forall t = 1, ..., n\cr
 \end{align}
 $$
-We simplify by considering that, for all $j$, $\mathbf a_j = {a_{ij}}_{i = 1}^m \in [0, 1]^m, \pi_j \ge 0$. In an online setting, at each time $t = 1, 2, ..., n$, the coefficients $(\pi_t, \mathbf a_t)$ are revealed, and then $x_t$ has to be chosen (and it needs to be feasible, i.e., $\sum_{j = 1}^t a_{ij} x_j \le b_i\ \forall i, t$). For online analysis, it is further assumed that ${\mathbf a_{i}}_{i = 1, ..., m}$ can be picked adversarially, but the arrival order of them is **uniformly distributed over all permutations**.
+We simplify by considering that, for all $j$, $\mathbf {a_j} \in [0, 1]^m$, $\pi_j \ge 0$. In an online setting, at each time $t = 1, 2, ..., n$, the coefficients $(\pi_t, \mathbf a_t)$ are revealed, and then $x_t$ has to be chosen (and it needs to be feasible, i.e., $\sum_{j = 1}^t a_{ij} x_j \le b_i\ \forall i, t$). For online analysis, it is further assumed that ${\mathbf a_{i}}_{i = 1, ..., m}$ can be picked adversarially, but the arrival order of them is **uniformly distributed over all permutations**.
 
 And the paper considered the *competitiveness* of the online algorithm. Let $OPT$ denote the optimal objective value for the preceding problem solved offline. We say an algorithm is *$c$-competitive* in the random permutation model if the expected value of the online solution obtained by using the algorithm is at least a $c$ factor of $OPT$, i.e.,
 $$
@@ -28,16 +28,16 @@ And the model (and result!) can be generalized to when $x$ arrives in batches. S
 The key idea of the algorithm is that, for $n$ large, we may take some threshold $s = \epsilon n$ and learn the (sub-optimal) dual variables $p^s$ of the revealed problem so far, and use them as (approximately good) thresholds to pick the outcomes. To be more specific, at time $s = \epsilon n$, we solve the partial linear program defined only for inputs until now:
 $$
 \begin{align}
-\max \ & \sum_{t = 1}^s \pi_t x_t\\
-s.t. \ &\sum_{t = 1}^s a_{it} x_t \le (1 - \epsilon) \epsilon \cdot b_i, i = 1, ..., m\\
-& 0\le  x_t\le 1, \forall t = 1, ..., s\\
+\max \ & \sum_{t = 1}^s \pi_t x_t\cr
+s.t. \ &\sum_{t = 1}^s a_{it} x_t \le (1 - \epsilon) \epsilon \cdot b_i, i = 1, ..., m\cr
+& 0\le  x_t\le 1, \forall t = 1, ..., s\cr
 \end{align}
 $$
 and use its dual variable $p^s$ to decide, for the upcoming $x_{t+1}$ with $(\pi_{t + 1}, \mathbf a_{t + 1})$, its allocation:
 $$
 x_{t + 1}(p^s) = 
 \begin{cases}
-0 & \text{if } \pi_{t+1} \le (p^s)^T a_t\\
+0 & \text{if } \pi_{t+1} \le (p^s)^T a_t\cr
 1 & \text{if } \pi_{t+1} > (p^s)^T a_t
 \end{cases}
 $$
