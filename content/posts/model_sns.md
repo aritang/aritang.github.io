@@ -1,5 +1,5 @@
 ---
-title: "a study of suspense and surprise"
+title: "a study in suspense and surprise - part I"
 date: 2024-01-03T22:22:44+08:00
 draft: false
 summary: the model, and the principal's problem part I
