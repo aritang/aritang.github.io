@@ -11,7 +11,11 @@ Today is a dive into the modelling part of ***Suspense and Surpirse***. The pape
 
 Consider a finite state space $\Omega$, where a typical state of the world is $w$ (it should be $\omega$ but let's save a bit typing). A typical belief is denoted by a probability vector $\mu \in \Delta(\Omega)$; $\mu^w$ designates the probability of $w$. Let $t \in \{0, 1, ..., T\}$ denote the period. Let's say, the prior is $\mu_0$.
 
-An information policy $\tilde \pi$ is a mapping of some belief $\mu$ and current period $t$ to the distribution space $\Delta(S)$ of signals. A *belief martingale* $\tilde \mu$ is a sequence $(\tilde \mu_t)_{t = 0}^T$ s.t. (i) $\tilde \mu_t \in \Delta(\Delta(\Omega))$ for all $t$, with (ii) $\tilde \mu_0$ degenerate at $\mu_0$, and (iii) $\mathbb E[\tilde \mu_t | \mu_0, ..., \mu_{t - 1}] = \mu_{t - 1}$. A realization of the belief martingale is a *belief path* $\eta = (\mu_t)_{t = 0}^T$. Given an information policy $\tilde \pi$ and a prior $\mu_0$ to start from, they generates a stochastic path of beliefs about the state - we denote this induced belief martingale as $\lang \tilde \pi | \mu_0\rang$.
+An information policy $\tilde \pi$ is a mapping of some belief $\mu$ and current period $t$ to the distribution space $\Delta(S)$ of signals. A *belief martingale* $\tilde \mu$ is a sequence $(\mu_t)_{t = 0}^T$ s.t.
+
+- $\tilde \mu_t \in \Delta(\Delta(\Omega))$ for all $t$, with 
+- $\tilde \mu_0$ degenerate at $\mu_0$, and
+- $\mathbb E[\tilde \mu_t | \mu_0, ..., \mu_{t - 1}] = \mu_{t - 1}$. A realization of the belief martingale is a *belief path* $\eta = (\mu_t)_{t = 0}^T$. Given an information policy $\tilde \pi$ and a prior $\mu_0$ to start from, they generates a stochastic path of beliefs about the state - we denote this induced belief martingale as $\lang \tilde \pi | \mu_0\rang$.
 
 > **Lemma 1** Given any Markov belief martingale $\tilde \mu$, there exists an information policy $\tilde \pi$ that induces it, i.e. $\tilde \mu = \lang \tilde \pi | \mu_0\rang$. 
 
@@ -34,13 +38,17 @@ The paper included some examples. Especially, the Blackjack simulation is compre
 
 The principal seeks to maximize either suspense, or surprise
 $$
-\max_{\tilde \pi} \mathbb E_{\eta \sim \lang \tilde \pi |\mu_0\rang}U_{\text{suspense}}(\eta, \lang \tilde \pi |\mu_0\rang)\\
-\max_{\tilde \pi} \mathbb E_{\eta \sim \lang \tilde \pi |\mu_0\rang}U_{\text{surprise}}(\eta)
+\begin{align}
+\max_{\tilde \pi} & \ \mathbb E_{\eta \sim \lang \tilde \pi |\mu_0\rang}U_{\text{suspense}}(\eta, \lang \tilde \pi |\mu_0\rang)\cr
+\max_{\tilde \pi}& \  \mathbb E_{\eta \sim \lang \tilde \pi |\mu_0\rang}U_{\text{surprise}}(\eta)
+\end{align}
 $$
 Btw, beacuse Lemma 1 allows us to associate any belief martigale with an info-policy that induces it, we can focus on optimizing over possible martigales, instead of information policy $\tilde \pi$ in the optimization, i.e.
 $$
-\max_{\tilde \pi} \mathbb E_{\eta \sim \tilde \mu}U_{\text{suspense}}(\eta,\tilde \mu)\\
-\max_{\tilde \pi} \mathbb E_{\eta \sim \tilde \mu}U_{\text{surprise}}(\eta)
+\begin{align}
+\max_{\tilde \pi}& \  \mathbb E_{\eta \sim \tilde \mu}U_{\text{suspense}}(\eta,\tilde \mu)\cr
+\max_{\tilde \pi} & \ \mathbb E_{\eta \sim \tilde \mu}U_{\text{surprise}}(\eta)
+\end{align}
 $$
 For maximizing suspense, the result is pretty neat and beautiful. First of all, say, denote each period $t$'s suspense (conditional on $\mu_t$ revealed) be $\sigma_t^2 = \mathbb E_{\{\mu_{t + 1} \sim \tilde \mu_{t + 1} |\mu_t\}} \|\mu_{t+1} - \mu_t\|^2$, the principal's problem is then, choosing a belief martigale $\tilde \mu$ (and its corresponding info-policy $\tilde \pi$ to maximize $ \mathbb E_{\tilde \mu}\sum_{t = 0}^{T-1}u(\sigma_t^2)$.
 
@@ -61,3 +69,4 @@ So it's equivalent to consider the problem like, starting from a prior $\mu_0$, 
 > In other words, suspense is constant over time with uncertainty declines gradually. 
 
 Goodnight. tmrw features principal's problem part II, along with rest of the paper read.
+
