@@ -63,4 +63,6 @@ I think this is where surprise of the paper comes in - that this part, seemingly
 
     > Remarkably, for any distribution of delegates ni, for any set of probabilities $p_i$, for any cutoff $n^\star$, the order of the primaries has no effect on expected suspense or surprise. Small or large states, partisan or swing states – they may go in any order.
 
+### A Little Words
+
 There are some more generalizations at the end of the paper, that the author brought up and relates with, I think, one of their subsequent work on characterizing informational uncertainty. In my point of view, there are some potential for computational study to step in here. I'll leave it here, to play a little trick of suspense, and lack of closure.
