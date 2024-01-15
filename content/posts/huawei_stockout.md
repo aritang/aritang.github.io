@@ -4,7 +4,7 @@ date: 2024-01-15T23:26:55+08:00
 draft: false
 ---
 
-I'm not a fan of Huawei phones or HarmonyOS, but my dad is. Like, he's basically part of Huawei's loyal customer base: middle-aged. Thanks to their stan-like support, the Huawei Mate60 is often out of stock.
+I'm not a fan of Huawei phones or HarmonyOS, but my dad is. Like, he's basically part of Huawei's loyal customer base: middle-aged, well-off supporter with two phones and steady demand. Thanks to their stan-like support, the Huawei Mate60 is often out of stock.
 
 Last weekend, we were at Sam's for grocery but it sells pretty much everything as well. My dad rushed to the Huawei counter to check on the Mate60. As expected, it was out of stock. The clerk mentioned a possible restock next week, but with limited options.
 
