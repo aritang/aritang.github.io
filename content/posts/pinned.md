@@ -7,9 +7,11 @@ cover:
     image: definition/think.jpeg
 ---
 
+> Last update: 01/01/2024
+
 Hi, my name is Ariana Tang, and this is my blog where I write things about my research, my artistic viewpoints and occasionally my life.
 
-As a junior undergrad student majoring CS in Shanghai University of Finance and Economics, my academic pursuits are rooted in the interdisciplinary of market design and algorithmic game theory, to leverage the power and elegance of mathematics to economic theory. 
+As a junior undergrad student majoring CS in Shanghai University of Finance and Economics, my academic pursuits are rooted in the interdisciplinary of market design and algorithmic game theory, to leverage the power and elegance of mathematics to economic theory. Prof. DD Ge.
 
 Moreover, I believe that game theorists also need to be sensitive to cultural and psychological factors to understand the incentives and constraints that people face. Acute perception, mathematical skills and a deep sense of empathy embodies the essence of a modern economist, and is what I'm committed to becoming.
 
@@ -19,16 +21,15 @@ Currently I'm working on auctions with [**Prof. Pinyan Lu**](http://pinyanlu.com
 
 Here are my favourite posts over the history. Also, feel free to shoot me a message discussing anything: ariana_tang*<u>AT</u>*outlook<u>*dot*</u>com or wechat <u>*LovefromArianaTang*</u>.
 
-> As an existentialist, I adore Ariana Grande's sweetener philosophy that, "**it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. Sweetening the situation.**" Take a look at how I Incorporate [Ariana Grande's artistic viewpoints](https://aritang.github.io/posts/b_graph/) into my [work ethics](https://aritang.github.io/posts/just_like_magic/).
+> As an existentialist, I adore Ariana Grande's sweetener philosophy that, "**it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. Sweetening the situation.**" Take a look at how I Incorporate [Ariana Grande's artistic viewpoints](https://aritang.github.io/posts/b_graph/) into my [work ethics](https://aritang.github.io/posts/just_like_magic/), and [a graduate-level mechanism design course I've TAed during the 2023/24 fall-winter semester](https://aritang.github.io/posts/ta/).
 >
 > Things and thoughts that I found interesting:
 >
 > - [Dating w.r.t. opportunity cost.](https://aritang.github.io/posts/oppoc/)
-> - [About the apple and cranberry business.](https://aritang.github.io/posts/apple_cranberry/)
-> - [How to maximize utility during a meeting.](https://aritang.github.io/posts/board_meeting/)
+> - An interesting paper I really liked and would like to work on in the future: *[Suspense and Surprise](https://aritang.github.io/posts/suspense_n_surprise/)*, by Jeffrey Ely, Alexander Framkel and Emir Kamenica.
+> - I'm not a big fan of research in machine learning yet, but I am realllllllly good at coding. So here's [SHERLOCK](https://aritang.github.io/posts/all_about_sherlock/), a code detector from my machine learning final project, that I kinda enjoyed doing it but will never do such thing again.
 > - check the archive or the search bar for further fun!
 >
-> Btw, I'm [TAing a graduate-level mechanism design class](https://aritang.github.io/posts/ta/) this term, pretty cool right? Hit me with interesting finale exam problems if you please~
 
 
 
