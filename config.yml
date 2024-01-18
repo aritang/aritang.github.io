@@ -5,9 +5,10 @@ theme: PaperMod
 math: true
 params:
   math: true
+  enableEmoji: true
   katexPath : "katex"
   homeInfoParams:
-    Title: "a blog about research, art and life"
+    Title: "a blog about research, art and life 💋"
     Content:
       - i'm over here doing what i like,*
         i'm over here working day and night.*
@@ -32,6 +33,7 @@ params:
         i'm hopin that everybody can experience what we have in ours.*
       - treat my goals like properties*
         collect them like monopoly
+      - 
               
   fuseOpts:
     isCaseSensitive: false
