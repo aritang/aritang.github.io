@@ -7,7 +7,7 @@ cover:
     image: definition/think.jpeg
 ---
 
-> Last update: 01/01/2024
+> Last update: 01/20/2024
 
 Hi, my name is Ariana Tang, and this is my blog where I write things about my research, my artistic viewpoints and occasionally my life.
 
@@ -28,6 +28,7 @@ Here are my favourite posts over the history. Also, feel free to shoot me a mess
 > - [Dating w.r.t. opportunity cost.](https://aritang.github.io/posts/oppoc/)
 > - An interesting paper I really liked and would like to work on in the future: *[Suspense and Surprise](https://aritang.github.io/posts/suspense_n_surprise/)*, by Jeffrey Ely, Alexander Framkel and Emir Kamenica.
 > - I'm not a big fan of research in machine learning yet, but I am realllllllly good at coding. So here's [SHERLOCK](https://aritang.github.io/posts/all_about_sherlock/), a code detector from my machine learning final project, that I kinda enjoyed doing it but will never do such thing again.
+> - [Existentialism and the *Sweetener Philosophy*](https://aritang.github.io/posts/eternal_sunshine/).
 > - check the archive or the search bar for further fun!
 >
 
