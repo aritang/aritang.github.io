@@ -1,5 +1,5 @@
 ---
-title: "the author's pick"
+title: "about me | Ariana Tang"
 date: 2023-10-01T22:14:34+08:00
 draft: false
 summary: the roadmap to a collection of interesting historical posts. freshly updated.
@@ -11,7 +11,9 @@ cover:
 
 Hi, my name is Ariana Tang, and this is my blog where I write things about my research, my artistic viewpoints and occasionally my life.
 
-As a junior undergrad student majoring CS in Shanghai University of Finance and Economics, my academic pursuits are rooted in the interdisciplinary of market design and algorithmic game theory, to leverage the power and elegance of mathematics to economic theory. Prof. DD Ge.
+### academic
+
+As a junior undergrad student majoring CS in Shanghai University of Finance and Economics, my academic pursuits are rooted in the interdisciplinary of market design and algorithmic game theory, to leverage the power and elegance of mathematics to economic theory.
 
 Moreover, I believe that game theorists also need to be sensitive to cultural and psychological factors to understand the incentives and constraints that people face. Acute perception, mathematical skills and a deep sense of empathy embodies the essence of a modern economist, and is what I'm committed to becoming.
 
@@ -19,7 +21,9 @@ Currently I'm working on auctions with [**Prof. Pinyan Lu**](http://pinyanlu.com
 
 {{< figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan, at the SITE session of behavioral econ, it kinda solidified my passion for market design. Pic taken 2023 summer." >}}
 
-Here are my favourite posts over the history. Also, feel free to shoot me a message discussing anything: ariana_tang*<u>AT</u>*outlook<u>*dot*</u>com or wechat <u>*LovefromArianaTang*</u>.
+### blogs
+
+Here are my favourite posts over the history.
 
 > As an existentialist, I adore Ariana Grande's sweetener philosophy that, "**it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. Sweetening the situation.**" Take a look at how I Incorporate [Ariana Grande's artistic viewpoints](https://aritang.github.io/posts/b_graph/) into my [work ethics](https://aritang.github.io/posts/just_like_magic/), and [a graduate-level mechanism design course I've TAed during the 2023/24 fall-winter semester](https://aritang.github.io/posts/ta/).
 >
@@ -32,5 +36,8 @@ Here are my favourite posts over the history. Also, feel free to shoot me a mess
 > - check the archive or the search bar for further fun!
 >
 
+Feel free to shoot me a message discussing anything: ariana_tang*AT*outlook*dot*com or wechat <u>*LovefromArianaTang*</u>.
 
+### discography
 
+> 🔜 to appear. they're on the way i promise.
