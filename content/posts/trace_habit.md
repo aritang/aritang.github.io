@@ -6,7 +6,9 @@ draft: false
 
 I've been a little bit overwhelmed today. So, here's a music recommendation.
 
-> ## Sonatine for Flute and Piano: I. Moderato
+> ## SANCAN: Sonatine for Flute and Piano: I. Moderato
+>
+> \[composer\]: Pierre Sancan
 >
 > \[artist\]: Emmanuel Pahud, Eric Le Sage. 
 >
