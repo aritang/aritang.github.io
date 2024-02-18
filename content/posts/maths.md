@@ -11,7 +11,7 @@ This afternoon, I had a little tête-à-tête in my office with a buddy who was 
 
 > Him: Whose paper is it? Let me see... Hmm, well, it's very unlikely that it's him who is making a mistake Ariana...
 
-> Me: Fine... But let me give it a shot. Remember that time I went on a [rubbishing about authors skipping proofs and trivializing everything](https://aritang.github.io/posts/with_all_due_respect/). Yeah I know that he probably wasn't intentionally trying to baffle readers by skipping steps, but this feels a tad too speedy for me. But it's tolerable, I've seen far worse.
+> Me: Fine... But let me give it a shot. Remember that time I went on a [rubbishing about authors skipping proofs and trivializing everything](/posts/with_all_due_respect/). Yeah I know that he probably wasn't intentionally trying to baffle readers by skipping steps, but this feels a tad too speedy for me. But it's tolerable, I've seen far worse.
 
 > Him: Perhaps he believes it's already detailed enough in terms of math deductions...
 

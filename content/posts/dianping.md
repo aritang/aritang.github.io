@@ -13,7 +13,7 @@ There's a blogpost in [Legalweekly](http://www.legalweekly.cn/) talking about re
 
 ### the issue:
 
-As we have mentioned earlier [here](https://aritang.github.io/posts/talk_show/) and [here](https://aritang.github.io/posts/yelp_paradox/), about ingenuine review issues. The trend of businesses manipulating user reviews through incentives (like, conditional free desserts) or even writing reviews on behalf of customers has been a growing concern.
+As we have mentioned earlier [here](/posts/talk_show/) and [here](/posts/yelp_paradox/), about ingenuine review issues. The trend of businesses manipulating user reviews through incentives (like, conditional free desserts) or even writing reviews on behalf of customers has been a growing concern.
 
 > Dianping, a popular consumer review platform in China, is intensifying its measures against the practice of businesses inducing positive reviews from customers. This move underscores the company's commitment to maintaining the integrity and reliability of its review system.
 

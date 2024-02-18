@@ -6,7 +6,6 @@ cover:
     image: definition/cover.jpeg
     alt: ''
     caption: 'Hoover Tower in the afterglow'
-tags: ["point of view"]
 summary: In memory of the midsummer night's dream of 2023.
 ---
 

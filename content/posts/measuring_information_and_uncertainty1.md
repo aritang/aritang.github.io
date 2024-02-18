@@ -5,7 +5,7 @@ draft: false
 summary: Diving deeper.
 ---
 
-Following [yesterday's post](https://aritang.github.io/posts/measuring_information_and_uncertainty/) about measuing information and uncertainty, reference Frankel and Kamenica (2019) AER paper.
+Following [yesterday's post](/posts/measuring_information_and_uncertainty/) about measuing information and uncertainty, reference Frankel and Kamenica (2019) AER paper.
 
 ### Definitions
 

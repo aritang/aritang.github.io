@@ -29,7 +29,7 @@ Takeaways (of the three-pass approach):
 >
 > "At the end of this pass, you should be able to reconstruct the entire structure of the paper from memory, as well as be able to identify its strong and weak points. In particular, you should be able to pinpoint implicit assumptions, missing citations to relevant work, and potential issues with experimental or analytical techniques."
 
-Relating to an ealier post about how to [listen to management science talks](https://aritang.github.io/posts/how_to_listen_to_ms_talks/), I think we're gradually building up our repertoire. COOOL!
+Relating to an ealier post about how to [listen to management science talks](/posts/how_to_listen_to_ms_talks/), I think we're gradually building up our repertoire. COOOL!
 
 #### Reference
 

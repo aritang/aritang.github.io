@@ -2,7 +2,6 @@
 title: "embracing the TA journey of a market mechanism design course with dedication"
 date: 2023-09-07T22:00:53+08:00
 draft: false
-tags: ["research", "market design", "TA"]
 cover: 
     image: "new_plan/keep_singing.jpeg"
 summary: I am TA-ing a graduate level market mechanism design course this term, with my best professionalism and passion.

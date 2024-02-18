@@ -2,6 +2,7 @@
 title: "the code that can send email in linux server"
 date: 2023-11-05T20:16:21+08:00
 draft: false
+tags: ["tricks", "CS"]
 ---
 
 I often encounter a recurring issue when running projects on a remote server and trying to collect data afterward. The setup in my `run_script.sh` usually includes a line for sending emails once the job is done.

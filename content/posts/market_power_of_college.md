@@ -2,6 +2,7 @@
 title: "the market power of higher education"
 date: 2024-02-12T23:53:25+08:00
 draft: false
+tags: ["econ"]
 ---
 
 Today's blog draws inspiration from Michael D. Smith's perspective on higher education, as discussed in a recent episode of the podcast People I (Mostly) Admire, titled ["Higher Education Is Broken. Can It Be Fixed?](https://freakonomics.com/podcast/higher-education-is-broken-can-it-be-fixed/)" . Btw, the podcast itself is part of [the Freakonomics network](https://freakonomics.com/), the academically inclined perspective is particularly sweetspot for an econ student.

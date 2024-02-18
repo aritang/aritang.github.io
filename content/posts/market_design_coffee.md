@@ -3,6 +3,7 @@ title: "market design coffee"
 date: 2023-12-17T23:33:28+08:00
 draft: false
 summary: one of the best memories of 2023
+tags: ["market design", "life"]
 ---
 
 Every week, something extraordinary happens at Stanford, and I count myself incredibly fortunate to have been a part of it on several occasions. It's the market design coffee hosted by Alvin, a gathering that's as enlightening as it is exhilarating.

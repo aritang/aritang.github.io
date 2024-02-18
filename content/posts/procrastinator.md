@@ -6,7 +6,6 @@ cover:
     image: procrastinator/procras_paper.jpeg
     alt: ''
     caption: 'pic'
-tags: ["paper", "mechanism design", "behavioral economics", "academic", "revealed preference", "intertemporal choice"]
 summary: I promise not to procrastinate and to provide a comprehensive review and perspective on this paper and its subsequent works in the near future—let’s say, within one week.
 ---
 

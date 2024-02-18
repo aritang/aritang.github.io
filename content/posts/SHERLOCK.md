@@ -2,9 +2,10 @@
 title: "SHERLOCK"
 date: 2024-01-13T23:38:10+08:00
 draft: false
+tags: ["CS"]
 ---
 
-This is a trailor of ***SHERLOCK*** - my machine learning final project. I've really been obsessively perfecting my final course thesis (as we've talked about it before [here](https://aritang.github.io/posts/obsessed/)). Though immensely energy and time consuming, they're just for fun but I'm proud of them for their beauty.
+This is a trailor of ***SHERLOCK*** - my machine learning final project. I've really been obsessively perfecting my final course thesis (as we've talked about it before [here](/posts/obsessed/)). Though immensely energy and time consuming, they're just for fun but I'm proud of them for their beauty.
 
 {{<figure align="center" src="/data_vis/scatterplot_prediction.jpeg" caption="and the result is pretty nice as well.">}}
 

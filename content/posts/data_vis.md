@@ -6,7 +6,6 @@ cover:
     image: data_vis/modern_art.png
     alt: ''
     caption: 'th_pic'
-tags: ["point of view", "complaints"]
 summary: Matplotlib or any other tools are never superior to one another. But logic and ideas are, and they matter.
 ---
 

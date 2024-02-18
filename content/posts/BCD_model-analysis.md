@@ -7,7 +7,7 @@ cover:
 summary: Following yesterday's post, as promised, here's an analysis of the model in the series of papers.
 ---
 
-Following [yesterday's post](https://aritang.github.io/posts/bcd_model/), as promised, here's an analysis of the proposed model in the series of papers.
+Following [yesterday's post](/posts/bcd_model/), as promised, here's an analysis of the proposed model in the series of papers.
 
 We'll focus on a few key parameters: $\mu$ (product heterogeneity factor, which multiplies the i.i.d. random parameter $\epsilon$ to yield the product's net value for a consumer), search cost $c$, and market size $n$ (the number of firms). Consumer count $L$ is irrelevant because we're examining expected revenue with i.i.d. consumers, and it's simply a constant multiplier.
 

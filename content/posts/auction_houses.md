@@ -6,7 +6,6 @@ cover:
     image: auction_houses/Les_femmes_d_Alger.jpeg
     alt: ''
     caption: 'th_pic'
-tags: ["point of view", "market design", "economic"]
 summary: The fine art market is definitely not a "free" market according to the classical microeconomic definition. It's a market of friction. And people (billionaires) love that.
 ---
 

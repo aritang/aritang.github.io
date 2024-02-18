@@ -6,7 +6,6 @@ cover:
     image: tattooed_heart/tattooed_heart_live_London_2.jpeg
     alt: ''
     caption: 'th_pic'
-tags: ["ariana grande", "music comment"]
 summary: The aesthetic is awesome and clever as Ariana Grande always was. The vocal is... acceptable but not as good as her Sweetener era.
 ---
 

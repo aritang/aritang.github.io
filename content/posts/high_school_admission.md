@@ -6,7 +6,6 @@ cover:
     image: high_school_admission/chashaofan.jpeg
     alt: ''
     caption: 'chashaofan'
-tags: ["point of view", "market design", "school admission"]
 summary: The Boston-flavored high school admission mechanism in Guangzhou has been running for decades, and I’m so happy to see that it’s evolving and my friend got admitted into his dream school because of the improvement.
 ---
 

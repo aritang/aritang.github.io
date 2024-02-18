@@ -16,7 +16,7 @@ Before our discussion, a short notice: a review of numerous news posts and liter
 
 ### Now, about data trading... here's all the problems:
 
-Following our [dip into the industry of data trading](https://aritang.github.io/data_trading_economist/) yesterday and [some thinkings about that data trading markets are far less nuanced yet](https://aritang.github.io/posts/trading_data/), here's a summary of my readings. Today, all about shits happening in this industry:
+Following our [dip into the industry of data trading](/data_trading_economist/) yesterday and [some thinkings about that data trading markets are far less nuanced yet](/posts/trading_data/), here's a summary of my readings. Today, all about shits happening in this industry:
 
 A notable challenge is the reluctance and bureaucratic hurdles associated with data trading. The absence of a widely accessible public data market platform is not coincidental. Operating such a platform openly involves extensive legal documentation, intricate in details and terms of use, which perpetuates a preference for private, ad hoc transactions.
 

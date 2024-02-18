@@ -2,6 +2,7 @@
 title: "the IDGAS energy in Sabrina Carpenter's 'Nonsense'"
 date: 2024-02-08T11:00:59+08:00
 draft: false
+tags: ["art", "attitude", "music"]
 ---
 
 Sabrina Carpenter's hit *Nonsense* is a great song, both artistically and commercially. The song gives a "I-DONT-GIVE-A-SHIT" (IDGAS) energy. The singer herself said in Genius VERIFIED interview

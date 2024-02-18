@@ -2,7 +2,6 @@
 title: "from Guangzhou to Shanghai… once again"
 date: 2023-09-03T18:35:37+08:00
 draft: false
-tags: ["life", "research"]
 summary: This semester I will be more focused on computational economic and mechanism design.
 ---
 

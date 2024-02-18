@@ -6,7 +6,6 @@ cover:
     image: pilot_class_market/matrix.jpeg
     alt: ''
     caption: 'matrix pic'
-tags: ["point of view", "market design"]
 summary: It's a too quick an unravel market with four programs having exams on the exact same time, followed by exploding offers. But this is how I got in - Mi familia académica!
 ---
 

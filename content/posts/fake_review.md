@@ -4,7 +4,7 @@ date: 2023-11-20T10:03:14+08:00
 draft: false
 ---
 
-Earlier this week, [a post](https://aritang.github.io/posts/talk_show/) touched on the murky world of fake reviews. A pivotal 2021 study in SIGecom Exchanges by He et al. delved into this labyrinth on the behemoth platform, Amazon. The dance between third-party sellers, consumers, and the platform itself is somewhat like a strategic ballet, with each trying to outmaneuver the other for a sliver of extra margin. It's an intricate competitive ecosystem where strategy meets survival.
+Earlier this week, [a post](/posts/talk_show/) touched on the murky world of fake reviews. A pivotal 2021 study in SIGecom Exchanges by He et al. delved into this labyrinth on the behemoth platform, Amazon. The dance between third-party sellers, consumers, and the platform itself is somewhat like a strategic ballet, with each trying to outmaneuver the other for a sliver of extra margin. It's an intricate competitive ecosystem where strategy meets survival.
 
 In the shadows of Amazon's marketplace, a clandestine trend thrives: sellers acquiring fake reviews through Facebook private chat groups. The allure persists despite Amazon's prohibition of this practice. After all, Amazon's algorithm favors products with higher sales and stellar reviews, catapulting them into the limelight, which in turn boosts sales. Therefore, buying fake reviews is like unilaterally deviating from the honest strategy and it seems to be beneficial, at least in the short term.
 

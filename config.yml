@@ -56,8 +56,13 @@ menu:
   main:
     #- identifier: tags
     #  name: tags
-    #  url: /tags/
-    #  weight: 10
+    #    # url: posts/tags
+        #  weight: 10
+    - identifier: tags
+      name: tags
+      url: posts/tags
+      weight: 10
+      #  url: /tags/
     - name: archive
       url: archives
       weight: 10

@@ -6,7 +6,6 @@ cover:
     image: google_ad_gossip/example3.jpeg
     alt: ''
     caption: 'placeholder'
-tags: ["mechanism design", "auction"]
 summary: On June 27, the Wall Street Journel updated an exclusive online news post titled 'Google Violated Its Standards in Ad Deals, Research Finds', based on a 127-page research report published by Analytics. The potential conflict involves renown names such as TikTok, J&J. The impact of the research is huuuuge, according to Wall Street Journel 'Some ad buyers who have reviewed the research say they want their money back'. 
 ---
 

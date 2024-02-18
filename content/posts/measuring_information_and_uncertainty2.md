@@ -5,9 +5,10 @@ draft: false
 summary: buckle up for deep revelation
 cover:
     image: tattooed_heart/legally_blonde.jpeg
+tags: ["econ", "research", "paper", "math", "series"]
 ---
 
-Following [yesterday's post](https://aritang.github.io/posts/measuring_information_and_uncertainty1/), now that it's a series of this Frankel and Kamenica (2019) AER paper.
+Following [yesterday's post](/posts/measuring_information_and_uncertainty1/), now that it's a series of this Frankel and Kamenica (2019) AER paper.
 
 ### Entropy as a Measure
 
