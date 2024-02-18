@@ -12,7 +12,7 @@ summary: categorized and re-organized list of tags. hurray to my OCD...
 
 1. **[research](/tags/research/)**: posts that delve into academic or exploratory studies
     - **[econ](/tags/econ/)**: general economics
-    - **[market design](/tags/market\ design/)**: i love it so it gets it individual spot
+    - **[market design](/tags/market_design/)**: i love it so it gets it individual spot
     - **[CS](/tags/CS/)**: computer science, more to a technical (coding) sense though
     - **[tricks](/tags/tricks/)**: Broader than CS, encompassing technicals in engineering, data science, or any technical how-tos
     - **[math](/tags/math/)**: including mathematically inclined contents. algorithms and computational complexity fall within here. i didn't write extensively on this topic, but would like to write more in the future
