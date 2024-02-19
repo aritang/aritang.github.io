@@ -1,6 +1,6 @@
 ---
 title: "Secret Mathematical Patterns Revealed in Bach’s Music"
-date: 2024-02-19T23:48:51+08:00
+date: 2024-02-20T23:48:51+08:00
 draft: false
 tags: ["research", "paper", "music"]
 ---
