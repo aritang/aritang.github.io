@@ -1,6 +1,6 @@
 ---
 title: "an artist's attitude | from Ariana Grande's Billboard cover story"
-date: 2024-02-24T00:51:55+08:00
+date: 2024-02-25T00:51:55+08:00
 draft: false
 tags: ["nonsense"]
 
