@@ -4,6 +4,7 @@ date: 2024-02-29T23:41:46+08:00
 draft: false
 cover:
     image: tattooed_heart/tattooed_heart_swt_live_2.jpeg
+tags: ["nonsense", "music", "attitude"]
 ---
 
 Two songs from Ariana Grande's debut album *Yours Truly* hold a special place in my heart, and they've earned their spots in my top 10 list. The first is "[The Way](/posts/the_way/)", and the other is "Tattooed Heart". While "The Way" was an immediate hit upon release, "Tattooed Heart" gained recognition more gradually, especially after Grande performed it frequently in her later career, notably during her Sweetener World Tour.
