@@ -1,6 +1,6 @@
 ---
 title: "goodnight n go"
-date: 2024-03-02T22:58:52+08:00
+date: 2024-03-03T22:58:52+08:00
 draft: false
 tags: ["nonsense", "music", "attitude", "sweetener"]
 ---
