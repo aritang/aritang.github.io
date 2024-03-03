@@ -2,11 +2,12 @@
 title: "sweetener"
 date: 2024-03-02T21:57:47+08:00
 draft: false
+tags: ["nonsense", "music", "attitude", "sweetener"]
 ---
 
 **Listen here:** [Ariana Grande, “Sweetener”]()
 
-The track "**sweetener**" (stylized in all lowercase, listen [here](https://www.youtube.com/watch?v=6vay5SgNPpk)) serving as the title track of Ariana Grande's fourth studio album, emerges as a pivotal nomination in my top-10 Ariana Grande list. This album, ***Sweetener***, stands as a testament to Grande's artistic evolution, clinching a Grammy and solidifying her status in the music industry. The artist herself has elucidated the essence of the album's title, suggesting it's an ode to the act of illuminating one's existence or circumstances, metaphorically "sweetening" life's myriad challenges:
+The title track of Ariana Grande's fourth studio album "**sweetener**" (stylized in all lowercase) the pivotal nomination in my top-10 Ariana Grande list. This album, ***Sweetener***, won Grande a Grammy. The artist herself has elucidated the essence of the album's title, suggesting it's an ode to the act of illuminating one's existence or circumstances, metaphorically "sweetening" life's myriad challenges:
 
 > it's kind of about bringing light to a situation or to someone's life or somebody else brings light to your life. Sweetening the situation.
 
