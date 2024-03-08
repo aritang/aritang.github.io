@@ -2,6 +2,7 @@
 title: "needy"
 date: 2024-03-06T23:08:46+08:00
 draft: false
+tags: ["nonsense", "music", "attitude", "sweetener"]
 ---
 
 ***Thank U, Next*** got two seats out of the top-10 list. One is [imagine](/posts/imagine/), the other is **needy**.

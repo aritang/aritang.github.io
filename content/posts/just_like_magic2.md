@@ -2,6 +2,7 @@
 title: "just like magic"
 date: 2024-03-08T00:53:31+08:00
 draft: false
+tags: ["nonsense", "music", "attitude", "sweetener"]
 ---
 
 Ariana Grande possesses a magnetic energy that attracts literally everything–from musical excellence to (possibly undesired) publicity. Among her songs, "just like magic" stands out as a testament to awe-inspiring confidence:

@@ -2,6 +2,7 @@
 title: "imagine"
 date: 2024-03-05T23:55:46+08:00
 draft: false
+tags: ["nonsense", "music", "attitude", "sweetener"]
 ---
 
 As the opening track of Ariana Grande's tumultuous album *Thank U, Next*, "imagine" sets the tone with mesmerizing minimalism. Listen [here](https://youtu.be/7_rftpd0u0U?si=8fAYMCzbEAuH2LYD). This official music video of imagine features mosaiced icebergs melting to fall. The song gives an impression of a breathtakingly beautiful abstract painting, when one looks more carefully, there is so much pain tangled within.
