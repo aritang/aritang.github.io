@@ -1,7 +1,8 @@
 ---
-title: "a scholarship to TaiLong bank - discovering their business model in an out"
-date: 2024-03-26T23:39:16+08:00
+title: "a scholarship visit to TaiLong bank - discovering their business model in an out"
+date: 2024-03-27T23:39:16+08:00
 draft: false
+tags: ["life", "nonsense", "econ", "money"]
 ---
 
 **Zhejiang Tailong Commercial Bank** (TLB) is the most renowned **S**mall-and-**M**edium-sized **E**nterprise (SME) financing service provider in China. TLB has invested over ¥100 million in its charity fund and consistently allocates 2% of its revenue to its foundation. I was fortunate to receive a scholarship sponsored by TLB and even more so to be invited to their headquarters today for a face-to-face meeting with their chairman and the leaders of the Shanghai Branch.
