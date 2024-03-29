@@ -5,12 +5,6 @@ draft: false
 tags: ["nonsense"]
 ---
 
-There is a wealth of literature covering how to boost employee productivity and foster a sense of belonging in workforce. Continuing [the discuss yesterday about their business model](/posts/lending_money_to_small_business), [my visit to TaiLong bank](/posts/a_visit_to_tailong_bank) also gives a refreshing insight in how to foster the sense of belonging. Its leverage effect works pretty well in practise – cloying their employee's **parents**.
-
-TaiLong bank's business model and their employee distribution are solid evidence for the necessity of this strategy. Providing financing service for SMEs (small-and-micro-enterprises) requires small-grained investigation (as compared to general modern models of big-data-control-everything) which results in more than 10k employees, where more than half of them are actual managers that roots in community to foster business. 
-
-> TLB has a strongly decentralized structure and delegates many authorities to the branches and sub-branches. Approximately more than 80% of all loan decisions can be made at sub-branch level.
-
 Another day, another mountain of literature on boosting employee productivity and fostering workplace belonging. It's almost as if we're running out of ways to say the same thing. Building on yesterday's discussion, my visit to TaiLong Bank unveiled an innovative practice that has proven effective—engaging employees' **parents**.
 
 > TaiLong Bank operates with a decentralized structure, empowering branches and sub-branches with significant autonomy. Notably, over 80% of loan decisions are made at the sub-branch level.
