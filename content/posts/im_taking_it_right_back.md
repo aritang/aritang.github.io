@@ -1,7 +1,7 @@
 ---
 title: "i'm taking it right back"
 date: 2024-04-06T23:56:13+08:00
-draft: false
+draft: true
 ---
 
 Authenticity is arguably the most powerful persona. However, being authentic requires one to be emotionally tough against disrupts and hostility. Sometimes, you need to draw a line:

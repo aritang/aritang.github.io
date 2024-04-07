@@ -1,7 +1,7 @@
 ---
 title: "imperfect for you"
 date: 2024-04-04T00:02:09+08:00
-draft: false
+draft: true
 cover:
     image: eternal_sunshine/hero_cover.jpeg
 ---

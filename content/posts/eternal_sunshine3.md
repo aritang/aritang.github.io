@@ -1,7 +1,7 @@
 ---
 title: "lyrics"
 date: 2024-04-05T23:28:43+08:00
-draft: false
+draft: true
 tags: ["nonsense"]
 ---
 
