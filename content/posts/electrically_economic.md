@@ -83,4 +83,10 @@ Subsequently, the problem can be addressed using a variation of the newsvendor m
 
 ### Application and Insights:
 
-*(This section is currently being developed.)*
+One of the paper's key contributions is its application – estimating and testing on real data. Apart from this, an insight:
+
+### insights
+
+- **granularity matters** 
+
+    During modelling we just assumes time unit $t = 1, 2, ..., T$. In practice, it matters whether these units corresponds to 15 minutes or a day. The paper demonstrated that, fine-grained time slices (<=4h) ensures accurate estimation, whereas if time units are taken to be too large, the model tends to invest more facilities than optimal. Which make sense, because larger granularity almost corresponds to storing surplus self-generated electricity to use later. If such flexibility is allowed, the model indeed should prefer investing in more facilities.
