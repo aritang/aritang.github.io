@@ -1,6 +1,6 @@
 ---
 title: "mind games - how two psychologists rewrote the rules on human thought"
-date: 2024-04-18T12:24:17+08:00
+date: 2024-04-19T12:24:17+08:00
 draft: false
 ---
 
