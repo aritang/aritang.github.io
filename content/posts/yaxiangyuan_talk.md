@@ -1,13 +1,29 @@
 ---
 title: "YaXiang Yuan in town"
 date: 2024-04-21T16:21:48+08:00
-draft: true
+draft: false
+cover:
+    image: definition/yxy.jpeg
 ---
 
-YaXiang Yuan visited SUFE and gave a talk on *Big Data & Optimization*. He beautifully romanced an audience that consisted of curious MBA students, nasty geeky undergrads and a bunch of leaders with diverse backgrounds–appealing to heterogeneous interests with a delicate balance over depth and fun, to make up a lovely Saturday talk is certainly next-level.
+Professor YaXiang Yuan recently graced SUFE with a compelling talk on *Big Data & Optimization*, masterfully engaging a diverse audience—from MBA students and enthusiastic undergrads to school leaders. He skillfully navigated the complexities of optimization theory, balancing depth with accessibility, transforming a regular Saturday into an enlightening experience.
 
-Yuan has a background in optimization theory, but his administrative experience 
+He began by highlighting key disciplines essential for shaping students into effective professionals:
 
--- key: problems motivated by data. how to manipulate the data, solve the problem (break down etc.) (theory) and integrate into real world.
+- Statistics
+- Computation
+- Optimization
+- Approximation Theory
+- Discrete Mathematics
+- Combinatorial Graph Theory
+- Differential Equations
+- Computational Geometry
+- and more
 
-a lot to optimization wisdom. very inspiring and enjoyable talk in a Saturday afternoon. humble and open minded attitude is very beautiful.
+Using real-life examples, Yuan showcased how cutting-edge optimization theories enhance the modeling and solving of complex problems. Professor Yuan infused the session with his unique charm, paying homage to his deep roots in optimization theory while ensuring the talk remained approachable for all attendees.
+
+The discussion then shifted to modern algorithms that leverage burgeoning computational power, primarily updating traditional gradient methods with innovative techniques to speed up the solving process. The audience engagement was palpable. In the final Q&A session, one student questioned the prevalent reliance on gradient methods in mainstream solutions. Professor Yuan enthusiastically addressed this, detailing the forefront of zero-order optimization and discussing its practical applications—important especially in scenarios where gradients are unattainable.
+
+The event concluded on a high note, when my friend and I was very fortunate to have an opportunity to meet one of the most prominent scholars in the field–we chatted for a while off-the-stage-and-camera after the event:
+
+{{<figure align="center" src="/definition/yxy.jpeg" caption="Professor Yuan's openness and patience with almost all questions, whether mainstream or peripheral, added a personal touch that made the afternoon truly memorable.">}}
