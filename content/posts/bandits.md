@@ -17,8 +17,10 @@ $$
 Now consider a decision problem with $n$ available independent bandit processes $B_1, . . . , B_n$. The state of the decision process is the vector of states $ξ = (ξ_1,...,ξ_n)$ and is a member of the product space $E = E_1 \times \cdots \times E_n$. If at decision time $t$ we choose to apply the continuation control to $B_i$, which is in state $ξ_i$, then a reward $r_i(ξ_i)$ is obtained from it. Standard dynamic programming gives us the solution over all past-mesuarable policies $\pi$:
 $$
 \begin{align}
-V(\xi) & = \sup_{\pi}\mathbb E\left[ \sum_{t = 0}^\infty a^t r_{i_t}(\xi_{i_t}(t)) \bigg | \xi(0) = \xi \right]\\
+V(\xi) & = \sup_{\pi}\mathbb E\left[ \sum_{t = 0}^\infty a^t r_{i_t}(\xi_{i_t}(t)) \bigg | \xi(0) = \xi \right]\cr
 & = \max_{i\in [n]}\{r_i(\xi_i) + a\sum_{y\in E_i}P_i(y|\xi_i)V(y, \xi_{-i})\}
 \end{align}
 $$
-btw, $\xi_{-i} = [\xi_1, \ldots, \xi_{i - 1}, \xi_{i + 1}, \ldots, \xi_n]$. And the above process, unfortunately, is computationally infeasible for even moderate sizes of $|E|$ and $n$.
+btw, $\xi_{-i} = [\xi_1, \ldots, \xi_{i - 1}, \xi_{i + 1}, \ldots, \xi_n]$. And the above process, unfortunately, is computationally infeasible for even moderate sizes of $|E|$ and $n$​.
+
+--- stay tuned for next episode - Gittin's index.
