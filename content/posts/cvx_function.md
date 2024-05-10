@@ -4,6 +4,10 @@ date: 2024-05-08T23:51:21+08:00
 draft: false
 ---
 
+> TA Notes | Problem solving session for *Advanced Operational Research*, taught at SUFE 2024 Spring/Summer semester.
+>
+> Inspiration taken from [EE364a](https://web.stanford.edu/class/ee364a/) I took 2023 Summer at Stanford.
+
 There are basically three ways to establish convexity of a function $f$:
 
 - verify definition (rarely used)
@@ -12,9 +16,13 @@ There are basically three ways to establish convexity of a function $f$:
 
     NOTE: only recommended for **simple enough** functions. a function is simple enough iff. it's 'manual-computationally tractable' for ***you***
 
-- show that $f$ is obtained from simple convex functions by operations that preserve convexity
+- show that $f$​ is obtained from simple convex functions by operations that preserve convexity
 
-**General composition rule**. Composition $g\circ f$of $g: \mathbb R^n \to \mathbb R^k$ and $h: \mathbb R^n \to \mathbb R$ is $f:= g\circ h$ where
+> two immensely useful methods
+
+### **general composition rule**
+
+Composition $g\circ f$of $g: \mathbb R^n \to \mathbb R^k$ and $h: \mathbb R^n \to \mathbb R$ is $f:= g\circ h$ where
 $$
 f(x) = h(g(x)) =h(g_1(x), \ldots, g_k(x)).
 $$
@@ -26,9 +34,11 @@ $f$ is convex if $h$ is convex and for each $i$, one of the following holds
 
 And another trick
 
-**Restriction to a line**. $f: \mathbb R^n \to \mathbb R$ is convex iff. the function $g:\mathbb R\to \mathbb R$, where
+### **restriction to a line**
+
+$f: \mathbb R^n \to \mathbb R$ is convex iff. the function $g:\mathbb R\to \mathbb R$​, where
 $$
-g(t):= f(x + tv),\quad \textbf{dom}\ g = \{t|x + tv \in \textbf{dom} \ f\}
+g(t):= f(x + tv),\quad \textbf{dom}\ g := [t|x + tv \in \textbf{dom} \ f]
 $$
 is convex (in $t$) for any $x\in \textbf{dom} \ f, v \in \R^n$.
 
