@@ -4,7 +4,7 @@ date: 2024-05-28T23:30:36+08:00
 draft: false
 ---
 
-> ***Andante cantabile* **(It.) is a direction often used by composers. In general, it means flowing and songlike.
+> ***Andante cantabile***(It.) is a direction often used by composers. In general, it means flowing and songlike.
 >
 > The **andante** tempo is known as the walking pace, and the pacing and energy should generally feel like a nice stroll.
 >
