@@ -45,7 +45,7 @@ s.t.\ & \sum_{j = 1}^m x_j \le B  & (\forall i)\cr
 & x_j \ge 0 & (\forall j)
 \end{align}
 $$
-As the designer, we are insterested in whether a particular action (i.e. effort invested) $x^*\in \mathbb R_{\ge 0}^m$ (or, its support $S(x^*)$) is incentivizable via some scoring rule design of $M(\cdot)$. The result is:
+As the designer, we are insterested in whether a particular action (i.e. effort invested) $x^* \in \mathbb{R}{}_{\ge 0}^m$ (or, its support $S(x^*)$) is incentivizable via some scoring rule design of $M(\cdot)$. The result is:
 
 {{<figure align="center" src="/who_do_we_blame/linear_incentives.jpeg" caption="linear mechanisms are optimal in the following sense: whenever a 'reasonable' mechanism can incentivize a particular behavior, there is a linear mechanism that can do so as well.">}}
 
