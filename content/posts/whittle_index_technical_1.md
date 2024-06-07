@@ -12,7 +12,7 @@ Each volunteer can either be active or inactive at a certain time point. Only ac
 
 {{<figure align="center" src="/who_do_we_blame/volunteer_transition.jpeg" caption="the state transitions of volunteers based on actions and associated probabilities. Active volunteers ($s_t = 1$), when no action is taken ($y_t = 0$) remains active. If action is taken ($y_t = 1$), they might generate a reward w.p. $p_i$ and become inactive, or stay active without generating a reward. Inactive volunteer return to activity based on specific probabilities ($q_i$).">}}
 
-The decision maker (in the perspective of the platform) has action space $[y_i^t]_{i\in [N]}$, where each $y_i^t\in \{0, 1\}$ corresponds to whether volunteer $i$ is 'pulled' at time step $t$. The platform aims to maximizes averaged reward over the long run:
+The decision maker (in the perspective of the platform) has action space $\mathbf y^t$, where each $y_i^t\in \{0, 1\}, \forall i$ corresponds to whether arm $i$ is being 'pulled' at time step $t$. The platform aims to maximizes averaged reward over the long run:
 $$
 \max_\pi \lim_{T\to\infty}\mathbb E_{y \sim \pi(\cdot)}\left[\frac1T \sum_{t = 1}^{T} \sum_{i\in [N]}r_i(s_i^t, y_i^t)\right],\quad \text{s.t. }\frac1T\mathbb E[\sum_{i, t}y_i^t]\le B
 $$
