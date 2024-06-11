@@ -39,14 +39,14 @@ V_i(0) = \mathbb E_\kappa[ V_i^\kappa(1)] + \frac{\lambda - \gamma_i(\lambda)}{q
 $$
 and,
 $$
-\gamma_i(\lambda) + V_i^k(1) =\mathbb E_\kappa[ V_i^\kappa(1)] + \max\left(\frac{p_{k, i}(\lambda - \gamma_i(\lambda))}{q_i}, \lambda\right).
+\gamma_i(\lambda) + V_i^k(1) =\mathbb E_\kappa[ V_i^\kappa(1)] + \max\left(\frac{p_{k, i}(\lambda - \gamma_i(\lambda))}{q_i} + p_{k, i}w_k, \lambda\right).
 $$
 Taking expectation again for $k$:
 $$
-\gamma_i(\lambda) = \mathbb E_k \max\left(\frac{p_{k, i}(\lambda - \gamma_i(\lambda))}{q_i}, \lambda\right).
+\gamma_i(\lambda) = \mathbb E_k \max\left(\frac{p_{k, i}(\lambda - \gamma_i(\lambda))}{q_i} + p_{k, i}w_k, \lambda\right).
 $$
 The above one-dimensional fixed point can be pretty much solved efficiently, as does the rest of $V_i^k(1), \forall k\in [K]$. Let
 $$
-\lambda_i^\star(k) :=\sup_{\lambda} \left(\lambda: (\frac{p_{k, i}}{q_i}- 1)\lambda - \frac{p_{k, i}}{q_i}\gamma_i(\lambda)\ge 0\right)
+\lambda_i^\star(k) :=\sup_{\lambda} \left(\lambda: (\frac{p_{k, i}}{q_i}- 1)\lambda + p_{k, i}w_k - \frac{p_{k, i}}{q_i}\gamma_i(\lambda)\ge 0\right)
 $$
 and it is the index for volunteer $i$ with task $k$. With the Whittle Index in our hands, we can then apply heuristics as we wishes.
