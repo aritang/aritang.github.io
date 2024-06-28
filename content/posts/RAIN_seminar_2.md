@@ -40,12 +40,12 @@ $$
 U_a(\text{or } U^d) : \mathcal{Z} \times \text{Action Space} \to \mathbb{R}
 $$
 Given the sequence of attackers $ \{A_{k_1}, \ldots, A_{k_T}\} $ and context $ \mathbf z_1, \ldots, \mathbf z_T $, the optimal-in-hindsight policy for context $ \mathbf z $ is:
-$$
-\pi^*(\mathbf z) \in \arg\max_{\mathbf p} \sum_{t = 1}^T U(\mathbf z, \mathbf p, \mathbf y^*(\mathbf p, \mathbf z)) \mathbb{1}\{\mathbf z_t = \mathbf z\}
-$$
+
+$$\pi^{*}(\mathbf z) \in \arg\max_{\mathbf p} \sum_{t = 1}^T U(\mathbf {z}, \mathbf p, \mathbf y (\mathbf p, \mathbf z)) \mathbb{1}\{\mathbf z_t = \mathbf z\}.$$
+
 Contextual regret is then defined as:
 $$
-R(T) := \sum_{t = 1}^T \left( U(\mathbf z, \pi^*(\mathbf z), \mathbf y^*(\pi^*(\mathbf z), \mathbf z)) \mathbb{1}\{\mathbf z_t = \mathbf z\} - U(\mathbf z, \pi(\mathbf z), \mathbf y^*(\pi(\mathbf z), \mathbf z)) \mathbb{1}\{\mathbf z_t = \mathbf z\} \right)
+R(T) := \sum_{t = 1}^T \left( U(\mathbf z, {\pi}(\mathbf z), \mathbf y(\pi{}(\mathbf z), \mathbf z)) \mathbb{1}\{\mathbf z_t = \mathbf z\} - U^{\text{opt}} \right)
 $$
 
 ### intuition and result
