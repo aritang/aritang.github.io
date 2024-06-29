@@ -1,6 +1,6 @@
 ---
-title: "Marianela Nunez in *Les Rendezvous* | a dance of sweet grace and precision"
-date: 2024-06-29T16:45:18-07:00
+title: "Marianela Nunez in Les Rendezvous | a dance of sweet grace and precision"
+date: 2024-06-29T16:20:18-07:00
 draft: false
 cover: 
     image: tattooed_heart/les_rendezvous_nela.jpeg
