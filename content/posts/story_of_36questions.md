@@ -48,4 +48,4 @@ along with a few other more provocative questions.
 
 [4] Jones, D. (2015, January 9). *Modern love: The 36 questions that lead to love*. The New York Times.
 
-[5] Vendrov, I. [@IvanVendrov]. (2023, January 7). [Thread title or description of the content of the thread]. Twitter. https://twitter.com/IvanVendrov/status/1611809676982910976
+[5] Vendrov, I. [@IvanVendrov]. (2023, January 7). [The famous "36 questions that lead to love"....]. Twitter. https://twitter.com/IvanVendrov/status/1611809676982910976
