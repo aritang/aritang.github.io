@@ -1,5 +1,5 @@
 ---
-title: "the love potion | 36-question ver."
+title: "the love potion (clean) | 36-question version"
 date: 2024-07-02T10:18:33-07:00
 draft: false
 ---
