@@ -15,7 +15,7 @@ Welcome to my corner of the internet! My name is Ariana Tang, and this blog serv
 >
 > This project is both a research endeavor and a fun way to connect with others. I'm eager to learn from this experience and would greatly appreciate any feedback or insights you might have—whether it's about the ad itself, my research topics, or just a shared interest in economics and game theory, I'm here to chat!
 >
-> My email: aritang@stanford.edu
+> Please feel free to explore my blog, or reach out to me directly via email (aritang@stanford.edu) or WeChat (id: arianaaa_tang). Let’s connect and do something fun:wink:
 
 Download My CV [***here***](/files/ariana_tang_cv.pdf).
 
