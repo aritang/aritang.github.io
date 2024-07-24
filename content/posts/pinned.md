@@ -9,7 +9,13 @@ cover:
 
 > Last update: July 2024
 
-Hi, my name is Ariana Tang, and this is my blog where I write things about my research, my artistic viewpoints and occasionally my life.
+Welcome to my corner of the internet! My name is Ariana Tang, and this blog serves as a gateway into my world of research, creativity, and everyday thoughts.
+
+> **Thank you for visiting my site! Perhaps you’ve landed here through a small experiment of mine.**  **As part of my research on privacy, cookies, and digital advertising, I’ve launched this Google Ad to understand firsthand how online advertising works and to engage with a broader audience.**
+>
+> This project is both a research endeavor and a fun way to connect with others. I'm eager to learn from this experience and would greatly appreciate any feedback or insights you might have—whether it's about the ad itself, my research topics, or just a shared interest in economics and game theory, I'm here to chat!
+>
+> My email: aritang@stanford.edu
 
 Download My CV [***here***](/files/ariana_tang_cv.pdf).
 
