@@ -4,6 +4,7 @@ title: ariana's blog
 theme: PaperMod
 math: true
 params:
+  env: production
   math: true
   enableEmoji: true
   katexPath : "katex"
