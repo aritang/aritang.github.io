@@ -11,7 +11,7 @@ cover:
 
 Hi, my name is Ariana Tang, and this is my blog where I write things about my research, my artistic viewpoints and occasionally my life.
 
-Download My CV <a href="/files/Ariana_Tang_CV.pdf" download class="cv-download-button" id="cv-download">**here**</a>.
+Download My CV [***here***](/files/ariana_tang_cv.pdf).
 
 
 {{<figure align="center" src="/bio/profile_photo.jpeg" caption="August, 2023, Stanford. Canon EOS M50m2 EF-M15-45mm ƒ3.5-6.3 IS STM.">}}
