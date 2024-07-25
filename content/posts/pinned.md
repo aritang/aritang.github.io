@@ -11,7 +11,7 @@ cover:
 
 Welcome to my corner of the internet! My name is Ariana Tang, and this blog serves as a gateway into my world of research, creativity, and everyday thoughts.
 
-> Thank you for visiting my site! Perhaps you’ve landed here through a small experiment of mine.  As part of my research on privacy, cookies, and digital advertising, I’ve launched this Google Ad to understand firsthand: how online advertising really works.
+> **Thank you for visiting my site!** Perhaps you’ve landed here through a small experiment of mine.  As part of my research on privacy, cookies, and digital advertising, I’ve launched this Google Ad to understand firsthand: how online advertising really works. See the detailed blog [here](/posts/ads_up_and_running/).
 >
 > This project is both a research endeavor and a fun way to connect with others. I'm eager to learn from this experience and would greatly appreciate any feedback or insights you might have—whether it's about the ad itself, my research topics, or just a shared interest in economics and game theory, I'm here to chat!
 >
