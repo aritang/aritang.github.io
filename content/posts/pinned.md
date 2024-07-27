@@ -11,11 +11,13 @@ cover:
 
 Welcome to my corner of the internet! My name is Ariana Tang, and this blog serves as a gateway into my world of research, creativity, and everyday thoughts.
 
-> **Thank you for visiting my site!** Perhaps you’ve landed here through a small experiment of mine.  As part of my research on privacy, cookies, and digital advertising, I’ve launched this Google Ad to understand firsthand: how online advertising really works. See the detailed blog [here](/posts/ads_up_and_running/).
+> ### if you clicked through an ad:
+>
+> **First, thank you for visiting my site!** This is a small experiment of mine. As part of my research on privacy, cookies, and digital advertising, I’ve launched this advertisement campaign via Google Ad Exchange to understand firsthand: how online advertising really works and interact with privacy. See the detailed blog [here](/posts/ads_up_and_running/).
 >
 > This project is both a research endeavor and a fun way to connect with others. I'm eager to learn from this experience and would greatly appreciate any feedback or insights you might have—whether it's about the ad itself, my research topics, or just a shared interest in economics and game theory, I'm here to chat!
 >
-> Please feel free to explore my blog, or reach out to me directly via email (aritang@stanford.edu) or WeChat (id: arianaaa_tang). Let’s connect and do something fun:wink:
+> Please feel free to explore my blog, or reach out to me directly via email (aritang@stanford.edu) or WeChat (id: arianaaa_tang). Let’s connect and maybe we can do something fun:wink:
 
 Download My CV [***here***](/files/ariana_tang_cv.pdf).
 
