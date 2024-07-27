@@ -71,8 +71,11 @@ Denote $S^c := \{S_t^c\}_t$ as the full strategy space over time.
 
 And finally, the firm's decision presents as the following optimization: to maximize its expected utility subject to the consumer's optimal response constraint:
 $$
-\max_{\mathbf z \in 2^{\R_+}}\  \mathbb E[U^f(\mathbf z, s^c)]\quad \text{firm's utility}\\
-\text{s.t. }\mathbb E[U^c(\mathbf z, s^c_t) | \omega _t]\ge\mathbb E[U^c(\mathbf z, \tilde s^c_t) | \omega _t] \forall t, \omega_t \in \Omega_t, \tilde s^c\in S_t^c \quad \\\text{(consumer's best response given }\mathbf z)
+\begin{align*}
+\max_{\mathbf z \in 2^{\R_+}}&\  \mathbb E[U^f(\mathbf z, s^c)]\quad \text{firm's utility}\cr
+\text{s.t.}&\  \mathbb E[U^c(\mathbf z, s^c_t) | \omega _t]\ge\mathbb E[U^c(\mathbf z, \tilde s^c_t) | \omega _t] \forall t, \omega_t \in \Omega_t, \tilde s^c\in S_t^c \quad \cr
+& \ \text{(consumer's best response given }\mathbf z)
+\end{align*}
 $$
 After observations, explains, lemmas, we land gracefully (really?) at Theorem 2 of the paper:
 
