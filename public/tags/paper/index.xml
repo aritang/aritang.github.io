@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>paper on ariana&#39;s blog</title>
+    <link>/tags/paper/</link>
+    <description>Recent content in paper on ariana&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Feb 2024 23:48:51 +0800</lastBuildDate><atom:link href="/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Secret Mathematical Patterns Revealed in Bach’s Music</title>
+      <link>/posts/mathematical_pattern_music/</link>
+      <pubDate>Tue, 20 Feb 2024 23:48:51 +0800</pubDate>
+      
+      <guid>/posts/mathematical_pattern_music/</guid>
+      <description>Music exists at the sublime confluence of mathematics and artistry, embodying a synergy that elevates both disciplines. The essence of music theory, particularly in the analysis of chords, mirrors an advanced form of modular arithmetic, showcasing a mathematical elegance. Musical scores serve as encoded scripts of melodies, awaiting decryption and performance. Particularly, Johann Sebastian Bach epitomizes this blend of mathematical intricacy and artistic beauty, standing as a paragon of the fusion between the two realms.</description>
+    </item>
+    
+    <item>
+      <title>measuring information and uncertainty</title>
+      <link>/posts/measuring_information_and_uncertainty2/</link>
+      <pubDate>Wed, 13 Dec 2023 23:03:45 +0800</pubDate>
+      
+      <guid>/posts/measuring_information_and_uncertainty2/</guid>
+      <description>buckle up for deep revelation</description>
+    </item>
+    
+  </channel>
+</rss>

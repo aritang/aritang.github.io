@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>basics on ariana&#39;s blog</title>
+    <link>/tags/basics/</link>
+    <description>Recent content in basics on ariana&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Feb 2024 20:21:22 +0800</lastBuildDate><atom:link href="/tags/basics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tags</title>
+      <link>/posts/tags/</link>
+      <pubDate>Sun, 18 Feb 2024 20:21:22 +0800</pubDate>
+      
+      <guid>/posts/tags/</guid>
+      <description>categorized and re-organized list of tags. hurray to my OCD&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>the first amendment | ariana&#39;s blog </title>
+      <link>/posts/the_first_amendment/</link>
+      <pubDate>Sat, 17 Feb 2024 18:32:00 +0800</pubDate>
+      
+      <guid>/posts/the_first_amendment/</guid>
+      <description>what to look forward</description>
+    </item>
+    
+  </channel>
+</rss>

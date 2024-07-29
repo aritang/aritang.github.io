@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>technical on ariana&#39;s blog</title>
+    <link>/tags/technical/</link>
+    <description>Recent content in technical on ariana&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2024 20:57:08 +0800</lastBuildDate><atom:link href="/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eclipsed revelation - crafting eternal sunshine in keystrokes</title>
+      <link>/posts/eternal_sunshine_themeable/</link>
+      <pubDate>Tue, 26 Mar 2024 20:57:08 +0800</pubDate>
+      
+      <guid>/posts/eternal_sunshine_themeable/</guid>
+      <description>Inspired by the aesthetic of eternal sunshine&amp;rsquo;s album cover, I customized a Typora themeable that echos the album&amp;rsquo;s concept.
+the red of the gloves, paired with the innocent white dress, echoes a juxtaposition of passion and purity. meanwhile The dark background augments the sense of mesmerizing self-revelation.
+Instead of directly replicating the color palette from the album cover, I decided to take a more conceptual approach, in reflecting the commitment to an ethereal minimalism—like, an homage to the what Saturn Return brings into our lives.</description>
+    </item>
+    
+  </channel>
+</rss>

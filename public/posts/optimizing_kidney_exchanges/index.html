@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>optimizing kidney exchanges - and beyond | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Looking at two-sided market literatures so as to motivate one of my recently launched project, here&rsquo;s a brief reading write-up of two papers.
+Starting with the first one: Ashlagi et al. On Matching and Thickness in Heterogeneous Dynamic Markets (OR2019).
+kidney exchange 101 Before diving into the paper, here&rsquo;s how kidney exchange actually works.
+the concept of &ldquo;exchange&rdquo; Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient.">
+<meta name="author" content="">
+<link rel="canonical" href="/posts/optimizing_kidney_exchanges/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="optimizing kidney exchanges - and beyond" />
+<meta property="og:description" content="Looking at two-sided market literatures so as to motivate one of my recently launched project, here&rsquo;s a brief reading write-up of two papers.
+Starting with the first one: Ashlagi et al. On Matching and Thickness in Heterogeneous Dynamic Markets (OR2019).
+kidney exchange 101 Before diving into the paper, here&rsquo;s how kidney exchange actually works.
+the concept of &ldquo;exchange&rdquo; Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/optimizing_kidney_exchanges/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-30T17:02:01+08:00" />
+<meta property="article:modified_time" content="2024-03-30T17:02:01+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="optimizing kidney exchanges - and beyond"/>
+<meta name="twitter:description" content="Looking at two-sided market literatures so as to motivate one of my recently launched project, here&rsquo;s a brief reading write-up of two papers.
+Starting with the first one: Ashlagi et al. On Matching and Thickness in Heterogeneous Dynamic Markets (OR2019).
+kidney exchange 101 Before diving into the paper, here&rsquo;s how kidney exchange actually works.
+the concept of &ldquo;exchange&rdquo; Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "optimizing kidney exchanges - and beyond",
+      "item": "/posts/optimizing_kidney_exchanges/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "optimizing kidney exchanges - and beyond",
+  "name": "optimizing kidney exchanges - and beyond",
+  "description": "Looking at two-sided market literatures so as to motivate one of my recently launched project, here\u0026rsquo;s a brief reading write-up of two papers.\nStarting with the first one: Ashlagi et al. On Matching and Thickness in Heterogeneous Dynamic Markets (OR2019).\nkidney exchange 101 Before diving into the paper, here\u0026rsquo;s how kidney exchange actually works.\nthe concept of \u0026ldquo;exchange\u0026rdquo; Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Looking at two-sided market literatures so as to motivate one of my recently launched project, here’s a brief reading write-up of two papers.\nStarting with the first one: Ashlagi et al. On Matching and Thickness in Heterogeneous Dynamic Markets (OR2019).\nkidney exchange 101 Before diving into the paper, here’s how kidney exchange actually works.\nthe concept of “exchange” Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient. Kidney exchange allows such patient–donor pairs to swap donors so that each patient can receive a kidney from a compatible donor.\nThere are two main methods of conducting kidney exchanges: swaps (bilateral matching) and chains.\nSwaps (Bilateral Matching): Consider incompatible pairs $(P_1, D_1)$ and $(P_2, D_2)$, where $P_i$ represents a patient and $D_i$ their intended donor. If $D_1 \\not\\to P_1$ and $D_2 \\not \\to P_2$, but $D_2 \\to P_1$ and $D_1 \\to P_2$, a two-way cycle can be formed for simultaneous transplants. Due to logistical constraints, only bilateral matching is commonly practiced, requiring adjacent operating rooms for donors and recipients.\nChains: In scenarios with unpaired donors, such as altruistic “angel” donors or deceased donors, chains can be initiated in the donation pool. For example, an initial donor $D_0$ donates to patient $P_1$, whose donor $D_1$ then donates to $P_2$, and so on. Contrary to concerns about donors defaulting once their loved ones receive a kidney, chains often continue due to a pay-it-forward mentality. The longest chain on record involves over 130 transplants. Chains offer logistical advantages, as surgeries can be performed sequentially, unlike the simultaneous requirement of swaps.\ncompatibility In mechanism design (and general CS-Econ), patient-donor pairs are often simply classified as compatible or incompatible. While this abstraction is useful for theoretical analysis, the reality of kidney compatibility is more complex. Understanding this complexity can inform our work and help us appreciate the level of abstraction in existing research.\nThe key to compatibility lies in the interaction between antibodies and antigens. Antibodies – those Y-shaped proteins in our blood – identify and initiate immune attack foreign antigens on invaders like bacteria and viruses. Each antibody usually only identify their specific corresponding antigens.\nIn the context of transplantation, the human leukocyte antigen (HLA) and their corresponding antibodies are especially relevant for compatibility. If the donor kidney’s HLA (antigens!) reacts with certain antibody contained in the blood of the recipients, the kidney is likely to be attacked by immune system and transplant fails.\ntissue typing:\nOut of over 100 different HLA antigens that have been identified, there are six that have been shown to be the most important in organ transplantation. This process involves determining the HLA types of both donor and recipient. It is crucial for assessing compatibility and is closely related to the evaluation of PRA.\npercent reactive antibody (PRA)\nPRA is a metric evaluated for the recipient that measure how many HLA antibodies he/she has in her blood. A higher PRA suggests a higher likelihood of incompatibility with potential donors in general population, making it more challenging to find a matching kidney.\nPRA provides an estimate of the percentage of donors with whom a recipient would be incompatible, reflecting the expected wait time for a transplant.\nserum crossmatch: positive/negative\nA serum crossmatch is a blood test the recipient and the donor will have multiple times, including right before the transplant surgery. Blood from certain donor and recipient are mixed. If the recipient’s cells attack and kill the donor cells, the crossmatch is considered positive. If the crossmatch is negative, the pair is considered compatible and surgeries may then be carried out.\nmatching market There have been efforts to create and coordinate large platforms to increase opportunities for kidney exchanges. Numerous kidney exchange platforms operate in the United States and in other countries, varying in size (thickness), composition (PRA composition), and policies. For size of the market, one would generally consider how large the pool of paired donor-recipient is (in terms of absolute quantities). For composition, it would be the arrival rate of different PRA-patients. Policies would involves whether chain or swap is used, and how different patients with varying PRA value would be prioritized.\npaper Motivated from real world policy choice of design of kidney matching policies, the paper took a rather stylized modelling approach and asymptotic approach, but does capture some important features of kidney exchange – to characterize the heterogeneity of patient’s PRA level, to shed insight on how market thickness and prioritizing policy would affect wait time.\nmodel The paper study matching policies in two different settings–agents might exchange items (1) bilaterally in a cyclic fashion or (2) through chains. We’ll establish the model in basic “swap” scenario and then extend to chain.\nswap Consider an infinite-horizon dynamic matching market, where each arriving agent is endowed with a single item she wants to exchange for another item she finds compatible. Agents are indifferent between compatible items and wish to exchange as soon as possible.\nThere are two types of agents, H (hard-to-match) and E (easy). Beginning at $t = 0$, type $T\\in {H, E}$ agents arrive to the market according to an independent Poisson process with rate $\\lambda_H[\\lambda_E]$. Any agent of type $H[E]$ would find the item of any other agents compatible with probability $p_H[p_E]$. The analysis is asymptotic in the sense that $p_H \\to 0, p_E \\text{ constant}$ which corresponds to the case that kidney recipients are almost bimodal distributed - they are either very easy to match (PRA \u003c 5%) or hardly matchable (PRA \u003e 95%). If both agents find each other’s item desirable, they can be matched. Matched agents leaves the market.\nchain Chains are initiated by “angel” donor. Assume at $t = 0$ there are $d$ special altruistic agents who are willing to give an item without getting anything in return. Each agent in a chain receives a compatible item from one agent and gives to the next. Following on, at any time $t$, there are exactly $d$ such bridge agents.\nThe state of the marketplace can be characterized as a compatibility graph. A policy is a mapping from the history of exchanges and the state of the marketplace to a set of feasible exchanges involving nonoverlapping sets of agents–compatible pairs or chains–break ties to exchange and agents leave.\nThe objective the paper studied is the average waiting time in steady state. Note, in the model, the average waiting time of one type of agents is equivalent to the average number of agents of that type in the marketplace divided by the arrival rate of that type, because these two quantities are proportional to each other by Little’s law.\nThis research looked at two myopic policies (used in practise):\nBilateral match wrt $T$: upon arrival of a new agent, if cycle of length 2 is formed, those agents are immediately matched. If more than one such cycle exists, priority is assigned to cycles of with type $T$, further ties are broken uniformly at random. Chain match (d): for new arriving agent, build bridge (disjoint path) from it until bridge can no longer be extended. Prioritize $H$ agents, further ties are broken uniformly at random. results The paper studies the influence of how (1) market composition (such as how extensive is $H$ agents) and (2) thickness (Poisson arrival rates of the two types) would affect the bilateral-match/chain market, respectively. The asymptotic approach they took simplified the analysis a lot–using a lot of clever tricks. Still, the maths are quite hard-core and I haven’t read through them yet.\nSome theoretical and numerical results shed insights on real world matching policy choice: matching through chains is significantly more efficient than (simple) bilateral matching only when the market is sufficiently thin. Furthermore, counter-intuitively, increasing the arrival rate of hard-to-match agents may have, under bilateral matching, an adverse effect on such agents.\n",
+  "wordCount" : "1316",
+  "inLanguage": "en",
+  "datePublished": "2024-03-30T17:02:01+08:00",
+  "dateModified": "2024-03-30T17:02:01+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/optimizing_kidney_exchanges/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+    <link rel="stylesheet" href="/css/custom.7bb5f7ae3acad2ea4ab78f919c1ccf795402cef69421e6a6ee01a51b03a733cb.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      optimizing kidney exchanges - and beyond
+    </h1>
+    <div class="post-meta"><span title='2024-03-30 17:02:01 +0800 +0800'>March 30, 2024</span>
+
+</div>
+  </header>
+  <div class="post-content"><p>Looking at two-sided market literatures so as to motivate one of my recently launched project, here&rsquo;s a brief reading write-up of two papers.</p>
+<p>Starting with the first one: Ashlagi et al. <em>On Matching and Thickness in Heterogeneous Dynamic Markets</em> (OR2019).</p>
+<h2 id="kidney-exchange-101">kidney exchange 101<a hidden class="anchor" aria-hidden="true" href="#kidney-exchange-101">#</a></h2>
+<p>Before diving into the paper, here&rsquo;s how kidney exchange actually works.</p>
+<h3 id="the-concept-of-exchange">the concept of <strong>&ldquo;exchange&rdquo;</strong><a hidden class="anchor" aria-hidden="true" href="#the-concept-of-exchange">#</a></h3>
+<p>Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient. Kidney exchange allows such patient–donor pairs to swap donors so that each patient can receive a kidney from a compatible donor.</p>
+<p>There are two main methods of conducting kidney exchanges: swaps (bilateral matching) and chains.</p>
+<ul>
+<li>
+<p><strong>Swaps (Bilateral Matching):</strong> Consider incompatible pairs $(P_1, D_1)$ and $(P_2, D_2)$, where $P_i$ represents a patient and $D_i$ their intended donor. If $D_1 \not\to P_1$ and $D_2 \not \to P_2$, but $D_2 \to P_1$ and $D_1 \to P_2$, a two-way cycle can be formed for simultaneous transplants. Due to logistical constraints, only bilateral matching is commonly practiced, requiring adjacent operating rooms for donors and recipients.</p>
+</li>
+<li>
+<p><strong>Chains:</strong> In scenarios with unpaired donors, such as altruistic &ldquo;angel&rdquo; donors or deceased donors, chains can be initiated in the donation pool. For example, an initial donor $D_0$ donates to patient $P_1$, whose donor $D_1$ then donates to $P_2$, and so on. Contrary to concerns about donors defaulting once their loved ones receive a kidney, chains often continue due to a pay-it-forward mentality. The longest chain on record involves over 130 transplants. Chains offer logistical advantages, as surgeries can be performed sequentially, unlike the simultaneous requirement of swaps.</p>
+</li>
+</ul>
+<h3 id="compatibility">compatibility<a hidden class="anchor" aria-hidden="true" href="#compatibility">#</a></h3>
+<p>In mechanism design (and general CS-Econ), patient-donor pairs are often simply classified as compatible or incompatible. While this abstraction is useful for theoretical analysis, the reality of kidney compatibility is more complex. Understanding this complexity can inform our work and help us appreciate the level of abstraction in existing research.</p>
+<p>The key to compatibility lies in the interaction between <strong>antibodies</strong> and <strong>antigens</strong>. Antibodies – those Y-shaped proteins in our blood – identify and initiate immune attack foreign <strong>antigens</strong> on invaders like bacteria and viruses. <strong>Each antibody usually only identify their specific corresponding antigens.</strong></p>
+<p>In the context of transplantation, the <strong>human leukocyte antigen (HLA)</strong> and their corresponding antibodies are especially relevant for compatibility. If the donor kidney&rsquo;s HLA (antigens!) reacts with certain antibody contained in the blood of the recipients, the kidney is likely to be attacked by immune system and transplant fails.</p>
+<ul>
+<li>
+<p><strong>tissue typing:</strong></p>
+<p>Out of over 100 different HLA antigens that have been identified, there are six that have been shown to be the most important in organ transplantation. This process involves determining the HLA types of both donor and recipient. It is crucial for assessing compatibility and is closely related to the evaluation of PRA.</p>
+</li>
+<li>
+<p><strong>percent reactive antibody (PRA)</strong></p>
+<p>PRA is a metric evaluated for the <strong>recipient</strong> that measure how many HLA antibodies he/she has in her blood. A higher PRA suggests a higher likelihood of incompatibility with potential donors in general population, making it more challenging to find a matching kidney.</p>
+<p>PRA provides an estimate of the percentage of donors with whom a recipient would be incompatible, reflecting the expected wait time for a transplant.</p>
+</li>
+<li>
+<p><strong>serum crossmatch</strong>: positive/negative</p>
+<p>A serum <strong>crossmatch</strong> is a blood test the recipient and the donor will have multiple times, including right before the transplant surgery. Blood from certain donor and recipient are mixed. If the recipient&rsquo;s cells attack and kill the donor cells, the crossmatch is considered positive. If the crossmatch is negative, the pair is considered compatible and surgeries may then be carried out.</p>
+</li>
+</ul>
+<h3 id="matching-market">matching market<a hidden class="anchor" aria-hidden="true" href="#matching-market">#</a></h3>
+<p>There have been efforts to create and coordinate large platforms to increase opportunities for kidney exchanges. Numerous kidney exchange platforms operate in the United States and in other countries, varying in <strong>size (thickness), composition (PRA composition), and policies</strong>. For size of the market, one would generally consider how large the pool of paired donor-recipient is (in terms of absolute quantities). For composition, it would be the arrival rate of different PRA-patients. Policies would involves whether chain or swap is used, and how different patients with varying PRA value would be prioritized.</p>
+<h2 id="paper">paper<a hidden class="anchor" aria-hidden="true" href="#paper">#</a></h2>
+<p>Motivated from real world policy choice of design of kidney matching policies, the paper took a rather stylized modelling approach and asymptotic approach, but does capture some important features of kidney exchange – to characterize <strong>the heterogeneity of patient&rsquo;s PRA level</strong>, to shed insight on how market thickness and prioritizing policy would affect wait time.</p>
+<h3 id="model">model<a hidden class="anchor" aria-hidden="true" href="#model">#</a></h3>
+<p>The paper study matching policies in two different settings–agents might exchange items (1) bilaterally in a cyclic fashion or (2) through chains. We&rsquo;ll establish the model in basic &ldquo;swap&rdquo; scenario and then extend to chain.</p>
+<ul>
+<li>
+<h4 id="swap">swap<a hidden class="anchor" aria-hidden="true" href="#swap">#</a></h4>
+<p>Consider an infinite-horizon dynamic matching market, where each arriving agent is endowed with a single item she wants to exchange for another item she finds compatible. Agents are indifferent between compatible items and wish to exchange as soon as possible.</p>
+<p>There are two types of agents, <strong>H (hard-to-match)</strong> and <strong>E (easy)</strong>. Beginning at $t = 0$, type $T\in {H, E}$ agents arrive to the market according to an independent Poisson process with rate $\lambda_H[\lambda_E]$. Any agent of type $H[E]$ would find the item of any other agents compatible with probability $p_H[p_E]$. The analysis is asymptotic in the sense that $p_H \to 0, p_E \text{ constant}$ which corresponds to the case that kidney recipients are almost bimodal distributed - they are either very easy to match (PRA &lt; 5%) or hardly matchable (PRA &gt; 95%). If both agents find each other&rsquo;s item desirable, they can be matched. Matched agents leaves the market.</p>
+</li>
+<li>
+<h4 id="chain">chain<a hidden class="anchor" aria-hidden="true" href="#chain">#</a></h4>
+<p>Chains are initiated by &ldquo;angel&rdquo; donor. Assume at $t = 0$ there are $d$ special <strong>altruistic</strong> agents who are willing to give an item without getting anything in return. Each agent in a chain receives a compatible item from one agent and gives to the next. Following on, at any time $t$, there are exactly $d$ such <strong>bridge agents</strong>.</p>
+</li>
+</ul>
+<p>The state of the marketplace can be characterized as a compatibility graph. A policy is a mapping from the history of exchanges and the state of the marketplace to a set of feasible exchanges involving nonoverlapping sets of agents–compatible pairs or chains–<strong>break ties</strong> to exchange and agents leave.</p>
+<p>The objective the paper studied is the average waiting time in steady state. Note, in the model, the average waiting time of one type of agents is equivalent to the average number of agents of that type in the marketplace divided by the arrival rate of that type, because these two quantities are proportional to each other by Little’s law.</p>
+<p>This research looked at two myopic policies (used in practise):</p>
+<ul>
+<li><strong>Bilateral match wrt $T$</strong>: upon arrival of a new agent, if cycle of length 2 is formed, those agents are immediately matched. If more than one such cycle exists, priority is assigned to cycles of with type $T$, further ties are broken uniformly at random.</li>
+<li><strong>Chain match (d)</strong>: for new arriving agent, build bridge (disjoint path) from it until bridge can no longer be extended. Prioritize $H$ agents, further ties are broken uniformly at random.</li>
+</ul>
+<h3 id="results">results<a hidden class="anchor" aria-hidden="true" href="#results">#</a></h3>
+<p>The paper studies the influence of how (1) <strong>market composition</strong> (such as how extensive is $H$ agents) and (2) thickness (Poisson arrival rates of the two types) would affect the bilateral-match/chain market, respectively. The asymptotic approach they took simplified the analysis a lot–using a lot of clever tricks. Still, the maths are quite hard-core and I haven&rsquo;t read through them yet.</p>
+<p>Some theoretical and numerical results shed insights on real world matching policy choice: matching through chains is significantly more efficient than (simple) bilateral matching only when the market is sufficiently thin. Furthermore, counter-intuitively, increasing the arrival rate of hard-to-match agents may have, under bilateral matching, an adverse effect on such agents.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 ---
 title: "a thousand and one nights of oligopoly, collusion and antitrust | the Cournot model"
 date: 2024-05-14T00:22:18+08:00
-draft: true
+draft: false
 ---
 
 > Reading notes of Chapter 4 of ***ECONOMICS OF REGULATION AND ANTITRUST (2018)***, by Viscusi, Harrington Jr. and Sappinton.

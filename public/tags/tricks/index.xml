@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tricks on ariana&#39;s blog</title>
+    <link>/tags/tricks/</link>
+    <description>Recent content in tricks on ariana&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Mar 2024 23:54:20 +0800</lastBuildDate><atom:link href="/tags/tricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>course checker</title>
+      <link>/posts/course_checker/</link>
+      <pubDate>Wed, 13 Mar 2024 23:54:20 +0800</pubDate>
+      
+      <guid>/posts/course_checker/</guid>
+      <description>The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there&amp;rsquo;s a clever way to outsmart the system? No more frantic refreshing, here&amp;rsquo;s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up.</description>
+    </item>
+    
+    <item>
+      <title>the code that can send email in linux server</title>
+      <link>/posts/send_email_in_server/</link>
+      <pubDate>Sun, 05 Nov 2023 20:16:21 +0800</pubDate>
+      
+      <guid>/posts/send_email_in_server/</guid>
+      <description>I often encounter a recurring issue when running projects on a remote server and trying to collect data afterward. The setup in my run_script.sh usually includes a line for sending emails once the job is done.
+#!/bin/bash #BSUB -J StockTraderTestRun # Set the job name to StockTraderTestRun #BSUB -q gpu # Submit to the long queue #BSUB -o /nfsshare/home/tang/StockTrader/%J.out # Standard output file #BSUB -e /nfsshare/home/tang/StockTrader/%J.err # Standard error file #BSUB -N # Send email at job finish #BSUB -u ariana_tang@outlook.</description>
+    </item>
+    
+  </channel>
+</rss>

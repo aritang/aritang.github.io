@@ -1,7 +1,7 @@
 ---
 title: "penalties and rewards for fair learning in paired kidney exchange programs"
 date: 2024-03-31T17:16:17+08:00
-draft: true
+draft: false
 ---
 
 Following [yesterday](/posts/optimizing_kidney_exchanges), the second paper I'd recommend is Carvalho et al. *Penalties and Rewards for Fair Learning in Paired Kidney Exchange Programs* (WINE2023).

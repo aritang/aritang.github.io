@@ -1,0 +1,6 @@
+/* Custom styling for the card's exterior */
+.card-exterior {
+    background-color: gray; /* Change this to your desired exterior color */
+    padding: 10px; /* Add padding or other styling as needed */
+    /* Add any other custom styling for the card's exterior */
+}
