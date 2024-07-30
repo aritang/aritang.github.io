@@ -32,7 +32,7 @@ And when is goes to 2023:
 >
 > **[Mathias Brandt](mailto:mathias.brandt@statista.com)**
 
-## **U.S. **
+## U.S.
 
 <a href="https://www.statista.com/chart/18143/us-internet-advertising-revenue/" title="Infographic: U.S. Online Ad Market Surpasses $100 Billion | Statista"><img src="https://cdn.statcdn.com/Infographic/images/normal/18143.jpeg" alt="Infographic: U.S. Online Ad Market Surpasses $100 Billion | Statista" width="100%" height="auto" style="width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"/></a> source: <a href="https://www.statista.com/chartoftheday/">Statista</a>. Archived picture is available [here](/google_ad_gossip/us_online_ad_market.jpeg) (in case html link fails).
 
