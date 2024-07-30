@@ -6,11 +6,13 @@ draft: false
 
 ## Market size and market share for adtech industry/online advertisement ecosystem
 
-The online advertising market is dominated by a few major players, with significant regional variations. The global online advertising industry continues to grow, at about \$600 ~ \$700 billion today, with the U.S. market surpassing \$100 billion in 2018 and showing no signs of slowing down [6]. The market is highly concentrated. Based on data in 2019, **Google and Facebook (Meta)** account for approximately half of the digital advertising global revenue [2].
+The online advertising market is dominated by a few major players, with significant regional variations. The global online advertising industry continues to grow, at about \$600 ~ \$700 billion today, and showing no signs of slowing down [6].
 
 {{<figure align="center" src="/google_ad_gossip/global_market.jpeg" caption="Global market size of digital advertising. [Source](https://www.statista.com/study/169023/walled-gardens/).">}}
 
-In the United States, Big Tech companies (Amazon, Apple, Google, Meta, and Microsoft) are expected to control 65.6% of digital advertising revenues by 2024, up from 30.8% in 2008 [1].
+The market is **highly concentrated**. Based on data in 2019, **Google and Facebook (Meta)** account for approximately half of the digital advertising global revenue [2].
+
+The US market already hit the 100 billion USD milestone back in 2018. Big Tech companies (Amazon, Apple, Google, Meta, and Microsoft) are expected to control 65.6% of digital advertising revenues by 2024, up from 30.8% in 2008 [1].
 
 India's digital advertising market size is \$4.86 billion 2023, and be estimated to hit \$7.5 billon by 2025. As of market component, it is heavily dominated by Meta and Alphabet (Google), which together held 68% of the market share in 2022 [5].
 
