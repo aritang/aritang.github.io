@@ -6,7 +6,7 @@ draft: false
 
 ## Market size and market share for adtech industry/online advertisement ecosystem
 
-The online advertising market is dominated by a few major players, with significant regional variations. The global online advertising industry continues to grow, at about \$600-700 billion today, with the U.S. market surpassing \$100 billion in 2018 and showing no signs of slowing down [6]. The market is highly concentrated. Based on data in 2019, **Google and Facebook (Meta)** account for approximately half of the digital advertising global revenue [2].
+The online advertising market is dominated by a few major players, with significant regional variations. The global online advertising industry continues to grow, at about \$600 ~ \$700 billion today, with the U.S. market surpassing \$100 billion in 2018 and showing no signs of slowing down [6]. The market is highly concentrated. Based on data in 2019, **Google and Facebook (Meta)** account for approximately half of the digital advertising global revenue [2].
 
 {{<figure align="center" src="/google_ad_gossip/global_market.jpeg" caption="Global market size of digital advertising. [Source](https://www.statista.com/study/169023/walled-gardens/).">}}
 
