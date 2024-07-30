@@ -3,6 +3,11 @@ languageCode: en-us
 title: ariana's blog
 theme: PaperMod
 math: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   env: production
   math: true
