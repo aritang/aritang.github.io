@@ -1,17 +1,16 @@
 ---
-title: "fancy pictures...temp update"
-date: 2024-07-30T12:44:10-07:00
+title: "the Cookie series | links to supplementary pictures"
+date: 2024-08-04T12:44:10-07:00
 draft: false
-cover:
-    image: google_ad_gossip/fancy_pic.jpeg
+summary: link to the pdf version of pictures
 ---
 
- [google_ad_puzzle.pdf](/files/google_ad_puzzle.pdf) 
+[Google, advertisers, user, cookies—full picture](/files/google_ad_puzzle.pdf) 
 
- [google_ad_puzzle_1.pdf](/files/google_ad_puzzle_1.pdf) 
+[Cookies, and the structure of the internet](/files/google_ad_puzzle_1.pdf) 
 
- [google_ad_puzzle_2.pdf](/files/google_ad_puzzle_2.pdf) 
+[Google, Cookies and user data collected](/files/google_ad_puzzle_2.pdf) 
 
- [google_ad_puzzle_3.pdf](/files/google_ad_puzzle_3.pdf) 
+[Google place cookies with UIDs](/files/google_ad_puzzle_3.pdf) 
 
- [google_ad_puzzle_4.pdf](/files/google_ad_puzzle_4.pdf) 
+[Integrating data for targeting](/files/google_ad_puzzle_4.pdf)
