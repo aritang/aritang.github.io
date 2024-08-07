@@ -1,5 +1,5 @@
 ---
-title: "data brokers"
+title: "the Cookie series VII | data brokers"
 date: 2024-08-05T08:14:17-07:00
 draft: false
 ---
