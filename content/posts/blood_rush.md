@@ -68,5 +68,7 @@ I've been there. Only got a form the second time.
 
 [2] 中华人民共和国教育部. (2017, July 10). 2016年全国教育事业发展统计公报 [2016 National Education Development Statistics Bulletin]. 中华人民共和国教育部政府门户网站. Retrieved from http://www.moe.gov.cn/jyb_sjzl/sjzl_fztjgb/201707/t20170710_309042.html
 
-[3] [Archived] [*Blood Donation Announcement* of Shanghai University of Finance and Economics.](/files/blood_donation_announcement.pdf)
+[3] 中国经济周刊. (2016, June 21). 中国公务员总数首次披露：716.7万人 [The total number of civil servants in China was disclosed for the first time: 7.167 million]. 新华网. Retrieved from http://www.xinhuanet.com/politics/2016-06/21/c_129077723.htm
+
+[4] [Archived] [*Blood Donation Announcement* of Shanghai University of Finance and Economics.](/files/blood_donation_announcement.pdf)
 
