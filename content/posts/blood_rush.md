@@ -6,9 +6,9 @@ draft: false
 
 ## landscape
 
-A significant portion of blood donations in China comes from college students. In 2016, 14 million people donated blood, with donation rates per thousand population among civil servants, college students, army personnel, and medical staff notably higher than the national average of 10.5—reaching 69.2, 78, 55.8, and 52.5 respectively, according to Xinhua News.
+A significant portion of blood donations in China comes from college students. In 2016, 14 million people donated blood, with donation rates per thousand population among civil servants, college students, army personnel, and medical staff notably higher than the national average of 10.5—reaching `69.2`, `78`, `55.8`, and `52.5` respectively, according to Xinhua News.
 
-Do a little bit more math unveils how much college students account for blood donation: in 2016, total Chinese college student is `36990000`, so total people who participated in donation is `2,885,220`. Therefore, about **20%** of blood donation comes from Chinese students.
+Do a little bit more math unveils how much college students account for blood donation: in 2016, total Chinese college student is `36990000`, so total people who participated in donation is `2,885,220`—so, about **20%** of blood donation comes from college students. Comparing to civil servants (total 7167000 civial servants in 2016), they contributed to about 3% of total donation.
 
 ## donate for a bonus point
 
