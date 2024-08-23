@@ -1,5 +1,5 @@
 ---
-title: "Vintages and Vogue | the blend of 'B for Busy' and 'sideways"
+title: "Vintages and Vogue | the blend of 'B for Busy' and 'sideways'"
 date: 2024-08-23T11:11:14+08:00
 draft: false
 ---
