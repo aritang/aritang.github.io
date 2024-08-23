@@ -1,12 +1,11 @@
 ---
-title: "[pinned] my work ethic"
+title: "my work ethic | pinned post"
 date: 2023-12-16T16:15:32+08:00
 draft: false
 cover: 
     image: tattooed_heart/work_ethic.jpeg
 summary: Think I've kind of learned that the more authentic and genuine it is, the better it will work for you.
 weight: 2
-
 ---
 
 {{<figure align="center" src="/tattooed_heart/work_ethic.jpeg" caption="inspiration taken from this Ariana Grande interview, which was shoot around the beginning of her sweetener era i believe? the sweetener philosophy serves a core of my central personality, so this is pretty much me, in certain aspects at least, with a few substitutes of references here and there.">}}
