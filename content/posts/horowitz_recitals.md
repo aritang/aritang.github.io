@@ -2,6 +2,7 @@
 title: "Horowitz's recitals"
 date: 2024-08-19T10:41:46-07:00
 draft: false
+tags: ['art', 'music', 'classical']
 ---
 
 Apple music classical has a marvelous collection of Vladimir Horowitz's piano recitals—all the years, all the remarkable concert halls and performance:

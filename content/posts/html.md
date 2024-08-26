@@ -2,6 +2,7 @@
 title: "HTML | basic concept"
 date: 2024-08-24T09:38:39+08:00
 draft: false
+tags: ['tricks']
 ---
 
 Hypertext Markup Language (HTML) code is the foundational language for creating and structuring content on the web. It defines and presents elements, like headings, paragraphs, images, etc. When one enters a URL or open an HTML file in a web browser, the browser processes the HTML code, applies CSS for styling, and executes any JavaScript. This results in a visual representation of the web page that one can see and interact with.

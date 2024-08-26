@@ -2,6 +2,7 @@
 title: "Vintages and Vogue | the blend of 'B for Busy' and 'sideways'"
 date: 2024-08-23T11:11:14+08:00
 draft: false
+tags: ['movie', 'art', 'pop']
 ---
 
 The films "B for Busy" (爱情神话) (2021) and "Sideways" (2004) share striking similarities that go beyond their surface narratives.

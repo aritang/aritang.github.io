@@ -2,6 +2,7 @@
 title: "Summary for Drakopoulos et al (20'MS) | Persuading Customers to Buy Early: The Value of Personalized Information Provisioning"
 date: 2024-08-20T06:23:29+09:00
 draft: false
+tags: ['paper', 'info_design', 'OM']
 ---
 
 Here's a summary of the paper *Persuading Customers to Buy Early: The Value of Personalized Information Provisioning*, by Kimon Drakopoulos, Shobhit Jai and Ramandeep Randhawa, published online @ Management Science, in 2021.

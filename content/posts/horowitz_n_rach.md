@@ -2,6 +2,7 @@
 title: "A Meeting of Titans – The Day Vladimir Horowitz and Sergei Rachmaninoff Arrived Together at Steinway Hall"
 date: 2024-08-18T10:14:35-07:00
 draft: false
+tags: ['music', 'classical', 'art']
 ---
 
 Steinway-piano dot com has the story of the meeting of the two perhaps most influential musicians among the piano community of the first half of the 20th century.

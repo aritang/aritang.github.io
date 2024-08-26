@@ -2,6 +2,7 @@
 title: "the fish and the sea | from the movie SOUL"
 date: 2024-08-14T00:41:19-07:00
 draft: false
+tags: ['art', 'quote', 'movie']
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg7Zit2Thks?si=khmjEC2a8Qq8mJAT&amp;start=113" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

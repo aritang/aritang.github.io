@@ -2,6 +2,7 @@
 title: "resize image with HTML code"
 date: 2024-08-21T09:33:42+08:00
 draft: false
+tags: ['tricks']
 ---
 
 When working with images in blog, one might need to adjust image size to fit different layouts and screen sizes. Here's the hack:

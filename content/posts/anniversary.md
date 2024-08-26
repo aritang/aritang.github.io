@@ -1,23 +1,42 @@
 ---
-title: "One Year of Blogging | A Journey Through Ideas, Insights, and the Occasional Podcast-Induced Breakfast Yawn"
-date: 2024-08-26T14:48:40+08:00
-draft: true
+title: "One Year of Blogging"
+date: 2024-08-26T00:00:01+08:00
+draft: false
+summary: "A Journey Through Ideas, Insights, and the Occasional Podcast-Induced Breakfast Yawn."
 ---
 
-Wow, it’s been a year already! -> Definition (cite)
+> ### A Journey Through Ideas, Insights, and the Occasional Podcast-Induced Breakfast Yawn
 
-When I hit "publish" on my first blog post, I had no idea where this journey would take me—yet here I am, 365 days later, with a digital archive full of musings, analyses, and more Ariana Grande references than I ever imagined.
+Wow, since [where we've started](/posts/definition), it’s been a year already!
 
-It’s been a wild ride, one that’s taught me more than I could ever summarize in a single post, but I’m going to try anyway—because, well, that’s what bloggers do.
+When I hit `return` after the very first `git push origin main`, launching the blog, I had no idea where this journey would take me—yet here I am, 365 days later, with an archive full of musings, analyses, and more Ariana Grande and Rachmaninov references than I would have ever imagined.
+
+It’s been a wild ride, one that’s taught me more than I could ever summarize in a single post. But I’m going to try anyway—
+
+## Favourite blogs:
+
+Assumption zero for information economics—that there is a cost for acquiring information. In other words, don't expect anyone to screen through the archive for a post, and that providing high-quality recommendation itself is utmost invaluable. So here are three selected posts, my most favourite:
+
+> **[blowing in th wind](/posts/blowing_in_the_wind/)** | about the ironman triathlon—"delivery, courier and Didi driver".
+>
+> [**Google Gossip — the Cookies Confusion and the Antitrust Avalanche**](/posts/google_gossip/) | a look into Google's advertisement income landscape.
+>
+> [**nocturnal narratives**](/posts/midnight_musing/) | whispers from my nightstand shelf.
 
 ## A Symphony of Subjects
 
-Over the past year, this blog has become a melting pot of ideas. From dissecting the labyrinthine world of digital advertising and cookies (no, not the chocolate chip kind) to exploring the delicate notes of Rachmaninoff’s compositions, the topics here have been as varied as a Spotify playlist on shuffle. Like one day I’m moaning over the complexities of antitrust laws, the next I’m raving about the latest ballet performance that took my breath away. It's been a delightful mix, proving that curiosity truly has no bounds—and neither does my ability to procrastinate on writing about it.
+Over the past year, this blog has become a melting pot of ideas. Frankly, I found that I can be so easily distracted sometimes...
+
+Music has been a constant theme, from [the emotive power of Rachmaninoff](/rachmaninoff_andante_cantabile/) to [the playful dissection of pop culture moments](/posts/said_so/). Technical posts range all the way from [the cookie series](/posts/cookie_series/) to [paper reading notes](/posts/selling_info/). Sometimes I cram the contents parallel with my projects, like [proofs for Whittle Index](/posts/whittle_index_technical/) or [SHERLOCK—my AI-written code detector](/posts/all_about_sherlock/). And of course, comments—[lowercase aesthetic](/posts/lowercase_aesthetic/), [movie reviews](/posts/b_for_busy_n_sideways/), and [social issues](/posts/blowing_in_the_wind/).
+
+It's been a delightful blend, proving that curiosity truly has no bounds—and neither does my ability to procrastinate on writing about it.
 
 ## Lessons Learned: the Good, the Bad, and the Podcast-Induced
 
-This blog has been more than just a platform for sharing thought—it’s been a classroom, a stage, and sometimes, a therapist's couch.
+Maintaining the blog's daily updates wasn't entirely easy. It's a lot of reading and writing. A lot of the insights and ideas comes from breakfast reading feeds—news and podcasts—when I'm half-asleep, nodding along to economic jargons like a zombie who just wants some coffee; limit-time paper summary sessions can be really nice academic practices; cab rides soring in the neon  after concerts are absolutely the bed for ideas and insight.
 
-I like digging into economic theories—it's surprisingly fun especially when you throw in a dash of humor and a pinch of sarcasm. A lot of the insights and ideas comes from podcast at breakfast—what a great way to start the day—except when it’s not, and I’m half-asleep, nodding along to economic jargon like a zombie who just wants some coffee. That's a lot of papers, news and articles read and re-think.
+Writing has been a deeply reflective, and I’ve learned so much along the way. One lesson that stands out is knowing when to hold back on top of obsessive persistence. It’s okay to push hard, but it’s important to recognize when you’re crossing into territory where the pursuit of excellence doesn’t overshadow what we're looking for in the first place.
 
-But the real lesson? Persistence. Whether it was pushing through a dense academic paper or forcing myself to decode the latest in algorithmic regulation, I’ve come to appreciate the grind. [write about waking up at midnight] It's not always glamorous, but hey, neither is life. And that’s okay, because the satisfaction of understanding something complex—or writing a killer blog post about it—makes it all worthwhile.
+------
+
+Anyway, thanks for stopping by. Glad we meet and, in case I don't see ya, good afternoon, good evening, and good night💋.

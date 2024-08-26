@@ -2,6 +2,7 @@
 title: "Andante Cantabile II"
 date: 2024-08-16T23:52:36-07:00
 draft: false
+tags: ['music', 'classical', 'art']
 ---
 
 Andante Cantabile, generally means "singing and walking", is a musical *term*—a descriptive marker atop a score to delineate the mood or tempo intended by the composer. It . This trend is particularly poignant in compositions of grand scale, where each movement, each phrase, carries its own distinct *direction*.

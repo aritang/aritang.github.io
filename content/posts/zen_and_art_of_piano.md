@@ -2,6 +2,7 @@
 title: "Zen and Art of Piano | Horowitz"
 date: 2024-08-17T09:49:44-07:00
 draft: false
+tags: ['music', 'art', 'classical']
 ---
 
 > In Horowitz, fire sings through metal, glass, water and *ice*.

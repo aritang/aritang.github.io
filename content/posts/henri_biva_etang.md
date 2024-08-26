@@ -4,6 +4,7 @@ date: 2024-07-26T14:20:40-07:00
 draft: false
 cover:
     image: art/Etang_dans_la_brume.jpeg
+tags: ['art', 'impressionism']
 ---
 
 Henri Biva. French artist, active around 1900s±, somewhere between post-impressionism and realism. This painting is one of Henri's masterpieces that showcased the artist's mastery in capturing  **warm natural light**.

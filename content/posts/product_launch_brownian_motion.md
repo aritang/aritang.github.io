@@ -2,6 +2,7 @@
 title: "Paper Summary | Optimizing Product Launches w/ Strategic Consumers"
 date: 2024-07-27T13:41:05-07:00
 draft: false
+tags: ['paper']
 ---
 
 > ## Optimizing Product Launches in the Presence of Strategic Consumers. 

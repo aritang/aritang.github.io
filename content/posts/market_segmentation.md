@@ -2,6 +2,7 @@
 title: "The Limits of Price Discrimination"
 date: 2024-07-23T23:38:40-07:00
 draft: false
+tags: ['paper', 'econ']
 ---
 
 Here's a reallly cool paper. Bergemann et al. (2015) [*The Limits of Price Discrimination*](http://dx.doi.org/10.1257/aer.20130848). AER. DOI: *http://dx.doi.org/10.1257/aer.20130848*

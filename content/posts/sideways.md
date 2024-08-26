@@ -4,6 +4,7 @@ date: 2024-08-22T09:53:36+08:00
 draft: false
 cover:
     image: wine/sideways_poster.jpeg
+tags: ['movie', 'art', 'pop']
 ---
 
 *Sideways* is a movie about wine. "Two men reaching middle age with not much to show but disappointment, embark on a week-long road trip through Californiaʼs wine country, just as one is about to take a trip down the aisle."
