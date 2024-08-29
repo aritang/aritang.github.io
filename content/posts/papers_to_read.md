@@ -2,6 +2,7 @@
 title: "bookworm's buffet II"
 date: 2024-06-17T01:43:03+09:00
 draft: false
+tags: ["research"]
 ---
 
 I love working. I get a day off and I'm confused. I'm like, cause I'll have to do something?

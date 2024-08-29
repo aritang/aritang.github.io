@@ -3,6 +3,7 @@ title: "attentions"
 date: 2023-12-29T22:52:31+08:00
 draft: false
 summary: I read an eye-openly impressive paper today - Attention Management by Lipnowski, Mathevet and Wei. TBH, their model is very insightful (well, it's in AER afterall...) and has potential to shed light on theoretical as well as behavioral econ research.
+tags: ["paper"]
 ---
 
 I read an eye-openly impressive paper today - Attention Management by Lipnowski, Mathevet and Wei. What's funny is that, I didn't even remember how it landed in my reading list cause well, my cortex has been a bit messy recently. Anyway, what a beautiful bump.

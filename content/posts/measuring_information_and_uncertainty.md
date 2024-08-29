@@ -2,6 +2,7 @@
 title: "measuring information and uncertainty"
 date: 2023-12-11T22:44:03+08:00
 draft: false
+tags: ["paper"]
 ---
 
 The paper by Alexander Frankel and Emir Kamenica, featured in the *American Economic Review* in 2019, is exceptionally remarkable. Their work, titled *Quantifying Information and Uncertainty*, delves into the intricate dynamics of information and belief systems.

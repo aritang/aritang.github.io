@@ -2,6 +2,7 @@
 title: "Mostly OM diary | The Limits of Personalization in Assortment Optimization"
 date: 2024-05-30T08:40:08+08:00
 draft: false
+tags: ["paper", "TCS"]
 ---
 
 > speaker: **Guillermo Gallego** | Prof., The Chinese University of Hong Kong-Shenzhen.

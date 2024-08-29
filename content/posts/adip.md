@@ -2,6 +2,7 @@
 title: "recent advance in ADIP"
 date: 2023-10-31T23:12:48+08:00
 draft: false
+tags: ["paper"]
 ---
 
 Regarding ADIP, a first-order method for solving LP, the following is an excerpt from Deng et al.'s arxiv page:

@@ -2,6 +2,7 @@
 title: "Nina Balcan presents | Online learning in Stackelberg Security Games"
 date: 2024-06-25T00:15:24-07:00
 draft: false
+tags: ["paper", "TCS"]
 ---
 
 I had the very fortune to listen to Nina Balcan giving a talk on one of her latest work, ***Online learning in Stackelberg Security Games***:

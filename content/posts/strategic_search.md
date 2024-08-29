@@ -2,6 +2,7 @@
 title: "dynamic persuasion and strategic search"
 date: 2024-01-05T23:59:49+08:00
 draft: false
+tags: ["paper"]
 ---
 
 It's always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.

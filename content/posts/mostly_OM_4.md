@@ -2,6 +2,7 @@
 title: "Mostly OM diary | Randomization in Product, Fulfillment, and Pricing as a Profit Lever"
 date: 2024-06-02T09:16:49+08:00
 draft: false
+tags: ["paper", "OM", "econ"]
 ---
 
 > speaker: **Ming Hu** | Prof., University of Toronto

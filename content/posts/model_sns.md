@@ -3,6 +3,7 @@ title: "a study in suspense and surprise - part I"
 date: 2024-01-03T22:22:44+08:00
 draft: false
 summary: the model, and the principal's problem part I
+tags: ["paper"]
 ---
 
 Today is a dive into the modelling part of ***Suspense and Surpirse***. The paper is already concise so basically I'm just copying it from there to here... Cause I like it actually.

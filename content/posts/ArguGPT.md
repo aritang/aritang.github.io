@@ -3,6 +3,7 @@ title: "ArguGPT: identifying human touch in AI authorship "
 date: 2023-12-19T13:49:38+08:00
 draft: false
 summary: ArguGPT is an algorithmic tool that is designed to differentiate GPT-generated argumentative essays. But it seems that at least for now, it's accuracy is doubtful.
+tags: ["paper", "machine_learning"]
 ---
 
 There's an intriguing paper featured in WINE2023's tutorials:

@@ -2,6 +2,7 @@
 title: "Mostly OM diary | Allocating Divisible Resources on Arms with Unknown and Random Rewards"
 date: 2024-05-31T08:46:11+08:00
 draft: false
+tags: ["paper", "OR"]
 ---
 
 > speaker: **Ningyuan Chen** | Prof., University of Toronto

@@ -2,6 +2,7 @@
 title: "a study in suspense and surprise - part II"
 date: 2024-01-04T23:10:01+08:00
 draft: false
+tags: ["paper"]
 ---
 
 Finished reading the paper ***Suspense And Surprise*** finally. Honestly, the paper itself is already a masterclass  of organizing contents so as to achieve high informational utility. Following [what we left yesterday](/posts/model_sns/), here's the rest, and some closing thoughts before the end.

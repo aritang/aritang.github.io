@@ -3,6 +3,7 @@ title: "measuring information and uncertainty"
 date: 2023-12-12T22:58:16+08:00
 draft: false
 summary: Diving deeper.
+tags: ["paper"]
 ---
 
 Following [yesterday's post](/posts/measuring_information_and_uncertainty/) about measuing information and uncertainty, reference Frankel and Kamenica (2019) AER paper.

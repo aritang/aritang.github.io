@@ -2,6 +2,7 @@
 title: "Mostly OM diary | Optimal Conditional Drug Approval"
 date: 2024-06-01T08:52:00+08:00
 draft: false
+tags: ["paper", "OM"]
 ---
 
 > speaker: **Peng Sun** | Prof., Duke University

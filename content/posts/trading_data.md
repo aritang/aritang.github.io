@@ -2,11 +2,12 @@
 title: "data trading - designing the mechanism or the market"
 date: 2024-02-03T23:59:20+08:00
 draft: false
+tags: ["paper"]
 ---
 
 ### bridging concepts
 
-Recently, I've come to appreciate the nuanced distinction between mechanism design and market design. Initially, I conflated the two, but a deeper dive into the subject matter—prompted by a friend's bachelor thesis—has elucidated the critical differences.
+Recently, I've come to realize that there is a nuanced distinction between mechanism design and market design. Initially, I conflated the two, but a deeper dive into the subject matter—prompted by a friend's bachelor thesis—has elucidated the critical differences.
 
 Mechanism design is inherently algorithmic, centered around eliciting information and strategically manipulating incentives through mathematical formulations. It's a toolset for creating environments where desired outcomes can be achieved based on the information asymmetries and strategic interactions of participants.
 

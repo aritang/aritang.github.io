@@ -2,6 +2,7 @@
 title: "Mostly OM diary | Practicing OR/OM in China"
 date: 2024-06-03T09:22:45+08:00
 draft: false
+tags: ["paper", "OM"]
 ---
 
 > speaker: **Zizhuo Wang** | Prof., The Chinese University of Hong Kong-Shenzhen.

@@ -2,6 +2,7 @@
 title: "regulation for algorithmic collusion"
 date: 2024-04-30T22:52:19+08:00
 draft: false
+tags: ["paper", "econ-CS", "TCS"]
 ---
 
 This week, **Chenhao Zhang** from Northwestern University visited ITCS and gave [a talk on Regulation of Algorithmic Collusion](https://itcs.sufe.edu.cn/48/71/c10453a215153/page.htm), based on his ongoing collaboration with Prof. Jason Hartline. Here's a background of the topic, summary of the talk and their work (hopefully), and some discussion afterwards.

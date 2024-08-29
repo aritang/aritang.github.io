@@ -2,6 +2,7 @@
 title: "Summary | Paul Milgrom (2019) Auction Market Design Recent Innovations"
 date: 2024-08-28T15:47:30+08:00
 draft: false
+tags: ["paper"]
 ---
 
 The journey begins with Google's sponsored search business. When Google developed the PageRank algorithm, it not only ranked results but also recommended the most relevant ones to users. Simultaneously, it charged advertisers to display their 'sponsored' results atop those organic outcomes. This business model, which underpins our 'free' internet today, grew from nonexistence in 2000 to becoming the biggest and possibly most influential business globally, amassing over 600 billion USD in volume worldwide. Alphabet, Google's parent company, leads as the world's top company, with advertisements accounting for 90% of its revenue.

@@ -2,6 +2,7 @@
 title: "write-up | algorithmic classification and strategic effort"
 date: 2024-06-04T23:47:17+08:00
 draft: false
+tags: ["paper", "TCS"]
 ---
 
 A memoir of Market Mechanism Design course's final presentation report, based on:

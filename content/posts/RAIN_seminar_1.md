@@ -2,6 +2,7 @@
 title: "game theory, with a little help from machine learning I"
 date: 2024-06-26T07:26:22-07:00
 draft: false
+tags: ["paper", "TCS"]
 ---
 
 Of course, the general purpose of an academic presentation is multifaceted (see an [older post](/posts/idea_of_a_presentation/) about it), as discussed here. Nevertheless, I've once heard someone say that the key purpose of a talk at a conference is to **make your audience interested in reading your work after the talk ends**.

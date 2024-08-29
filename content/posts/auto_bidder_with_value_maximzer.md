@@ -3,6 +3,7 @@ title: "value maximizer's auto bidder"
 date: 2023-11-08T23:36:48+08:00
 draft: false
 summary: Aggarwal (2019)'s WINE paper proposed a LP-based framework for modelling autobidder for value maximizers. But it does not capture value maximizing bidders with budget and ROI constraints.
+tags: ["paper"]
 ---
 
 [Gagan Aggarwal](https://dblp.org/pid/75/3847.html), [Ashwinkumar Badanidiyuru](https://dblp.org/pid/15/2638.html) and [Aranyak Mehta](https://dblp.org/pid/23/6337.html)'s [WINE 2019](https://dblp.org/db/conf/wine/wine2019.html#AggarwalBM19) paper **Autobidding with Constraints** proposed a new framework for modelling the online ads keyword search auction. The core is a pretty general LP optimization problem that capture the high-level constraint of the buyer (advertiser), based on the data known, solve an optimal ads assortment. Like the following:

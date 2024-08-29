@@ -3,6 +3,7 @@ title: "suspense n surprise"
 date: 2024-01-01T23:31:13+08:00
 draft: false
 summary: The very first day of 2024 begins with a lovely paper that I stumbled upon, like, two days ago?
+tags: ["paper"]
 ---
 
 The very first day of 2024 begins with a lovely paper that I stumbled upon, like, two days ago? I was reading a survey about information design (Kamenica 2019), when this featured paper captivated me on first sight. Well, sometimes, the academic stars just align!

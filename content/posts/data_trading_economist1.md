@@ -2,6 +2,7 @@
 title: "navigating the future of data trading"
 date: 2024-02-11T23:31:12+08:00
 draft: false
+tags: ["paper"]
 ---
 
 > I'm reading some papers about mechanism design on pricing of information, following up on this data trading reading session

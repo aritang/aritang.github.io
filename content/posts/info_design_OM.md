@@ -2,6 +2,7 @@
 title: "information design in OM"
 date: 2024-04-20T19:15:46+08:00
 draft: false
+tags: ["paper", "OM", "info_design"]
 ---
 
 My advisor was somehow less enthusiastic in information design as compared to other general algorithm game theory topics–despite my several failed attempts to lure him into doing some related projects. But his major concern is solid, that information design demands overly strong assumptions–the existence of a common prior, commitment of the signal sender, inference ability of the signal receiver–all poses challenges for direct applications that justify the existing theory. The real world should be something in between the perfectly rational Bayesian persuasion and the noisy cheap talks.

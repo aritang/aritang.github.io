@@ -2,6 +2,7 @@
 title: "game theory, with a little help from machine learning II"
 date: 2024-06-27T13:57:29-07:00
 draft: false
+tags: ["paper", "TCS"]
 ---
 
 *Following yesterday's post ([here](/posts/RAIN_seminar_1/)), let's delve deeper into Stackelberg Games and the key points of the paper, particularly the addition of context to the problem setting.*

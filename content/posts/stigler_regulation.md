@@ -4,6 +4,7 @@ date: 2024-06-30T15:58:49-07:00
 draft: false
 cover:
     image: auction_houses/stigler.jpeg
+tags: ["paper", "econ"]
 ---
 
 Regulation restricts the action of economic agents—in general. It is omnipresent. Why does regulation exist? In a free-market economy, why does the government choose to place restrictions on the decisions of certain agents and actions?

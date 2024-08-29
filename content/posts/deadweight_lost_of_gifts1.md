@@ -3,6 +3,7 @@ title: "unwrapping rationality: the bias and lovings of gifts"
 date: 2023-11-29T22:14:49+08:00
 draft: false
 summary: A review of Waldfogel's 1993 AER paper "The Deadweight Loss of Christmas".
+tags: ["paper"]
 ---
 
 > This is the midterm review assignment of a course I've taken "Bias and Wisdom in Decision Making". It would make a lovely blog.

@@ -2,6 +2,7 @@
 title: "optimizing kidney exchanges - and beyond"
 date: 2024-03-30T17:02:01+08:00
 draft: false
+tags: ["paper"]
 ---
 
 Looking at two-sided market literatures so as to motivate one of my recently launched project, here's a brief reading write-up of two papers.

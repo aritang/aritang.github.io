@@ -2,6 +2,7 @@
 title: "selling information - model and bound"
 date: 2024-02-13T16:37:52+08:00
 draft: false
+tags: ["paper"]
 ---
 
 A paper I read recently is somewhat interesting. The model is very inspiring for an OM project I'm working on recently, whereas its mathematical method and results are immensely useful to learn from for another problem that I've been working on for a while.

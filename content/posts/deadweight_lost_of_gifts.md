@@ -3,6 +3,7 @@ title: "unwrapping joy - thoughful gift giving beyong monetary measures"
 date: 2023-11-28T22:30:36+08:00
 draft: false
 summary: the unexpected value in gift-giving, beyong deadweight loss
+tags: ["paper"]
 ---
 
 You may have heard of, or are familiar with, the concept of gift mismatch. A notable AER paper, 'The Deadweight Loss of Christmas' by Waldfogel (1993), discussed this issue. Spanning just ten pages, the paper masterfully intertwines elegant theory with convincing experimental evidence.

@@ -3,6 +3,7 @@ title: "fair division - on picking sequence for chores"
 date: 2023-12-14T12:32:20+08:00
 draft: false
 summary: The talk was on fireeeee. I actually like this work despite being a little bit biased towards the general fair division literature.
+tags: ["paper"]
 ---
 
 Today [Xin Huang](https://sites.google.com/view/xinhuang/home) came to ITCS and gave a talk on his paper **[On picking sequence for chores](https://dl.acm.org/doi/abs/10.1145/3580507.3597783)**, which has been accepted at EC'23.
