@@ -1,6 +1,6 @@
 ---
 title: "Reading Notes | Auto-biddings and Auctions in Online Advertising by Aggarwal et al. (2024)"
-date: 2024-09-07T15:22:28+08:00
+date: 2024-09-08T15:22:28+08:00
 draft: false
 ---
 

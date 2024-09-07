@@ -12,10 +12,6 @@ Two lovely read to begin the new semester: **Nature** has the stories:
 >
 > July 2024. [Link](https://www.nature.com/articles/d41586-024-02381-x).
 
-> ### Slow productivity worked for Marie Curie — here’s why you should adopt it, too
->
-> August 2024. [Link](https://www.nature.com/articles/d41586-024-02540-0).
-
 **Productivity** is the eternal goal of corporate **and** academia. Apps—all kinds of apps—has been trying to increase **connectivity**. But they are not the same.
 
 I'm glad that someone finally addressed the elephant in the room—productivity tools sometimes go too far and are distractive. People are always trying to multitask more. It's not good for valuable work, at least.
