@@ -1,6 +1,6 @@
 ---
 title: "losing weight w.r.t. A-share return"
-date: 2024-09-11T21:56:06+08:00
+date: 2024-09-12T21:56:06+08:00
 draft: false
 ---
 
