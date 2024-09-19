@@ -65,3 +65,9 @@ Basically, if you can't join them, create your own club with exclusive membershi
 By examining these tactics, it's clear that Google's path to dominance wasn't paved by superior products alone but also by strategic moves that eliminated competition and choice. As the adage goes, all's fair in love and war—but perhaps not in antitrust law.
 
 At least that's what DOJ has said. And I think they made their point.
+
+### reference
+
+U.S. Department of Justice, Antitrust Division. (2023). *U.S. and Plaintiff States v. Google LLC [2023] - Trial Exhibits*. Retrieved from https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2023-trial-exhibits
+
+U.S. Department of Justice, Office of Public Affairs. (2023). *Justice Department Sues Google for Monopolizing Digital Advertising Technologies*. Retrieved from https://www.justice.gov/opa/pr/justice-department-sues-google-monopolizing-digital-advertising-technologies

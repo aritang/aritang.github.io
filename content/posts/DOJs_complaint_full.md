@@ -80,3 +80,9 @@ Display advertising and sponsored search ads are two nearly equivalent markets, 
 {{<figure align="center" src="/google_ad_gossip/one_more_thing.jpeg" caption="Google's direct control over the keyword ads market highlights its extensive influence in online advertising." width="96%">}}
 
 The DOJ's been missing the other 45% (or even more, as Paul Milgrom's 2020 auction survey suggests): the massive market of keyword ads. Google's ad network has a direct connection to this market, further solidifying its monopolistic position.
+
+### reference
+
+U.S. Department of Justice, Antitrust Division. (2023). *U.S. and Plaintiff States v. Google LLC [2023] - Trial Exhibits*. Retrieved from https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2023-trial-exhibits
+
+U.S. Department of Justice, Office of Public Affairs. (2023). *Justice Department Sues Google for Monopolizing Digital Advertising Technologies*. Retrieved from https://www.justice.gov/opa/pr/justice-department-sues-google-monopolizing-digital-advertising-technologies

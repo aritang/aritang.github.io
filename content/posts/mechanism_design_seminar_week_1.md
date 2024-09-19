@@ -28,7 +28,7 @@ $$
 v_i: 2^{[m]} \to \mathbb{R}_+,
 $$
 
-where $ 2^{[m]} $ is the power set of the item set $ [m] = \{1, 2, \ldots, m\} $.
+where $ 2^{[m]} $ is the power set of the item set $ [m] = \lbrace1, 2, \ldots, m\rbrace $.
 
 An **auction outcome** consists of:
 
@@ -126,7 +126,7 @@ To begin with, the **Walrasian equilibrium** is a fundamental concept where mark
 1. **Utility Maximization**: Each agent $ i $ receives a bundle $ S_i $ that maximizes their utility given the prices:
 
     $$
-    S_i \in \arg\max_{S \subseteq [m]} \left\{ v_i(S) - \sum_{j \in S} p_j \right\}.
+    S_i \in \arg\max_{S \subseteq [m]} \left\lbrace v_i(S) - \sum_{j \in S} p_j \right\rbrace.
     $$
 
 2. **Market Clearing**: All items are sold, and supply meets demand—no item is over- or under-demanded.
