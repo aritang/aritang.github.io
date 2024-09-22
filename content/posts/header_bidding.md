@@ -12,9 +12,13 @@ Related blogs about DOJ vs. Google: [DOJ's complaints overview](/posts/dojs_comp
 
 ## before we begin, here's a quick recap:
 
-*A quick look at the market structure:*
+*A quick look at the complete market:*
 
-{{<figure align="center" src="/google_ad_gossip/ad_exchange.jpeg" caption="Ad server selling impressions to ad exchanges (and general buyers who purchase impressions, like demand-side platforms)." width="96%">}}
+{{<figure align="center" src="/google_ad_gossip/advertiser_buying_tool.jpeg" caption="The 'ad-tech **stack**', from the left (publishers) selling to the left (advertisers)" width="96%">}}
+
+Today we focus on ad-exchanges, when they compete to buy impressions from publisher's ad-server:
+
+{{<figure align="center" src="/google_ad_gossip/ad_exchange.jpeg" caption="Today we focus on **Ad server** selling impressions to **ad exchanges** (and general buyers who purchase impressions, like demand-side platforms)." width="96%">}}
 
 Google's monopolistic maneuvers are mostly straightforward: acquire every piece of the vertical market puzzle—ad servers for publishers, ad exchanges in the middle, and advertiser buying tools (ad networks and demand-side platforms). 
 
@@ -85,15 +89,13 @@ Turns out, doing so would make things much easier. Google introduced **Open Bidd
 
 > Externally, Google portrayed Open Bidding as an improvement to header bidding that created a real-time bidding auction with multiple ad exchanges, similar to header bidding, but on Google’s servers to reduce latency.
 
-But it turned out to be a Trojan horse smuggled into the innocent city of fair competition. Google sneakily manipulated Open Bidding to disadvantage rival ad exchanges in several ways, as accused by the DOJ: they charge a fee on every transaction over Open Bidding; they prohibit ad exchanges' own advertiser buying tools from bidding in Open Bidding auctions (but allow Google's to do so); and they take "*care*" of the information flow during every transaction, hence maximizing their own informational advantage while minimizing the information access between publishers and rival ad exchanges—for example, only Google's ad exchange, AdX, can see more cookie information and, vitally, the bids of other ad exchanges.
+But it turned out to be a Trojan horse smuggled into the innocent city of fair competition. Google sneakily manipulated Open Bidding to disadvantage rival ad exchanges in several ways, as accused by the DOJ:
 
-But Open Bidding turned out to be a Trojan horse for fair competition. The DOJ accuses Google of manipulating Open Bidding to disadvantage rival ad exchanges in several ways:
+- **Transaction Fees:** Google charges fees on every transaction over Open Bidding runned on Google's ad server (DFP).
+- **Bid Restrictions:** Google prohibites ad exchanges' own advertiser-buying tools from bidding in Open Bidding auctions while allowing Google's tools to participate.
+- **Information Control:** Google takes "*care*" of the information flow during every transaction, hence maximizing their own informational advantage while minimizing the information access between publishers and rival ad exchanges—for example, only Google's ad exchange, AdX, can see more cookie information and, vitally, **the bids of other ad exchanges.**
 
-- **Transaction Fees:** Charging fees on every transaction over Open Bidding.
-- **Bid Restrictions:** Prohibiting ad exchanges' own advertiser-buying tools from bidding in Open Bidding auctions while allowing Google's tools to participate.
-- **Information Control:** Google take "*care*" of the information flow during every transaction, hence maximizing their own informational advantage while minimizing the information access between publishers and rival ad exchanges—for example, only Google's ad exchange, AdX, can see more cookie information and, vitally, **the bids of other ad exchanges.**
-
-Come on, in a sealed-bid auction, isn't everyone supposed to play fair and not peek at others' bids? But Google seems to have found the auctioneer's secret decoder ring. It makes more money and still is the gatekeeper of its AdX's monopoly power in the ad exchange market.
+Come on, in a sealed-bid auction, isn't everyone supposed to play fair and not peek at others' bids? But Google seems to have found the auctioneer's secret decoder ring. Despite more competition in the era of open-bidding, Google still is the gatekeeper of its AdX's monopoly power in the ad exchange market.
 
 Lastly, the DOJ summarized Google's actions in solidifying its monopoly:
 
