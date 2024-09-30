@@ -20,7 +20,7 @@ And lastly, come on, it's Paul Milgrom...
 
 (Nah, the DOJ's lawyer probably freaked out upon seeing Paul on their counterparty)
 
-{{<figure align="center" src="/google_ad_gossip/milgrom_grandpa_vibes.jpeg" caption="SLAAAAAAAY." width="50%">}}
+{{<figure align="center" src="/google_ad_gossip/milgrom_grandpa_vibes.jpeg" caption="SLAAAAAAAY." width="66%">}}
 
 ## US v. Google Crossword Puzzle
 
