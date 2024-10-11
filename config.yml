@@ -79,4 +79,6 @@ menu:
     - name: about me
       url: /posts/pinned
       weight: 11
+    - name: pending ideas
+      url: /procrastination_bulletin
 

@@ -80,7 +80,7 @@ We can further characterize gross substitutes valuations in relation to **submod
 
 > **Definition** (Submodular Function): A valuation function $v$ is submodular if, for all $S \subseteq T \subseteq [m]$ and for all $j \notin T$,
 > $$
-> v(S \cup \lbracej\rbrace) - v(S) \geq v(T \cup \lbracej\rbrace) - v(T).
+> v(S \cup \lbrace j \rbrace) - v(S) \geq v(T \cup \lbrace j \rbrace) - v(T).
 > $$
 >
 

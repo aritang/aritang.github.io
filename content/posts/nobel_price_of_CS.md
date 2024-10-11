@@ -1,5 +1,5 @@
 ---
-title: "Nobel Price in Physics, or Computer Science?"
+title: "Nobel Prize in Physics, or Computer Science?"
 date: 2024-10-08T23:37:09+08:00
 draft: false
 ---
