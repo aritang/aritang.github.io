@@ -11,29 +11,26 @@ ChatGPT makes it much easier to modify configurations for my website. I changed 
 
 Fine. Google font has a delivery service—everytime the website loads, it fetches font files from Google. So that only a few lines are required to do the customization:
 
-Put the following in `<head>` of HTML:
+Put the following in `<head>` of HTML `layouts/_defaults/baseof.html`
 
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+<head>
+    {{- partial "head.html" . }}
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet, redirected to css/custom.css -->
+    <link rel="stylesheet" href="{{ (resources.Get "css/custom.css" | resources.Fingerprint).Permalink }}">
+    <!-- Additional Google tag (gtag.js) -->
+</head>
 ```
 
-Put the following lines in `custom.css`:
+Customize in `custom.css`:
 
 ```css
-.montserrat-main-heading {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;  // Example for a bold heading
-  font-style: normal;
-}
-
-.montserrat-body-text {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;  // Normal weight for body text
-  font-style: normal;
+body, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
 }
 ```
 

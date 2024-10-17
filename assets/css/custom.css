@@ -5,17 +5,11 @@
     /* Add any other custom styling for the card's exterior */
 }
 
-.montserrat-main-heading {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;  
-    font-style: normal;
+body, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
 }
-  
-  .montserrat-body-text {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;  
-    font-style: normal;
+
+.title-font {
+    font-family: 'Montserrat', sans-serif; /* Replace 'Your Font Name' */
+    font-weight: bold; /* Adjust as needed */
 }
-  

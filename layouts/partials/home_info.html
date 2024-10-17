@@ -1,8 +1,11 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
-    </header>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+        <h1 class="title-font">{{ .Title | markdownify }}</h1>
+    </header>    
     <div class="entry-content">
         <p id="randomSentencePlaceholder"></p>
 	<script>
