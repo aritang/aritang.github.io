@@ -14,7 +14,7 @@ Btw, the beloved *Wedding March* we all know is from this very suite!
 
 <iframe width="800" height="360" src="https://www.youtube.com/embed/0Oo4z37OUEI?si=YZMEh1WhdO3Y2xhl&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## the postergeist
+## the poltergeist
 
 YuanArithmetic (小猿口算) is an educational mobile app designed to assist primary and middle school students with introductory level arithmetic. It features an 'online competition' mode where users can engage in real-time, one-on-one math battles.
 
