@@ -85,9 +85,9 @@ $$
 R(p) = p \log p + (1 - p) \log (1 - p).
 $$
 In this case, $p^\text{FTRL}_t$ solves to be
-$$
-p^\text{FTRL}_t = \frac{e^{-\eta F_{t - 1}(\mathbf 1)}}{e^{-\eta F_{t - 1}(\mathbf 1)} + e^{-\eta F_{t - 1}(\mathbf 0)}}.
-$$
+
+{{<figure align="center" src="/wine/eq_2.jpeg" caption="" width="56%">}}
+
 Looks familar, right?
 
 <u>Theorem</u> By choosing $\eta$ properly FTRL can be no-regret.
@@ -99,9 +99,9 @@ $$
 p_t^\text{BTL}:= \arg\min_{p\in [0, 1]} F_{t}( p\mathbf 1).
 $$
 <u>Lemma 1</u> (Bounded regret of any FTL w.r.t. $\vec l$) For any instance $l_1, \ldots, l_T$:
-$$
-\sum_{t = 1}^T f_t(p^\text{FTL}_t; l_t) - \min_p F_T(p\mathbf 1) \le \sum_{t = 1}^{T - 1}|p_{t + 1} - p_t|.
-$$
+
+{{<figure align="center" src="/wine/eq1.jpeg" caption="" width="56%">}}
+
 Proof tip: done by proving
 
 (i) $FTL - BTL \le \sum |p_{t + 1} - p_t|$, and
