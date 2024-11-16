@@ -37,12 +37,11 @@ I'm very fortunate to work as an individual undergraduate researcher in the [Ins
 
 In case you're interested or need somerthing to facilitate our conversation, here are research topics that I have been/am still/will be working on (organized in chronological order):
 
-- deep reinforcement learning in inventory management, and transshipment mechanism design –– feat. Jiayu Xu, Wanyu Zhang, Qiushi Han and prof Chaolin Yang.
-- analyzing monopolistic competition with search cost (the Pandora Box model, if you'd ever heard of it before) –– feat. prof Hu Fu.
-- auction design, especially, approximation –– feat. prof. Pinyan Lu.
-- restless multi-armed bandit and its application in social good –– feat. prof Ryan Shi.
-- information design in operational management –– feat. Chenyu Huang and prof. Bo Jiang.
-- antitrust regulation –– feat. prof Modibo Camara
+- deep reinforcement learning on inventory management
+- auction design
+- market mechanism design
+- restless multi-armed bandits
+- antitrust and policy analysis
 
 I'm a fan of [Prof. Al Roth](https://web.stanford.edu/~alroth/), of economic [researches in health industry](/posts/kidney/), and [I've started my blog because of his inspiration](/posts/definition/).
 
