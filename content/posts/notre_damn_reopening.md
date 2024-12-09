@@ -10,7 +10,7 @@ cover:
 
 Five years after the catastrophic fire that left the world mourning one of its most iconic landmarks (April 15, 2019), Notre-Dame de Paris is officially back. The grand reopening on December 8, 2024, feels like the perfect metaphor for our times—fragile yet determined, scarred but standing tall, and impatient: check out [this snappy YouTube reel](https://youtube.com/shorts/0JZci0C4koU?si=LITJsANdtpbqeYOl) of remarkable 50-second storytelling.
 
-The reopening ceremony features an all-star lineup, including Lang Lang, Dudamel, Yo-Yo Ma, and other musical royalty. While the performance is undeniably grand, it’s perhaps a tad too predictable. Let’s just say the program sticks to the usual suspects. Paris has so many brilliant, experimental artists who could have brought fresh vibrance—so why lean on the old guard? Well, we’ll take the Bach anyway.
+The reopening ceremony (watch it [here](https://www.bilibili.com/video/BV1FBqEYnEP1/?share_source=copy_web&vd_source=7d9988cd6152d87ab6877f7dea245a0b)) features an all-star musician lineup, including ones from the classical world such as Lang Lang, Dudamel, Yo-Yo Ma—and even Pop royalty Pharrell Williams is there to sing *Happy*—though somebody pointed out that he might be lip-syncing (see [here](https://www.bilibili.com/video/BV1FBqEYnEP1/?share_source=copy_web&vd_source=7d9988cd6152d87ab6877f7dea245a0b&t=4989)). Let’s just say the program is more ceremonial than innovatively artistic—Mozart, Saint-Saens, of courase Bach and Beethoven... Paris has so many brilliant, experimental artists who could have brought fresh vibrance—so why lean on the old guard?
 
 Of course, President Macron's official photographer deserves an award, again:
 
