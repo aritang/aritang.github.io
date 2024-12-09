@@ -21,7 +21,7 @@ $$
 where:
 
 - $ v_i \in [\underline{v}, \overline{v}] $ is a realization of a random variable from distribution $ F(\cdot) $,
-- $ X_i \in \{0, 1\} $ is an indicator random variable denoting whether the product is a match; $ X_i = 1 $ with probability $ \beta_i $.
+- $ X_i \in \lbrace0, 1\rbrace $ is an indicator random variable denoting whether the product is a match; $ X_i = 1 $ with probability $ \beta_i $.
 
 The distribution $ F(\cdot) $ is assumed to be independent and identically distributed (i.i.d.) across sellers and independent of $ X_i $.
 
@@ -44,7 +44,7 @@ A consumer does not know any $ \beta_i $ or $ v_i $ a priori. They use a ***sear
 Based on their beliefs, consumers incur a cost $ t_j $ to inspect the webpage of the seller in position $ j $. For $ t < t^h $ (along with **a few other regularization assumptions**), the inspection costs are defined as:
 $$
 t_j = \begin{cases}
-t & \text{for } j = 1, 2, 3, 4, \\
+t & \text{for } j = 1, 2, 3, 4, \cr
 t^h & \text{for } j > 4.
 \end{cases}
 $$
