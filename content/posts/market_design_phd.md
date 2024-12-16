@@ -1,5 +1,5 @@
 ---
-title: "Deadlines and Drama | A Market Design View of Grad School Applications"
+title: "Deadlines, Drama and Dream | A Petite Market Design View of Grad School Admissions"
 date: 2024-12-16T22:54:29+08:00
 draft: false
 ---
