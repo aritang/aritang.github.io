@@ -24,4 +24,5 @@ let's see how long it grow, and how will it evolve. wish me luck!
 - [20241011] Google search | [overview](https://www.google.com/intl/en_uk/search/howsearchworks/) [How Google Search works](https://www.google.com/intl/en_uk/search/howsearchworks/how-search-works/) [How Google Search organises information](https://www.google.com/intl/en_uk/search/howsearchworks/how-search-works/organizing-information/) [20241018 DONE]
 - [20241011] do customize fonts [20241017 DONE]
 - [20241017] proof of continuous greedy process. [link](/posts/mechanism_design_seminar_week_4/)
-
+- [20250106] Can Academic Fraud Be Stopped? (Update). Jan 1 2025, Freakonomics. [Link](https://freakonomics.com/podcast/can-academic-fraud-be-stopped-update/).
+- [20250106] Voting Mechanisms. Aug 31 2020, Data Skeptics. [Link](https://podcasts.apple.com/cn/podcast/data-skeptic/id890348705?i=1000489647682).
