@@ -10,4 +10,4 @@ But here’s the pièce de résistance: **you can enjoy ad-free, high-quality se
 
  {{<figure align="center" src="/baidu/baidu_safeword.jpeg" caption="Theorem 1: Baidu's CEO and Ads Won't Coexist." width="100%">}}
 
-Btw, this phenomenon doesn’t extend to Google—Sundar Pichai's name wouldn’t magically part the Red Sea of sponsored links. Perhaps it’s because Google hasn’t yet grasped that the ultimate key to search purity isn’t better algorithms—but better [what?].
+Btw, this phenomenon doesn’t extend to Google—Sundar Pichai's name wouldn’t magically part the Red Sea of sponsored links, yet. Perhaps it’s because Google hasn’t yet grasped that the ultimate key to search purity isn’t better algorithms—but better [what?].
