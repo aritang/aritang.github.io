@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Organizing Simulation Experiment Results with Logging and Structured Storage | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="When conducting simulation experiments, maintaining an organized workflow is essential for ensuring reproducibility and facilitating debugging. As the experiments grow in complexity, managing outputs such as intermediate results, data files, and visualizations can become challenging. A streamlined approach involves using a logger to systematically store results and organizing all outputs in a structured directory based on random seeds and timestamps.
+In this blog post, we&rsquo;ll explore setting up logging, managing directories, and storing results in an organized manner without delving into domain-specific simulation logic.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/cool_stuff/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/cool_stuff/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="Organizing Simulation Experiment Results with Logging and Structured Storage" />
+<meta property="og:description" content="When conducting simulation experiments, maintaining an organized workflow is essential for ensuring reproducibility and facilitating debugging. As the experiments grow in complexity, managing outputs such as intermediate results, data files, and visualizations can become challenging. A streamlined approach involves using a logger to systematically store results and organizing all outputs in a structured directory based on random seeds and timestamps.
+In this blog post, we&rsquo;ll explore setting up logging, managing directories, and storing results in an organized manner without delving into domain-specific simulation logic." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/cool_stuff/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-02T22:49:05+08:00" />
+<meta property="article:modified_time" content="2024-11-02T22:49:05+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Organizing Simulation Experiment Results with Logging and Structured Storage"/>
+<meta name="twitter:description" content="When conducting simulation experiments, maintaining an organized workflow is essential for ensuring reproducibility and facilitating debugging. As the experiments grow in complexity, managing outputs such as intermediate results, data files, and visualizations can become challenging. A streamlined approach involves using a logger to systematically store results and organizing all outputs in a structured directory based on random seeds and timestamps.
+In this blog post, we&rsquo;ll explore setting up logging, managing directories, and storing results in an organized manner without delving into domain-specific simulation logic."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Organizing Simulation Experiment Results with Logging and Structured Storage",
+      "item": "//localhost:1313/posts/cool_stuff/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Organizing Simulation Experiment Results with Logging and Structured Storage",
+  "name": "Organizing Simulation Experiment Results with Logging and Structured Storage",
+  "description": "When conducting simulation experiments, maintaining an organized workflow is essential for ensuring reproducibility and facilitating debugging. As the experiments grow in complexity, managing outputs such as intermediate results, data files, and visualizations can become challenging. A streamlined approach involves using a logger to systematically store results and organizing all outputs in a structured directory based on random seeds and timestamps.\nIn this blog post, we\u0026rsquo;ll explore setting up logging, managing directories, and storing results in an organized manner without delving into domain-specific simulation logic.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "When conducting simulation experiments, maintaining an organized workflow is essential for ensuring reproducibility and facilitating debugging. As the experiments grow in complexity, managing outputs such as intermediate results, data files, and visualizations can become challenging. A streamlined approach involves using a logger to systematically store results and organizing all outputs in a structured directory based on random seeds and timestamps.\nIn this blog post, we’ll explore setting up logging, managing directories, and storing results in an organized manner without delving into domain-specific simulation logic.\nKey Objectives Printing Intermediate Results: Verify the correctness of your program by logging intermediate results during execution. Exporting Results: Save results in text files (.npy, .json) and generate visualizations for analysis. Organizing Outputs: Use a logger and structured directory naming (based on seed and timestamp) to keep everything organized. Code: Structured Logging and Storage for Simulation Experiments Below is a streamlined example that demonstrates how to set up logging, manage directories, and store simulation results in an organized manner.\nimport numpy as np import matplotlib.pyplot as plt import logging import datetime import os import json import hashlib def get_deterministic_seed(seed_str): \"\"\" Generate a deterministic seed from a string using MD5 hashing. \"\"\" return int(hashlib.md5(seed_str.encode('utf-8')).hexdigest(), 16) \u0026 0xffffffff def setup_logger(results_dir): \"\"\" Set up a logger to capture and store console outputs into a text file within the results directory. \"\"\" logger = logging.getLogger('simulation_logger') logger.setLevel(logging.INFO) # Create a file handler log_file = os.path.join(results_dir, \"console_outputs.txt\") fh = logging.FileHandler(log_file) fh.setLevel(logging.INFO) # Create a formatter and set it for the handler formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S') fh.setFormatter(formatter) # Add the handler to the logger logger.addHandler(fh) return logger def run_simulation(seed_str, param1, param2, results_dir, logger): \"\"\" A placeholder simulation function that performs computations, logs intermediate results, and saves outputs. \"\"\" # Set random seed for reproducibility seed = get_deterministic_seed(seed_str) np.random.seed(seed) logger.info(f\"Deterministic Seed: {seed}\") # Perform some computations data = np.random.randn(100) * param1 + param2 logger.info(f\"Generated data with param1={param1} and param2={param2}\") # Save intermediate data as .npy file data_file = os.path.join(results_dir, \"data.npy\") np.save(data_file, data) logger.info(f\"Saved data to {data_file}\") # Save parameters to a .json file params = { 'seed_str': seed_str, 'param1': param1, 'param2': param2, 'timestamp': datetime.datetime.now().isoformat() } params_file = os.path.join(results_dir, \"params.json\") with open(params_file, 'w') as f: json.dump(params, f, indent=4) logger.info(f\"Saved parameters to {params_file}\") # Generate and save a plot plt.figure(figsize=(8, 6)) plt.hist(data, bins=30, alpha=0.7, color='blue') plt.title('Histogram of Simulated Data') plt.xlabel('Value') plt.ylabel('Frequency') plot_file = os.path.join(results_dir, \"data_histogram.png\") plt.savefig(plot_file) plt.close() logger.info(f\"Saved histogram plot to {plot_file}\") # Return results as a dictionary results = { 'data_mean': np.mean(data), 'data_std': np.std(data), 'params': params } return results def main(): # Define seed and timestamp SEED_STR = \"Paganini\" STR_TIME = datetime.datetime.now().strftime('%d-%m-%Y_%H-%M-%S') # Create a results directory based on seed and timestamp RESULTS_DIR = f\"results/{SEED_STR}_{STR_TIME}\" os.makedirs(RESULTS_DIR, exist_ok=True) # Set up the logger logger = setup_logger(RESULTS_DIR) logger.info(\"Simulation started.\") # Define simulation parameters simulation_params = { 'param1': 2.5, 'param2': 0.5 } logger.info(f\"Simulation parameters: {simulation_params}\") # Run the simulation results = run_simulation( seed_str=SEED_STR, param1=simulation_params['param1'], param2=simulation_params['param2'], results_dir=RESULTS_DIR, logger=logger ) # Log final results logger.info(f\"Simulation completed with results: {results}\") logger.info(\"All outputs have been saved successfully.\") if __name__ == \"__main__\": main() Key Components and Functions Deterministic Seed Generation def get_deterministic_seed(seed_str): return int(hashlib.md5(seed_str.encode('utf-8')).hexdigest(), 16) \u0026 0xffffffff Converts a string seed (seed_str) into a deterministic integer seed using MD5 hashing. This ensures reproducibility by generating the same seed from the same input string.\nLogger Setup def setup_logger(results_dir): logger = logging.getLogger('simulation_logger') logger.setLevel(logging.INFO) # Create a file handler log_file = os.path.join(results_dir, \"console_outputs.txt\") fh = logging.FileHandler(log_file) fh.setLevel(logging.INFO) # Create a formatter and set it for the handler formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S') fh.setFormatter(formatter) # Add the handler to the logger logger.addHandler(fh) return logger Purpose: Configures a logger to capture and store console outputs into a text file within the results_dir. This ensures that all logs are timestamped and saved for future reference.\nMain Execution Block def main(): # Define seed and timestamp SEED_STR = \"Paganini\" STR_TIME = datetime.datetime.now().strftime('%d-%m-%Y_%H-%M-%S') # Create a results directory based on seed and timestamp RESULTS_DIR = f\"results/{SEED_STR}_{STR_TIME}\" os.makedirs(RESULTS_DIR, exist_ok=True) # Set up the logger logger = setup_logger(RESULTS_DIR) logger.info(\"Simulation started.\") # Define simulation parameters simulation_params = { 'param1': 2.5, 'param2': 0.5 } logger.info(f\"Simulation parameters: {simulation_params}\") # Run the simulation results = run_simulation( seed_str=SEED_STR, param1=simulation_params['param1'], param2=simulation_params['param2'], results_dir=RESULTS_DIR, logger=logger ) # Log final results logger.info(f\"Simulation completed with results: {results}\") logger.info(\"All outputs have been saved successfully.\") Seed and Timestamp: Defines a seed string and generates a timestamp to uniquely identify the simulation run. Directory Creation: Creates a results directory named based on the seed and timestamp to store all outputs. Conclusion Effectively managing simulation experiments is crucial for deriving meaningful insights and ensuring the reliability of your results. This approach improves organization and reproducibility by systematically structuring results with seeds and timestamps, ensures thorough logging for debugging, allows easy scalability for more complex experiments, and enhances transparency by saving outputs in clear, structured formats.\nFeel free to adapt and expand upon this template to suit the specific needs of your projects!\n",
+  "wordCount" : "814",
+  "inLanguage": "en",
+  "datePublished": "2024-11-02T22:49:05+08:00",
+  "dateModified": "2024-11-02T22:49:05+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/cool_stuff/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Organizing Simulation Experiment Results with Logging and Structured Storage
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-11-02 22:49:05 &#43;0800 &#43;0800&#39;&gt;November 2, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>When conducting simulation experiments, maintaining an organized workflow is essential for ensuring reproducibility and facilitating debugging. As the experiments grow in complexity, managing outputs such as intermediate results, data files, and visualizations can become challenging. A streamlined approach involves using a <strong>logger</strong> to systematically store results and organizing all outputs in a structured directory based on random seeds and timestamps.</p>
+<p>In this blog post, we&rsquo;ll explore setting up logging, managing directories, and storing results in an organized manner without delving into domain-specific simulation logic.</p>
+<h3 id="key-objectives">Key Objectives<a hidden class="anchor" aria-hidden="true" href="#key-objectives">#</a></h3>
+<ol>
+<li><strong>Printing Intermediate Results</strong>: Verify the correctness of your program by logging intermediate results during execution.</li>
+<li><strong>Exporting Results</strong>: Save results in text files (<code>.npy</code>, <code>.json</code>) and generate visualizations for analysis.</li>
+<li><strong>Organizing Outputs</strong>: Use a logger and structured directory naming (based on seed and timestamp) to keep everything organized.</li>
+</ol>
+<h2 id="code-structured-logging-and-storage-for-simulation-experiments">Code: Structured Logging and Storage for Simulation Experiments<a hidden class="anchor" aria-hidden="true" href="#code-structured-logging-and-storage-for-simulation-experiments">#</a></h2>
+<p>Below is a streamlined example that demonstrates how to set up logging, manage directories, and store simulation results in an organized manner.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> hashlib
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_deterministic_seed</span>(seed_str):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Generate a deterministic seed from a string using MD5 hashing.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> int(hashlib<span style="color:#f92672">.</span>md5(seed_str<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))<span style="color:#f92672">.</span>hexdigest(), <span style="color:#ae81ff">16</span>) <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0xffffffff</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup_logger</span>(results_dir):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Set up a logger to capture and store console outputs into a text file within the results directory.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74">&#39;simulation_logger&#39;</span>)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create a file handler</span>
+</span></span><span style="display:flex;"><span>    log_file <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(results_dir, <span style="color:#e6db74">&#34;console_outputs.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>    fh <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>FileHandler(log_file)
+</span></span><span style="display:flex;"><span>    fh<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create a formatter and set it for the handler</span>
+</span></span><span style="display:flex;"><span>    formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>, 
+</span></span><span style="display:flex;"><span>                                  datefmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %H:%M:%S&#39;</span>)
+</span></span><span style="display:flex;"><span>    fh<span style="color:#f92672">.</span>setFormatter(formatter)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Add the handler to the logger</span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>addHandler(fh)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> logger
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_simulation</span>(seed_str, param1, param2, results_dir, logger):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    A placeholder simulation function that performs computations, logs intermediate results,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    and saves outputs.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Set random seed for reproducibility</span>
+</span></span><span style="display:flex;"><span>    seed <span style="color:#f92672">=</span> get_deterministic_seed(seed_str)
+</span></span><span style="display:flex;"><span>    np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>seed(seed)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Deterministic Seed: </span><span style="color:#e6db74">{</span>seed<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Perform some computations</span>
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">100</span>) <span style="color:#f92672">*</span> param1 <span style="color:#f92672">+</span> param2
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generated data with param1=</span><span style="color:#e6db74">{</span>param1<span style="color:#e6db74">}</span><span style="color:#e6db74"> and param2=</span><span style="color:#e6db74">{</span>param2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Save intermediate data as .npy file</span>
+</span></span><span style="display:flex;"><span>    data_file <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(results_dir, <span style="color:#e6db74">&#34;data.npy&#34;</span>)
+</span></span><span style="display:flex;"><span>    np<span style="color:#f92672">.</span>save(data_file, data)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Saved data to </span><span style="color:#e6db74">{</span>data_file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Save parameters to a .json file</span>
+</span></span><span style="display:flex;"><span>    params <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;seed_str&#39;</span>: seed_str,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;param1&#39;</span>: param1,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;param2&#39;</span>: param2,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;timestamp&#39;</span>: datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>isoformat()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    params_file <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(results_dir, <span style="color:#e6db74">&#34;params.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(params_file, <span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>        json<span style="color:#f92672">.</span>dump(params, f, indent<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Saved parameters to </span><span style="color:#e6db74">{</span>params_file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Generate and save a plot</span>
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>hist(data, bins<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Histogram of Simulated Data&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Value&#39;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Frequency&#39;</span>)
+</span></span><span style="display:flex;"><span>    plot_file <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(results_dir, <span style="color:#e6db74">&#34;data_histogram.png&#34;</span>)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>savefig(plot_file)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Saved histogram plot to </span><span style="color:#e6db74">{</span>plot_file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Return results as a dictionary</span>
+</span></span><span style="display:flex;"><span>    results <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;data_mean&#39;</span>: np<span style="color:#f92672">.</span>mean(data),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;data_std&#39;</span>: np<span style="color:#f92672">.</span>std(data),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;params&#39;</span>: params
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> results
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define seed and timestamp</span>
+</span></span><span style="display:flex;"><span>    SEED_STR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Paganini&#34;</span>
+</span></span><span style="display:flex;"><span>    STR_TIME <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-%m-%Y_%H-%M-%S&#39;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create a results directory based on seed and timestamp</span>
+</span></span><span style="display:flex;"><span>    RESULTS_DIR <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;results/</span><span style="color:#e6db74">{</span>SEED_STR<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>STR_TIME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>makedirs(RESULTS_DIR, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Set up the logger</span>
+</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> setup_logger(RESULTS_DIR)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Simulation started.&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define simulation parameters</span>
+</span></span><span style="display:flex;"><span>    simulation_params <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;param1&#39;</span>: <span style="color:#ae81ff">2.5</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;param2&#39;</span>: <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Simulation parameters: </span><span style="color:#e6db74">{</span>simulation_params<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Run the simulation</span>
+</span></span><span style="display:flex;"><span>    results <span style="color:#f92672">=</span> run_simulation(
+</span></span><span style="display:flex;"><span>        seed_str<span style="color:#f92672">=</span>SEED_STR,
+</span></span><span style="display:flex;"><span>        param1<span style="color:#f92672">=</span>simulation_params[<span style="color:#e6db74">&#39;param1&#39;</span>],
+</span></span><span style="display:flex;"><span>        param2<span style="color:#f92672">=</span>simulation_params[<span style="color:#e6db74">&#39;param2&#39;</span>],
+</span></span><span style="display:flex;"><span>        results_dir<span style="color:#f92672">=</span>RESULTS_DIR,
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">=</span>logger
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Log final results</span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Simulation completed with results: </span><span style="color:#e6db74">{</span>results<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;All outputs have been saved successfully.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><h2 id="key-components-and-functions">Key Components and Functions<a hidden class="anchor" aria-hidden="true" href="#key-components-and-functions">#</a></h2>
+<h3 id="deterministic-seed-generation">Deterministic Seed Generation<a hidden class="anchor" aria-hidden="true" href="#deterministic-seed-generation">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_deterministic_seed</span>(seed_str):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> int(hashlib<span style="color:#f92672">.</span>md5(seed_str<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))<span style="color:#f92672">.</span>hexdigest(), <span style="color:#ae81ff">16</span>) <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0xffffffff</span>
+</span></span></code></pre></div><p>Converts a string seed (<code>seed_str</code>) into a deterministic integer seed using MD5 hashing. This ensures reproducibility by generating the same seed from the same input string.</p>
+<h3 id="logger-setup">Logger Setup<a hidden class="anchor" aria-hidden="true" href="#logger-setup">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup_logger</span>(results_dir):
+</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74">&#39;simulation_logger&#39;</span>)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create a file handler</span>
+</span></span><span style="display:flex;"><span>    log_file <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(results_dir, <span style="color:#e6db74">&#34;console_outputs.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>    fh <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>FileHandler(log_file)
+</span></span><span style="display:flex;"><span>    fh<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create a formatter and set it for the handler</span>
+</span></span><span style="display:flex;"><span>    formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>, 
+</span></span><span style="display:flex;"><span>                                  datefmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %H:%M:%S&#39;</span>)
+</span></span><span style="display:flex;"><span>    fh<span style="color:#f92672">.</span>setFormatter(formatter)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Add the handler to the logger</span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>addHandler(fh)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> logger
+</span></span></code></pre></div><p><strong>Purpose</strong>: Configures a logger to capture and store console outputs into a text file within the <code>results_dir</code>. This ensures that all logs are timestamped and saved for future reference.</p>
+<h3 id="main-execution-block">Main Execution Block<a hidden class="anchor" aria-hidden="true" href="#main-execution-block">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define seed and timestamp</span>
+</span></span><span style="display:flex;"><span>    SEED_STR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Paganini&#34;</span>
+</span></span><span style="display:flex;"><span>    STR_TIME <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-%m-%Y_%H-%M-%S&#39;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create a results directory based on seed and timestamp</span>
+</span></span><span style="display:flex;"><span>    RESULTS_DIR <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;results/</span><span style="color:#e6db74">{</span>SEED_STR<span style="color:#e6db74">}</span><span style="color:#e6db74">_</span><span style="color:#e6db74">{</span>STR_TIME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>makedirs(RESULTS_DIR, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Set up the logger</span>
+</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> setup_logger(RESULTS_DIR)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Simulation started.&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define simulation parameters</span>
+</span></span><span style="display:flex;"><span>    simulation_params <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;param1&#39;</span>: <span style="color:#ae81ff">2.5</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;param2&#39;</span>: <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Simulation parameters: </span><span style="color:#e6db74">{</span>simulation_params<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Run the simulation</span>
+</span></span><span style="display:flex;"><span>    results <span style="color:#f92672">=</span> run_simulation(
+</span></span><span style="display:flex;"><span>        seed_str<span style="color:#f92672">=</span>SEED_STR,
+</span></span><span style="display:flex;"><span>        param1<span style="color:#f92672">=</span>simulation_params[<span style="color:#e6db74">&#39;param1&#39;</span>],
+</span></span><span style="display:flex;"><span>        param2<span style="color:#f92672">=</span>simulation_params[<span style="color:#e6db74">&#39;param2&#39;</span>],
+</span></span><span style="display:flex;"><span>        results_dir<span style="color:#f92672">=</span>RESULTS_DIR,
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">=</span>logger
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Log final results</span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Simulation completed with results: </span><span style="color:#e6db74">{</span>results<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;All outputs have been saved successfully.&#34;</span>)
+</span></span></code></pre></div><ol>
+<li><strong>Seed and Timestamp</strong>: Defines a seed string and generates a timestamp to uniquely identify the simulation run.</li>
+<li><strong>Directory Creation</strong>: Creates a results directory named based on the seed and timestamp to store all outputs.</li>
+</ol>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Effectively managing simulation experiments is crucial for deriving meaningful insights and ensuring the reliability of your results. This approach improves organization and reproducibility by systematically structuring results with seeds and timestamps, ensures thorough logging for debugging, allows easy scalability for more complex experiments, and enhances transparency by saving outputs in clear, structured formats.</p>
+<p>Feel free to adapt and expand upon this template to suit the specific needs of your projects!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

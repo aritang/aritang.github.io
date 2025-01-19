@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Paper on ariana&#39;s blog</title>
+    <link>//localhost:1313/tags/paper/</link>
+    <description>Recent content in Paper on ariana&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Aug 2024 15:47:30 +0800</lastBuildDate><atom:link href="//localhost:1313/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Summary | Paul Milgrom (2019) Auction Market Design Recent Innovations</title>
+      <link>//localhost:1313/posts/milgrom_internet_ad_2020/</link>
+      <pubDate>Wed, 28 Aug 2024 15:47:30 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/milgrom_internet_ad_2020/</guid>
+      <description>&lt;p&gt;The journey begins with Google&amp;rsquo;s sponsored search business. When Google developed the PageRank algorithm, it not only ranked results but also recommended the most relevant ones to users. Simultaneously, it charged advertisers to display their &amp;lsquo;sponsored&amp;rsquo; results atop those organic outcomes. This business model, which underpins our &amp;lsquo;free&amp;rsquo; internet today, grew from nonexistence in 2000 to becoming the biggest and possibly most influential business globally, amassing over 600 billion USD in volume worldwide. Alphabet, Google&amp;rsquo;s parent company, leads as the world&amp;rsquo;s top company, with advertisements accounting for 90% of its revenue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Summary for Drakopoulos et al (20&#39;MS) | Persuading Customers to Buy Early: The Value of Personalized Information Provisioning</title>
+      <link>//localhost:1313/posts/revisit_drakopoulos/</link>
+      <pubDate>Tue, 20 Aug 2024 06:23:29 +0900</pubDate>
+      
+      <guid>//localhost:1313/posts/revisit_drakopoulos/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a summary of the paper &lt;em&gt;Persuading Customers to Buy Early: The Value of Personalized Information Provisioning&lt;/em&gt;, by Kimon Drakopoulos, Shobhit Jai and Ramandeep Randhawa, published online @ Management Science, in 2021.&lt;/p&gt;
+&lt;p&gt;The paper studies the persuasion and pricing problem for a seller with informational advantage about its inventory level.&lt;/p&gt;
+&lt;p&gt;Model: a seller sells a single good over two period to unit-demand buyers, out of inventory $Q$. The inventory level might be &lt;strong&gt;low&lt;/strong&gt; (type &lt;code&gt;L&lt;/code&gt;) or &lt;strong&gt;high&lt;/strong&gt; (type &lt;code&gt;H&lt;/code&gt;). The paper takes the assumption that there is a unit mass of buyers, with their private type of valuation for the product distributed according to $v\sim F(\cdot)$. Inventory level &lt;code&gt;H = 1&lt;/code&gt;, and &lt;code&gt;L &amp;lt; 1&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paper Summary | Optimizing Product Launches w/ Strategic Consumers</title>
+      <link>//localhost:1313/posts/product_launch_brownian_motion/</link>
+      <pubDate>Sat, 27 Jul 2024 13:41:05 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/product_launch_brownian_motion/</guid>
+      <description>&lt;blockquote&gt;
+&lt;h2 id=&#34;optimizing-product-launches-in-the-presence-of-strategic-consumers&#34;&gt;Optimizing Product Launches in the Presence of Strategic Consumers.&lt;/h2&gt;
+&lt;p&gt;By Ilan Lobel, Jigar Patel, Gustavo Vulcano, and Jiawei Zhang.&lt;/p&gt;
+&lt;p&gt;Management Science 2016. DOI &lt;a href=&#34;https://doi.org/10.1287/mnsc.2015.2189&#34;&gt;https://doi.org/10.1287/mnsc.2015.2189&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The paper studies firm&amp;rsquo;s product launch policy. It is motivated by the industry example, where tech firms iteratively release new models of their products. For example, Apple releasing one new iPhone models almost every 12-18 months, or Nintendo&amp;rsquo;s upcoming switch 2 that has been overdued 7 years (still is though).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Limits of Price Discrimination</title>
+      <link>//localhost:1313/posts/market_segmentation/</link>
+      <pubDate>Tue, 23 Jul 2024 23:38:40 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/market_segmentation/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a reallly cool paper. Bergemann et al. (2015) &lt;a href=&#34;http://dx.doi.org/10.1257/aer.20130848&#34;&gt;&lt;em&gt;The Limits of Price Discrimination&lt;/em&gt;&lt;/a&gt;. AER. DOI: &lt;em&gt;&lt;a href=&#34;http://dx.doi.org/10.1257/aer.20130848&#34;&gt;http://dx.doi.org/10.1257/aer.20130848&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ABSTRACT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We analyze the welfare consequences of a monopolist having additional information about consumers’ tastes, beyond the prior distribution; the additional information can be used to charge different prices to different segments of the market, i.e., carry out &amp;ldquo;third degree price discrimination.&amp;rdquo; We show that the segmentation and pricing induced by the additional information can achieve every combination of consumer and producer surplus such that: (&lt;em&gt;i&lt;/em&gt;) consumer sur- plus is nonnegative, (&lt;em&gt;ii&lt;/em&gt;) producer surplus is at least as high as profits under the uniform monopoly price, and (&lt;em&gt;iii&lt;/em&gt;) total surplus does not exceed the surplus generated by efficient trade.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>G. Stigler (1971) The Theory of Ecnomic Regulation</title>
+      <link>//localhost:1313/posts/stigler_regulation/</link>
+      <pubDate>Sun, 30 Jun 2024 15:58:49 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/stigler_regulation/</guid>
+      <description>&lt;p&gt;Regulation restricts the action of economic agents—in general. It is omnipresent. Why does regulation exist? In a free-market economy, why does the government choose to place restrictions on the decisions of certain agents and actions?&lt;/p&gt;
+&lt;p&gt;George Stigler (1911-1991) introduced his &amp;ldquo;Theory of Economic Regulation&amp;rdquo; in 1971 trying to answer this question in a well-established framework, on the basis of some previous empirical arguments such as Normative Analysis as a Positive Theory (NPT) or Capture Theory (CT).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>game theory, with a little help from machine learning II</title>
+      <link>//localhost:1313/posts/rain_seminar_2/</link>
+      <pubDate>Thu, 27 Jun 2024 13:57:29 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/rain_seminar_2/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Following yesterday&amp;rsquo;s post (&lt;a href=&#34;//localhost:1313/posts/RAIN_seminar_1/&#34;&gt;here&lt;/a&gt;), let&amp;rsquo;s delve deeper into Stackelberg Games and the key points of the paper, particularly the addition of context to the problem setting.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;regret-minimization-in-stackelberg-games-with-side-information&#34;&gt;Regret Minimization in Stackelberg Games with Side Information&lt;/h2&gt;
+&lt;p&gt;Keegan Harris, Zhiwei Steven Wu, Maria-Florina Balcan (2024) | &lt;a href=&#34;https://arxiv.org/abs/2402.08576&#34;&gt;paper&amp;rsquo;s arxiv link&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;recap-of-the-mode&#34;&gt;recap of the mode:&lt;/h3&gt;
+&lt;p&gt;A Stackelberg Security Game is a structured competitive setting involving a defender and an attacker. The defender commits to a strategy $ \mathbf p \in \mathbb{R}^n $ over $ n $ targets, and the attacker selects a target. The utility outcome for both parties depends on their actions and possibly some unknown world state event.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>game theory, with a little help from machine learning I</title>
+      <link>//localhost:1313/posts/rain_seminar_1/</link>
+      <pubDate>Wed, 26 Jun 2024 07:26:22 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/rain_seminar_1/</guid>
+      <description>&lt;p&gt;Of course, the general purpose of an academic presentation is multifaceted (see an &lt;a href=&#34;//localhost:1313/posts/idea_of_a_presentation/&#34;&gt;older post&lt;/a&gt; about it), as discussed here. Nevertheless, I&amp;rsquo;ve once heard someone say that the key purpose of a talk at a conference is to &lt;strong&gt;make your audience interested in reading your work after the talk ends&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I attended the RAIN seminar &lt;a href=&#34;posts/rain_seminar/&#34;&gt;yesterday&lt;/a&gt; at Y2E2, Stanford, where Nina Balcan presented one of her latest works. Personally, I have a general interest in research that involves complex human behaviors. But Nina Balcan&amp;rsquo;s talk was particularly captivating. So, I decided to read a bit of the paper, &lt;em&gt;Online Learning in Stackelberg Security Games&lt;/em&gt; :&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nina Balcan presents | Online learning in Stackelberg Security Games</title>
+      <link>//localhost:1313/posts/rain_seminar/</link>
+      <pubDate>Tue, 25 Jun 2024 00:15:24 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/rain_seminar/</guid>
+      <description>&lt;p&gt;I had the very fortune to listen to Nina Balcan giving a talk on one of her latest work, &lt;em&gt;&lt;strong&gt;Online learning in Stackelberg Security Games&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ABSTRACT&lt;/p&gt;
+&lt;p&gt;In a Stackelberg Security Game, a defender commits to a randomized deployment of security resources, and an attacker best responds by attacking a target that maximizes their utility. While algorithms for computing an optimal strategy for the defender to commit to have been used in several real-world applications, deployed applications require knowledge about the utility function of the potential attacker. In this talk I will describe an online learning approach for addressing this problem. We consider algorithms that prescribe a randomized strategy for the defender at each step against an adversarially chosen sequence of attackers and obtain feedback on their choices. I will discuss online algorithms whose regret (when compared to the best fixed strategy in hindsight) is sublinear in the number of time steps. I will also consider an extension that handles auxiliary contextual information that is often readily available to each player (e.g. traffic patterns or weather conditions) and discuss what no regret guarantees are possible in this even more realistic scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>write-up | algorithmic classification and strategic effort</title>
+      <link>//localhost:1313/posts/network_principle_agent/</link>
+      <pubDate>Tue, 04 Jun 2024 23:47:17 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/network_principle_agent/</guid>
+      <description>&lt;p&gt;A memoir of Market Mechanism Design course&amp;rsquo;s final presentation report, based on:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;algorithmic-classification-and-strategic-effort&#34;&gt;Algorithmic Classification and Strategic Effort&lt;/h3&gt;
+&lt;p&gt;Jon Kleinberg and Manish Raghavan | ACM SIGecom Exchanges, Vol. 18, No. 2, November 2020, Pages 53–60&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;motivation-difference-in-modelling-strategic-behavior-and-objectivesbetween-econcs-perspectives&#34;&gt;motivation: difference in modelling strategic behavior and objectives–between econ/CS perspectives&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The principal-agent and strategic machine learning literatures appear to share a common goal: how should one structure a decision-making rule to account for the strategic actions of decision subjects?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mostly OM diary | Practicing OR/OM in China</title>
+      <link>//localhost:1313/posts/mostly_om_5/</link>
+      <pubDate>Mon, 03 Jun 2024 09:22:45 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/mostly_om_5/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;speaker: &lt;strong&gt;Zizhuo Wang&lt;/strong&gt; | Prof., The Chinese University of Hong Kong-Shenzhen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Takeaway: point of view of bridging practice and research.&lt;/p&gt;
+&lt;h3 id=&#34;for-industry-solutions&#34;&gt;For industry solutions:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Need to consider a lot of details&lt;/li&gt;
+&lt;li&gt;Need to be fast and intepretation, therefore requires simple solutions&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t care about theory.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;for-academic-works&#34;&gt;For academic works:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Need abstract to focus&lt;/li&gt;
+&lt;li&gt;Graced with time&lt;/li&gt;
+&lt;li&gt;Expect some generality, therefore theory.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT&lt;/strong&gt;&lt;/em&gt;:&lt;/h2&gt;
+&lt;p&gt;In the past years, there have been growing number of companies in China that adopt OR methods in their operations. There are also several interesting research questions that arise in those application problems. In this talk, we present some recent projects and some of the research questions that come from those scenarios.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mostly OM diary | Randomization in Product, Fulfillment, and Pricing as a Profit Lever</title>
+      <link>//localhost:1313/posts/mostly_om_4/</link>
+      <pubDate>Sun, 02 Jun 2024 09:16:49 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/mostly_om_4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;speaker: &lt;strong&gt;Ming Hu&lt;/strong&gt; | Prof., University of Toronto&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Keys: random &lt;strong&gt;product offering/demand allocation/pricing algorithm&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT&lt;/strong&gt;&lt;/em&gt;:&lt;/h2&gt;
+&lt;p&gt;First, we study blind boxes as a novel selling mechanism in which buyers purchase sealed packages containing unknown items, with the chance of uncovering rare or special items. We show how such product randomization introduced by the blind box can improve the seller’s profitability over traditional separate selling. Second, we study how an e-commerce platform should assign sequentially arriving customers to sellers who compete to sell identical products on the platform. The allocation rule may be random and dependent on the sellers’ inventory levels. We show how such demand fulfillment randomization can incentivize sellers to hold more inventory and improve the platform’s profitability and customer welfare. Third, we study randomized promotions in which the firm randomly offers discounts over time to sequentially arriving customers with heterogeneous valuations and patience levels. We show how price randomization can improve the firm’s profitability beyond deterministic pricing policies.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mostly OM diary | Optimal Conditional Drug Approval</title>
+      <link>//localhost:1313/posts/mostly_om_3/</link>
+      <pubDate>Sat, 01 Jun 2024 08:52:00 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/mostly_om_3/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;speaker: &lt;strong&gt;Peng Sun&lt;/strong&gt; | Prof., Duke University&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT:&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;New prescription drugs require regulatory approval before drug makers can sell them. In some countries, regulators may conditionally approve a drug, which allows sales to begin before the developer has proven the drug&amp;rsquo;s efficacy. After further testing, the regulator may either grant final approval or reject the drug. We show that conditional approval not only speeds access to drugs but also encourages the development of drugs that would not have been pursued otherwise. Using mechanism design principles, we show that regulators should conditionally approve a drug even if it is ex-ante less likely to prove efficacious, under certain conditions. The regulator should approve the drug to encourage investment, especially when only the firm knows the testing cost. However, drugs that are less likely to prove efficacious should only be conditionally approved for a portion of the patient population if that is enough to motivate testing. Additionally, the impact of conditional approval is greater when the firm&amp;rsquo;s revenue increases over time. Finally, a regulator should sometimes commit that in the future it will grant final approval for a drug that narrowly misses the efficacy threshold in return for the firm testing an otherwise unprofitable drug.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mostly OM diary | Allocating Divisible Resources on Arms with Unknown and Random Rewards</title>
+      <link>//localhost:1313/posts/mostly_om_2/</link>
+      <pubDate>Fri, 31 May 2024 08:46:11 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/mostly_om_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;speaker: &lt;strong&gt;Ningyuan Chen&lt;/strong&gt; | Prof., University of Toronto&lt;/p&gt;
+&lt;p&gt;related paper: &lt;em&gt;&lt;a href=&#34;https://arxiv.org/abs/2306.16578&#34;&gt;Allocating Divisible Resources on Arms with Unknown and Random Rewards&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT&lt;/strong&gt;:&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;We consider a decision maker allocating one unit of renewable and divisible resource in each period on a number of arms. The arms have unknown and random rewards whose means are proportional to the allocated resource and whose variances are proportional to an order b of the allocated resource. In particular, if the decision maker allocates resource $A_i$ to arm $i$ in a period, then the reward $Y_i$ is $Yi(Ai)=A_i\mu_i+A_i^b \xi_i$, where $\mu_i$ is the unknown mean and the noise $\xi_i$ is independent and sub-Gaussian. When the order $b$ ranges from 0 to 1, the framework smoothly bridges the standard stochastic multi-armed bandit and online learning with full feedback. We design two algorithms that attain the optimal gap-dependent and gap-independent regret bounds for $b\in [0,1]$, and demonstrate a phase transition at $b=1/2$. The theoretical results hinge on a novel concentration inequality we have developed that bounds a linear combination of sub-Gaussian random variables whose weights are fractional, adapted to the filtration, and monotonic.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mostly OM diary | The Limits of Personalization in Assortment Optimization</title>
+      <link>//localhost:1313/posts/mostly_om_1/</link>
+      <pubDate>Thu, 30 May 2024 08:40:08 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/mostly_om_1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;speaker: &lt;strong&gt;Guillermo Gallego&lt;/strong&gt; | Prof., The Chinese University of Hong Kong-Shenzhen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT&lt;/strong&gt;&lt;/em&gt;:&lt;/h2&gt;
+&lt;p&gt;To study the limits of personalization, we introduce the notion of a clairvoyant firm that can read the mind of consumers and sell them the highest revenue product that they are willing to buy. We show how to compute the expected revenue of the clairvoyant firm for a class of rational discrete choice models, and develop prophet-type inequalities that provide performance guarantees for the expected revenue of the traditional assortment optimization firm (a TAOP firm) relative to the clairvoyant firm, and therefore to any effort to personalize assortments.  In particular, we show that the expected revenue of the clairvoyant firm cannot exceed twice the expected revenue of the TAOP for the RCS model, the MNL, the GAM and the Nested-Logit Model. On the other hand, there are random utility models for which personalized assortments can earn up to $n$ times more than a TAOP firm, where $n$ is the number of products. Our numerical studies indicate that when the mean utilities of the products are heterogeneous among consumer types, and the variance of the utilities is small, firms can gain substantial benefits from personalized assortments. We support these observations, and others, with theoretical findings.  While the consumers’ surplus can potentially be larger under personalized assortments, clairvoyant firms with pricing power can extract all surplus, and earn arbitrarily more than traditional firms that optimize over prices but do not personalize them. For the price-aware MNL, however, a clairvoyant firm can earn at most $\exp(1)$ more than a traditional firm.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>regulation for algorithmic collusion</title>
+      <link>//localhost:1313/posts/regulating_algorithmic_collusion/</link>
+      <pubDate>Tue, 30 Apr 2024 22:52:19 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/regulating_algorithmic_collusion/</guid>
+      <description>&lt;p&gt;This week, &lt;strong&gt;Chenhao Zhang&lt;/strong&gt; from Northwestern University visited ITCS and gave &lt;a href=&#34;https://itcs.sufe.edu.cn/48/71/c10453a215153/page.htm&#34;&gt;a talk on Regulation of Algorithmic Collusion&lt;/a&gt;, based on his ongoing collaboration with Prof. Jason Hartline. Here&amp;rsquo;s a background of the topic, summary of the talk and their work (hopefully), and some discussion afterwards.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;regulation-of-algorithmic-collusion&#34;&gt;Regulation of Algorithmic Collusion&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;ABSTRACT&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Consider sellers in a competitive market that use algorithms to adapt their prices from data that they collect. In such a context it is plausible that algorithms could arrive at prices that are higher than the competitive prices and this may benefit sellers at the expense of consumers (i.e., the buyers in the market). This paper gives a definition of plausible algorithmic non-collusion for pricing algorithms. The definition allows a regulator to empirically audit algorithms by applying a statistical test to the data that they collect. Algorithms that are good, i.e., approximately optimize prices to market conditions, can be augmented to contain the data sufficient to pass the audit. Algorithms that have colluded on, e.g., supra-competitive prices cannot pass the audit. The definition allows sellers to possess useful side information that may be correlated with supply and demand and could affect the prices used by good algorithms. The paper provides an analysis of the statistical complexity of such an audit, i.e., how much data is sufficient for the test of non-collusion to be accurate.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>information design in OM</title>
+      <link>//localhost:1313/posts/info_design_om/</link>
+      <pubDate>Sat, 20 Apr 2024 19:15:46 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/info_design_om/</guid>
+      <description>&lt;p&gt;My advisor was somehow less enthusiastic in information design as compared to other general algorithm game theory topics–despite my several failed attempts to lure him into doing some related projects. But his major concern is solid, that information design demands overly strong assumptions–the existence of a common prior, commitment of the signal sender, inference ability of the signal receiver–all poses challenges for direct applications that justify the existing theory. The real world should be something in between the perfectly rational Bayesian persuasion and the noisy cheap talks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>penalties and rewards for fair learning in paired kidney exchange programs</title>
+      <link>//localhost:1313/posts/optimizing_kidney_exchanges1/</link>
+      <pubDate>Sun, 31 Mar 2024 17:16:17 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/optimizing_kidney_exchanges1/</guid>
+      <description>&lt;p&gt;Following &lt;a href=&#34;//localhost:1313/posts/optimizing_kidney_exchanges&#34;&gt;yesterday&lt;/a&gt;, the second paper I&amp;rsquo;d recommend is Carvalho et al. &lt;em&gt;Penalties and Rewards for Fair Learning in Paired Kidney Exchange Programs&lt;/em&gt; (WINE2023).&lt;/p&gt;
+&lt;p&gt;The paper took a data-driven approach and tested its method on Canadian Kidney Exchange program&amp;rsquo;s data. It established a dynamic (over time) kidney exchange model so as to take in consideration of some aspects missed by myopic naive matching schemes. They developed a novel &lt;strong&gt;learning&lt;/strong&gt; approach to update the &lt;strong&gt;weights&lt;/strong&gt; of the vertices so as to improve equity as well as efficiency.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>optimizing kidney exchanges - and beyond</title>
+      <link>//localhost:1313/posts/optimizing_kidney_exchanges/</link>
+      <pubDate>Sat, 30 Mar 2024 17:02:01 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/optimizing_kidney_exchanges/</guid>
+      <description>&lt;p&gt;Looking at two-sided market literatures so as to motivate one of my recently launched project, here&amp;rsquo;s a brief reading write-up of two papers.&lt;/p&gt;
+&lt;p&gt;Starting with the first one: Ashlagi et al. &lt;em&gt;On Matching and Thickness in Heterogeneous Dynamic Markets&lt;/em&gt; (OR2019).&lt;/p&gt;
+&lt;h2 id=&#34;kidney-exchange-101&#34;&gt;kidney exchange 101&lt;/h2&gt;
+&lt;p&gt;Before diving into the paper, here&amp;rsquo;s how kidney exchange actually works.&lt;/p&gt;
+&lt;h3 id=&#34;the-concept-of-exchange&#34;&gt;the concept of &lt;strong&gt;&amp;ldquo;exchange&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Kidney transplantation is essential for patients with late-stage renal failure. While a healthy individual can donate one of their kidneys to their loved ones, often the donor is incompatible with the intended recipient. Kidney exchange allows such patient–donor pairs to swap donors so that each patient can receive a kidney from a compatible donor.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Secret Mathematical Patterns Revealed in Bach’s Music</title>
+      <link>//localhost:1313/posts/mathematical_pattern_music/</link>
+      <pubDate>Tue, 20 Feb 2024 23:48:51 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/mathematical_pattern_music/</guid>
+      <description>&lt;p&gt;Music exists at the sublime confluence of mathematics and artistry, embodying a synergy that elevates both disciplines. The essence of music theory, particularly in the analysis of chords, mirrors an advanced form of modular arithmetic, showcasing a mathematical elegance. Musical scores serve as encoded scripts of melodies, awaiting decryption and performance. Particularly, Johann Sebastian Bach epitomizes this blend of mathematical intricacy and artistic beauty, standing as a paragon of the fusion between the two realms.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>selling information - model and bound</title>
+      <link>//localhost:1313/posts/selling_info/</link>
+      <pubDate>Tue, 13 Feb 2024 16:37:52 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/selling_info/</guid>
+      <description>&lt;p&gt;A paper I read recently is somewhat interesting. The model is very inspiring for an OM project I&amp;rsquo;m working on recently, whereas its mathematical method and results are immensely useful to learn from for another problem that I&amp;rsquo;ve been working on for a while.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Is Selling Complete Information (Approximately) Optimal?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dirk Bergemann, Yang Cai, Grigoris Velegkas, and Mingfei Zhao. 2022.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ABSTRACT&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We study the problem of selling information to a data-buyer who faces a decision problem under uncertainty. We consider the classic Bayesian decision-theoretic model pioneered by Blackwell. Initially, the data buyer has only partial information about the payoff-relevant state of the world. A data seller offers additional information about the state of the world. The information is revealed through signaling schemes, also referred to as experiments. In the single-agent setting, any mechanism can be represented as a menu of experiments. A recent paper by Bergemann et al.[8] present a complete characterization of the revenue-optimal mechanism in a binary state and binary action environment. By contrast, no characterization is known for the case with more actions. In this paper, we consider more general environments and study arguably the simplest mechanism, which only sells the fully informative experiment. In the environment with binary state and m≥3 actions, we provide an $O(m)$-approximation to the optimal revenue by selling only the fully informative experiment and show that the approximation ratio is tight up to an absolute constant factor. An important corollary of our lower bound is that the size of the optimal menu must grow at least linearly in the number of available actions, so no universal upper bound exists for the size of the optimal menu in the general single-dimensional setting. We also provide a sufficient condition under which selling only the fully informative experiment achieves the optimal revenue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>navigating the future of data trading</title>
+      <link>//localhost:1313/posts/data_trading_economist1/</link>
+      <pubDate>Sun, 11 Feb 2024 23:31:12 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/data_trading_economist1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m reading some papers about mechanism design on pricing of information, following up on this data trading reading session&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bergemann et al. (AER 2018): The Design and Price of Information.&lt;/li&gt;
+&lt;li&gt;Bergemann et al. (EC 2022): Is Selling Completely Information (Approximately) Optimal?&lt;/li&gt;
+&lt;li&gt;Bergemann et al. (EC 2015): Selling Cookies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hopefully, I&amp;rsquo;ll finish them within this week. I have a strong feeling that they will be immensely interesting.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Before our discussion, a short notice: a review of numerous news posts and literature in econ-CS reveals a significant discrepancy between academic research on data trading in algorithmic game theory (AGT) and Econ-CS communities, and the evolving realities of the actual data trading market. It&amp;rsquo;s possible that there exists another body of literature I&amp;rsquo;m yet to discover; however, the current economic literature, particularly on information design, lacks a clear outline of a real-world data trading market. Moreover, with the rise of generative AI, the valuation of data, such as labeled data coveted by tech giants for exclusivity, needs reevaluation to align with AI training standards.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>data trading - designing the mechanism or the market</title>
+      <link>//localhost:1313/posts/trading_data/</link>
+      <pubDate>Sat, 03 Feb 2024 23:59:20 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/trading_data/</guid>
+      <description>&lt;h3 id=&#34;bridging-concepts&#34;&gt;bridging concepts&lt;/h3&gt;
+&lt;p&gt;Recently, I&amp;rsquo;ve come to realize that there is a nuanced distinction between mechanism design and market design. Initially, I conflated the two, but a deeper dive into the subject matter—prompted by a friend&amp;rsquo;s bachelor thesis—has elucidated the critical differences.&lt;/p&gt;
+&lt;p&gt;Mechanism design is inherently algorithmic, centered around eliciting information and strategically manipulating incentives through mathematical formulations. It&amp;rsquo;s a toolset for creating environments where desired outcomes can be achieved based on the information asymmetries and strategic interactions of participants.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>dynamic persuasion and strategic search</title>
+      <link>//localhost:1313/posts/strategic_search/</link>
+      <pubDate>Fri, 05 Jan 2024 23:59:49 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/strategic_search/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;dynamic-persuasion-and-strategic-search&#34;&gt;Dynamic Persuasion and Strategic Search&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jesseyao.com/&#34;&gt;Yunfei (Jesse) Yao&lt;/a&gt;, &lt;a href=&#34;https://doi.org/10.1287/mnsc.2023.00994&#34;&gt;Management Science&lt;/a&gt; 22 Nov 2023&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;ABSTRACT&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Consumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>a study in suspense and surprise - part II</title>
+      <link>//localhost:1313/posts/finally_surprise/</link>
+      <pubDate>Thu, 04 Jan 2024 23:10:01 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/finally_surprise/</guid>
+      <description>&lt;p&gt;Finished reading the paper &lt;em&gt;&lt;strong&gt;Suspense And Surprise&lt;/strong&gt;&lt;/em&gt; finally. Honestly, the paper itself is already a masterclass  of organizing contents so as to achieve high informational utility. Following &lt;a href=&#34;//localhost:1313/posts/model_sns/&#34;&gt;what we left yesterday&lt;/a&gt;, here&amp;rsquo;s the rest, and some closing thoughts before the end.&lt;/p&gt;
+&lt;h3 id=&#34;illustrations-of-suspense-opt-info-policies&#34;&gt;Illustrations of Suspense-Opt. Info Policies&lt;/h3&gt;
+&lt;p&gt;In the simplest setting where there are only two states $\Omega = {A, B}$ (i.e. whether AGT or FRA would win in the world cup final), suspense maximizing belief martingale give rise to the followig dynamics. Say, starting from initial prior$\mu_A = \mu_B = 0.5$, at period $t$ the optimal belief (say, WLOG let&amp;rsquo;s consider one side of the world, $\mu_t \equiv \text{Pr}(A)$), either takes a high value $\mu_t = H_t &amp;gt; 1/2$ or low value $\mu_t = L_t = 1 - H_t$. Stepping onto the next period, there are two possible changes to the new belief $\mu_{t + 1}$ - with high possibility the agent observes &lt;em&gt;additional confirmation&lt;/em&gt; - that the higher(lower) belief gets &amp;ldquo;confirmed&amp;rdquo; a little bit further, like $H_t \to H_{t +1}$ where $H_{t + 1} &amp;gt; H_t$ and vice versa for $L_t$. Alternatively with small possibility, a &lt;em&gt;plot twist&lt;/em&gt; happens, $H_t \to L_{t + 1}$ and vice versa for $L_t$.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>a study in suspense and surprise - part I</title>
+      <link>//localhost:1313/posts/model_sns/</link>
+      <pubDate>Wed, 03 Jan 2024 22:22:44 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/model_sns/</guid>
+      <description>the model, and the principal&amp;rsquo;s problem part I</description>
+    </item>
+    
+    <item>
+      <title>demo of suspense</title>
+      <link>//localhost:1313/posts/suspense/</link>
+      <pubDate>Tue, 02 Jan 2024 00:10:18 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/suspense/</guid>
+      <description>a little about music, and application of suspense (aka procrastination)</description>
+    </item>
+    
+    <item>
+      <title>suspense n surprise</title>
+      <link>//localhost:1313/posts/suspense_n_surprise/</link>
+      <pubDate>Mon, 01 Jan 2024 23:31:13 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/suspense_n_surprise/</guid>
+      <description>The very first day of 2024 begins with a lovely paper that I stumbled upon, like, two days ago?</description>
+    </item>
+    
+    <item>
+      <title>attentions</title>
+      <link>//localhost:1313/posts/attentions/</link>
+      <pubDate>Fri, 29 Dec 2023 22:52:31 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/attentions/</guid>
+      <description>I read an eye-openly impressive paper today - Attention Management by Lipnowski, Mathevet and Wei. TBH, their model is very insightful (well, it&amp;rsquo;s in AER afterall&amp;hellip;) and has potential to shed light on theoretical as well as behavioral econ research.</description>
+    </item>
+    
+    <item>
+      <title>ArguGPT: identifying human touch in AI authorship </title>
+      <link>//localhost:1313/posts/argugpt/</link>
+      <pubDate>Tue, 19 Dec 2023 13:49:38 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/argugpt/</guid>
+      <description>ArguGPT is an algorithmic tool that is designed to differentiate GPT-generated argumentative essays. But it seems that at least for now, it&amp;rsquo;s accuracy is doubtful.</description>
+    </item>
+    
+    <item>
+      <title>fair division - on picking sequence for chores</title>
+      <link>//localhost:1313/posts/fair_division_hx/</link>
+      <pubDate>Thu, 14 Dec 2023 12:32:20 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/fair_division_hx/</guid>
+      <description>The talk was on fireeeee. I actually like this work despite being a little bit biased towards the general fair division literature.</description>
+    </item>
+    
+    <item>
+      <title>measuring information and uncertainty</title>
+      <link>//localhost:1313/posts/measuring_information_and_uncertainty2/</link>
+      <pubDate>Wed, 13 Dec 2023 23:03:45 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/measuring_information_and_uncertainty2/</guid>
+      <description>buckle up for deep revelation</description>
+    </item>
+    
+    <item>
+      <title>measuring information and uncertainty</title>
+      <link>//localhost:1313/posts/measuring_information_and_uncertainty1/</link>
+      <pubDate>Tue, 12 Dec 2023 22:58:16 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/measuring_information_and_uncertainty1/</guid>
+      <description>Diving deeper.</description>
+    </item>
+    
+    <item>
+      <title>measuring information and uncertainty</title>
+      <link>//localhost:1313/posts/measuring_information_and_uncertainty/</link>
+      <pubDate>Mon, 11 Dec 2023 22:44:03 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/measuring_information_and_uncertainty/</guid>
+      <description>&lt;p&gt;The paper by Alexander Frankel and Emir Kamenica, featured in the &lt;em&gt;American Economic Review&lt;/em&gt; in 2019, is exceptionally remarkable. Their work, titled &lt;em&gt;Quantifying Information and Uncertainty&lt;/em&gt;, delves into the intricate dynamics of information and belief systems.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reference: &lt;em&gt;Quantifying Information and Uncertainty (2019)&lt;/em&gt; by Alexander Frankel and Emir Kamenica. Published in the &lt;em&gt;American Economic Review&lt;/em&gt;, Volume 109, Issue 10, pages 3650–3680. &lt;a href=&#34;https://doi.org/10.1257/aer.20181897&#34;&gt;DOI: 10.1257/aer.20181897&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Suppose we observe some pieces of news. How might we quantify the amount of information contained in it? Another related question, how might we quantify the uncertainty of a belief? One desideratum might be that the measure of information/uncertainty should correspond to the instrumental value/loss associated with &lt;em&gt;some&lt;/em&gt; decision problem.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>unwrapping rationality: the bias and lovings of gifts</title>
+      <link>//localhost:1313/posts/deadweight_lost_of_gifts1/</link>
+      <pubDate>Wed, 29 Nov 2023 22:14:49 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/deadweight_lost_of_gifts1/</guid>
+      <description>A review of Waldfogel&amp;rsquo;s 1993 AER paper &amp;ldquo;The Deadweight Loss of Christmas&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>unwrapping joy - thoughful gift giving beyong monetary measures</title>
+      <link>//localhost:1313/posts/deadweight_lost_of_gifts/</link>
+      <pubDate>Tue, 28 Nov 2023 22:30:36 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/deadweight_lost_of_gifts/</guid>
+      <description>the unexpected value in gift-giving, beyong deadweight loss</description>
+    </item>
+    
+    <item>
+      <title>value maximizer&#39;s auto bidder</title>
+      <link>//localhost:1313/posts/auto_bidder_with_value_maximzer/</link>
+      <pubDate>Wed, 08 Nov 2023 23:36:48 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/auto_bidder_with_value_maximzer/</guid>
+      <description>Aggarwal (2019)&amp;rsquo;s WINE paper proposed a LP-based framework for modelling autobidder for value maximizers. But it does not capture value maximizing bidders with budget and ROI constraints.</description>
+    </item>
+    
+    <item>
+      <title>recent advance in ADIP</title>
+      <link>//localhost:1313/posts/adip/</link>
+      <pubDate>Tue, 31 Oct 2023 23:12:48 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/adip/</guid>
+      <description>&lt;p&gt;Regarding ADIP, a first-order method for solving LP, the following is an excerpt from Deng et al.&amp;rsquo;s arxiv page:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The ADMM-based interior point method (ABIP, Lin et al. 2021) is a hybrid algorithm which effectively combines the iterior point method and the first-order method to achieve performance boost in large-scale linear programming. Different from the standard interior point method which relies on a costly Newton step, ABIP applies the alternating direction method of multipliers (ADMM) to approximately solve the barrier penalized problem. In this paper, we provide a new version of ABIP with several improvements. First, we develop some new implementation strategies to accelerate ABIP&amp;rsquo;s performance for linear programming. Next, we extend ABIP to solving the more general linear conic programming and establish the associated iteration complexity of the algorithm. Finally, we conduct extensive numerical experiments in both synthetic and real-world datasets to demonstrate the empirical advantage of our developments. In particular, the enhanced ABIP achieves a 5.8x reduction in the geometric mean of run time on 105 LP instances from Netlib and it compares favorably against state-of-the-art open-source solvers in a wide range of large-scale problems. Moreover, it is even comparable to the commercial solvers in some particular datasets.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

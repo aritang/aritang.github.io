@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>online matching II | the randomized ranking algorithm | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Continuing the discussion on online matching algorithms, the first post here discussed the online bipartite matching model and a greedy (deterministic) algorithm that achieves a 1/2-competitive ratio.
+Today, we explore randomized algorithms for the online bipartite matching problem:
+
+     
+            Stealing a page from Professor Tang&rsquo;s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/online_matching_1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/online_matching_1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="online matching II | the randomized ranking algorithm" />
+<meta property="og:description" content="Continuing the discussion on online matching algorithms, the first post here discussed the online bipartite matching model and a greedy (deterministic) algorithm that achieves a 1/2-competitive ratio.
+Today, we explore randomized algorithms for the online bipartite matching problem:
+
+     
+            Stealing a page from Professor Tang&rsquo;s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/online_matching_1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-20T09:30:18+08:00" />
+<meta property="article:modified_time" content="2024-11-20T09:30:18+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="online matching II | the randomized ranking algorithm"/>
+<meta name="twitter:description" content="Continuing the discussion on online matching algorithms, the first post here discussed the online bipartite matching model and a greedy (deterministic) algorithm that achieves a 1/2-competitive ratio.
+Today, we explore randomized algorithms for the online bipartite matching problem:
+
+     
+            Stealing a page from Professor Tang&rsquo;s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "online matching II | the randomized ranking algorithm",
+      "item": "//localhost:1313/posts/online_matching_1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "online matching II | the randomized ranking algorithm",
+  "name": "online matching II | the randomized ranking algorithm",
+  "description": "Continuing the discussion on online matching algorithms, the first post here discussed the online bipartite matching model and a greedy (deterministic) algorithm that achieves a 1/2-competitive ratio.\nToday, we explore randomized algorithms for the online bipartite matching problem:\nStealing a page from Professor Tang\u0026rsquo;s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Continuing the discussion on online matching algorithms, the first post here discussed the online bipartite matching model and a greedy (deterministic) algorithm that achieves a 1/2-competitive ratio.\nToday, we explore randomized algorithms for the online bipartite matching problem:\nStealing a page from Professor Tang’s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion.\nUpon the arrival of every online node, a decision must be made immediately and irrevocably: should this new node connect to one of the available nodes on the fixed side?\nThe objective is to maximize the number of matches. We study the competitive ratio (the worst-case ratio over any graph and any arrival order): $$ \\inf_{\\text{instances}}\\frac{\\text{ALG}}{\\text{OPT}}. $$\nrandomized algorithm The first randomized algorithm that comes to mind is likely:\nAlgorithm Random: Match any online node to its available neighbors uniformly at random.\nUnfortunately, this is still 1/2-competitive, as illustrated in the following example:\nStealing another page from Professor Tang’s slide.\nSo, thank you, next: Karp, Vazirani \u0026 Vazirani (1990) proposed the Ranking algorithm. Devanur, Jain, and Kleinberg later provided a beautiful analysis of its competitive ratio.\nAlgorithm Ranking: Randomly rank the offline vertices. Then match any online node to its available neighbors with the smallest rank.\nanalysis of Ranking’s competitive ratio | lower bound First, we can reformulate the Ranking algorithm’s randomization (randomly ranking the offline vertices) equivalently as:\nFor each offline vertex $ v $, draw $ y_v \\sim U[0, 1] $ independently. Refer to $ y_v $ as the rank of $ v $. (Notice that this is equivalent to a random permutation.) Upon the arrival of $ u $, match it to the (unmatched) neighbor with the smallest rank. Next, we analyze the algorithm’s performance (i.e., number of matches) using a ‘Gain Sharing’ approach. Fix a non-decreasing function $ g:[0, 1]\\to[0, 1] $:\nIf online vertex $ u $ matches offline vertex $ v $ upon $ u $’s arrival, for match $ (u, v) $:\nLet $ u $ gain $ a_u = 1 - g(y_v) $, and Let $ v $ gain $ a_v = g(y_v) $. The plan of the proof is to show that for every edge $ (u, v) $ and competitive ratio $ \\Gamma $: $$ \\mathbb{E}[a_v + a_u] \\geq \\Gamma. $$ Then, $$ \\mathbb E[\\textbf{ALG}] = \\sum_{(uv)\\in E}\\mathbb E[x_{uv}] = \\sum_{u}\\mathbb E[a_u] + \\sum_v \\mathbb E[a_v] \\ge \\sum_{(uv)\\in M^*}\\mathbb E[a_v + a_u] \\ge \\Gamma \\text{OPT}. $$ analysis of Ranking’s competitive ratio | upper bound To upper bound the performance, we relax the problem to an easier fractional version, where edges can be fractionally matched. The fractional version is at least as good as the original problem.\nAlgorithm Water-Filling: On the arrival of every online vertex, allocate its matches continuously to the least-matched neighbor.\nWater-Filling achieves a 1 - 1/e competitive ratio, but an Upper Triangle Instance demonstrates that even the fractional version cannot exceed this bound (via Yao’s Minimax).\nStealing two more pages from Professor Tang’s slide.\nWhat’s Next? The next post will discuss a recent paper exploring the batched version of this problem—where one side of the bipartite graph arrives in batches. The plot thickens but can be analyzed similarly. Stay tuned!\nRemark: The primal-dual analysis is missing here. I’ll add that in a future post.\nreference Professor Tang’s lecture slides.\nproof: 1 - 1/e for ranking $$ \\mathbb{E}[\\textbf{ALG}] = \\sum_{(uv) \\in E} \\mathbb{E}[x_{uv}] = \\sum_{u} \\mathbb{E}[a_u] + \\sum_v \\mathbb{E}[a_v] \\geq \\sum_{(uv) \\in M^*} \\mathbb{E}[a_v + a_u] \\geq \\Gamma \\cdot \\text{OPT}. $$\nThe first equality comes from the definition of a matching, the second equality comes from the gain sharing of the algorithm, the next inequality comes from dropping the edges in the $\\textbf{ALG}$’s match that are not included in the optimal matching $M^*$; the last inequality comes from the assumed property $\\mathbb E[a_v + a_u]\\ge \\Gamma$, and is the pivotal lemma we are about to prove:\n[Lemma] for every edge $(u, v)$ and the competitive ratio $\\Gamma$ $$ \\mathbb E[a_v + a_u]\\ge \\Gamma. $$ Proof.\nWe will prove by proving an even more stronger version: for $v$, fix $\\vec y_{-v}$ and consider randomness of $y_v$: $$ \\mathbb E_{y_v}[a_v + a_u|\\vec y_{-v}]\\ge \\Gamma. $$ Looking at offline node $v$ and its rank $y_v$ (fix $\\vec y_{-v}$), notice that the if-match state of $v$ is ‘monotone’ w.r.t. the change of $y_v$:\nif $v$ is unmatched, increase $y_v$ does not change the matching; if $v$ is matched, it is still matched when $y_v$ decreases (although to a different node perhaps). So there exists a threshold $\\theta$ for $v$’s $y_v$ (w.r.t. fixed $\\vec y_{-v}$) that $v$ goes from ‘unmatched’ to ‘matched’ as $y_v$ decreases and passes this threshold.\nNow consider $u$—where the only condition we put on it is that there is an edge between $(u, v)$—but they are not necessarily matched.\nWhen $y_v \u003e \\theta$ ($v$ is unmatched), then $u$ must have actively matched with another offline vertex $z$ with a lower rank, at which $u$ would get a higher ‘sharing’ than if it has ranked with $v$. In other words, $\\forall y_v \u003e \\theta$, $$ a_u = 1 - g(y_z) \\ge 1 - g(y_v). $$ And by taking $y_v = \\theta^+$, there is $a_u \\ge 1 - g(\\theta)$.\nNow, for $y_v \u003c \\theta$—for $u$, $a_u$ gets better than when $y_v \u003e \\theta$. This is nontrivial and requires some scribbling to formally demonstrate that.\nBut an easy way you can form intuition for this is to imagine $v$ as items, $u$ as buyers and $g(y_v)$ as price—when price $y_v$ decreases, the buyer side only gets better off.\nPut together, for any $y_v$, $a_u\\ge 1 - g(\\theta)$. Therefore, take intergration of the expectation: $$ \\mathbb E[a_v + a_u]\\ge 1 - g(\\theta) + \\int_0^\\theta g(y_v), \\text{d}y_v. $$ By optimizing $g(\\cdot)$ we get $g(x) = e^{x - 1}$ and we get $$ \\Gamma = 1 - g(\\theta) + \\int_0^\\theta g(y_v), \\text{d}y_v = 1 - \\frac 1e. $$ End of Lemma’s proof.\nWith the Lemma, the proof is complete.\n",
+  "wordCount" : "1002",
+  "inLanguage": "en",
+  "datePublished": "2024-11-20T09:30:18+08:00",
+  "dateModified": "2024-11-20T09:30:18+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/online_matching_1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      online matching II | the randomized ranking algorithm
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-11-20 09:30:18 &#43;0800 &#43;0800&#39;&gt;November 20, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>Continuing the discussion on online matching algorithms, the first post <a href="/posts/online_matching/">here</a> discussed the <strong>online bipartite matching</strong> model and a greedy (deterministic) algorithm that achieves a 1/2-competitive ratio.</p>
+<p>Today, we explore randomized algorithms for the <strong>online bipartite matching</strong> problem:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/online/online_matching_model.jpeg#center"
+         alt="Stealing a page from Professor Tang&rsquo;s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion." width="100%"/> <figcaption>
+            <p>Stealing a page from Professor Tang&rsquo;s slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion.</p>
+        </figcaption>
+</figure>
+
+<p>Upon the arrival of every online node, a decision must be made immediately and irrevocably: should this new node connect to one of the available nodes on the fixed side?</p>
+<p>The objective is to maximize the number of matches. We study the competitive ratio (the worst-case ratio over <em><strong>any graph</strong></em> and <em><strong>any arrival order</strong></em>):
+$$
+\inf_{\text{instances}}\frac{\text{ALG}}{\text{OPT}}.
+$$</p>
+<hr>
+<h3 id="randomized-algorithm">randomized algorithm<a hidden class="anchor" aria-hidden="true" href="#randomized-algorithm">#</a></h3>
+<p>The first randomized algorithm that comes to mind is likely:</p>
+<blockquote>
+<p><strong>Algorithm <code>Random</code></strong>: Match any online node to its available neighbors <em><strong>uniformly at random</strong></em>.</p>
+</blockquote>
+<p>Unfortunately, this is still 1/2-competitive, as illustrated in the following example:</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/online/random_counter_example.jpeg#center"
+         alt="Stealing another page from Professor Tang&rsquo;s slide." width="100%"/> <figcaption>
+            <p>Stealing another page from Professor Tang&rsquo;s slide.</p>
+        </figcaption>
+</figure>
+
+<p>So, thank you, next: Karp, Vazirani &amp; Vazirani (1990) proposed the <code>Ranking</code> algorithm. Devanur, Jain, and Kleinberg later provided a beautiful analysis of its competitive ratio.</p>
+<blockquote>
+<p><strong>Algorithm <code>Ranking</code></strong>: Randomly rank the offline vertices. Then match any online node to its available neighbors with the smallest rank.</p>
+</blockquote>
+<hr>
+<h3 id="analysis-of-rankings-competitive-ratio--lower-bound">analysis of <code>Ranking</code>&rsquo;s competitive ratio | lower bound<a hidden class="anchor" aria-hidden="true" href="#analysis-of-rankings-competitive-ratio--lower-bound">#</a></h3>
+<p>First, we can reformulate the <code>Ranking</code> algorithm&rsquo;s randomization (randomly ranking the offline vertices) equivalently as:</p>
+<ul>
+<li>For each offline vertex $ v $, draw $ y_v \sim U[0, 1] $ independently. Refer to $ y_v $ as the <em><strong>rank</strong></em> of $ v $. (Notice that this is equivalent to a random permutation.)</li>
+<li>Upon the arrival of $ u $, match it to the (unmatched) neighbor with the smallest rank.</li>
+</ul>
+<p>Next, we analyze the algorithm&rsquo;s performance (i.e., number of matches) using a &lsquo;Gain Sharing&rsquo; approach. Fix a non-decreasing function $ g:[0, 1]\to[0, 1] $:</p>
+<p>If online vertex $ u $ matches offline vertex $ v $ upon $ u $&rsquo;s arrival, for match $ (u, v) $:</p>
+<ul>
+<li>Let $ u $ gain $ a_u = 1 - g(y_v) $, and</li>
+<li>Let $ v $ gain $ a_v = g(y_v) $.</li>
+</ul>
+<h2 id="heading">The plan of the proof is to show that for every edge $ (u, v) $ and competitive ratio $ \Gamma $:
+$$
+\mathbb{E}[a_v + a_u] \geq \Gamma.
+$$
+Then,
+$$
+\mathbb E[\textbf{ALG}] = \sum_{(uv)\in E}\mathbb E[x_{uv}] = \sum_{u}\mathbb E[a_u] + \sum_v \mathbb E[a_v] \ge \sum_{(uv)\in M^*}\mathbb E[a_v + a_u] \ge \Gamma \text{OPT}.
+$$</h2>
+<h3 id="analysis-of-rankings-competitive-ratio--upper-bound">analysis of <code>Ranking</code>&rsquo;s competitive ratio | upper bound<a hidden class="anchor" aria-hidden="true" href="#analysis-of-rankings-competitive-ratio--upper-bound">#</a></h3>
+<p>To upper bound the performance, we relax the problem to an easier <em><strong>fractional</strong></em> version, where edges can be fractionally matched. The fractional version is at least as good as the original problem.</p>
+<blockquote>
+<p><strong>Algorithm <code>Water-Filling</code></strong>: On the arrival of every online vertex, allocate its matches continuously to the least-matched neighbor.</p>
+</blockquote>
+<p><code>Water-Filling</code> achieves a 1 - 1/e competitive ratio, but an <strong>Upper Triangle Instance</strong> demonstrates that even the fractional version cannot exceed this bound (via Yao&rsquo;s Minimax).</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/online/Yao_upper_traingle.jpeg#center"
+         alt="Stealing two more pages from Professor Tang&rsquo;s slide." width="100%"/> <figcaption>
+            <p>Stealing two more pages from Professor Tang&rsquo;s slide.</p>
+        </figcaption>
+</figure>
+
+<hr>
+<h3 id="whats-next">What&rsquo;s Next?<a hidden class="anchor" aria-hidden="true" href="#whats-next">#</a></h3>
+<p>The next post will discuss a recent paper exploring the <strong>batched</strong> version of this problem—where one side of the bipartite graph arrives in batches. The plot thickens but can be analyzed similarly. Stay tuned!</p>
+<p><em><strong>Remark:</strong></em> The primal-dual analysis is missing here. I’ll add that in a future post.</p>
+<hr>
+<h3 id="reference">reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
+<p>Professor Tang&rsquo;s lecture slides.</p>
+<hr>
+<h3 id="proof-1---1e-for-ranking">proof: 1 - 1/e for <code>ranking</code><a hidden class="anchor" aria-hidden="true" href="#proof-1---1e-for-ranking">#</a></h3>
+<p>$$
+\mathbb{E}[\textbf{ALG}] = \sum_{(uv) \in E} \mathbb{E}[x_{uv}] = \sum_{u} \mathbb{E}[a_u] + \sum_v \mathbb{E}[a_v] \geq \sum_{(uv) \in M^*} \mathbb{E}[a_v + a_u] \geq \Gamma \cdot \text{OPT}.
+$$</p>
+<p>The first equality comes from the definition of a matching, the second equality comes from the gain sharing of the algorithm, the next inequality comes from dropping the edges in the $\textbf{ALG}$&rsquo;s match that are not included in the optimal matching $M^*$; the last inequality comes from the assumed property $\mathbb E[a_v + a_u]\ge \Gamma$, and is the pivotal lemma we are about to prove:</p>
+<blockquote>
+<p><strong>[Lemma]</strong> for every edge $(u, v)$ and the competitive ratio $\Gamma$
+$$
+\mathbb E[a_v + a_u]\ge \Gamma.
+$$
+Proof.</p>
+<p>We will prove by proving an even more stronger version: for $v$, fix $\vec y_{-v}$ and consider randomness of $y_v$:
+$$
+\mathbb E_{y_v}[a_v + a_u|\vec y_{-v}]\ge \Gamma.
+$$
+Looking at offline node $v$ and its rank $y_v$ (fix $\vec y_{-v}$), notice that the if-match state of $v$ is &lsquo;monotone&rsquo; w.r.t. the change of $y_v$:</p>
+<ul>
+<li>if $v$ is unmatched, increase $y_v$ does not change the matching;</li>
+<li>if $v$ is matched, it is still matched when $y_v$ decreases (although to a different node perhaps).</li>
+</ul>
+<p>So there exists a threshold $\theta$ for $v$&rsquo;s $y_v$ (w.r.t. fixed  $\vec y_{-v}$) that $v$ goes from &lsquo;unmatched&rsquo; to &lsquo;matched&rsquo; as $y_v$ decreases and passes this threshold.</p>
+<p>Now consider $u$—where the only condition we put on it is that there is an edge between $(u, v)$—but they are not necessarily matched.</p>
+<ul>
+<li>
+<p>When $y_v &gt; \theta$ ($v$ is unmatched), then $u$ must have actively matched with another offline vertex $z$ with a lower rank, at which $u$ would get a higher &lsquo;sharing&rsquo; than if it has ranked with $v$. In other words, $\forall y_v &gt; \theta$,
+$$
+a_u = 1 - g(y_z) \ge 1 - g(y_v).
+$$
+And by taking $y_v = \theta^+$, there is $a_u \ge 1 - g(\theta)$.</p>
+</li>
+<li>
+<p>Now, for $y_v &lt; \theta$—for $u$, $a_u$ gets better than when $y_v &gt; \theta$. This is nontrivial and requires some scribbling to formally demonstrate that.</p>
+<p>But an easy way you can form intuition for this is to imagine $v$ as items, $u$ as buyers and $g(y_v)$ as <strong>price</strong>—when price $y_v$ decreases, the buyer side only gets better off.</p>
+</li>
+</ul>
+<p>Put together, for any $y_v$, $a_u\ge 1 - g(\theta)$. Therefore, take intergration of the expectation:
+$$
+\mathbb E[a_v + a_u]\ge 1 - g(\theta) + \int_0^\theta g(y_v), \text{d}y_v.
+$$
+By optimizing $g(\cdot)$ we get $g(x) = e^{x - 1}$ and we get
+$$
+\Gamma = 1 - g(\theta) + \int_0^\theta g(y_v), \text{d}y_v = 1 - \frac 1e.
+$$
+End of Lemma&rsquo;s proof.</p>
+</blockquote>
+<p>With the Lemma, the proof is complete.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

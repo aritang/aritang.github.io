@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>dynamic persuasion and strategic search | ariana&#39;s blog</title>
+<meta name="keywords" content="paper">
+<meta name="description" content="It&rsquo;s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.
+
+Dynamic Persuasion and Strategic Search
+Yunfei (Jesse) Yao, Management Science 22 Nov 2023
+ABSTRACT
+Consumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/strategic_search/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/strategic_search/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="dynamic persuasion and strategic search" />
+<meta property="og:description" content="It&rsquo;s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.
+
+Dynamic Persuasion and Strategic Search
+Yunfei (Jesse) Yao, Management Science 22 Nov 2023
+ABSTRACT
+Consumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/strategic_search/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-05T23:59:49+08:00" />
+<meta property="article:modified_time" content="2024-01-05T23:59:49+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="dynamic persuasion and strategic search"/>
+<meta name="twitter:description" content="It&rsquo;s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.
+
+Dynamic Persuasion and Strategic Search
+Yunfei (Jesse) Yao, Management Science 22 Nov 2023
+ABSTRACT
+Consumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "dynamic persuasion and strategic search",
+      "item": "//localhost:1313/posts/strategic_search/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "dynamic persuasion and strategic search",
+  "name": "dynamic persuasion and strategic search",
+  "description": "It\u0026rsquo;s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.\nDynamic Persuasion and Strategic Search Yunfei (Jesse) Yao, Management Science 22 Nov 2023\nABSTRACT\nConsumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal.\n",
+  "keywords": [
+    "paper"
+  ],
+  "articleBody": "It’s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.\nDynamic Persuasion and Strategic Search Yunfei (Jesse) Yao, Management Science 22 Nov 2023\nABSTRACT\nConsumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal.\nAlthough, one might find it more convenient to read the conlusions part for a slightly deeper understanding\nConsumers frequently search for information before making decisions. Since their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes consumers’ information environment from the firm’s perspective under a general signal space. We examine the optimal information provision strategy of a sender and the optimal information acquisition strategy of a receiver when the sender sequentially persuades a receiver to take a particular action. The sender prefers that action regardless of the unknown state, while the receiver only wishes to take that action if the state is good. In our model, the sender incurs a cost to provide information, and the receiver incurs a cost to search. The receiver trades off the cost of searching and the benefit of obtaining more accurate information to make better decisions. The sender trades off the cost of information provision and the benefit of persuading the receiver to search and then take the sender’s preferred action. We allow for gradual communication between the sender and the receiver. Consequently, the sender also makes the intertemporal trade-off of smoothing the information to reduce the persuasion cost.\nOK. So it’s pretty common a practice that people uses convex function to measure cost of provision information. But in this paper, the convexity assumption leads to the fact that, the seller (information sender) would like to “smooth” information and do the persuasion job multiple times. Also, the information receiver (buyer’s) action is assumed to be strategic, so the game cannot be characterized using a standard linear program.\nI’m not an expert in subgame perfect eq. (maybe I should take a look at it, fuck) so that I’ll omit discussing the detail of this paper. But its application part is particularly interesting to think about, and really does shed insight on application of information design:\nValue-added Branding in Luxury Goods\nA luxury goods company wants to add value to its branding. In each period, the seller (sender) can spend money on building the luxury image of her brand. An example of the spending is advertising, which has increasing marginal costs. It may be more costly for the seller to reach richer and busier customers.\nLobbying\nCompanies (sender) have a strong incentive to influence a regulator’s (receiver) policymaking. The regulator is deciding between policies A and B, which can be a high or low standard on car/food safety, a strict or relaxed policy on privacy, etc.. The company’s cost is the effort it incurs to persuade the regulator. Raising the effort level has an increasing marginal cost.\nBUT if many other companies also have valuable information, and even, have conflicting interest, it would be cumbersome.\nOnline Advertising\nI thought I’m already too familiar with online-ads-sponsor-search shits but this is pretty much something I never thought of\nConsumers (the receiver) frequently search online to learn more about the product before making a purchasing decision. The advertiser (sender) can target a consumer (showing one ad) or retarget him (showing multiple ads to the same consumer). In each period, the advertiser can bid for the advertising spot and persuade the consumer to purchase the product. She directly controls how precise the advertising content is but can only affect the winning probability indirectly through the bidding amount. In a symmetric N-bidder first-price auction with i.i.d. uniform distribution of the valuation, the bidding amount is convex in the winning probability. (OK, this is fuzzy and simple but true anyway). The overall likelihood that the consumer receives a positive signal, $\\lambda$ equals the probability that the advertiser reaches him (winning probability) multiplied by the probability that he likes the advertising content, and is thus proportional to the winning probability. So, the advertiser’s cost is also convex in the amount of persuasion. The consumer’s cost $c$ is their time. The prior belief can come from word of mouth or past experience.\nOur model can explain why advertisers most frequently retarget consumers who have added the product to the shopping cart/list. Those consumers, on average, have a high prior belief about the product. Our model predicts that advertisers will persuade these consumers in multiple periods.\n",
+  "wordCount" : "980",
+  "inLanguage": "en",
+  "datePublished": "2024-01-05T23:59:49+08:00",
+  "dateModified": "2024-01-05T23:59:49+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/strategic_search/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      dynamic persuasion and strategic search
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-01-05 23:59:49 &#43;0800 &#43;0800&#39;&gt;January 5, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>It&rsquo;s always a refreshing activity to start the morning with a MS paper - even better, a freshly published one right in Nov. 2023.</p>
+<blockquote>
+<h3 id="dynamic-persuasion-and-strategic-search">Dynamic Persuasion and Strategic Search<a hidden class="anchor" aria-hidden="true" href="#dynamic-persuasion-and-strategic-search">#</a></h3>
+<p><a href="https://www.jesseyao.com/">Yunfei (Jesse) Yao</a>, <a href="https://doi.org/10.1287/mnsc.2023.00994">Management Science</a> 22 Nov 2023</p>
+<p><em><strong>ABSTRACT</strong></em></p>
+<p>Consumers frequently search for information before making decisions. Because their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes the consumer’s information environment from the firm’s perspective and endogenizes the search decision from the consumer’s perspective. We consider a dynamic model where a firm sequentially persuades a consumer to purchase the product. The consumer only wishes to buy the product if it is a good match. The firm designs the information structure. Given the endogenous information environment, the consumer trades off the benefit and cost of information acquisition and decides whether to search for more information. Given the information acquisition strategy of the consumer, the firm trades off the benefit and cost of information provision and determines how much information to provide. This paper characterizes the optimal information structure under a general signal space. We find that the firm only smooths information provision over multiple periods if the consumer is optimistic about the product fit before searching for information. Moreover, if the search cost for the consumer is high, the firm designs the information such that the consumer will be certain that the product is a good match and will purchase it after observing a positive signal. If the search cost is low, the firm provides noisy information such that the consumer will be uncertain about the product fit but will still buy it after observing a positive signal.</p>
+</blockquote>
+<p>Although, one might find it more convenient to read the conlusions part for a slightly deeper understanding</p>
+<blockquote>
+<p>Consumers frequently search for information before making decisions. Since their search and purchase decisions depend on the information environment, firms have a strong incentive to influence it. This paper endogenizes consumers’ information environment from the firm’s perspective under a general signal space. We examine the optimal information provision strategy of a sender and the optimal information acquisition strategy of a receiver when the sender sequentially persuades a receiver to take a particular action. The sender prefers that action regardless of the unknown state, while the receiver only wishes to take that action if the state is good. In our model, the sender incurs a cost to provide information, and the receiver incurs a cost to search. The receiver trades off the cost of searching and the benefit of obtaining more accurate information to make better decisions. The sender trades off the cost of information provision and the benefit of persuading the receiver to search and then take the sender’s preferred action. We allow for gradual communication between the sender and the receiver. Consequently, the sender also makes the intertemporal trade-off of smoothing the information to reduce the persuasion cost.</p>
+</blockquote>
+<p>OK. So it&rsquo;s pretty common a practice that people uses convex function to measure cost of provision information. But in this paper, the convexity assumption leads to the fact that, the seller (information sender) would like to &ldquo;smooth&rdquo; information and do the persuasion job multiple times. Also, the information receiver (buyer&rsquo;s) action is assumed to be strategic, so the game cannot be characterized using a standard linear program.</p>
+<p>I&rsquo;m not an expert in subgame perfect eq. (maybe I should take a look at it, fuck) so that I&rsquo;ll omit discussing the detail of this paper. But its application part is particularly interesting to think about, and really does shed insight on application of information design:</p>
+<ul>
+<li>
+<p>Value-added Branding in Luxury Goods</p>
+<p>A luxury goods company wants to add value to its branding. In each period, the seller (sender) can spend money on building the luxury image of her brand. An example of the spending is advertising, which has increasing marginal costs. <strong>It may be more costly for the seller to reach richer and busier customers.</strong></p>
+</li>
+<li>
+<p>Lobbying</p>
+<p>Companies (sender) have a strong incentive to influence a regulator’s (receiver) policymaking. The regulator is deciding between policies A and B, which can be a high or low standard on car/food safety, a strict or relaxed policy on privacy, etc.. The company’s cost is the effort it incurs to persuade the regulator. Raising the effort level has an increasing marginal cost.</p>
+<p><em>BUT if many other companies also have valuable information, and even, have conflicting interest, it would be cumbersome.</em></p>
+</li>
+<li>
+<p>Online Advertising</p>
+<p><em>I thought I&rsquo;m already too familiar with online-ads-sponsor-search shits but this is pretty much something I never thought of</em></p>
+<p>Consumers (the receiver) frequently search online to learn more about the product before making a purchasing decision. The advertiser (sender) can target a consumer (showing one ad) or retarget him (showing multiple ads to the same consumer). In each period, the advertiser can bid for the advertising spot and persuade the consumer to purchase the product. She directly controls how precise the advertising content is but can only affect the winning probability indirectly through the bidding amount. <strong>In a symmetric N-bidder first-price auction with i.i.d. uniform distribution of the valuation, the bidding amount is convex in the winning probability. (OK, this is fuzzy and simple but true anyway).</strong>  The overall likelihood that the consumer receives a positive signal, $\lambda$ equals the probability that the advertiser reaches him (winning probability) multiplied by the probability that he likes the advertising content, and is thus proportional to the winning probability. So, the advertiser’s cost is also convex in the amount of persuasion. The consumer’s cost $c$ is their time. The prior belief can come from word of mouth or past experience.</p>
+<p>Our model can explain why advertisers most frequently retarget consumers who have added the product to the shopping cart/list. Those consumers, on average, have a high prior belief about the product. Our model predicts that advertisers will persuade these consumers in multiple periods.</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/paper/">Paper</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

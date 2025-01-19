@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>a study in suspense and surprise - part I | ariana&#39;s blog</title>
+<meta name="keywords" content="paper">
+<meta name="description" content="the model, and the principal&rsquo;s problem part I">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/model_sns/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/model_sns/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="a study in suspense and surprise - part I" />
+<meta property="og:description" content="the model, and the principal&rsquo;s problem part I" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/model_sns/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-03T22:22:44+08:00" />
+<meta property="article:modified_time" content="2024-01-03T22:22:44+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="a study in suspense and surprise - part I"/>
+<meta name="twitter:description" content="the model, and the principal&rsquo;s problem part I"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "a study in suspense and surprise - part I",
+      "item": "//localhost:1313/posts/model_sns/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "a study in suspense and surprise - part I",
+  "name": "a study in suspense and surprise - part I",
+  "description": "the model, and the principal\u0026rsquo;s problem part I",
+  "keywords": [
+    "paper"
+  ],
+  "articleBody": "Today is a dive into the modelling part of Suspense and Surpirse. The paper is already concise so basically I’m just copying it from there to here… Cause I like it actually.\nThe model Consider a finite state space $\\Omega$, where a typical state of the world is $w$ (it should be $\\omega$ but let’s save a bit typing). A typical belief is denoted by a probability vector $\\mu \\in \\Delta(\\Omega)$; $\\mu^w$ designates the probability of $w$. Let $t \\in {0, 1, …, T}$ denote the period. Let’s say, the prior is $\\mu_0$.\nAn information policy $\\tilde \\pi$ is a mapping of some belief $\\mu$ and current period $t$ to the distribution space $\\Delta(S)$ of signals. A belief martingale $\\tilde \\mu$ is a sequence $(\\mu_t)_{t = 0}^T$ s.t.\n$\\tilde \\mu_t \\in \\Delta(\\Delta(\\Omega))$ for all $t$, with $\\tilde \\mu_0$ degenerate at $\\mu_0$, and $\\mathbb E[\\tilde \\mu_t | \\mu_0, …, \\mu_{t - 1}] = \\mu_{t - 1}$. A realization of the belief martingale is a belief path $\\eta = (\\mu_t)_{t = 0}^T$. Given an information policy $\\tilde \\pi$ and a prior $\\mu_0$ to start from, they generates a stochastic path of beliefs about the state - we denote this induced belief martingale as $\\lang \\tilde \\pi | \\mu_0\\rang$. Lemma 1 Given any Markov belief martingale $\\tilde \\mu$, there exists an information policy $\\tilde \\pi$ that induces it, i.e. $\\tilde \\mu = \\lang \\tilde \\pi | \\mu_0\\rang$.\nNotably, condition (iii) guarantees that the martingale is Bayesian-persuasible. A Markov belief martigale satisfy that $\\tilde \\mu_{t + 1}$ depends only on $\\mu_t$. For the problem studied in the paper, it suffices to consider Markov cases, quote\nThe assumption that $\\tilde \\pi$ depends only on the current belief and period, and thus induces a Markov martingale, is without loss of generality in the sense that memoryless policies do not restrict the set of feasible payoffs. If payoffs were not time-separable, it might be beneficial to employ history-dependent information policies which could induce non-Markov martingales.\nThere are two players: the agent and the principal. The agent has utility (it’s framed as “preference” in the paper originallly. Hmmm, econ considerations.) of the belief path and belief martingale: $$ \\begin{align} U_{\\text{suspense}}(\\eta, \\tilde \\mu) \u0026 = \\sum_{t = 0}^{T - 1} u(\\mathbb E|\\tilde \\mu_{t + 1} - \\mu_t|^2_2)\\cr U_{\\text{surprise}}(\\eta) \u0026 = \\sum_{t = 1}^Tu(| \\mu_{t + 1} - \\mu_t|^2_2 \\end{align} $$ where $u(\\cdot)$ here is assumed to be some increasing, strictly concave function with $u(0) = 0$, the square-norm $|\\cdot|_2^2$ can be generalized into weighted versions, and so does weights on time $t$. So, suspense is induced by conditional variance (on current belief $\\mu_t$) over the next period’s beliefs, and surprise is just a measure of the trajectory of realized believes.\nThe paper included some examples. Especially, the Blackjack simulation is comprehensive. But, a cooler example (that they used, yet didn’t fully exploit, in my pov) would be football (well, soccer if you’d prefer). Football data has been very helpful to economics. A book called Beautiful Game Theory: How Soccer Can Help Economics has used the world’s most popular sport to test economic theories and document novel human behavior. Basically, it modelled penalty as a zero-sum game with a 2-by-2 reward matrix, and validified randomized strategy of Nash Eq. doing econometric analysis.\nThe principal’s problem (part I) The principal seeks to maximize either suspense, or surprise $$ \\begin{align} \\max_{\\tilde \\pi} \u0026 \\ \\mathbb E_{\\eta \\sim \\lang \\tilde \\pi |\\mu_0\\rang}U_{\\text{suspense}}(\\eta, \\lang \\tilde \\pi |\\mu_0\\rang)\\cr \\max_{\\tilde \\pi}\u0026 \\ \\mathbb E_{\\eta \\sim \\lang \\tilde \\pi |\\mu_0\\rang}U_{\\text{surprise}}(\\eta) \\end{align} $$ Btw, beacuse Lemma 1 allows us to associate any belief martigale with an info-policy that induces it, we can focus on optimizing over possible martigales, instead of information policy $\\tilde \\pi$ in the optimization, i.e. $$ \\begin{align} \\max_{\\tilde \\pi}\u0026 \\ \\mathbb E_{\\eta \\sim \\tilde \\mu}U_{\\text{suspense}}(\\eta,\\tilde \\mu)\\cr \\max_{\\tilde \\pi} \u0026 \\ \\mathbb E_{\\eta \\sim \\tilde \\mu}U_{\\text{surprise}}(\\eta) \\end{align} $$ For maximizing suspense, the result is pretty neat and beautiful. First of all, say, denote each period $t$’s suspense (conditional on $\\mu_t$ revealed) be $\\sigma_t^2 = \\mathbb E_{{\\mu_{t + 1} \\sim \\tilde \\mu_{t + 1} |\\mu_t}} |\\mu_{t+1} - \\mu_t|^2$, the principal’s problem is then, choosing a belief martigale $\\tilde \\mu$ (and its corresponding info-policy $\\tilde \\pi$ to maximize $ \\mathbb E_{\\tilde \\mu}\\sum_{t = 0}^{T-1}u(\\sigma_t^2)$.\nLemma 2 Any suspense-maximizing info-policy is fully-revealing by the end. For any info-policy that is fully-revealing by the end, $$ \\mathbb E_{\\tilde \\mu}\\sum_{t = 0}^{T-1}\\sigma_t^2 = \\Phi(\\mu_0) $$ which is independent of $\\tilde \\mu$, hence, $\\tilde \\pi$, the info-policy chosen.\nSo it’s equivalent to consider the problem like, starting from a prior $\\mu_0$, the principal is endowed with a “budget of variance” $\\Phi(\\mu_0)$ which only depends on $\\mu_0$. The problem is then to decide how to allocate variance across each period to maximize utility. And it’s pretty easy to guess that, given $u$ being concave, it would be optimal to allocate variance evenly across all periods, like, keep the tension up from start to end. In fact, that’s the truth as well\nProp. 1 A belief martingale maximizes expected suspense iff. $\\mu_t \\in M_t$ for all $t$, where $$ M_t \\equiv {\\mu|\\Phi(\\mu) = \\frac{T - t} T\\Phi(\\mu_0)}. $$ The agent’s expected suspense from the corresponding opt. policy is $Tu(\\Phi(\\mu_0)/T)$.\nIn other words, suspense is constant over time with uncertainty declines gradually.\nGoodnight. tmrw features principal’s problem part II, along with rest of the paper read.\n",
+  "wordCount" : "891",
+  "inLanguage": "en",
+  "datePublished": "2024-01-03T22:22:44+08:00",
+  "dateModified": "2024-01-03T22:22:44+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/model_sns/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      a study in suspense and surprise - part I
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-01-03 22:22:44 &#43;0800 &#43;0800&#39;&gt;January 3, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>Today is a dive into the modelling part of <em><strong>Suspense and Surpirse</strong></em>. The paper is already concise so basically I&rsquo;m just copying it from there to here&hellip; Cause I like it actually.</p>
+<h3 id="the-model">The model<a hidden class="anchor" aria-hidden="true" href="#the-model">#</a></h3>
+<p>Consider a finite state space $\Omega$, where a typical state of the world is $w$ (it should be $\omega$ but let&rsquo;s save a bit typing). A typical belief is denoted by a probability vector $\mu \in \Delta(\Omega)$; $\mu^w$ designates the probability of $w$. Let $t \in {0, 1, &hellip;, T}$ denote the period. Let&rsquo;s say, the prior is $\mu_0$.</p>
+<p>An information policy $\tilde \pi$ is a mapping of some belief $\mu$ and current period $t$ to the distribution space $\Delta(S)$ of signals. A <em>belief martingale</em> $\tilde \mu$ is a sequence $(\mu_t)_{t = 0}^T$ s.t.</p>
+<ul>
+<li>$\tilde \mu_t \in \Delta(\Delta(\Omega))$ for all $t$, with</li>
+<li>$\tilde \mu_0$ degenerate at $\mu_0$, and</li>
+<li>$\mathbb E[\tilde \mu_t | \mu_0, &hellip;, \mu_{t - 1}] = \mu_{t - 1}$. A realization of the belief martingale is a <em>belief path</em> $\eta = (\mu_t)_{t = 0}^T$. Given an information policy $\tilde \pi$ and a prior $\mu_0$ to start from, they generates a stochastic path of beliefs about the state - we denote this induced belief martingale as $\lang \tilde \pi | \mu_0\rang$.</li>
+</ul>
+<blockquote>
+<p><strong>Lemma 1</strong> Given any Markov belief martingale $\tilde \mu$, there exists an information policy $\tilde \pi$ that induces it, i.e. $\tilde \mu = \lang \tilde \pi | \mu_0\rang$.</p>
+</blockquote>
+<p>Notably, condition (iii) guarantees that the martingale is Bayesian-persuasible. A <em>Markov</em> belief martigale satisfy that $\tilde \mu_{t + 1}$ depends only on $\mu_t$. For the problem studied in the paper, it suffices to consider Markov cases, quote</p>
+<blockquote>
+<p>The assumption that $\tilde \pi$ depends only on the current belief and period, and thus induces a Markov martingale, is without loss of generality in the sense that memoryless policies do not restrict the set of feasible payoffs. If payoffs were not time-separable, it might be beneficial to employ history-dependent information policies which could induce non-Markov martingales.</p>
+</blockquote>
+<p>There are two players: the agent and the principal. The agent has utility (it&rsquo;s framed as &ldquo;preference&rdquo; in the paper originallly. Hmmm, econ considerations.) of the belief path and belief martingale:
+$$
+\begin{align}
+U_{\text{suspense}}(\eta, \tilde \mu) &amp; = \sum_{t = 0}^{T - 1} u(\mathbb E|\tilde \mu_{t + 1} - \mu_t|^2_2)\cr
+U_{\text{surprise}}(\eta) &amp; = \sum_{t = 1}^Tu(| \mu_{t + 1} - \mu_t|^2_2
+\end{align}
+$$
+where $u(\cdot)$ here is assumed to be some increasing, strictly concave function with $u(0) = 0$, the square-norm $|\cdot|_2^2$ can be generalized into weighted versions, and so does weights on time $t$. So, suspense is induced by conditional variance (on current belief $\mu_t$) over the next period&rsquo;s beliefs, and surprise is just a measure of the trajectory of realized believes.</p>
+<p>The paper included some examples. Especially, the Blackjack simulation is comprehensive. But, a cooler example (that they used, yet didn&rsquo;t fully exploit, in my pov) would be football (well, soccer if you&rsquo;d prefer). Football data has been very helpful to economics. A book called Beautiful Game Theory: <em>How Soccer Can Help Economics</em> has used the world&rsquo;s most popular sport to test economic theories and document novel human behavior. Basically, it modelled penalty as a zero-sum game with a 2-by-2 reward matrix, and validified randomized strategy of Nash Eq. doing econometric analysis.</p>
+<h3 id="the-principals-problem-part-i">The principal&rsquo;s problem (part I)<a hidden class="anchor" aria-hidden="true" href="#the-principals-problem-part-i">#</a></h3>
+<p>The principal seeks to maximize either suspense, or surprise
+$$
+\begin{align}
+\max_{\tilde \pi} &amp; \ \mathbb E_{\eta \sim \lang \tilde \pi |\mu_0\rang}U_{\text{suspense}}(\eta, \lang \tilde \pi |\mu_0\rang)\cr
+\max_{\tilde \pi}&amp; \  \mathbb E_{\eta \sim \lang \tilde \pi |\mu_0\rang}U_{\text{surprise}}(\eta)
+\end{align}
+$$
+Btw, beacuse Lemma 1 allows us to associate any belief martigale with an info-policy that induces it, we can focus on optimizing over possible martigales, instead of information policy $\tilde \pi$ in the optimization, i.e.
+$$
+\begin{align}
+\max_{\tilde \pi}&amp; \  \mathbb E_{\eta \sim \tilde \mu}U_{\text{suspense}}(\eta,\tilde \mu)\cr
+\max_{\tilde \pi} &amp; \ \mathbb E_{\eta \sim \tilde \mu}U_{\text{surprise}}(\eta)
+\end{align}
+$$
+For maximizing suspense, the result is pretty neat and beautiful. First of all, say, denote each period $t$&rsquo;s suspense (conditional on $\mu_t$ revealed) be $\sigma_t^2 = \mathbb E_{{\mu_{t + 1} \sim \tilde \mu_{t + 1} |\mu_t}} |\mu_{t+1} - \mu_t|^2$, the principal&rsquo;s problem is then, choosing a belief martigale $\tilde \mu$ (and its corresponding info-policy $\tilde \pi$ to maximize $ \mathbb E_{\tilde \mu}\sum_{t = 0}^{T-1}u(\sigma_t^2)$.</p>
+<blockquote>
+<p><strong>Lemma 2</strong> Any suspense-maximizing info-policy is fully-revealing by the end. For any info-policy that is fully-revealing by the end,
+$$
+\mathbb E_{\tilde \mu}\sum_{t = 0}^{T-1}\sigma_t^2 = \Phi(\mu_0)
+$$
+which is <strong>independent</strong> of $\tilde \mu$, hence, $\tilde \pi$, the info-policy chosen.</p>
+</blockquote>
+<p>So it&rsquo;s equivalent to consider the problem like, starting from a prior $\mu_0$, the principal is endowed with a &ldquo;budget of variance&rdquo; $\Phi(\mu_0)$ which only depends on $\mu_0$. The problem is then to decide how to allocate variance across each period to maximize utility. And it&rsquo;s pretty easy to guess that, given $u$ being concave, it would be optimal to allocate variance evenly across all periods, like, keep the tension up from start to end. In fact, that&rsquo;s the truth as well</p>
+<blockquote>
+<p><strong>Prop. 1</strong> A belief martingale maximizes expected suspense iff. $\mu_t \in M_t$ for all $t$, where
+$$
+M_t \equiv {\mu|\Phi(\mu) = \frac{T - t} T\Phi(\mu_0)}.
+$$
+The agent&rsquo;s expected suspense from the corresponding opt. policy is $Tu(\Phi(\mu_0)/T)$.</p>
+<p>In other words, suspense is constant over time with uncertainty declines gradually.</p>
+</blockquote>
+<p>Goodnight. tmrw features principal&rsquo;s problem part II, along with rest of the paper read.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/paper/">Paper</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

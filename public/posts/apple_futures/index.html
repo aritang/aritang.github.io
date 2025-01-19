@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>apple futures - ap2405 | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Previously, we discussed the challenges faced by apple farmers in ShaanXi, China (see the sweet and sour of apples and cranberries), that the farmers battle against the fluctuating price by strategically storing apple inventories so as to sell later, yet their decisions are far from optimal that brings regret and misfortune that sabotages the families&rsquo; living business. My initial thought was that the problem belongs to market failures, that potential solutions lies in redesigning the selling mechanism and boost information transparency etc.. But here&rsquo;s another way of tackling the problem, which is somehow pretty fancy:">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/apple_futures/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/apple_futures/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="apple futures - ap2405" />
+<meta property="og:description" content="Previously, we discussed the challenges faced by apple farmers in ShaanXi, China (see the sweet and sour of apples and cranberries), that the farmers battle against the fluctuating price by strategically storing apple inventories so as to sell later, yet their decisions are far from optimal that brings regret and misfortune that sabotages the families&rsquo; living business. My initial thought was that the problem belongs to market failures, that potential solutions lies in redesigning the selling mechanism and boost information transparency etc.. But here&rsquo;s another way of tackling the problem, which is somehow pretty fancy:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/apple_futures/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-17T00:27:36+08:00" />
+<meta property="article:modified_time" content="2024-04-17T00:27:36+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="apple futures - ap2405"/>
+<meta name="twitter:description" content="Previously, we discussed the challenges faced by apple farmers in ShaanXi, China (see the sweet and sour of apples and cranberries), that the farmers battle against the fluctuating price by strategically storing apple inventories so as to sell later, yet their decisions are far from optimal that brings regret and misfortune that sabotages the families&rsquo; living business. My initial thought was that the problem belongs to market failures, that potential solutions lies in redesigning the selling mechanism and boost information transparency etc.. But here&rsquo;s another way of tackling the problem, which is somehow pretty fancy:"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "apple futures - ap2405",
+      "item": "//localhost:1313/posts/apple_futures/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "apple futures - ap2405",
+  "name": "apple futures - ap2405",
+  "description": "Previously, we discussed the challenges faced by apple farmers in ShaanXi, China (see the sweet and sour of apples and cranberries), that the farmers battle against the fluctuating price by strategically storing apple inventories so as to sell later, yet their decisions are far from optimal that brings regret and misfortune that sabotages the families\u0026rsquo; living business. My initial thought was that the problem belongs to market failures, that potential solutions lies in redesigning the selling mechanism and boost information transparency etc.. But here\u0026rsquo;s another way of tackling the problem, which is somehow pretty fancy:\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Previously, we discussed the challenges faced by apple farmers in ShaanXi, China (see the sweet and sour of apples and cranberries), that the farmers battle against the fluctuating price by strategically storing apple inventories so as to sell later, yet their decisions are far from optimal that brings regret and misfortune that sabotages the families’ living business. My initial thought was that the problem belongs to market failures, that potential solutions lies in redesigning the selling mechanism and boost information transparency etc.. But here’s another way of tackling the problem, which is somehow pretty fancy:\nApple futures, as the name suggests, are futures varieties with apples as the underlying, which were listed on China’s Zhengzhou Commodity Exchange on December 22, 2017, and are the world’s first fresh fruit futures variety to be listed. The quality threshold is pretty high that only top-standard apples are taken into account.\nwhy can apples be futures? The market scale is large enough: China is the world’s largest producer and consumer of apples, there is a large-scale spot market that makes apples almost impossible for a few people to control and monopolize.\nApple’s quality assessment is easy. The grading standard for apples has a clear definition of the standard, fruit shape, color, freshness, fruit stalks, fruit rust, fruit surface defects and other aspects. Existing technology such as photoelectric grading machine, can determine the grade according to the fruit color and weight and so on automatically.\nPrice fluctuations are large and frequent:\nDuring the apple harvest period, a large number of new year apples flow into the spot market, market supply increases, and wholesale prices are relatively low. Then from December to February, affected by the New Year’s Day and the Chinese New Year festivities, market demand increases, and wholesale prices gradually rise. in March and April, apples from the mechanical cold storage are concentrated in the warehouse, and the supply becomes larger, driving prices down. In May, with the end of the shipments from the mechanical cold storage, the supply decreases, and prices rebound. from June to April, apples from the mechanical cold storage are concentrated in the warehouse, and the supply decreases, and prices rebound. Between June and August, early and mid-ripening apples were concentrated in the market, and prices were relatively low, leading to an overall decrease in wholesale apple prices. Weather factors, light and temperature are the two factors that have the greatest impact on apple production. Bad weather, such as frost, drought and other conditions will seriously affect the yield and quality of apples\nwhy making apples futures? “poverty alleviation fruits”:\nDomestic apple production is concentrated in low-income areas. The Ministry of Agriculture identified 122 key apple counties and cities, of which 39 are national poverty-stricken counties, where apple cultivation is the main source of income for tens of millions of local farmer.\nFarmers scattered planting for the ability to withstand natural disasters and market risk is low, “big year and small year” brought about by price fluctuations will be almost unbearable for them. So “fruit” futures to establish the initial major purpose is to alleviate the risk of price fluctuations, to protect the rights and interests of fruit farmers. After the listing of apple futures, through the provision of open and transparent prices, timely and effective reflection of changes in the spot market, can provide market price reference for the industry to provide the basis for decision-making. Similar to the same “fruit” futures one of the jujube, is to promote the Xinjiang farmers income “fruit”, and cotton to bring the “white economy” has a similar effect.\nThis new product model sought to improve the agricultural support and protection system, as well as the rural financial services system. The business model of “insurance + futures” is an innovative pilot financial product to support agricultural and rural development. Agricultural futures prices are used as the basis for insurance underwriting and claims. Insured households pay premiums to purchase insurance products, insurance companies purchase over-the-counter options from futures companies to hedge part of the payout risk, and futures companies carry out replica option operations in the futures market to further diversify risks. Upon expiration of the options, the futures company will make payment and settlement to the insurance company, and the insurance company will then pay out to the insured households. The “insurance + futures” model combines the risk avoidance function of the futures market with the insurance industry’s role in underwriting claims.\n",
+  "wordCount" : "739",
+  "inLanguage": "en",
+  "datePublished": "2024-04-17T00:27:36+08:00",
+  "dateModified": "2024-04-17T00:27:36+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/apple_futures/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      apple futures - ap2405
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-04-17 00:27:36 &#43;0800 &#43;0800&#39;&gt;April 17, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>Previously, we discussed the challenges faced by apple farmers in ShaanXi, China (see <a href="/posts/apple_cranberry/">the sweet and sour of apples and cranberries</a>), that the farmers battle against the fluctuating price by strategically storing apple inventories so as to sell later, yet their decisions are far from optimal that brings regret and misfortune that sabotages the families&rsquo; living business. My initial thought was that the problem belongs to market failures, that potential solutions lies in redesigning the selling mechanism and boost information transparency etc.. But here&rsquo;s another way of tackling the problem, which is somehow pretty fancy:</p>
+<blockquote>
+<p>Apple futures, as the name suggests, are futures varieties with apples as the underlying, which were listed on China&rsquo;s Zhengzhou Commodity Exchange on December 22, 2017, and are the world&rsquo;s first fresh fruit futures variety to be listed. The quality threshold is pretty high that only top-standard apples are taken into account.</p>
+</blockquote>
+<h3 id="why-can-apples-be-futures">why can apples be futures?<a hidden class="anchor" aria-hidden="true" href="#why-can-apples-be-futures">#</a></h3>
+<ul>
+<li>
+<p>The market scale is large enough: China is the world&rsquo;s largest producer and consumer of apples, there is a large-scale spot market that makes apples almost impossible for a few people to control and monopolize.</p>
+</li>
+<li>
+<p>Apple&rsquo;s quality assessment is easy. The grading standard for apples has a clear definition of the standard, fruit shape, color, freshness, fruit stalks, fruit rust, fruit surface defects and other aspects. Existing technology such as photoelectric grading machine, can determine the grade according to the fruit color and weight and so on automatically.</p>
+</li>
+<li>
+<p>Price fluctuations are large and frequent:</p>
+<blockquote>
+<p>During the apple harvest period, a large number of new year apples flow into the spot market, market supply increases, and wholesale prices are relatively low. Then from December to February, affected by the New Year&rsquo;s Day and the Chinese New Year festivities, market demand increases, and wholesale prices gradually rise. in March and April, apples from the mechanical cold storage are concentrated in the warehouse, and the supply becomes larger, driving prices down. In May, with the end of the shipments from the mechanical cold storage, the supply decreases, and prices rebound. from June to April, apples from the mechanical cold storage are concentrated in the warehouse, and the supply decreases, and prices rebound. Between June and August, early and mid-ripening apples were concentrated in the market, and prices were relatively low, leading to an overall decrease in wholesale apple prices. Weather factors, light and temperature are the two factors that have the greatest impact on apple production. Bad weather, such as frost, drought and other conditions will seriously affect the yield and quality of apples</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="why-making-apples-futures">why making apples futures?<a hidden class="anchor" aria-hidden="true" href="#why-making-apples-futures">#</a></h3>
+<p>&ldquo;<strong>poverty alleviation fruits</strong>&rdquo;:</p>
+<p>Domestic apple production is concentrated in low-income areas. The Ministry of Agriculture identified 122 key apple counties and cities, of which 39 are national poverty-stricken counties, where apple cultivation is the main source of income for tens of millions of local farmer.</p>
+<p>Farmers scattered planting for the ability to withstand natural disasters and market risk is low, &ldquo;big year and small year&rdquo; brought about by price fluctuations will be almost unbearable for them. So &ldquo;fruit&rdquo; futures to establish the initial major purpose is to alleviate the risk of price fluctuations, to protect the rights and interests of fruit farmers. After the listing of apple futures, through the provision of open and transparent prices, timely and effective reflection of changes in the spot market, can provide market price reference for the industry to provide the basis for decision-making. Similar to the same &ldquo;fruit&rdquo; futures one of the jujube, is to promote the Xinjiang farmers income &ldquo;fruit&rdquo;, and cotton to bring the &ldquo;white economy&rdquo; has a similar effect.</p>
+<p>This new product model sought to improve the agricultural support and protection system, as well as the rural financial services system. The business model of &ldquo;insurance + futures&rdquo; is an innovative pilot financial product to support agricultural and rural development. Agricultural futures prices are used as the basis for insurance underwriting and claims. Insured households pay premiums to purchase insurance products, insurance companies purchase over-the-counter options from futures companies to hedge part of the payout risk, and futures companies carry out replica option operations in the futures market to further diversify risks. Upon expiration of the options, the futures company will make payment and settlement to the insurance company, and the insurance company will then pay out to the insured households. The &ldquo;insurance + futures&rdquo; model combines the risk avoidance function of the futures market with the insurance industry&rsquo;s role in underwriting claims.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

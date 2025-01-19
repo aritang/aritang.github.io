@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>understanding reinforcement learning through dynamic programming | a model-free approach | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Dynamic Programming (DP) serves as a foundational approach in computational algorithms, especially effective in environments with complete knowledge of state transitions and rewards, described within the Markov Decision Process (MDP) framework. However, the real-world often presents scenarios where such comprehensive information is unavailable. Here, Reinforcement Learning (RL) steps in with model-free methods that leverage DP principles but operate without the need for explicit transition probabilities or rewards.
+Markov Decision Process (MDP) Framework
+An MDP is a mathematical framework used to describe an environment in decision-making problems where outcomes are partly random and partly under the control of a decision-maker. MDPs are defined by the following components:">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/rl_via_dp/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/rl_via_dp/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="understanding reinforcement learning through dynamic programming | a model-free approach" />
+<meta property="og:description" content="Dynamic Programming (DP) serves as a foundational approach in computational algorithms, especially effective in environments with complete knowledge of state transitions and rewards, described within the Markov Decision Process (MDP) framework. However, the real-world often presents scenarios where such comprehensive information is unavailable. Here, Reinforcement Learning (RL) steps in with model-free methods that leverage DP principles but operate without the need for explicit transition probabilities or rewards.
+Markov Decision Process (MDP) Framework
+An MDP is a mathematical framework used to describe an environment in decision-making problems where outcomes are partly random and partly under the control of a decision-maker. MDPs are defined by the following components:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/rl_via_dp/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-22T18:51:52+08:00" />
+<meta property="article:modified_time" content="2024-05-22T18:51:52+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="understanding reinforcement learning through dynamic programming | a model-free approach"/>
+<meta name="twitter:description" content="Dynamic Programming (DP) serves as a foundational approach in computational algorithms, especially effective in environments with complete knowledge of state transitions and rewards, described within the Markov Decision Process (MDP) framework. However, the real-world often presents scenarios where such comprehensive information is unavailable. Here, Reinforcement Learning (RL) steps in with model-free methods that leverage DP principles but operate without the need for explicit transition probabilities or rewards.
+Markov Decision Process (MDP) Framework
+An MDP is a mathematical framework used to describe an environment in decision-making problems where outcomes are partly random and partly under the control of a decision-maker. MDPs are defined by the following components:"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "understanding reinforcement learning through dynamic programming | a model-free approach",
+      "item": "//localhost:1313/posts/rl_via_dp/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "understanding reinforcement learning through dynamic programming | a model-free approach",
+  "name": "understanding reinforcement learning through dynamic programming | a model-free approach",
+  "description": "Dynamic Programming (DP) serves as a foundational approach in computational algorithms, especially effective in environments with complete knowledge of state transitions and rewards, described within the Markov Decision Process (MDP) framework. However, the real-world often presents scenarios where such comprehensive information is unavailable. Here, Reinforcement Learning (RL) steps in with model-free methods that leverage DP principles but operate without the need for explicit transition probabilities or rewards.\nMarkov Decision Process (MDP) Framework An MDP is a mathematical framework used to describe an environment in decision-making problems where outcomes are partly random and partly under the control of a decision-maker. MDPs are defined by the following components:\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Dynamic Programming (DP) serves as a foundational approach in computational algorithms, especially effective in environments with complete knowledge of state transitions and rewards, described within the Markov Decision Process (MDP) framework. However, the real-world often presents scenarios where such comprehensive information is unavailable. Here, Reinforcement Learning (RL) steps in with model-free methods that leverage DP principles but operate without the need for explicit transition probabilities or rewards.\nMarkov Decision Process (MDP) Framework An MDP is a mathematical framework used to describe an environment in decision-making problems where outcomes are partly random and partly under the control of a decision-maker. MDPs are defined by the following components:\nStates $ S $: A finite set of states that the system can be in.\nActions $ A $: For each state $ s $, there exists a finite set of actions $ A(s) $ available to the decision-maker.\nTransition Probability $ P(s’, s \\mid a) $: The probability of moving from state $ s $ to state $ s’ $ after taking action $ a $.\nReward Function $ R(s, a, s’) $: The immediate reward received after transitioning from state $ s $ to state $ s’ $, due to action $ a $.\nDiscount Factor $ \\gamma $​: A factor between 0 and 1 that discounts future rewards, reflecting the preference for immediate rewards over future ones.\nObjective: The decision-maker’s objective is to find a policy $\\pi$ that is essentially a mapping from state to action, and maximizes the expected cumulative reward over time: $$ \\max_\\pi \\mathbb E [\\sum_{t = 0}^\\infty \\gamma^tR(s, \\pi(s))] $$\nLinking MDPs to Reinforcement Learning In traditional DP, solving an MDP involves calculating the optimal policy to maximizes cumulative rewards, using complete knowledge of $ P $ and $ R $. Reinforcement Learning, particularly the model-free approach, simplifies this by not requiring explicit knowledge of these functions, thus enabling learning and decision-making directly from interactions with the environment.\nModel-free RL methods, such as Monte Carlo and Temporal Difference learning, approximate the key functions of MDPs (value functions and policies) through experiences, adjusting their estimates towards optimal values as more data is gathered from the environment. This adaptability makes RL suited for complex and dynamic environments where traditional DP might be impractical.\nMonte Carlo Methods Monte Carlo methods are essential in the toolkit of model-free reinforcement learning, particularly valued for their simplicity and efficacy in episodic tasks, where each episode is a sequence of states, actions, and rewards that eventually reaches a terminal state.\nPrediction and Control in Monte Carlo Methods Monte Carlo methods are divided into two primary tasks: prediction and control, each serving a unique purpose in learning and policy optimization.\nPrediction: The objective here is to estimate the value function $V_\\pi(s)$ for a given policy $\\pi$. $V_\\pi(s)$ represents the expected return (cumulative discounted rewards) when starting from state $s$ and following policy $\\pi$ thereafter. Monte Carlo prediction calculates this by averaging the returns observed after many episodes, specifically focusing on returns starting from state $s$​. The update formula for the value function in Monte Carlo prediction is: $$ V(S_t) \\leftarrow \\frac{1}{N(S_t)} \\sum_{i=1}^{N(S_t)} G_i $$\nwhere $N(S_t)$ is the number of times state $S_t$ has been visited, and $G_i$ are the returns observed in these visits.\nControl: While prediction is about evaluating a policy, control is about improving it. The goal in the control setting is to find the optimal policy that maximizes the expected return from any given state. This is typically done using the action-value function $Q(s, a)$, which estimates the expected return after taking an action $a$ in state $s$ and thereafter following policy $\\pi$. The challenge in Monte Carlo control is ensuring that all actions are sufficiently explored, which is addressed by techniques like $\\epsilon$-soft policies. The update formula for the action-value function in Monte Carlo control is: $$ Q(S_t, A_t) \\leftarrow \\frac{1}{N(S_t, A_t)} \\sum_{i=1}^{N(S_t, A_t)} G_i $$ where $N(S_t, A_t)$ is the number of times the action $A_t$ has been taken in state $S_t$, and $G_i$ are the returns following these actions.\nOn-Policy vs. Off-Policy Learning Control methods can be implemented in two forms: on-policy and off-policy, each with its approach to exploring and learning:\nOn-Policy Learning: In this approach, the learning policy $\\pi$ is also the policy used to generate behavior. This means that the value function or action-value function directly reflects the outcomes of decisions made by the policy itself. An example of on-policy learning in Monte Carlo methods is when using an $\\epsilon$-soft policy, where the policy remains slightly random to ensure all states are explored.\nOff-Policy Learning: Contrary to on-policy, off-policy methods use a different policy for generating behavior than the one being evaluated and improved. This is useful for learning from exploratory data or an existing dataset of behavior generated by a different policy. In Monte Carlo methods, this often involves using an $\\epsilon$​-greedy policy for exploration while updating the estimates towards the greedy policy’s values. The importance sampling ratio is crucial here to adjust the estimates to reflect the policy’s probability distribution.\nsummary for MC Monte Carlo methods provide a straightforward yet powerful approach to solving reinforcement learning problems, particularly in environments with clear episode boundaries. By directly estimating value functions from complete episodes, these methods offer a blend of simplicity and directness in tackling both prediction and control challenges in model-free settings.\nTemporal Difference (TD) Learning Temporal Difference (TD) learning stands out as a pivotal method in reinforcement learning due to its ability to learn directly from raw experience without a model of the environment’s dynamics. Unlike Monte Carlo methods, which wait until the end of an episode to update value estimates, TD learning updates estimates incrementally after each step.\nprediction and control in TD learning TD learning can be used for both prediction and control tasks in reinforcement learning:\nPrediction: The goal is to estimate the value function $ V(s) $ for a given policy. TD learning updates the value function after each time step, using the observed reward and the estimated value of the subsequent state. This update, known as bootstrapping, combines observed rewards with existing value estimates: $$ V(S_t) \\leftarrow V(S_t) + \\alpha\\left[\\text{TD target} - V(S_t)\\right] $$ where the TD target is typically $ R_{t + 1} + \\gamma V(S_{t + 1}) $, combining the reward received after taking action $ A_t $ and the discounted estimate of the next state’s value.\nControl: The objective in the control setting is to find an optimal policy. This involves learning the optimal action-value function $ Q(s, a) $, which estimates the expected return after taking action $ a $ in state $ s $ and thereafter following an optimal policy. TD methods for control include on-policy approaches like SARSA and off-policy methods such as Q-learning.\nSARSA vs. Q-learning TD methods can be implemented as either on-policy or off-policy, each with distinct characteristics:\nOn-Policy (SARSA): SARSA, which stands for State-Action-Reward-State-Action, updates the action-value function based on the action actually taken, as determined by the current policy (typically $\\epsilon$-greedy): $$ Q(S_t, A_t) \\leftarrow Q(S_t, A_t) + \\alpha\\left[ R_{t + 1} + \\gamma Q(S_{t + 1}, A_{t + 1}) - Q(S_t, A_t)\\right] $$ This approach directly incorporates the decision-making process into the learning algorithm, maintaining a close adherence to the policy’s behavior.\nOff-Policy (Q-learning): Q-learning seeks to find the optimal policy directly, regardless of the agent’s actions. It updates the action-value function using the maximum value of the next state, regardless of the action taken by the policy: $$ Q(S_t, A_t) \\leftarrow Q(S_t, A_t) + \\alpha\\left[ R_{t + 1} + \\gamma \\max_{a’} Q(S_{t + 1}, a’) - Q(S_t, A_t)\\right] $$ Q-learning typically converges faster than SARSA as it always assumes optimal future actions, making it a robust choice for environments where a precise model of the environment is unknown.\nsome variants of TD learning address specific challenges or scenarios: Expected SARSA: Averages over possible next actions rather than relying on a single sample, reducing variance and potentially improving learning stability––computationally costly but converges faster.\nDouble Q-learning: Uses two separate value estimates to decouple the action selection from the target value calculation, addressing the overestimation bias common in standard Q-learning.\nsummary of TD Temporal Difference (TD) learning is crucial for enabling learning from incomplete sequences of experience, without waiting for the end of an episode. Among its variants, Q-learning is particularly noteworthy. It updates its estimates using the best available actions, thereby directly targeting the optimal policy, regardless of the agent’s actions during exploration. This method not only accelerates convergence but also reduces dependency on specific policies during data generation, enhancing its application in dynamic and complex environments.\nQ-learning exemplifies the efficiency and effectiveness of TD learning, making it a key strategy in AI and autonomous system development.\n$n$-step SARSA: bridging MC and TD learning The core idea behind n-Step SARSA is to update the value estimates based on $n$ steps of experience rather than relying on a single step (as in standard TD learning) or waiting until the end of an episode (as in MC methods). This approach allows the algorithm to incorporate more comprehensive trajectory information into each update, improving the quality of the policy evaluation and development without the full delay of episode completion required by pure MC methods.\nalgorithm key detail The update function for n-Step SARSA is a natural extension of the single-step SARSA, incorporating rewards and state transitions over $n$ steps: $$ Q(S_t, A_t) \\leftarrow Q(S_t, A_t) + \\alpha\\left[ R_{t+1} + \\gamma R_{t+2} + \\dots + \\gamma^n Q(S_{t+n}, A_{t+n}) - Q(S_t, A_t)\\right] $$ This formula uses the real (environment feedback) reward over first $n$ steps, while afterwards just adding up using the (discounted) estimate $Q$. This n-step perspective helps in smoothing out the learning updates, providing a balance between immediate and delayed rewards, and typically leads to more stable learning convergence.\n",
+  "wordCount" : "1630",
+  "inLanguage": "en",
+  "datePublished": "2024-05-22T18:51:52+08:00",
+  "dateModified": "2024-05-22T18:51:52+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/rl_via_dp/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      understanding reinforcement learning through dynamic programming | a model-free approach
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-05-22 18:51:52 &#43;0800 &#43;0800&#39;&gt;May 22, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p><strong>Dynamic Programming (DP)</strong> serves as a foundational approach in computational algorithms, especially effective in environments with complete knowledge of state transitions and rewards, described within the <strong>Markov Decision Process (MDP)</strong> framework. However, the real-world often presents scenarios where such comprehensive information is unavailable. Here, <strong>Reinforcement Learning (RL)</strong> steps in with model-free methods that leverage DP principles but operate without the need for explicit transition probabilities or rewards.</p>
+<h2 id="markov-decision-process-mdp-framework">Markov Decision Process (MDP) Framework<a hidden class="anchor" aria-hidden="true" href="#markov-decision-process-mdp-framework">#</a></h2>
+<p>An MDP is a mathematical framework used to describe an environment in decision-making problems where outcomes are partly random and partly under the control of a decision-maker. MDPs are defined by the following components:</p>
+<ul>
+<li>
+<p><strong>States $ S $</strong>: A finite set of states that the system can be in.</p>
+</li>
+<li>
+<p><strong>Actions $ A $</strong>: For each state $ s $, there exists a finite set of actions $ A(s) $ available to the decision-maker.</p>
+</li>
+<li>
+<p><strong>Transition Probability $ P(s&rsquo;, s \mid a) $</strong>: The probability of moving from state $ s $ to state $ s&rsquo; $ after taking action $ a $.</p>
+</li>
+<li>
+<p><strong>Reward Function $ R(s, a, s&rsquo;) $</strong>: The immediate reward received after transitioning from state $ s $ to state $ s&rsquo; $, due to action $ a $.</p>
+</li>
+<li>
+<p><strong>Discount Factor $ \gamma $​</strong>: A factor between 0 and 1 that discounts future rewards, reflecting the preference for immediate rewards over future ones.</p>
+</li>
+<li>
+<p><strong>Objective</strong>: The decision-maker&rsquo;s objective is to find a policy $\pi$ that is essentially a mapping from state to action, and maximizes the <strong>expected cumulative reward</strong> over time:
+$$
+\max_\pi \mathbb E [\sum_{t = 0}^\infty \gamma^tR(s, \pi(s))]
+$$</p>
+</li>
+</ul>
+<h3 id="linking-mdps-to-reinforcement-learning">Linking MDPs to Reinforcement Learning<a hidden class="anchor" aria-hidden="true" href="#linking-mdps-to-reinforcement-learning">#</a></h3>
+<p>In traditional DP, solving an MDP involves calculating the optimal policy to maximizes cumulative rewards, <strong>using complete knowledge of $ P $ and $ R $.</strong> Reinforcement Learning, particularly the model-free approach, simplifies this by not requiring explicit knowledge of these functions, thus enabling learning and decision-making directly from interactions with the environment.</p>
+<p>Model-free RL methods, such as Monte Carlo and Temporal Difference learning, approximate the key functions of MDPs (value functions and policies) through experiences, adjusting their estimates towards optimal values as more data is gathered from the environment. This adaptability makes RL suited for complex and dynamic environments where traditional DP might be impractical.</p>
+<h2 id="monte-carlo-methods">Monte Carlo Methods<a hidden class="anchor" aria-hidden="true" href="#monte-carlo-methods">#</a></h2>
+<p>Monte Carlo methods are essential in the toolkit of model-free reinforcement learning, particularly valued for their simplicity and efficacy in episodic tasks, where each episode is a sequence of states, actions, and rewards that eventually reaches a terminal state.</p>
+<h3 id="prediction-and-control-in-monte-carlo-methods">Prediction and Control in Monte Carlo Methods<a hidden class="anchor" aria-hidden="true" href="#prediction-and-control-in-monte-carlo-methods">#</a></h3>
+<p>Monte Carlo methods are divided into two primary tasks: <strong>prediction</strong> and <strong>control</strong>, each serving a unique purpose in learning and policy optimization.</p>
+<ul>
+<li>
+<p><strong>Prediction:</strong> The objective here is to estimate the value function $V_\pi(s)$ for a given policy $\pi$. $V_\pi(s)$ represents the expected return (cumulative discounted rewards) when starting from state $s$ and following policy $\pi$ thereafter. Monte Carlo prediction calculates this by averaging the returns observed after many episodes, specifically focusing on returns starting from state $s$​. The update formula for the value function in Monte Carlo prediction is:
+$$
+V(S_t) \leftarrow \frac{1}{N(S_t)} \sum_{i=1}^{N(S_t)} G_i
+$$</p>
+<p>where $N(S_t)$ is the number of times state $S_t$ has been visited, and $G_i$ are the returns observed in these visits.</p>
+</li>
+<li>
+<p><strong>Control:</strong> While prediction is about evaluating a policy, control is about improving it. The goal in the control setting is to find the optimal policy that maximizes the expected return from any given state. This is typically done using the action-value function $Q(s, a)$, which estimates the expected return after taking an action $a$ in state $s$ and thereafter following policy $\pi$. The challenge in Monte Carlo control is ensuring that all actions are sufficiently explored, which is addressed by techniques like $\epsilon$-soft policies. The update formula for the action-value function in Monte Carlo control is:
+$$
+Q(S_t, A_t) \leftarrow \frac{1}{N(S_t, A_t)} \sum_{i=1}^{N(S_t, A_t)} G_i
+$$
+where $N(S_t, A_t)$ is the number of times the action $A_t$ has been taken in state $S_t$, and $G_i$ are the returns following these actions.</p>
+<h3 id="on-policy-vs-off-policy-learning">On-Policy vs. Off-Policy Learning<a hidden class="anchor" aria-hidden="true" href="#on-policy-vs-off-policy-learning">#</a></h3>
+<p>Control methods can be implemented in two forms: on-policy and off-policy, each with its approach to exploring and learning:</p>
+<ul>
+<li>
+<p><strong>On-Policy Learning:</strong> In this approach, the learning policy $\pi$ is also the policy used to generate behavior. This means that the value function or action-value function directly reflects the outcomes of decisions made by the policy itself. An example of on-policy learning in Monte Carlo methods is when using an $\epsilon$-soft policy, where the policy remains slightly random to ensure all states are explored.</p>
+</li>
+<li>
+<p><strong>Off-Policy Learning:</strong> Contrary to on-policy, off-policy methods use a different policy for generating behavior than the one being evaluated and improved. This is useful for learning from exploratory data or an existing dataset of behavior generated by a different policy. In Monte Carlo methods, this often involves using an $\epsilon$​-greedy policy for exploration while updating the estimates towards the greedy policy&rsquo;s values. <strong>The importance sampling ratio is crucial here to adjust the estimates to reflect the policy&rsquo;s probability distribution.</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="summary-for-mc">summary for MC<a hidden class="anchor" aria-hidden="true" href="#summary-for-mc">#</a></h3>
+<p>Monte Carlo methods provide a straightforward yet powerful approach to solving reinforcement learning problems, particularly in environments with clear episode boundaries. By directly estimating value functions from complete episodes, these methods offer a blend of simplicity and directness in tackling both prediction and control challenges in model-free settings.</p>
+<h2 id="temporal-difference-td-learning">Temporal Difference (TD) Learning<a hidden class="anchor" aria-hidden="true" href="#temporal-difference-td-learning">#</a></h2>
+<p>Temporal Difference (TD) learning stands out as a pivotal method in reinforcement learning due to its ability to learn directly from raw experience without a model of the environment&rsquo;s dynamics. Unlike Monte Carlo methods, which wait until the end of an episode to update value estimates, TD learning updates estimates incrementally after each step.</p>
+<h3 id="prediction-and-control-in-td-learning">prediction and control in TD learning<a hidden class="anchor" aria-hidden="true" href="#prediction-and-control-in-td-learning">#</a></h3>
+<p>TD learning can be used for both prediction and control tasks in reinforcement learning:</p>
+<ul>
+<li>
+<p><strong>Prediction:</strong> The goal is to estimate the value function $ V(s) $ for a given policy. TD learning updates the value function after each time step, using the observed reward and the estimated value of the subsequent state. This update, known as bootstrapping, combines observed rewards with existing value estimates:
+$$
+V(S_t) \leftarrow V(S_t) + \alpha\left[\text{TD target} - V(S_t)\right]
+$$
+where the TD target is typically $ R_{t + 1} + \gamma V(S_{t + 1}) $, combining the reward received after taking action $ A_t $ and the discounted estimate of the next state&rsquo;s value.</p>
+</li>
+<li>
+<p><strong>Control:</strong> The objective in the control setting is to find an optimal policy. This involves learning the optimal action-value function $ Q(s, a) $, which estimates the expected return after taking action $ a $ in state $ s $ and thereafter following an optimal policy. TD methods for control include on-policy approaches like SARSA and off-policy methods such as Q-learning.</p>
+<h3 id="sarsa-vs-q-learning">SARSA vs. Q-learning<a hidden class="anchor" aria-hidden="true" href="#sarsa-vs-q-learning">#</a></h3>
+<p>TD methods can be implemented as either on-policy or off-policy, each with distinct characteristics:</p>
+<ul>
+<li>
+<p><strong>On-Policy (SARSA):</strong> SARSA, which stands for State-Action-Reward-State-Action, updates the action-value function based on the action actually taken, as determined by the current policy (typically $\epsilon$-greedy):
+$$
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left[ R_{t + 1} + \gamma Q(S_{t + 1}, A_{t + 1}) - Q(S_t, A_t)\right]
+$$
+This approach directly incorporates the decision-making process into the learning algorithm, maintaining a close adherence to the policy&rsquo;s behavior.</p>
+</li>
+<li>
+<p><strong>Off-Policy (Q-learning):</strong> Q-learning seeks to find the optimal policy directly, regardless of the agent&rsquo;s actions. It updates the action-value function using the maximum value of the next state, regardless of the action taken by the policy:
+$$
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left[ R_{t + 1} + \gamma \max_{a&rsquo;} Q(S_{t + 1}, a&rsquo;) - Q(S_t, A_t)\right]
+$$
+Q-learning typically converges faster than SARSA as it always assumes optimal future actions, making it a robust choice for environments where a precise model of the environment is unknown.</p>
+</li>
+</ul>
+<h4 id="some-variants-of-td-learning-address-specific-challenges-or-scenarios">some variants of TD learning address specific challenges or scenarios:<a hidden class="anchor" aria-hidden="true" href="#some-variants-of-td-learning-address-specific-challenges-or-scenarios">#</a></h4>
+<ul>
+<li>
+<p><strong>Expected SARSA:</strong> Averages over possible next actions rather than relying on a single sample, reducing variance and potentially improving learning stability––computationally costly but converges faster.</p>
+</li>
+<li>
+<p><strong>Double Q-learning:</strong> Uses two separate value estimates to decouple the action selection from the target value calculation, addressing the overestimation bias common in standard Q-learning.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="summary-of-td">summary of TD<a hidden class="anchor" aria-hidden="true" href="#summary-of-td">#</a></h3>
+<p>Temporal Difference (TD) learning is crucial for enabling learning from incomplete sequences of experience, without waiting for the end of an episode. Among its variants, <strong>Q-learning</strong> is particularly noteworthy. It updates its estimates using the best available actions, thereby directly targeting the optimal policy, regardless of the agent&rsquo;s actions during exploration. This method not only accelerates convergence but also reduces dependency on specific policies during data generation, enhancing its application in dynamic and complex environments.</p>
+<p>Q-learning exemplifies the efficiency and effectiveness of TD learning, making it a key strategy in AI and autonomous system development.</p>
+<h2 id="n-step-sarsa-bridging-mc-and-td-learning">$n$-step SARSA: bridging MC and TD learning<a hidden class="anchor" aria-hidden="true" href="#n-step-sarsa-bridging-mc-and-td-learning">#</a></h2>
+<p>The core idea behind n-Step SARSA is to update the value estimates based on <strong>$n$ steps</strong> of experience rather than relying on a single step (as in standard TD learning) or waiting until the end of an episode (as in MC methods). This approach allows the algorithm to incorporate more comprehensive trajectory information into each update, improving the quality of the policy evaluation and development without the full delay of episode completion required by pure MC methods.</p>
+<h3 id="algorithm-key-detail">algorithm key detail<a hidden class="anchor" aria-hidden="true" href="#algorithm-key-detail">#</a></h3>
+<p>The update function for n-Step SARSA is a natural extension of the single-step SARSA, incorporating rewards and state transitions over $n$ steps:
+$$
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left[ R_{t+1} + \gamma R_{t+2} + \dots +  \gamma^n Q(S_{t+n}, A_{t+n}) - Q(S_t, A_t)\right]
+$$
+This formula uses the real (environment feedback) reward over first $n$ steps, while afterwards just adding up using the (discounted) estimate $Q$. This n-step perspective helps in smoothing out the learning updates, providing a balance between immediate and delayed rewards, and typically leads to more stable learning convergence.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>
