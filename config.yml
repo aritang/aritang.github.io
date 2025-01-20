@@ -41,6 +41,9 @@ params:
         collect them like monopoly
       - I like the idea of craziness with discipline.*
         —— Karl Lagerfeld
+  # social:
+  #   - name: "Instagram"
+  #     url: "https://www.instagram.com/lovefromarianatang/"
               
   fuseOpts:
     isCaseSensitive: false
