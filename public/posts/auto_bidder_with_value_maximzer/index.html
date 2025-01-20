@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>value maximizer&#39;s auto bidder | ariana&#39;s blog</title>
+<meta name="keywords" content="paper">
+<meta name="description" content="Aggarwal (2019)&rsquo;s WINE paper proposed a LP-based framework for modelling autobidder for value maximizers. But it does not capture value maximizing bidders with budget and ROI constraints.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/auto_bidder_with_value_maximzer/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/auto_bidder_with_value_maximzer/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="value maximizer&#39;s auto bidder" />
+<meta property="og:description" content="Aggarwal (2019)&rsquo;s WINE paper proposed a LP-based framework for modelling autobidder for value maximizers. But it does not capture value maximizing bidders with budget and ROI constraints." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/auto_bidder_with_value_maximzer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-08T23:36:48+08:00" />
+<meta property="article:modified_time" content="2023-11-08T23:36:48+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="value maximizer&#39;s auto bidder"/>
+<meta name="twitter:description" content="Aggarwal (2019)&rsquo;s WINE paper proposed a LP-based framework for modelling autobidder for value maximizers. But it does not capture value maximizing bidders with budget and ROI constraints."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "value maximizer's auto bidder",
+      "item": "//localhost:1313/posts/auto_bidder_with_value_maximzer/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "value maximizer's auto bidder",
+  "name": "value maximizer\u0027s auto bidder",
+  "description": "Aggarwal (2019)\u0026rsquo;s WINE paper proposed a LP-based framework for modelling autobidder for value maximizers. But it does not capture value maximizing bidders with budget and ROI constraints.",
+  "keywords": [
+    "paper"
+  ],
+  "articleBody": "Gagan Aggarwal, Ashwinkumar Badanidiyuru and Aranyak Mehta’s WINE 2019 paper Autobidding with Constraints proposed a new framework for modelling the online ads keyword search auction. The core is a pretty general LP optimization problem that capture the high-level constraint of the buyer (advertiser), based on the data known, solve an optimal ads assortment. Like the following: $$ \\begin{align} \\max \u0026\\ \\sum_i x_iv_i\\ s.t. \u0026 \\ \\sum_i x_i\\text{cpc}i \\le B_c + \\sum_i x_i w{ic}\\ \u0026 x_i\\in {0, 1} \\end{align} $$ where $c$ is the index for the buyer, $i\\in [m]$ is the index for the items. $B$ stands for budget (generally) and $w_{ic}$ and $v_i$ would correspond to weight and value in general.\nThis framework is “general”. It can model budget-constrained optimizer who, as long as his budget is not exceeded, would like to maximize clicks, i.e. $\\sum_i x_i$, then by taking $v_i = 1, B_c = \\text{budget},w_i = 0$ we obtain the speical case of the above LP tailored for budget-constrained click-count optimizers: $$ \\begin{align} \\max \u0026\\ \\sum_i x_i\\ s.t. \u0026 \\ \\sum_i x_i \\le B_c \\ \u0026 x_i\\in {0, 1}\\text{ (or maybe } 0\\le x_i\\le 1) \\end{align} $$ And for optimizer with a CPA (cost-per-acquisition) target, let $v_i = \\text{cvr}_i$ (convergence rate) and $B = 0$, and take $w_i = T\\text{cvr}_i$, the optimization program yields $$ \\begin{align} \\max \u0026\\ \\sum_i \\text{cvr}_i x_i\\ s.t. \u0026 \\ \\frac{\\sum_i x_i\\text{cpc}_i}{\\sum_i x_i \\text{cvr}_i} \\le T \\ \u0026 x_i\\in {0, 1}\\text{ (or maybe } 0\\le x_i\\le 1) \\end{align} $$ Cool. But what’s for value-maximizer with budget and ROI (return-on-spend) constraint? Say, for some buyer (not necessarily unit-demand), given his valuation on each $i$’s clicks $v_i$, he would like to maximizer total value while subject to budget not being exceeded, and return-on-spend higher than certain threshold, like $$ \\begin{align} \\max \u0026\\ \\sum_i v_i x_i\\ s.t. \u0026 \\ \\sum_i p_i \\le B_c \\ \u0026 \\tau_c \\sum_ip_i\\le \\sum v_i x_i\\ \u0026 x_i\\in {0, 1}\\text{ (or maybe } 0\\le x_i\\le 1) \\end{align} $$ The above framework doesn’t capture this…right? But value maximizers with ROI are very common in real industry. Hmm, maybe we can do an auto-bidder on this?\n",
+  "wordCount" : "351",
+  "inLanguage": "en",
+  "datePublished": "2023-11-08T23:36:48+08:00",
+  "dateModified": "2023-11-08T23:36:48+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/auto_bidder_with_value_maximzer/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      value maximizer&#39;s auto bidder
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2023-11-08 23:36:48 &#43;0800 CST&#39;&gt;November 8, 2023&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p><a href="https://dblp.org/pid/75/3847.html">Gagan Aggarwal</a>, <a href="https://dblp.org/pid/15/2638.html">Ashwinkumar Badanidiyuru</a> and <a href="https://dblp.org/pid/23/6337.html">Aranyak Mehta</a>&rsquo;s <a href="https://dblp.org/db/conf/wine/wine2019.html#AggarwalBM19">WINE 2019</a> paper <strong>Autobidding with Constraints</strong> proposed a new framework for modelling the online ads keyword search auction. The core is a pretty general LP optimization problem that capture the high-level constraint of the buyer (advertiser), based on the data known, solve an optimal ads assortment. Like the following:
+$$
+\begin{align}
+\max &amp;\ \sum_i x_iv_i\
+s.t. &amp; \ \sum_i x_i\text{cpc}<em>i \le B_c  + \sum_i x_i w</em>{ic}\
+&amp; x_i\in {0, 1}
+\end{align}
+$$
+where $c$ is the index for the buyer, $i\in [m]$ is the index for the items. $B$ stands for budget (generally) and $w_{ic}$ and $v_i$ would correspond to weight and value in general.</p>
+<p>This framework is &ldquo;general&rdquo;. It can model budget-constrained optimizer who, as long as his budget is not exceeded, would like to maximize clicks, i.e. $\sum_i x_i$, then by taking $v_i = 1, B_c = \text{budget},w_i = 0$ we obtain the speical case of the above LP tailored for budget-constrained click-count optimizers:
+$$
+\begin{align}
+\max &amp;\ \sum_i x_i\
+s.t. &amp; \ \sum_i x_i \le B_c \
+&amp; x_i\in {0, 1}\text{ (or maybe } 0\le x_i\le 1)
+\end{align}
+$$
+And for optimizer with a CPA (cost-per-acquisition) target, let $v_i = \text{cvr}_i$ (convergence rate) and $B = 0$, and take $w_i = T\text{cvr}_i$, the optimization program yields
+$$
+\begin{align}
+\max &amp;\ \sum_i \text{cvr}_i x_i\
+s.t. &amp; \ \frac{\sum_i x_i\text{cpc}_i}{\sum_i x_i \text{cvr}_i} \le T \
+&amp; x_i\in {0, 1}\text{ (or maybe } 0\le x_i\le 1)
+\end{align}
+$$
+Cool. But what&rsquo;s for value-maximizer with budget and ROI (return-on-spend) constraint? Say, for some buyer (not necessarily unit-demand), given his valuation on each $i$&rsquo;s clicks $v_i$, he would like to maximizer total value while subject to budget not being exceeded, and return-on-spend higher than certain threshold, like
+$$
+\begin{align}
+\max &amp;\ \sum_i v_i x_i\
+s.t. &amp; \ \sum_i p_i \le B_c \
+&amp; \tau_c \sum_ip_i\le \sum v_i x_i\
+&amp; x_i\in {0, 1}\text{ (or maybe } 0\le x_i\le 1)
+\end{align}
+$$
+The above framework doesn&rsquo;t capture this&hellip;right? But value maximizers with ROI are very common in real industry. Hmm, maybe we can do an auto-bidder on this?</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/paper/">Paper</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

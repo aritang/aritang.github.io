@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Summary and reading note of the paper
+
+Yongmin Chen, Chuan He, Paid Placement: Advertising and Search on the Internet, The Economic Journal, Volume 121, Issue 556, November 2011, Pages F309–F328, https://doi.org/10.1111/j.1468-0297.2011.02466.x
+
+Yongmin Chen and Chuan He are both Professors at the University of Colorado Boulder. This is a theoretical paper.
+The paper examines the effects of online advertising with paid placement on sellers and consumers. It formulates a market model with multiple differentiated sellers and searching consumers, with the search engine serving as an information intermediary. The paper emphasizes sellers&rsquo; differentiation and incorporates a mechanism design approach by assuming the search engine runs a generalized second-price auction to elicit sellers&rsquo; information about their relevance. The authors solve for the market equilibrium and analyze the implications of paid placement for the search engine&rsquo;s profit, consumer welfare, and efficiency. Finally, the paper extends the analysis to include sellers with different costs.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/paid_placement_chen_and_he/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/paid_placement_chen_and_he/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet" />
+<meta property="og:description" content="Summary and reading note of the paper
+
+Yongmin Chen, Chuan He, Paid Placement: Advertising and Search on the Internet, The Economic Journal, Volume 121, Issue 556, November 2011, Pages F309–F328, https://doi.org/10.1111/j.1468-0297.2011.02466.x
+
+Yongmin Chen and Chuan He are both Professors at the University of Colorado Boulder. This is a theoretical paper.
+The paper examines the effects of online advertising with paid placement on sellers and consumers. It formulates a market model with multiple differentiated sellers and searching consumers, with the search engine serving as an information intermediary. The paper emphasizes sellers&rsquo; differentiation and incorporates a mechanism design approach by assuming the search engine runs a generalized second-price auction to elicit sellers&rsquo; information about their relevance. The authors solve for the market equilibrium and analyze the implications of paid placement for the search engine&rsquo;s profit, consumer welfare, and efficiency. Finally, the paper extends the analysis to include sellers with different costs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/paid_placement_chen_and_he/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-01T10:35:05+08:00" />
+<meta property="article:modified_time" content="2024-11-01T10:35:05+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet"/>
+<meta name="twitter:description" content="Summary and reading note of the paper
+
+Yongmin Chen, Chuan He, Paid Placement: Advertising and Search on the Internet, The Economic Journal, Volume 121, Issue 556, November 2011, Pages F309–F328, https://doi.org/10.1111/j.1468-0297.2011.02466.x
+
+Yongmin Chen and Chuan He are both Professors at the University of Colorado Boulder. This is a theoretical paper.
+The paper examines the effects of online advertising with paid placement on sellers and consumers. It formulates a market model with multiple differentiated sellers and searching consumers, with the search engine serving as an information intermediary. The paper emphasizes sellers&rsquo; differentiation and incorporates a mechanism design approach by assuming the search engine runs a generalized second-price auction to elicit sellers&rsquo; information about their relevance. The authors solve for the market equilibrium and analyze the implications of paid placement for the search engine&rsquo;s profit, consumer welfare, and efficiency. Finally, the paper extends the analysis to include sellers with different costs."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet",
+      "item": "//localhost:1313/posts/paid_placement_chen_and_he/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet",
+  "name": "paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet",
+  "description": "Summary and reading note of the paper\nYongmin Chen, Chuan He, Paid Placement: Advertising and Search on the Internet, The Economic Journal, Volume 121, Issue 556, November 2011, Pages F309–F328, https://doi.org/10.1111/j.1468-0297.2011.02466.x\nYongmin Chen and Chuan He are both Professors at the University of Colorado Boulder. This is a theoretical paper.\nThe paper examines the effects of online advertising with paid placement on sellers and consumers. It formulates a market model with multiple differentiated sellers and searching consumers, with the search engine serving as an information intermediary. The paper emphasizes sellers\u0026rsquo; differentiation and incorporates a mechanism design approach by assuming the search engine runs a generalized second-price auction to elicit sellers\u0026rsquo; information about their relevance. The authors solve for the market equilibrium and analyze the implications of paid placement for the search engine\u0026rsquo;s profit, consumer welfare, and efficiency. Finally, the paper extends the analysis to include sellers with different costs.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Summary and reading note of the paper\nYongmin Chen, Chuan He, Paid Placement: Advertising and Search on the Internet, The Economic Journal, Volume 121, Issue 556, November 2011, Pages F309–F328, https://doi.org/10.1111/j.1468-0297.2011.02466.x\nYongmin Chen and Chuan He are both Professors at the University of Colorado Boulder. This is a theoretical paper.\nThe paper examines the effects of online advertising with paid placement on sellers and consumers. It formulates a market model with multiple differentiated sellers and searching consumers, with the search engine serving as an information intermediary. The paper emphasizes sellers’ differentiation and incorporates a mechanism design approach by assuming the search engine runs a generalized second-price auction to elicit sellers’ information about their relevance. The authors solve for the market equilibrium and analyze the implications of paid placement for the search engine’s profit, consumer welfare, and efficiency. Finally, the paper extends the analysis to include sellers with different costs.\nmodel Given a particular keyword, $ m $ sellers offer products to a unit mass of consumers at a constant marginal cost $ c $. Each seller $ i $’s relevance value for consumers is differentiated as $$ v_i X_i, $$ where:\n$ v_i \\in [\\underline{v}, \\overline{v}] $ is a realization of a random variable from distribution $ F(\\cdot) $, $ X_i \\in \\lbrace0, 1\\rbrace $ is an indicator random variable denoting whether the product is a match; $ X_i = 1 $ with probability $ \\beta_i $. The distribution $ F(\\cdot) $ is assumed to be independent and identically distributed (i.i.d.) across sellers and independent of $ X_i $.\nThe parameter $ \\beta_i $ is the main driving force of differentiation—it represents the relevance probability of seller $ i $ and is private information for each seller. Without loss of generality, we assume $$ \\beta_1 \\geq \\beta_2 \\geq \\ldots \\geq \\beta_m. $$ For tractability, the paper further assumes an underlying structure for $ \\beta_i $: $$ \\beta_i = \\gamma^{\\min(i - 1, I)} \\beta, $$ where $ \\beta, \\gamma \\in (0, 1) $ and $ 2 \\leq I \\leq m $. The relevance match probability $ \\beta_i $ decreases with $ \\gamma $ and remains the same after $ I $.\n[Assumption] The paper assumes $ I = 3 $ and later sets the number of ad positions to 3 in the subsequent analysis.\nconsumers A consumer does not know any $ \\beta_i $ or $ v_i $ a priori. They use a search engine to find products using a keyword. Sellers can choose to pay the search engine to be included in the result list through a generalized second-price auction.\nBased on their beliefs, consumers incur a cost $ t_j $ to inspect the webpage of the seller in position $ j $. For $ t \u003c t^h $ (along with a few other regularization assumptions), the inspection costs are defined as: $$ t_j = \\begin{cases} t \u0026 \\text{for } j = 1, 2, 3, 4, \\cr t^h \u0026 \\text{for } j \u003e 4. \\end{cases} $$\nsellers Sellers make two decisions: first, they bid for the paid-placement slots; then they independently choose their prices, which are not observed by consumers before they incur the cost to inspect the sellers. After inspection, consumers make unit purchases when they find a desired product, and sellers obtain their revenue.\n[Assumption] The paper studies symmetric pricing equilibria where sellers’ equilibrium prices are the same: $ p_i = p^o, \\forall i $, and where $$ p^o = \\arg \\max (p - c)[1 - F(p)]. $$ In my opinion, this assumption is rather restrictive. However, it simplifies the technical complexity, allowing the model to focus on other more interesting aspects.\nequilibrium analysis A profile of strategies consists of (i) the search and purchase strategy of each consumer, and (ii) the bidding strategies and uniform pricing strategies of sellers. A (perfect Bayesian) equilibrium is a profile of strategies, together with a system of beliefs by buyers regarding the search engine, such that each player is optimizing.\nconsumer’s equilibrium search strategy Under the assumptions made for the inspection costs $ t_j $, suppose that sellers displayed are ranked in the order of their $ \\beta_i $ (and that they price $ p^o $ uniformly). It is optimal for each consumer to search sequentially over positions $ j = 1, 2, 3 $ and then randomly select another seller not listed on the search engine. They stop searching either when $ v_i X_i \\geq p^o $ or after they have conducted all four searches and leave without making a purchase.\nThis scenario appears to be a special case of the Weitzman (1979) search model.\nWhen sellers are ranked according to their $ \\beta_i $ (and price uniformly), and given consumers’ search behavior, sellers’ revenue can be expressed in terms of $ \\beta $, $ \\gamma $, $ F(v) $, and $ m $ (the number of sellers).\nsellers’ bidding equilibrium Sellers, knowing their $ \\beta_i $ privately, bid in a generalized second-price auction for paid placement. Note that generalized second-price auction is not universally truthful—equilibria in such auctions can be non-unique and potentially problematic—for example, in some equilibria, it is not the highest-relevance sellers who secure the better positions. Nevertheless, the paper solves for those favorable “separating equilibria” under certain assumptions, so that at equilibrium, the sellers (who get the paid-placement display) are ranked according to their $ \\beta_i $.\nThere are other equilibria when the search engine operates differently. The paper refers to different strategies employed by the search engine that result in various “consumer beliefs”. Proposition 1 states (informally):\nIf consumers believe that sellers presented in the paid placements are in descending order of relevance ($ \\beta_i $) and are more relevant than those not presented in the paid placement, it results in a separating equilibrium. If consumers believe that sellers presented in the paid placements are in a random order of relevance ($ \\beta_i $) but are more relevant than those not presented in the paid placement, it results in a partial separating equilibrium. The top three best sellers bid the same and are placed in random order. If consumers believe that all sellers are equally relevant (or irrelevant), there is a pooling equilibrium where all sellers bid zero. market outcome under equilibrium search engine’s profit The paper derives closed-form expressions for the search engine’s profit under both separating and partial separating equilibria, expressed in terms of $ \\beta $, $ \\gamma $, $ m $, and $ F(\\cdot) $. Proposition 2 in Section 3 summarizes the technical properties of the profit functions. The key insight is that, as per Remark 1, paid-placement advertising leads to more efficient consumer search and higher total output. The separating equilibrium (informative ranking by the search engine) generally yields higher welfare gains than the partial separating equilibrium (where the ad placement does not signal relevance).\nFinally, the paper extends the analysis to consider sellers with heterogeneous production costs.\n",
+  "wordCount" : "1148",
+  "inLanguage": "en",
+  "datePublished": "2024-11-01T10:35:05+08:00",
+  "dateModified": "2024-11-01T10:35:05+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/paid_placement_chen_and_he/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      paper reading note | Chen and He (2011) Paid Placement — Advertising and Search on the Internet
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-11-01 10:35:05 &#43;0800 CST&#39;&gt;November 1, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>Summary and reading note of the paper</p>
+<blockquote>
+<p>Yongmin Chen, Chuan He, Paid Placement: Advertising and Search on the Internet, <em>The Economic Journal</em>, Volume 121, Issue 556, November 2011, Pages F309–F328, <a href="https://doi.org/10.1111/j.1468-0297.2011.02466.x">https://doi.org/10.1111/j.1468-0297.2011.02466.x</a></p>
+</blockquote>
+<p><a href="https://www.colorado.edu/faculty/chen-yongmin/">Yongmin Chen</a> and <a href="https://www.colorado.edu/business/leeds-directory/faculty/chuan-he">Chuan He</a> are both Professors at the University of Colorado Boulder. This is a theoretical paper.</p>
+<p>The paper examines the effects of online advertising with <em><strong>paid placement</strong></em> on sellers and consumers. It formulates a market model with multiple differentiated sellers and searching consumers, with the search engine serving as an information intermediary. The paper emphasizes sellers&rsquo; differentiation and incorporates a mechanism design approach by assuming the search engine runs a generalized second-price auction to elicit sellers&rsquo; information about their relevance. The authors solve for the market equilibrium and analyze the implications of paid placement for the search engine&rsquo;s profit, consumer welfare, and efficiency. Finally, the paper extends the analysis to include sellers with different costs.</p>
+<h2 id="model">model<a hidden class="anchor" aria-hidden="true" href="#model">#</a></h2>
+<p>Given a particular keyword, $ m $ sellers offer products to a unit mass of consumers at a constant marginal cost $ c $. Each seller $ i $&rsquo;s <em><strong>relevance</strong></em> value for consumers is differentiated as
+$$
+v_i X_i,
+$$
+where:</p>
+<ul>
+<li>$ v_i \in [\underline{v}, \overline{v}] $ is a realization of a random variable from distribution $ F(\cdot) $,</li>
+<li>$ X_i \in \lbrace0, 1\rbrace $ is an indicator random variable denoting whether the product is a match; $ X_i = 1 $ with probability $ \beta_i $.</li>
+</ul>
+<p>The distribution $ F(\cdot) $ is assumed to be independent and identically distributed (i.i.d.) across sellers and independent of $ X_i $.</p>
+<p>The parameter $ \beta_i $ is the main driving force of differentiation—it represents the <em><strong>relevance probability</strong></em> of seller $ i $ and is private information for each seller. Without loss of generality, we assume
+$$
+\beta_1 \geq \beta_2 \geq \ldots \geq \beta_m.
+$$
+For tractability, the paper further assumes an underlying structure for $ \beta_i $:
+$$
+\beta_i = \gamma^{\min(i - 1, I)} \beta,
+$$
+where $ \beta, \gamma \in (0, 1) $ and $ 2 \leq I \leq m $. The relevance match probability $ \beta_i $ decreases with $ \gamma $ and remains the same after $ I $.</p>
+<p>[<strong>Assumption</strong>] The paper assumes $ I = 3 $ and later sets the number of ad positions to 3 in the subsequent analysis.</p>
+<h3 id="consumers">consumers<a hidden class="anchor" aria-hidden="true" href="#consumers">#</a></h3>
+<p>A consumer does not know any $ \beta_i $ or $ v_i $ a priori. They use a <em><strong>search engine</strong></em> to find products using a keyword. Sellers can choose to pay the search engine to be included in the result list through a <em><strong>generalized second-price auction</strong></em>.</p>
+<p>Based on their beliefs, consumers incur a cost $ t_j $ to inspect the webpage of the seller in position $ j $. For $ t &lt; t^h $ (along with <strong>a few other regularization assumptions</strong>), the inspection costs are defined as:
+$$
+t_j = \begin{cases}
+t &amp; \text{for } j = 1, 2, 3, 4, \cr
+t^h &amp; \text{for } j &gt; 4.
+\end{cases}
+$$</p>
+<h3 id="sellers">sellers<a hidden class="anchor" aria-hidden="true" href="#sellers">#</a></h3>
+<p>Sellers make two decisions: first, they bid for the paid-placement slots; then they independently choose their prices, which are <strong>not</strong> observed by consumers before they incur the cost to inspect the sellers. After inspection, consumers make unit purchases when they find a desired product, and sellers obtain their revenue.</p>
+<p>[<strong>Assumption</strong>] The paper studies symmetric pricing equilibria where sellers&rsquo; equilibrium prices are the same: $ p_i = p^o, \forall i $, and where
+$$
+p^o = \arg \max (p - c)[1 - F(p)].
+$$
+In my opinion, this assumption is rather restrictive. However, it simplifies the technical complexity, allowing the model to focus on other more interesting aspects.</p>
+<h2 id="equilibrium-analysis">equilibrium analysis<a hidden class="anchor" aria-hidden="true" href="#equilibrium-analysis">#</a></h2>
+<p>A <em><strong>profile of strategies</strong></em> consists of (i) the search and purchase strategy of each consumer, and (ii) the bidding strategies and uniform pricing strategies of sellers. A (perfect Bayesian) equilibrium is a profile of strategies, together with a system of beliefs by buyers regarding the search engine, such that each player is optimizing.</p>
+<h3 id="consumers-equilibrium-search-strategy">consumer&rsquo;s equilibrium search strategy<a hidden class="anchor" aria-hidden="true" href="#consumers-equilibrium-search-strategy">#</a></h3>
+<p>Under the assumptions made for the inspection costs $ t_j $, suppose that sellers displayed are ranked in the order of their $ \beta_i $ (and that they price $ p^o $ uniformly). It is optimal for each consumer to search sequentially over positions $ j = 1, 2, 3 $ and then randomly select another seller not listed on the search engine. They stop searching either when $ v_i X_i \geq p^o $ or after they have conducted all four searches and leave without making a purchase.</p>
+<p>This scenario appears to be a special case of the Weitzman (1979) search model.</p>
+<p>When sellers are ranked according to their $ \beta_i $ (and price uniformly), and given consumers&rsquo; search behavior, sellers&rsquo; revenue can be expressed in terms of $ \beta $, $ \gamma $, $ F(v) $, and $ m $ (the number of sellers).</p>
+<h3 id="sellers-bidding-equilibrium">sellers&rsquo; bidding equilibrium<a hidden class="anchor" aria-hidden="true" href="#sellers-bidding-equilibrium">#</a></h3>
+<p>Sellers, knowing their $ \beta_i $ privately, bid in a generalized second-price auction for paid placement. Note that generalized second-price auction is not universally truthful—equilibria in such auctions can be non-unique and potentially problematic—for example, in some equilibria, it is not the highest-relevance sellers who secure the better positions. Nevertheless, the paper solves for those favorable &ldquo;separating equilibria&rdquo; under certain assumptions, so that at equilibrium, the sellers (who get the paid-placement display) are ranked according to their $ \beta_i $.</p>
+<p>There are other equilibria when the search engine operates differently. The paper refers to different strategies employed by the search engine that result in various &ldquo;<em>consumer beliefs</em>&rdquo;. <strong>Proposition 1</strong> states (informally):</p>
+<ul>
+<li>If consumers believe that sellers presented in the paid placements are in descending order of relevance ($ \beta_i $) and are more relevant than those not presented in the paid placement, it results in a <em><strong>separating equilibrium</strong></em>.</li>
+<li>If consumers believe that sellers presented in the paid placements are in a random order of relevance ($ \beta_i $) but are more relevant than those not presented in the paid placement, it results in a <em><strong>partial separating equilibrium</strong></em>. The top three best sellers bid the same and are placed in random order.</li>
+<li>If consumers believe that all sellers are equally relevant (or irrelevant), there is a <em><strong>pooling equilibrium</strong></em> where all sellers bid zero.</li>
+</ul>
+<h2 id="market-outcome-under-equilibrium">market outcome under equilibrium<a hidden class="anchor" aria-hidden="true" href="#market-outcome-under-equilibrium">#</a></h2>
+<h3 id="search-engines-profit">search engine&rsquo;s profit<a hidden class="anchor" aria-hidden="true" href="#search-engines-profit">#</a></h3>
+<p>The paper derives closed-form expressions for the search engine&rsquo;s profit under both separating and partial separating equilibria, expressed in terms of $ \beta $, $ \gamma $, $ m $, and $ F(\cdot) $. <strong>Proposition 2</strong> in Section 3 summarizes the technical properties of the profit functions. The key insight is that, as per <strong>Remark 1</strong>, paid-placement advertising leads to more efficient consumer search and higher total output. The separating equilibrium (informative ranking by the search engine) generally yields higher welfare gains than the partial separating equilibrium (where the ad placement does not signal relevance).</p>
+<p>Finally, the paper extends the analysis to consider sellers with heterogeneous production costs.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>DOJ vs. Google | the paper box | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="The trial lasted for three weeks—Sep. 9 to Sept 27—mic drop🎤.
+my views and summarizations:
+
+get you 🍿popcorn🍿 ready | the DOJ vs. Google
+DOJ vs. Google | DOJ&rsquo;s complaints
+DOJ vs. Google | the paper box
+DOJ vs. Google | DOJ&rsquo;s complaints, breaking down | Part I
+DOJ vs. Google | DOJ complaint break down | Part II
+DOJ vs. Google | Waterfall Auction -&gt; Header Bidding -&gt; Open Bidding, All Explained
+DOJ v. Google | Google&rsquo;s defense
+DOJ v Google | Paul Milgrom pushes adtech nerds&rsquo; carnivals to a next level
+
+what comes next?
+
+The court will now take a nearly two-month break before reconvening for closing arguments right before Thanksgiving.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/end_of_doj_v_google/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/end_of_doj_v_google/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="DOJ vs. Google | the paper box" />
+<meta property="og:description" content="The trial lasted for three weeks—Sep. 9 to Sept 27—mic drop🎤.
+my views and summarizations:
+
+get you 🍿popcorn🍿 ready | the DOJ vs. Google
+DOJ vs. Google | DOJ&rsquo;s complaints
+DOJ vs. Google | the paper box
+DOJ vs. Google | DOJ&rsquo;s complaints, breaking down | Part I
+DOJ vs. Google | DOJ complaint break down | Part II
+DOJ vs. Google | Waterfall Auction -&gt; Header Bidding -&gt; Open Bidding, All Explained
+DOJ v. Google | Google&rsquo;s defense
+DOJ v Google | Paul Milgrom pushes adtech nerds&rsquo; carnivals to a next level
+
+what comes next?
+
+The court will now take a nearly two-month break before reconvening for closing arguments right before Thanksgiving." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/end_of_doj_v_google/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-02T00:00:01+08:00" />
+<meta property="article:modified_time" content="2024-10-02T00:00:01+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DOJ vs. Google | the paper box"/>
+<meta name="twitter:description" content="The trial lasted for three weeks—Sep. 9 to Sept 27—mic drop🎤.
+my views and summarizations:
+
+get you 🍿popcorn🍿 ready | the DOJ vs. Google
+DOJ vs. Google | DOJ&rsquo;s complaints
+DOJ vs. Google | the paper box
+DOJ vs. Google | DOJ&rsquo;s complaints, breaking down | Part I
+DOJ vs. Google | DOJ complaint break down | Part II
+DOJ vs. Google | Waterfall Auction -&gt; Header Bidding -&gt; Open Bidding, All Explained
+DOJ v. Google | Google&rsquo;s defense
+DOJ v Google | Paul Milgrom pushes adtech nerds&rsquo; carnivals to a next level
+
+what comes next?
+
+The court will now take a nearly two-month break before reconvening for closing arguments right before Thanksgiving."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "DOJ vs. Google | the paper box",
+      "item": "//localhost:1313/posts/end_of_doj_v_google/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DOJ vs. Google | the paper box",
+  "name": "DOJ vs. Google | the paper box",
+  "description": "The trial lasted for three weeks—Sep. 9 to Sept 27—mic drop🎤.\nmy views and summarizations: get you 🍿popcorn🍿 ready | the DOJ vs. Google DOJ vs. Google | DOJ\u0026rsquo;s complaints DOJ vs. Google | the paper box DOJ vs. Google | DOJ\u0026rsquo;s complaints, breaking down | Part I DOJ vs. Google | DOJ complaint break down | Part II DOJ vs. Google | Waterfall Auction -\u0026gt; Header Bidding -\u0026gt; Open Bidding, All Explained DOJ v. Google | Google\u0026rsquo;s defense DOJ v Google | Paul Milgrom pushes adtech nerds\u0026rsquo; carnivals to a next level what comes next? The court will now take a nearly two-month break before reconvening for closing arguments right before Thanksgiving.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "The trial lasted for three weeks—Sep. 9 to Sept 27—mic drop🎤.\nmy views and summarizations: get you 🍿popcorn🍿 ready | the DOJ vs. Google DOJ vs. Google | DOJ’s complaints DOJ vs. Google | the paper box DOJ vs. Google | DOJ’s complaints, breaking down | Part I DOJ vs. Google | DOJ complaint break down | Part II DOJ vs. Google | Waterfall Auction -\u003e Header Bidding -\u003e Open Bidding, All Explained DOJ v. Google | Google’s defense DOJ v Google | Paul Milgrom pushes adtech nerds’ carnivals to a next level what comes next? The court will now take a nearly two-month break before reconvening for closing arguments right before Thanksgiving.\n…\nNow that both sides have finished presenting their respective arguments, it’s up to Judge Brinkema to make her decision.\nBut there’s a lot that has to happen before she rules.\nFirst, both sides have until Monday, November 4, to submit their revised findings of fact, a legal document that outlines the material facts in a case. Each side gets to write one. Google and the DOJ both filed proposed findings of fact in the weeks before the trial started.\nJudge Brinkema will have three weeks to review the documents and, if time allows, prepare an early draft opinion.\nAnd then it’s time for everyone to cram back into the courthouse: Closing arguments are scheduled for 10 am on Monday, November 25.\nBoth sides will apparently get longer than the 30 minutes they were each allotted to make their opening statements earlier this month. The judge will also have the opportunity to ask questions during closing arguments.\nOnce that’s finished, it’s possible we’ll have a ruling from Judge Brinkema by early next year. And if she finds in the DOJ’s favor, then it’s time to decide on the punishment, which would be decided during a subsequent hearing.\n— The Google Ad Tech Antitrust Case Is Over – And Here’s What’s Happening Next. Allison Schiff from ad-exchanger.\nSo there’s still a long way to go. Not to mention the appeal Google will undertake if it loses.\nuseful resources DOJ’s press release and complaint pdf (Feb. 2023): https://www.justice.gov/opa/pr/justice-department-sues-google-monopolizing-digital-advertising-technologies\nDOJ’s trial exhibits (updated Sep. 27 2024): https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2023-trial-exhibits\nPress coverage:\nNYTimes’s antitrust coverage: https://www.nytimes.com/interactive/2024/business/antitrust-case-tracker.html?unlocked_article_code=1.O04.ciS3.h98y-pHtMZIF\u0026smid=url-share\nA dedicated webpage about this trial:\nTrial updates: https://www.usvgoogleads.com/trial-updates Trial resources: https://www.usvgoogleads.com/trial-documents Ad exchanges’ covers: https://www.adexchanger.com/tag/google-antitrust-trial/\nGoogle official:\nBefore the trial (Sep. 08, 2024): https://blog.google/outreach-initiatives/public-policy/google-ad-tech-sept-2024/\nKey takeaways, after the trial (Sep. 27, 2024): https://blog.google/outreach-initiatives/public-policy/ad-tech-trial-key-takeaways/\nThere is for sure even more materials available over the web. Search outside the box (the and recommendation algorithm)!\none particularly inspiring comment I look forward to seeing the timeline/waterfall because your description of the testimony suggests Google’s argument is that they always assumed the market was demand based bidding.\nBut before they bought double click, the idea was a performance based marketplace where advertisers could see a causal relationship between advertising and sales. Unfortunately for GOOGLE, they learned that advertising doesn’t work like direct marketing.\nThe pivot was to mimick the business model of legacy media (not direct marketing) and shifted from performance based to demand based pricing. That’s why they bought Doubleclick.\nDemand based pricing makes money the way legacy media does, not based on what works but based on what was spent last year. (which really isn’t a smart way to do media planning but makes for a quick summary at the shareholder meeting).\nWhen more money floods the market, increasing demand, for example, political advertising in a presidential election year, the price per eyeball goes up. To lower the price, in a bidding market, the market needs to expand the supply. That’s when display ads and ad fraud became a thing.\nSure GOOGLE starting buying tech that sounds curative for ad fraud, but there isn’t really any way to know, at least not before the advertiser pays.\nAt least legacy media provides an audit of where ads ran (so they couldn’t dump everything in the middle of the night or bury a print ad in some extra pages that fall out and go right in the trash.) And agencies didn’t pay until they reviewed these audits.\nGoogles platform hurts competition by controlling supply in a demand based bidding platform and being opaque. No competitor with a more transparent, performance based pricing alternative could enter.\nAnd that’s too bad because there’s a lot of opportunity relative to the “long tail” days when GOOGLE bought Double click. By “long tail” I mean in those days each digital ad reached very few people because websites had tiny audiences. Today, it’s possible to reach the scale of audiences that we once saw back in the days of 3 networks, when real time reach could be nearly every person (whose not in the bathroom) in every house with a TV in prime time.\nMaybe this reasoning would help to give the judge some good questions to ask.\nBy COMRADITY, Sep 26, 2024. Comment.\nSee you in two months! Take care.\n",
+  "wordCount" : "826",
+  "inLanguage": "en",
+  "datePublished": "2024-10-02T00:00:01+08:00",
+  "dateModified": "2024-10-02T00:00:01+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/end_of_doj_v_google/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      DOJ vs. Google | the paper box
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-10-02 00:00:01 &#43;0800 CST&#39;&gt;October 2, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>The trial lasted for three weeks—Sep. 9 to Sept 27—mic drop🎤.</p>
+<h3 id="my-views-and-summarizations">my views and summarizations:<a hidden class="anchor" aria-hidden="true" href="#my-views-and-summarizations">#</a></h3>
+<ul>
+<li><a href="/posts/doj_vs_google/">get you 🍿popcorn🍿 ready | the DOJ vs. Google</a></li>
+<li><a href="/posts/dojs_complaint/">DOJ vs. Google | DOJ&rsquo;s complaints</a></li>
+<li><a href="/posts/end_of_doj_v_google/">DOJ vs. Google | the paper box</a></li>
+<li><a href="/posts/dojs_complaint_full/">DOJ vs. Google | DOJ&rsquo;s complaints, breaking down | Part I</a></li>
+<li><a href="/posts/dojs_complaint_full_1/">DOJ vs. Google | DOJ complaint break down | Part II</a></li>
+<li><a href="/posts/header_bidding/">DOJ vs. Google | Waterfall Auction -&gt; Header Bidding -&gt; Open Bidding, All Explained</a></li>
+<li><a href="/posts/googles_defense/">DOJ v. Google | Google&rsquo;s defense</a></li>
+<li><a href="/posts/paul_milgroms_testify/">DOJ v Google | Paul Milgrom pushes adtech nerds&rsquo; carnivals to a next level</a></li>
+</ul>
+<h3 id="what-comes-next">what comes next?<a hidden class="anchor" aria-hidden="true" href="#what-comes-next">#</a></h3>
+<blockquote>
+<p>The court will now take a nearly two-month break before reconvening for closing arguments right before Thanksgiving.</p>
+<p>&hellip;</p>
+<p>Now that both sides have finished presenting their respective arguments, it’s up to Judge Brinkema to make her decision.</p>
+<p>But there’s a lot that has to happen before she rules.</p>
+<p>First, both sides have until Monday, November 4, to submit their revised findings of fact, a legal document that outlines the material facts in a case. Each side gets to write one. Google and the DOJ both filed proposed findings of fact in the weeks before the trial started.</p>
+<p>Judge Brinkema will have three weeks to review the documents and, if time allows, prepare an early draft opinion.</p>
+<p>And then it’s time for everyone to cram back into the courthouse: Closing arguments are scheduled for 10 am on Monday, November 25.</p>
+<p>Both sides will apparently get longer than the 30 minutes they were each allotted to make their <a href="https://www.adexchanger.com/antitrust/your-day-one-recap-doj-vs-google-goes-deep-into-the-ad-tech-weeds/">opening statements earlier this month</a>. The judge will also have the opportunity to ask questions during closing arguments.</p>
+<p>Once that’s finished, it’s possible we’ll have a ruling from Judge Brinkema by early next year. And if she finds in the DOJ’s favor, then it’s time to decide on the punishment, which would be decided during a subsequent hearing.</p>
+<p>— <a href="https://www.adexchanger.com/marketers/the-google-ad-tech-antitrust-case-is-over-and-heres-whats-happening-next/">The Google Ad Tech Antitrust Case Is Over – And Here’s What’s Happening Next.</a> <a href="https://www.adexchanger.com/author/allison-schiff/">Allison Schiff</a> from ad-exchanger.</p>
+</blockquote>
+<p>So there&rsquo;s still a long way to go. Not to mention the appeal Google will undertake if it loses.</p>
+<h3 id="useful-resources">useful resources<a hidden class="anchor" aria-hidden="true" href="#useful-resources">#</a></h3>
+<ul>
+<li>
+<p>DOJ&rsquo;s press release and <a href="https://www.justice.gov/opa/press-release/file/1563746/dl"><code>complaint pdf</code></a> (Feb. 2023): <a href="https://www.justice.gov/opa/pr/justice-department-sues-google-monopolizing-digital-advertising-technologies">https://www.justice.gov/opa/pr/justice-department-sues-google-monopolizing-digital-advertising-technologies</a></p>
+<p>DOJ&rsquo;s trial exhibits (updated Sep. 27 2024): <a href="https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2023-trial-exhibits">https://www.justice.gov/atr/us-and-plaintiff-states-v-google-llc-2023-trial-exhibits</a></p>
+</li>
+<li>
+<p>Press coverage:</p>
+<p>NYTimes&rsquo;s antitrust coverage: <a href="https://www.nytimes.com/interactive/2024/business/antitrust-case-tracker.html?unlocked_article_code=1.O04.ciS3.h98y-pHtMZIF&amp;smid=url-share">https://www.nytimes.com/interactive/2024/business/antitrust-case-tracker.html?unlocked_article_code=1.O04.ciS3.h98y-pHtMZIF&amp;smid=url-share</a></p>
+<p>A <a href="https://www.usvgoogleads.com/">dedicated webpage</a> about this trial:</p>
+<ul>
+<li>Trial updates: <a href="https://www.usvgoogleads.com/trial-updates">https://www.usvgoogleads.com/trial-updates</a></li>
+<li>Trial resources: <a href="https://www.usvgoogleads.com/trial-documents">https://www.usvgoogleads.com/trial-documents</a></li>
+</ul>
+<p>Ad exchanges&rsquo; covers: <a href="https://www.adexchanger.com/tag/google-antitrust-trial/">https://www.adexchanger.com/tag/google-antitrust-trial/</a></p>
+</li>
+<li>
+<p>Google official:</p>
+<p>Before the trial (Sep. 08, 2024): <a href="https://blog.google/outreach-initiatives/public-policy/google-ad-tech-sept-2024/">https://blog.google/outreach-initiatives/public-policy/google-ad-tech-sept-2024/</a></p>
+<p>Key takeaways, after the trial (Sep. 27, 2024): <a href="https://blog.google/outreach-initiatives/public-policy/ad-tech-trial-key-takeaways/">https://blog.google/outreach-initiatives/public-policy/ad-tech-trial-key-takeaways/</a></p>
+</li>
+</ul>
+<p>There is for sure even more materials available over the web. Search outside the box (the and recommendation algorithm)!</p>
+<h3 id="one-particularly-inspiring-comment">one particularly inspiring comment<a hidden class="anchor" aria-hidden="true" href="#one-particularly-inspiring-comment">#</a></h3>
+<blockquote>
+<p>I look forward to seeing the timeline/waterfall because your description of the testimony suggests Google’s argument is that they always assumed the market was demand based bidding.</p>
+<p>But before they bought double click, the idea was a performance based marketplace where advertisers could see a causal relationship between advertising and sales. Unfortunately for GOOGLE, they learned that advertising doesn’t work like direct marketing.</p>
+<p>The pivot was to mimick the business model of legacy media (not direct marketing) and shifted from performance based to demand based pricing. That’s why they bought Doubleclick.</p>
+<p>Demand based pricing makes money the way legacy media does, not based on what works but based on what was spent last year. (which really isn’t a smart way to do media planning but makes for a quick summary at the shareholder meeting).</p>
+<p>When more money floods the market, increasing demand, for example, political advertising in a presidential election year, the price per eyeball goes up. To lower the price, in a bidding market, the market needs to expand the supply. That’s when display ads and ad fraud became a thing.</p>
+<p>Sure GOOGLE starting buying tech that sounds curative for ad fraud, but there isn’t really any way to know, at least not before the advertiser pays.</p>
+<p>At least legacy media provides an audit of where ads ran (so they couldn’t dump everything in the middle of the night or bury a print ad in some extra pages that fall out and go right in the trash.) And agencies didn’t pay until they reviewed these audits.</p>
+<p>Googles platform hurts competition by controlling supply in a demand based bidding platform and being opaque. No competitor with a more transparent, performance based pricing alternative could enter.</p>
+<p>And that’s too bad because there’s a lot of opportunity relative to the “long tail” days when GOOGLE bought Double click. By “long tail” I mean in those days each digital ad reached very few people because websites had tiny audiences. Today, it’s possible to reach the scale of audiences that we once saw back in the days of 3 networks, when real time reach could be nearly every person (whose not in the bathroom) in every house with a TV in prime time.</p>
+<p>Maybe this reasoning would help to give the judge some good questions to ask.</p>
+<p>By COMRADITY, Sep 26, 2024. <a href="https://open.substack.com/pub/bigtechontrial/p/googles-lawyers-pitch-competing-explanation?utm_campaign=comment-list-share-cta&amp;utm_medium=web&amp;comments=true&amp;commentId=70369739">Comment</a>.</p>
+</blockquote>
+<p>See you in two months! Take care.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>

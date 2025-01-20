@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>course checker | ariana&#39;s blog</title>
+<meta name="keywords" content="tricks, CS">
+<meta name="description" content="The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there&rsquo;s a clever way to outsmart the system? No more frantic refreshing, here&rsquo;s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/course_checker/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/course_checker/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="course checker" />
+<meta property="og:description" content="The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there&rsquo;s a clever way to outsmart the system? No more frantic refreshing, here&rsquo;s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/course_checker/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-13T23:54:20+08:00" />
+<meta property="article:modified_time" content="2024-03-13T23:54:20+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="course checker"/>
+<meta name="twitter:description" content="The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there&rsquo;s a clever way to outsmart the system? No more frantic refreshing, here&rsquo;s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "course checker",
+      "item": "//localhost:1313/posts/course_checker/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "course checker",
+  "name": "course checker",
+  "description": "The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there\u0026rsquo;s a clever way to outsmart the system? No more frantic refreshing, here\u0026rsquo;s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up.\n",
+  "keywords": [
+    "tricks", "CS"
+  ],
+  "articleBody": "The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there’s a clever way to outsmart the system? No more frantic refreshing, here’s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up.\nRemarks: required packages are all common packages available online, and can be conveniently installed using pip or conda anyway. Still, the version of Chromedriver and Chrome needs to pay extra attention. Also, one might need to adjust the login-click target xpaths based on the website logic, since it’s a simulation of human actions.\n\"\"\" updated Mar. 2024 need to mind chrome version current ver.: 122.0.6261.94 added send_email option \"\"\" import requests from bs4 import BeautifulSoup from selenium import webdriver from selenium.webdriver.common.by import By from selenium.webdriver.support.ui import WebDriverWait from selenium.webdriver.support import expected_conditions as EC import time import smtplib from email.mime.text import MIMEText # Define the login URL, your credentials, and the target URL login_url = \"https://eams.sufe.edu.cn/eams/login.action\" username = \"school_id\" password = \"corresponding password\" target_url = \"https://eams.sufe.edu.cn/eams/allTeachTaskSearch!info.action?removeBack=1\u0026lesson.id=352822\" # Email configuration for sending notifications mail_host = \"smtphz.qiye.163.com\" port = 25 send_by = \"school_email@stu.sufe.edu.cn\" send_to = \"target_email\" email_password = \"email_password\" def send_email(title, content, password): \"\"\"Sends an email notification with the specified title and content.\"\"\" message = MIMEText(content, 'plain', 'utf-8') message[\"From\"] = send_by message['To'] = send_to message['Subject'] = title try: smtp = smtplib.SMTP(mail_host, port) smtp.ehlo() # Identify yourself to the server smtp.starttls() # Secure the connection smtp.login(send_by, password) smtp.sendmail(send_by, send_to, message.as_string()) print(\"Sent successfully\") smtp.quit() except smtplib.SMTPException as e: print(\"Send failed\", e) if 'smtp' in locals() and smtp: smtp.quit() raise # Selenium WebDriver configuration driver = webdriver.Chrome() # You may need to specify the path to your ChromeDriver executable driver.get(login_url) # Login process id_xpath = \"//*[@id='username']/div/div[1]/div[1]/div/input\" pwd_xpath = \"//*[@id='username']/div/div[2]/div[1]/div/input\" login_button_xpath = \"/html/body/div/div[1]/div[2]/div[3]/div[4]/div[2]/div/button\" id_box = driver.find_element(By.XPATH, id_xpath) id_box.send_keys(username) pwd_box = driver.find_element(By.XPATH, pwd_xpath) pwd_box.send_keys(password) login_button = driver.find_element(By.XPATH, login_button_xpath) login_button.click() # Wait for the page to load time.sleep(10) # Main loop to check course availability count = 10 while True: driver.refresh() time.sleep(5) slt = \"body \u003e table \u003e tbody \u003e tr:nth-child(13) \u003e td:nth-child(4)\" element = driver.find_element(By.CSS_SELECTOR, slt) if int(element.text) \u003c= 53: print(\"Element is less than 54!\") get_it = \"https://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=8585\" driver.get(get_it) while True: time.sleep(10) print(\"attention!!!\") print(\"Element is less than 54!\") send_email(\"course selection available\", \"select course now\", email_password) else: if count == 0: count = 10 print(\"Element is not less than 54.\") count -= 1 ",
+  "wordCount" : "423",
+  "inLanguage": "en",
+  "datePublished": "2024-03-13T23:54:20+08:00",
+  "dateModified": "2024-03-13T23:54:20+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/course_checker/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      course checker
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-03-13 23:54:20 &#43;0800 CST&#39;&gt;March 13, 2024&lt;/span&gt;
+
+</div>
+  </header>
+  <div class="post-content"><p>The wild world of course registration heats up during the last round of selection, where occasionally seats are released due to dropouts and the remaining dash for the vacancy. But what if I told you there&rsquo;s a clever way to outsmart the system? No more frantic refreshing, here&rsquo;s nifty little program I concocted that plays the waiting game for you. It keeps an eagle eye on course availability and sends you an email the moment a spot opens up.</p>
+<p>Remarks: required packages are all common packages available online, and can be conveniently installed using pip or conda anyway. Still, the version of Chromedriver and Chrome needs to pay extra attention. Also, one might need to adjust the login-click target xpaths based on the website logic, since it&rsquo;s a simulation of human actions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">updated Mar. 2024
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">need to mind chrome version
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">current ver.: 122.0.6261.94
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">added send_email option
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium <span style="color:#f92672">import</span> webdriver
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium.webdriver.common.by <span style="color:#f92672">import</span> By
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium.webdriver.support.ui <span style="color:#f92672">import</span> WebDriverWait
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> selenium.webdriver.support <span style="color:#f92672">import</span> expected_conditions <span style="color:#66d9ef">as</span> EC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> smtplib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> email.mime.text <span style="color:#f92672">import</span> MIMEText
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the login URL, your credentials, and the target URL</span>
+</span></span><span style="display:flex;"><span>login_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://eams.sufe.edu.cn/eams/login.action&#34;</span>
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;school_id&#34;</span>
+</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;corresponding password&#34;</span>
+</span></span><span style="display:flex;"><span>target_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://eams.sufe.edu.cn/eams/allTeachTaskSearch!info.action?removeBack=1&amp;lesson.id=352822&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Email configuration for sending notifications</span>
+</span></span><span style="display:flex;"><span>mail_host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;smtphz.qiye.163.com&#34;</span>
+</span></span><span style="display:flex;"><span>port <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span>send_by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;school_email@stu.sufe.edu.cn&#34;</span>
+</span></span><span style="display:flex;"><span>send_to <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;target_email&#34;</span>
+</span></span><span style="display:flex;"><span>email_password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;email_password&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">send_email</span>(title, content, password):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Sends an email notification with the specified title and content.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    message <span style="color:#f92672">=</span> MIMEText(content, <span style="color:#e6db74">&#39;plain&#39;</span>, <span style="color:#e6db74">&#39;utf-8&#39;</span>)
+</span></span><span style="display:flex;"><span>    message[<span style="color:#e6db74">&#34;From&#34;</span>] <span style="color:#f92672">=</span> send_by
+</span></span><span style="display:flex;"><span>    message[<span style="color:#e6db74">&#39;To&#39;</span>] <span style="color:#f92672">=</span> send_to
+</span></span><span style="display:flex;"><span>    message[<span style="color:#e6db74">&#39;Subject&#39;</span>] <span style="color:#f92672">=</span> title
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        smtp <span style="color:#f92672">=</span> smtplib<span style="color:#f92672">.</span>SMTP(mail_host, port)
+</span></span><span style="display:flex;"><span>        smtp<span style="color:#f92672">.</span>ehlo()  <span style="color:#75715e"># Identify yourself to the server</span>
+</span></span><span style="display:flex;"><span>        smtp<span style="color:#f92672">.</span>starttls()  <span style="color:#75715e"># Secure the connection</span>
+</span></span><span style="display:flex;"><span>        smtp<span style="color:#f92672">.</span>login(send_by, password)
+</span></span><span style="display:flex;"><span>        smtp<span style="color:#f92672">.</span>sendmail(send_by, send_to, message<span style="color:#f92672">.</span>as_string())
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Sent successfully&#34;</span>)
+</span></span><span style="display:flex;"><span>        smtp<span style="color:#f92672">.</span>quit()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> smtplib<span style="color:#f92672">.</span>SMTPException <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Send failed&#34;</span>, e)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;smtp&#39;</span> <span style="color:#f92672">in</span> locals() <span style="color:#f92672">and</span> smtp:
+</span></span><span style="display:flex;"><span>            smtp<span style="color:#f92672">.</span>quit()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Selenium WebDriver configuration</span>
+</span></span><span style="display:flex;"><span>driver <span style="color:#f92672">=</span> webdriver<span style="color:#f92672">.</span>Chrome()  <span style="color:#75715e"># You may need to specify the path to your ChromeDriver executable</span>
+</span></span><span style="display:flex;"><span>driver<span style="color:#f92672">.</span>get(login_url)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Login process</span>
+</span></span><span style="display:flex;"><span>id_xpath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;//*[@id=&#39;username&#39;]/div/div[1]/div[1]/div/input&#34;</span>
+</span></span><span style="display:flex;"><span>pwd_xpath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;//*[@id=&#39;username&#39;]/div/div[2]/div[1]/div/input&#34;</span>
+</span></span><span style="display:flex;"><span>login_button_xpath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/html/body/div/div[1]/div[2]/div[3]/div[4]/div[2]/div/button&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>id_box <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, id_xpath)
+</span></span><span style="display:flex;"><span>id_box<span style="color:#f92672">.</span>send_keys(username)
+</span></span><span style="display:flex;"><span>pwd_box <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, pwd_xpath)
+</span></span><span style="display:flex;"><span>pwd_box<span style="color:#f92672">.</span>send_keys(password)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>login_button <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>XPATH, login_button_xpath)
+</span></span><span style="display:flex;"><span>login_button<span style="color:#f92672">.</span>click()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Wait for the page to load</span>
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Main loop to check course availability</span>
+</span></span><span style="display:flex;"><span>count <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    driver<span style="color:#f92672">.</span>refresh()
+</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>    slt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;body &gt; table &gt; tbody &gt; tr:nth-child(13) &gt; td:nth-child(4)&#34;</span>
+</span></span><span style="display:flex;"><span>    element <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element(By<span style="color:#f92672">.</span>CSS_SELECTOR, slt)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> int(element<span style="color:#f92672">.</span>text) <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">53</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Element is less than 54!&#34;</span>)
+</span></span><span style="display:flex;"><span>        get_it <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://eams.sufe.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=8585&#34;</span>
+</span></span><span style="display:flex;"><span>        driver<span style="color:#f92672">.</span>get(get_it)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>            time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;attention!!!&#34;</span>)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Element is less than 54!&#34;</span>)
+</span></span><span style="display:flex;"><span>            send_email(<span style="color:#e6db74">&#34;course selection available&#34;</span>, <span style="color:#e6db74">&#34;select course now&#34;</span>, email_password)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> count <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            count <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Element is not less than 54.&#34;</span>)
+</span></span><span style="display:flex;"><span>        count <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/tricks/">Tricks</a></li>
+      <li><a href="//localhost:1313/tags/cs/">CS</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>
