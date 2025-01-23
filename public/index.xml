@@ -6,7 +6,7 @@
     <description>Recent content on ariana&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2025 22:37:04 +0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jan 2025 22:15:36 +0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>my work ethic | pinned post</title>
       <link>//localhost:1313/posts/my_work_ethic/</link>
@@ -14,6 +14,36 @@
       
       <guid>//localhost:1313/posts/my_work_ethic/</guid>
       <description>Think I&amp;rsquo;ve kind of learned that the more authentic and genuine it is, the better it will work for you.</description>
+    </item>
+    
+    <item>
+      <title>Birdwatch as &#39;Community Notes&#39; on Twitter</title>
+      <link>//localhost:1313/posts/birdwatch_now/</link>
+      <pubDate>Thu, 23 Jan 2025 22:15:36 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/birdwatch_now/</guid>
+      <description>&lt;p&gt;Following the blog about Birdwatch&amp;rsquo;s mechanism design, here&amp;rsquo;s some latest news about it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Community Notes&lt;/strong&gt;, formerly known as &lt;strong&gt;Birdwatch&lt;/strong&gt;, is a feature on X (formerly Twitter) where contributors can add context such as fact-checks under a post, image or video. It is a community-driven content moderation program, intended to provide helpful and informative context, based on a crowd-sourced system. Notes are applied to potentially misleading content by a bridging algorithm not based on majority rule, but instead agreement from users on different sides of the political spectrum.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>design of twitter&#39;s Birdwatch mechanism</title>
+      <link>//localhost:1313/posts/birdwatch/</link>
+      <pubDate>Wed, 22 Jan 2025 20:43:29 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/birdwatch/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s an interesting paper about crowdsourcing annotation of tweets. Given a twitter post containing possibly misleading information, the &lt;em&gt;&lt;strong&gt;Birdwatch&lt;/strong&gt;&lt;/em&gt; project aims to crowdsource comments on the OG tweet. One problem is to choose among the annotations &lt;em&gt;&lt;strong&gt;one&lt;/strong&gt;&lt;/em&gt; most credible annotation to display.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;birdwatch-crowd-wisdom-and-bridging-algorithms-can-inform-understanding-and-reduce-the-spread-of-misinformation&#34;&gt;Birdwatch: Crowd Wisdom and Bridging Algorithms can Inform Understanding and Reduce the Spread of Misinformation&lt;/h3&gt;
+&lt;p&gt;Stefan Wojcik et al. &lt;a href=&#34;https://arxiv.org/abs/2210.15723&#34;&gt;Arxiv link.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;So, about Birdwatch:&lt;/p&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/google_ad_gossip/twitter_birdwatch.jpeg#center&#34;
+         alt=&#34;Birdwatch is Twitter&amp;rsquo;s community-driven approach to identify misinformation. It encourages users add informative clarification notes to Tweets.&#34; width=&#34;66%&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Birdwatch is Twitter&amp;rsquo;s community-driven approach to identify misinformation. It encourages users add informative clarification notes to Tweets.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -160,7 +190,8 @@
       <pubDate>Thu, 09 Jan 2025 22:46:29 +0800</pubDate>
       
       <guid>//localhost:1313/posts/baidus_safewords/</guid>
-      <description>&lt;p&gt;The Chinese (almost-)monopoly search engine Baidu is famed for its innovative approach to low-quality search results and extensive ads. While Google limits itself to a mere four ads per query, Baidu sometimes offers up to seven for hot keywords like &amp;ldquo;cosmetic surgery&amp;rdquo;—an industry apparently central to the human condition. To add a dash of intrigue, Baidu ensures its &amp;ldquo;sponsored&amp;rdquo; tags are so understated they’re easily neglected, while relegating organic results to a cramped corner of mediocrity.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The Chinese (almost-)monopoly search engine Baidu is famed for its innovative approach to low-quality search results and extensive ads. While Google limits itself to a mere four ads per query, Baidu sometimes offers up to seven for hot keywords like &amp;ldquo;cosmetic surgery. Moreover, Baidu ensures its &amp;ldquo;sponsored&amp;rdquo; tags are so understated they’re easily neglected, while relegating organic results to a cramped corner of mediocrity.&lt;/p&gt;
+&lt;p&gt;But here’s the pièce de résistance: &lt;strong&gt;you can enjoy ad-free, high-quality search results on Baidu simply by invoking the safeword &amp;ldquo;李彦宏&amp;rdquo;—the name of Baidu&amp;rsquo;s CEO.&lt;/strong&gt; It has been loudly whispered that, Baidu has an unwritten rule to shield their leader&amp;rsquo;s eminent visage from association with anything negative. For example, search &amp;ldquo;Intense Pulse Light&amp;rdquo; (a cosmetic surgery) on Baidu with and without the safeword, and behold two parallel universes:&lt;/p&gt;</description>
     </item>
     
     <item>

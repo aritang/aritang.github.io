@@ -239,6 +239,72 @@
 
 
   <header class="entry-header">
+    <h2>slow productivity and peace of mind for theoretic research
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here’s another Nature’s story on slow productivity:
+Slow productivity worked for Marie Curie — here’s why you should adopt it, too August 2024. Link.
+The story is immensely inspiring. I archived it here and highly recommend reading it! Here are some excerpts:
+Slow Productivity is a call to arms to reject the performative busyness of the modern workplace, where frequent virtual meetings and long e-mail chains sap so much of workers’ attention. One exhausted postdoctoral researcher interviewed by Newport defined productivity, as it is currently measured in academia, as “working all the time”.
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2024-09-07 16:25:00 &#43;0800 CST&#39;&gt;September 7, 2024&lt;/span&gt;</footer>
+  <a class="entry-link" aria-label="post link to slow productivity and peace of mind for theoretic research" href="//localhost:1313/posts/slow_thinking2/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2>Seven ways to practise slow productivity in the lab | from Nature
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Cal Newport is a computer scientist at Georgetown University in Washington DC. He also writes books about time management. Nature career summarized from his latest book Slow Productivity, the 7 ways to practise slow productivity in the lab:
+Limit daily goals. Newport recommends working on, and obsessing about, one large project a day rather than switching back and forth between multiple big tasks. This is something Newport learnt from computer scientist Nancy Lynch, his doctoral adviser at MIT.
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2024-09-06 23:58:47 &#43;0800 CST&#39;&gt;September 6, 2024&lt;/span&gt;</footer>
+  <a class="entry-link" aria-label="post link to Seven ways to practise slow productivity in the lab | from Nature" href="//localhost:1313/posts/slow_thinking1/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
     <h2>protect thinking time in a world of instant communication
     </h2>
   </header>
@@ -490,72 +556,6 @@ as for the downloaded ones—i don’t even dare to count.
   </div>
   <footer class="entry-footer">&lt;span title=&#39;2024-08-29 18:04:40 &#43;0800 CST&#39;&gt;August 29, 2024&lt;/span&gt;</footer>
   <a class="entry-link" aria-label="post link to counting papers" href="//localhost:1313/posts/counting_papers/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2>Summary | Paul Milgrom (2019) Auction Market Design Recent Innovations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The journey begins with Google’s sponsored search business. When Google developed the PageRank algorithm, it not only ranked results but also recommended the most relevant ones to users. Simultaneously, it charged advertisers to display their ‘sponsored’ results atop those organic outcomes. This business model, which underpins our ‘free’ internet today, grew from nonexistence in 2000 to becoming the biggest and possibly most influential business globally, amassing over 600 billion USD in volume worldwide. Alphabet, Google’s parent company, leads as the world’s top company, with advertisements accounting for 90% of its revenue.
-...</p>
-  </div>
-  <footer class="entry-footer">&lt;span title=&#39;2024-08-28 15:47:30 &#43;0800 CST&#39;&gt;August 28, 2024&lt;/span&gt;</footer>
-  <a class="entry-link" aria-label="post link to Summary | Paul Milgrom (2019) Auction Market Design Recent Innovations" href="//localhost:1313/posts/milgrom_internet_ad_2020/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2>PuLP with Gurobi on the side
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Using Gurobi and PuLP for LP:
-import pulp Retrieves a solver interface for Gurobi using PuLP. It allows one to use Gurobi as the solver when defining optimization problems in PuLP:
-solver = pulp.getSolver(&#39;GUROBI&#39;) Silence pulp solving console output:
-pulp.LpSolverDefault.msg = 0 Setup the model with variables, objectives and constraints
-# Initialize the LP model K = 3 B = 4 model = pulp.LpProblem(&#34;model_name&#34;, pulp.LpMaximize) z = pulp.LpVariable.dicts(&#34;z&#34;, range(K), lowBound=0) # Objective function model &#43;= pulp.lpSum(z), &#34;Objective&#34; # Constraints model &#43;= pulp.lpSum([z[k] for k in range(K)]) &lt;= B, &#34;Budget_Constraint&#34; Solve the problem and check status
-...</p>
-  </div>
-  <footer class="entry-footer">&lt;span title=&#39;2024-08-27 12:23:16 &#43;0800 CST&#39;&gt;August 27, 2024&lt;/span&gt;</footer>
-  <a class="entry-link" aria-label="post link to PuLP with Gurobi on the side" href="//localhost:1313/posts/pulp_gurobi/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
