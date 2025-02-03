@@ -1,5 +1,5 @@
 ---
-title: "the 'Glenn Gould vs. Mozart's Greatest Concerto' series"
+title: "Series Catalog | Glenn Gould vs. Mozart's Greatest Concerto"
 date: 2025-01-30T22:53:39+08:00
 draft: false
 ---
