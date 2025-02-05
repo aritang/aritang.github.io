@@ -6,7 +6,7 @@
     <description>Recent content on ariana&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 22:53:39 +0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Feb 2025 23:50:02 +0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>my work ethic | pinned post</title>
       <link>//localhost:1313/posts/my_work_ethic/</link>
@@ -17,12 +17,67 @@
     </item>
     
     <item>
-      <title>the &#39;Glenn Gould vs. Mozart&#39;s Greatest Concerto&#39; series</title>
+      <title>Price Stability and Improved Buyer Utility with Presentation Design — A Theoretical Study of the Amazon Buy Box</title>
+      <link>//localhost:1313/posts/price_stability_on_buybox/</link>
+      <pubDate>Wed, 05 Feb 2025 23:50:02 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/price_stability_on_buybox/</guid>
+      <description>&lt;p&gt;Ophir Friedler, Hu Fu, Anna Karlin, Ariana Tang.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Platforms design the form of presentation by which sellers are shown to the buyers. This design not only shapes the buyers&amp;rsquo; experience but also leads to different market equilibria or dynamics. One component in this design  is through the platform&amp;rsquo;s mediation of the search frictions experienced by the buyers for different sellers. We take a model of monopolistic competition and show that, on one hand, when all sellers have the same inspection costs, the market sees no stable price since the sellers always have incentives to undercut each other, and, on the other hand, the platform may stabilize the price by giving prominence to one seller chosen by a carefully designed mechanism. This calls to mind Amazon&amp;rsquo;s Buy Box. We study natural mechanisms for choosing the prominent seller, characterize the range of equilibrium prices implementable by them, and find that in certain scenarios the buyers&amp;rsquo; surplus improves as the search friction increases.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google faces on more antitrust probe in China.</title>
+      <link>//localhost:1313/posts/google_antitrust_china/</link>
+      <pubDate>Tue, 04 Feb 2025 23:44:47 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/google_antitrust_china/</guid>
+      <description>&lt;p&gt;Wait what?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;china-launches-an-antitrust-probe-into-google-heres-what-it-means&#34;&gt;China launches an antitrust probe into Google. Here’s what it means&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://apnews.com/article/google-china-antitrust-investigation-tariffs-ab02b906733666cb0d348d2b416b7fa5&#34;&gt;https://apnews.com/article/google-china-antitrust-investigation-tariffs-ab02b906733666cb0d348d2b416b7fa5&lt;/a&gt; AP News.&lt;/p&gt;
+&lt;p&gt;China’s State Administration for Market Regulation said Tuesday it was investigating Google on suspicion of violating antitrust laws.&lt;/p&gt;
+&lt;p&gt;While regulators did not provide further details, &lt;strong&gt;the announcement came minutes after the new U.S. tariffs came into effect.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>from bash to python to find the space bug</title>
+      <link>//localhost:1313/posts/from_shell_to_python_debug/</link>
+      <pubDate>Sat, 01 Feb 2025 23:44:34 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/from_shell_to_python_debug/</guid>
+      <description>&lt;p&gt;I spent two days going nuts over a Python script not recognizing directories properly when passing them from a bash script. I was doing something like: (passing in a list of directories from command line to python)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python main.py --result_dir &amp;#34;folder/dir_1, folder/dir_2&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And in the python script &lt;code&gt;main.py&lt;/code&gt;, parse the list of strings and on&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;result_dir_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [f &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; f &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; result_dir&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;)]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# some operations following&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For now the code doesn&amp;rsquo;t work.&lt;/p&gt;
+&lt;p&gt;It turns out that the extra space after the comma (&amp;ldquo;folder/dir_1, folder/dir_2&amp;rdquo;) meant Python saw &lt;code&gt;&amp;quot; folder/dir_2&amp;quot;&lt;/code&gt; with a leading space, which didn’t match the real folder name. Removing that extra space fixed everything:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>concatenate images</title>
+      <link>//localhost:1313/posts/concatenate_image/</link>
+      <pubDate>Fri, 31 Jan 2025 23:46:36 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/concatenate_image/</guid>
+      <description>&lt;p&gt;When I have to show a series of  experiment results plottings, I used to use Meitu (a phone photoshop app) to first airdrop all images to my iphone, concatenate all the images, and them airdrop back to my mac.&lt;/p&gt;
+&lt;p&gt;Not anymore now I got my hands on Imagemagick (&lt;a href=&#34;https://imagemagick.org/)&#34;&gt;https://imagemagick.org/)&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/data_vis/magick_wizard.jpeg#center&#34;
+         alt=&#34;ImageMagick® is a free, open-source software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file formats, including JPEG, PNG, GIF, TIFF, and Ultra HDR.&#34; width=&#34;88%&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;ImageMagick&lt;a href=&#34;http://tarr.uspto.gov/servlet/tarr?regser=serial&amp;amp;entry=78333969&#34;&gt;®&lt;/a&gt; is a free, &lt;a href=&#34;https://imagemagick.org/script/license.php&#34;&gt;open-source&lt;/a&gt; software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file &lt;a href=&#34;https://imagemagick.org/script/formats.php&#34;&gt;formats&lt;/a&gt;, including JPEG, PNG, GIF, TIFF, and Ultra HDR.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Series Catalog | Glenn Gould vs. Mozart&#39;s Greatest Concerto</title>
       <link>//localhost:1313/posts/the_glenn_series/</link>
       <pubDate>Thu, 30 Jan 2025 22:53:39 +0800</pubDate>
       
       <guid>//localhost:1313/posts/the_glenn_series/</guid>
-      <description>&lt;p&gt;It all began when I stumbled upon a surprising revelation—some people, including legendary pianist Glenn Gould, &lt;strong&gt;weren&amp;rsquo;t fans of Mozart&lt;/strong&gt;. I was skeptical and maybe a little defensive at first—like come on, &lt;strong&gt;how dare him?&lt;/strong&gt; Ready to sabotage his argument and him, I decided to first watch his infamous television lecture, &lt;em&gt;How Mozart Became a Bad Composer&lt;/em&gt;. But instead of finding material for a rebuttal, I discovered Gould&amp;rsquo;s opinion was a nuanced, masterful analysis—a critical gem in musical discourse.&lt;/p&gt;</description>
+      <description>&lt;p&gt;It all began when I stumbled upon a surprising revelation—some people, including legendary pianist Glenn Gould, weren&amp;rsquo;t fans of Mozart. I was skeptical and maybe a little defensive at first—like come on, how dare him? Ready to sabotage his argument and him, I decided to first watch his infamous television lecture, &lt;em&gt;How Mozart Became a Bad Composer&lt;/em&gt;. But instead of finding material for a rebuttal, I discovered Gould&amp;rsquo;s opinion was a nuanced, masterful analysis—a critical gem in musical discourse.&lt;/p&gt;</description>
     </item>
     
     <item>
