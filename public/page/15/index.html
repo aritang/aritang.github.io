@@ -215,6 +215,73 @@
 <main class="main"> 
 
 <article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2>Erdős number
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I first heard an economist talking about this fascinating concept at Al’s market design coffee. These days I found a student in my coauthor’s former PhD advisor’s group has Erdős number 3—and he’s a first-year PhD.
+orz.
+The Erdős number describes the “collaborative distance” between mathematician Paul Erdős and another person, as measured by authorship of mathematical papers.
+How it has started:
+Paul Erdős (1913–1996) was an influential Hungarian mathematician who in the latter part of his life spent a great deal of time writing papers with a large number of colleagues—over 500—working on solutions to outstanding mathematical problems.
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2024-09-20 22:15:14 &#43;0800 CST&#39;&gt;September 20, 2024&lt;/span&gt;</footer>
+  <a class="entry-link" aria-label="post link to Erdős number" href="//localhost:1313/posts/erdos_number/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2>mechanism design seminar notes | week 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Following up on last week’s introduction to combinatorial auctions and Vickrey-Clarke-Groves (VCG) mechanisms, a natural question arises: Is there a more efficient algorithm to allocate items effectively?
+One general idea is to start with an arbitrary price vector. If an item is demanded by more than one agent, we increase its price; if no agent demands it, we decrease its price. We then sit back, and pray that the process terminates:
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2024-09-19 19:55:22 &#43;0800 CST&#39;&gt;September 19, 2024&lt;/span&gt;</footer>
+  <a class="entry-link" aria-label="post link to mechanism design seminar notes | week 2" href="//localhost:1313/posts/mechanism_design_seminar_week_2/"></a>
+</article>
+
+<article class="post-entry">
 <div class="">
     <figure class="entry-cover"><img loading="lazy" src="//localhost:1313/google_ad_gossip/nah_taylor.jpeg" alt=""></figure>
 </div>
@@ -488,72 +555,6 @@ DOJ vs. Google, Day One: Who’s Testifying And Google’s Main Arguments In Bri
   </div>
   <footer class="entry-footer">&lt;span title=&#39;2024-09-11 21:29:34 &#43;0800 CST&#39;&gt;September 11, 2024&lt;/span&gt;</footer>
   <a class="entry-link" aria-label="post link to get you 🍿popcorn🍿 ready | the DOJ vs. Google" href="//localhost:1313/posts/doj_vs_google/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2>configure SSH keys in terminal
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>How to use SSH to authenticate connection to remote servers and services (e.g. GitHub).
-how it works (the mechanism) You can access and write data in repositories on GitHub using SSH (Secure Shell Protocol). When you connect via SSH, you authenticate using a private key file on your local machine. For more information about SSH, see Secure Shell on Wikipedia.
-When you set up SSH, you will need to generate a new private SSH key and add it to the SSH agent. You must also add the public SSH key to your account on GitHub before you use the key to authenticate or sign commits.
-...</p>
-  </div>
-  <footer class="entry-footer">&lt;span title=&#39;2024-09-10 21:14:54 &#43;0800 CST&#39;&gt;September 10, 2024&lt;/span&gt;</footer>
-  <a class="entry-link" aria-label="post link to configure SSH keys in terminal" href="//localhost:1313/posts/ssh/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2>Combinatorial Auctions and Single-Minded Bidders
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Here’s an interesting problem appeared in the final exam of market mechanism design. And I didn’t figure it out during then💔. The original question is from lecture note of 21 Algorithmic Game Theory, instructed by Michael Dinitz.
-background Consider combinatorial auction allocating $m$ items to $n$ players. Outcome is each bidder get a set $S_i\subset [m], \forall i \in [n]$ and they don’t overlap.
-Valuation: in this question we consider Single-Minded bidders. Each player $i$ has a target set $S_i^\in [m]$ such that $$ v_i(S) = \begin{cases} v_i &amp; \text{if }S \subset S_i^\ 0 &amp; \text{otherwise} \end{cases} $$ and the two parameters $(v_i, S_i^*)$ are private.
-...</p>
-  </div>
-  <footer class="entry-footer">&lt;span title=&#39;2024-09-09 10:06:20 &#43;0800 CST&#39;&gt;September 9, 2024&lt;/span&gt;</footer>
-  <a class="entry-link" aria-label="post link to Combinatorial Auctions and Single-Minded Bidders" href="//localhost:1313/posts/comb_auction_for_single_minded_bidder/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

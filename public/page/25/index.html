@@ -234,6 +234,69 @@
 
 
   <header class="entry-header">
+    <h2>Whittle index policy in RMAB problem | technicals
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Consider an RMAB instance with $N$ arms, where each arm $i \in [N]$ has a finite state space $\mathbb S_i$ and can receive an action $y_i^t \in {0, 1}$ (representing not pulling or pulling the arm, respectively) at each time step $t$. The state of arm $i$ at time $t$ is denoted by $s_i^t$. Depending on the action taken, a reward $r_i(s_i^t, y_i^t)$ is accrued. As a decision maker, our objective is to maximize the averaged total reward over an infinite time horizon, under a constraint that only $B$ arms can be pulled at any time step. This setup can be formalized as follows: $$ \max_{\pi::\mathbb S \to Y} \lim_{T \to \infty} \frac{1}{T} \mathbb{E} [\sum_{t = 1}^T \sum_{i\in [N]} r_i(s_i^t, y_i^t)]\ \text{s.t. } \sum_{i\in [N]} y_i^t \le B, \forall t $$ Consider a relaxed version where the ‘hard’ budget constraint is averaged over time: $$ \max_{\pi::\mathbb S \to Y} \lim_{T \to \infty} \frac{1}{T} \mathbb{E} [\sum_{t = 1}^T \sum_{i\in [N]} r_i(s_i^t, y_i^t)]\ \text{s.t. } \frac1T\mathbb E[\sum_{i\in [N]} y_i^t ]\le B $$ Let $\lambda$ be the Lagrangian multiplier for the relaxed budget constraint $\frac1T\mathbb E[\sum_{i\in [N]} y_i^t ]\le B$. The duality transforms into the following $$ \min_{\lambda} \max_{\pi::\mathbb S \to Y} \lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} r_i(s_i^t, y_i^t)\right] - \lambda \left(\mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} y_i^t\right] - TB\right) \right) $$ Notice that we can decouple the above optimization problem for every arm, by leaving out the budget constraint on the outside: $$ \begin{align} &amp; \lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} r_i(s_i^t, y_i^t)\right] - \lambda \left(\mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} y_i^t\right] - TB\right) \right)\cr = &amp; \lim_{T \to \infty} \frac{1}{T}\left(\sum_{i\in [N]} \left( \mathbb{E} \left[\sum_{t=1}^T r_i(s_i^t, y_i^t)\right] - \lambda \mathbb{E} \left[\sum_{t=1}^T y_i^t\right]\right) - \lambda TB\right) \end{align} $$ So, for each $i$, consider the inner maximization. $$ \max_{\pi::\mathbb S_i \to Y_i} \left(\lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T r_i(s_i^t, y_i^t)\right] - \lambda \left(\mathbb{E} \left[\sum_{t=1}^T y_i^t\right] - TB_i\right) \right)\right) $$ Notice that, the last term $\lambda TB$ can be dropped for each individual $i$ because it’s irrelevant with the inner maximization. Let: $$ \phi_i(\lambda) :=\max_{\pi::\mathbb S_i \to Y_i}\left(\lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T r_i(s_i^t, y_i^t)\right] - \lambda \mathbb{E} \left[\sum_{t=1}^T y_i^t\right] \right)\right) $$ The Lagrangian multiplier here now has an economic intepretation – the price charged for pulling the arm. Consider the optimal stationay policy $\pi_i^*$ for the above optimization problem. Define an arm $i$’s indexability:
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2024-06-06 23:27:58 &#43;0800 CST&#39;&gt;June 6, 2024&lt;/span&gt;</footer>
+  <a class="entry-link" aria-label="post link to Whittle index policy in RMAB problem | technicals" href="//localhost:1313/posts/whittle_index_technical/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2>RMAB and Whittle index | a modern approach to decision-making
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Decision-making in dynamic environments over time presents unique challenges, particularly when the conditions influencing decisions are constantly changing. In such scenarios, traditional decision-making models often fall short. This is where Restless Multi-Armed Bandits (RMAB) come into play. The method provides a robust framework for modeling and optimizing decisions over time. Here’s a brief introduction of the concept of RMAB and the Whittle Index Policy.
+understanding Restless Multi-Armed Bandits what are RMAB? The multi-armed bandit problem is a classic version of the problem of optimal allocation of activity under certainty: simply saying, one has $n$ projects, the state of project $i\in [n]$ being denoted by $x_i(t)$​.
+...</p>
+  </div>
+  <footer class="entry-footer">&lt;span title=&#39;2024-06-05 23:56:59 &#43;0800 CST&#39;&gt;June 5, 2024&lt;/span&gt;</footer>
+  <a class="entry-link" aria-label="post link to RMAB and Whittle index | a modern approach to decision-making" href="//localhost:1313/posts/whittle_index/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
     <h2>write-up | algorithmic classification and strategic effort
     </h2>
   </header>
@@ -474,71 +537,6 @@ To a large section of the public, however, it means one work, the 2nd movt., and
   </div>
   <footer class="entry-footer">&lt;span title=&#39;2024-05-28 23:30:36 &#43;0800 CST&#39;&gt;May 28, 2024&lt;/span&gt;</footer>
   <a class="entry-link" aria-label="post link to Andante Cantabile" href="//localhost:1313/posts/andante_cantabile/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2>the intensified price war between COTTI and luckin
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Prologue
-In the highly competitive coffee market, a fierce price war erupted with the introduction of the ¥9.9 (~1.37USD) coffee, leading to dramatic changes for two major players: COTTI Coffee and luckin Coffee. Over the span of a year, this aggressive pricing strategy have caused COTTI’s slowing down in its pace of expansion, while luckin Coffee also saw its profits plummet, transitioning from profitability to significant losses.
-By Xu Qing | Edited by Jin Za
-...</p>
-  </div>
-  <footer class="entry-footer">&lt;span title=&#39;2024-05-27 20:44:26 &#43;0800 CST&#39;&gt;May 27, 2024&lt;/span&gt;</footer>
-  <a class="entry-link" aria-label="post link to the intensified price war between COTTI and luckin" href="//localhost:1313/posts/between_cotti_and_luckin/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2>Art Songs Interpreted in Chinese, Italian, and German: Changyong Liao says, &#39;Foreign Audiences Prefer Hearing Me Sing Chinese Songs&#39;
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Here’s a professional, in-depth intepretation of the Liederabend performance of Changyong Liao, originally in Chinese, available here.
-The program selected works from Italy, Germany-Austria, and China, each with distinct artistic themes. It included classic Italian art songs by Paolo Tosti such as “The Last Song,” “I Love You No More,” and “Melancholy,” totaling five pieces. The repertoire also featured twelve Chinese art songs, including “Three Wishes of the Rose,” “Spring Thoughts,” and “The River Flows Eastward,” as well as Gustav Mahler’s song cycle “Songs of a Wayfarer.”
-...</p>
-  </div>
-  <footer class="entry-footer">&lt;span title=&#39;2024-05-26 19:47:19 &#43;0800 CST&#39;&gt;May 26, 2024&lt;/span&gt;</footer>
-  <a class="entry-link" aria-label="post link to Art Songs Interpreted in Chinese, Italian, and German: Changyong Liao says, &#39;Foreign Audiences Prefer Hearing Me Sing Chinese Songs&#39;" href="//localhost:1313/posts/lied_report/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
