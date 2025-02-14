@@ -22,7 +22,11 @@
       <pubDate>Wed, 12 Feb 2025 00:58:54 +0800</pubDate>
       
       <guid>//localhost:1313/posts/contextual_budget_bandit/</guid>
-      <description>&lt;p&gt;One more paper is out: &lt;a href=&#34;//localhost:1313/files/ContextualBudgetBandit4FoodRescue_Arxiv.pdf&#34;&gt;Contextual Budget Bandit for Food Rescue&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A new paper is out: &lt;a href=&#34;//localhost:1313/files/ContextualBudgetBandit4FoodRescue_Arxiv.pdf&#34;&gt;Contextual Budget Bandit for Food Rescue&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/complaints/AI4SG.pdf#center&#34;
+         alt=&#34;The picture shows volunteers and donation regions in real food rescue database. Region color indicates the richness of volun teer resource. Connected lines indicates how volunteers and real-time donation tasks are matched by food-rescue platforms.&#34; width=&#34;100%&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;The picture shows volunteers and donation regions in real food rescue database. Region color indicates the richness of volun teer resource. Connected lines indicates how volunteers and real-time donation tasks are matched by food-rescue platforms.&lt;/p&gt;</description>
     </item>
     
     <item>

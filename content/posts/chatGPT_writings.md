@@ -1,6 +1,6 @@
 ---
 title: "Identify (and Avoid Yourself) Crappy ChatGPT Writings"
-date: 2025-02-06T12:01:55+08:00
+date: 2025-02-03T12:01:55+08:00
 draft: false
 ---
 
