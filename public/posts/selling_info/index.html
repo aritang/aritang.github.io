@@ -15,9 +15,7 @@ ABSTRACT
 We study the problem of selling information to a data-buyer who faces a decision problem under uncertainty. We consider the classic Bayesian decision-theoretic model pioneered by Blackwell. Initially, the data buyer has only partial information about the payoff-relevant state of the world. A data seller offers additional information about the state of the world. The information is revealed through signaling schemes, also referred to as experiments. In the single-agent setting, any mechanism can be represented as a menu of experiments. A recent paper by Bergemann et al.[8] present a complete characterization of the revenue-optimal mechanism in a binary state and binary action environment. By contrast, no characterization is known for the case with more actions. In this paper, we consider more general environments and study arguably the simplest mechanism, which only sells the fully informative experiment. In the environment with binary state and m≥3 actions, we provide an $O(m)$-approximation to the optimal revenue by selling only the fully informative experiment and show that the approximation ratio is tight up to an absolute constant factor. An important corollary of our lower bound is that the size of the optimal menu must grow at least linearly in the number of available actions, so no universal upper bound exists for the size of the optimal menu in the general single-dimensional setting. We also provide a sufficient condition under which selling only the fully informative experiment achieves the optimal revenue.">
 <meta name="author" content="">
 <link rel="canonical" href="//localhost:1313/posts/selling_info/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
@@ -43,7 +41,7 @@ We study the problem of selling information to a data-buyer who faces a decision
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -87,26 +85,28 @@ We study the problem of selling information to a data-buyer who faces a decision
 
 
 
-<meta property="og:title" content="selling information - model and bound" />
-<meta property="og:description" content="A paper I read recently is somewhat interesting. The model is very inspiring for an OM project I&rsquo;m working on recently, whereas its mathematical method and results are immensely useful to learn from for another problem that I&rsquo;ve been working on for a while.
-
+<meta property="og:url" content="//localhost:1313/posts/selling_info/">
+  <meta property="og:site_name" content="ariana&#39;s blog">
+  <meta property="og:title" content="selling information - model and bound">
+  <meta property="og:description" content="A paper I read recently is somewhat interesting. The model is very inspiring for an OM project I’m working on recently, whereas its mathematical method and results are immensely useful to learn from for another problem that I’ve been working on for a while.
 Is Selling Complete Information (Approximately) Optimal?
 Dirk Bergemann, Yang Cai, Grigoris Velegkas, and Mingfei Zhao. 2022.
 ABSTRACT
-We study the problem of selling information to a data-buyer who faces a decision problem under uncertainty. We consider the classic Bayesian decision-theoretic model pioneered by Blackwell. Initially, the data buyer has only partial information about the payoff-relevant state of the world. A data seller offers additional information about the state of the world. The information is revealed through signaling schemes, also referred to as experiments. In the single-agent setting, any mechanism can be represented as a menu of experiments. A recent paper by Bergemann et al.[8] present a complete characterization of the revenue-optimal mechanism in a binary state and binary action environment. By contrast, no characterization is known for the case with more actions. In this paper, we consider more general environments and study arguably the simplest mechanism, which only sells the fully informative experiment. In the environment with binary state and m≥3 actions, we provide an $O(m)$-approximation to the optimal revenue by selling only the fully informative experiment and show that the approximation ratio is tight up to an absolute constant factor. An important corollary of our lower bound is that the size of the optimal menu must grow at least linearly in the number of available actions, so no universal upper bound exists for the size of the optimal menu in the general single-dimensional setting. We also provide a sufficient condition under which selling only the fully informative experiment achieves the optimal revenue." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="//localhost:1313/posts/selling_info/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-02-13T16:37:52+08:00" />
-<meta property="article:modified_time" content="2024-02-13T16:37:52+08:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="selling information - model and bound"/>
+We study the problem of selling information to a data-buyer who faces a decision problem under uncertainty. We consider the classic Bayesian decision-theoretic model pioneered by Blackwell. Initially, the data buyer has only partial information about the payoff-relevant state of the world. A data seller offers additional information about the state of the world. The information is revealed through signaling schemes, also referred to as experiments. In the single-agent setting, any mechanism can be represented as a menu of experiments. A recent paper by Bergemann et al.[8] present a complete characterization of the revenue-optimal mechanism in a binary state and binary action environment. By contrast, no characterization is known for the case with more actions. In this paper, we consider more general environments and study arguably the simplest mechanism, which only sells the fully informative experiment. In the environment with binary state and m≥3 actions, we provide an $O(m)$-approximation to the optimal revenue by selling only the fully informative experiment and show that the approximation ratio is tight up to an absolute constant factor. An important corollary of our lower bound is that the size of the optimal menu must grow at least linearly in the number of available actions, so no universal upper bound exists for the size of the optimal menu in the general single-dimensional setting. We also provide a sufficient condition under which selling only the fully informative experiment achieves the optimal revenue.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-02-13T16:37:52+08:00">
+    <meta property="article:modified_time" content="2024-02-13T16:37:52+08:00">
+    <meta property="article:tag" content="Paper">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="selling information - model and bound">
 <meta name="twitter:description" content="A paper I read recently is somewhat interesting. The model is very inspiring for an OM project I&rsquo;m working on recently, whereas its mathematical method and results are immensely useful to learn from for another problem that I&rsquo;ve been working on for a while.
 
 Is Selling Complete Information (Approximately) Optimal?
 Dirk Bergemann, Yang Cai, Grigoris Velegkas, and Mingfei Zhao. 2022.
 ABSTRACT
-We study the problem of selling information to a data-buyer who faces a decision problem under uncertainty. We consider the classic Bayesian decision-theoretic model pioneered by Blackwell. Initially, the data buyer has only partial information about the payoff-relevant state of the world. A data seller offers additional information about the state of the world. The information is revealed through signaling schemes, also referred to as experiments. In the single-agent setting, any mechanism can be represented as a menu of experiments. A recent paper by Bergemann et al.[8] present a complete characterization of the revenue-optimal mechanism in a binary state and binary action environment. By contrast, no characterization is known for the case with more actions. In this paper, we consider more general environments and study arguably the simplest mechanism, which only sells the fully informative experiment. In the environment with binary state and m≥3 actions, we provide an $O(m)$-approximation to the optimal revenue by selling only the fully informative experiment and show that the approximation ratio is tight up to an absolute constant factor. An important corollary of our lower bound is that the size of the optimal menu must grow at least linearly in the number of available actions, so no universal upper bound exists for the size of the optimal menu in the general single-dimensional setting. We also provide a sufficient condition under which selling only the fully informative experiment achieves the optimal revenue."/>
+We study the problem of selling information to a data-buyer who faces a decision problem under uncertainty. We consider the classic Bayesian decision-theoretic model pioneered by Blackwell. Initially, the data buyer has only partial information about the payoff-relevant state of the world. A data seller offers additional information about the state of the world. The information is revealed through signaling schemes, also referred to as experiments. In the single-agent setting, any mechanism can be represented as a menu of experiments. A recent paper by Bergemann et al.[8] present a complete characterization of the revenue-optimal mechanism in a binary state and binary action environment. By contrast, no characterization is known for the case with more actions. In this paper, we consider more general environments and study arguably the simplest mechanism, which only sells the fully informative experiment. In the environment with binary state and m≥3 actions, we provide an $O(m)$-approximation to the optimal revenue by selling only the fully informative experiment and show that the approximation ratio is tight up to an absolute constant factor. An important corollary of our lower bound is that the size of the optimal menu must grow at least linearly in the number of available actions, so no universal upper bound exists for the size of the optimal menu in the general single-dimensional setting. We also provide a sufficient condition under which selling only the fully informative experiment achieves the optimal revenue.">
 
 
 <script type="application/ld+json">
@@ -232,8 +232,6 @@ We study the problem of selling information to a data-buyer who faces a decision
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -273,7 +271,7 @@ We study the problem of selling information to a data-buyer who faces a decision
     <h1 class="post-title">
       selling information - model and bound
     </h1>
-    <div class="post-meta">&lt;span title=&#39;2024-02-13 16:37:52 &#43;0800 CST&#39;&gt;February 13, 2024&lt;/span&gt;
+    <div class="post-meta"><span title='2024-02-13 16:37:52 +0800 CST'>February 13, 2024</span>
 
 </div>
   </header>
@@ -315,7 +313,8 @@ A given experiment $\mathbf E$ yields expected utility for type $\theta$ to be $
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+        <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

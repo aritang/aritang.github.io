@@ -4,28 +4,25 @@
     <title>Info_design on ariana&#39;s blog</title>
     <link>//localhost:1313/tags/info_design/</link>
     <description>Recent content in Info_design on ariana&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2024 06:23:29 +0900</lastBuildDate><atom:link href="//localhost:1313/tags/info_design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Aug 2024 06:23:29 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/info_design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Summary for Drakopoulos et al (20&#39;MS) | Persuading Customers to Buy Early: The Value of Personalized Information Provisioning</title>
       <link>//localhost:1313/posts/revisit_drakopoulos/</link>
       <pubDate>Tue, 20 Aug 2024 06:23:29 +0900</pubDate>
-      
       <guid>//localhost:1313/posts/revisit_drakopoulos/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a summary of the paper &lt;em&gt;Persuading Customers to Buy Early: The Value of Personalized Information Provisioning&lt;/em&gt;, by Kimon Drakopoulos, Shobhit Jai and Ramandeep Randhawa, published online @ Management Science, in 2021.&lt;/p&gt;
 &lt;p&gt;The paper studies the persuasion and pricing problem for a seller with informational advantage about its inventory level.&lt;/p&gt;
 &lt;p&gt;Model: a seller sells a single good over two period to unit-demand buyers, out of inventory $Q$. The inventory level might be &lt;strong&gt;low&lt;/strong&gt; (type &lt;code&gt;L&lt;/code&gt;) or &lt;strong&gt;high&lt;/strong&gt; (type &lt;code&gt;H&lt;/code&gt;). The paper takes the assumption that there is a unit mass of buyers, with their private type of valuation for the product distributed according to $v\sim F(\cdot)$. Inventory level &lt;code&gt;H = 1&lt;/code&gt;, and &lt;code&gt;L &amp;lt; 1&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>information design in OM</title>
       <link>//localhost:1313/posts/info_design_om/</link>
       <pubDate>Sat, 20 Apr 2024 19:15:46 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/info_design_om/</guid>
       <description>&lt;p&gt;My advisor was somehow less enthusiastic in information design as compared to other general algorithm game theory topics–despite my several failed attempts to lure him into doing some related projects. But his major concern is solid, that information design demands overly strong assumptions–the existence of a common prior, commitment of the signal sender, inference ability of the signal receiver–all poses challenges for direct applications that justify the existing theory. The real world should be something in between the perfectly rational Bayesian persuasion and the noisy cheap talks.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

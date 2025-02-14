@@ -4,14 +4,14 @@
     <title>Trick on ariana&#39;s blog</title>
     <link>//localhost:1313/tags/trick/</link>
     <description>Recent content in Trick on ariana&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Oct 2024 23:29:42 +0800</lastBuildDate><atom:link href="//localhost:1313/tags/trick/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Oct 2024 23:29:42 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/trick/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>how to customize font on my website?</title>
       <link>//localhost:1313/posts/new_font/</link>
       <pubDate>Thu, 17 Oct 2024 23:29:42 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/new_font/</guid>
       <description>&lt;p&gt;ChatGPT makes it much easier to modify configurations for my website. I changed the font to &lt;code&gt;Montserrat&lt;/code&gt;—an open source font provided by Google font (&lt;code&gt;fonts.google.com&lt;/code&gt;) that is highly similar to Google&amp;rsquo;s proprietary logo font &lt;code&gt;Product Sans&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -19,12 +19,10 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Fine. Google font has a delivery service—everytime the website loads, it fetches font files from Google. So that only a few lines are required to do the customization:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>configure SSH keys in terminal</title>
       <link>//localhost:1313/posts/ssh/</link>
       <pubDate>Tue, 10 Sep 2024 21:14:54 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/ssh/</guid>
       <description>&lt;p&gt;How to use SSH to authenticate connection to remote servers and services (e.g. GitHub).&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works-the-mechanism&#34;&gt;how it works (the mechanism)&lt;/h2&gt;
@@ -32,6 +30,5 @@
 &lt;p&gt;You can access and write data in repositories on GitHub using SSH (Secure Shell Protocol). When you connect via SSH, you authenticate using a private key file on your local machine. For more information about SSH, see &lt;a href=&#34;https://en.wikipedia.org/wiki/Secure_Shell&#34;&gt;Secure Shell&lt;/a&gt; on Wikipedia.&lt;/p&gt;
 &lt;p&gt;When you set up SSH, you will need to generate a new private SSH key and add it to the SSH agent. You must also add the public SSH key to your account on GitHub before you use the key to authenticate or sign commits.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

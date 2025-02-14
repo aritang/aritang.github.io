@@ -11,9 +11,7 @@
 Using this private information, Google can then align the user with advertisers who are targeting specific user segments. This segmentation, based on privacy data collected from third-party cookies, greatly enhances the value of the advertisement.">
 <meta name="author" content="">
 <link rel="canonical" href="//localhost:1313/posts/how_data_ad_targeting/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
@@ -39,7 +37,7 @@ Using this private information, Google can then align the user with advertisers 
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -83,20 +81,22 @@ Using this private information, Google can then align the user with advertisers 
 
 
 
-<meta property="og:title" content="the Cookie series VI | how data is used for ad targeting" />
-<meta property="og:description" content="Consider a scenario where a user visits a publisher&rsquo;s website to read an article. If the publisher has sold its ad-display space to Google, Google will then access the user&rsquo;s 3rd-party cookies to retrieve the user&rsquo;s UID (Unique Identifier). This allows Google to match the user with its online database, analyzing the user&rsquo;s preferences and other data collected from previous website visits.
-Using this private information, Google can then align the user with advertisers who are targeting specific user segments. This segmentation, based on privacy data collected from third-party cookies, greatly enhances the value of the advertisement." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="//localhost:1313/posts/how_data_ad_targeting/" />
-<meta property="og:image" content="//localhost:1313/google_ad_gossip/data_ad_targeting.jpeg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-08-03T12:58:35-07:00" />
-<meta property="article:modified_time" content="2024-08-03T12:58:35-07:00" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="//localhost:1313/google_ad_gossip/data_ad_targeting.jpeg" />
-<meta name="twitter:title" content="the Cookie series VI | how data is used for ad targeting"/>
+<meta property="og:url" content="//localhost:1313/posts/how_data_ad_targeting/">
+  <meta property="og:site_name" content="ariana&#39;s blog">
+  <meta property="og:title" content="the Cookie series VI | how data is used for ad targeting">
+  <meta property="og:description" content="Consider a scenario where a user visits a publisher’s website to read an article. If the publisher has sold its ad-display space to Google, Google will then access the user’s 3rd-party cookies to retrieve the user’s UID (Unique Identifier). This allows Google to match the user with its online database, analyzing the user’s preferences and other data collected from previous website visits.
+Using this private information, Google can then align the user with advertisers who are targeting specific user segments. This segmentation, based on privacy data collected from third-party cookies, greatly enhances the value of the advertisement.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-03T12:58:35-07:00">
+    <meta property="article:modified_time" content="2024-08-03T12:58:35-07:00">
+    <meta property="og:image" content="//localhost:1313/google_ad_gossip/data_ad_targeting.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//localhost:1313/google_ad_gossip/data_ad_targeting.jpeg">
+<meta name="twitter:title" content="the Cookie series VI | how data is used for ad targeting">
 <meta name="twitter:description" content="Consider a scenario where a user visits a publisher&rsquo;s website to read an article. If the publisher has sold its ad-display space to Google, Google will then access the user&rsquo;s 3rd-party cookies to retrieve the user&rsquo;s UID (Unique Identifier). This allows Google to match the user with its online database, analyzing the user&rsquo;s preferences and other data collected from previous website visits.
-Using this private information, Google can then align the user with advertisers who are targeting specific user segments. This segmentation, based on privacy data collected from third-party cookies, greatly enhances the value of the advertisement."/>
+Using this private information, Google can then align the user with advertisers who are targeting specific user segments. This segmentation, based on privacy data collected from third-party cookies, greatly enhances the value of the advertisement.">
 
 
 <script type="application/ld+json">
@@ -222,8 +222,6 @@ Using this private information, Google can then align the user with advertisers 
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -263,7 +261,7 @@ Using this private information, Google can then align the user with advertisers 
     <h1 class="post-title">
       the Cookie series VI | how data is used for ad targeting
     </h1>
-    <div class="post-meta">&lt;span title=&#39;2024-08-03 12:58:35 -0700 -0700&#39;&gt;August 3, 2024&lt;/span&gt;
+    <div class="post-meta"><span title='2024-08-03 12:58:35 -0700 -0700'>August 3, 2024</span>
 
 </div>
   </header>
@@ -293,7 +291,8 @@ Using this private information, Google can then align the user with advertisers 
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+        <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

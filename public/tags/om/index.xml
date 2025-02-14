@@ -4,25 +4,23 @@
     <title>OM on ariana&#39;s blog</title>
     <link>//localhost:1313/tags/om/</link>
     <description>Recent content in OM on ariana&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2024 06:23:29 +0900</lastBuildDate><atom:link href="//localhost:1313/tags/om/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Aug 2024 06:23:29 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/om/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Summary for Drakopoulos et al (20&#39;MS) | Persuading Customers to Buy Early: The Value of Personalized Information Provisioning</title>
       <link>//localhost:1313/posts/revisit_drakopoulos/</link>
       <pubDate>Tue, 20 Aug 2024 06:23:29 +0900</pubDate>
-      
       <guid>//localhost:1313/posts/revisit_drakopoulos/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a summary of the paper &lt;em&gt;Persuading Customers to Buy Early: The Value of Personalized Information Provisioning&lt;/em&gt;, by Kimon Drakopoulos, Shobhit Jai and Ramandeep Randhawa, published online @ Management Science, in 2021.&lt;/p&gt;
 &lt;p&gt;The paper studies the persuasion and pricing problem for a seller with informational advantage about its inventory level.&lt;/p&gt;
 &lt;p&gt;Model: a seller sells a single good over two period to unit-demand buyers, out of inventory $Q$. The inventory level might be &lt;strong&gt;low&lt;/strong&gt; (type &lt;code&gt;L&lt;/code&gt;) or &lt;strong&gt;high&lt;/strong&gt; (type &lt;code&gt;H&lt;/code&gt;). The paper takes the assumption that there is a unit mass of buyers, with their private type of valuation for the product distributed according to $v\sim F(\cdot)$. Inventory level &lt;code&gt;H = 1&lt;/code&gt;, and &lt;code&gt;L &amp;lt; 1&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mostly OM diary | Practicing OR/OM in China</title>
       <link>//localhost:1313/posts/mostly_om_5/</link>
       <pubDate>Mon, 03 Jun 2024 09:22:45 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/mostly_om_5/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;speaker: &lt;strong&gt;Zizhuo Wang&lt;/strong&gt; | Prof., The Chinese University of Hong Kong-Shenzhen.&lt;/p&gt;
@@ -43,12 +41,10 @@
 &lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT&lt;/strong&gt;&lt;/em&gt;:&lt;/h2&gt;
 &lt;p&gt;In the past years, there have been growing number of companies in China that adopt OR methods in their operations. There are also several interesting research questions that arise in those application problems. In this talk, we present some recent projects and some of the research questions that come from those scenarios.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mostly OM diary | Randomization in Product, Fulfillment, and Pricing as a Profit Lever</title>
       <link>//localhost:1313/posts/mostly_om_4/</link>
       <pubDate>Sun, 02 Jun 2024 09:16:49 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/mostly_om_4/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;speaker: &lt;strong&gt;Ming Hu&lt;/strong&gt; | Prof., University of Toronto&lt;/p&gt;
@@ -57,12 +53,10 @@
 &lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT&lt;/strong&gt;&lt;/em&gt;:&lt;/h2&gt;
 &lt;p&gt;First, we study blind boxes as a novel selling mechanism in which buyers purchase sealed packages containing unknown items, with the chance of uncovering rare or special items. We show how such product randomization introduced by the blind box can improve the seller’s profitability over traditional separate selling. Second, we study how an e-commerce platform should assign sequentially arriving customers to sellers who compete to sell identical products on the platform. The allocation rule may be random and dependent on the sellers’ inventory levels. We show how such demand fulfillment randomization can incentivize sellers to hold more inventory and improve the platform’s profitability and customer welfare. Third, we study randomized promotions in which the firm randomly offers discounts over time to sequentially arriving customers with heterogeneous valuations and patience levels. We show how price randomization can improve the firm’s profitability beyond deterministic pricing policies.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mostly OM diary | Optimal Conditional Drug Approval</title>
       <link>//localhost:1313/posts/mostly_om_3/</link>
       <pubDate>Sat, 01 Jun 2024 08:52:00 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/mostly_om_3/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;speaker: &lt;strong&gt;Peng Sun&lt;/strong&gt; | Prof., Duke University&lt;/p&gt;
@@ -70,15 +64,12 @@
 &lt;h2 id=&#34;talk-abstract&#34;&gt;&lt;em&gt;&lt;strong&gt;TALK ABSTRACT:&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;New prescription drugs require regulatory approval before drug makers can sell them. In some countries, regulators may conditionally approve a drug, which allows sales to begin before the developer has proven the drug&amp;rsquo;s efficacy. After further testing, the regulator may either grant final approval or reject the drug. We show that conditional approval not only speeds access to drugs but also encourages the development of drugs that would not have been pursued otherwise. Using mechanism design principles, we show that regulators should conditionally approve a drug even if it is ex-ante less likely to prove efficacious, under certain conditions. The regulator should approve the drug to encourage investment, especially when only the firm knows the testing cost. However, drugs that are less likely to prove efficacious should only be conditionally approved for a portion of the patient population if that is enough to motivate testing. Additionally, the impact of conditional approval is greater when the firm&amp;rsquo;s revenue increases over time. Finally, a regulator should sometimes commit that in the future it will grant final approval for a drug that narrowly misses the efficacy threshold in return for the firm testing an otherwise unprofitable drug.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>information design in OM</title>
       <link>//localhost:1313/posts/info_design_om/</link>
       <pubDate>Sat, 20 Apr 2024 19:15:46 +0800</pubDate>
-      
       <guid>//localhost:1313/posts/info_design_om/</guid>
       <description>&lt;p&gt;My advisor was somehow less enthusiastic in information design as compared to other general algorithm game theory topics–despite my several failed attempts to lure him into doing some related projects. But his major concern is solid, that information design demands overly strong assumptions–the existence of a common prior, commitment of the signal sender, inference ability of the signal receiver–all poses challenges for direct applications that justify the existing theory. The real world should be something in between the perfectly rational Bayesian persuasion and the noisy cheap talks.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

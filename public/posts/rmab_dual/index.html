@@ -17,9 +17,7 @@ $$
 where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, $r_{i}$ and $\mathcal P_{i}$ denote the reward and transition kernels arm $i$.">
 <meta name="author" content="">
 <link rel="canonical" href="//localhost:1313/posts/rmab_dual/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
@@ -45,7 +43,7 @@ where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, 
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -89,22 +87,19 @@ where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, 
 
 
 
-<meta property="og:title" content="Restless Multi-Armed Bandits | Primal, Dual and Opportunity Costs" />
-<meta property="og:description" content="The textbook Multi-armed Bandit Allocation Indices by John Gittins, Kevin Glazebrook, Richard Weber has a charming Chapter 6, titled &ldquo;Restless bandits and Lagrangian relaxation&rdquo;. But the authors skipped a step in the prove of how to go from the LP to Dual and to Whittle Index Policy.
+<meta property="og:url" content="//localhost:1313/posts/rmab_dual/">
+  <meta property="og:site_name" content="ariana&#39;s blog">
+  <meta property="og:title" content="Restless Multi-Armed Bandits | Primal, Dual and Opportunity Costs">
+  <meta property="og:description" content="The textbook Multi-armed Bandit Allocation Indices by John Gittins, Kevin Glazebrook, Richard Weber has a charming Chapter 6, titled “Restless bandits and Lagrangian relaxation”. But the authors skipped a step in the prove of how to go from the LP to Dual and to Whittle Index Policy.
 Prelims:
-
-An RMAB (Restless Multi-Armed Bandit) instance is defined through the tuple
-$$
-\lang S, A, r_{i}, \mathcal P_{i} \rang_{i \in [N]}
-$$
-where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, $r_{i}$ and $\mathcal P_{i}$ denote the reward and transition kernels arm $i$." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="//localhost:1313/posts/rmab_dual/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-12-22T00:39:38+08:00" />
-<meta property="article:modified_time" content="2024-12-22T00:39:38+08:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Restless Multi-Armed Bandits | Primal, Dual and Opportunity Costs"/>
+An RMAB (Restless Multi-Armed Bandit) instance is defined through the tuple $$ \lang S, A, r_{i}, \mathcal P_{i} \rang_{i \in [N]} $$ where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, $r_{i}$ and $\mathcal P_{i}$ denote the reward and transition kernels arm $i$.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-22T00:39:38+08:00">
+    <meta property="article:modified_time" content="2024-12-22T00:39:38+08:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Restless Multi-Armed Bandits | Primal, Dual and Opportunity Costs">
 <meta name="twitter:description" content="The textbook Multi-armed Bandit Allocation Indices by John Gittins, Kevin Glazebrook, Richard Weber has a charming Chapter 6, titled &ldquo;Restless bandits and Lagrangian relaxation&rdquo;. But the authors skipped a step in the prove of how to go from the LP to Dual and to Whittle Index Policy.
 Prelims:
 
@@ -112,7 +107,7 @@ An RMAB (Restless Multi-Armed Bandit) instance is defined through the tuple
 $$
 \lang S, A, r_{i}, \mathcal P_{i} \rang_{i \in [N]}
 $$
-where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, $r_{i}$ and $\mathcal P_{i}$ denote the reward and transition kernels arm $i$."/>
+where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, $r_{i}$ and $\mathcal P_{i}$ denote the reward and transition kernels arm $i$.">
 
 
 <script type="application/ld+json">
@@ -238,8 +233,6 @@ where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, 
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -279,7 +272,7 @@ where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, 
     <h1 class="post-title">
       Restless Multi-Armed Bandits | Primal, Dual and Opportunity Costs
     </h1>
-    <div class="post-meta">&lt;span title=&#39;2024-12-22 00:39:38 &#43;0800 CST&#39;&gt;December 22, 2024&lt;/span&gt;
+    <div class="post-meta"><span title='2024-12-22 00:39:38 +0800 CST'>December 22, 2024</span>
 
 </div>
   </header>
@@ -353,7 +346,8 @@ Which can be written in compact form, but more intuitive:</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+        <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

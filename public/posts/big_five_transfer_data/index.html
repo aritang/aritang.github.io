@@ -15,9 +15,7 @@ basics
 The Big Five refers to the association football markets of England, Germany, Spain, Italy and France. As of 2024, they are the five European leaders in size and popularity of the main domestic football leagues – the Premier League, Bundesliga, La Liga, Serie A and Ligue 1 respectively in men&rsquo;s football.">
 <meta name="author" content="">
 <link rel="canonical" href="//localhost:1313/posts/big_five_transfer_data/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
@@ -43,7 +41,7 @@ The Big Five refers to the association football markets of England, Germany, Spa
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -87,26 +85,25 @@ The Big Five refers to the association football markets of England, Germany, Spa
 
 
 
-<meta property="og:title" content="understanding a bit of the Big Five via transfer data" />
-<meta property="og:description" content="
-Understand the transfer of football clubs and their impact–from an interesting case study from GouXiongHui, read original article here (in Chinese).
+<meta property="og:url" content="//localhost:1313/posts/big_five_transfer_data/">
+  <meta property="og:site_name" content="ariana&#39;s blog">
+  <meta property="og:title" content="understanding a bit of the Big Five via transfer data">
+  <meta property="og:description" content=" Understand the transfer of football clubs and their impact–from an interesting case study from GouXiongHui, read original article here (in Chinese).
 Apart from its introduction that provides a clear, brief overview of the modern football market, this report is well structured and is an excellent example of crafting a data science analysis analysis.
-
-basics
-The Big Five refers to the association football markets of England, Germany, Spain, Italy and France. As of 2024, they are the five European leaders in size and popularity of the main domestic football leagues – the Premier League, Bundesliga, La Liga, Serie A and Ligue 1 respectively in men&rsquo;s football." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="//localhost:1313/posts/big_five_transfer_data/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-06-21T09:06:05-07:00" />
-<meta property="article:modified_time" content="2024-06-21T09:06:05-07:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="understanding a bit of the Big Five via transfer data"/>
+basics The Big Five refers to the association football markets of England, Germany, Spain, Italy and France. As of 2024, they are the five European leaders in size and popularity of the main domestic football leagues – the Premier League, Bundesliga, La Liga, Serie A and Ligue 1 respectively in men’s football.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-21T09:06:05-07:00">
+    <meta property="article:modified_time" content="2024-06-21T09:06:05-07:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="understanding a bit of the Big Five via transfer data">
 <meta name="twitter:description" content="
 Understand the transfer of football clubs and their impact–from an interesting case study from GouXiongHui, read original article here (in Chinese).
 Apart from its introduction that provides a clear, brief overview of the modern football market, this report is well structured and is an excellent example of crafting a data science analysis analysis.
 
 basics
-The Big Five refers to the association football markets of England, Germany, Spain, Italy and France. As of 2024, they are the five European leaders in size and popularity of the main domestic football leagues – the Premier League, Bundesliga, La Liga, Serie A and Ligue 1 respectively in men&rsquo;s football."/>
+The Big Five refers to the association football markets of England, Germany, Spain, Italy and France. As of 2024, they are the five European leaders in size and popularity of the main domestic football leagues – the Premier League, Bundesliga, La Liga, Serie A and Ligue 1 respectively in men&rsquo;s football.">
 
 
 <script type="application/ld+json">
@@ -232,8 +229,6 @@ The Big Five refers to the association football markets of England, Germany, Spa
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -273,7 +268,7 @@ The Big Five refers to the association football markets of England, Germany, Spa
     <h1 class="post-title">
       understanding a bit of the Big Five via transfer data
     </h1>
-    <div class="post-meta">&lt;span title=&#39;2024-06-21 09:06:05 -0700 -0700&#39;&gt;June 21, 2024&lt;/span&gt;
+    <div class="post-meta"><span title='2024-06-21 09:06:05 -0700 -0700'>June 21, 2024</span>
 
 </div>
   </header>
@@ -377,7 +372,8 @@ The analysis utilizes transfer data to understand the impact and dynamics of foo
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span>
+        <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
