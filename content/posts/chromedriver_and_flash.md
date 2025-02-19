@@ -10,13 +10,15 @@ But if you ever have the misfortune to still need the Flash function. Here's how
 
 ### Download older version of Chrome
 
-Download historical Chromedriver ver. 87 (only <88 versions support Flash): https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Mac/827102/
+Download historical Chromedriver ver. 87 (only <88 versions support Flash). 
+
+> Go to this official depository of historical Chrome versions that contain our desired version: https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Mac/827102/. -> **Download `chrome-mac.zip`.**
 
 Unzip the package, find and move `Chromium.app` to `/Applications` folder (DON'T miss our the `/` before `Applications`).
 
 ### Download Flash Player
 
-Here: https://www.flash.cn/download. Download and use the installer to install.
+Here in the official site for flash download: https://www.flash.cn/download. Download and install "*Adobe Flash Player PPAPI*" that supports browser version below 88.
 
 ### Run older version of Chrome **with** Adobe Flash Player
 
