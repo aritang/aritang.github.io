@@ -6,7 +6,7 @@
     <description>Recent content on ariana&#39;s blog</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2025 00:58:54 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2025 23:55:31 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>my work ethic | pinned post</title>
@@ -14,6 +14,87 @@
       <pubDate>Sat, 16 Dec 2023 16:15:32 +0800</pubDate>
       <guid>//localhost:1313/posts/my_work_ethic/</guid>
       <description>Think I&amp;rsquo;ve kind of learned that the more authentic and genuine it is, the better it will work for you.</description>
+    </item>
+    <item>
+      <title>latex typesetting style guide</title>
+      <link>//localhost:1313/posts/latex_typesetting_style_guide/</link>
+      <pubDate>Fri, 21 Feb 2025 23:55:31 +0800</pubDate>
+      <guid>//localhost:1313/posts/latex_typesetting_style_guide/</guid>
+      <description>&lt;blockquote&gt;
+&lt;h2 id=&#34;stylistic-choices-when-writing-an-academic-documenthttpshomecscoloradoedujbgstaticstylehtml&#34;&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&#34;https://home.cs.colorado.edu/~jbg/static/style.html&#34;&gt;Stylistic choices when writing an academic document&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;— by Jordan Boyd-Graber.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While I don&amp;rsquo;t agree 100% with one of the author&amp;rsquo;s advice—using Beamer for creating poster—all others are remarkable cool and makes perfect sense. Whoever organized these advices is wise, generous and has really good taste!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Analysis of Bike Sharing | Data and Perhaps Theory?</title>
+      <link>//localhost:1313/posts/bike_sharing_trajectories/</link>
+      <pubDate>Thu, 20 Feb 2025 23:22:27 +0800</pubDate>
+      <guid>//localhost:1313/posts/bike_sharing_trajectories/</guid>
+      <description>&lt;p&gt;Bike sharing is a great topic, it&amp;rsquo;s green and has lots of data. A relevant study:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;understanding-intra-urban-human-mobility-through-an-exploratory-spatiotemporal-analysis-of-bike-sharing-trajectories&#34;&gt;Understanding intra-urban human mobility through an exploratory spatiotemporal analysis of bike-sharing trajectories&lt;/h2&gt;
+&lt;p&gt;Wenwen Li et al.&lt;/p&gt;
+&lt;p&gt;(shortened abstract) This paper presents a data-driven framework analyzing bike-sharing trips in Shanghai, the world&amp;rsquo;s largest bike-share city. It integrates multiple data sources—transport networks, road characteristics, and urban land use—to study short-trip mobility patterns. Findings highlight usage trends, trip distribution, and route choice factors, offering insights for city planning, bike-sharing operations, and sustainable transportation development.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adobe Flash Player on Website</title>
+      <link>//localhost:1313/posts/chromedriver_and_flash/</link>
+      <pubDate>Wed, 19 Feb 2025 23:42:45 +0800</pubDate>
+      <guid>//localhost:1313/posts/chromedriver_and_flash/</guid>
+      <description>&lt;p&gt;Adobe Flash Player was retired by Adobe and major browser vendors since the beginning of 2021. By the time of 2025, major browsers (Chrome, Edge that works on Chromium core, and Safari) all &lt;strong&gt;DON&amp;rsquo;T&lt;/strong&gt; support Flash. Which makes some interactive operations inapplicable.&lt;/p&gt;
+&lt;p&gt;But if you ever have the misfortune to still need the Flash function. Here&amp;rsquo;s how to do it (works on Mac, guess similarly you can make it work on Windows too). Key is to (i) download &lt;strong&gt;older version of Chrome&lt;/strong&gt; that still supports Adobe Flash Player (ii) download &lt;strong&gt;Adobe Flash Player&lt;/strong&gt; and (iii) manually run older version of Chrome &lt;strong&gt;with&lt;/strong&gt; Adobe Flash Player.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JD.com Leads the Way | Providing Social Security to Food Delivery Riders</title>
+      <link>//localhost:1313/posts/jd_paying_for_couriers_social_insurance/</link>
+      <pubDate>Wed, 19 Feb 2025 23:10:53 +0800</pubDate>
+      <guid>//localhost:1313/posts/jd_paying_for_couriers_social_insurance/</guid>
+      <description>&lt;p&gt;The courier job in China has long been regarded as a tough, low-paying, and insecure occupation. With limited benefits and high risks, it’s a job that many take on for part-time hours or as a side hustle. In our previous posts, we&amp;rsquo;ve touched on the struggles of delivery riders before: &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;//localhost:1313/posts/blowing_in_the_wind/&#34;&gt;Blowing in the wind&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;—perhaps because I’m no stranger to ordering takeout and shopping online too often!&lt;/p&gt;
+&lt;p&gt;However, JD.com, one of China’s largest e-commerce giants, has recently announced a groundbreaking decision: starting March 1, 2025, they will provide &lt;strong&gt;full social security benefits&lt;/strong&gt;—the complete “&lt;strong&gt;five insurances and one fund&lt;/strong&gt;”—for its full-time food delivery riders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>a search over two bandit</title>
+      <link>//localhost:1313/posts/two_bandit_search/</link>
+      <pubDate>Mon, 17 Feb 2025 23:24:47 +0800</pubDate>
+      <guid>//localhost:1313/posts/two_bandit_search/</guid>
+      <description>&lt;p&gt;An interesting paper recommended by Professor Kimon Drakopoulos:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;strategic-experimentation-with-exponential-bandits&#34;&gt;Strategic Experimentation with Exponential Bandits&lt;/h2&gt;
+&lt;p&gt;Abstract&lt;/p&gt;
+&lt;p&gt;This paper studies a game of strategic experimentation with two-armed bandits whose risky arm might yield a payoﬀ only after some exponentially distributed random time. Because of free-riding, there is an ineﬃciently low level of experimentation in any equilibrium where the players use stationary Markovian strategies with posterior beliefs as the state variable. After characterizing the unique symmetric Markovian equilibrium of the game, which is in mixed strategies, we construct a variety of pure-strategy equilibria. There is no equilibrium where all players use simple cut-oﬀ strategies. Equilibria where players switch finitely often between the roles of experimenter and free-rider all lead to the same pattern of information acquisition; the eﬃciency of these equilibria depends on the way players share the burden of experimentation among them. In equilibria where players switch roles infinitely often, they can acquire an approximately eﬃcient amount of information, but the rate at which it is acquired still remains ineﬃcient; moreover, the expected payoﬀ of an experimenter exhibits the novel feature that it rises as players become more pessimistic. Finally, over the range of beliefs where players use both arms a positive fraction of the time, the symmetric equilibrium is dominated by any asymmetric one in terms of aggregate payoﬀs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RMAB Refresh | Cleaning Up Code and Concepts</title>
+      <link>//localhost:1313/posts/clean_up_rmab/</link>
+      <pubDate>Sun, 16 Feb 2025 23:47:39 +0800</pubDate>
+      <guid>//localhost:1313/posts/clean_up_rmab/</guid>
+      <description>&lt;p&gt;The food rescue project has officially come to an end, so I&amp;rsquo;m now looking forward to a series of joyful months leading up til graduation. I have a mix of delightful tasks ahead—tidying up both the physical and digital clutter, organizing books and papers, and even enjoying a few indulgences: concerts, ballet classes, and some long-overdue shopping.&lt;/p&gt;
+&lt;p&gt;Among the tasks on my list is a thorough clean-up of the RMAB project. Now formally titled &lt;strong&gt;&amp;ldquo;Contextual Budget Bandit in Food Rescue&amp;hellip;&amp;rdquo;&lt;/strong&gt;, it has many unpublished results that didn&amp;rsquo;t make into the paper, interesting mathematical methods, and heaps of code that need some serious reorganization. To make an end is to make a beginning, of which this one is filled with opportunities to learn, share, and refine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The most elegant excuse for procrastination</title>
+      <link>//localhost:1313/posts/excuse_for_procrastination/</link>
+      <pubDate>Sat, 15 Feb 2025 23:43:45 +0800</pubDate>
+      <guid>//localhost:1313/posts/excuse_for_procrastination/</guid>
+      <description>&lt;p&gt;As title suggested, here&amp;rsquo;s an excerpt from &lt;em&gt;&lt;strong&gt;Eugene Onegin&lt;/strong&gt;&lt;/em&gt; Chapter 3&amp;rsquo;s ending:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;But today, dear friends,&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m too exhausted to relate&lt;/p&gt;
+&lt;p&gt;the sequel to this unlooked-for meeting&lt;/p&gt;
+&lt;p&gt;After so long a narrative I must&lt;/p&gt;
+&lt;p&gt;go for a stroll and have a rest&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll finish of my story later somehow.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;See you tmrw!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Debugging Victory on Valentine&#39;s Day</title>
+      <link>//localhost:1313/posts/bugs_fix/</link>
+      <pubDate>Fri, 14 Feb 2025 23:03:23 +0800</pubDate>
+      <guid>//localhost:1313/posts/bugs_fix/</guid>
+      <description>&lt;p&gt;When I took CS101, my professor shared a well-known truth: “For every hour you spend coding, expect to spend &lt;em&gt;three&lt;/em&gt; hours debugging.” While I never officially timed it, I can confidently say that the ratio often feels closer to five&amp;hellip; However, debugging doesn’t have to be an endless struggle. With a clear mind and a more organized approach, it can be surprisingly efficient.&lt;/p&gt;
+&lt;p&gt;Today I faced a frustrating issue when checking my blog: the changes I pushed earlier never updated. I usually use my local server for demos before pushing updates to the cloud, so I rarely check the live site. Therefore, when I finally did check, I discovered the changes hadn’t been updated since January 30th.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contextual Budget Bandit for Food Rescue</title>
