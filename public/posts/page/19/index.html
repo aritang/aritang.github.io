@@ -218,6 +218,167 @@
 </header>
 
 <article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PuLP with Gurobi on the side
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Using Gurobi and PuLP for LP:
+import pulp Retrieves a solver interface for Gurobi using PuLP. It allows one to use Gurobi as the solver when defining optimization problems in PuLP:
+solver = pulp.getSolver(&#39;GUROBI&#39;) Silence pulp solving console output:
+pulp.LpSolverDefault.msg = 0 Setup the model with variables, objectives and constraints
+# Initialize the LP model K = 3 B = 4 model = pulp.LpProblem(&#34;model_name&#34;, pulp.LpMaximize) z = pulp.LpVariable.dicts(&#34;z&#34;, range(K), lowBound=0) # Objective function model &#43;= pulp.lpSum(z), &#34;Objective&#34; # Constraints model &#43;= pulp.lpSum([z[k] for k in range(K)]) &lt;= B, &#34;Budget_Constraint&#34; Solve the problem and check status
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-27 12:23:16 +0800 CST'>August 27, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to PuLP with Gurobi on the side" href="//localhost:1313/posts/pulp_gurobi/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">One Year of Blogging
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A Journey Through Ideas, Insights, and the Occasional Podcast-Induced Breakfast Yawn.</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-26 00:00:01 +0800 CST'>August 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to One Year of Blogging" href="//localhost:1313/posts/anniversary/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">the table act of B for Busy (2021)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is my favourite act in “B for Busy”. From 34’ to 46&#39;.
+Three ladies gathered around Mr.B’s dinner table for a delightful and demure conversation. It starts from a beautiful shots of the making of clasical homemade Shanghai cuisine, then right to the dinner table, seats Mr. B’s ex-wife and lovers of an exhilariting conversation that fully showcase the excellency of screenwriting and mastery acting. And here’s the very original source of the viral debate about
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-25 14:05:48 +0800 CST'>August 25, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to the table act of B for Busy (2021)" href="//localhost:1313/posts/b_for_busy_table_scene/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HTML | basic concept
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hypertext Markup Language (HTML) code is the foundational language for creating and structuring content on the web. It defines and presents elements, like headings, paragraphs, images, etc. When one enters a URL or open an HTML file in a web browser, the browser processes the HTML code, applies CSS for styling, and executes any JavaScript. This results in a visual representation of the web page that one can see and interact with.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-24 09:38:39 +0800 CST'>August 24, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to HTML | basic concept" href="//localhost:1313/posts/html/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vintages and Vogue | the blend of &#39;B for Busy&#39; and &#39;sideways&#39;
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The films “B for Busy” (爱情神话) (2021) and “Sideways” (2004) share striking similarities that go beyond their surface narratives.
+Sideways (2004) and B for Busy [爱情神话] (2021)
+At their heart, both movies delve into the nuanced journey of relationships, weaving tales where characters meet, bond, fall in love, or drift apart. One man’s vacation can morph into another’s pivotal life journey or ending. As the stories unfold, some characters evolve, others remain unchanged but ready to move on, or, story put on holds, as friendships peaked as people continue their lives elsewhere.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-23 11:11:14 +0800 CST'>August 23, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Vintages and Vogue | the blend of &#39;B for Busy&#39; and &#39;sideways&#39;" href="//localhost:1313/posts/b_for_busy_n_sideways/"></a>
+</article>
+
+<article class="post-entry">
 <div class="">
     <figure class="entry-cover"><img loading="lazy" src="//localhost:1313/wine/sideways_poster.jpeg" alt=""></figure>
 </div>
@@ -382,171 +543,6 @@ Horowitz: the rising of a star Vladimir Horowitz and Sergei Rachmaninoff had eac
   </div>
   <footer class="entry-footer"><span title='2024-08-18 10:14:35 -0700 -0700'>August 18, 2024</span></footer>
   <a class="entry-link" aria-label="post link to A Meeting of Titans – The Day Vladimir Horowitz and Sergei Rachmaninoff Arrived Together at Steinway Hall" href="//localhost:1313/posts/horowitz_n_rach/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Zen and Art of Piano | Horowitz
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> In Horowitz, fire sings through metal, glass, water and ice.
-The Carolina Philharmonic has the story “Zen and the Art of Piano | Vladimir Horowitz”, by David Michael Wolff. It’s about the artistic style of pianist Horowitz and his inspirational friendship with Rachmaninoff. The time was around the beginning of the 20th century—artists flee from the war and revolution in Russia to arrive in US:
-The young Horowitz had just landed off the boat in NYC and with all the sights the New World had to offer, his first stop was Rachmaninoff’s Manhattan apartment. The next day they met at the now famed basement of Steinway Hall so that Rachmaninoff could hear what the young artist could do with his colossal Third Concerto. They played through the entire work at two pianos. Can you imagine what that must have sounded like - these twin giants of 20th century pianism - their languages blending and playing off each other!
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-17 09:49:44 -0700 -0700'>August 17, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Zen and Art of Piano | Horowitz" href="//localhost:1313/posts/zen_and_art_of_piano/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Andante Cantabile II
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Andante Cantabile, generally means “singing and walking”, is a musical term—a descriptive marker atop a score to delineate the mood or tempo intended by the composer. It . This trend is particularly poignant in compositions of grand scale, where each movement, each phrase, carries its own distinct direction.
-Among the luminaries of the Andante Cantabile, Tchaikovsky’s String Quartet No. 1 in D Major resonates profoundly, a masterpiece that I’ve previously explored in an older post. Yet, even this pales in comparison to what may be the zenith of this expression:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-16 23:52:36 -0700 -0700'>August 16, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Andante Cantabile II" href="//localhost:1313/posts/rachmaninoff_andante_cantabile/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">blood donation bonus points for scholarship credits
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>landscape A significant portion of blood donations in China comes from college students. In 2016, 14 million people donated blood, with donation rates per thousand population among civil servants, college students, army personnel, and medical staff notably higher than the national average of 10.5—reaching 69.2, 78, 55.8, and 52.5 respectively, according to Xinhua News.
-Do a little bit more math unveils how much college students account for blood donation: in 2016, total Chinese college student is 36990000, so total people who participated in donation is 2,885,220—so, about 20% of blood donation comes from college students. Comparing to civil servants (total 7167000 civial servants in 2016), they contributed to about 3% of total donation.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-15 23:37:49 -0700 -0700'>August 15, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to blood donation bonus points for scholarship credits" href="//localhost:1313/posts/blood_rush/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">the fish and the sea | from the movie SOUL
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> This is one of the scenes that resonates with my current phase and inspires me a lot.
-[Joe] (After the successful performace) So uh, what happens next?
-[Dorothea] We come back tomorrow night and do it all…[pause]
-What’s wrong, teacher?
-[Joe] It’s just i’ve been waiting on this day for my entire life. I thought I’d feel different.
-[Dorothea] I heard this story about a fish. The fish swims up to this older fish and says, “I’m trying to find this thing they call the ocean.”
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-14 00:41:19 -0700 -0700'>August 14, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to the fish and the sea | from the movie SOUL" href="//localhost:1313/posts/soul_clip/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Running Costs: How a Fitness App Accidentally Outsourced Military Base Security
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Strava, a fitness-tracking company, faced criticism after its global heatmap unintentionally exposed the locations of sensitive military bases worldwide. The heatmap aggregates and anonymizes public data from users who share their exercise routes, but in remote areas, this data can reveal concentrations of military personnel.
-Strave included a total 1 billion activities from all Strava data through September 2017. They claim to have a global heatmap that is the largest, richest, and most beautiful dataset of its kind. Indeed, look at the light up running paths on Stanford:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-13 00:50:09 -0700 -0700'>August 13, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Running Costs: How a Fitness App Accidentally Outsourced Military Base Security" href="//localhost:1313/posts/data_leaks/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
