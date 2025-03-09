@@ -218,6 +218,72 @@
 </header>
 
 <article class="post-entry">
+<div class="">
+    <figure class="entry-cover"><img loading="lazy" src="//localhost:1313/eternal_sunshine/bim_cover.jpeg" alt=""></figure>
+</div>
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">the boy is mine | the 3rd single of eternal sunshine
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Ariana Grande’s albums invariably feature at least one so-called ‘bad-girl anthem’. Take her debut album ‘Yours Truly’, arguably the most innocent of her career, which includes the sultry track The Way. This song is a collaboration with her then-boyfriend Mac Miller, and it famously includes the line, “I got a bad boy, you must admit it.” Her subsequent albums—My Everything and Dangerous Woman—further shaped her image as a love-craving icon. Even Sweetener offers R.E.M., which lyrically flirts with:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-06-08 22:33:58 +0800 +0800'>June 8, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to the boy is mine | the 3rd single of eternal sunshine" href="//localhost:1313/posts/the_boy_is_mine/"></a>
+</article>
+
+<article class="post-entry">
+
+<style>
+     
+    .pinned-post-card {
+        background-color: rgba(158, 9, 27, 0.95);  
+        padding: 10px 20px 0px 20px; 
+        border-radius: 10px;  
+         
+	padding-bottom: 0px
+	margin: auto
+
+    }  
+    .pinned-post-card img {
+    margin-top: 10px;  
+    }
+</style>
+
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Whittle index | an example
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Consider the following RMAB problem instance. (For a review of what is an RMAB, check out here). A platform coordinates a total of $N$ volunteers for various tasks.
+At each time point, a task $k$ out of $K$ possible tasks arrives randomly with probability $f_k$, and the platform must decide whom to notify (activate) based on the likelihood of acceptance $p_{k, i}, i\in [N]$ and the potential reward for each volunteer incentivized, exogeneously given as $w_k$.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-06-07 12:29:06 +0800 +0800'>June 7, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Whittle index | an example" href="//localhost:1313/posts/whittle_index_technical_1/"></a>
+</article>
+
+<article class="post-entry">
 
 <style>
      
@@ -244,7 +310,7 @@
     <p>Consider an RMAB instance with $N$ arms, where each arm $i \in [N]$ has a finite state space $\mathbb S_i$ and can receive an action $y_i^t \in {0, 1}$ (representing not pulling or pulling the arm, respectively) at each time step $t$. The state of arm $i$ at time $t$ is denoted by $s_i^t$. Depending on the action taken, a reward $r_i(s_i^t, y_i^t)$ is accrued. As a decision maker, our objective is to maximize the averaged total reward over an infinite time horizon, under a constraint that only $B$ arms can be pulled at any time step. This setup can be formalized as follows: $$ \max_{\pi::\mathbb S \to Y} \lim_{T \to \infty} \frac{1}{T} \mathbb{E} [\sum_{t = 1}^T \sum_{i\in [N]} r_i(s_i^t, y_i^t)]\ \text{s.t. } \sum_{i\in [N]} y_i^t \le B, \forall t $$ Consider a relaxed version where the ‘hard’ budget constraint is averaged over time: $$ \max_{\pi::\mathbb S \to Y} \lim_{T \to \infty} \frac{1}{T} \mathbb{E} [\sum_{t = 1}^T \sum_{i\in [N]} r_i(s_i^t, y_i^t)]\ \text{s.t. } \frac1T\mathbb E[\sum_{i\in [N]} y_i^t ]\le B $$ Let $\lambda$ be the Lagrangian multiplier for the relaxed budget constraint $\frac1T\mathbb E[\sum_{i\in [N]} y_i^t ]\le B$. The duality transforms into the following $$ \min_{\lambda} \max_{\pi::\mathbb S \to Y} \lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} r_i(s_i^t, y_i^t)\right] - \lambda \left(\mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} y_i^t\right] - TB\right) \right) $$ Notice that we can decouple the above optimization problem for every arm, by leaving out the budget constraint on the outside: $$ \begin{align} &amp; \lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} r_i(s_i^t, y_i^t)\right] - \lambda \left(\mathbb{E} \left[\sum_{t=1}^T \sum_{i \in [N]} y_i^t\right] - TB\right) \right)\cr = &amp; \lim_{T \to \infty} \frac{1}{T}\left(\sum_{i\in [N]} \left( \mathbb{E} \left[\sum_{t=1}^T r_i(s_i^t, y_i^t)\right] - \lambda \mathbb{E} \left[\sum_{t=1}^T y_i^t\right]\right) - \lambda TB\right) \end{align} $$ So, for each $i$, consider the inner maximization. $$ \max_{\pi::\mathbb S_i \to Y_i} \left(\lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T r_i(s_i^t, y_i^t)\right] - \lambda \left(\mathbb{E} \left[\sum_{t=1}^T y_i^t\right] - TB_i\right) \right)\right) $$ Notice that, the last term $\lambda TB$ can be dropped for each individual $i$ because it’s irrelevant with the inner maximization. Let: $$ \phi_i(\lambda) :=\max_{\pi::\mathbb S_i \to Y_i}\left(\lim_{T \to \infty} \frac{1}{T} \left( \mathbb{E} \left[\sum_{t=1}^T r_i(s_i^t, y_i^t)\right] - \lambda \mathbb{E} \left[\sum_{t=1}^T y_i^t\right] \right)\right) $$ The Lagrangian multiplier here now has an economic intepretation – the price charged for pulling the arm. Consider the optimal stationay policy $\pi_i^*$ for the above optimization problem. Define an arm $i$’s indexability:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-06 23:27:58 +0800 CST'>June 6, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-06-06 23:27:58 +0800 +0800'>June 6, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Whittle index policy in RMAB problem | technicals" href="//localhost:1313/posts/whittle_index_technical/"></a>
 </article>
 
@@ -276,7 +342,7 @@
 understanding Restless Multi-Armed Bandits what are RMAB? The multi-armed bandit problem is a classic version of the problem of optimal allocation of activity under certainty: simply saying, one has $n$ projects, the state of project $i\in [n]$ being denoted by $x_i(t)$​.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-05 23:56:59 +0800 CST'>June 5, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-06-05 23:56:59 +0800 +0800'>June 5, 2024</span></footer>
   <a class="entry-link" aria-label="post link to RMAB and Whittle index | a modern approach to decision-making" href="//localhost:1313/posts/whittle_index/"></a>
 </article>
 
@@ -309,7 +375,7 @@ Algorithmic Classification and Strategic Effort Jon Kleinberg and Manish Raghava
 motivation: difference in modelling strategic behavior and objectives–between econ/CS perspectives The principal-agent and strategic machine learning literatures appear to share a common goal: how should one structure a decision-making rule to account for the strategic actions of decision subjects?
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-04 23:47:17 +0800 CST'>June 4, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-06-04 23:47:17 +0800 +0800'>June 4, 2024</span></footer>
   <a class="entry-link" aria-label="post link to write-up | algorithmic classification and strategic effort" href="//localhost:1313/posts/network_principle_agent/"></a>
 </article>
 
@@ -342,7 +408,7 @@ Takeaway: point of view of bridging practice and research.
 For industry solutions: Need to consider a lot of details Need to be fast and intepretation, therefore requires simple solutions Don’t care about theory. For academic works: Need abstract to focus Graced with time Expect some generality, therefore theory. TALK ABSTRACT: In the past years, there have been growing number of companies in China that adopt OR methods in their operations. There are also several interesting research questions that arise in those application problems. In this talk, we present some recent projects and some of the research questions that come from those scenarios.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-03 09:22:45 +0800 CST'>June 3, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-06-03 09:22:45 +0800 +0800'>June 3, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Mostly OM diary | Practicing OR/OM in China" href="//localhost:1313/posts/mostly_om_5/"></a>
 </article>
 
@@ -375,7 +441,7 @@ Keys: random product offering/demand allocation/pricing algorithm.
 TALK ABSTRACT: First, we study blind boxes as a novel selling mechanism in which buyers purchase sealed packages containing unknown items, with the chance of uncovering rare or special items. We show how such product randomization introduced by the blind box can improve the seller’s profitability over traditional separate selling. Second, we study how an e-commerce platform should assign sequentially arriving customers to sellers who compete to sell identical products on the platform. The allocation rule may be random and dependent on the sellers’ inventory levels. We show how such demand fulfillment randomization can incentivize sellers to hold more inventory and improve the platform’s profitability and customer welfare. Third, we study randomized promotions in which the firm randomly offers discounts over time to sequentially arriving customers with heterogeneous valuations and patience levels. We show how price randomization can improve the firm’s profitability beyond deterministic pricing policies.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-02 09:16:49 +0800 CST'>June 2, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-06-02 09:16:49 +0800 +0800'>June 2, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Mostly OM diary | Randomization in Product, Fulfillment, and Pricing as a Profit Lever" href="//localhost:1313/posts/mostly_om_4/"></a>
 </article>
 
@@ -407,7 +473,7 @@ TALK ABSTRACT: First, we study blind boxes as a novel selling mechanism in which
 TALK ABSTRACT: New prescription drugs require regulatory approval before drug makers can sell them. In some countries, regulators may conditionally approve a drug, which allows sales to begin before the developer has proven the drug’s efficacy. After further testing, the regulator may either grant final approval or reject the drug. We show that conditional approval not only speeds access to drugs but also encourages the development of drugs that would not have been pursued otherwise. Using mechanism design principles, we show that regulators should conditionally approve a drug even if it is ex-ante less likely to prove efficacious, under certain conditions. The regulator should approve the drug to encourage investment, especially when only the firm knows the testing cost. However, drugs that are less likely to prove efficacious should only be conditionally approved for a portion of the patient population if that is enough to motivate testing. Additionally, the impact of conditional approval is greater when the firm’s revenue increases over time. Finally, a regulator should sometimes commit that in the future it will grant final approval for a drug that narrowly misses the efficacy threshold in return for the firm testing an otherwise unprofitable drug.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-01 08:52:00 +0800 CST'>June 1, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-06-01 08:52:00 +0800 +0800'>June 1, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Mostly OM diary | Optimal Conditional Drug Approval" href="//localhost:1313/posts/mostly_om_3/"></a>
 </article>
 
@@ -440,7 +506,7 @@ related paper: Allocating Divisible Resources on Arms with Unknown and Random Re
 TALK ABSTRACT: We consider a decision maker allocating one unit of renewable and divisible resource in each period on a number of arms. The arms have unknown and random rewards whose means are proportional to the allocated resource and whose variances are proportional to an order b of the allocated resource. In particular, if the decision maker allocates resource $A_i$ to arm $i$ in a period, then the reward $Y_i$ is $Yi(Ai)=A_i\mu_i&#43;A_i^b \xi_i$, where $\mu_i$ is the unknown mean and the noise $\xi_i$ is independent and sub-Gaussian. When the order $b$ ranges from 0 to 1, the framework smoothly bridges the standard stochastic multi-armed bandit and online learning with full feedback. We design two algorithms that attain the optimal gap-dependent and gap-independent regret bounds for $b\in [0,1]$, and demonstrate a phase transition at $b=1/2$. The theoretical results hinge on a novel concentration inequality we have developed that bounds a linear combination of sub-Gaussian random variables whose weights are fractional, adapted to the filtration, and monotonic.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-31 08:46:11 +0800 CST'>May 31, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-05-31 08:46:11 +0800 +0800'>May 31, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Mostly OM diary | Allocating Divisible Resources on Arms with Unknown and Random Rewards" href="//localhost:1313/posts/mostly_om_2/"></a>
 </article>
 
@@ -472,74 +538,8 @@ TALK ABSTRACT: We consider a decision maker allocating one unit of renewable and
 TALK ABSTRACT: To study the limits of personalization, we introduce the notion of a clairvoyant firm that can read the mind of consumers and sell them the highest revenue product that they are willing to buy. We show how to compute the expected revenue of the clairvoyant firm for a class of rational discrete choice models, and develop prophet-type inequalities that provide performance guarantees for the expected revenue of the traditional assortment optimization firm (a TAOP firm) relative to the clairvoyant firm, and therefore to any effort to personalize assortments. In particular, we show that the expected revenue of the clairvoyant firm cannot exceed twice the expected revenue of the TAOP for the RCS model, the MNL, the GAM and the Nested-Logit Model. On the other hand, there are random utility models for which personalized assortments can earn up to $n$ times more than a TAOP firm, where $n$ is the number of products. Our numerical studies indicate that when the mean utilities of the products are heterogeneous among consumer types, and the variance of the utilities is small, firms can gain substantial benefits from personalized assortments. We support these observations, and others, with theoretical findings. While the consumers’ surplus can potentially be larger under personalized assortments, clairvoyant firms with pricing power can extract all surplus, and earn arbitrarily more than traditional firms that optimize over prices but do not personalize them. For the price-aware MNL, however, a clairvoyant firm can earn at most $\exp(1)$ more than a traditional firm.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-30 08:40:08 +0800 CST'>May 30, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-05-30 08:40:08 +0800 +0800'>May 30, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Mostly OM diary | The Limits of Personalization in Assortment Optimization" href="//localhost:1313/posts/mostly_om_1/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Mostly OM 2024 Workshop at Tsinghua University, Beijing
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What an elegant name! It reminded me of the book Mostly Harmless Econometrics.
-Mostly OM is an annual international workshop sponsored by the School of Economics and Management, the Research Center for Contemporary Management, of Tsinghua University, focusing on the state-of-the-art research in Operations Management (OM), broadly defined. Mostly OM aims to provide a forum for researchers, from China and overseas alike, to foster interaction and exchange ideas, learn from each other new methodologies and applications, and explore opportunities for collaboration.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-29 23:24:30 +0800 CST'>May 29, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Mostly OM 2024 Workshop at Tsinghua University, Beijing" href="//localhost:1313/posts/mostly_om/"></a>
-</article>
-
-<article class="post-entry">
-
-<style>
-     
-    .pinned-post-card {
-        background-color: rgba(158, 9, 27, 0.95);  
-        padding: 10px 20px 0px 20px; 
-        border-radius: 10px;  
-         
-	padding-bottom: 0px
-	margin: auto
-
-    }  
-    .pinned-post-card img {
-    margin-top: 10px;  
-    }
-</style>
-
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Andante Cantabile
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Andante cantabile(It.) is a direction often used by composers. In general, it means flowing and songlike.
-The andante tempo is known as the walking pace, and the pacing and energy should generally feel like a nice stroll.
-Cantabile [kanˈtaːbile], an Italian word, means literally “singable” or “songlike”. In instrumental music, it is a particular style of playing designed to imitate the human voice.
-To a large section of the public, however, it means one work, the 2nd movt., andante cantabile, of Tchaikovsky’s str. qt. No.1 in D (1871), Op.11.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-28 23:30:36 +0800 CST'>May 28, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Andante Cantabile" href="//localhost:1313/posts/andante_cantabile/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
