@@ -6,7 +6,7 @@
     <description>Recent content in Posts on ariana&#39;s blog</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Mar 2025 23:50:59 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 23:22:35 -0700</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>my work ethic | pinned post</title>
@@ -14,6 +14,31 @@
       <pubDate>Sat, 16 Dec 2023 16:15:32 +0800</pubDate>
       <guid>//localhost:1313/posts/my_work_ethic/</guid>
       <description>Think I&amp;rsquo;ve kind of learned that the more authentic and genuine it is, the better it will work for you.</description>
+    </item>
+    <item>
+      <title>Chopiniana</title>
+      <link>//localhost:1313/posts/chopiniana/</link>
+      <pubDate>Fri, 14 Mar 2025 23:22:35 -0700</pubDate>
+      <guid>//localhost:1313/posts/chopiniana/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Chopiniana,&amp;rdquo; also known as &amp;ldquo;Les Sylphides,&amp;rdquo; is a ballet choreographed by Mikhail Fokine, set to music by &lt;strong&gt;Frédéric Chopin&lt;/strong&gt;, and premiered in 1907 as a &amp;ldquo;romantic reverie&amp;rdquo;. It&amp;rsquo;s a &lt;em&gt;&lt;strong&gt;ballet blanc&lt;/strong&gt;&lt;/em&gt;—where all ballerinas wear white dresses or tutus.&lt;/p&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/art/chopiniana_opening.jpeg#center&#34;
+         alt=&#34;Mariinsky Theatre premiered the ballet.&#34; width=&#34;88%&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Mariinsky Theatre premiered the ballet.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Fokine’s &lt;em&gt;Chopiniana&lt;/em&gt; is an homage to the Romantic era with its white ballet, fleeting arabesques, airy dances of ethereal sylphides and perpetual longing for perfection. Fokine, inspired by antique engravings depicting the legendary Marie Taglioni and her contemporaries and weary of ballet virtuosity and technique show offs, created a storyless ballet sketch at the beginning of the 20th century. The sketch was &lt;strong&gt;“in the style of that long-forgotten time when ballet was governed by poetry, when a dancer rose &lt;em&gt;en pointe&lt;/em&gt; not to demonstrate the steel-like arch of her foot but in order to create the impression of lightness, barely touching the ground, something ethereal and fantastical.”&lt;/strong&gt; The choreographer wrote: “I have tried not to surprise people with the newness, but rather to restore conventional ballet dancing to the point of its greatest advances. I don’t know if this is how our ballet predecessors danced. And no-one else knows that. But in my dreams this is precisely how they did dance.” &lt;a href=&#34;https://www.mariinsky.ru/en/playbill/repertoire/ballet/chopin/#&#34;&gt;source: Mariinsky Theatre&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Reading Note | Strategic Experimentation with Exponential Bandits II</title>
+      <link>//localhost:1313/posts/cripps2003_paper_reading_notes_ii/</link>
+      <pubDate>Thu, 13 Mar 2025 22:56:12 -0700</pubDate>
+      <guid>//localhost:1313/posts/cripps2003_paper_reading_notes_ii/</guid>
+      <description>&lt;p&gt;This is the second reading note of paper &amp;ldquo;&lt;em&gt;&lt;strong&gt;Strategic Experimentation with Exponential Bandits&lt;/strong&gt;&lt;/em&gt;&amp;rdquo;, following the &lt;a href=&#34;//localhost:1313/posts/cripps2003_paper_reading_notes/&#34;&gt;previous post&lt;/a&gt; that describes the single-agent basic model: a continuous two-armed bandit: one risky (R) arm + one safe (S) arm.&lt;/p&gt;
+&lt;h2 id=&#34;model-when-there-are-more-than-one-agents&#34;&gt;Model: When There Are More Than One Agents&lt;/h2&gt;
+&lt;p&gt;Players each have replica two-armed bandits. They share the same prior belief (over whether the Risky arm is good or bad), the same discount rate, and information is public. The risky arms&amp;rsquo; time thresholds are i.i.d..—In other words, the risky arm&amp;rsquo;s &amp;lsquo;good&amp;rsquo;/&amp;lsquo;bad&amp;rsquo; nature is the same among all agents. But every agent&amp;rsquo;s threshold distribution might be realized differently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Reading Note | Strategic Experimentation with Exponential Bandits I</title>
@@ -33,10 +58,17 @@
 &lt;p&gt;[The story] has been pieced together from personal letters between Clara, Brahms, and friends. Robert Schumann was Brahms&amp;rsquo; mentor. Brahms got close to Schumann&amp;rsquo;s wife Clara as Robert was drifting off into madness (likely related to syphilis). Clara and Brahms wrote letters to one another as if lovers, but after Schumann&amp;rsquo;s death, Brahms left Clara to move on with his career, although they still kept in touch, and were affectionate whenever the met. Brahms insinuated they never had sex, that Clara was more like a beloved mentor or muse. Letters show that Clara really thought Brahms would marry her after Robert&amp;rsquo;s death, but that didn&amp;rsquo;t happen. The story has circulated in musical anecdotes for ages, and several films have been based on the story.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>USC at UCLA</title>
+      <title>updates</title>
       <link>//localhost:1313/posts/about_me_update/</link>
-      <pubDate>Sun, 09 Mar 2025 00:58:27 -0700</pubDate>
+      <pubDate>Mon, 10 Mar 2025 01:14:29 -0700</pubDate>
       <guid>//localhost:1313/posts/about_me_update/</guid>
+      <description>&lt;p&gt;Updated my CV and about me page. Goodnight!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>USC at UCLA</title>
+      <link>//localhost:1313/posts/la_weekend/</link>
+      <pubDate>Sun, 09 Mar 2025 00:58:27 -0700</pubDate>
+      <guid>//localhost:1313/posts/la_weekend/</guid>
       <description>&lt;p&gt;I spend the weekend in Los Angeles.&lt;/p&gt;
 &lt;figure class=&#34;align-center &#34;&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/complaints/ucla_v_usc.jpeg#center&#34;
