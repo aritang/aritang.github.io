@@ -6,7 +6,7 @@
     <description>Recent content on ariana&#39;s blog</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Mar 2025 21:18:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Mar 2025 21:15:42 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>my work ethic | pinned post</title>
@@ -14,6 +14,34 @@
       <pubDate>Sat, 16 Dec 2023 16:15:32 +0800</pubDate>
       <guid>//localhost:1313/posts/my_work_ethic/</guid>
       <description>Think I&amp;rsquo;ve kind of learned that the more authentic and genuine it is, the better it will work for you.</description>
+    </item>
+    <item>
+      <title>The Tschaikovsky Pas de Deux</title>
+      <link>//localhost:1313/posts/tchaikovsky_pas_de_deux/</link>
+      <pubDate>Fri, 21 Mar 2025 21:15:42 +0800</pubDate>
+      <guid>//localhost:1313/posts/tchaikovsky_pas_de_deux/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Pas de deux is a dance duet in which two (typically male + female) dancers perform ballet step together. A strictly classical balletic pas de deux follows a fixed pattern: a supported adagio, a solo male variation, a solo female variation, and the final flashy coda.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The &lt;em&gt;&lt;strong&gt;Tschaikovsky Pas de Deux&lt;/strong&gt;&lt;/em&gt; is interesting for its music origin. The music is composed by Tchaikovsky, obviously. But actually it&amp;rsquo;s part of Swan Lake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Game of Extra Problems | Design the Grading Mechanism</title>
+      <link>//localhost:1313/posts/extra_problem_mechanism_design/</link>
+      <pubDate>Thu, 20 Mar 2025 22:58:09 +0800</pubDate>
+      <guid>//localhost:1313/posts/extra_problem_mechanism_design/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m TAing Discrete Math for &lt;a href=&#34;https://ngravin.github.io/&#34;&gt;Professor Nick Gravin&lt;/a&gt; this semester (2025 Spring). We’ve introduced &lt;strong&gt;extra problems&lt;/strong&gt;—a set of challenging bonus questions that provides extra credits, meant for students who find the regular coursework too easy. The goal is to provide meaningful enrichment, but we’ve encountered a &lt;strong&gt;mechanism design problem&lt;/strong&gt;: How do we structure rules and incentives so that students put in genuine effort, avoid academic dishonesty where they copy from each other to get scores, and maintain fairness in the grading process?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shang-Hua Teng in Town (Shanghai)</title>
+      <link>//localhost:1313/posts/shanghua_teng/</link>
+      <pubDate>Wed, 19 Mar 2025 22:37:17 +0800</pubDate>
+      <guid>//localhost:1313/posts/shanghua_teng/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://viterbi-web.usc.edu/~shanghua/&#34;&gt;Professor Shang-Hua Teng&lt;/a&gt; from USC is visiting our institute (ITCS@SUFE) today. A distinguished mathematician and theoretical computer scientist, Professor Teng shared valuable career insights during an open panel discussion. Later, he delivered a talk on his recent work, &lt;a href=&#34;https://proceedings.mlr.press/v247/asilis24a.html&#34;&gt;&lt;em&gt;Regularization and Optimal Multiclass Learning&lt;/em&gt;&lt;/a&gt;, co-authored with Julian Asilis, Siddartha Devic, Shaddin Dughmi, and Vatsal Sharan, and presented at the Thirty-Seventh Conference on Learning Theory (COLT) 2024.&lt;/p&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;//localhost:1313/maguerite/teng_shanghai25.jpeg#center&#34;
+         alt=&#34;Professor Teng and my advisor met at Tsinghua almost 20 years ago and remain close collaborators and friends since then.&#34; width=&#34;100%&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Professor Teng and my advisor met at Tsinghua almost 20 years ago and remain close collaborators and friends since then.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rachmaninoff&#39;s Nostalgia—The Russian Soul</title>
