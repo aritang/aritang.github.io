@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Paper Reading Note | Strategic Experimentation with Exponential Bandits I | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="This is the reading notes of &ldquo;Strategic Experimentation with Exponential Bandits&rdquo; by Godfrey Keller, Sven Rady and Martin Cripps, published in Econometrica, 2025. I think it is a really cool theoretical economic paper, because the math is solid, elegant and inspiring.
+For more details, please refer to the original paper. The following are notes for the models and and results for reference, if one wants to quicly grasp the intuition.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/cripps2003_paper_reading_notes/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/cripps2003_paper_reading_notes/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:url" content="//localhost:1313/posts/cripps2003_paper_reading_notes/">
+  <meta property="og:site_name" content="ariana&#39;s blog">
+  <meta property="og:title" content="Paper Reading Note | Strategic Experimentation with Exponential Bandits I">
+  <meta property="og:description" content="This is the reading notes of “Strategic Experimentation with Exponential Bandits” by Godfrey Keller, Sven Rady and Martin Cripps, published in Econometrica, 2025. I think it is a really cool theoretical economic paper, because the math is solid, elegant and inspiring.
+For more details, please refer to the original paper. The following are notes for the models and and results for reference, if one wants to quicly grasp the intuition.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-12T23:50:59-07:00">
+    <meta property="article:modified_time" content="2025-03-12T23:50:59-07:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Paper Reading Note | Strategic Experimentation with Exponential Bandits I">
+<meta name="twitter:description" content="This is the reading notes of &ldquo;Strategic Experimentation with Exponential Bandits&rdquo; by Godfrey Keller, Sven Rady and Martin Cripps, published in Econometrica, 2025. I think it is a really cool theoretical economic paper, because the math is solid, elegant and inspiring.
+For more details, please refer to the original paper. The following are notes for the models and and results for reference, if one wants to quicly grasp the intuition.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Paper Reading Note | Strategic Experimentation with Exponential Bandits I",
+      "item": "//localhost:1313/posts/cripps2003_paper_reading_notes/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Paper Reading Note | Strategic Experimentation with Exponential Bandits I",
+  "name": "Paper Reading Note | Strategic Experimentation with Exponential Bandits I",
+  "description": "This is the reading notes of \u0026ldquo;Strategic Experimentation with Exponential Bandits\u0026rdquo; by Godfrey Keller, Sven Rady and Martin Cripps, published in Econometrica, 2025. I think it is a really cool theoretical economic paper, because the math is solid, elegant and inspiring.\nFor more details, please refer to the original paper. The following are notes for the models and and results for reference, if one wants to quicly grasp the intuition.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "This is the reading notes of “Strategic Experimentation with Exponential Bandits” by Godfrey Keller, Sven Rady and Martin Cripps, published in Econometrica, 2025. I think it is a really cool theoretical economic paper, because the math is solid, elegant and inspiring.\nFor more details, please refer to the original paper. The following are notes for the models and and results for reference, if one wants to quicly grasp the intuition.\nmodel The base is a continuous-time two-armed bandit:\nOne arm S is ‘safe’ and yields a known deterministic flow payoff whenever it is played; the other arm R is ‘risky’ and can be either ‘bad’ or ‘good’. If it is bad, then it always yields 0. If it is good, then it yields 0 until a ‘breakthrough’ occurs. This happens once the total time that the arm has been used reaches some random threshold that is exponentially distributed; once it happens, the arm yields a known positive (fixed) flow payoff forever.\nThe paper assumes that if the risky arm R is discovered to be good, then R is strictly better than S—in this way agents have motive to experiment with the risky action in the hope that discovering R is indeed good.\nFormally, for continuous time $t\\in [0, \\infty]$ and discount rate $r \u003e 0$, let the flow payoff of the safe arm S be $s$, let the flow payoff for a good risky arm R be $g$ (assuming $0 \u003c s \u003c g$). Importantly, let the total time that a good risky arm be used before it generates the payoff $g$ be exponentially distributed with parameter $\\lambda \u003e 0$ (i.e. with mean $\\frac 1\\lambda$).\nStarting with a prior belief $p_0$ that the risky arm is good. At every specific time point $t$, let $k_t$ indicates an agent’s choice between S ($k_t = 0$) and R ($k_t = 1$). Her flow payoff at this time is $$ (1 - k_t)s + k_t \\pi t, \\text{ where } \\pi_t\\in \\lbrace 0, g\\rbrace. $$ And one agent’s overall objective is to choose a strategy $\\lbrace k_t \\rbrace{t\\ge 0}$ that maximizes $$ \\mathbb E\\left [\\int_0^\\infty re^{-rt}[(1 - k_t)s + k_t \\pi_t], \\text{d}t\\mid p_0\\right]. $$ (Quote the paper) Of course, strategy $k_t$ should be subject to the constraint that the action taken at any time $t$ be measurable w.r.t. the information available at that time.\nwhen there are more than one agents Players have the same prior belief, the same discount rate, replica two-armed bandits, and information is public. The risky arms’ time thresholds are i.i.d..\nTo be continued…\n",
+  "wordCount" : "425",
+  "inLanguage": "en",
+  "datePublished": "2025-03-12T23:50:59-07:00",
+  "dateModified": "2025-03-12T23:50:59-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/cripps2003_paper_reading_notes/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Paper Reading Note | Strategic Experimentation with Exponential Bandits I
+    </h1>
+    <div class="post-meta"><span title='2025-03-12 23:50:59 -0700 -0700'>March 12, 2025</span>
+
+</div>
+  </header>
+  <div class="post-content"><p>This is the reading notes of &ldquo;<em><strong>Strategic Experimentation with Exponential Bandits</strong></em>&rdquo; by Godfrey Keller, Sven Rady and Martin Cripps, published in Econometrica, 2025. I think it is a really cool theoretical economic paper, because the math is solid, elegant and inspiring.</p>
+<p>For more details, please refer to the original paper. The following are notes for the models and and results for reference, if one wants to quicly grasp the intuition.</p>
+<h2 id="model">model<a hidden class="anchor" aria-hidden="true" href="#model">#</a></h2>
+<p>The base is a <strong>continuous-time two-armed bandit</strong>:</p>
+<blockquote>
+<p>One arm S is ‘safe’ and yields a known deterministic flow payoff whenever it is played; the other arm R is ‘risky’ and can be either ‘bad’ or ‘good’. If it is bad, then it always yields 0. If it is good, then it yields 0 until a ‘breakthrough’ occurs. This happens once the total time that the arm has been used reaches some random threshold that is exponentially distributed; once it happens, the arm yields a known positive (fixed) flow payoff forever.</p>
+</blockquote>
+<p>The paper assumes that if the risky arm R is discovered to be good, then R is strictly better than S—in this way agents have motive to experiment with the risky action in the hope that discovering R is indeed good.</p>
+<p>Formally, for continuous time $t\in [0, \infty]$ and discount rate $r &gt; 0$, let the flow payoff of the safe arm S be $s$, let the flow payoff for a good risky arm R be $g$ (assuming $0 &lt; s &lt; g$). <strong>Importantly, let the total time that a good risky arm be used before it generates the payoff $g$ be exponentially distributed with parameter $\lambda &gt; 0$ (i.e. with mean $\frac 1\lambda$).</strong></p>
+<p>Starting with a prior belief $p_0$ that the risky arm is good. At every specific time point $t$, let $k_t$ indicates an agent&rsquo;s choice between S ($k_t = 0$) and R ($k_t = 1$). Her flow payoff at this time is
+$$
+(1 - k_t)s + k_t \pi <em>t, \text{ where } \pi_t\in \lbrace 0, g\rbrace.
+$$
+And one agent&rsquo;s overall objective is to choose a strategy $\lbrace k_t \rbrace</em>{t\ge 0}$ that maximizes
+$$
+\mathbb E\left [\int_0^\infty re^{-rt}[(1 - k_t)s + k_t \pi_t], \text{d}t\mid p_0\right].
+$$
+(Quote the paper) Of course, strategy $k_t$ should be subject to the constraint that the action taken at any time $t$ be measurable w.r.t. the information available at that time.</p>
+<h3 id="when-there-are-more-than-one-agents">when there are more than one agents<a hidden class="anchor" aria-hidden="true" href="#when-there-are-more-than-one-agents">#</a></h3>
+<p>Players have the same prior belief, the same discount rate, replica two-armed bandits, and information is public. <strong>The risky arms&rsquo; time thresholds are i.i.d..</strong></p>
+<p>To be continued&hellip;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>
