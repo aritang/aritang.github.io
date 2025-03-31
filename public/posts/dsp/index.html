@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>the Cookie series II | Demand Side Platform, specifically | ariana&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="The AdTech ecosystem is rich, complex, and difficult to navigate. Demand-side platforms (DSPs), unless they are hidden behind another layer like Agency Trading Desks, act as intermediaries between advertisers and ad exchanges. They function similarly to the relationship between a stock exchange, consumers, and securities.
+DSPs depend heavily on third-party cookies. Through the process of cookie syncing, cookies and all privacy information are ultimately collected by DSPs. They use this data to segment consumers and sell these segments to advertisers, in addition to providing other services such as data management, analytic services, and insights.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/dsp/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/dsp/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:url" content="//localhost:1313/posts/dsp/">
+  <meta property="og:site_name" content="ariana&#39;s blog">
+  <meta property="og:title" content="the Cookie series II | Demand Side Platform, specifically">
+  <meta property="og:description" content="The AdTech ecosystem is rich, complex, and difficult to navigate. Demand-side platforms (DSPs), unless they are hidden behind another layer like Agency Trading Desks, act as intermediaries between advertisers and ad exchanges. They function similarly to the relationship between a stock exchange, consumers, and securities.
+DSPs depend heavily on third-party cookies. Through the process of cookie syncing, cookies and all privacy information are ultimately collected by DSPs. They use this data to segment consumers and sell these segments to advertisers, in addition to providing other services such as data management, analytic services, and insights.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-30T08:07:04-07:00">
+    <meta property="article:modified_time" content="2024-07-30T08:07:04-07:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="the Cookie series II | Demand Side Platform, specifically">
+<meta name="twitter:description" content="The AdTech ecosystem is rich, complex, and difficult to navigate. Demand-side platforms (DSPs), unless they are hidden behind another layer like Agency Trading Desks, act as intermediaries between advertisers and ad exchanges. They function similarly to the relationship between a stock exchange, consumers, and securities.
+DSPs depend heavily on third-party cookies. Through the process of cookie syncing, cookies and all privacy information are ultimately collected by DSPs. They use this data to segment consumers and sell these segments to advertisers, in addition to providing other services such as data management, analytic services, and insights.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "the Cookie series II | Demand Side Platform, specifically",
+      "item": "//localhost:1313/posts/dsp/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "the Cookie series II | Demand Side Platform, specifically",
+  "name": "the Cookie series II | Demand Side Platform, specifically",
+  "description": "The AdTech ecosystem is rich, complex, and difficult to navigate. Demand-side platforms (DSPs), unless they are hidden behind another layer like Agency Trading Desks, act as intermediaries between advertisers and ad exchanges. They function similarly to the relationship between a stock exchange, consumers, and securities.\nDSPs depend heavily on third-party cookies. Through the process of cookie syncing, cookies and all privacy information are ultimately collected by DSPs. They use this data to segment consumers and sell these segments to advertisers, in addition to providing other services such as data management, analytic services, and insights.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "The AdTech ecosystem is rich, complex, and difficult to navigate. Demand-side platforms (DSPs), unless they are hidden behind another layer like Agency Trading Desks, act as intermediaries between advertisers and ad exchanges. They function similarly to the relationship between a stock exchange, consumers, and securities.\nDSPs depend heavily on third-party cookies. Through the process of cookie syncing, cookies and all privacy information are ultimately collected by DSPs. They use this data to segment consumers and sell these segments to advertisers, in addition to providing other services such as data management, analytic services, and insights.\nHere are two stories about DSPs:\n10 Best Demand Side Platforms (DSPs) For Programmatic Advertising in 2024 Anete Jodzevica, 30.05.2024\nThis article analyzes the top 10 DSPs from an advertiser’s perspective. To start:\nCriteria for Evaluating DSPs Inventory and reach A DSP should support various creative assets, such as display, video, CTV, and native ads, and optimize them with responsive and adaptive creatives across different screens.\nIt’s also essential for the DSP to reach the right target audience and support your first-party data. Look for advanced targeting options such as demographic, geographic, behavioral, contextual, and predictive targeting to ensure that ads reach the right person at the right time.\nTargeting capabilities Since picking the right target audience is one of the core functions of a DSP, DSPs should offer robust audience segmentation and targeting features.\nA good DSP should enable filtering based on contextual attributes and insights, such as previous user interactions and behavioral points. The more audience filter options available, the better the DSP can select the most suitable audience for each campaign.\nData integration Seamless integration with existing ad server data, DMPs, customer data platforms, and other relevant partners and platforms is necessary. This allows for effectively utilizing various data sources, enhancing campaign optimization and retargeting efforts.\nUser interface and ease of use Given the complexity of adtech platforms, a DSP should offer a simple and intuitive user interface. This will help teams with limited programmatic advertising knowledge implement successful ad campaigns more easily.\nReporting and analytics Effective DSPs provide comprehensive data analytics and insights, allowing users to track KPIs like ROAS, conversion rates, and CTRs. Look for real-time reporting and dashboards, which are important for clearly displaying campaign performance.\nCustomer support and service Strong customer support is vital for maximizing a DSP’s benefits. Look for DSPs with robust training resources, detailed documentation, and reliable customer service.\nNote: some DSPs only provide dedicated account management support during onboarding to ensure a smooth transition and effective platform use.\nAnd the author provides a comprehensive comparison table of the major DSP solution providers.\nsource: setupad blog\nFor the big players:\nGoogle Display \u0026 Video 360 Display \u0026 Video 360 is a comprehensive programmatic advertising solution within the Google Marketing Platform, suitable for businesses of all sizes. It includes five key modules: creatives, campaigns, audiences, inventory, and insights.\nThe platform supports cross-channel media planning, various ad formats, audience management, and robust fraud prevention. With numerous integrations, including Analytics 360 and YouTube, and ongoing feature updates, Display \u0026 Video 360 offers powerful tools for reaching global audiences and optimizing ad campaigns, providing a seamless experience for advertisers.\nThe Trade Desk The Trade Desk is a self-serve digital advertising platform founded in 2009, renowned for its transparency and robust data capabilities. It supports diverse ad formats, including CTV, display, mobile, social media, and programmatic audio, with advanced targeting options through RTB, PMP, direct, and guaranteed deals. The platform offers insights, automation, and optimization for cross-channel advertisers, enabling real-time audience reach at scale with guaranteed viewability and execution.\nIntegrating first-party data, The Trade Desk boasts a network of over 225 partners, including Hulu, Disney, and Spotify. Key features include full-funnel attribution, real-time customized reporting, expert dedicated support, and top-quality traffic monitoring, making it suitable for experienced advertisers and newcomers.\nAmazon DSP Amazon DSP is a robust platform that enables purchasing display, video, and audio ads across a vast network of publishers, including Amazon-owned sites like Zappos and Audible. It features customizable ad templates, effective analytics with Amazon-specific metrics, audience insights for market comparison, and A/B testing capabilities.\nBy leveraging Amazon’s extensive consumer data, it offers robust targeting options, cross-device tracking, and seamless integration with Amazon’s ad ecosystem, making it ideal for e-commerce brands. Available to both Amazon sellers and non-sellers, Amazon DSP provides both managed (typically requiring a $50k minimum spend) and self-service options.\nSee the full list on the original blog post—it’s highly recommended. The author outlines the strengths and specialties of all advertising platforms. It’s worth noting that DSPs are large, client-facing platforms that connect advertisers to ad exchanges. Additionally, there are Ad Networks that serve as more direct two-sided ad transaction platforms, along with niche DSPs that offer more integrated and intricately designed ads, like Mobile DSPs, Native advertising DSPs, and Video DSPs.\nAd execs sound off on Amazon’s DSP dilemma By Ronan Shields and Seb Joseph • March 25, 2024\nAmazon is striving to attract more advertisers to its platform. However, with major competitors like Google and The Trade Desk offering superior services, advertisers remain hesitant.\nJust 5% of the 44 respondents in a survey by Digiday chose Amazon as their preferred DSP if they could only select one. In contrast, nearly four in 10 (39%) opted for Google’s DV360. The same goes for The Trade Desk.\nsource: statista\nIt’s important to note that Amazon’s DSP provides exclusive access to its consumers on the Amazon platform. However, advertisers also utilize Amazon for targeting audiences outside the Amazon network.\nBut what do advertisers truly desire?\nWhen asked to rank those needs, respondents to Digiday’s survey prioritized audience targeting capabilities first, followed by return on investment and return on ad spend, post-ad campaign insights and recommendations, technology vision and roadmap, and finally, data protection.\nAnd here’s survey data reflecting part of their market influence:\nA third of them (33%) said they’ve used the Amazon DSP in the past 12 months. Only The Trade Desk (at 56%) and Google DV360 (64%) received higher shares of responses.\nreference Setupad. (n.d.). Best demand-side platforms. Setupad. Retrieved July 30, 2024, from https://setupad.com/blog/best-demand-side-platforms/ Statista. (2024). Usage of demand-side platforms (DSP) worldwide from 2019 to 2023. Statista. Retrieved July 30, 2024, from https://www.statista.com/statistics/1475413/dsp-use/ Digiday. (2024). Digiday research: Ad execs sound off on Amazon’s DSP dilemma. Digiday. Retrieved July 30, 2024, from https://digiday.com/media-buying/digiday-research-ad-execs-sound-off-on-amazons-dsp-dilemma/ ",
+  "wordCount" : "1058",
+  "inLanguage": "en",
+  "datePublished": "2024-07-30T08:07:04-07:00",
+  "dateModified": "2024-07-30T08:07:04-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/dsp/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ariana's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//localhost:1313/css/custom.b017fc6c61ff4eacd2943e3c9726e1a935c706d1ea1a1b7c17773e63b47342d3.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16651897053/wjItCK3FisUZEN2Rn4Q-',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651897053"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16651897053');
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="ariana&#39;s blog (Alt + H)">ariana&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/search" title="search (Alt &#43; /)" accesskey=/>
+                    <span>search</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives" title="archive">
+                    <span>archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/tags" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/pinned" title="about me">
+                    <span>about me</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/procrastination_bulletin" title="pending ideas">
+                    <span>pending ideas</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      the Cookie series II | Demand Side Platform, specifically
+    </h1>
+    <div class="post-meta"><span title='2024-07-30 08:07:04 -0700 -0700'>July 30, 2024</span>
+
+</div>
+  </header>
+  <div class="post-content"><p>The AdTech ecosystem is rich, complex, and difficult to navigate. Demand-side platforms (DSPs), unless they are hidden behind another layer like Agency Trading Desks, act as intermediaries between advertisers and ad exchanges. They function similarly to the relationship between a stock exchange, consumers, and securities.</p>
+<p>DSPs depend heavily on third-party cookies. Through the process of <em>cookie syncing</em>, cookies and all privacy information are ultimately collected by DSPs. They use this data to segment consumers and sell these segments to advertisers, in addition to providing other services such as data management, analytic services, and insights.</p>
+<p>Here are two stories about DSPs:</p>
+<blockquote>
+<h2 id="10-best-demand-side-platforms-dsps-for-programmatic-advertising-in-2024">10 Best Demand Side Platforms (DSPs) For Programmatic Advertising in 2024<a hidden class="anchor" aria-hidden="true" href="#10-best-demand-side-platforms-dsps-for-programmatic-advertising-in-2024">#</a></h2>
+<p>Anete Jodzevica, 30.05.2024</p>
+</blockquote>
+<p>This article analyzes the top 10 DSPs from an advertiser&rsquo;s perspective. To start:</p>
+<blockquote>
+<h2 id="criteria-for-evaluating-dsps">Criteria for Evaluating DSPs<a hidden class="anchor" aria-hidden="true" href="#criteria-for-evaluating-dsps">#</a></h2>
+<h3 id="inventory-and-reach">Inventory and reach<a hidden class="anchor" aria-hidden="true" href="#inventory-and-reach">#</a></h3>
+<p>A DSP should support various creative assets, such as display, video, <a href="https://setupad.com/blog/ctv-monetization/">CTV</a>, and native ads, and optimize them with responsive and adaptive creatives across different screens.</p>
+<p>It’s also essential for the DSP to reach the right target audience and support your first-party data. Look for advanced targeting options such as demographic, geographic, behavioral, contextual, and predictive targeting to ensure that ads reach the right person at the right time.</p>
+<h3 id="targeting-capabilities">Targeting capabilities<a hidden class="anchor" aria-hidden="true" href="#targeting-capabilities">#</a></h3>
+<p>Since picking the right target audience is one of the core functions of a DSP, DSPs should offer robust audience segmentation and targeting features.</p>
+<p>A good DSP should enable filtering based on contextual attributes and insights, such as previous user interactions and behavioral points. The more audience filter options available, the better the DSP can select the most suitable audience for each campaign.</p>
+<h3 id="data-integration">Data integration<a hidden class="anchor" aria-hidden="true" href="#data-integration">#</a></h3>
+<p>Seamless integration with existing ad server data, DMPs, customer data platforms, and other relevant partners and platforms is necessary. This allows for effectively utilizing various data sources, enhancing campaign optimization and retargeting efforts.</p>
+<h3 id="user-interface-and-ease-of-use">User interface and ease of use<a hidden class="anchor" aria-hidden="true" href="#user-interface-and-ease-of-use">#</a></h3>
+<p>Given the complexity of adtech platforms, a DSP should offer a simple and intuitive user interface. This will help teams with limited programmatic advertising knowledge implement successful ad campaigns more easily.</p>
+<h3 id="reporting-and-analytics">Reporting and analytics<a hidden class="anchor" aria-hidden="true" href="#reporting-and-analytics">#</a></h3>
+<p>Effective DSPs provide comprehensive data analytics and insights, allowing users to track KPIs like ROAS, conversion rates, and <a href="https://setupad.com/blog/8-ways-to-increase-organic-ctr/">CTRs</a>. Look for real-time reporting and dashboards, which are important for clearly displaying campaign performance.</p>
+<h3 id="customer-support-and-service">Customer support and service<a hidden class="anchor" aria-hidden="true" href="#customer-support-and-service">#</a></h3>
+<p>Strong customer support is vital for maximizing a DSP’s benefits. Look for DSPs with robust training resources, detailed documentation, and reliable customer service.</p>
+<p><strong>Note</strong>: some DSPs only provide dedicated account management support during onboarding to ensure a smooth transition and effective platform use.</p>
+</blockquote>
+<p>And the author provides a comprehensive comparison table of the major DSP solution providers.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/google_ad_gossip/dsps.jpeg#center"
+         alt="source: setupad blog"/> <figcaption>
+            <p>source: <a href="https://setupad.com/blog/best-demand-side-platforms/">setupad blog</a></p>
+        </figcaption>
+</figure>
+
+<p>For the big players:</p>
+<blockquote>
+<h3 id="google-display--video-360">Google Display &amp; Video 360<a hidden class="anchor" aria-hidden="true" href="#google-display--video-360">#</a></h3>
+<p>Display &amp; Video 360 is a comprehensive programmatic advertising solution within the Google Marketing Platform, suitable for businesses of all sizes. It includes five key modules: creatives, campaigns, audiences, inventory, and insights.</p>
+<p>The platform supports cross-channel media planning, various ad formats, audience management, and robust fraud prevention. With numerous integrations, including Analytics 360 and YouTube, and ongoing feature updates, Display &amp; Video 360 offers powerful tools for reaching global audiences and optimizing ad campaigns, providing a seamless experience for advertisers.</p>
+</blockquote>
+<blockquote>
+<h3 id="the-trade-desk">The Trade Desk<a hidden class="anchor" aria-hidden="true" href="#the-trade-desk">#</a></h3>
+<p>The Trade Desk is a self-serve digital advertising platform founded in 2009, renowned for its transparency and robust data capabilities. It supports diverse ad formats, including CTV, display, mobile, social media, and programmatic audio, with advanced targeting options through RTB, PMP, direct, and guaranteed deals. The platform offers insights, automation, and optimization for cross-channel advertisers, enabling real-time audience reach at scale with guaranteed viewability and execution.</p>
+<p>Integrating first-party data, The Trade Desk boasts a network of over 225 partners, including Hulu, Disney, and Spotify. Key features include full-funnel attribution, real-time customized reporting, expert dedicated support, and top-quality traffic monitoring, making it suitable for experienced advertisers and newcomers.</p>
+</blockquote>
+<blockquote>
+<h3 id="amazon-dsp">Amazon DSP<a hidden class="anchor" aria-hidden="true" href="#amazon-dsp">#</a></h3>
+<p>Amazon DSP is a robust platform that enables purchasing display, video, and audio ads across a vast network of publishers, including Amazon-owned sites like Zappos and Audible. It features customizable ad templates, effective analytics with Amazon-specific metrics, audience insights for market comparison, and A/B testing capabilities.</p>
+<p>By leveraging Amazon’s extensive consumer data, it offers robust targeting options, cross-device tracking, and seamless integration with Amazon’s ad ecosystem, making it ideal for e-commerce brands. Available to both Amazon sellers and non-sellers, Amazon DSP provides both managed (typically requiring a $50k minimum spend) and self-service options.</p>
+</blockquote>
+<p>See the full list on the <a href="https://setupad.com/blog/best-demand-side-platforms/">original blog post</a>—it&rsquo;s highly recommended. The author outlines the strengths and specialties of all advertising platforms. It&rsquo;s worth noting that DSPs are large, client-facing platforms that connect advertisers to ad exchanges. Additionally, there are <em><strong>Ad Networks</strong></em> that serve as more direct two-sided ad transaction platforms, along with niche DSPs that offer more integrated and intricately designed ads, like <strong>Mobile DSPs</strong>, <strong>Native advertising DSPs</strong>, and <strong>Video DSPs</strong>.</p>
+<hr>
+<blockquote>
+<h2 id="ad-execs-sound-off-on-amazons-dsp-dilemma">Ad execs sound off on Amazon’s DSP dilemma<a hidden class="anchor" aria-hidden="true" href="#ad-execs-sound-off-on-amazons-dsp-dilemma">#</a></h2>
+<p>By <a href="https://digiday.com/author/ronandigiday-com/">Ronan Shields</a> and <a href="https://digiday.com/author/seb-joseph/">Seb Joseph</a> • March 25, 2024</p>
+</blockquote>
+<p>Amazon is striving to attract more advertisers to its platform. However, with major competitors like Google and <em>The Trade Desk</em> offering superior services, advertisers remain hesitant.</p>
+<blockquote>
+<p>Just 5% of the 44 respondents in a survey by Digiday chose Amazon as their preferred DSP if they could only select one. In contrast, nearly four in 10 (39%) opted for Google’s DV360. The same goes for The Trade Desk.</p>
+</blockquote>
+<figure class="align-center ">
+    <img loading="lazy" src="/google_ad_gossip/dsp_simple_market_share.jpeg#center"
+         alt="source: statista"/> <figcaption>
+            <p>source: <a href="https://www.statista.com/statistics/1475413/dsp-use/">statista</a></p>
+        </figcaption>
+</figure>
+
+<p>It&rsquo;s important to note that Amazon&rsquo;s DSP provides exclusive access to its consumers on the <code>Amazon</code> platform. However, advertisers also utilize Amazon for targeting audiences outside the Amazon network.</p>
+<p>But what do advertisers truly desire?</p>
+<blockquote>
+<p>When asked to rank those needs, respondents to Digiday’s survey prioritized audience targeting capabilities first, followed by return on investment and return on ad spend, post-ad campaign insights and recommendations, technology vision and roadmap, and finally, data protection.</p>
+</blockquote>
+<p>And here&rsquo;s survey data reflecting <strong>part</strong> of their market influence:</p>
+<blockquote>
+<p>A third of them (33%) said they’ve used the Amazon DSP in the past 12 months. Only The Trade Desk (at 56%) and Google DV360 (64%) received higher shares of responses.</p>
+</blockquote>
+<h3 id="reference">reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h3>
+<ol>
+<li><strong>Setupad.</strong> (n.d.). Best demand-side platforms. Setupad. Retrieved July 30, 2024, from <a href="https://setupad.com/blog/best-demand-side-platforms/">https://setupad.com/blog/best-demand-side-platforms/</a></li>
+<li><strong>Statista.</strong> (2024). Usage of demand-side platforms (DSP) worldwide from 2019 to 2023. Statista. Retrieved July 30, 2024, from <a href="https://www.statista.com/statistics/1475413/dsp-use/">https://www.statista.com/statistics/1475413/dsp-use/</a></li>
+<li><strong>Digiday.</strong> (2024). Digiday research: Ad execs sound off on Amazon’s DSP dilemma. Digiday. Retrieved July 30, 2024, from <a href="https://digiday.com/media-buying/digiday-research-ad-execs-sound-off-on-amazons-dsp-dilemma/">https://digiday.com/media-buying/digiday-research-ad-execs-sound-off-on-amazons-dsp-dilemma/</a></li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/">ariana&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="_KlbvhaKistzRA" async></script>
+
+</body>
+
+</html>
