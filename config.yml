@@ -80,7 +80,7 @@ menu:
       url: /search
       weight: 1
     - name: about me
-      url: /posts/pinned
+      url: /about
       weight: 11
     - name: pending ideas
       url: /procrastination_bulletin
