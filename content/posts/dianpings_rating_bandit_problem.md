@@ -1,7 +1,7 @@
 ---
 title: "Consumerism Gossip III ｜ Dianping’s Community Judges and the Math Behind 'Appropriateness'"
 date: 2025-04-24T14:54:48+08:00
-draft: true
+draft: false
 ---
 
 If you’ve never used **Dianping**, think Yelp—but shinier, angrier, and far more dominating with the fate of restaurants in China. It’s *the* platform people turn to when deciding whether some ¥68 hotpot buffet would be a delicious meal or a strict no-no.
