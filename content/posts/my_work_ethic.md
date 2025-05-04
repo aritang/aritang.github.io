@@ -16,7 +16,7 @@ weight: 2
 
 > In this industry, a lot of people can tell you a lot of different things, and, to be a different things or to sound a different way. I think that you have to just listen to what's inside, instead.
 >
-> Think I've kind of learned that the more authentic and genuine it is, the better it will work for you.
+> Think I've kind of learned that **the more authentic and genuine it is, the better it will work for you**.
 
 > I'll never truly feel like: okay, now I have made it, now I can stop. It's gonna take such a long time for me to ever reach that satisfaction because, I don't know what I would do without music.
 >
