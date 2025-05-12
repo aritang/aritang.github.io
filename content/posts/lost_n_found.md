@@ -32,4 +32,4 @@ Here’s one I wrote and delivered—not for a conference or a stage, but for a 
 >
 > We even have a fancy picture showing how our algorithm allocates food rescue volunteers:
 
-{{<figure align="center" src="/static/complaints/AI4SG.pdf" caption="Red and blue show different donor regions, color indicates a region’s popularity, and the lines represent how volunteers are assigned. Some areas are well-covered, while others are barely connected. Our approach rebalances these assignments **dynamically**." width="100%">}}
+{{<figure align="center" src="/complaints/AI4SG.pdf" caption="Red and blue show different donor regions, color indicates a region’s popularity, and the lines represent how volunteers are assigned. Some areas are well-covered, while others are barely connected. Our approach rebalances these assignments **dynamically**." width="100%">}}
