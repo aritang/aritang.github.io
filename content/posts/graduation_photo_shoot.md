@@ -2,6 +2,7 @@
 title: "Graduation Photo Shoot"
 date: 2025-05-16T00:05:17+08:00
 draft: false
+summary: "It's graduation season. Here are some lovely pictures."
 ---
 
 It's graduation season.
