@@ -13,3 +13,5 @@ Are you listening to anything the last time you read/wrote a paper?
 > Researchers describe how listening to music at work can boost (or hamper) productivity, and share the tunes that keep them focused.
 
 TLDR: music cheers you up—almost like a mental massage, dopamine boosters. So it makes tedious, repetitive work less unenjoyable. But music also takes up the brain's processing power, especially for people with musical training. Therefore, for creative work music hampers productivity.
+
+One more interesting observation: music might even be an addiction for somebody. For example, I find it hard to remove my headphones off me once I put them on...
