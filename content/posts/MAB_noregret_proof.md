@@ -17,7 +17,7 @@ In its most basic formulation, a $K$-armed bandit problem is defined by random v
 
 A policy chooses the next arm to play based on historical info. Let $T_i(n)$ denote the number of times arm $i$ has been played by the policy during the the first $n$ plays. The *regret* of the policy is defined by
 $$
-\text{Regret:}\quad\max_j \mu_j\cdot  n - \sum_{j\in [K]} \mu_j  \mathbb E[T_j(n)].
+\text{Regret(n)}:=\max_j \mu_j\cdot  n - \sum_{j\in [K]} \mu_j  \mathbb E[T_j(n)].
 $$
 
 ### Policy: UCB1
