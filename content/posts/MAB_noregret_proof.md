@@ -13,7 +13,7 @@ summary: "This is beautiful, beautiful, beautiful!"
 
 ### Definition of MAB Problem: Setting, and Solution Concepts
 
-In its most basic formulation, a $K$-armed bandit problem is defined by random variables $X_{i, n}$" for each bandit $i\in [K]$ and any time point $n\ge 1$. Successive plays of arm $i$ yield rewards $X_{i, 1}, X_{i, 2}, \ldots$, i.i.d. from an unknown distribution with unknown mean $\mu_i$. Independence also holds across arms: i.e. $X_{i, s}$ and $X_{j, t}$ are independent (and usually not identical) for each $i\ne j$.
+In its most basic formulation, a $K$-armed bandit problem is defined by random variables $X_{i, n}$ for each bandit $i\in [K]$ and any time point $n\ge 1$. Successive plays of arm $i$ yield rewards $X_{i, 1}, X_{i, 2}, \ldots$, i.i.d. from an unknown distribution with unknown mean $\mu_i$. Independence also holds across arms: i.e. $X_{i, s}$ and $X_{j, t}$ are independent (and usually not identical) for each $i\ne j$.
 
 A policy chooses the next arm to play based on historical info. Let $T_i(n)$ denote the number of times arm $i$ has been played by the policy during the the first $n$ plays. The *regret* of the policy is defined by
 $$
