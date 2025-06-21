@@ -30,4 +30,4 @@ It’s a stunning moment of synchronicity between sound, image, and performance:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pqdfmvFlnng?si=duuk8-EznHTuylAb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Longest day of the year. A good time to remember we’re more than what we’re made of.
+At the most magical day of the year, it's a good time to remember we’re more than what we’re made of.
