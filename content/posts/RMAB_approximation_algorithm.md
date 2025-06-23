@@ -6,6 +6,8 @@ draft: false
 
 The paper "Approximation Algorithms for Restless Bandit Problems" by Guha, Munagala, Shi (2009) designed a $2 + \epsilon$-approximation algorithm for a special class of RMAB ("Feedback MAB", and generalized to "Monotone MAB"). The algorithm is fundamentally different to the classical Whittle Index. The paper's analysis uses a duality-based algorithmic technique—it is vastly different compared with Weber (1988)'s proof for RMAB's asymptotic optimality, hence the $2 + \epsilon$ approximation outcome doesn't requires asymptotic.
 
+Link to the paper: https://arxiv.org/pdf/0711.3861
+
 ## Feedback MAB
 
 The paper considers a subclass of RMAB problem, termed as the Feedback MAB. It has $n$ independent arms. The decision maker pulls one arm at each time point. Reward criteria is averaged total rewards. 
