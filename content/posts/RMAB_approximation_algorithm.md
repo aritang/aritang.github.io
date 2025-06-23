@@ -4,7 +4,7 @@ date: 2025-06-22T11:45:32+08:00
 draft: false
 ---
 
-The paper "Approximation Algorithms for Restless Bandit Problems" by Guha, Munagala, Shi (2009) designed a $2 + \epsilon$-approximation algorithm for a special class of RMAB (Feedback MAB, and Monotone MAB). The algorithm is fundamentally different to the classical Whittle Index. The paper's analysis uses a duality-based algorithmic technique—it is vastly different compared with Weber (1988)'s proof for RMAB's asymptotic optimality, hence the $2 + \epsilon$ approximation outcome doesn't requires asymptotic.
+The paper "Approximation Algorithms for Restless Bandit Problems" by Guha, Munagala, Shi (2009) designed a $2 + \epsilon$-approximation algorithm for a special class of RMAB ("Feedback MAB", and generalized to "Monotone MAB"). The algorithm is fundamentally different to the classical Whittle Index. The paper's analysis uses a duality-based algorithmic technique—it is vastly different compared with Weber (1988)'s proof for RMAB's asymptotic optimality, hence the $2 + \epsilon$ approximation outcome doesn't requires asymptotic.
 
 ## Feedback MAB
 
@@ -75,30 +75,38 @@ s.t. \quad & \lambda + th_i \ge r_i - (1 - u_{it}) p_i, & \forall i\in [n], t \g
 \end{align*}
 $$
 
-### Analyzing LPLagrange and its dual
+### Analyzing $\texttt{LPLagrange($\lambda$)}$ and $\texttt{Dual($\lambda$)}$:
 
-The following parts will be dry but useful. Basically, we want to develop the closed form optimal policy for $\texttt{LPLagrange($\lambda$)}$—which are independent across arms. Based on which we will then derive the index algorithm.
+The following parts will be dry but useful. Basically, we want to characterize the optimal policy and optimal reward for $\texttt{LPLagrange($\lambda$)}$in **close form**. This would motivate the design of the index policy later as well as proving its approximation.
 
-Forget about the original LP ($\texttt{Whittle}$) for a moment. First, look at the objective of $\texttt{LPLagrange($\lambda$)}$:
-$$
-\lambda + \sum_{i = 1}^m \sum_{t\ge 1}(r_i x_{gt}^i - \lambda(x_{gt}^i + x_{bt}^i))
-$$
-It can be interpreted as, whenever each arm is played, a penalty $\lambda$ is incurred to the reward. The goal is to max expected reward minus cost of pulling arms, with no budget constraint.
-
-$\texttt{LPLagrange($\lambda$)}$ and its $\texttt{Dual($\lambda$)}$ are de facto, disjoint in arms—they yields $n$ disjoint max (min) problems, one for each arm $i$. And the $\texttt{LPLagrange($\lambda$)}$ and $\texttt{Dual($\lambda$)}$.
-
-> **Lemma 2.4 (informal)** Fix $\lambda$, the **optimal policy** solved from $\texttt{LPLagrange($\lambda$)}$ (and its $\texttt{Dual($\lambda$)}$) has the following special property:
+> **Lemma 2.4 (Optimal Policy for $\texttt{LPLagrange($\lambda$)}$)**
+>
+> Fix $\lambda$, the **optimal policy** solved from $\texttt{LPLagrange($\lambda$)}$ (and its $\texttt{Dual($\lambda$)}$) has the following special property:
 >
 > - If an arm $i$ was just observed in state $g_i$, pull the arm.
 > - If an arm $i$ was last observed in state $b_i$, wait $t_i^\star(\lambda)$ steps and play the arm.
+>
+> *Proof sketch:* 
+>
+> To begin with, notice that $\texttt{LPLagrange($\lambda$)}$ and its $\texttt{Dual($\lambda$)}$ yield $n$ disjoint max (min) problems, one for each arm $i$​—the constraints are already disjoint in arms. Furthermore, the objective function of $\texttt{LPLagrange($\lambda$)}$ can be rewrite as
+> $$
+> \lambda + \sum_{i = 1}^m \sum_{t\ge 1}(r_i x_{gt}^i - \lambda(x_{gt}^i + x_{bt}^i))
+> $$
+> which can be interpreted as, whenever each arm is played, a penalty $\lambda$ is incurred to the reward.
+>
+> Then, to pull each arm independently, with no budget constraint (remember we penalized it into the objective), with a penalty $\lambda$ for pulling—you can almost guess that the optimal policy should be in the form described in Lemma 2.4. To formally verifying it, one can write out and analyze the first-order optimality conditions (especially, complementary slackness)—and will lead to Lemma 2.4's results above.
 
-Lemma 2.4 is obtained from analyzing the complementary conditions between $\texttt{LPLagrange($\lambda$)}$ and its dual, and using $v_{it}, u_{it}$'s monotonicity on $t$. Lemma 2.4 here is pretty so nice that we can basically untangle this RMAB's optimal policy in closed form. Consider every arm $i$, fix playing the optimal policy, its dynamic can be characterized by a markov chain illustrated in the following picture:
+Using Lemma 2.4, while playing the optimal policy solved from $\texttt{LPLagrange($\lambda$)}$, every arm's dynamic can be characterized by a **markov chain** illustrated in the following picture:
 
 {{<figure align="center" src="/online/state_markov_chain.jpeg" caption="The Markov chain describing the optimal policy: it has $t_i^\star(\lambda) + 1$ states which denote $s, 0, 1, 2, t_i^\star(\lambda) - 1$. The state $s$ corresponds to the arm being last observed in the state $g$, and state $j  = 0,\ldots,  t_i^\star(\lambda) - 1$ corresponds to the arm being observed in state $b$ just $j$ times ago. The transition prob from state $j$ to $j + 1$ is 1, from state $s$ to $j = 0$ is $\beta_i$, from state $t - 1$ to $s$ is $v_{it}$ and $t\to 0$ is $1 - v_t$." width="88%">}}
 
-The markov chain above is easy to solve and give the following nice closed-form solution to the average reward of the optimal policy solved for $\texttt{LPLagrange($\lambda$)}$:
+Denote as $R_i(t_i^\star(\lambda))$ the average reward obtained from pulling arm $i$ when running Lemma 2.4's optimal policy, and $Q_i(t_i^\star(\lambda))$ the average time arm $i$ is pulled. The optimal objective reward for $\texttt{LPLagrange($\lambda$)}$ is:
+$$
+\lambda + \sum_{i\in [n]}\left(R_i(t_i^\star(\lambda)) - \lambda Q_i(t_i^\star(\lambda))\right).
+$$
+Furthermore, we can solve $R_i(t)$ and $Q_i(t)$ in closed form—more precisely
 
-> **Lemma 2.5**
+> **Lemma 2.5 (Optimal Reward in Closed-Form) for $\texttt{LPLagrange($\lambda$)}$**:
 >
 > Suppose playing an arm like this:
 >
@@ -109,19 +117,51 @@ The markov chain above is easy to solve and give the following nice closed-form 
 > $$
 > R_i(t) = r_i\frac{v_{it}}{v_{it} + t\beta_i},
 > $$
-> and expected rate of play
+> and expected rate of pulls
 > $$
 > Q_i(t) = \frac{v_{it} + \beta}{v_{it} + t\beta_i}.
 > $$
 > where, recall $v_{it} = \frac{\alpha_i}{\alpha_i + \beta_i}(1 - (1 - \alpha_i -\beta_i)^t)$ is the probability of an arm being in state $g_i$ when $t$ times ago it was last observed in $b_i$ state.
 
-Using Lemma 2.5, if we plug in the optimal solution's optimal wait-time $t_i^\star(\lambda)$ from Lemma 2.4—we obtain optimal reward $R_i(t_i^\star(\lambda))$ and wait time $Q_i(t_i^\star(\lambda))$. And the optimal objective reward for $\texttt{LPLagrange($\lambda$)}$ is:
+*Note*: the monotonicity of $R_i(t)$ is really important—it's increasing in $t$.
+
+Lastly, from strong duality, we have that for the optimal solution from $\texttt{Dual($\lambda$)}$would satisfy
 $$
-\lambda + \sum_{i\in [n]}\left(R_i(t_i^\star(\lambda)) - \lambda Q_i(t_i^\star(\lambda))\right).
+\lambda + \sum_i h^\star_i = \lambda + \sum_{i\in [n]}\left(R_i(t_i^\star(\lambda)) - \lambda Q_i(t_i^\star(\lambda))\right)
 $$
-Note: the monotonicity of $R_i(t)$ is really important—it's increasing in $t$.
 
+## Index Policy
 
+We will use the structure of the dual to facilitate the design of the optimal policy. First, solve from the original $\texttt{Whittle}$ LP we obtain $OPT$ as our approximation benchmark—note that this **upperbounds** any policy for the RMAB.
 
+We find a $\lambda^\star$ where, the optimal solution from the $\texttt{Dual($\lambda^\star$)}$ satisfies
+$$
+\lambda^\star = \sum_{i\in [n]}h_i^\star
+$$
+And this $\lambda^\star$ and accompanied $h_i^\star$ would satisfiy
+$$
+\lambda^\star \ge \frac{OPT}2, \quad \sum_{i \in [n]} h_i^\star \ge \frac{OPT}2.
+$$
+because the optimal solution of the $\texttt{Dual($\lambda^\star$)}$, $\lambda^\star + \sum_i h_i^\star$, would always upperbounds $OPT$. Note that $\lambda$ and $h_i^\star$ that satisfy this criteria can be found in poly time.
 
+The Index Policy, termed `BalancedIndexPolicy`, is as follows:
 
+> Input: instance of Feedback MAB.
+>
+> Find $\lambda^\star$ and solve $\texttt{LPLagrange($\lambda^\star$)}$ to obtain $t_i^\star(\lambda^\star)$—the time point above which the arm last observed in state $b$ shall resumed to be pulled. Note that for some arm, $t_i^\star(\lambda^\star) = \infty$—it's never pulled.
+>
+> - If exists any arm $i\in S$ in state $(g, 1)$, pull it.
+> - If no arm $i\in S$ is in state $(g, 1)$, play any arm $i\in S$ in state $(b, t)$ such that $t\ge t_i^\star(\lambda)$.
+> - Otherwise pull no arm.
+>
+> *Note:* this can be constructed as an index policy.
+
+### 2-approximation proof
+
+We use an amortization argument, linking the reward of the optimal single arm policy with that of the index policy to show 2-approximation.
+
+When the `BalancedIndexPolicy` runs, for any arm, we call it *blocked* if it's in state $(b, t)$ with $t\ge t^\star_i(\lambda^\star)$ (so that according to the optimal signle arm policy it's supposed to be pulled but it's not). Every arm evolves like this: when it's pulled after sometime idled—as long as it's maintained in state $(g, 1)$, the arm is continuously pulled until it turns bad $(b, 1)$ and remain idled, then perhaps blocked, until the next time it's pulled and repeat. We focus on the every sequence of period between the time the arm is first pulled til the time it's again being *blocked*. During this time that this arm is *not* blocked—either pulled or idled in $(b, t)$ for $t < t_i^\star(\lambda^\star)$—the average reward within this time block will be larger than $R_i(t_i^\star(\lambda^\star))$—as described in Lemma 2.5 above.
+
+We will split $R_i = \lambda Q_i + h_i$ and amortize it—Since $R_i(t_i^\star (\lambda^\star)) - \lambda Q_i(t_i(\lambda^\star)) = h_i^\star$—the average reward obtained from an arm during its non-blocked time equals $h_i^\star$ plus $\lambda$ per play. 
+
+Consider two cases for each time step, on steps where no arms is played, none of the arms is blocked—by definition the amortized reward is greater than $\sum_i h_i^\star \ge \frac{OPT}2$. When an arm is pulled—$\lambda$ is obtained. These two cases add up and finish the proof.
