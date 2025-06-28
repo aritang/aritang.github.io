@@ -6,10 +6,10 @@
 }
 
 body, button, input, textarea {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title-font {
-    font-family: 'Montserrat', sans-serif; /* Replace 'Your Font Name' */
+    font-family: 'Poppins', sans-serif; /* Replace 'Your Font Name' */
     font-weight: bold; /* Adjust as needed */
 }
