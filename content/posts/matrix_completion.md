@@ -13,19 +13,31 @@ $$
 where $ \Sigma \in \mathbb{R}^{r \times r} $ is diagonal with nonnegative entries. This corresponds to a matrix factorization of $ A $ with rank at most $ r $.
 
 The matrix completion task can now be posed as a rank minimization problem:
+
+
 $$
-\min_{\hat{A}} \ \mathrm{rank}(\hat{A}) \quad \text{subject to} \quad \hat{A}_{ij} = A_{ij}, \quad \forall (i,j) \in \Omega.
+\begin{align*}
+\min_{\hat{A}} &\quad  \text{rank}(\hat{A})\cr
+\text{subject to} & \quad \hat A_{ij} = A_{ij}, \quad \forall (i,j) \in \Omega.
+\end{align*}
 $$
 This problem is combinatorial and NP-hard. To make it tractable, we relax rank to a convex surrogate: the **nuclear norm**, defined as the sum of singular values:
 $$
-\|\hat{A}\|_* = \sum_k \sigma_k(\hat{A}).
+\|\|\hat{A}\|\| = \sum_k \sigma_k(\hat{A}).
 $$
 This mirrors the standard relaxation of $ \ell_0 $ to $ \ell_1 $ in sparse recovery: rank counts nonzero singular values (non-convex), while the nuclear norm sums them (convex).
 
 The relaxed optimization becomes:
+
+
 $$
-\min_{\hat{A}} \ \|\hat{A}\|_* \quad \text{subject to} \quad \hat{A}_{ij} = A_{ij}, \quad \forall (i,j) \in \Omega.
+\begin{align*}
+\min_{\hat{A}} &\quad  \|\|\hat{A}\| \|\cr
+\text{subject to} & \quad \hat A_{ij} = A_{ij}, \quad \forall (i,j) \in \Omega.
+\end{align*}
 $$
+
+
 This is a convex program and can be solved via semidefinite programming or first-order methods. Under suitable conditions (e.g. incoherence, random sampling), it recovers the true low-rank matrix with high probability.
 
 I'll discuss the dual problem and its interpretation in the next post.
