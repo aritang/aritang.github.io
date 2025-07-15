@@ -37,20 +37,22 @@ This blog serves as a gateway into my world of research, creativity, and everyda
 
 {{<figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan, at the SITE session of behavioral econ, it kinda solidified my passion for market design. Pic taken 2023 summer." >}}
 
-It updates on a daily basis. Here are some selected blog posts about ideas worth sharing:
+### art and music
+
+I'm really interested in classical music and ballet.
+
+> [Collection | Blog Posts About Ballet](/posts/ballet_posts_collection/)
+>
+> [Collection | Blog Posts About Classical Music](/posts/updated_classical_music_series/)
+
+The blog updates on a daily basis. I usually prioritize academic posts over musical ones, but when things get hectic, I turn to music. So if you spot a flurry of music posts, that’s me in full-on busy mode. Anyway—here’s the list:
+
+There are a lot of fun stuff in the blog. Try search for any potentially interesting keywords! Please feel free to contact me for anything :).
+
+## life
 
 I love Ariana Grande and the concept that her ***Sweetener*** album delivers:
 
 > **it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. sweetening the situation.**
 
 {{<figure align="center" src="/tattooed_heart/work_ethic.jpeg" caption="the post about [***my work ethics***](/posts/b_graph/): the more authentic and genuine it is, the better it will work for you">}}
-
-### art and music
-
-I'm really interested in classical music and ballet:
-
-> [Collection | Blog Posts About Ballet](/posts/ballet_posts_collection/)
->
-> [Collection | Blog Posts About Classical Music](/posts/updated_classical_music_series/)
-
-There are a lot of fun stuff in the blog. Try search for any potentially interesting keywords! Please feel free to contact me for anything :).
