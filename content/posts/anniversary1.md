@@ -6,7 +6,7 @@ draft: false
 
 Two years! ***Ariana's Blog*** quietly turns another page today. Another anniversary, another orbit around this little sun of words.
 
-Small but meaningful changes have crept in. I've been trying to write more independently — keeping AI at arm’s length, except grammar debug. There's a certain procrastination settling in. Perhaps next year, I’ll shake it off. My taste in classical music has evolved, too — reshaped by evenings spent in concert halls instead of restaurants, my shopping and dining budgets willingly surrendered to (a lot of) Rachmaninoff and Tchaikovsky. 
+Small but meaningful changes have crept in. I've been trying to write more independently, to keep AI assistance at some distance except grammar debugs. There's a certain procrastination settling in — perhaps next year I’ll shake it off a bit. My taste in classical music has evolved, too — reshaped by evenings spent in concert halls instead of restaurants, my shopping and dining budgets willingly surrendered to (a lot of) Tchaikovsky, Rachmaninov and Chopin.
 
 For the year ahead, I wish both my emotions and the blog's updating rhythms be more stable. And also, I may better organize these scattered daily fragments into more coherent passages.
 
