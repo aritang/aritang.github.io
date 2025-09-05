@@ -9,7 +9,7 @@ Classical music are (almost) defined as those **scored to be replayed**. Jazz, o
 ### The Gershwin Problem
 
 This flexibility makes **Gershwin’s** music both magical and… hard to track.  
-One Gershwin tune gets published, suddently hundreds of adaptations kissing up: big band versions, symphonic orchestrations, Broadway revivals, Hollywood musicals, ballets, and jazz improvisations. 
+One Gershwin tune gets published, suddently hundreds of adaptations kissing up: big band versions, symphonic orchestrations, Broadway revivals, Hollywood musicals, ballets, and jazz improvisations, pop music, etc. Apple Music Classical Catalogue won't even bother to try indexing the god-knows-how-many versions of Fascinating Rhythm/I Got Rhythm.
 
 Take ***An American in Paris***, for example. George Gershwin composed his symphonic tone poem *An American in Paris* in **1928**, inspired by his strolls through Paris and the city’s vibrant street sounds. It premiered on **December 13, 1928**, at Carnegie Hall, conducted by Walter Damrosch.
 
@@ -31,6 +31,6 @@ At its Carnegie Hall premiere, Gershwin’s *An American in Paris* was met with�
 >
 > (Oscar Thompson, New York Evening Post, December 21, 1928)
 
-*An American in Paris* sits at the crossroads of classical and jazz, embodying his vision of a truly **American sound** — cosmopolitan, energetic, and a little cheeky.  
+*An American in Paris* sits at the crossroads of classical and jazz, embodying his vision of a truly **American sound** — cosmopolitan, energetic, and a little cheeky. In my pov, yes AAiP might be too loud and Rhapsody of Blue might appeal more to concert-hall-ish classical music listeners. But AAiP still is much more classically inclined than Porgy and Bass
 
 But because Gershwin’s work has been repackaged so many times — from Broadway shows to Hollywood musicals to ballets like Balanchine’s ***Who Cares?*** — tracing any single composition’s “original” context can feel like chasing a jazz solo through smoky club air... And maybe that’s exactly the point: Gershwin’s music lives because it keeps adapting.
