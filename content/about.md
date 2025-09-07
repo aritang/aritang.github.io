@@ -7,19 +7,19 @@ cover:
     image: definition/think.jpeg
 ---
 
-> Last update: March 2025
+> Last update: Sept. 2025
 
 Hi, this is Ariana. Welcome to my corner of the internet!
 
 {{<figure align="center" src="/bio/profile_photo.jpeg" caption="August, 2023, Stanford. Taken by a Canon EOS M50m2.">}}
 
-Download My CV [***here***](/files/ariana_tang_cv.pdf). You are welcomed to contact me anytime for anything at `ariana_tang AT outlook DOT com`.
+Download My CV [***here***](/files/ariana_tang_cv.pdf). If there is anything I can help, my email is `ariana_tang AT uchicago DOT edu`.
 
 ## academic
 
-As a senior undergraduate at Shanghai University of Finance and Economics, my research focuses on market design and algorithmic game theory. I'm also interested in EconCS in general.
+I am a first year Economic PhD student at the Booth School of Business, University of Chicago. I obtained my Bachelor's degree at Shanghai University of Finance and Economics, where I was co-advised by Prof. Pinyan Lu and by Prof. Hu Fu at SUFE. During then, I have also had the pleasure of collaborating with Prof. Ryan Shi and Prof. Modibo Camara.
 
-I am co-advised by Prof. Pinyan Lu and by Prof. Hu Fu at SUFE. I have also had the pleasure of collaborating with Prof. Ryan Shi and Prof. Modibo Camara.
+My research focuses on market design. I'm also interested in EconCS in general.
 
 > **I believe that game theorists [also] need to be sensitive to cultural and psychological factors to better understand the incentives and constraints that people face.**
 >
@@ -45,7 +45,7 @@ I'm really interested in classical music and ballet.
 >
 > [Collection | Blog Posts About Classical Music](/posts/updated_classical_music_series/)
 
-The blog updates on a daily basis. I usually prioritize academic posts over musical ones, but when things get hectic, I turn to music. So if you spot a flurry of music posts, that’s me in full-on busy mode. Anyway—here’s the list:
+The blog updates on a daily basis. I usually prioritize academic posts over musical ones, but when things get hectic, I turn to music. **So if you spot a flurry of music posts, that’s me in full-on busy mode.** Anyway—here’s the list:
 
 There are a lot of fun stuff in the blog. Try search for any potentially interesting keywords! Please feel free to contact me for anything :).
 

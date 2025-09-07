@@ -82,6 +82,9 @@ menu:
     - name: about me
       url: /about
       weight: 11
-    - name: pending ideas
-      url: /procrastination_bulletin
+    # - name: pending ideas
+    #   url: /procrastination_bulletin
+    - name: "random"
+      pageRef: "/random"
+      weight: 99
 
