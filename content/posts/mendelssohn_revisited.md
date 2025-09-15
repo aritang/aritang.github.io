@@ -1,6 +1,6 @@
 ---
 title: "Geniusly Poised and Pride | Midsummer Night's Dream Revisited"
-date: 2025-09-14T08:55:13-05:00
+date: 2025-09-13T08:55:13-05:00
 draft: false
 ---
 
