@@ -1,0 +1,58 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  <p><em>Audio “src” is required.</em></p>
+{{- else -}}
+  {{- $title    := .Get "title"    | default "" -}}
+  {{- $artist   := .Get "artist"   | default "" -}}
+  {{- $caption  := .Get "caption"  | default "" -}}
+  {{- $cover    := .Get "cover"    | default "" -}}
+  {{- $download := .Get "download" | default false -}}
+  {{- $loop     := .Get "loop"     | default false -}}
+  {{- $autoplay := .Get "autoplay" | default false -}}
+  {{- $muted    := .Get "muted"    | default false -}}
+  {{- $srcOGG   := .Get "src_ogg" -}}
+
+  {{- $ext  := lower (path.Ext $src) -}}
+  {{- $mime := cond (eq $ext ".ogg") "audio/ogg" (cond (eq $ext ".wav") "audio/wav" "audio/mpeg") -}}
+
+  <figure class="audio-card{{ if $cover }} has-cover{{ else }} no-cover{{ end }}"
+          itemscope itemtype="https://schema.org/MusicRecording">
+
+    <!-- Background: blurred cover (always BELOW content) -->
+    <div class="audio-card__bg"
+         {{ if $cover }}style="background-image:url('{{ $cover | absURL | safeURL }}');"{{ end }}>
+    </div>
+
+    <!-- Glass tint layer (no blur) -->
+    <div class="audio-card__glass"></div>
+
+    <!-- Foreground content (sharp) -->
+    <div class="audio-card__content">
+      <div class="audio-card__media">
+        {{- if $cover -}}
+          <img src="{{ $cover | absURL | safeURL }}" alt="Cover art for {{ $title }}" loading="lazy" itemprop="image" />
+        {{- end -}}
+        <div class="audio-card__meta">
+          {{- if $title }}<div class="audio-card__title" itemprop="name">{{ $title }}</div>{{- end }}
+          {{- if $artist }}<div class="audio-card__artist" itemprop="byArtist">{{ $artist }}</div>{{- end }}
+        </div>
+      </div>
+
+      <audio class="audio-card__player" controls preload="metadata"
+        {{ if $autoplay }}autoplay{{ end }} {{ if $loop }}loop{{ end }} {{ if $muted }}muted{{ end }}>
+        <source src="{{ $src | absURL | safeURL }}" type="{{ $mime }}" />
+        {{- with $srcOGG -}}<source src="{{ . | absURL | safeURL }}" type="audio/ogg" />{{- end -}}
+        Your browser does not support the audio element.
+      </audio>
+
+      {{- if or $caption $download -}}
+        <figcaption class="audio-card__caption">
+          {{- if $caption -}}<span>{{ $caption }}</span>{{- end -}}
+          {{- if $download -}}
+            <a class="audio-card__download" href="{{ $src | absURL | safeURL }}" download>Download</a>
+          {{- end -}}
+        </figcaption>
+      {{- end -}}
+    </div>
+  </figure>
+{{- end -}}

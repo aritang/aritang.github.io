@@ -1,0 +1,45 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  <p><em>Audio “src” is required.</em></p>
+{{- else -}}
+  {{- $title   := .Get "title"   | default "" -}}
+  {{- $artist  := .Get "artist"  | default "" -}}
+  {{- $caption := .Get "caption" | default "" -}}
+  {{- $cover   := .Get "cover"   | default "" -}}
+  {{- $download := .Get "download" | default false -}}
+  {{- $loop := .Get "loop" | default false -}}
+  {{- $autoplay := .Get "autoplay" | default false -}}
+  {{- $muted := .Get "muted" | default false -}}
+  {{- $srcOGG := .Get "src_ogg" -}}
+
+  {{- $ext := lower (path.Ext $src) -}}
+  {{- $mime := cond (eq $ext ".ogg") "audio/ogg" (cond (eq $ext ".wav") "audio/wav" "audio/mpeg") -}}
+
+  <figure class="audio-card" itemscope itemtype="https://schema.org/MusicRecording">
+    <div class="audio-card__media">
+      {{- if $cover }}
+        <img src="{{ $cover | relURL | safeURL }}" alt="Cover art for {{ $title }}" loading="lazy" itemprop="image" />
+      {{- end }}
+      <div class="audio-card__meta">
+        {{- if $title }}<div class="audio-card__title" itemprop="name">{{ $title }}</div>{{- end }}
+        {{- if $artist }}<div class="audio-card__artist" itemprop="byArtist">{{ $artist }}</div>{{- end }}
+      </div>
+    </div>
+
+    <audio class="audio-card__player" controls preload="metadata"
+      {{ if $autoplay }}autoplay{{ end }} {{ if $loop }}loop{{ end }} {{ if $muted }}muted{{ end }}>
+      <source src="{{ $src | relURL | safeURL }}" type="{{ $mime }}" />
+      {{- with $srcOGG -}}<source src="{{ . | relURL | safeURL }}" type="audio/ogg" />{{- end -}}
+      Your browser does not support the audio element.
+    </audio>
+
+    {{- if or $caption $download -}}
+      <figcaption class="audio-card__caption">
+        {{- if $caption -}}<span>{{ $caption }}</span>{{- end -}}
+        {{- if $download -}}
+          <a class="audio-card__download" href="{{ $src | relURL | safeURL }}" download>Download</a>
+        {{- end -}}
+      </figcaption>
+    {{- end -}}
+  </figure>
+{{- end -}}
