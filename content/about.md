@@ -1,53 +1,53 @@
 ---
 title: "about me | Ariana (Haoyue) Tang"
-date: 2023-10-01T22:14:34+08:00
+date: 2025-09-21T22:14:34+08:00
 draft: false
 summary: the roadmap to a collection of interesting historical posts. freshly updated.
+aliases:
+  - /posts/pinned/
 cover:
     image: definition/think.jpeg
 ---
 
-> Last update: Sept. 2025
-
 Hi, this is Ariana. Welcome to my corner of the internet!
 
-{{<figure align="center" src="/bio/profile_photo.jpeg" caption="August, 2023, Stanford. Taken by a Canon EOS M50m2.">}}
+{{<figure align="center" src="/definition/zoom_screenshot.jpeg" caption="Download My CV [***here***](/files/ariana_tang_cv.pdf). If there is anything I can help, my email is `ariana_tang AT uchicago DOT edu`.">}}
 
-Download My CV [***here***](/files/ariana_tang_cv.pdf). If there is anything I can help, my email is `ariana_tang AT uchicago DOT edu`.
+## research
 
-## academic
-
-I am a first year Economic PhD student at the Booth School of Business, University of Chicago. I obtained my Bachelor's degree at Shanghai University of Finance and Economics, where I was co-advised by Prof. Pinyan Lu and by Prof. Hu Fu at SUFE. During then, I have also had the pleasure of collaborating with Prof. Ryan Shi and Prof. Modibo Camara.
+I am a first-year PhD at the Booth School of Business, University of Chicago. I obtained my Bachelor's degree at Shanghai University of Finance and Economics, where I was co-advised by Prof. Pinyan Lu and by Prof. Hu Fu. During then, I was very lucky to be advised by and collaborating with [Prof. Ryan Shi](https://ryanzshi.github.io) and [Prof. Modibo Camara](https://mkcamara.github.io).
 
 My research focuses on market design. I'm also interested in EconCS in general.
 
 > **I believe that game theorists [also] need to be sensitive to cultural and psychological factors to better understand the incentives and constraints that people face.**
 >
-> –– Alvin Roth
+> — Alvin Roth
 
 Acute perception, mathematical skills and a deep sense of empathy embodies the essence of a modern economist, and is what I'm committed to becoming. And here are the papers:
 
 > Price Stability and Improved Buyer Utility with Presentation Design: A Theoretical Study of the Amazon Buy Box. Ophir Friedler, Hu Fu, Anna Karlin, **Ariana Tang**. Accepted at The Web Conference 2025. [paper pdf](/files/Friedler_et_al_PriceStabilityPresentation-WWW.pdf) [poster](/files/bottle_of_bubbles-poster.pdf)
 
-> Contextual Budget Allocation for Food Rescue Volunteer Engagement. Ariana Tang, Naveen Raman, Fei Fang, and Ryan Shi. Working paper 2025. [paper pdf](/files/ContextualBudgetBandit4FoodRescue_Arxiv.pdf)
+> Contextual Budget Allocation for Food Rescue Volunteer Engagement. Ariana Tang, Naveen Raman, Fei Fang, and Ryan Shi. 2025. [ https://doi.org/10.48550/arXiv.2509.10777](https://doi.org/10.48550/arXiv.2509.10777)
 
-## blogs
+### "a blog about my research, art and life"
 
-This blog serves as a gateway into my world of research, creativity, and everyday thoughts. I started it inspired by Alvin Roth's market design blog.
+This blog is a gateway into my world of research, art, and everyday thoughts. I started it because Professor Alvin Roth's amazing market design blog.
 
 {{<figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan, at the SITE session of behavioral econ, it kinda solidified my passion for market design. Pic taken 2023 summer." >}}
 
-### art and music
+There are a lot of fun stuff in the blog. Try search for any keywords you found interesting and I have probably wrote something abot it. Or, please feel free to contact me for the interesting topic on your mind :)
 
-I'm really interested in classical music and ballet.
+## art
+
+I'm really interested in classical music and ballet. As the blog updates on a daily basis, while I usually prioritize academic posts over musical ones — **when things get hectic, I turn to music**. So if you spot a flurry of music posts, that’s me in full-on busy mode.
 
 > [Collection | Blog Posts About Ballet](/posts/ballet_posts_collection/)
 >
 > [Collection | Blog Posts About Classical Music](/posts/updated_classical_music_series/)
 
-The blog updates on a daily basis. I usually prioritize academic posts over musical ones, but when things get hectic, I turn to music. **So if you spot a flurry of music posts, that’s me in full-on busy mode.** Anyway—here’s the list:
+My favorite composer is **Pyotr Ilyich Tchaikovsky** (1840-1893), whom my cat is named after. My favourite piece is **Mendelssohn's *A Midsummer Night's Dream*** — specifically, the *Overture* (Op. 21) and the *Scherzo* (No. 1 Op. 61).
 
-There are a lot of fun stuff in the blog. Try search for any potentially interesting keywords! Please feel free to contact me for anything :).
+{{<figure align="center" src="/bio/tchai_cat.jpeg" caption="Tchaikovsky (2025-)">}}
 
 ## life
 

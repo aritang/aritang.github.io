@@ -2,7 +2,6 @@
 title: "Collection | Blog Posts About Classical Music"
 date: 2025-02-24T23:04:09+08:00
 draft: false
-weight: 3
 cover:
     image: art/monet_winter_haystack.jpeg
 ---

@@ -7,7 +7,7 @@ cover:
     image: definition/think.jpeg
 ---
 
-> Last update: March 2025
+> Last update: March 2025 **This is an older version.** See [here](/about/) for the updated page.
 
 Hi, this is Ariana. Welcome to my corner of the internet!
 

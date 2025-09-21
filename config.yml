@@ -49,19 +49,11 @@ outputs:
     - RSS
     - JSON # is necessary
 
+
 menu:
   main:
-    #- identifier: tags
-    #  name: tags
-    #    # url: posts/tags
-        #  weight: 10
-    # - identifier: tags
-    #   name: tags
-    #   url: posts/tags
-    #   weight: 10
-      #  url: /tags/
     - name: archive
-      url: archives
+      url: /archives
       weight: 10
     - name: search
       url: /search
@@ -69,9 +61,8 @@ menu:
     - name: about me
       url: /about
       weight: 11
-    # - name: pending ideas
-    #   url: /procrastination_bulletin
     - name: "random"
       pageRef: "/random"
       weight: 99
+
 
