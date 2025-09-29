@@ -21,7 +21,7 @@ My research focuses on market design. I'm also interested in EconCS in general.
 
 > **I believe that game theorists [also] need to be sensitive to cultural and psychological factors to better understand the incentives and constraints that people face.**
 >
-> — Alvin Roth
+> — Professor Alvin Roth
 
 Acute perception, mathematical skills and a deep sense of empathy embodies the essence of a modern economist, and is what I'm committed to becoming. And here are the papers:
 
@@ -33,26 +33,26 @@ Acute perception, mathematical skills and a deep sense of empathy embodies the e
 
 This blog is a gateway into my world of research, art, and everyday thoughts. I started it because Professor Alvin Roth's amazing market design blog.
 
-{{<figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan, at the SITE session of behavioral econ, it kinda solidified my passion for market design. Pic taken 2023 summer." >}}
+{{<figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Professor Roth and me and Alex Chan, at the SITE session of behavioral econ, 2023 summer. Professor Roth inspired me to start this blog." >}}
 
-There are a lot of fun stuff in the blog. Try search for any keywords you found interesting and I have probably wrote something abot it. Or, please feel free to contact me for the interesting topic on your mind :)
+Please do try searching for any keywords you might be interested in. I have probably wrote something abot it. If not, please feel free to contact me for the interesting topic on your mind :)
 
 ## art
 
-I'm really interested in classical music and ballet. As the blog updates on a daily basis, while I usually prioritize academic posts over musical ones — **when things get hectic, I turn to music**. So if you spot a flurry of music posts, that’s me in full-on busy mode.
+I'm really interested in classical music and ballet. As the blog updates on a daily basis, while I usually prioritize academic posts over musical ones — when things get hectic, I turn to music. So if you spot a flurry of music posts, that’s me in full-on busy mode.
 
 > [Collection | Blog Posts About Ballet](/posts/ballet_posts_collection/)
 >
 > [Collection | Blog Posts About Classical Music](/posts/updated_classical_music_series/)
 
-My favorite composer is **Pyotr Ilyich Tchaikovsky** (1840-1893), whom my cat is named after. My favourite piece is **Mendelssohn's *A Midsummer Night's Dream*** — specifically, the *Overture* (Op. 21) and the *Scherzo* (No. 1 Op. 61).
+My favorite composer is Pyotr Ilyich Tchaikovsky (1840-1893), whom my cat is named after. My favourite piece is Mendelssohn's *A Midsummer Night's Dream* — specifically, the *Overture* (Op. 21) and the *Scherzo* (No. 1 Op. 61). I also play the flute.
 
 {{<figure align="center" src="/bio/tchai_cat.jpeg" caption="Tchaikovsky (2025-)">}}
 
 ## life
 
-I love Ariana Grande and the concept that her ***Sweetener*** album delivers:
+I am greatly inspired by Ariana Grande's album ***Sweetener***:
 
-> **it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. sweetening the situation.**
+> **It's kind of about bringing light to a situation or to someone's life or somebody else brings light to your life, like, sweetening the situation.**
 
-{{<figure align="center" src="/tattooed_heart/work_ethic.jpeg" caption="the post about [***my work ethics***](/posts/b_graph/): the more authentic and genuine it is, the better it will work for you">}}
+{{<figure align="center" src="/tattooed_heart/work_ethic.jpeg" caption="Learn more about [*my work ethic*](/posts/my_work_ethic/): the more authentic and genuine it is, the better it will work for you.">}}

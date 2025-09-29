@@ -1,5 +1,5 @@
 ---
-title: "my work ethic | pinned post"
+title: "my work ethic"
 date: 2023-12-16T16:15:32+08:00
 draft: false
 cover: 

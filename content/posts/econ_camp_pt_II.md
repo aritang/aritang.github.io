@@ -6,12 +6,12 @@ draft: false
 
 ## Expected Utility Theory
 
-Suppose alternative space have a little structure:
+Suppose the space of alternatives has a little more structure:
 $$
 X = X_1 \times X_2 \times \cdots \times X_n.
 $$
 
-**Lottery Space**: Let $\mathcal{L} = \Delta(X)$ = set of lotteries on $X$ (probability distributions).
+We define **Lottery Space** on this $X$: Let $\mathcal{L} = \Delta(X)$ = set of lotteries on $X$ (probability distributions).
 
 ### Expected Utility Representation
 
