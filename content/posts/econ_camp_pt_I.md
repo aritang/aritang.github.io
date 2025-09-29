@@ -1,14 +1,14 @@
 ---
-title: "Econ 201 | Econ Camp at Booth"
+title: "Booth Econ Camp Class Note Part I"
 date: 2025-09-23T20:29:48-05:00
 draft: false
 ---
 
-The Econ Camp is taught by Professor Kamenica for 1st-year PhD students at Booth. This year, PhDs from Griffin and Harris also joined. It runs for a week, 3 hours every morning.
-
-{{<figure align="center" src="/market_design/econ_camp.jpeg" caption="At the Econ Department... Courtesy to Professor Kamenica’s exceptionally clean logical organization — these notes preserve the blackboard style." width="100%">}}
-
-Here's what's covered for the first two days:
+Before we begin, it's helpful to have this framework in mind:
+$$
+\text{Utility Functions }u(\cdot) \Leftrightarrow\text{Preferences } a \succeq b \Leftrightarrow\text{Choices (aka Data) }(\beta, C)
+$$
+Economists care about how to make the above concepts consistent (i.e. under what assumptions would the above $\Leftrightarrow$ hold mathematically).
 
 ## Choices and Choice Structures
 
@@ -92,7 +92,7 @@ if $p\cdot x(p',w') \leq w$ and $x(p,w)\neq x(p',w')$, then $p'\cdot x(p,w) > w'
 
 ---
 
-## The Slutsky Matrix
+## The Slutsky Matrix (I)
 
 Assume differentiability. Define
 
@@ -127,8 +127,9 @@ Thus $r(x_1) \neq r(x_1')$. This implies $r : \mathbb{R} \to \mathbb{Q}$  is **i
 
 ## Continuity and Representation
 
-*Contour sets:* $\succeq(x)=\lbrace y\mid y\succeq x\rbrace $, $\preceq(x)=\lbrace y\mid x\succeq y\rbrace $.  
-$\succeq$ is continuous if these sets are closed for each $x$.
+*Contour sets:* $\succeq(x)=\lbrace y\mid y\succeq x\rbrace $, $\preceq(x)=\lbrace y\mid x\succeq y\rbrace $. 
+
+> **Definition.** $\succeq$ is continuous if these sets are closed for each $x$.
 
 > **Theorem.** If $\succeq$ is rational and continuous, there exists a continuous utility $u$ representing it.
 
@@ -154,10 +155,147 @@ This defines $\lambda:X\to \mathbb{R}$ with $x\mapsto\bar\lambda(x)$, a canonica
 
 ---
 
-## Convexity
+## Convexity of Utility Function
 
 **Definition.** $\succeq$ is convex if whenever $y\succeq x$ and $z\succeq x$, then all convex combinations $\theta y+(1-\theta)z\succeq x$.  
 
 **Definition.** $u$ is quasi-concave if $u(\theta x+(1-\theta)y)\geq \min\lbrace u(x),u(y)\rbrace $.  
 
 **Claim.** If $\succeq$ is convex, any $u$ representing it is quasi-concave.
+
+----
+
+## Utility Maximization
+
+$$
+X(p,w) \equiv \arg\max_{x \in B_{p,w}} u(x), 
+\qquad 
+V(p,w) \equiv \max_{x \in B_{p,w}} u(x)
+$$
+
+Here $V$ is the **indirect utility function**. By construction,  
+
+$$
+V(p,w) = u(X(p,w)).
+$$
+
+**Propositions.**
+
+1. $V$ is continuous,  
+2. $V$ is homogeneous of degree $0$,  
+3. $V$ is strictly increasing in $w$ and weakly decreasing in $p$,  
+4. $V$ is quasi-convex in $p$.  
+
+---
+
+## The Expenditure Function and Hicksian demand:
+
+$$
+\begin{align*}
+& e(p,u_0) \equiv \min_{x} \{ p \cdot x \mid u(x) \geq u_0 \},
+\cr
+& h(p,u_0) \equiv \arg\min_{x} \{ p \cdot x \mid u(x) \geq u_0 \}.
+\end{align*}
+$$
+
+$h$ = Hicksian demand, $e$ = expenditure. Properties of $e$:
+
+1. Continuous,  
+2. Homogeneous of degree $1$ in $p$,  
+3. Strictly increasing in $u$, weakly increasing in $p$,  
+4. Concave in $p$.
+
+---
+
+## Duality:
+
+The neat equalities tying everything we've defined before: (I think here we need to assume some convexity in the underlying utility function)
+$$
+e(p, V(p,w)) = w, 
+\qquad 
+V(p, e(p,u_0)) = u_0
+$$
+
+$$
+X(p,w) = h(p, V(p,w)), 
+\qquad 
+h(p,u) = X(p, e(p,u)).
+$$
+
+---
+
+## Shephard’s Lemma
+
+Use envelope theorem: (Shephard’s Lemma)
+$$
+\frac{\partial e(p,u)}{\partial p_i} = h_i(p,u).
+$$
+
+Thus, Shephard's Lemma implies
+$$
+\frac{\partial h_i(p,u)}{\partial p_j} 
+= \frac{\partial^2 e(p,u)}{\partial p_i \partial p_j}.
+$$
+
+Which says, Hicksian demands equal the gradient of $e$, and their derivatives are the Hessian of $e$.
+
+---
+
+## The Slutsky Matrix from Hicksian Demand Function
+
+By chain rule:
+
+
+$$
+\frac{\partial h_i(p,u)}{\partial p_j} = \frac{\partial x_i(p,w)}{\partial p_j}  + \frac{\partial x_i(p,w)}{\partial w}\,x_j(p,w).
+$$
+
+
+
+Thus the Slutsky Matrix is also equivalent to
+$$
+S_{ij}(p,w) 
+= \frac{\partial h_i(p,V(p,w))}{\partial p_j}.
+$$
+
+---
+
+## Special Utility Structures to Keep in Mind:
+
+### Quasi-linear Utility
+
+> **Definition.** Preferences are **quasi-linear** if they can be represented by a utility function of the form  
+> $$
+> U(x_0,x_1,\dots,x_L)  =  x_0 + \hat U(x_1,\dots,x_L).
+> $$
+
+### Homothetic Preferences
+
+> **Definition.** Preferences are **homothetic** if they can be represented by a utility function that is homogeneous of degree 1.
+
+Equivalently: $u(x)$ represents homothetic preferences $\iff \exists$ strictly increasing $f$ such that $f(u(x))$ is homogeneous of degree 1.
+
+**Property.** If preferences are homothetic, then Marshallian demand satisfies  
+$$
+X(p,w) = \hat X(p) w.
+$$
+
+**Example.**  
+$U(x) = \sum_{l=1}^L \beta_l \ln(x_l)$ with $\sum \beta_l = 1$.  
+Equivalent form: $\hat U(x)=x_1^{\beta_1}\cdots x_L^{\beta_L}$ (Cobb–Douglas).  
+Then $U(\lambda x)=U(x)+\ln \lambda$ and $\hat U(\lambda x)=\lambda \hat U(x)$.
+
+
+### Discounted Utility
+
+$X =$ streams of consumption.  Let $\vec c = (c_0,c_1,\dots,c_T) \in X$.
+
+> **Definition.** Discounted utility representation:  
+> $$
+> U(\vec c) = \sum_{t=0}^T \delta^t u(c_t).
+> $$
+
+The $\delta$ represents trade-off between $c_t$ and $c_{t'}$: (MU := Marginal Rate of Substitution across time)
+$$
+\frac{MU_t}{MU_{t'}} = \frac{\delta^t}{\delta^{t'}} \cdot \frac{u'(c_t)}{u'(c_{t'})}.
+$$

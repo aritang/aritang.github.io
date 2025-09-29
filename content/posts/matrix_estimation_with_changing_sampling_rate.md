@@ -15,10 +15,14 @@ a_{ij} +\epsilon_{ij}  & (i, j) \in \Omega\cr
 0 & (i, j)\notin \Omega
 \end{cases},\quad (i, j)\in [m_1]\times [m_2].
 $$
-Let $\lambda = C_* \bar y \sqrt{\frac{\log(m_1+m_2)}{m_1n}}$, where $C_*$ is a large enough constant depend only on attributes of the random noise $\epsilon_{ij}$. Threshold $Y$'s singular values and obtain an estimated $\hat A$ by
+Let $\lambda = C \bar y \sqrt{\frac{\log(m_1+m_2)}{m_1n}}$, where $C$ is a large enough constant depend only on attributes of the random noise $\epsilon_{ij}$. Threshold $Y$'s singular values and obtain an estimated $\hat A$ by
+
+
 $$
 \hat A = \sum_{j = 1}^{m_1}\left[\sigma_j(Y) - \frac{\lambda m_1m_2}{2}\right]_+u_j(Y)v_j(Y)^T\tag{1}
 $$
+
+
 (Note: $\hat A$ is the optimal solution to $\min_{X}\Vert X - Y\Vert _F^2 + (\lambda m_1 m_2)\Vert X\Vert _*$)
 
 Then, if $n > m_1\log^3(m_1 + m_2)$, with probability at least $1 - 3/(m_1 + m_2)$,
