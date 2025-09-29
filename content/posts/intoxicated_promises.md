@@ -6,7 +6,7 @@ cover:
     image: "/art/vangogh_drinking.jpeg"
 ---
 
-{{<figure align="center" src="/art/vangogh_drinking.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="/art/vg_wine.jpeg" caption="" width="100%">}}
 
 In China, business deals are often made over dinners, where the essential informal/implicit consensus are reached. Drinking alcohol (especially, BaiJiu) in formal business dinner is not only for enjoyment, but more of a cultural etiquette—drinking with the the party is a way to **show respect and commitment**.
 
