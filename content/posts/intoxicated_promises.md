@@ -3,7 +3,7 @@ title: "Intoxicated Promises"
 date: 2025-09-29T04:56:55-05:00
 draft: false
 cover:
-    image: "/art/vangogh_drinking.jpeg"
+    image: "/art/vg_wine.jpeg"
 ---
 
 {{<figure align="center" src="/art/vg_wine.jpeg" caption="" width="100%">}}
