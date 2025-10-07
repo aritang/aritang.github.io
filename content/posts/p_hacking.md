@@ -11,13 +11,13 @@ At the *Conference on Frontiers in Machine Learning and Economics* (2025), Profe
 ## Motivation  
 
 Even dropping a vanishingly small proportion of observations can matter.  
-We should worry if removing a fraction $$\alpha \in (0,1)$$ of the data:  
+We should worry if removing a fraction $\alpha \in (0,1)$ of the data:  
 
-- flips the sign of an estimated effect,  
+- flips the sign of an estimated effect,
 - alters statistical significance, or  
 - reverses substantive conclusions.  
 
-Formally, define the **Maximum Influence Perturbation (MIP)**: the largest change in an analysis outcome when at most $$\alpha$$ fraction of the data is removed.  
+Formally, define the **Maximum Influence Perturbation (MIP)**: the largest change in an analysis outcome when at most $\alpha$ fraction of the data is removed.  
 
 ---
 
@@ -31,11 +31,11 @@ The challenge is clear: brute-force exploration of all subsets feels NP-hard lik
    \hat{\theta}(w) = \arg\min_\theta \sum_{n=1}^N w_n f(\theta, d_n) + R(\theta),
    $$
 
-   where $$w \in \{0,1\}^N$$ encodes which data points are included.  
+   where $w \in \{0,1\}^N$ encodes which data points are included.  
 
-2. Define a quantity of interest, e.g. a coefficient $$\phi(\hat{\theta}(w))$$.  
+2. Define a quantity of interest, e.g. a coefficient $\phi(\hat{\theta}(w))$.  
 
-3. Apply a **first-order Taylor expansion** around the full-data solution $$w = 1_N$$:  
+3. Apply a **first-order Taylor expansion** around the full-data solution $w = 1_N$:  
 
    $$
    \phi(w) \approx \phi(1) + \sum_{n=1}^N (w_n - 1)\,\psi_n,
@@ -48,7 +48,7 @@ The challenge is clear: brute-force exploration of all subsets feels NP-hard lik
    $$
 
 This yields a **linear influence approximation**.  
-Computation reduces to evaluating $$\psi_n$$, which is automatable with autodiff and implicit function theorems.  
+Computation reduces to evaluating $\psi_n$, which is automatable with autodiff and implicit function theorems.  
 
 A greedy-style selection over these influence scores provides a practical approximation to the Most Influential Set.  
 
