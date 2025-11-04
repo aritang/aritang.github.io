@@ -6,11 +6,11 @@ draft: false
 
 The musical scale is arguably humanity’s oldest algorithm for beauty.
 
-Music theory seems intimidating (for instance, I probably should have learned tuning theory back in 16 when I was sitting in orchestra). But it’s actually quite straightforward. Imagine you’re a piano designer: you want your instrument to sound nice, but you also don’t want it to have an infinite number of keys.
+Music theory can seem intimidating (for instance, I probably should have learned tuning theory back in 16 when I was sitting in orchestra). But it’s actually quite straightforward. Imagine you’re a piano designer: you want your instrument to sound nice, but you also don’t want it to have an infinite number of keys.
 
-> **Axiom 1 — Sound nice:** Two notes sound consonant when their frequencies form a ratio of small integers. The simpler the ratio, the more pleasant the sound. For example, a perfectly harmonic octave has a ratio of $2:1$, and a nice fifth has $3:2$.
+> **Axiom 1 (Sounding nice)** Two notes sound consonant when their frequencies form a ratio of small integers. The simpler the ratio, the more pleasant the sound. For example, a perfectly harmonic octave has a ratio of $2:1$, and a nice fifth has $3:2$.
 
-> **Axiom 2 — Finite keys:** We want a finite set $\mathbf{P}$ of notes (frequencies) that behaves almost like a group: moving up or down by an octave gives the same note, and $\mathbf{P}$ should be closed under transposition by a fifth (multiplying or dividing every frequency by $\frac{3}{2}$).
+> **Axiom (Finite keys)** We want a finite set $\mathbf{P}$ of notes (frequencies) that behaves almost like a group: moving up or down by an octave gives the same note, and $\mathbf{P}$ should be closed under transposition by a fifth (multiplying or dividing every frequency by $\frac{3}{2}$).
 
 These two axioms can’t both be perfectly satisfied. The impossibility is quite straightforward: for any base note $t$, the set of all fifth transpositions that still lie within one octave is infinite:
 $$
