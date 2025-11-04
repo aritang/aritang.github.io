@@ -49,9 +49,7 @@ Spooky.
 
 Music (and dance, perhaps) is the most primal, direct expressions of emotion among all art forms (in my pov, literature sits closer to thought and language). 
 
-Music demands humanity. So, what happens when a few prompts and algorithms can produce something *almost* human? However fancy the generated music sounds, it still feels a bit like one of those perfectly formatted price theory problem set solution—coherent, polished, and mysteriously hollow. Everything’s there except the truth.
-
-First music is the raw embodiment of human emotion. Well if there are anything, it's dance and music. It is the art itself — music and dance. Well literature has more "thinking" elements in it. That says, deep down in music's requirement for all those technique perfection, creativity, musicality, rhythms, all those words you will hear from critiques, all boils down to the demand for humanity. So if just a few prompt algorithmically generated music, it's more like my price theory homework...
+Music demands humanity. So, what happens when a few prompts and algorithms can produce something *almost* human? However fancy the generated music sounds, it still feels a bit like one of those perfectly formatted price theory problem set solutions.
 
 ### Will musicians lose their jobs?
 

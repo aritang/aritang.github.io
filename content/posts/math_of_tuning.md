@@ -20,11 +20,11 @@ Historically, three major tuning systems emerged:
 
 {{<figure align="center" src="/art/scales.jpeg" caption="'Sexy,' isn't it" width="100%">}}
 
-The old wisdom of Pythagorean, the ***Pythagorean scale*** is a heuristic that approximates both axioms with 12 notes. The ***just intonation*** system, by contrast, defines notes directly from pure integer ratios, producing the most consonant intervals but requiring many keys to preserve that purity across transpositions.
+The old wisdom of Pythagorean, the ***Pythagorean scale*** is a heuristic that approximates both axioms with 12 notes. The ***just intonation*** system, by contrast, defines notes directly from pure integer ratios, producing the most consonant intervals but requiring many, MANY keys to preserve that purity across transpositions.
 
 The problem was beautifully resolved by ***equal temperament*** — divide the octave into 12 equal geometric steps, each raised by $2^{1/12}$. This tuning slightly compromises the purity of individual intervals (for instance, the fifth is $1.4983$ instead of the perfect $1.5$), but the ear hardly minds. In return, we gain a beautifully closed, finite set $\mathbf{P}$ of 12 notes — a workable, nearly symmetric solution.
 
-It took humanity thousands of years to discover this best near-perfect solution of equal temperament — an *approximation of harmony* that satisfies both axioms as closely as possible. And finally, the piano sings brilliantly — and it does so with just 88 keys.
+It took humanity thousands of years to discover this near-perfect *approximation of harmony*. So finally, our piano sings brilliantly — and it does so with just 88 keys.
 
 <div style="display: flex; justify-content: center; margin: 1.5em 0;">
   <iframe
