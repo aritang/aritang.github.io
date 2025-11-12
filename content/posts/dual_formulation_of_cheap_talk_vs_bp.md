@@ -22,9 +22,9 @@ denote the (ex-ante) joint probability of state $\omega$ and induced action $a$ 
 
 $$
 \begin{align*}
-\max_{x \ge 0} \quad & \sum_{\omega,a} x_{\omega a}v(\omega,a) \\
+\max_{x \ge 0} \quad & \sum_{\omega,a} x_{\omega a}v(\omega,a) \cr
 \text{s.t.} \quad
-& \sum_a x_{\omega a} = \mu_0(\omega) && \forall \omega\\
+& \sum_a x_{\omega a} = \mu_0(\omega) && \forall \omega\cr
 & \sum_\omega x_{\omega a}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' .
 \end{align*}
 $$
@@ -33,10 +33,10 @@ $$
 
 $$
 \begin{align*}
-\max_{x \ge 0} \quad & \sum_{\omega,a} x_{\omega a}v(\omega,a) \\
+\max_{x \ge 0} \quad & \sum_{\omega,a} x_{\omega a}v(\omega,a) \cr
 \text{s.t.} \quad
-& \sum_a x_{\omega a} = \mu_0(\omega) && \forall \omega \\
-& \sum_\omega x_{\omega a}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' \\
+& \sum_a x_{\omega a} = \mu_0(\omega) && \forall \omega \cr
+& \sum_\omega x_{\omega a}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' \cr
 & \sum_a x_{\omega a}[v(\omega,a) - \mathbf 1_{\lbrace{\sum_{\omega'}x_{\omega'a'}>0}\rbrace}v(\omega,a')] \ge 0 && \forall \omega,a' .
 \end{align*}
 $$
