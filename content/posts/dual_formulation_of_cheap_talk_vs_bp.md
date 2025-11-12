@@ -14,7 +14,7 @@ Consider direct mechanisms. In general, the sender’s strategy $\sigma:\Omega \
 
 But note that we can absorb the mixed-strategy randomness into the sender's stagey — assume that in equilibrium the receiver follows the sender's recommendation, so $\rho(a)$ is degenerate at $a$. Let
 $$
-x_{\omega a} = \mu_0(\omega)\sum_{a\in A}\sigma(a|\omega)
+x_{a \omega} = \mu_0(\omega)\sum_{m\in M}\sigma(m|\omega) \rho(a\mid m)
 $$
 denote the (ex-ante) joint probability of state $\omega$ and induced action $a$ under $\sigma$. Now under this framework we can write Bayesian Persuasion and Cheap Talk in a unified optimization framework — say we're maximizing sender's payoff:
 
@@ -22,10 +22,10 @@ denote the (ex-ante) joint probability of state $\omega$ and induced action $a$ 
 
 $$
 \begin{align*}
-\max_{x \ge 0} \quad & \sum_{\omega,a} x_{\omega a}v(\omega,a) \cr
+\max_{x \ge 0} \quad & \sum_{a \omega} x_{a \omega}v(\omega,a) \cr
 \text{s.t.} \quad
-& \sum_a x_{\omega a} = \mu_0(\omega) && \forall \omega\cr
-& \sum_\omega x_{\omega a}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' .
+& \sum_a x_{a \omega} = \mu_0(\omega) && \forall \omega\cr
+& \sum_\omega x_{a \omega}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' .
 \end{align*}
 $$
 
@@ -33,11 +33,11 @@ $$
 
 $$
 \begin{align*}
-\max_{x \ge 0} \quad & \sum_{\omega,a} x_{\omega a}v(\omega,a) \cr
+\max_{x \ge 0} \quad & \sum_{a, \omega} x_{a \omega}v(\omega,a) \cr
 \text{s.t.} \quad
-& \sum_a x_{\omega a} = \mu_0(\omega) && \forall \omega \cr
-& \sum_\omega x_{\omega a}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' \cr
-& \sum_a x_{\omega a}[v(\omega,a) - \mathbf 1_{\lbrace{\sum_{\omega'}x_{\omega'a'}>0}\rbrace}v(\omega,a')] \ge 0 && \forall \omega,a' .
+& \sum_a x_{a \omega} = \mu_0(\omega) && \forall \omega \cr
+& \sum_\omega x_{a \omega}[u(\omega,a) - u(\omega,a')] \ge 0 && \forall a,a' \cr
+& \sum_a x_{a \omega}[v(\omega,a) - \mathbf 1_{\lbrace{\sum_{\omega'}x_{a' \omega'}>0}\rbrace}v(\omega,a')] \ge 0 && \forall \omega,a' .
 \end{align*}
 $$
 
