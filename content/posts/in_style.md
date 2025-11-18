@@ -1,3 +1,15 @@
+---
+title: "Minimalist and Fancy Hugo Papermod Front Page"
+date: 2025-11-17T22:22:27-06:00
+draft: false
+---
+
+Here's how to make Hugo PaperMod landing page (the main page) minimalistic, yet fancy. Inspired by Apple Tahoe OS's liquid glass aesthetic, on top of PaperMod's minimalistic design, I added (i) round corner for blog post boxes and (ii) interactive color change.
+
+In Hugo, aesthetic configs (e.g. page margins, text box colors) are ultimately controlled by **CSS**. Even better, PaperMod already has a built-in way to add custom CSS without touching the theme files: any CSS one put in
+ `assets/css/extended/*.css` in the project gets bundled automatically. So, just create one `assets/css/extended/margins.css` and paste the following CSS configurations (or, DIY yourself):
+
+```css
 /* ===========================
    LAYOUT: MAIN CONTENT + NAV
    =========================== */
@@ -132,3 +144,6 @@
   border-color: rgba(120, 160, 220, 0.35);
   box-shadow: 0 4px 14px rgba(120, 160, 255, 0.25);
 }
+
+```
+

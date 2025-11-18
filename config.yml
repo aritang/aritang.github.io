@@ -12,6 +12,7 @@ params:
   env: production
   math: true
   enableEmoji: true
+  ShowCodeCopyButtons : true
   katexPath : "katex"
   homeInfoParams:
     Title: "a blog about research, art and life 💋"
