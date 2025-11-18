@@ -7,8 +7,8 @@
   max-width: 88rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(2rem, 6vw, 6rem);
-  padding-right: clamp(2rem, 6vw, 6rem);
+  padding-left: clamp(0.66rem, 6vw, 6rem);
+  padding-right: clamp(0.66rem, 6vw, 6rem);
 }
 
 /* Top navigation bar: align with main content margins */
@@ -16,8 +16,8 @@
   max-width: 88rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(2rem, 6vw, 6rem);
-  padding-right: clamp(2rem, 6vw, 6rem);
+  padding-left: clamp(0.66rem, 6vw, 6rem);
+  padding-right: clamp(0.66rem, 6vw, 6rem);
 }
 
 /* ===========================
@@ -41,7 +41,7 @@
   transition:
     color 0.36s ease,
     text-shadow 0.2s ease,
-    transform 0.22s ease;
+    transform 0.24s ease;
 }
 
 .nav .logo a:hover {
