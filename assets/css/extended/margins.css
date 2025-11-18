@@ -1,0 +1,116 @@
+.main {
+  max-width: 88rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(2rem, 6vw, 6rem);
+  padding-right: clamp(2rem, 6vw, 6rem);
+}
+
+.nav {
+  max-width: 88rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(2rem, 6vw, 6rem);
+  padding-right: clamp(2rem, 6vw, 6rem);
+}
+
+.post-entry {
+  border-radius: 1.6rem;   /* adjust to taste */
+  padding: 1.44rem 1.6rem;   /* top/bottom   left/right */
+  margin-bottom: 2rem;   /* increase spacing between boxes */
+}
+
+.post-entry:hover {
+  border-radius: 1.6rem;
+}
+
+.post-entry:active {
+  border-radius: 1.6rem;
+}
+
+
+.post-entry {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  background: rgba(255, 255, 255, 0.35);   /* glassy transparency */
+  border: 1px solid rgba(255, 255, 255, 0.25);  /* subtle frosty edge */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);   /* floating glass look */
+  /* 👇 Make hover effects smooth */
+  transition:
+    background 0.36s ease,
+    border-color 0.36s ease,
+    box-shadow 0.36s ease,
+    transform 0.36s ease;
+
+}
+
+/* Hover: subtle blue aura + faint blueish glass tint */
+.post-entry:hover {
+  background: rgba(255, 255, 255, 0.35); /* VERY light blue tint */
+  border: 1px solid rgba(255, 255, 255, 0.25);  /* subtle frosty edge */
+  box-shadow: 0 12px 32px rgba(120, 180, 255, 0.18); /* soft blue glow */
+  transform: translateY(-2px); /* subtle lift */
+}
+
+.dark .post-entry {
+  background: rgba(40, 40, 45, 0.35);
+  border: 0.24px solid rgba(102, 101, 101, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dark .post-entry:hover {
+  background: rgba(40, 40, 45, 0.35); /* cool blue-gray tint */
+  /* border: 0.36px ; */
+  border-color: rgba(132, 169, 224, 0.45);
+  box-shadow: 0 12px 34px rgba(120, 160, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+
+.nav ul li a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #5A8FE4;  /* same soft blue */
+  text-shadow: 0 0 2px rgba(192, 192, 192, 0.288);
+}
+
+.nav .logo a {
+  transition:
+    color 0.36s ease,
+    text-shadow 0.2s ease,
+    transform 0.22s ease;
+}
+
+.nav .logo a:hover {
+  color: #5A8FE4;
+  /* text-shadow: 0 0 3.6px rgba(117, 172, 255, 0.45); */
+  transform: scale(1.006);   /* slightly more zoom for the title */
+}
+
+/* Subtle, classy press effect */
+
+.post-entry {
+  transition:
+    transform 0.25s ease,
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.post-entry:active {
+  transform: scale(0.985);
+  background: rgba(240, 248, 255, 0.55);
+  border-color: rgba(160, 200, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(120, 160, 255, 0.15);
+  transition: transform 0.08s ease, background 0.12s ease;
+}
+
+.dark .post-entry:active {
+  transform: scale(0.985);
+  background: rgba(70, 90, 120, 0.45);
+  border-color: rgba(120, 160, 220, 0.35);
+  box-shadow: 0 4px 14px rgba(120, 160, 255, 0.25);
+}
