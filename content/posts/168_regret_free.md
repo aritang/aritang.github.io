@@ -4,6 +4,8 @@ date: 2025-11-18T18:01:39-06:00
 draft: false
 ---
 
+###### Disclaimer: This post provides a factual summary and commentary on publicly available analysis. It does not constitute legal advice, institutional representation, or formal evaluation. All interpretations are solely my own.
+
 Drama! Here's a brilliant article publish in WeChat platform written by Fudan University's **undergrads**. Now this is what our future economist should look like:
 
 > ### 168的后悔药，复旦年销多少份？基于教务数据的期中退课规模、结构与影响因素分析
@@ -34,13 +36,19 @@ After cleaning, they built a 7112-row dataset linking course, teacher, and enrol
 > - Big Data, Microelectronics, Mathematics, Intelligent Computing: consistent top contributors.
 > - A few general-education courses are also excellent at fundraising.
 
-And they did some econometric. The main model looks like:
-\[
-\ln(E[Drop_{ic}]) = 
-\beta X_{ic} + \alpha_{\text{dept}} + \alpha_{\text{ctype}} 
-+ \ln(\text{InitialEnroll}_{ic})
-\]
+And they did some econometric. The main model looks like, for every session $i$ and course $c$:
+
+
+$$
+\ln{\mathbb E[Drop_{ic}]} = 
+\beta X_{ic} + \alpha_{\text{dept}} + \alpha_{\text{ctype}} + \text{ln}{(\text{InitialEnroll}_{ic})}
+$$
+
+
+
+
 Variables in $X$ includes:
+
 - **Credits** (proxy for economic penalty).
 - **Course burden** = difficulty + weekly workload.
 - **Teacher ability** = Q11 (“teacher competent”).
