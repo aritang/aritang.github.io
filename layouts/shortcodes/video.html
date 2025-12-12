@@ -1,0 +1,47 @@
+{{/* 
+  Hugo video embed shortcode
+  Usage examples:
+
+  {{< video src="https://www.youtube-nocookie.com/embed/VIDEO_ID" >}}
+
+  {{< video src="https://www.youtube.com/embed/VIDEO_ID" start="90" >}}
+
+  {{< video src="https://player.bilibili.com/player.html?isOutside=true&aid=123&bvid=XXX&cid=YYY&p=1" t="306" >}}
+
+*/}}
+
+{{- $src := .Get "src" -}}
+{{- $start := .Get "start" -}}
+{{- $t := .Get "t" -}}
+{{- $autoplay := .Get "autoplay" | default "0" -}}
+{{- $width := .Get "width" -}}
+
+{{/* Build query string safely */}}
+{{- $query := slice -}}
+
+{{- if $start -}}
+  {{- $query = $query | append (printf "start=%s" $start) -}}
+{{- end -}}
+
+{{- if $t -}}
+  {{- $query = $query | append (printf "t=%s" $t) -}}
+{{- end -}}
+
+{{- if ne $autoplay "1" -}}
+  {{- $query = $query | append "autoplay=0" -}}
+{{- else -}}
+  {{- $query = $query | append "autoplay=1" -}}
+{{- end -}}
+
+{{- $qs := "" -}}
+{{- if gt (len $query) 0 -}}
+  {{- $qs = printf "?%s" (delimit $query "&") -}}
+{{- end -}}
+
+<div class="video-embed"{{ with $width }} style="max-width: {{ . }};"{{ end }}>
+  <iframe
+    src="{{ $src }}{{ $qs }}"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
