@@ -16,7 +16,7 @@ Let along, the creative divertissements in the 2nd act. These sections are famou
 
 ### A surprisingly delightful take on Chinese Tea
 
-{{<figure align="center" src="/art/ginger.jpeg" caption="">}}
+{{<figure align="center" src="/art/tea.jpeg" caption="">}}
 
 ### Mother Gigogne: they really went **nuts**...
 
@@ -32,8 +32,6 @@ Let along, the creative divertissements in the 2nd act. These sections are famou
 
 ## A Closing Thought on the Music
 
-I have to end with the music, because Tchaikovsky is the heartbeat of *The Nutcracker*. Lyric’s hall uses amplified sound to carry the orchestra from the pit—a practical solution, though not a perfect one. The mix sometimes dulled the nuances and softened the sparkle of the score.
+I have to end with the music, because Tchaikovsky is the heartbeat of *The Nutcracker*. Lyric’s hall uses amplified sound to carry the orchestra from the pit—practical, understandable, a little disappointing... The mix sometimes dulled the nuances and softened the sparkle of the score.
 
-But despite the (?) acoustics, the excellence of the Lyric Opera Orchestra was unmistakable. I’ve listened to *The Nutcracker* obsessively, and this performance still surprised me. They sound right. The musical director understands Nutcracker I think. The musicians gave the ballet a pulse that cut through everything. 
-
-So Tchaikovsky’s music rose up and claimed the night—as it always does.
+Despite this, the Lyric Opera Orchestra is actually pretty good. I listen to *The Nutcracker* obsessively. **They sound right**.  The musical director understands the dynamic. And it's especially more admirable given the fact that it's performed alongside the ballet (often, orchestra has to compromise to dance steps). Nevertheless, the musicians gave the ballet a pulse that cut through everything. Tchaikovsky’s music rose up and claimed the night—as it always does.
