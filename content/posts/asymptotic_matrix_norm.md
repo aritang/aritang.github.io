@@ -12,28 +12,29 @@ Denote as $\sigma\in \R^r$ the singular value vector. Its norms would satisfy:
 
 - Spectral norm
     $$
-    \|A\|_2 = \sigma_1=\|\sigma\|_{\infty}.
+    \Vert A\Vert _2 = \sigma_1=\Vert \sigma\Vert _{\infty}.
     $$
 
 - Frobenius norm
+    
+    
     $$
-    \|A\|_F = \sqrt{\sum_{i=1}^r \sigma_i^r} = \|\sigma\|_2
+    \Vert A \Vert_F = \sqrt{\sum_{i=1}^r \sigma_i^r} = \Vert \sigma\Vert_2
     $$
-
+    
+    
 - Nuclear norm
     $$
-    \|A\|_* = \sum_{i =1 }^r \sigma_i = \|\sigma\|_1.
+    \Vert A\Vert_* = \sum_{i =1 }^r \sigma_i = \Vert \sigma\Vert_1.
     $$
 
-$\|A\|_F $'s order will be $O(\sqrt{r} \sigma_{\max})$, and $\|A\|_*$ will be of $O(r\sigma_\max)$. Actually
+$\Vert A\Vert_F $'s order will be $O(\sqrt{r} \sigma_{\max})$, and $\Vert A\Vert_*$ will be of $O(r \sigma_{\max})$. Actually
+
+
 $$
-\|A\|_2^2\le \|A\|_F^2 \le r\|A\|_2^2.
+\Vert A\Vert_2^2\le \Vert A\Vert_F^2 \le r\Vert A\Vert_2^2.
 $$
 Further assuming $|A_{ij}|\le \bar a$ (uniformly bounded) we do have
 $$
-\|A\|_F\le \sqrt{mn}\bar a.
+\Vert A\Vert_F\le \sqrt{mn}\bar a.
 $$
-
-
-
-
