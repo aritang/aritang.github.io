@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # HUGO_VERSION: 0.117.0
-      HUGO_VERSION: ${{ github.event.inputs.hugoVersion || '0.125.7' }}
+      HUGO_VERSION: ${{ github.event.inputs.hugoVersion || '0.153.1' }}
     steps:
       - name: Install Hugo CLI
         run: |
