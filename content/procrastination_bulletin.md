@@ -4,7 +4,7 @@ date: 2024-10-11T20:58:21+08:00
 draft: false
 ---
 
-{{<figure align="center" src="/tattooed_heart/procrastination.jpeg">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/procrastination.jpeg">}}
 
 the list of every ideas that i've **initiated yet unfinished**, with their starting time
 

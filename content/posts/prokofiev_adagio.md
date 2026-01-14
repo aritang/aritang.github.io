@@ -6,7 +6,7 @@ draft: false
 
 The famous Abbado-Agerich 1974 recording includes one Prokofiev and two Ravels. All three are splendid piano works.
 
-{{<figure align="center" src="/art/prokofiev_abbado_argerich.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/prokofiev_abbado_argerich.jpeg" caption="" width="100%">}}
 
 Argerich performed Ravel Piano Concerto in G at Nobel Prize Concert 2009:
 

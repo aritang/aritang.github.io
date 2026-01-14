@@ -6,7 +6,7 @@ draft: false
 
 Here's a new book that I cramed down my stomach over a weekend trip:
 
-{{<figure align="center" src="/google_ad_gossip/subprime_attention.jpeg" caption="Tim Hwang (2020) *Subprime Attention Crisis Advertising and the Time Bomb at the Heart of the Internet*" width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/subprime_attention.jpeg" caption="Tim Hwang (2020) *Subprime Attention Crisis Advertising and the Time Bomb at the Heart of the Internet*" width="66%">}}
 
 An irritatingly catchy cover, right?
 
@@ -34,7 +34,7 @@ There are some problems though.
 
 3. The book is somewhat too long:
 
-    {{<figure align="center" src="/google_ad_gossip/mean_book_comment.jpeg" caption="This is a little bit mean, but also so true." width="99%">}}
+    {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/mean_book_comment.jpeg" caption="This is a little bit mean, but also so true." width="99%">}}
 
 ### reference
 

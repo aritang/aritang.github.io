@@ -23,4 +23,4 @@ In conclusion, some authors often assume everyone gets the math and skip it. May
 
 Seriously? Come on!
 
-![ariana_squit2](/complaints/ariana_squit2.jpeg)
+![ariana_squit2](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/ariana_squit2.jpeg)

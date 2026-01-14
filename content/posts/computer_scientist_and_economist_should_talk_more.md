@@ -21,7 +21,7 @@ As a consequence, English and first-price auctions are shill-proof.
 
 ## Day 2:
 
-{{<figure align="center" width="100%" src="/online/cs_econ_talk.jpeg" caption="Professor Kamenica: 'This is a dangerous claim!'">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/cs_econ_talk.jpeg" caption="Professor Kamenica: 'This is a dangerous claim!'">}}
 
 The talk was a crash course on *Twenty Lectures on Algorithmic Game Theory*. For the record, Professor Roughgarden covered network games, the computability of equilibrium concepts, and the price of anarchy.
 

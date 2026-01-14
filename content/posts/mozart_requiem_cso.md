@@ -6,11 +6,11 @@ draft: false
 
 Tonight Honeck conducted the CSO in Mozart’s *Requiem*:
 
-{{<figure align="center" src="/art/cso_requiem.jpeg" caption="CSO and the Chicago Symphony Chorus">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cso_requiem.jpeg" caption="CSO and the Chicago Symphony Chorus">}}
 
 Honeck’s arrangement wove together Mozart’s *Requiem* (K.626) with several of his earlier funeral works, linked by **backstage** Gregorian chants:
 
-{{<figure align="center" src="/art/cso_requiem_arrangement.jpeg" caption="Special Mozart Requiem program from [CSO’s official program book](https://issuu.com/chicagosymphony/docs/program_book_-_honeck_conducts_mozart_requiem). It clarifies the interesting history untangle the complicated authorship of Requiem. CSO's really got amazing people writing program notes.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cso_requiem_arrangement.jpeg" caption="Special Mozart Requiem program from [CSO’s official program book](https://issuu.com/chicagosymphony/docs/program_book_-_honeck_conducts_mozart_requiem). It clarifies the interesting history untangle the complicated authorship of Requiem. CSO's really got amazing people writing program notes.">}}
 
 My favorite touch was how he opened and closed the performance with three bell strikes. It felt like a signal: we’re stepping out of the everyday world and into a different space for forty minutes, then gently returned.
 

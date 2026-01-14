@@ -8,7 +8,7 @@ When I have to show a series of  experiment results plottings, I used to use Mei
 
 Not anymore now I got my hands on Imagemagick (https://imagemagick.org/).
 
-{{<figure align="center" src="/data_vis/magick_wizard.jpeg" caption="ImageMagick[®](http://tarr.uspto.gov/servlet/tarr?regser=serial&entry=78333969) is a free, [open-source](https://imagemagick.org/script/license.php) software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file [formats](https://imagemagick.org/script/formats.php), including JPEG, PNG, GIF, TIFF, and Ultra HDR." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/magick_wizard.jpeg" caption="ImageMagick[®](http://tarr.uspto.gov/servlet/tarr?regser=serial&entry=78333969) is a free, [open-source](https://imagemagick.org/script/license.php) software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file [formats](https://imagemagick.org/script/formats.php), including JPEG, PNG, GIF, TIFF, and Ultra HDR." width="88%">}}
 
 Although when operated on PDF it loses the vector proporty but overall, being able to concatenate image by a single command operation in terminal is fascinating:
 

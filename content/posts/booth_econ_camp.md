@@ -6,7 +6,7 @@ draft: false
 
 The 2025 Econ Camp is taught by Professor Emir Kamenica for incoming PhD students at Booth. This year, first-years from Griffin and Harris also joined, making the room a cross-department gala of future scholars craving for free coffee. The camp runs for an intensive week, with three hours of lectures every morning.  
 
-{{<figure align="center" src="/market_design/econ_camp.jpeg" caption="At the Econ Department... Thanks to Professor Kamenica’s exceptionally clean logical organization, these notes preserve the blackboard style." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/market_design/econ_camp.jpeg" caption="At the Econ Department... Thanks to Professor Kamenica’s exceptionally clean logical organization, these notes preserve the blackboard style." width="100%">}}
 
 The following is a catalog of my notes from class. They aim to preserve the "chalkboard clarity" of Professor Kamenica's lectures. Which says, these are not polished essays but a structured record of the logical flow: definitions, theorems, and occasionally examples.
 

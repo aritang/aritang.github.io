@@ -12,6 +12,6 @@ Story from the New York Times:
 
 "Trying to avoid antitrust suits, Google systematically told employees to destroy messages, avoid certain words and copy the lawyers as often as possible."—for example, as dug up in DOJ's lawsuit evidence:
 
-{{<figure align="center" src="/google_ad_gossip/boo_words.jpeg" caption="[source](https://www.justice.gov/d9/2023-09/416634.pdf)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/boo_words.jpeg" caption="[source](https://www.justice.gov/d9/2023-09/416634.pdf)" width="100%">}}
 
 The New York Time's story dug down into how Google build and maintained its "What happens in Vegas" culture, and how it has annoyed the judges during the lawsuit. Well, the strategy seems to be working... It ends with an irony touch that since Google has went under lawsuits, it's obliged to enforce records in its compant's internal chats and emails—then, Google employees switch to WhatsApp, Meta's secure messaging app.

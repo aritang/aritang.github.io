@@ -6,7 +6,7 @@ draft: false
 
 Professor Yinyu Ye is currently giving a lecture series on **Optimization Methods for Data Science, Machine Learning, and AI** at the Shanghai Institute for Mathematical and Interdisciplinary Sciences (SIMIS). This week’s lecture—part two of the series—is focused on *duality*.
 
-{{<figure align="center" src="/online/week_2_duality.jpeg" caption="Lecture videos and course materials are available here: https://www.simis.cn/optimization-methods-for-data-science-and-machine-learning-and-ai/" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/week_2_duality.jpeg" caption="Lecture videos and course materials are available here: https://www.simis.cn/optimization-methods-for-data-science-and-machine-learning-and-ai/" width="100%">}}
 
 The class style is really “minimalistic examples for profound insights.” There's a similar phrase often used in China: *大道至简*  (The greatest truths are the simplest). It may sound cliché, but a contribution so widely-known that it becomes a cliché—that's impact, lol.
 
@@ -83,7 +83,7 @@ First we will introduce Wasserstein distance, and a little bit of its properties
 
 Consider a transportation problem where there’s supply $\mathbf{s}$ and demand $\mathbf{d}$ across a transportation graph, with transportation costs $C$ associated with each edge:
 
-{{<figure align="center" src="/online/W-distance.jpeg" caption="Left: transportation problem/allocation/two-sided matching. Right: its corresponding Primal/Dual." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/W-distance.jpeg" caption="Left: transportation problem/allocation/two-sided matching. Right: its corresponding Primal/Dual." width="100%">}}
 
 The **Wasserstein distance** between the supply $\mathbf{s}$ and demand $\mathbf{d}$ is the minimal transportation cost required to match them. The problem is linear and can be formulated as an LP as shown above.
 

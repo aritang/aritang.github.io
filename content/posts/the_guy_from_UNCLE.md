@@ -6,7 +6,7 @@ draft: false
 
 I’m a big fan of Guy Ritchie’s action films. They have rhythm, style, and tension — and above all, they move like music.
 
-{{<figure align="center" src="/art/the_man_from_uncle.jpeg" caption="The Man from U.N.C.L.E. (2015) directed by Guy Ritchie." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/the_man_from_uncle.jpeg" caption="The Man from U.N.C.L.E. (2015) directed by Guy Ritchie." width="100%">}}
 
 **The Man from U.N.C.L.E.** is, at a glance, a classic agent action film — think *007* or *Kingsman*. It’s sleek, witty, and holds up *relatively* well in both plot and characters. But what sets it apart is how much care and craftsmanship Ritchie brings to every frame.
 

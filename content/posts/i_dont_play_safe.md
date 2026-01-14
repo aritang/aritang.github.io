@@ -23,6 +23,6 @@ But, hey, I’m keeping my cool. Panicking is about as useful as a chocolate tea
 >
 > I ain't missin' no steps
 
-{{<figure align="center" src="/tattooed_heart/i_dont_play_safe.jpeg" caption="when my heart break, when my world shake... it's like same chaotic and absurdity but more control">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/i_dont_play_safe.jpeg" caption="when my heart break, when my world shake... it's like same chaotic and absurdity but more control">}}
 
 Coolness. Btw, regarding that bus scenario, turns out, it's not just bad luck in terms of statistic theories. Thanks to the quirks of probability, when buses don't run like clockwork, expected wait time will indeed be longer than the mean of interval. So it goes with the bus, so it goes with life. There are peaks, there are valleys, and sometimes you're just stuck at the bus stop a bit longer.

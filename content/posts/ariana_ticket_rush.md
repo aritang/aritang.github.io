@@ -6,7 +6,7 @@ draft: false
 
 The singer announced "the eternal sunshine Tour" almost two weeks ago. Presales launch today 10:00. I was aware of pop music concert's popularity, yet I didn't expected it to be such a rush:
 
-{{<figure align="center" src="/eternal_sunshine/ariana_ticket_waitlist.jpeg" caption="Queue for getting a ticket in Chicago... The Chicago *United Center* stadium can holds up to 23500 audience." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/ariana_ticket_waitlist.jpeg" caption="Queue for getting a ticket in Chicago... The Chicago *United Center* stadium can holds up to 23500 audience." width="100%">}}
 
 The TicketMaster sales mechanism works as follows: you join the queue starting 9:30 and the sale goes on live 10:00, where queued consumer are then given a relatively chilled purchase opportunity before their follower join. The mechanism does slow down the rush in a more civil manner.
 

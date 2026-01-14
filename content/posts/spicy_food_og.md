@@ -7,7 +7,7 @@ summary: "The pepper-heavy cuisine in Southwest China has an economic reason."
 
 I’m spending a week in Southwest China (Guiyang and Kunming), where the food is **fiery** spicy.
 
-{{<figure align="center" src="/wine/tomato_fish.jpeg" caption="Fermented tomato sour soup fish." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/tomato_fish.jpeg" caption="Fermented tomato sour soup fish." width="100%">}}
 
 One common theory claims that humid climates lead to pepper-heavy cuisine—but that doesn’t hold up. Take Guangzhou (my hometown) or the Jiangzhehu region (around Shanghai): both are hot and humid, yet our food is mild. (Humidity *does* encourage diverse spices, but that’s a different topic.)
 

@@ -6,7 +6,7 @@ draft: false
 
 Tchaikovsky’s *Sleeping Beauty* is one of the few works he was genuinely proud of — which is remarkable, considering his famously self-critic personality. The score is so stunningly good that, at times, the ballet choreography seems boring compared to the music.
 
-{{<figure align="center" src="/art/tchai_smiling.jpeg" caption="Tchaikovsky was notorious for writing ballet music so difficult that dancers struggled to find tempo and balance on stage. (Of course, critics in 1890 hadn’t yet met Stravinsky’s *Rite of Spring* — that riot was still 40 years away.)" width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/tchai_smiling.jpeg" caption="Tchaikovsky was notorious for writing ballet music so difficult that dancers struggled to find tempo and balance on stage. (Of course, critics in 1890 hadn’t yet met Stravinsky’s *Rite of Spring* — that riot was still 40 years away.)" width="50%">}}
 
 Some dancers call Sleeping Beauty a “classical gem in the repertoire, showing all the amazing techniques”. It does feel a bit long and uneventful,  but Tchaikovsky makes it forgivable.
 

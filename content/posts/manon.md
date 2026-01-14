@@ -6,7 +6,7 @@ draft: false
 
 I watched the Australian Ballet's 2025 season [***Manon***](https://australianballet.com.au/performances/manon?srsltid=AfmBOoqI0tKpCIUlbJDKN4VBcjHb2CnIyq5UN5GuMHDu-55RXjIm2q2O#synopsis-and-cast) at the Sydney Opera House.
 
-{{<figure align="center" src="/art/manon_ovation.jpeg" caption="[Mia Heathcote](https://australianballet.com.au/people/mia-heathcote) danced Manon tonight—she's a soloist now, but her technique is amazing and I believe she will rise up to be principal soon." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/manon_ovation.jpeg" caption="[Mia Heathcote](https://australianballet.com.au/people/mia-heathcote) danced Manon tonight—she's a soloist now, but her technique is amazing and I believe she will rise up to be principal soon." width="66%">}}
 
 Manon's story is unconventional for ballet where the heroine is usually, well, not a 'slut'. The synopsis is centered around Manon, the young, beautiful but poor woman with nothing but pretty privilege, torn to choose between her love for the impoverished student Des Grieux and the allure of wealth of Monsieur G.M. Ultimately she is arrested and deported for being a prostitute, with Des Grieux following her to a penal colony and she died.
 

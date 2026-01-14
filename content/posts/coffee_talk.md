@@ -6,7 +6,7 @@ draft: false
 
 My ballet class got rained out, so I ducked into a cozy café—and somehow ended up learning a bit more about Meituan and Ele.me's business models over two cappuccinos—real coffee talk.
 
-{{<figure align="center" src="/google_ad_gossip/rain_coffee.jpeg" caption="In that café, when the barista handed the delivery guy one packed coffee." width="80%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/rain_coffee.jpeg" caption="In that café, when the barista handed the delivery guy one packed coffee." width="80%">}}
 
 **Intro**: On these food delivery platforms, cafés are ranked for visibility. The higher the rank, the more orders roll in. And while it’s no surprise that paying to jump the line (read: sponsored listings) exists, what *is* surprising is how quietly the game is being played—not all money-boosted rankings are labeled. In fact, many aren’t.
 
@@ -14,7 +14,7 @@ My ballet class got rained out, so I ducked into a cozy café—and somehow ende
 
 According to the café’s chic owner, Ele.me offers a service called *Promotion Pro*—a kind of VIP pass to the top of the list. You pay, you rise. But there's no “sponsored” tag, and the brand would be have a golden label "premium brand". For example, when I searched for cafés, Peet’s Coffee showed up first—not because it's really the premium brand that offers consistent high quality, but because it pays for the privilege.
 
-{{<figure align="center" src="/google_ad_gossip/sponsored_lies.jpeg" caption="Search for café on Ele.me, top rank result (Peets Coffee) is actually Promotion Pro brought—not organic..." width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/sponsored_lies.jpeg" caption="Search for café on Ele.me, top rank result (Peets Coffee) is actually Promotion Pro brought—not organic..." width="50%">}}
 
 This subscription model does drive some traffic. But the petite café owner told me her 50 RMB credit—barely a half-hour of visibility—evaporates fast. Demand spikes are inconsistent, results murky. Meanwhile, big chains with thousands of monthly orders throw real money at it.
 

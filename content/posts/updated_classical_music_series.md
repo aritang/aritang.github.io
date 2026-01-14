@@ -8,7 +8,7 @@ cover:
 
 I’d love to keep track of all the classical pieces and composers I’ve written about—whether from concert reflections or deep-dive listening sessions that make me curious about a piece’s background.
 
-{{<figure align="center" src="/art/monet_winter_haystack.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/monet_winter_haystack.jpeg" caption="" width="100%">}}
 
 Music taste is hard to align, but I hope this list offers a practical glimpse into mine. Maybe you’ll find some insight—or even a new favorite piece.
 

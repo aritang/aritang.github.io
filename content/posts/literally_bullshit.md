@@ -25,7 +25,7 @@ Nonetheless, the podcast did offer some value. It touched upon the contract mode
 
 In my pov, football jerseys (and sports jerseys in general) represent more than mere additions to a fan's wardrobe. They serve as explicit bonds between fans and their clubs, symbolizing both the team and its players. From a business perspective, jerseys are products shaped by the team's image and the strategic maneuvers of their advertising team in collaboration with sponsors and in competition with other teams.
 
-![man_united_jersey](/complaints/man_united_jersey.jpeg)
+![man_united_jersey](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/man_united_jersey.jpeg)
 
 *i have to admit, despite being a Man City fan, the 23/24 seaeson's Manchester United jersey campaign is epic.*
 

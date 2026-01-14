@@ -12,7 +12,7 @@ Using this private information, Google can then align the user with advertisers 
 
 Ultimately, it's the revenue from these ads that sustains the free internet.I think it's quite remarkable.
 
-{{<figure align="center" src="/google_ad_gossip/data_ad_targeting.jpeg" caption="data-empowered ad targeting, based on privacy data collected from 3rd party cookies. first party data collected by the advertiser can also be integrated and used for ad targeting.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/data_ad_targeting.jpeg" caption="data-empowered ad targeting, based on privacy data collected from 3rd party cookies. first party data collected by the advertiser can also be integrated and used for ad targeting.">}}
 
 ### further reading
 

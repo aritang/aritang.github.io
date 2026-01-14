@@ -7,7 +7,7 @@ summary: Well, art is art and everything else is everything else (although some 
 
 I've recently been obsessed with Justin Bieber's single ***Intentions*** (2020):
 
-{{<figure align="center" src="/tattooed_heart/intentions.jpeg" caption="there's a line that i really love: when i create, you're my muse. and u make it easy to choose.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/intentions.jpeg" caption="there's a line that i really love: when i create, you're my muse. and u make it easy to choose.">}}
 
 Interestingly, there's a growing trend (which might have already begun decades ago) where music videos don't align with their songs. Take "Intentions," for instance. Its lyrics paint a vivid picture:
 

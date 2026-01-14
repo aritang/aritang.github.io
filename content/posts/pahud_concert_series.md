@@ -10,7 +10,7 @@ Emmanuel Pahud, in my eyes, is the greatest flutist in the world. He’s the pri
 
 I started listening to Pahud’s recordings back in high school, during the pandemic. I was bored, like most people, but suddenly, even Bach and Beethoven didn’t sound boring anymore. His recording of Beethoven’s *Sonata for Flute in B-flat Major* (Anh. 4) and Bach’s *Partita in A minor* (BWV 1013) completely captivated 17-year-old me — his tone sounded otherworldly, like the flute had become something transcendent.
 
-{{<figure align="center" src="/art/pahud_young.jpeg" caption="And yes — he’s also very, very handsome." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_young.jpeg" caption="And yes — he’s also very, very handsome." width="100%">}}
 
 Flute wasn’t always my first love. I was good at it, sure, and I’d been playing in a pre-professional orchestra for years. But I never thought it was the “cool” instrument. Piano? Maybe. Harp? Definitely. Like unless you played flute at the absolute top professional level, you looked kind of nerdy and awkward. I also struggled with criticism — years of hearing I lacked “musicality” from my mentor wore me down. It made me question everything.
 
@@ -26,7 +26,7 @@ For me, that piece was the third movement — *Rondo* — of Mozart’s *Flute C
 
 Today, what Pahud represents to me is not just technical mastery or brilliance. It’s a musical philosophy — a sense of classicism, elegance, ease, humor, and playfulness. A free spirit, exquisitely supported by formidable technique. What makes him more than just a great musician, though, is the artistry: the sensitivity, intelligence, experience, and sometimes, even logic.
 
-{{<figure align="center" src="/art/pahud2025.jpeg" caption="Oh, and yes — still very, very handsome." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud2025.jpeg" caption="Oh, and yes — still very, very handsome." width="100%">}}
 
 
 

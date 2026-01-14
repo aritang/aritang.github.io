@@ -151,7 +151,7 @@ I think it's so elegant: cause despite the unobservability of beliefs and attent
 
 Imagine a third party who is allowed to design *any* signal about consumers’ valuations and then hands this information to a monopoly firm, which sets a single price conditional on the signal. So the information de facto allocates surplus between consumers and the firm.
 
-{{<figure align="center" src="/online/bbm_discrimination.jpeg" caption="Key result (in my pov) is the triangle bound of consumer vs. firm surplus. Every point in the triangle is a possible outcome under some experiment.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/bbm_discrimination.jpeg" caption="Key result (in my pov) is the triangle bound of consumer vs. firm surplus. Every point in the triangle is a possible outcome under some experiment.">}}
 
 It’s super cool—worth reading the paper in its full glory for the beauty of the argument.
 

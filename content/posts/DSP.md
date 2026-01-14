@@ -50,7 +50,7 @@ This article analyzes the top 10 DSPs from an advertiser's perspective. To start
 
 And the author provides a comprehensive comparison table of the major DSP solution providers.
 
-{{<figure align="center" src="/google_ad_gossip/dsps.jpeg" caption="source: [setupad blog](https://setupad.com/blog/best-demand-side-platforms/)" >}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/dsps.jpeg" caption="source: [setupad blog](https://setupad.com/blog/best-demand-side-platforms/)" >}}
 
 For the big players:
 
@@ -85,7 +85,7 @@ Amazon is striving to attract more advertisers to its platform. However, with ma
 
 > Just 5% of the 44 respondents in a survey by Digiday chose Amazon as their preferred DSP if they could only select one. In contrast, nearly four in 10 (39%) opted for Google’s DV360. The same goes for The Trade Desk.
 
-{{<figure align="center" src="/google_ad_gossip/dsp_simple_market_share.jpeg" caption="source: [statista](https://www.statista.com/statistics/1475413/dsp-use/)" >}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/dsp_simple_market_share.jpeg" caption="source: [statista](https://www.statista.com/statistics/1475413/dsp-use/)" >}}
 
 It's important to note that Amazon's DSP provides exclusive access to its consumers on the `Amazon` platform. However, advertisers also utilize Amazon for targeting audiences outside the Amazon network.
 

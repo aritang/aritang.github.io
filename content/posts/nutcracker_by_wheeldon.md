@@ -6,7 +6,7 @@ draft: false
 
 I was at the 2025 opening night of Joffrey Ballet’s *The Nutcracker*.
 
-{{<figure align="center" src="/art/nutcracker_tree.jpeg" caption="OMG, right">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/nutcracker_tree.jpeg" caption="OMG, right">}}
 
 Christopher Wheeldon’s kaleidoscopic reimagining of *The Nutcracker* relocates the story to the 1893 World’s Fair in **Chicago**. The production shows off the iron-and-steam industrial charm of turn-of-the-century Chicago while blending Wheeldon’s contemporary choreographic vitality with the structure of classical ballet.
 
@@ -16,19 +16,19 @@ Let along, the creative divertissements in the 2nd act. These sections are famou
 
 ### A surprisingly delightful take on Chinese Tea
 
-{{<figure align="center" src="/art/tea.jpeg" caption="">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/tea.jpeg" caption="">}}
 
 ### Mother Gigogne: they really went **nuts**...
 
-{{<figure align="center" src="/art/ginger.jpeg" caption="">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/ginger.jpeg" caption="">}}
 
 ### The Sugar Plum Fairy as the Statue of Liberty (!)
 
-{{<figure align="center" src="/art/super_plum.jpeg" caption="">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/super_plum.jpeg" caption="">}}
 
 ### We caught Wheeldon himself in the wing at the opening night!
 
-{{<figure align="center" src="/art/wheeldon.jpeg" caption="">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/wheeldon.jpeg" caption="">}}
 
 ## A Closing Thought on the Music
 

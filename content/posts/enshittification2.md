@@ -13,5 +13,5 @@ A reddit user who claimed to be an engineer at a major food delivery platform ta
 
 FYI:
 
-{{<figure align="center" width="100%" src="/google_ad_gossip/enshittification2.jpeg" caption="Source: [Reddit](https://www.reddit.com/r/confession/comments/1q1mzej/im_a_developer_for_a_major_food_delivery_app_the/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/enshittification2.jpeg" caption="Source: [Reddit](https://www.reddit.com/r/confession/comments/1q1mzej/im_a_developer_for_a_major_food_delivery_app_the/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).">}}
 

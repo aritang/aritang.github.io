@@ -20,6 +20,6 @@ A recent unreleased song, *fantasize*, originally penned for a Korean pop group 
 
 Her latest album ***eternal sunshine*** includes the track *the boy is mine*.
 
-{{<figure align="center" src="/eternal_sunshine/bim_1.jpeg" caption="'The boy is mine, I can't wait to try him.'">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/bim_1.jpeg" caption="'The boy is mine, I can't wait to try him.'">}}
 
 The music video, released yesterday, follows a similar theme to *yes, and*. It enriches whatever Ariana Grande is trying to convey and enhances the song. I'll delve deeper into its analysis tomorrow.

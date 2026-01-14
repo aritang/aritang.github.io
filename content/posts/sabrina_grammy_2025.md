@@ -8,7 +8,7 @@ Told you so—
 
 > ### Sabrina Carpenter won Best Pop Vocal Album and Best Pop Solo Performance of 67th Annual GRAMMY Awards. 
 >
-> {{<figure align="center" src="/short_n_sweet/sabrina_carpenter_grammy.jpeg" caption="she didn't prepare her acceptance speech obviously ([here](https://youtu.be/gPIKLxwUT84?si=FW3y290A85wS9qvr)). Advice: always prepare for every possible public speeches you might anticipate." width="100%">}}
+> {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/short_n_sweet/sabrina_carpenter_grammy.jpeg" caption="she didn't prepare her acceptance speech obviously ([here](https://youtu.be/gPIKLxwUT84?si=FW3y290A85wS9qvr)). Advice: always prepare for every possible public speeches you might anticipate." width="100%">}}
 >
 > [also, here's the link to Grammy's official page if you want to check out more winners.](https://www.grammy.com/artists/sabrina-carpenter/57838)
 

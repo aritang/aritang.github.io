@@ -12,7 +12,7 @@ Miu Miu is high fashion. Zara is high speed. One sells couture dreams; the other
 
 For trendy (and budget-aware) fashion girls, Zara is a cheat code—you can literally **recreate** an entire Miu Miu look for about 5% of the price.
 
-{{<figure align="center" src="/baidu/zara_miumiu.jpeg" caption="TikTok is full of tutorials showing how to turn YSL, Miu Miu, or Prada show into a Zara haul." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/baidu/zara_miumiu.jpeg" caption="TikTok is full of tutorials showing how to turn YSL, Miu Miu, or Prada show into a Zara haul." width="100%">}}
 
 So what makes Zara so successful? First, they have the world's best  supply chain—Zara's supply chain is renowned for its agility and efficiency, a benchmark in the fast fashion industry. Second, Zara’s legal team is famous for **dodging** patent lawsuits...
 
@@ -31,7 +31,7 @@ Its CEO once said, “We’re learning from Apple. In all ways.” Translation: 
 
 Apple hasn’t released a car yet. So in February 2025, Mi beat them to the punch with the **Xiaomi SU7 Ultra**, starting at RMB 529,900 (about 73000USD). It looks *suspiciously familiar*:
 
-{{<figure align="center" src="/baidu/misu7_vs_porsche.jpeg" caption="One is Porsche. One is Mi. Spot the difference (if you can)." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/baidu/misu7_vs_porsche.jpeg" caption="One is Porsche. One is Mi. Spot the difference (if you can)." width="100%">}}
 
 Btw, Mi’s design is totally legal—Porsche 911’s exterior design patent had already expired around 2018.
 

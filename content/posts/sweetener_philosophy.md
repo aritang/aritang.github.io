@@ -17,7 +17,7 @@ I prefer some messy breakfast stand,
 
 than that furnished coffee store.
 
-![IMG_0222](/high_school_admission/IMG_0222.jpeg)
+![IMG_0222](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/IMG_0222.jpeg)
 
 I prefer seminar to blown-up symposiums.
 
@@ -27,7 +27,7 @@ I prefer my math and music in minimalistic solo,
 
 instead of bullshits stacked and piled.
 
-![IMG_2262](/high_school_admission/IMG_2262.jpeg)
+![IMG_2262](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/IMG_2262.jpeg)
 
 I prefer beef offal under summer banyans,
 
@@ -37,4 +37,4 @@ I prefer Guangzhou where my spirit dwells,
 
 than here in Shanghai that my body grounds, but my mind’s elsewhere floatin’.
 
-![IMG_2262](/high_school_admission/IMG_3505.jpeg)
+![IMG_2262](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/IMG_3505.jpeg)

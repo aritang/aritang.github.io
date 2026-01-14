@@ -14,4 +14,4 @@ Taobao didn’t start from scratch—instead, it just turned its homepage into a
 
 The platform war is no longer duopoly. Welcome to the **instant retail 三国杀**.
 
-{{<figure align="center" src="/google_ad_gossip/join_JD.jpeg" caption="Cross-platform happy hour: JD’s boss in red, wrapping up his one-day delivery cosplay, toasting with Meituan (yellow) and Ele.me (blue) couriers." width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/join_JD.jpeg" caption="Cross-platform happy hour: JD’s boss in red, wrapping up his one-day delivery cosplay, toasting with Meituan (yellow) and Ele.me (blue) couriers." width="50%">}}

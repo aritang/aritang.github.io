@@ -6,7 +6,7 @@ draft: false
 
 In China, doctors tend to get red pennants "*JinQi*" from their patients, to show appreciation and gratitude. My dad has got a lot of them over his career—I once swung by his office and the doctors store their pennants in buckets... I thought he was well beyond the phase of treating it seriously. But recent days he got another one and posted it everywhere on his social media🤣.
 
-{{<figure align="center" src="/bio/red_pennant.jpeg" caption="Tips of giving out pennant: the bestower should loudly announce their presence and even pretend to be lost so that everyone knows who they're looking for." width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/red_pennant.jpeg" caption="Tips of giving out pennant: the bestower should loudly announce their presence and even pretend to be lost so that everyone knows who they're looking for." width="96%">}}
 
 And here's the story from **THE WORLD OF CHINESE**, in which Hayley gave a modern, thorough break-down of this cultural phenomenon:
 

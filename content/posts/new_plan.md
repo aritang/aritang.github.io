@@ -15,5 +15,5 @@ Wait and see! Like after two or three weeks I’ll start rubbishing it, and that
 
 Btw, got a new friend to travel with me (on the left is two years ago, right is today).
 
-![IMG_0422](/new_plan/IMG_0422.jpeg)
+![IMG_0422](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/IMG_0422.jpeg)
 

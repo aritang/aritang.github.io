@@ -35,7 +35,7 @@ The 15-20% result come from surveys, which are typical descriptions of depressiv
 
 On the other hand, the "2%" narrative's issue is that it lost explanation of the details: for all aged between **6-16**, the prevalence of depression among children is inherently lower than that among adolescents.
 
-{{<figure align="center" src="/maguerite/age_depressive_disorder.jpeg" caption="the data on the prevalence of depression by age group take a leap to 6 per cent between the ages of 14 and 15." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/maguerite/age_depressive_disorder.jpeg" caption="the data on the prevalence of depression by age group take a leap to 6 per cent between the ages of 14 and 15." width="100%">}}
 
 What's worse, the 2% lost count of students aging between 17-22—high school students, especially seniors, are predictably bound to have more severe depressive symptoms, and college freshmen also have problems adjusting to their new environment and develop depressive tendencies in the very age range of 17 to 19 that the study failed to cover.
 

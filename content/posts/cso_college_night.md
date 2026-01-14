@@ -6,7 +6,7 @@ draft: false
 
 I’ve always thought the Chicago Symphony Orchestra has one of the most insane string sections on Earth—versatile, responsive, laser-precise, and somehow still warm. Tonight, concertmaster Robert Chen led the strings in Vivaldi’s *Four Seasons*, and… they’re good. So good.  😙🤌🏻❤️🎶
 
-{{<figure align="center" src="/art/chen_4seasons.jpeg" caption="The Chicago audience really enjoys standing up!">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/chen_4seasons.jpeg" caption="The Chicago audience really enjoys standing up!">}}
 
 Technically, *The Four Seasons* is a set of four concertos, but somewhat it works even better without a conductor—especially when Chen is steering the ship. He carried the dual role of leader and soloist like it was nothing. The orchestra was tight down to microscopic detail, the phrasing felt alive. And Chen’s solo lines are GORGEOUS. The kind of sound that makes you forget it's the 7th week of the quarter and final exams are coming close.
 

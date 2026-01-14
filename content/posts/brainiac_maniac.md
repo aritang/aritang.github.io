@@ -7,7 +7,7 @@ summary: The frenzy and messy cloud of synthesizers are pretty much the state th
 
 "[Brainiac Maniac](https://youtu.be/mzL8GugPslM?si=mti7yajRuO9G-t4B)" is a track from the Plants vs. Zombies soundtrack. It's the background music of the final boss level -  the roof battle against Dr. Zomboss. The frenzy and messy cloud of synthesizers are pretty much the state that I'm pushing myself to be in right now - a little bit more stress to push productivity.
 
-{{<figure align="center" src="/tattooed_heart/dr_zomboss.jpeg" caption="this game is not just one of my favs, but also the one I totally rock at">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/dr_zomboss.jpeg" caption="this game is not just one of my favs, but also the one I totally rock at">}}
 
 As a reference from Ariana Grande's single ***just like magic***, which is the top listen of my '23 music playlist:
 

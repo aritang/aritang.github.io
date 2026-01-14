@@ -7,7 +7,7 @@ cover:
 tags: ["nonsense", "music", "attitude"]
 ---
 
-{{<figure align="center" src="/tattooed_heart/focus_mv1.jpeg" caption="One, two three... c'om, girls!">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/focus_mv1.jpeg" caption="One, two three... c'om, girls!">}}
 
 Focus is an Ariana Grande single yet it doesn't belong to any of her studio albums:
 

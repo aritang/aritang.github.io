@@ -18,7 +18,7 @@ Music itself, seems much simpler than the huge machines operating on top of the 
 
 Now, look at this year’s nominations—consider "Best Pop Vocal Album." It's as if coherent typography is a lost art:
 
-{{<figure align="center" src="/eternal_sunshine/best_pop_2025_grammy.jpeg" caption="A little *artistic* with the letters" width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/best_pop_2025_grammy.jpeg" caption="A little *artistic* with the letters" width="50%">}}
 
 I've written before about the art of wild capital letters ([a study of the lowercase aesthetic](/posts/lowercase_aesthetic/))—it’s an attentive style favored by younger generations, and even a few professors I know type exclusively in lowercase informally. But playing this game with album titles is something else entirely. Honestly, when a stylistic choice overshadows its function, it just feels intentional and silly, Miss Swift.
 

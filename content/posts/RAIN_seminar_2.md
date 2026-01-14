@@ -55,7 +55,7 @@ The paper begins by demonstrating the impossibility of no-regret learning in a f
 
 Motivated by this result, the authors explore two natural relaxations: the settings in which either the sequence of followers is chosen stochastically or the sequence of contexts is stochastic:
 
-{{<figure align="center" src="/maguerite/RAIN_result.jpeg" caption="Harris et al., 2024">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/maguerite/RAIN_result.jpeg" caption="Harris et al., 2024">}}
 
 ### reflections:
 

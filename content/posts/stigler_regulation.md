@@ -11,7 +11,7 @@ Regulation restricts the action of economic agents—in general. It is omniprese
 
 George Stigler (1911-1991) introduced his "Theory of Economic Regulation" in 1971 trying to answer this question in a well-established framework, on the basis of some previous empirical arguments such as Normative Analysis as a Positive Theory (NPT) or Capture Theory (CT).
 
-{{<figure align="center" src="/auction_houses/stigler.jpeg" caption="when you see that a paper has over 16k citations and has 24 version—it's the universe signaling ***READ IT***.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/stigler.jpeg" caption="when you see that a paper has over 16k citations and has 24 version—it's the universe signaling ***READ IT***.">}}
 
 Here's what the paper is about:
 

@@ -6,7 +6,7 @@ draft: false
 
 Always a delight to learn from Professor Ye :) ([He was in Shanghai 2023 Winter and I have my LP book signed by him](/posts/christmas2023/)!!!)
 
-{{<figure align="center" src="/online/yyye_intown.jpeg" caption="Prof. Yinyu Ye teaching at SIMIS. Day one of lectures on optimization and a bit market design." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/yyye_intown.jpeg" caption="Prof. Yinyu Ye teaching at SIMIS. Day one of lectures on optimization and a bit market design." width="88%">}}
 
 Professor Yinyu Ye is currently visiting the Shanghai Institute for Mathematical and Interdisciplinary Sciences (SIMIS), delivering a lecture series on **Optimization Methods for Data Science, Machine Learning, and AI**.
 
@@ -18,7 +18,7 @@ I especially like today's lecture because there are a lot of *simple* examplesâ€
 
 One particularly elegant example from the course is about *Algorithmic Market Design* for a World Cup prediction market, modeled as a linear program (LP):
 
-{{<figure align="center" src="/online/amd_worldcuplp.jpeg" caption="Each bid order corresponds to a bet over possible winners. Bidders submit binary predictions, bidding prices, and quantity limits." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/amd_worldcuplp.jpeg" caption="Each bid order corresponds to a bet over possible winners. Bidders submit binary predictions, bidding prices, and quantity limits." width="88%">}}
 
 Each bidder bid for their believed countries. **If guess correct, they win (normalized) \$1**. Formalizing the problem with a few more notations:
 

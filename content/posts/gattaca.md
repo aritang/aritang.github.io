@@ -8,17 +8,17 @@ draft: false
 >
 > — Gattaca (1997)
 
-{{<figure align="center" src="/art/gattaca.jpeg" caption="Vincent Freeman is born into a genetically engineered society but conceived naturally, deemed 'in-valid' due to a heart condition. Determined to defy his genetic fate and reach space, Vincent assumes the identity of Jerome Morrow, a former elite athlete, to join Gattaca's space program." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/gattaca.jpeg" caption="Vincent Freeman is born into a genetically engineered society but conceived naturally, deemed 'in-valid' due to a heart condition. Determined to defy his genetic fate and reach space, Vincent assumes the identity of Jerome Morrow, a former elite athlete, to join Gattaca's space program." width="66%">}}
 
 *Gattaca* is the stunning directorial debut of Andrew Niccol, who also wrote *The Truman Show* (1998). It earned an Oscar nomination for Best Art Direction and a Golden Globe nomination for Best Original Score in 1998.
 
 The film’s aesthetic is striking. Despite its futuristic premise—where genes determine destiny and space travel is routine—the world is rendered in retro-futuristic style.
 
-{{<figure align="center" src="/art/gattaca_art.jpeg" caption="Costumes and sets evoke a mid-century elegance, and the yellowish tint gives the film a distant, melancholic tone. " width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/gattaca_art.jpeg" caption="Costumes and sets evoke a mid-century elegance, and the yellowish tint gives the film a distant, melancholic tone. " width="100%">}}
 
 The production design is meticulous: the spiral staircase evokes the double helix of DNA, a quiet nod to the film’s themes.
 
-{{<figure align="center" src="/art/gattaca_staircase.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/gattaca_staircase.jpeg" caption="" width="100%">}}
 
 The clean lines of the sets and the minimal interiors feel both modern and stylized, giving the film a timeless quality. It's retro-futurism done with precision—elegant, distant, and quietly unsettling.
 

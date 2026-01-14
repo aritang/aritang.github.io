@@ -10,7 +10,7 @@ At each time point, a task $k$ out of $K$ possible tasks arrives randomly with p
 
 Each volunteer can either be active or inactive at a certain time point. Only active volunteers can generate reward when incentivized (aka there's no use in incentivizing an inactive volunteer). Once an active volunteer produces, she instantly becomes inactive and recovers to activity based on specific probabilities $q_i$. As shown in the following diagram:
 
-{{<figure align="center" src="/who_do_we_blame/volunteer_transition.jpeg" caption="the state transitions of volunteers based on actions and associated probabilities. Active volunteers ($s_t = 1$), when no action is taken ($y_t = 0$) remains active. If action is taken ($y_t = 1$), they might generate a reward w.p. $p_i$ and become inactive, or stay active without generating a reward. Inactive volunteer return to activity based on specific probabilities ($q_i$).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/who_do_we_blame/volunteer_transition.jpeg" caption="the state transitions of volunteers based on actions and associated probabilities. Active volunteers ($s_t = 1$), when no action is taken ($y_t = 0$) remains active. If action is taken ($y_t = 1$), they might generate a reward w.p. $p_i$ and become inactive, or stay active without generating a reward. Inactive volunteer return to activity based on specific probabilities ($q_i$).">}}
 
 The decision maker (in the perspective of the platform) has action space $\mathbf y^t$, where each $y_i^t\in \{0, 1\}, \forall i$ corresponds to whether arm $i$ is being 'pulled' at time step $t$. The platform aims to maximizes averaged reward over the long run:
 $$

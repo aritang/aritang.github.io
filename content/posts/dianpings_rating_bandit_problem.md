@@ -36,7 +36,7 @@ From Dianping’s perspective, the job is to use a limited number of judge votes
 
 In practice, you can already see this system evolving: more controversial ratings (i.e., ones that get split opinions among early judges) seem to get **more judges assigned** to them.
 
-{{<figure align="center" src="/complaints/dianpings_community_judges.jpeg" caption="The pipeline of community judges's weighings" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/dianpings_community_judges.jpeg" caption="The pipeline of community judges's weighings" width="100%">}}
 
 If you squint at it, this could be a fantastic **Contextual-RMAB problem** in operations management:
 - Different ratings have different underlying controversy levels.

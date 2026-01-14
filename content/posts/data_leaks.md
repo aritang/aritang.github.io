@@ -8,11 +8,11 @@ Strava, a fitness-tracking company, faced criticism after its global heatmap uni
 
 Strave included a total 1 billion activities from all Strava data through September 2017. They claim to have a global heatmap that is the ***largest, richest, and most beautiful*** dataset of its kind. Indeed, look at the light up running paths on Stanford:
 
-{{<figure align="center" src="/google_ad_gossip/strava_heatmap_stanford.jpeg" caption="A Strava heatmap showcasing the dense and popular exercise routes around Stanford University, highlighting the app's vast and detailed data aggregation capabilities.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/strava_heatmap_stanford.jpeg" caption="A Strava heatmap showcasing the dense and popular exercise routes around Stanford University, highlighting the app's vast and detailed data aggregation capabilities.">}}
 
 But, it turns out that not only Stanford students are keen in bragging about their burnt calories. Lieutenants going for their 7am jog every morning lit up the routes outlining their secret military bases.
 
-{{<figure align="center" src="/google_ad_gossip/heatmap_base.jpeg" caption="The headquarters of GCHQ in Cheltenham, England, are just one of the sensitive sites crisscrossed with GPS activity, suggesting that spies and intelligence analysts are recording and uploading their commutes or lunchtime runs. Photograph: Strava heatmap.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/heatmap_base.jpeg" caption="The headquarters of GCHQ in Cheltenham, England, are just one of the sensitive sites crisscrossed with GPS activity, suggesting that spies and intelligence analysts are recording and uploading their commutes or lunchtime runs. Photograph: Strava heatmap.">}}
 
 According to the [news](https://www.theguardian.com/world/2018/jan/28/fitness-tracking-app-gives-away-location-of-secret-us-army-bases)
 

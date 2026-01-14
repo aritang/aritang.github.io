@@ -6,7 +6,7 @@ draft: false
 
 "Chopiniana," also known as "Les Sylphides," is a ballet choreographed by Mikhail Fokine, set to music by **Frédéric Chopin**, and premiered in 1907 as a "romantic reverie". It's a ***ballet blanc***—where all ballerinas wear white dresses or tutus.
 
-{{<figure align="center" src="/art/chopiniana_opening.jpeg" caption="Mariinsky Theatre premiered the ballet in 1907." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/chopiniana_opening.jpeg" caption="Mariinsky Theatre premiered the ballet in 1907." width="100%">}}
 
 The music is very beautiful. And the choreography has magic.
 
@@ -16,4 +16,4 @@ I was there when the Mariinsky Ballet toured Shanghai, performing *Chopiniana*. 
 
 It’s strange how often beauty slips past us just like this. We move through moments blindly, only to find their significance illuminated in retrospect—like a dream we wake from, only to realize it was real all along.
 
-{{<figure align="center" src="/art/chopiniana_sh.jpeg" caption="Chopiniana, from the 4th floor of the theatre." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/chopiniana_sh.jpeg" caption="Chopiniana, from the 4th floor of the theatre." width="100%">}}

@@ -6,7 +6,7 @@ draft: false
 
 Today the U of Chicago Symphony Orchestra rehearses Tchaikovsky's 5th Symphony.
 
-{{<figure align="center" src="/art/tchai_5.jpeg" caption="Nooooooo." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/tchai_5.jpeg" caption="Nooooooo." width="100%">}}
 
 The French horn solo at the beginning of the 2nd movement is one of Tchaikovsky 's most beautiful melody passages. This pure beauty pushed beyond imagination, in my opinion, it is love.
 

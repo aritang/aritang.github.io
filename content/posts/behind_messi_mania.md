@@ -14,7 +14,7 @@ Inter Miami hosted two public event in HK - selling tickets for both the exhibit
 
 Not a decent position to take, to be honest. Now the karma is back.
 
-{{<figure align="center" src="/info_design/messi.jpeg" caption="Financial Times posted. Leo Messi sat on the bench throughout the exhibition match. Fans were disappointed. Later fury aggregates and now even the HK gov. is pressing on this issue.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/info_design/messi.jpeg" caption="Financial Times posted. Leo Messi sat on the bench throughout the exhibition match. Fans were disappointed. Later fury aggregates and now even the HK gov. is pressing on this issue.">}}
 
 Such sharp reverse of opinion on the internet is once-in-a-while phenomenon. Good luck to Inter Miami's PR team... Yet, it's a little disappointing that nowadays, football is more than just football anymore.
 

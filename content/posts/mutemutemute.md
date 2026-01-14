@@ -10,4 +10,4 @@ Here's an interesting line I read recently:
 >
 > -- Lin's Comics.
 
-{{<figure align="center" src="/conversations/mutemute.jpeg" caption="from 01/15/2024 of Lin's Comics Calender.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/conversations/mutemute.jpeg" caption="from 01/15/2024 of Lin's Comics Calender.">}}

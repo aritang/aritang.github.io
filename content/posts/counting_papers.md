@@ -8,4 +8,4 @@ cover:
 
 I wrote 37 [`paper`](/tags/paper/) blogs—write-ups of papers I've read over the last year. The total quantity of thoroughly read papers is approximately double this number.
 
-{{<figure align="center" src="/maguerite/paper_meme.jpeg" caption="as for the downloaded ones—i don't even dare to count.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/maguerite/paper_meme.jpeg" caption="as for the downloaded ones—i don't even dare to count.">}}

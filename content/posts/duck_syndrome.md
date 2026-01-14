@@ -11,7 +11,7 @@ The Stanford Duck Syndrome:
 
 One evening, after a day's frenzy, a friend and I took over the the serene and unoccupied plaza in front of the memorial church. Under the starry milky way canvas, we reclined and talked for hours.
 
-![starts](/conversations/starts.jpeg)
+![starts](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/conversations/starts.jpeg)
 
 *starry starry night...*
 

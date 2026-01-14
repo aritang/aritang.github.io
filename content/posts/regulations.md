@@ -6,7 +6,7 @@ draft: false
 
 Privacy laws worldwide require companies to obtain a certain degree of consent from users before collecting and using their private data. Common examples include a cookie pop-up or a privacy notice.
 
-{{<figure align="center" src="/google_ad_gossip/more_cookies.jpeg" caption="an example for cookie consent—we always read them thoroughly, right?">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/more_cookies.jpeg" caption="an example for cookie consent—we always read them thoroughly, right?">}}
 
 Major regulations, known as privacy laws, include the [General Data Protection Regulation (GDPR)](https://usercentrics.com/knowledge-hub/the-eu-general-data-protection-regulation/) and the [California Privacy Rights Act (CPRA)](https://usercentrics.com/knowledge-hub/cpra-and-the-future-of-privacy-law/). These laws specify the legal requirements for websites to inform users about data use and their rights.
 

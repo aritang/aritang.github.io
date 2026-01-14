@@ -7,13 +7,13 @@ tags: ["art", "music", "technical"]
 
 Inspired by the aesthetic of eternal sunshine's album cover, I customized a Typora themeable that echos the album's concept.
 
-{{<figure align="center" src="/eternal_sunshine/image00086.jpg" caption="the red of the gloves, paired with the innocent white dress, echoes a juxtaposition of passion and purity. meanwhile The dark background augments the sense of mesmerizing self-revelation.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/image00086.jpg" caption="the red of the gloves, paired with the innocent white dress, echoes a juxtaposition of passion and purity. meanwhile The dark background augments the sense of mesmerizing self-revelation.">}}
 
 Instead of directly replicating the color palette from the album cover, I decided to take a more conceptual approach, in reflecting the commitment to an ethereal minimalism—like, an homage to the what Saturn Return brings into our lives. Particularly, the white background wasn’t merely a nod to convenience but a deliberate choice to reflect the album’s soul-stirring clarity, serving as the quiet space for thoughts to breathe and uncluttered. The typography of italics features *Karrilee*, a playful handwriting akin to break of seriousness adds a voice to italics—a subtle whisper of the album’s spirit.
 
 **Here's a demo:**
 
-{{<figure align="center" src="/eternal_sunshine/eternal_sunshine_typora_demo.png">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/eternal_sunshine_typora_demo.png">}}
 
 All details are fine-tuned: there the special customized item dots, carefully chosen header style and colors, blockquotes, etc. Yet, Less is more. Overall, it's a tribute to the aesthetic of eternal sunshine, reflecting a pursuits for a mentally comfortable writing environment.
 

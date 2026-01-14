@@ -9,7 +9,7 @@ summary: Another conversation, from one of my early flute lessons.
 
 Happy Mid-Autumn Festival! I'm reminiscing about all the people I've met throughout my life. So, here's another conversation series. It happened years ago during one of my flute lessons with my teacher:
 
-> ![pahud](/conversations/pahud.png)
+> ![pahud](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/conversations/pahud.png)
 >
 > (*Practicing one of Pierre Sancan's sonatines*)
 >

@@ -86,7 +86,7 @@ R(p) = p \log p + (1 - p) \log (1 - p).
 $$
 In this case, $p^\text{FTRL}_t$ solves to be
 
-{{<figure align="center" src="/wine/eq_2.jpeg" caption="" width="56%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/eq_2.jpeg" caption="" width="56%">}}
 
 Looks familar, right?
 
@@ -100,7 +100,7 @@ p_t^\text{BTL}:= \arg\min_{p\in [0, 1]} F_{t}( p\mathbf 1).
 $$
 <u>Lemma 1</u> (Bounded regret of any FTL w.r.t. $\vec l$) For any instance $l_1, \ldots, l_T$:
 
-{{<figure align="center" src="/wine/eq1.jpeg" caption="" width="56%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/eq1.jpeg" caption="" width="56%">}}
 
 Proof tip: done by proving
 

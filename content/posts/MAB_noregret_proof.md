@@ -34,7 +34,7 @@ $$
 
 For MAB with $K>1$ arms, let the arms' reward be normalized to be distributed on $[0, 1]$. Denote as $\mu^*$ as the optimal arm's mean, UCB1's expected regret is at most
 
-{{<figure align="center" src="/online/UCB1Regret.jpeg" caption="" width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/UCB1Regret.jpeg" caption="" width="66%">}}
 
 Proof. 
 
@@ -55,7 +55,7 @@ T_i(n) & = 1 + \sum_{t = K + 1}^n\mathbb I\lbrace\text{arm $i$ is pulled at $t$}
 $$
 Arm $i$ is pulled at $t$ requires that at least this arm is better than the optimal arm:
 
-{{<figure align="center" src="/online/UCB1Regret_ineq1.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/UCB1Regret_ineq1.jpeg" caption="" width="100%">}}
 
 *Note:* (0.1) has it that $l\le T_i(t - 1)< t$. Simply, $0\le s< t$. So if (1) holds for some $l\le s_i< t$ and $0<s<t$ (letting $s_i = T_i(t -1), s = T^*(i -1)$), max over LFS, min over RHS shall also hold—as the following:
 
@@ -73,7 +73,7 @@ T_i(n) & = 1 + \sum_{t = K + 1}^n\mathbb I\lbrace\text{arm $i$ is pulled at $t$}
 $$
 *Note:* from (2) to (3) it's done by a union bound below, and then replace $t - 1$ with $t$ which is harmless when $t$ goes large.
 
-{{<figure align="center" src="/online/UCB1Regret_ineq2.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/UCB1Regret_ineq2.jpeg" caption="" width="100%">}}
 
 Now, for each $s, s_i, t$, observe that the condition $\bar X_{i, s_i} + c_{t - 1, s_i}>\bar X_{s}^* +c_{t - 1, s}$ implies one of the following must hold
 $$
@@ -90,7 +90,7 @@ $$
 $$
 And the probability of $(i)$ and $(ii)$ is nicely upperbounded by Chernoff-Hoeffding bound:
 
-{{<figure align="center" src="/online/chernoff_hoeffding.jpeg" caption="Chernoff-Hoeffding bound, Auer et al. (2002)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/chernoff_hoeffding.jpeg" caption="Chernoff-Hoeffding bound, Auer et al. (2002)" width="100%">}}
 
 Translates to
 $$

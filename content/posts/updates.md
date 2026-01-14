@@ -8,7 +8,7 @@ This fall, I’m starting a new chapter as a PhD student at the Booth School of 
 
 Chicago has its grand, confident skyline, but Hyde Park — where I now live — feels like a world of its own. In summer, the streets are lined with lush, green canopies that almost hum with quiet intelligence. 
 
-{{<figure align="center" src="/chicago/hyde_park_birds.jpeg" caption="Birds and trees in Hyde Park near my apartment." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/chicago/hyde_park_birds.jpeg" caption="Birds and trees in Hyde Park near my apartment." width="100%">}}
 
 Hyde Park exists because of the University of Chicago, and it carries that inheritance in its air: book-smart, curious, civilized, contemplative. Forty minutes away from downtown Chicago's roars. But here there is stillness — a place where I can breathe, sit down with a book and let the hours stretch.
 

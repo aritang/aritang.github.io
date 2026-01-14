@@ -6,7 +6,7 @@ draft: false
 
 By selling Ice Lemonade priced less than \$1... See the previous post: [A Sweet Lemon Tale — How MiXue Dominates China's Lemonade Scene via Supply Chain](/posts/sweet_lemon/)
 
-{{<figure align="center" src="/online/mixue_mascot.jpeg" caption="Mixue - known for its cheap drinks and red-cloaked Snow King mascot - raised 444 million USD in an initial public offering by selling 17 million shares in the deal at a fixed price of HKD 202.5 each. [Reuters](https://www.reuters.com/markets/deals/china-tea-drinks-mixue-shares-rise-nearly-30-hong-kong-trading-debut-2025-03-03/)." width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/mixue_mascot.jpeg" caption="Mixue - known for its cheap drinks and red-cloaked Snow King mascot - raised 444 million USD in an initial public offering by selling 17 million shares in the deal at a fixed price of HKD 202.5 each. [Reuters](https://www.reuters.com/markets/deals/china-tea-drinks-mixue-shares-rise-nearly-30-hong-kong-trading-debut-2025-03-03/)." width="50%">}}
 
 > Founded in 1997 as a small ice shop in Zhengzhou, Henan province, Mixue has grown into a franchise giant with over 45,000 stores globally by September 2024, surpassing Starbucks' 40,576 stores worldwide.
 >

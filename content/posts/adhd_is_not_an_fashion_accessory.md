@@ -16,7 +16,7 @@ Let’s clear up some common confusion about ADHD medications:
 
 1. **Amphetamine**: A widely used ADHD drug that’s potent but highly addictive with significant side effects (not exactly the kind of “brain booster” one would expect for casual use).
 
-    {{<figure align="center" src="/pilot_class_market/AMM_molecules.jpeg" caption="molecular structures tell a lot about potency" width="100%">}}
+    {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/pilot_class_market/AMM_molecules.jpeg" caption="molecular structures tell a lot about potency" width="100%">}}
 
 2. **Methylamphetamine**: Looks similar but not quite in terms of functionality. It’s commonly known as meth—that illegal one.
 

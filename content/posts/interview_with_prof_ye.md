@@ -6,13 +6,13 @@ draft: false
 
 When I slid out of my weekly group meeting and logged into my Zoom call with Professor Yinyu Ye, I was surprised to find him in a classroom just like me—likely at a university in Hong Kong (HK Tech, perhaps?). 
 
-{{<figure align="center" src="/online/interview_ye.jpeg" caption="All three of us had just logged off other meetings to hopped into this interview, which really feel casually—profound." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/interview_ye.jpeg" caption="All three of us had just logged off other meetings to hopped into this interview, which really feel casually—profound." width="88%">}}
 
 The interview is a project for my "Modern Chinese History" class. It centered on exploring China’s "opening up" era from 1978 to today—a transformative period spurred by Deng Xiaoping’s market reforms. 
 
 Professor Ye is part of a remarkable cohort—the class of 1978-1982—which is the first group of Chinese university students after higher education in China resumed following a decade of upheaval (btw, which also means 10 times of competition). After undergrad in WuHan, China, Ye went to Stanford for Master's and PhD—this alone marks him as someone whose life and career have been profoundly shaped by this history.
 
-{{<figure align="center" src="/online/20201123-yinyu-ye-classportrait.jpg" caption="See another relevant article 'Yinyu Ye: Sports led me from the rice fields to Stanford' [here](http://engineering.stanford.edu/news/yinyu-ye-sports-led-me-rice-fields-stanford). Professor Ye’s personal experiences offered a unique lens to examine these monumental changes." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/20201123-yinyu-ye-classportrait.jpg" caption="See another relevant article 'Yinyu Ye: Sports led me from the rice fields to Stanford' [here](http://engineering.stanford.edu/news/yinyu-ye-sports-led-me-rice-fields-stanford). Professor Ye’s personal experiences offered a unique lens to examine these monumental changes." width="100%">}}
 
 To put this into context, Ye graduated high school in 1966 but didn’t attend college until 1978, a gap defined by the shifting tides of Chinese history. It’s hard to imagine how it feels to navigate through and rebuild after such a turbulent era, but one look at his academic contributions—over 60,000 Google Scholar citations—and it’s clear that he not only adapted but thrived.
 

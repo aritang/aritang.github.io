@@ -4,7 +4,7 @@ date: 2025-10-11T22:50:34-05:00
 draft: false
 ---
 
-{{<figure align="center" src="/art/Hadelich.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/Hadelich.jpeg" caption="" width="100%">}}
 
 The night started with Kodály's *Dances of Galánta*, then Hadelich joined for Dvořák *Violin Concerto*, lastly Brahms's *Symphony No. 2*. The digital program book which contains full, detailed, amazingly written notes can be found [here](https://issuu.com/chicagosymphony/docs/program_book_-_cso_at_wheaton_hadelich_dvo_k_). My friend says that someone said that unpaid intern hold those pens.
 

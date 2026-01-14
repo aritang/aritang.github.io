@@ -9,7 +9,7 @@ cover:
 
 Today, I received news that my national scholarship was revoked, despite it already being publicly announced. The reason? It requires students to be in the top 10% based on their raw GPA, and I ranked only 2nd out of 18 in my class. Consequently, my scholarship was handed over to someone else who had lower scores but from a larger class.
 
-![regina1](/definition/regina1.jpeg)
+![regina1](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/definition/regina1.jpeg)
 
 It sucks when ¥8000 slips out of your hands. What frustrates me even more is the flawed grading system. Here's the deal: the selection process for this national scholarship is somewhat distortedly incentivized. First, the top student in our class (yes, that's me) gets a first-tier People's scholarship, determined by a blend of academic scores and other criteria. Then, students from various classes who receive this scholarship is qualified to run for the jackpot - the national scholarship which worth ¥8000, solely based on academic scores, with only three winners out of six competitors.
 
@@ -21,5 +21,5 @@ This is a huge setback for me in terms of my personal financing, long story. My 
 
 Gotta work now, like, getting my research paper published might earn me a bonus from my dad, making up for this setback.
 
-![regina2](/definition/regina2.jpeg)
+![regina2](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/definition/regina2.jpeg)
 

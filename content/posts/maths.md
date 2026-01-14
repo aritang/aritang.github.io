@@ -17,7 +17,7 @@ This afternoon, I had a little tête-à-tête in my office with a buddy who was 
 
 Anyway. I managed to crack it (after enduring the most dreadful gym session). It's an analysis of a tweaked greedy algorithm for an auction designed to cater to value maximizers (compared to common utility maximizers), who also comes with budget and RoS constraints.
 
-![algo3](/conversations/algo3.jpeg)
+![algo3](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/conversations/algo3.jpeg)
 
 The paper establishes that **Algorithm 3** has an approximation ratio of $1/6$ w.r.t. the optimal allocation $\mathbf x$ that maximizes revenue. Denote $\mathbf x$ and $\mathbf x^*$ as the allocations for Algorithm 3 and the optimal solution, respectively. There's a step that needs to prove
 $$

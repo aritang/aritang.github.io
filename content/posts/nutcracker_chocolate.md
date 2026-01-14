@@ -8,7 +8,7 @@ A *Divertissement* (French for "entertainment" or "amusement") in ballet means o
 
 The *Nutcracker* has technically **7** divertissements:
 
-{{<figure align="center" src="/art/nutcracker_divertissement.jpeg" caption="Mhmm, technically the *Waltz of Flowers* is also an interlude dance">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/nutcracker_divertissement.jpeg" caption="Mhmm, technically the *Waltz of Flowers* is also an interlude dance">}}
 
 The naming of Tchaikovsky's Dibertissements would sometimes be criticized to be racist. (Well, technically it's more of a choreography problem, where the costumes and dances included a lot of racial stereotypes). Surely the whole history of Nutcracker wasn't 100% polite or unbiased. But how the music themselves are named (e.g. Chinese Tea, Arabian Coffee) are "curious and fascinating". In my pov, nothing wrong with Tchaikovsky or the traditional name, and we should keep the tradition. It's more about the way artist/us interpret it, and it's indeed better that we're doing it with more care nowadays.
 

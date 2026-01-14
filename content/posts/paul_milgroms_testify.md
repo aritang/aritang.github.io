@@ -16,13 +16,13 @@ Paul Milgrom's testify won't be some scratch on the surface—the DOJ's gonna ha
 
 > [Paul] By presenting with charisma, charm, wit, and as one person described to me during a break, “**grandpa vibes**”:
 
-{{<figure align="center" src="/google_ad_gossip/milgrom_grandpa_vibes.jpeg" caption="SLAAAAAAAY. (Photo tribute: earlier [Nobel Price official interview](https://www.nobelprize.org/prizes/economic-sciences/2020/milgrom/interview/). There's even a video.)" width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/milgrom_grandpa_vibes.jpeg" caption="SLAAAAAAAY. (Photo tribute: earlier [Nobel Price official interview](https://www.nobelprize.org/prizes/economic-sciences/2020/milgrom/interview/). There's even a video.)" width="66%">}}
 
 (But the DOJ's lawyer probably freaked out upon seeing Paul on their counterparty)
 
 ## US v. Google Crossword Puzzle
 
 Check My Ads covered the trial amazingly: they have updates from inside the courtroom, collected review transcripts and deeper dive research:
-{{<figure align="center" src="/google_ad_gossip/check_the_trial.jpeg" caption="[the main page](https://www.usvgoogleads.com/) of *Check My Ads*'s covering" width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/check_the_trial.jpeg" caption="[the main page](https://www.usvgoogleads.com/) of *Check My Ads*'s covering" width="96%">}}
 
 Apart from that, they even made a crossword out of it: https://d2r0txsugik6oi.cloudfront.net/neon/resource/checkmyads/files/USvGoogleII_Crossword_PDF.pdf. Wow!

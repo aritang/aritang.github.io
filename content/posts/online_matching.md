@@ -16,7 +16,7 @@ The (offline) maximum matching problem is a well-studied area in graph theory, e
 
 These problems have wide applications, from **job assignments** to **network design**. Here's a snapshot of real-world examples:
 
-{{<figure align="center" src="/online/online_matching_application.jpeg" caption="Stealing a page from Professor Tang's slide" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/online_matching_application.jpeg" caption="Stealing a page from Professor Tang's slide" width="100%">}}
 
 However, many of these matching problems occur in **online settings**...
 
@@ -24,7 +24,7 @@ However, many of these matching problems occur in **online settings**...
 
 Let’s start with the **classical online bipartite matching** problem:
 
-{{<figure align="center" src="/online/online_matching_model.jpeg" caption="Stealing another page from Professor Tang's slide" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/online_matching_model.jpeg" caption="Stealing another page from Professor Tang's slide" width="100%">}}
 
 - One side of the bipartite graph (e.g., workers) is fixed and known in advance.
 - The other side (e.g., jobs) with edges arrives one-by-one in an online fashion.
@@ -44,6 +44,6 @@ Consider the **greedy algorithm**—matching an online vertex whenever it is pos
 - Notice that greedy algorithm's matching guarantees that for each edge, at least one of the endpoints is matched. This provides that greedy matching is at least 1/2 approximation of the any matching (hence, maximum matching).
 - A simple 4-point example can upper bound the algorithm's performance.
 
-{{<figure align="center" src="/online/det_alg_instance.jpeg" caption="offline nodes (left) and online nodes (right). the 1/2 instance can be constructed by, if the alg. connects the first online node with one of the offline node, let the second online node be connected only with this occupied offline node." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/det_alg_instance.jpeg" caption="offline nodes (left) and online nodes (right). the 1/2 instance can be constructed by, if the alg. connects the first online node with one of the offline node, let the second online node be connected only with this occupied offline node." width="100%">}}
 
 Sad. But this instance is so stupid that we would expect randomized algorithm to have improvement—we'll talk about it tmrw, with high probability.

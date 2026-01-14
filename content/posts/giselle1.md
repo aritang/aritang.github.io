@@ -6,7 +6,7 @@ draft: false
 
 > *Giselle is about ephoric, despaired, yet innocently beautiful love.*
 
-{{<figure align="center" src="/yes_and/giselle1.jpeg" caption="the audience were very supportive and applauded until the very end–it was almost like that they're hoping for an encore.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/yes_and/giselle1.jpeg" caption="the audience were very supportive and applauded until the very end–it was almost like that they're hoping for an encore.">}}
 
 > **About the story:**
 >
@@ -24,7 +24,7 @@ Well, to be honest, Don Quixote would have a more lively act I rendering rural l
 
 Watch [here](https://www.youtube.com/watch?v=QFQZSZZlepQ) for Natalia Osipova's version of Act II on YouTube. It'll give you goosebumps. When the Willies floating onto the stage, I heard gasp in the audience out of awe.
 
-{{<figure align="center" src="/yes_and/giselle_I.jpeg" caption="the second act's ghost scene is breathtakingly beautiful">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/yes_and/giselle_I.jpeg" caption="the second act's ghost scene is breathtakingly beautiful">}}
 
 > **Ballet en Blanc:** First seen in *La Sylphide* (1832), this term refers to scenes that feature the female corps de ballet costumed in pure white, dancing completely unified choreography. Sometimes referred to as “pure ballet,” it emphasizes the larger patterns and dramatic power of the corps, which assumes a menacing aura in *Giselle*. Act II finds Ballet en Blanc taking the ghostly character of the Wilis who (wearing their wedding dresses and veils), with their signature “flattened” arabesques, move into frightening formations. The Wilis did ballet blanc before the swans in *Swan Lake* and the shades in *La Bayadère*.
 

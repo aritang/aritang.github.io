@@ -6,7 +6,7 @@ draft: false
 
 It was not only Mozart that Glenn Gould clashed with:
 
-{{<figure align="center" src="/art/bernstein_n_gould.jpeg" caption="Leonard Bernstein with Glenn Gould. [Photo by Don Hunstein, 1957; Courtesy of Sony Classical](https://www.leonardbernstein.com/about/conductor/columbia-records)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/bernstein_n_gould.jpeg" caption="Leonard Bernstein with Glenn Gould. [Photo by Don Hunstein, 1957; Courtesy of Sony Classical](https://www.leonardbernstein.com/about/conductor/columbia-records)" width="100%">}}
 
 > [Glenn Gould’s] April 1962 performance of Brahms’ first piano concerto, with the New York Philharmonic and Leonard Bernstein conducting, gave rise to an extraordinary situation in which Mr. Bernstein disagreed with Gould’s interpretation so vehemently that he felt it necessary to warn the audience beforehand. ([Cait Miller](https://blogs.loc.gov/music/2020/04/the-unpopular-opinions-of-glenn-gould-or-how-mozart-became-a-bad-composer/))
 

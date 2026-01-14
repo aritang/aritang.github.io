@@ -10,7 +10,7 @@ I have Tchaikovsky's ***Polonaise*** from *Eugene Onegin* (Op. 24) on repeat in 
 
 #### Novel and Opera
 
-{{<figure align="center" src="/art/onegin_portrait.jpeg" caption="Eugene Onegin's portrait by Pushkin, Wikipedia." width="80%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/onegin_portrait.jpeg" caption="Eugene Onegin's portrait by Pushkin, Wikipedia." width="80%">}}
 
 ***Eugene Onegin*** (also spelled *Yevgeniy Onegin*) is a novel in verse by Alexander Pushkin. The plot is simple: Onegin, a detached aristocrat, rejects the love of a sincere country girl, Tatyana, only to later fall in love with her when it’s too late. It is highly regarded in Russian literature not only because it's a melancholic love story but for its philosophical depth and introduction of the key **literary archetypes**—notably, Onegin as the "superfluous man." Pushkin’s sharp, ironic writing is also a major reason for its high status.
 
@@ -18,7 +18,7 @@ In 1879, Tchaikovsky adapted the novel (1833) into an **opera**, premiering ***E
 
 #### Ballet Version
 
-{{<figure align="center" src="/art/onegin_ballet.jpeg" caption="The Royal Ballet's Nela as Tatyana in Onegin, 2015 production, the ***Tatyana solo***. Watch [here](https://youtube.com/shorts/_nU0JsULCN8?si=MqYH2JcuPWW4X5wU)." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/onegin_ballet.jpeg" caption="The Royal Ballet's Nela as Tatyana in Onegin, 2015 production, the ***Tatyana solo***. Watch [here](https://youtube.com/shorts/_nU0JsULCN8?si=MqYH2JcuPWW4X5wU)." width="100%">}}
 
 And there is a **ballet version** of *Eugene Onegin*, often just called *Onegin*, debuted by the Stuttgart Ballet in 1965. It **doesn’t** use Tchaikovsky’s *Eugene Onegin* opera music, but uses a different selection of lesser-known Tchaikovsky’s compositions, mainly from his piano works and orchestral pieces. Since the ballet relies entirely on movement, its emotional conflicts feel even more intense, expressed through dance rather than words or music from the opera.
 

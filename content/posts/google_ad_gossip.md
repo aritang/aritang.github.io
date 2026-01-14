@@ -11,7 +11,7 @@ summary: On June 27, the Wall Street Journel updated an exclusive online news po
 
 Online ad auctions generate billions of revenues for Google while annoying billions of customers every year. They are omnipresent - disturbing and distracting - especially when the algorithm always recommends the same ads that exhaust all my patience.
 
-![example](/google_ad_gossip/example1.jpeg)
+![example](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/example1.jpeg)
 *Obviously, Meta has a big budget cause I have seen this ad multiple times already. But also, I already had Instagram installed on my phone years ago. Meta is wasting their ad campaign budget on me... sorry bro.*
 
 The Instagram ad is well-filmed and acceptable, but sometimes YouTube makes you watch some super awkward Grammarly ad video which lasts for 15 seconds without an option of skipping after 5 seconds. Ew.

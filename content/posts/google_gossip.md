@@ -12,7 +12,7 @@ First, Google itself generates more than 75% of its revenue from online advertis
 
 In 2023 fiscal year, Google consolidated 307,394 million USD revenue, with a 9% increase from 2022. The revenue gain distribution is
 
-{{<figure align="center" src="/google_ad_gossip/google_revenue.jpeg" caption="Google's revenue distribution as of 2023">}} 
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/google_revenue.jpeg" caption="Google's revenue distribution as of 2023">}} 
 
 Second, now let's put Google into the general advertising landscape. Digital advertising as a whole (including audio/influencer/etc.) spent 679.7 billion USD in 2023, in which, **search advertising** spent 279.3 billion USD. As benchmark, customer data platform industry revenue worldwide is only about 2.3 billion USD...
 

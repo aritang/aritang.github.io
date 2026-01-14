@@ -7,7 +7,7 @@ draft: false
 
 There's a meme that perfectly captures the essence of understanding machine learning, a realization that dawned on me after enrolling in both machine learning and statistics courses. It highlights the intricate relationship between these fields in a humorous yet profound way:
 
-{{<figure align="center" src="/data_vis/stats_ML_meme.jpeg" caption="It wasn't until taking both machine learning and stats courses to make me recall how accurate this meme is.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/stats_ML_meme.jpeg" caption="It wasn't until taking both machine learning and stats courses to make me recall how accurate this meme is.">}}
 
 **High Dimensional Statistics** was an elective course I took last semester (Fall/Winter 2023-24) at SUFE, taught by Prof. Hongsong Yuan. The course's popularity was such that securing a spot required a bit of tricks (aka brute-force python http requests to hack the website to get a slot)👩🏻‍💻 .
 

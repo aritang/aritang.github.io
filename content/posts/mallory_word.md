@@ -8,7 +8,7 @@ When asked why he wanted to climb Everest, adventurer George Mallory famously re
 
 Turns out, Fanjing Mountain (2,336m) was *also* there—when we've paid the sunk cost of an expensive ticket and the cable took us to the foot of the mountain—so up I went.
 
-{{<figure align="center" src="/wine/cause_its_there.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/cause_its_there.jpeg" caption="" width="100%">}}
 
 Halfway up, Li Bai’s **《蜀道难》** (*The Hard Road to Shu*) rang painfully true:
 
@@ -17,5 +17,5 @@ Halfway up, Li Bai’s **《蜀道难》** (*The Hard Road to Shu*) rang painful
 
 The poet wasn’t exaggerating... But I've managed to get a picture:
 
-{{<figure align="center" src="/wine/cliff1.jpeg" caption="Some sections demand hands *and* feet. (Note to self: ‘Summit chic' is really not a viable aesthetic.)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/cliff1.jpeg" caption="Some sections demand hands *and* feet. (Note to self: ‘Summit chic' is really not a viable aesthetic.)" width="100%">}}
 

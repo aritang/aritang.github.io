@@ -6,7 +6,7 @@ draft: false
 
 Meituan, the parent company of DianPing (often called “China’s Yelp”), has quietly launched a new food rating app called **Duck Finding Food**.
 
-{{<figure align="center" src="/google_ad_gossip/duck_finding_food.jpeg" caption="Screenshot of the app's logo, UI, recommendation policies. The app is still very beta — currently only available in Beijing." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/duck_finding_food.jpeg" caption="Screenshot of the app's logo, UI, recommendation policies. The app is still very beta — currently only available in Beijing." width="100%">}}
 
 At its core, the app is for finding good places to eat. What makes it interesting is its ambition: **100% ad-free, bot-free, and purely based on authentic recommendations**.
 

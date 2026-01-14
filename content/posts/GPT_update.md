@@ -36,7 +36,7 @@ I put ChatGPT to the test with the Ballon d'Or dataset, seeking its assistance i
 
 Here's a visualization I created using ChatGPT's assistance: (btw, the data-cleaning process is tedious and not presented here. It took a lot of effort to (i) find and download (ii) parse into csv files and (iii) clean and prepare the data for analysis.)
 
-{{<figure align="center" src="/data_vis/ballon_dor.jpeg" caption="cluster of voter -\> nominees">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/ballon_dor.jpeg" caption="cluster of voter -\> nominees">}}
 
 And the code. Well, GPT is the perfect programmar always.
 

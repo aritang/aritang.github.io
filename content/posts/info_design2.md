@@ -9,7 +9,7 @@ summary: The school admissions talk continues! This time, (rarely but yeah) some
 
 The school admissions talk continues! Today, I had lunch with a friend, and once again, our conversation veered towards graduate school admissions. She hails from a different university and is currently a first-year master's student. When girls get together, gossip flows, and this time, she shared her admission experience.
 
-![suxiaoliu](/high_school_admission/suxiaoliu.jpeg)
+![suxiaoliu](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/suxiaoliu.jpeg)
 
 *XXXL Xiao Long Bao. Strongly recommend it.*
 

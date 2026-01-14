@@ -17,7 +17,7 @@ summary: The fine art market is definitely not a "free" market according to the 
 
 Let's go back to the initial, primitive, and most well-known impression of auctions - auctions that are run by renowned auction houses and sell real estate, fine art, antiques, and wines. (Finally, not the crazily abstract Google Ad auction that you definitely want to murder the scientist who invented that stuff).
 
-![Christies-Lates](/auction_houses/Christies-Lates.jpg)
+![Christies-Lates](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/Christies-Lates.jpg)
 *One of the top auction houses - [Christie's](https://www.christies.com). <- Take a look at their website, they definitely know art!*
 
 The fine art market, along with the classical auctions that serve as the spotlight of the industry, in my point of view, is a lucrative field for academic study. It's an interdisciplinary field encompassing game theory, law, finance, psychology, and, of course, art. The market size is huge in terms of monetary value - and relatively free and anonymous and harder to regulate because, well, art is art while everything else is everything else. Because of this, it attracts a vast crowd with various motives - the whales of fortune who really own or buy the pieces; intelligent people and intermediates who seek to navigate the system to benefit themselves a little from the frenzy; and possibly sometimes, the professionals and artists who really do care about art. It might be a fertile field that generates interesting research topics, and I would definitely like to delve into it later.
@@ -30,7 +30,7 @@ To begin with, even if the transaction fee that a public internet second-hand pl
 
 Things become even more interesting when there are two existing rival forces - Sotheby's and Christie's. The two top auction houses are almost equivalent in market size and impact, essentially resulting in a duopoly competition. This leads to insanely funny dynamics, to the extent that the main expenses and human resources that the auction houses invest in are not evaluating artworks or building professional networks, but maintaining their relationships with elite sellers and buyers.
 
-![christie_wow](/auction_houses/christie_wow.jpeg)
+![christie_wow](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/christie_wow.jpeg)
 *One of Christie's upcoming auction - WOW! I recognize a Lichtenstein when I see one.*
 
 Simply put, the huge imbalance of sellers and buyers (or, supply and demand) in the fine art market creates a massive incentive for the auction houses to court the sellers and pressure the buyers - especially for famous pieces. They don't even charge the sellers for intermediary fees but compensate them with a percentage of the transaction fee charged from the buyers. Even worse, the terms are non-negotiable for the buyers but open to bargaining for the sellers. Moreover, the auction houses have huge PR departments that take care of their elite clients' personal "happiness" - their kids' birthday greetings, charity events, and so on - all in an effort to maintain the trust and endorsement of their clients and encourage them to sell or buy the next Da Vinci piece.

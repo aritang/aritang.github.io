@@ -6,7 +6,7 @@ draft: false
 
 There's a ***carillon*** on the top of the Rockefeller Chapel at University of Chicago.
 
-{{<figure align="center" src="/art/rockefeller_chapel.jpeg" caption="The Rockefella Chapel viewed from the 7th floor of the David Rubenstein Forum building." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/rockefeller_chapel.jpeg" caption="The Rockefella Chapel viewed from the 7th floor of the David Rubenstein Forum building." width="100%">}}
 
 It's kinda like a piano, but instead of strings or pipes (like an organ), Carillons use **bronze bells** of different sizes, each producing a distinct pitch. The Rockefeller one operates pure mechanically.
 
@@ -24,7 +24,7 @@ Normal instruments, whose sound produced by a string or air column, the harmonic
 - 4th partial: second octave C3 (4×)
 - **5th partial: major third above the 2nd octave E3 (5×), etc.**
 
-{{<figure align="center" src="/art/string_multiplications.jpeg" caption="Normal overtone series (strings, pipes). *The Mathematic of Music*" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/string_multiplications.jpeg" caption="Normal overtone series (strings, pipes). *The Mathematic of Music*" width="100%">}}
 
 Carillons are different. Unlike one-dimensional strings or simple pipes, bells are three-dimensional vibrating shells. So they are not harmonic resonators . When struck, a bell produces inharmonic partials, not neat integer multiples. The exact overtone pattern depends on the geometry of the bell (thickness, curvature, profile). For the typical Western church bell:
 
@@ -52,8 +52,8 @@ Hear the carillon:
 
 Btw, the Rockefeller Chapel's tower has the best view on campus (no elevator though)
 
-{{<figure align="center" src="/art/chicago_skyline.jpeg" caption="The tower at the bottom is the Economic Department of UChicago.  [here](/art/booth_from_rc.jpeg) which is usually not available anywhere else online." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/chicago_skyline.jpeg" caption="The tower at the bottom is the Economic Department of UChicago.  [here](/art/booth_from_rc.jpeg) which is usually not available anywhere else online." width="100%">}}
 
 You can also get a rare **bird view of Booth School of Business**:
 
-{{<figure align="center" src="/art/booth_from_rc.jpeg" caption="Booth School of Business — from the top!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/booth_from_rc.jpeg" caption="Booth School of Business — from the top!" width="100%">}}

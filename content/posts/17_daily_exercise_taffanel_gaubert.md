@@ -8,7 +8,7 @@ This is the arguably the most helpful and standard *exercise* set for the *flute
 
 About the authors: **Claude-Paul Taffanel** ([his Wikipedia](https://en.wikipedia.org/wiki/Paul_Taffanel)) was a French flutist and composer and was regarded as the founder of the French Flute School that dominated much of flute composition and performance during the mid-20th century. Taffanel's student **Philippe Gaubert** (the other composer) was also a distinguished flute performer, with the Paris Opera and was also Professor of flute in the [Conservatoire de Paris](https://en.wikipedia.org/wiki/Conservatoire_de_Paris) (teacher of [Marcel Moyse](https://en.wikipedia.org/wiki/Marcel_Moyse), who is the teacher of Sir **James Galway**). Basically, they are the history of the flute instrument.
 
-{{<figure align="center" src="/art/taffanel_exercise.jpeg" caption="Every flute kid's worst nightmare" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/taffanel_exercise.jpeg" caption="Every flute kid's worst nightmare" width="100%">}}
 
 No kids can practice through these exercises. They're long and exhausting, consisted of repeating (seemingly boring but actually well-arranged) scales and arpeggios that points at the most complex finger works for flute. My flute teacher used to print and gift it to every students who reached the level for this piece. The kids hated it (including me then) and according to my teacher, "all keep accidentally losing it". One even has got his third copy.
 

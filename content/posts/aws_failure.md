@@ -7,7 +7,7 @@ summary: "A pause on my econometric homework, here's what seems to have happened
 
 Canvas is down!
 
-{{<figure align="center" src="/google_ad_gossip/canvas_down.jpeg" caption="Nooooooooooo. But will we get extensions?" width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/canvas_down.jpeg" caption="Nooooooooooo. But will we get extensions?" width="66%">}}
 
 Now that I am unable to continue on my econometric homework, here's what seems to have happened:
 

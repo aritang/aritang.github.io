@@ -6,7 +6,7 @@ draft: false
 
 Here's another lovely Saturday night spent at the Chicago Symphony Orchestra:
 
-{{<figure align="center" src="/art/cso_ravel.jpeg" caption="There's a Ravel in the crowd yelling Bravi — can you spot him?" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cso_ravel.jpeg" caption="There's a Ravel in the crowd yelling Bravi — can you spot him?" width="100%">}}
 
 Tonight's program is splendid — the orchestra begins with Camille Pépin's *Les Eaux célestes*. Anticipating upcoming Ravel, I was not surprised to catch a sense of oriental chords within the surreal, dreamy, beauuuuuutiful music. Turns out, the piece it was inspired by the ancient Chinese legend 牵牛织女鹊桥会 (a love story, read [CSO's official comment](https://cso.org/experience/article/25094/camille-pepin-fuses-french-and-minimalist-ton)).
 
@@ -22,4 +22,4 @@ The orchestra concluded the night in high spirit with the *Carmen Suite*. You ca
 
 Btw, did you find the Ravel?
 
-{{<figure align="center" src="/art/ravel_bravi.jpeg" caption="Slay. " width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/ravel_bravi.jpeg" caption="Slay. " width="66%">}}

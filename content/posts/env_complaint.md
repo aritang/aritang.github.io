@@ -13,7 +13,7 @@ According to their website, it's all about NFL players offering up their raw opi
 
 > WHILE NOT A SCIENTIFIC SURVEY, “CLUB REPORT CARDS” WOULD REPORT THE QUANTITATIVE AND QUALITATIVE OPINIONS OF NFL PLAYERS ABOUT THEIR RESPECTIVE CLUBS.
 
-![cards](/complaints/cards.jpeg)
+![cards](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/cards.jpeg)
 
 *Hold your breath, because they went all out and put those unabashed scores front and center on their homepage. Impressive, right?*
 

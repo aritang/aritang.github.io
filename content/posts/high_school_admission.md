@@ -11,19 +11,19 @@ summary: The Boston-flavored high school admission mechanism in Guangzhou has be
 
 Home sweet home. I am back in Guangzhou, finally!
 
-![chashao](/high_school_admission/chashao.jpeg)
+![chashao](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/chashao.jpeg)
 *Cantonese-style black Char Siu*
 
 For those who don’t know, Guangzhou is one of the three first-tier cities in China (the others are Beijing amd Shanghai). But more importantly, we have a grounded and welcoming citizen culture, as well as the most delicious recipes in the world.
 
-![buoluobao](/high_school_admission/buoluobao.jpeg)
+![buoluobao](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/buoluobao.jpeg)
 *ice and fire pinapple bun with butter - best served with HK-style milk tea*
 
 Thanks to my dad’s obsession with luscious cuisine, our family gathered for a Saturday dinner, which is the source of inspiration for this blog. A friend sitting next to me has just finished his High School Entrance Examination and gone through the admission process.
 
 
 
-![eel](/high_school_admission/eel.jpeg)
+![eel](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/eel.jpeg)
 *sautéed boneless eel with green onions and ginger*
 
 ***Disclaimer**: Having been a high school student in Guangzhou, I experienced the admission process myself years ago, where the mechanism was slightly different. The content today is based on a dinner talk and serves **only for research purposes**. In case of any potential mistakes, I apologize beforehand.*

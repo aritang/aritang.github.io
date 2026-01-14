@@ -6,7 +6,7 @@ draft: false
 
 Ariana Grande's new album ***Eternal Sunshine (Deluxe)*** is released today, with six additional songs.
 
-{{<figure align="center" src="/eternal_sunshine/deluxe.jpeg" caption="Eternal Sunshine Deluxe" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/deluxe.jpeg" caption="Eternal Sunshine Deluxe" width="100%">}}
 
 Ariana Grande has always been my favorite pop singer. Her new album as usual, is extremely complicatedly layered and emotionally authentic. I bet for at least 8.0 in pitchfork. 
 

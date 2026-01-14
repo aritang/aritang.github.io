@@ -6,7 +6,7 @@ draft: false
 
 When I listended to Rachmaninov's piano concerto no.2 (during one morning makeup routine)—2nd movement *Adagio*—I found it surprisingly similar to the pre-chorus of Celine Dion's hit All by Myself. Turned out, that Rachmaninov's most popular piece is a pop song.
 
-{{<figure align="center" src="/tattooed_heart/rachs_credit.jpeg" caption="Rach's most popular piece is actually *All by Myself*, as he **is** officially a co-writer.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/rachs_credit.jpeg" caption="Rach's most popular piece is actually *All by Myself*, as he **is** officially a co-writer.">}}
 
 ## Rachmaninov Op. 18 | Piano Concerto No. 2
 

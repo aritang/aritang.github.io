@@ -4,7 +4,7 @@ date: 2025-05-11T23:15:03+08:00
 draft: false
 ---
 
-{{<figure align="center" src="/art/moon_in_australia.jpeg" caption="The Waverley Cemetery, Sydney, Australia." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/moon_in_australia.jpeg" caption="The Waverley Cemetery, Sydney, Australia." width="100%">}}
 
 🌕 A poem by 张九龄 Zhang Jiuling [he lives in the ***Tang*** Dynasty, yes my last name :)]
 

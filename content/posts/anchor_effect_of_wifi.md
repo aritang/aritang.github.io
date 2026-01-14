@@ -11,7 +11,7 @@ The Independence of Irrelevant Alternatives (IIA) assumption states that, adding
 
 Xfinity's marketing team strongly disagrees:
 
-{{<figure align="center" src="/data_vis/xfinity_wifi.jpeg" caption="(Chicago, Sept. 2025)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/xfinity_wifi.jpeg" caption="(Chicago, Sept. 2025)" width="100%">}}
 
 The 45USD plan is dominated by the 40USD plan. But according to the representative at the store, >90% choose the 40USD plan. How much of these are thanks to the *stupid* 45USD plan just being in the middle? 
 

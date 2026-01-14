@@ -6,7 +6,7 @@ draft: false
 
 Currently, I'm immersed in two mechanism design projects, both intricately involving the integration of stochastic processes within their frameworks. This reminds me of a comic that resonates humorously with my work:
 
-{{<figure align="center" src="/yes_and/stochastic_income_tax.png" caption="An economist's playful daydream or a mathematician's practical joke, it's a scenario where certainty is the only casualty and the pursuit of fairness takes a probabilistic turn. Prepare for a world where the accountants are the gamblers, and the odds are your tax bracket.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/yes_and/stochastic_income_tax.png" caption="An economist's playful daydream or a mathematician's practical joke, it's a scenario where certainty is the only casualty and the pursuit of fairness takes a probabilistic turn. Prepare for a world where the accountants are the gamblers, and the odds are your tax bracket.">}}
 
 It's from SMBC, by the witty Zach Weinersmith. [Saturday Morning Breakfast Cereal](https://www.smbc-comics.com/comic/search/economics) never fails to deliver a chuckle.
 

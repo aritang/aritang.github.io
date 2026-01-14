@@ -6,7 +6,7 @@ draft: false
 
 I was at the opening night of ***Cosi Fan Tutte by the LA Opera***, March 07 2025 at the Dorothy Chandler Pavilion theater:
 
-{{<figure align="center" src="/art/cosi_fan_tutte_preshow_talk.jpeg" caption="The pre-show lecture given by conductor James Conlon, at the Dorothy Chandler Pavilion, featuring the amazing Chandelier." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cosi_fan_tutte_preshow_talk.jpeg" caption="The pre-show lecture given by conductor James Conlon, at the Dorothy Chandler Pavilion, featuring the amazing Chandelier." width="100%">}}
 
 > Pro Tips for classical performances, especially grand productions like Ballet and Opera:
 >
@@ -19,8 +19,8 @@ At first, the women resist, but under the influence of their mischievous maid, D
 
 The LA Opera's production is amazing with a (relatively) modern stage setting in the 1930s.
 
-{{<figure align="center" src="/art/cosi_fan_tutte.jpeg" caption="A refreshing new production for 1930s vibe, based on brilliant Mozart music." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cosi_fan_tutte.jpeg" caption="A refreshing new production for 1930s vibe, based on brilliant Mozart music." width="100%">}}
 
 Last but now least, go for front row seats if possible. If seated at the "top of the mountain" with the cheapest student ticket, it would be hard to see literally anything...
 
-{{<figure align="center" src="/art/cosi_fan_tutte_from_the_top.jpeg" caption="mountain view..." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cosi_fan_tutte_from_the_top.jpeg" caption="mountain view..." width="100%">}}

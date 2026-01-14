@@ -12,6 +12,6 @@ The Berliner Philharmoniker stands sliiighly more serious—the orchestra presen
 
 Every year the program is carefully selected (not merely revised with some minor change). Although the pieces are still classical hits, you can tell every year has its personality and focus. For example, 2024's program:
 
-{{<figure align="center" src="/art/bp_2025nyec_program.jpeg" caption="(Source) For, the program for 2024 Dec 31. Apart from the *Rosenkavalier* Waltzes, all other pieces are celebrative but not overly presented." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/bp_2025nyec_program.jpeg" caption="(Source) For, the program for 2024 Dec 31. Apart from the *Rosenkavalier* Waltzes, all other pieces are celebrative but not overly presented." width="100%">}}
 
 The recordings are available on Berlin Philharmonic's Digital Concert Hall—and of course, you might wanna do a search in **Bilibili** before this.

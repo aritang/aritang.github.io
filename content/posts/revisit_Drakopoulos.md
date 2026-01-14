@@ -13,7 +13,7 @@ Model: a seller sells a single good over two period to unit-demand buyers, out o
 
 The inventory level is unknown at the start, with the seller knowing more info ahead of the buyers and hence can utilize informational advantage. The timing of the game is as follows:
 
-{{<figure align="center" src="/info_design/drakopoulos_timeline.jpeg" caption="Timing of the game. Source: the [paper](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3580).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/info_design/drakopoulos_timeline.jpeg" caption="Timing of the game. Source: the [paper](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3580).">}}
 
 - To begin with, the seller and buyers enter the market: prior over inventory level $\mathbb P[H] + \mathbb P[L] = 1$ and buyer's 'private' type distribution $v\sim F(\cdot)$ is public knowledge.
 
@@ -72,7 +72,7 @@ Discuss over the information policy $\Sigma$, we seek to solve for the optimal p
 
     The optimal mechanism can be visualized as follows:
 
-    {{<figure align="center" src="/info_design/drakopoulos_opt_signal.jpeg" caption="private signaling optimal mechanism">}}
+    {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/info_design/drakopoulos_opt_signal.jpeg" caption="private signaling optimal mechanism">}}
 
 - later commitment
 

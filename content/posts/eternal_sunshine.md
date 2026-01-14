@@ -10,4 +10,4 @@ Grande's well-known admiration for Carrey, whom she famously termed as her "firs
 
 The Truman Show, peeling back layers of superficiality to reveal the nihilistic truth underneath, sort of parallels Grande's artistic journey which, juxtaposedly, inverted the stark reality back into a surreal, beautiful bubble. Like, she isn’t just playing with existential themes; she's living them, making her music a reflection of life’s more profound and often perplexing questions.
 
-{{<figure align="center" src="/yes_and/eternal_sunshine.jpeg" caption="Sweetener aesthetic (left) vs. The Truman Show (right). btw, the reference of staircases, as Ariana Grande said, was also inspired by Monument Valley.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/yes_and/eternal_sunshine.jpeg" caption="Sweetener aesthetic (left) vs. The Truman Show (right). btw, the reference of staircases, as Ariana Grande said, was also inspired by Monument Valley.">}}

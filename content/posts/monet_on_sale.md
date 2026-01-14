@@ -10,7 +10,7 @@ Christie's [latest story](https://www.christies.com/stories/impressionism-everyt
 
 In short, the annual impressionism feast is on the way. This year, ***Moulin de Limetz*** (1888, Monet) is on the market:
 
-{{<figure align="center" src="/auction_houses/moulin1.jpeg" caption="Claude Monet (1840-1926), *Moulin de Limetz,* 1888. Oil on canvas. 36⅜ x 28⅝ in (92.5 x 72.8 cm). Estimate: $18,000,000-25,000,000. Offered in [20th Century Evening Sale](https://www.christies.com/en/auction/20th-century-evening-sale-23172-nyr/) on 16 May 2024 at Christie's in New York">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/moulin1.jpeg" caption="Claude Monet (1840-1926), *Moulin de Limetz,* 1888. Oil on canvas. 36⅜ x 28⅝ in (92.5 x 72.8 cm). Estimate: $18,000,000-25,000,000. Offered in [20th Century Evening Sale](https://www.christies.com/en/auction/20th-century-evening-sale-23172-nyr/) on 16 May 2024 at Christie's in New York">}}
 
 ## impressionism 101:
 
@@ -36,7 +36,7 @@ Impressionism was speaking against the seriousness of the art that came before, 
 
 > Through dramatic angles and a focus on light and saturated hues, the Impressionists captured the ethereal drama of fleeting moments and brought French painting into the present tense. Trading traditional linear perspective and modelling for loose brushwork and daubs of colour, their approach offered a provocative invitation to encounter the canvas as a surface.
 
-{{<figure align="center" src="/auction_houses/la_roche.jpeg" caption="Claude Monet (1840-1926) *La Roche Guibel, Port-Domois,* 1886. Oil on Canvas. 26¼ x 32½ in (66.7 x 82.5 cm). Estimate: $6,000,000-8,000,000. Offered in [20th Century Evening Sale](https://www.christies.com/en/auction/20th-century-evening-sale-23172-nyr/) on 16 May 2024 at Christie's in New York">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/la_roche.jpeg" caption="Claude Monet (1840-1926) *La Roche Guibel, Port-Domois,* 1886. Oil on Canvas. 26¼ x 32½ in (66.7 x 82.5 cm). Estimate: $6,000,000-8,000,000. Offered in [20th Century Evening Sale](https://www.christies.com/en/auction/20th-century-evening-sale-23172-nyr/) on 16 May 2024 at Christie's in New York">}}
 
 Émile Zola called Impressionism 'the study of light in its thousands of decompositions and recompositions'. But it's not only about a new attitude on canvas. Impressionism changed the way of how paintings were made and for whom it shall pay attention to.
 
@@ -52,7 +52,7 @@ During the earliest time (around the late 1800s), challenges then for the Impres
 >
 > Impressionism marked the great first step toward pure abstraction, something which was unfathomable prior to them.
 
-{{<figure align="center" src="/auction_houses/new-georges.jpeg" caption="Claude Monet (1840-1926), *Saint-Georges Majeur,* 1908. Oil on canvas. 23⅝ x 28⅞ in (59.9 x 73.2 cm). Estimate: $12,000,000-18,000,000. Offered in [20th Century Evening Sale](https://www.christies.com/en/auction/20th-century-evening-sale-23172-nyr/) on 16 May 2024 at Christie's in New York">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/new-georges.jpeg" caption="Claude Monet (1840-1926), *Saint-Georges Majeur,* 1908. Oil on canvas. 23⅝ x 28⅞ in (59.9 x 73.2 cm). Estimate: $12,000,000-18,000,000. Offered in [20th Century Evening Sale](https://www.christies.com/en/auction/20th-century-evening-sale-23172-nyr/) on 16 May 2024 at Christie's in New York">}}
 
 And the following story was all familiar. Standing on the shoulder of the braves, Fauvism, Expressionism ventured their way. Later on Surrealism, Dadaism and Abstract Expressioned marched onto claiming the market.
 

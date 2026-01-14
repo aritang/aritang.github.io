@@ -8,7 +8,7 @@ Five minutes before boarding I picked up a book at the airport bookstore — fla
 
 *En agosto nos vemos* (*Until August*) ([amazon link](https://www.amazon.com/-/es/agosto-vemos-Until-August-Spanish/dp/B0CLCGFNQ9)) turned out to be a light companion for the flight home, and perfectly timed for late August. The novella follows a woman who returns each year on **August 16** to a lonely island where her mother is buried. Each visit also an affair, a fleeting grasp at vitality amid solitude.  
 
-{{<figure align="center" src="/art/nos_vemos.jpeg" caption="Slay." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/nos_vemos.jpeg" caption="Slay." width="88%">}}
 
 Some reviewers call it “less polished,” even suggesting it “could have stayed in the drafts.” And yes — compared to Márquez’s masterpieces, it feels subdued. Yet, even here, his signature themes of loneliness and longing surface.  
 

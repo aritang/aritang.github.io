@@ -18,11 +18,11 @@ $$
 $$
 Historically, three major tuning systems emerged:
 
-{{<figure align="center" src="/art/scales.jpeg" caption="'Sexy,' isn't it" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/scales.jpeg" caption="'Sexy,' isn't it" width="100%">}}
 
 The old wisdom of Pythagorean, the ***Pythagorean scale*** is a heuristic that approximates both axioms with 12 notes. The ***just intonation*** system, by contrast, defines notes directly from pure integer ratios. It produces the most consonant intervals but requires many, MANY keys to preserve that purity across transpositions.
 
-{{<figure align="center" src="/art/31keys.jpeg" caption="A 17th-century mathematician Marin Mersenne designed a keyboard with **31 notes in an octave**, and no fewer than 4 keys between F and G." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/31keys.jpeg" caption="A 17th-century mathematician Marin Mersenne designed a keyboard with **31 notes in an octave**, and no fewer than 4 keys between F and G." width="100%">}}
 
 The problem was beautifully resolved by ***equal temperament*** — divide the octave into 12 equal geometric steps, each raised by $2^{1/12}$. This tuning slightly compromises the purity of individual intervals (for instance, the fifth is $1.4983$ instead of the perfect $1.5$), but the ear hardly minds (though often the thirds are tricky). In return, we gain a beautifully closed, finite set $\mathbf{P}$ of 12 notes — a workable, nearly symmetric solution.
 

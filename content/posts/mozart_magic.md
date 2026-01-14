@@ -12,5 +12,5 @@ He also pointed me to Gieseking’s recording of *Sonata Facile*, which feels al
 
 Also, if you're feeling bad about putting things off today, remember:
 
-{{<figure align="center" src="/art/mozart_wisdom.jpeg" caption="Slay." width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/mozart_wisdom.jpeg" caption="Slay." width="50%">}}
 

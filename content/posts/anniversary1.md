@@ -10,7 +10,7 @@ Small but meaningful changes have crept in. I've been trying to write more indep
 
 For the year ahead, I wish both my emotions and the blog's updating rhythms be more stable. And also, I may better organize these scattered daily fragments into more coherent passages.
 
-{{<figure align="center" src="/art/anniversary_2025.jpeg" caption="Guangzhou downtown, taken on the plane on my way back home." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/anniversary_2025.jpeg" caption="Guangzhou downtown, taken on the plane on my way back home." width="100%">}}
 
 It’s summer now. Summer feels like the season outside of time, hovering between an ending and a beginning. Like, for me the years are still divided not by calendars but by “school years” — September to late May, sometimes stretching into early July. And then comes summer.  Is it the quiet closure of the year past, or the first breath of the one to come?
 

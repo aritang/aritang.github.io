@@ -6,7 +6,7 @@ draft: false
 
 I've listened to enough of Professor Ye’s talks that my Apple Photos automatically organizes pictures of his slides into a “memory” album (by recognizing Prof Ye of course). Interestingly delightful — I always learn so much from them!
 
-{{<figure align="center" src="/seminars/IPM_for_EqComputation.jpeg" caption="Professor Ye: Slay." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/seminars/IPM_for_EqComputation.jpeg" caption="Professor Ye: Slay." width="100%">}}
 
 Another refreshing piece of research on applying OR to game theory:
 

@@ -135,7 +135,7 @@ To begin with, the **Walrasian equilibrium** is a fundamental concept where mark
 
 *Tatonnement* (French for "groping" or "trial and error") is an iterative procedure to reach a Walrasian equilibrium:
 
-{{<figure align="center" src="/seminars/walrasian_tatonnement.jpeg" caption="caption_text" width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/seminars/walrasian_tatonnement.jpeg" caption="caption_text" width="88%">}}
 
 Understanding tatonnement enriches our ability to design mechanisms that are both theoretically sound and practically viable. Spoiler alert: it works for a natural class of so-called '***gross substitutes***' value functions.
 

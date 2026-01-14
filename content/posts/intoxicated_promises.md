@@ -6,13 +6,13 @@ cover:
     image: "art/vg_wine.jpeg"
 ---
 
-{{<figure align="center" src="/art/vg_wine.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/vg_wine.jpeg" caption="" width="100%">}}
 
 In China, business deals are often made over dinners, where the essential informal/implicit consensus are reached. Drinking alcohol (especially, BaiJiu) in formal business dinner is not only for enjoyment, but more of a cultural etiquette—drinking with the the party is a way to **show respect and commitment**.
 
 Here's a really interesting behavioral economics paper about the effect of alcohol intoxication affecting people strike a deal in business:
 
-{{<figure align="center" src="/market_design/alcohol_decision_paper.jpeg" caption="The idea is golden — and the paper is only 15 pages! Well, John Nash's PhD thesis was also just 26 pages..." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/market_design/alcohol_decision_paper.jpeg" caption="The idea is golden — and the paper is only 15 pages! Well, John Nash's PhD thesis was also just 26 pages..." width="100%">}}
 
 ### Business Drinking in East Asia
 

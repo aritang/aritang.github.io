@@ -20,7 +20,7 @@ YuanArithmetic (小猿口算) is an educational mobile app designed to assist pr
 
 Interestingly, college students—especially CS majors—have also taken a liking to this platform. They’ve injected a bit of chaos into what was a straightforward arithmetic challenge, crafting advanced algorithms and employing a variety of sophisticated web and OS automation tools to gain an edge—or outright cheat.
 
-{{<figure align="center" src="/data_vis/yuan_arithmetic.jpeg" caption="left—mobile phone view; right—advanced programming tools that students employ to play the game against primary school students" width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/yuan_arithmetic.jpeg" caption="left—mobile phone view; right—advanced programming tools that students employ to play the game against primary school students" width="96%">}}
 
 What started as a simple educational tool has now turned into a playground for competitive programming across prestigious universities...
 
@@ -36,7 +36,7 @@ Btw, the intern himself ([TianKeyu](https://scholar.google.com/citations?user=6F
 
 ByteDance recently addressed these allegations in a statement clarifying several exaggerations and inaccuracies reported by the media:
 
-{{<figure align="center" src="/data_vis/bytedance_PR.jpeg" caption="Bytedance's clarification screenshot" width="80%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/bytedance_PR.jpeg" caption="Bytedance's clarification screenshot" width="80%">}}
 
 (translation)
 

@@ -4,7 +4,7 @@ date: 2025-08-07T00:10:34+08:00
 draft: false
 ---
 
-{{<figure align="center" src="/wine/dounan1.jpeg" caption="Kunming's Dounan Flower Market" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/dounan1.jpeg" caption="Kunming's Dounan Flower Market" width="100%">}}
 
 I visited the Dounan flower market today  — ha! So naturally this is the time to talk a bit about
 
@@ -30,10 +30,10 @@ The Aalsmeer model later spreads worldwide to other perishable goods: fish, vege
 
 Come on — looking at how beautiful these flowers are, I woudn't mind paying just a little bit more:
 
-{{<figure align="center" src="/wine/dounan2.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/dounan2.jpeg" caption="" width="100%">}}
 
-{{<figure align="center" src="/wine/dounan3.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/dounan3.jpeg" caption="" width="100%">}}
 
-{{<figure align="center" src="/wine/dounan4.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/dounan4.jpeg" caption="" width="100%">}}
 
-{{<figure align="center" src="/wine/dounan5.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/dounan5.jpeg" caption="" width="100%">}}

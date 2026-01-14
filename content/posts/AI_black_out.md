@@ -21,4 +21,4 @@ Later some of my friends found out:
 
 Check history status at OpenAI's Status site https://status.openai.com/. See how people freaked out to find alternatives:
 
-{{<figure align="center" src="/google_ad_gossip/chatgpt_alternative_trend.jpeg" caption="Data from Google Trends (popular keyword search)." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/chatgpt_alternative_trend.jpeg" caption="Data from Google Trends (popular keyword search)." width="100%">}}

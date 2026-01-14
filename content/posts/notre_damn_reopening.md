@@ -14,4 +14,4 @@ The reopening ceremony (watch it [here](https://www.bilibili.com/video/BV1FBqEYn
 
 Of course, President Macron's official photographer deserves an award, again:
 
-{{<figure align="center" src="/art/macron_trump_z.jpeg" caption="Clearly, Notre-Dame isn’t the only thing on display—see Macron, Trump, and Zelensky in a chat before the ceremony." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/macron_trump_z.jpeg" caption="Clearly, Notre-Dame isn’t the only thing on display—see Macron, Trump, and Zelensky in a chat before the ceremony." width="100%">}}

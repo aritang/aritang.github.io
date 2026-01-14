@@ -9,7 +9,7 @@ summary: nudge college students to sleep by using money reward? there's a possib
 
 Yesterday, I had lunch with two professors from my department, and our conversation veered towards a recent talk on behavior I had listened to last month. (We were lamenting the state of undergraduate classes and student behavior, so I guess that's why.)
 
-![paper](/auction_houses/paper.jpeg)
+![paper](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/paper.jpeg)
 
 *the talk and the paper. screenshot taken from SITE 2023 website.*
 

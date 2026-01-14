@@ -10,7 +10,7 @@ Let's begin with (real valued) [Hilbert space](https://en.wikipedia.org/wiki/Hil
 
 Now suppose we are given $y\in \mathcal H$ and $X := [x_1, x_2, \ldots, x_N]\in \mathcal H^N$. The way to "project" $y$ onto $x$ is
 
-{{<figure align="center" src="/online/hilbert_space.jpeg" caption="Slay." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/hilbert_space.jpeg" caption="Slay." width="88%">}}
 
 Now this is a linear system, and we can always find $\beta = \text{Gram}(X)^{-1} [\lang y, x_k\rang]_{k\in [N]}$ — whatever $x$ and $y$ actually are, as long as $\text{Gram}(X)$ is invertible. Note that $\beta$ minimizes (*proof hint*: inner product is linear so we can take derivative and move it out)
 

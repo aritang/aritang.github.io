@@ -6,7 +6,7 @@ draft: false
 
 Professor Aumann's most highly cited paper "AGREEING TO DISAGREE" only has four pages...
 
-{{<figure align="center" src="/online/atd.jpeg" caption="Slay." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/atd.jpeg" caption="Slay." width="100%">}}
 
 Here's how I understand Aumann's *common knowledge*:
 
@@ -48,7 +48,7 @@ $$
 
 In other words, two rational agents with a common prior **cannot “agree to disagree”** ***when their posteriors are common knowledge***.
 
-{{<figure align="center" src="/online/atd_proposition.jpeg" caption="Slay." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/atd_proposition.jpeg" caption="Slay." width="100%">}}
 
 ### Reference
 

@@ -6,7 +6,7 @@ draft: false
 
 Tomorrow (Nov. 17) marks the grand finale of the Shanghai International Art Festival. The closing performance features the esteemed **Munich Philharmonic**, led by **Tugan Sokhiev**, with the brilliant pianist **Haochen Zhang** gracing the stage.
 
-{{<figure align="center" src="/art/Tugan_Sokhiev.jpeg" caption="Tugan Sokhiev: the man with a baton and a plan." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/Tugan_Sokhiev.jpeg" caption="Tugan Sokhiev: the man with a baton and a plan." width="88%">}}
 
 The program offers a sumptuous feast of late-Romantic repertoire, showcasing three well-loved classics:
 

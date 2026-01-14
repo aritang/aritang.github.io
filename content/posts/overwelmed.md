@@ -17,4 +17,4 @@ summary: in every job that must be done, there is an element of fun...
 >
 > In a most delightful way
 
-{{<figure align="center" src="/tattooed_heart/spoonful_of_sugar.jpeg" caption="work ethic? more like an attitude in adversary mindset. tbh, winter holiday is much harder than common sems.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/spoonful_of_sugar.jpeg" caption="work ethic? more like an attitude in adversary mindset. tbh, winter holiday is much harder than common sems.">}}

@@ -12,7 +12,7 @@ draft: false
 
 The **Big Five** refers to the association football markets of England, Germany, Spain, Italy and France. As of 2024, they are the five European leaders in size and popularity of the main domestic football leagues – the Premier League, Bundesliga, La Liga, Serie A and Ligue 1 respectively in men's football.
 
-{{<figure align="center" src="/21/big_five.jpeg" caption="England (Premier League), Spain (La Liga), Italy (Serie A), Germany (Bundesliga) and France (Ligue 1)">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/21/big_five.jpeg" caption="England (Premier League), Spain (La Liga), Italy (Serie A), Germany (Bundesliga) and France (Ligue 1)">}}
 
 On January 1, 2024, the winter transfer window for the 23/24 season in European football opened as usual. For the ongoing European club competitions spanning the New Year, this is the only opportunity within the season to make significant adjustments to the squads. During the 2023 winter transfer window, teams from the top five leagues spent a total of **1.061 billion euros**.
 
@@ -24,7 +24,7 @@ In the past decade, one major trend in European football has been the **corporat
 
 Currently, the two largest football conglomerates are the [City Football Group (CFG)](https://www.cityfootballgroup.com/) and the Red Bull Group. The former is controlled by the Abu Dhabi United Group, headquartered in Manchester, England, and owns several football clubs, including the Premier League's Manchester City, La Liga's Girona, and the Chinese Super League's Shenzhen New Power (formerly Sichuan Jiuniu). The latter was established by Austria's Red Bull Company and owns clubs such as the Bundesliga's RB Leipzig.
 
-{{<figure align="center" src="/21/meet_ur_boss.jpeg" caption="Manchester City owner Sheikh Mansour bin Zayed, UAE Vice President, Deputy Prime Minister and Minister of the Presidential Court, hosted the club's treble-winning manager Pep Guardiola in Abu Dhabi.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/21/meet_ur_boss.jpeg" caption="Manchester City owner Sheikh Mansour bin Zayed, UAE Vice President, Deputy Prime Minister and Minister of the Presidential Court, hosted the club's treble-winning manager Pep Guardiola in Abu Dhabi.">}}
 
 ## the rest | original article [here](https://mp.weixin.qq.com/s/uZVdkR59DN5qqS96g7aYag)
 

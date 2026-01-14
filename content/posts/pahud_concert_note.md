@@ -10,7 +10,7 @@ Flute shines brightest in chamber music — not that the ethereal flute solo in 
 
 And Pahud elevates the entire performance with his charisma, precision, and deep musical understanding. If you ever get the chance, **don’t miss him live**. Whether it’s orchestral or chamber, it’s worth it. If nothing else, the fact that he’s involved usually signals that the program is something special.
 
-{{<figure align="center" src="/art/pahud_front_row.jpeg" caption="And take the front row seat, if possible." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_front_row.jpeg" caption="And take the front row seat, if possible." width="66%">}}
 
 Anyway — here are a few of my personal highlights from the concert:
 
@@ -48,10 +48,10 @@ Anyway — here are a few of my personal highlights from the concert:
 
 And finally: **a lot of photos** 📸
 
-{{<figure align="center" src="/art/pahud_gz1.jpeg" caption="I've never seen so long a queue in any classical music venue. Not even Martha Argerich" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_gz1.jpeg" caption="I've never seen so long a queue in any classical music venue. Not even Martha Argerich" width="100%">}}
 
-{{<figure align="center" src="/art/pahud_gz2.jpeg" caption="I was in the front of the queue ;) thank you." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_gz2.jpeg" caption="I was in the front of the queue ;) thank you." width="100%">}}
 
-{{<figure align="center" src="/art/pahud_gz3.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_gz3.jpeg" caption="" width="100%">}}
 
-{{<figure align="center" src="/art/pahud_gz5.jpeg" caption="He signed on my piccolo box" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_gz5.jpeg" caption="He signed on my piccolo box" width="100%">}}

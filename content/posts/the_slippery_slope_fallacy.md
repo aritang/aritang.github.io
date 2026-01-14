@@ -6,7 +6,7 @@ draft: false
 
 The story starts with today’s law class. For the last topic of this semester, we dove into healthcare policies—*And wow,* the slides are a work of art:
 
-{{<figure align="center" src="/info_design/obamacare.jpeg" caption="Yes, I’m flexing on my course materials. It is titled '*A Glimpse into U.S. Society from Supreme Court Rulings*'" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/info_design/obamacare.jpeg" caption="Yes, I’m flexing on my course materials. It is titled '*A Glimpse into U.S. Society from Supreme Court Rulings*'" width="100%">}}
 
 Healthcare in the United States used to be (and might still be) a mess (but who's doing good, anyway?) Going to the hospital is expensive, so most people don’t pay directly out of pocket and instead have it covered by private insurance or government programs. In some way, the market’s design in US has created a vicious cycle.
 
@@ -17,7 +17,7 @@ Healthcare in the United States used to be (and might still be) a mess (but who'
 
 The idea of federally supported, universal healthcare isn’t new. It’s been debated since Truman’s presidency. But it wasn’t until 2010—thanks to Obama’s leadership and Nancy Pelosi’s push—that the *Patient Protection and Affordable Care Act (ACA)*, aka *Obamacare*, became law.
 
-{{<figure align="center" src="/info_design/aca.jpeg" caption="Some say it's Obama's greatest contribution, others say it's the worst thing he'd ever done. Nevertheless, I say this is an awesome picture—any tribute to the photographer? It's insanely hard to capture a shot like this—where **everyone** looks awesome during applause." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/info_design/aca.jpeg" caption="Some say it's Obama's greatest contribution, others say it's the worst thing he'd ever done. Nevertheless, I say this is an awesome picture—any tribute to the photographer? It's insanely hard to capture a shot like this—where **everyone** looks awesome during applause." width="100%">}}
 
 The mandate makes economic sense. But its impact on personal freedom—that’s where things got heated. Enter the lawsuit.
 

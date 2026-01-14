@@ -8,7 +8,7 @@ Continuing the discussion on online matching algorithms, the first post [here](/
 
 Today, we explore randomized algorithms for the **online bipartite matching** problem:
 
-{{<figure align="center" src="/online/online_matching_model.jpeg" caption="Stealing a page from Professor Tang's slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/online_matching_model.jpeg" caption="Stealing a page from Professor Tang's slide. One side of the bipartite graph is fixed and known in advance, the other side with edges arrives one-by-one in an online fashion." width="100%">}}
 
 Upon the arrival of every online node, a decision must be made immediately and irrevocably: should this new node connect to one of the available nodes on the fixed side?
 
@@ -27,7 +27,7 @@ The first randomized algorithm that comes to mind is likely:
 
 Unfortunately, this is still 1/2-competitive, as illustrated in the following example:
 
-{{<figure align="center" src="/online/random_counter_example.jpeg" caption="Stealing another page from Professor Tang's slide." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/random_counter_example.jpeg" caption="Stealing another page from Professor Tang's slide." width="100%">}}
 
 So, thank you, next: Karp, Vazirani & Vazirani (1990) proposed the `Ranking` algorithm. Devanur, Jain, and Kleinberg later provided a beautiful analysis of its competitive ratio.
 
@@ -67,7 +67,7 @@ To upper bound the performance, we relax the problem to an easier ***fractional*
 
 `Water-Filling` achieves a 1 - 1/e competitive ratio, but an **Upper Triangle Instance** demonstrates that even the fractional version cannot exceed this bound (via Yao's Minimax).
 
-{{<figure align="center" src="/online/Yao_upper_traingle.jpeg" caption="Stealing two more pages from Professor Tang's slide." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/Yao_upper_traingle.jpeg" caption="Stealing two more pages from Professor Tang's slide." width="100%">}}
 
 ---
 

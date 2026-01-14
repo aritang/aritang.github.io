@@ -26,7 +26,7 @@ The Beta distribution has several attractive properties that make it widely used
 
     It is a flexible distribution that can take various shapes depending on the values of $ \alpha $ and $ \beta $. It can model uniform, U-shaped, or even skewed distributions.
 
-    {{<figure align="center" src="/info_design/betas.jpeg" caption="pdf for different $\alpha, \beta$ values.">}}
+    {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/info_design/betas.jpeg" caption="pdf for different $\alpha, \beta$ values.">}}
 
 3. **Convenient Bayesian Update**:
 

@@ -18,6 +18,6 @@ Basically, someone uploaded the csv (or json?) file containing names/affiliation
 
 Some people say it's karma — there is a reviewer who posted 40 weaknesses **and** 40 questions for all his/her reviews in 2026 ICLR. After identity leak, he quicked raised his rating score for the paper he/she reviewed. In general, review quality has become a problem. See more in [*Major AI conference flooded with peer reviews written fully by AI*](https://doi.org/10.1038/d41586-025-03506-6). Or you might remember the famous joke:
 
-{{<figure align="center" src="/google_ad_gossip/adam.jpeg" caption="For my econ readers, this is the same an AER reviewer asking 'Who is Marshall?!'" width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/adam.jpeg" caption="For my econ readers, this is the same an AER reviewer asking 'Who is Marshall?!'" width="66%">}}
 
 It taste like tea, bitter tea. On the upside, reviewers would be more cautious. In upcoming conferences we will likely observe a more inflated review scores. But the stitch would leave long term trauma in academia as a whole :(

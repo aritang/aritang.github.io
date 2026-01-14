@@ -19,7 +19,7 @@ Give a potentially interesting economic question to those TCS scientists and the
 
 The relevance of search theory is underscored by information asymmetry and the challenges in acquiring additional information. For instance, the choice of the Pandora's box topic by the student groups likely stemmed from its prominent placement on the SIGecom Exchanges website, like:
 
-{{<figure align="center" src="/new_plan/pandora.jpeg" caption="The survey of Pandora's box is placed at the centre of the main page of the website. When the students open the website, they may find Pandora's box as a topic to be potentially interesting enough (high realized value) and hence don't have the incentive to search for other papers over the previous years, thus... picking this survey and go away.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/pandora.jpeg" caption="The survey of Pandora's box is placed at the centre of the main page of the website. When the students open the website, they may find Pandora's box as a topic to be potentially interesting enough (high realized value) and hence don't have the incentive to search for other papers over the previous years, thus... picking this survey and go away.">}}
 
 Featured as the only survey in the June 2023 issue, it is immediately visible upon visiting the site. Additionally, the intriguing title "Pandora's Box" likely drew more interest than other more daunting terms, reducing mental aversion. It seems students often gravitate towards topics that appear interesting and accessible, which led to the unfortunate crash in presentation topics.
 

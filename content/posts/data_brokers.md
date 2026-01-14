@@ -27,7 +27,7 @@ The data sellers then list their data product on data marketplaces. Nowadays, se
 
 Data providers operates highly decentralized and area-special.
 
-{{<figure align="center" src="/data_vis/data_providers.jpeg" caption="Popular data providers on Datarade.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/data_providers.jpeg" caption="Popular data providers on Datarade.">}}
 
 ## buying data
 
@@ -39,6 +39,6 @@ Data are available for purchase in various formats:
 
 Data are available in almost all areas:
 
-{{<figure align="center" src="/data_vis/data_available.jpeg" caption="Almost about everything can be bought via these data marketplaces (e.g. [Datarade](https://datarade.ai/data-categories)).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/data_available.jpeg" caption="Almost about everything can be bought via these data marketplaces (e.g. [Datarade](https://datarade.ai/data-categories)).">}}
 
 Mostly data is stored in some cloud database, and purchased data access is facilitated by the data exchange marketplace. The way of data sold is worthing mentioning: some small data products have posted prices, and are instantly purchasable, where payment and transaction for these products is processed directly over the marketplace. However, for larger ticket data purchases, prices are not necessarily transparent, and the nagotiation moves away from the data marketplace and involves more delicate bargaining between the seller and buyer.

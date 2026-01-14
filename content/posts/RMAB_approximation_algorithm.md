@@ -51,17 +51,17 @@ $$
 
 Fix any policy running the RMAB problem over an infinite time horizon, at each time point the reward of an arm $i$ can be sufficiently represented by its (state-action) played on it. The **Whittle LP** is fomulated on variables representing the **fraction of time steps** of the arm $i$ being in every (state-action) event. Denote as $x_{st}^i $ (resp. $y_{st}^i$) as the fraction of time steps of an arm in state $(s, t)$ and is pulled (resp. idled),
 
-{{<figure align="center" src="/online/whittle_og.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/whittle_og.jpeg" caption="" width="100%">}}
 
 *Note*: $(1)$ is budget constraint, $(2) - (5)$ are probability constraints.
 
 Note that $y_{st}^i = \sum_{\tau > t}x_{st}^i$. We can hence replace all $y$ variables, and the last two transition constraints above collapse into the same constraint (which is a common property you can expect in most RMAB's Whittle LPs). And we have the following significantly clearer and natural LP formulation to work on, that later will leverage the structure of the Whittle LP to give a lot of surprising results:
 
-{{<figure align="center" src="/online/whittle_simplified.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/whittle_simplified.jpeg" caption="" width="100%">}}
 
 Fix a Lagrangean multiplier $\lambda$ for the budget constraint, we penalize it to the objective and formulate the following Lagrangean:
 
-{{<figure align="center" src="/online/LPLagrangean.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/LPLagrangean.jpeg" caption="" width="100%">}}
 
 And the dual of the $\texttt{LPLagrange($\lambda$)}$ is
 
@@ -100,7 +100,7 @@ The following parts will be dry but useful. Basically, we want to characterize t
 
 Using Lemma 2.4, while playing the optimal policy solved from $\texttt{LPLagrange($\lambda$)}$, every arm's dynamic can be characterized by a **markov chain** illustrated in the following picture:
 
-{{<figure align="center" src="/online/state_markov_chain.jpeg" caption="The Markov chain describing the optimal policy: it has $t_i^\star(\lambda) + 1$ states which denote $s, 0, 1, 2, t_i^\star(\lambda) - 1$. The state $s$ corresponds to the arm being last observed in the state $g$, and state $j  = 0,\ldots,  t_i^\star(\lambda) - 1$ corresponds to the arm being observed in state $b$ just $j$ times ago. The transition prob from state $j$ to $j + 1$ is 1, from state $s$ to $j = 0$ is $\beta_i$, from state $t - 1$ to $s$ is $v_{it}$ and $t\to 0$ is $1 - v_t$." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/state_markov_chain.jpeg" caption="The Markov chain describing the optimal policy: it has $t_i^\star(\lambda) + 1$ states which denote $s, 0, 1, 2, t_i^\star(\lambda) - 1$. The state $s$ corresponds to the arm being last observed in the state $g$, and state $j  = 0,\ldots,  t_i^\star(\lambda) - 1$ corresponds to the arm being observed in state $b$ just $j$ times ago. The transition prob from state $j$ to $j + 1$ is 1, from state $s$ to $j = 0$ is $\beta_i$, from state $t - 1$ to $s$ is $v_{it}$ and $t\to 0$ is $1 - v_t$." width="88%">}}
 
 Denote as $R_i(t_i^\star(\lambda))$ the average reward obtained from pulling arm $i$ when running Lemma 2.4's optimal policy, and $Q_i(t_i^\star(\lambda))$ the average time arm $i$ is pulled. The optimal objective reward for $\texttt{LPLagrange($\lambda$)}$ is:
 $$

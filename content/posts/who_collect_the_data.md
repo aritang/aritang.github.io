@@ -22,7 +22,7 @@ Cookies are **small text files** that hold a modest amount of data specific to a
 
 Third-parties (e.g. Google Ad, data brokers) can collaborate with websites (e.g. publishers) to place 3rd-party cookies on user's computer while they're browsing the website. So, whatever one does when browsing, Cookies can record all those information and **upload them to third party's cloud database**. The data collector then "bake" the cookies—compile, clean and store the data for future usage.
 
-{{<figure align="center" src="/google_ad_gossip/cookie_info_flow.jpeg" caption="Example: how google collect user information across sites, and store to use for future ad targeting.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/cookie_info_flow.jpeg" caption="Example: how google collect user information across sites, and store to use for future ad targeting.">}}
 
 Because third-party cookies track user across sites, they will have **UIDs** to identify a user when he/she login onto different websites. UIDs are usually device-and-browser specific, and owned by each third-parties themselves. But advertisers and the industry do have varies technologies to 'align' UIDs and do better, say, ad targeting
 
@@ -34,4 +34,4 @@ Moreover, first party data are often much more specific and valuable in terms of
 
 ## to summarize, the overall landscape of data looks like:
 
-{{<figure align="center" src="/google_ad_gossip/fancy_pic.jpeg" caption="the landscape of privacy.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/fancy_pic.jpeg" caption="the landscape of privacy.">}}

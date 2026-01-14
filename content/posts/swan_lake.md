@@ -8,11 +8,11 @@ cover:
 
 I watched Swan Lake tonight – the famous Tchaikovsky ballet, performed by the National Ballet of China. The performance lasted two and a half hours, a bit lengthy, especially with there are kids sitting  nearby: left side of me, right side of me, behind me...
 
-![swan1](/tattooed_heart/swan1.jpg)
+![swan1](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/swan1.jpg)
 
 Regarding my personal preference, I favor the Black Swan significantly more than the White Swan. The Black Swan embodies life and vitality, with her charming smile lighting up the stage, captivating the audience (including the prince), and infusing the performance with energy. In contrast, the White Swan only appears under cold-spectrum light, perpetually wearing a frown (yes, her expressions), and carrying a heavy sense of melancholic sorrow. In my view, these two swans symbolize life and death rather than the conventional notions of pure evil and kindness. They represent different facets of beauty: one epitomizes the enjoyment and ecstasy of life's celebrations, while the other embodies spirituality and ascension, ultimately leading to the inevitable.
 
-![swan2](/tattooed_heart/swan2.jpg)
+![swan2](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/swan2.jpg)
 
 *ending scene*
 

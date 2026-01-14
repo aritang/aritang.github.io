@@ -30,7 +30,7 @@ Apple has refreshed artworks for both mainstream and **female**🥰/minority💖
 
 For example:
 
-{{<figure align="center" src="/tattooed_heart/shostakovich.jpeg" caption="[**Dmitri Shostakovich**]: Spotify composer profile (left) and Apple Music Classical composer art (right). i think everybody **EXCEPT** for Dmitri himself would, prefer, Apple's version.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/shostakovich.jpeg" caption="[**Dmitri Shostakovich**]: Spotify composer profile (left) and Apple Music Classical composer art (right). i think everybody **EXCEPT** for Dmitri himself would, prefer, Apple's version.">}}
 
 For contemporary composers like Astor Piazzolla or John Cage (yep the 4'33'' dude), they've chosen abstract paintings, adding a playful yet fitting visual dimension to their innovative music.
 
@@ -48,7 +48,7 @@ It's evident that the editors have put considerable effort into crafting insight
 
 The Browse-Catalogue feature in the menu, particularly in sub-categories like "composers" or "conductors," offers an intriguing functionality where users can **rank** the lists by various criteria, including **popularity**.
 
-{{<figure align="center" src="/tattooed_heart/rank.jpeg" caption="i was like hooooold on, why on earth is Bach ranked above Mozart?🤪🍉">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/rank.jpeg" caption="i was like hooooold on, why on earth is Bach ranked above Mozart?🤪🍉">}}
 
 Wrapping up with a truly standout feature that enhances the classical experience in a unique way, that, according to Apple Support:
 

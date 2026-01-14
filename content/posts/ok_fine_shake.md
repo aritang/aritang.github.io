@@ -7,7 +7,7 @@ summary: A classic example when the model works fine but the real market gets fu
 
 In the ever-evolving landscape of digital advertising, the 'shake shake' ads emerged as a novel concept during the double 11 shopping festival of 2023. What started as an innovative marketing strategy quickly spread across various platforms, turning from a curious novelty into an omnipresent annoyance.
 
-{{<figure align="center" src="/data_vis/shake_ads.jpeg" caption="everytime one opens an app, an ad shows up filling up the whole screen. unlike the conventional way of visiting the ads by clicking, for a shake ad, one has to 'shake' to be re-directed. seriously, who would do that? it's just fraud.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/shake_ads.jpeg" caption="everytime one opens an app, an ad shows up filling up the whole screen. unlike the conventional way of visiting the ads by clicking, for a shake ad, one has to 'shake' to be re-directed. seriously, who would do that? it's just fraud.">}}
 
 To understand how it works fisrt we have to look deeper into the dynamics of the advertising industry. Traditional models simply assume a two-component market with sellers and buyers, where advertising slots are auctioned off to the highest bidding buyer - a straightforward transaction. However, the real industry operates on multiple layers of complexity. Social apps like XiaoHongShu began selling their prime opening ad slots to large e-commerce sites such as T-Mall or JD, who would then resell these slots, bundled with other advertising options, to third-party retailers.
 

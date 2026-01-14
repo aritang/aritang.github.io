@@ -10,7 +10,7 @@ draft: false
 
 Chua Lam, the beloved food critic and cultural icon based in Hong Kong, passed away today. His deep love for food went beyond appetite—it shaped a way of living. A philosophy that was unique, profound, popular, and deeply worth remembering.
 
-{{<figure align="center" src="/art/chua_lam.jpeg" caption="Rest in peace. Wish heaven (or anywhere you're in) have great food." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/chua_lam.jpeg" caption="Rest in peace. Wish heaven (or anywhere you're in) have great food." width="100%">}}
 
 I don’t think I can explain the essence of this wise man’s worldview in a single paragraph. I can’t even say clearly why I adore him more than so many other writers—some of whom might be more polished, more literary. Maybe it’s because he was authentic, a little rebellious. Maybe because we share the same obsession with food and wine. Or maybe it was his playful irreverence, his open embrace of life’s indulgences—pragmatic, unserious, the exact opposite of spiritual or solemn. Life is short. So why not live it in the moment?
 
@@ -26,6 +26,6 @@ Some are warm, empathetic and caring. Some are sharp:
 
 Like, this is what makes his Q&A so iconic. They feel tossed-off, even cheeky, but underneath that casualness is wisdom: a kind of compassionate detachment, or what one might call *wise irreverence*. Chua doesn’t *solve* the problems—he subtly reminds you they’re yours to live through. And all shall pass. And yes, you should pick up the courage and say it out loud that you love him/her.
 
-{{<figure align="center" src="/art/chua_lam1.jpeg" caption="Some ask, 'What is the meaning of life?' Chua answers 'To eat and drink'" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/chua_lam1.jpeg" caption="Some ask, 'What is the meaning of life?' Chua answers 'To eat and drink'" width="100%">}}
 
 May we remember: there's still fun, good food, empathy, and perhaps even a little love left in this life.

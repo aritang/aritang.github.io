@@ -9,7 +9,7 @@ summary: One can optimize and change his or her traits accordingly. And, in cert
 
 I’m not a great fan of MBTI because (i) concerns over imaging - it’s certainly not wise to frame one’s personality into four letters and (ii) too many people are into it. But I’ve taken the test, quite a lot of times because it’s a conversation topic - people love talking about their traits and personalities. And I’m always like “nah I’ve never taken it” (because I don’t remember the result) and they will usually push me to do it.
 
-![mbti](/new_plan/mbti.jpeg)
+![mbti](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/mbti.jpeg)
 
 *analysts? nah they just all have OCD.*
 

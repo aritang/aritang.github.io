@@ -6,11 +6,11 @@ draft: false
 
 Today is the Qingming Festival (Tomb-Sweeping Day)—it's a celebration of spring and memory. During Qingming, families visit the tombs of their ancestors to clean the gravesites and make ritual offerings to their ancestors. Or just go out for a spring hiking in nature.
 
-{{<figure align="center" src="/bio/qingming2025.jpeg" caption="At the Orchid Pavilion at Shaoxing City" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/qingming2025.jpeg" caption="At the Orchid Pavilion at Shaoxing City" width="100%">}}
 
 I'm not a big fan of classical Chinese literature—I know it's deep and awesome but please that's just not my thing. But gladly if you went through high school in China and passed the college school entrance examination with the 10 million students every year, you are able to **recite** well the Orchid Pavilion Preface (and a few other very famous classical Chinese literature pieces).
 
-{{<figure align="center" src="/bio/wang-xizhi_orchid-pavilion-preface.jpeg" caption="The Orchid Pavilion Preface by Wang-Xizhi, China Online Museum." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/wang-xizhi_orchid-pavilion-preface.jpeg" caption="The Orchid Pavilion Preface by Wang-Xizhi, China Online Museum." width="100%">}}
 
 It is perhaps the most famous piece of calligraphy in Chinese history. 42 poets gathered at the Orchid Pavilion to drink and improvise. Wang-XiZhi was one of then as well as the author and calligrapher of the *Lantingji Xu* (*Preface to the Poems Composed at the Orchid Pavilion*). The text is translated below:
 

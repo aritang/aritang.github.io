@@ -12,7 +12,7 @@ Love, they say, is priceless. But let's face it, showing off one's financial pro
 
 The Economist presents an intriguing take on this with their "cost-of-love" index, ranking cities based on the expense of a romantic night out. But let's be real, if a simple dinner for two is setting you back $400, you're probably dining with a buffalo on the table. While the data might seem a tad exaggerated, it's not entirely off the mark when you factor in the extravagant gifts, luxury hotel stays, and, of course, the opportunity cost of love.
 
-{{<figure align="center" src="/tattooed_heart/valentines.jpeg" caption="Despite Shanghai is indeed crazily expensive, eating for $200 per person, even for Valentine it's too much. And I'm surprised that HK is not on the rank.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/valentines.jpeg" caption="Despite Shanghai is indeed crazily expensive, eating for $200 per person, even for Valentine it's too much. And I'm surprised that HK is not on the rank.">}}
 
 ## The Art of Playing Hard to Get
 

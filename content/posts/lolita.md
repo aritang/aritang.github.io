@@ -6,7 +6,7 @@ draft: false
 
 There's a thread in Reddit "If someone ask why did you watch Lolita. What will be your answer?"
 
-{{<figure align="center" src="/art/lolita.jpeg" caption="The famous poster" width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/lolita.jpeg" caption="The famous poster" width="50%">}}
 
 > — For research purposes, thank you!
 >
@@ -14,7 +14,7 @@ There's a thread in Reddit "If someone ask why did you watch Lolita. What will b
 
 ### **Lolita (1997):**
 
-{{<figure align="center" src="/art/lolita2.jpeg" caption="Look at the movie's 1979 poster's sublime design—a visual echo of the book’s most whispered incantation." width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/lolita2.jpeg" caption="Look at the movie's 1979 poster's sublime design—a visual echo of the book’s most whispered incantation." width="50%">}}
 
 In the original soundtrack of the movie, all is veiled, blurred through a hazy synthesizer texture that makes it feel like something overheard, not composed. A memory retold through fog.
 

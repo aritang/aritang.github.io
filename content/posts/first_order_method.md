@@ -47,7 +47,7 @@ $$
 
 If we had access to the true Hessian and its inverse, we could compute the optimal step. But to stay within the first-order framework, we rely on approximate Hessians, often learned or estimated during iterations.
 
-{{<figure align="center" src="/online/FOM_backward.jpeg" caption="The slide comes from Prof. Ye—Thanks Professor Ye" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/FOM_backward.jpeg" caption="The slide comes from Prof. Ye—Thanks Professor Ye" width="100%">}}
 
 ----
 
@@ -55,7 +55,7 @@ If we had access to the true Hessian and its inverse, we could compute the optim
 
 Anticipating the next step—“looking ahead”—can also give performance boosts and even theoretical guarantees. Again, it’s a bit more memory and computation, but still lightweight compared to second-order methods.
 
-{{<figure align="center" src="/online/FOM_forward.jpeg" caption="The slide comes from Prof. Ye—Thanks Professor Ye, again" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/FOM_forward.jpeg" caption="The slide comes from Prof. Ye—Thanks Professor Ye, again" width="100%">}}
 
 ### Conclusion
 

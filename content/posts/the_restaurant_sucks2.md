@@ -12,7 +12,7 @@ As consumers, we bear the burden of search costs, which accompany every online d
 
 Turning to empirical observations, the top five recommendations on the Meituan App are often denoted as the "most popular Tea Houses in the district." However, these establishments exhibit an average meal price ranging from ¥30 to ¥50, a common range within Shanghai but clearly surpassing their production costs. Moreover, the presented price does not encompass the entirety of expenses, as it conceals additional charges under the guises of "packaging fees," "delivery fees," and even supplementary charges for condiments.
 
-{{< figure align="center" src="/complaints/meituan_teahouse.jpeg" caption="The price is inflated, food quality barely satisfying but...packaging is fancy. They are really sabotaging the reputation of Guangdong Cuisine. What a disgrace." >}}
+{{< figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/meituan_teahouse.jpeg" caption="The price is inflated, food quality barely satisfying but...packaging is fancy. They are really sabotaging the reputation of Guangdong Cuisine. What a disgrace." >}}
 
 For heaven's sake why and where did the excessive revenue go? A substantial portion goes to Meituan's special position in the delivery platform sector. As a market leader with an extensive array of restaurants and consumers, Meituan wields the privilege of determining prices, thereby maximizing its own revenue. The phenomenon of inflated prices is predominantly attributable to Meituan's pursuit of profit, restaurants conforming to the industry's overpackaging practices, and promotional fees. This capital seldom serves to enhance the quality of the food.
 

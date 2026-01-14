@@ -9,7 +9,7 @@ cover:
 
 Though I found myself reluctant to admit my attachment to mainstream pop, my favourite album over the summer of 2024 would have to be ***Short N' Sweet***—given the unhealthy playing repeats of a few of its singles. Here are two reviews explaining why it might just be the biggest hit of 2024:
 
-{{<figure align="center" src="/short_n_sweet/sns_aesthetic.jpeg" caption="Vinyl cover of Short N' Sweet. Original full-size picture available [here](/files/sns_aesthetic-full.jpeg)—I mean, look at this remarkable visual presentation of the album's aesthetic concept: the nostalgic pastel setup, the vivavious blush and hair, and the goofy face." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/short_n_sweet/sns_aesthetic.jpeg" caption="Vinyl cover of Short N' Sweet. Original full-size picture available [here](/files/sns_aesthetic-full.jpeg)—I mean, look at this remarkable visual presentation of the album's aesthetic concept: the nostalgic pastel setup, the vivavious blush and hair, and the goofy face." width="66%">}}
 
 ## pitchfork
 

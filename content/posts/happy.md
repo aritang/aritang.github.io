@@ -23,5 +23,5 @@ It's been a lot for the past year for me. Here's a lovely, interesting song to g
 
 Notice the happy trumpet players who watched this whole song (while possibly counting a looooot of bars) from the best seat.
 
-{{<figure align="center" src="/art/happy_trumpet.jpeg" caption="Best seat ever" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/happy_trumpet.jpeg" caption="Best seat ever" width="100%">}}
 

@@ -20,4 +20,4 @@ It barely has nothing to do with "monopoly" but also has everything to do with m
 
 The way she treats the lyric consistency so carelessly yet the delicate stack of chorus and balance of vocal arrangement strike listeners. And she incorporate the crazy whistle notes at the end but hide it in the background. I was like
 
-{{<figure align="center" src="/tattooed_heart/bigsmile-ariana.gif" caption="damn nice">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/bigsmile-ariana.gif" caption="damn nice">}}

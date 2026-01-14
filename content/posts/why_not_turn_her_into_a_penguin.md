@@ -6,7 +6,7 @@ draft: false
 
 There's a lovely scene at the end of *Étoile* (2025) (Amazon's TV about ballet), when the boy went to watched the first ballet show and then waited backstage for the ballerina for a date:
 
-{{<figure align="center" src="/art/why_not_peguin.jpeg" caption="'There were a lot of feathers up there... And I (almost) didn't fall asleep!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/why_not_peguin.jpeg" caption="'There were a lot of feathers up there... And I (almost) didn't fall asleep!" width="100%">}}
 
 The boy said after his first ballet, probably swan lake
 

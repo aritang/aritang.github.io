@@ -6,7 +6,7 @@ draft: false
 
 On April 21, 2025,
 
-{{<figure align="center" src="/complaints/ftc_v_uber.jpeg" caption="Oh!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/ftc_v_uber.jpeg" caption="Oh!" width="100%">}}
 
 > The Federal Trade Commission filed a lawsuit today against Uber, alleging the rideshare and delivery company charged consumers for its Uber One subscription service without their consent, failed to deliver promised savings, and made it difficult for users to cancel the service despite its “cancel anytime” promises.
 

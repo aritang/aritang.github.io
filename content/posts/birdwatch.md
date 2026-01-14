@@ -14,7 +14,7 @@ Here's an interesting paper about crowdsourcing annotation of tweets. Given a tw
 
 So, about Birdwatch:
 
-{{<figure align="center" src="/google_ad_gossip/twitter_birdwatch.jpeg" caption="Birdwatch is Twitter's community-driven approach to identify misinformation. It encourages users add informative clarification notes to Tweets." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/twitter_birdwatch.jpeg" caption="Birdwatch is Twitter's community-driven approach to identify misinformation. It encourages users add informative clarification notes to Tweets." width="66%">}}
 
 To be exact, for a potentially problematic tweet, users may (i) write ***notes*** for the tweet or (ii) rate the ***notes***'s helpfulnes. Then, for a single tweet, in place of multiple notes, there needs to be an algorithm to select one note to display to all users along with the tweet, as the informative 'complement' to the OG tweet.
 
@@ -46,7 +46,7 @@ $$
 
 > To estimate the parameters, the authors minimize the following regularized least squared error loss function via gradient descent over the dataset of all observed ratings $r_{u, n}$ :
 >
-> {{<figure align="center" src="/google_ad_gossip/birdwatch_function1.jpeg" caption="from the paper" width="100%">}}
+> {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/birdwatch_function1.jpeg" caption="from the paper" width="100%">}}
 >
 > Where, $\lambda_i$ (0.15), the regularization on the intercept terms, is currently 5 times higher than $\lambda_f$ (0.03), the regularization on the factors.
 

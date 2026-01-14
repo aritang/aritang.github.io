@@ -17,7 +17,7 @@ Here's a news that demonstrate one side effect of ad targeting technology:
 
 [Jennifer Langston](https://www.washington.edu/news/author/jennifer-langston/), October 18, 2017.
 
-{{<figure align="center" src="/google_ad_gossip/spooky_watching.jpeg" caption="not in the catwoman way though" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/spooky_watching.jpeg" caption="not in the catwoman way though" width="100%">}}
 
 > Privacy concerns have long swirled around how much information online advertising networks collect about people’s browsing, buying and social media habits — typically to sell you something.
 >
@@ -27,7 +27,7 @@ Here's a news that demonstrate one side effect of ad targeting technology:
 >
 > “**Anyone from a foreign intelligence agent to a jealous spouse can pretty easily sign up with a large internet advertising company and on a fairly modest budget use these ecosystems to track another individual’s behavior**,” said lead author [Paul Vines,](http://paulvines.com/) a recent doctoral graduate in the UW’s Paul G. Allen School of Computer Science & Engineering.
 
-{{<figure align="center" src="/google_ad_gossip/commute_leak.jpeg" caption="This map represents an individual’s morning commute. Red dots reflect the places where the UW computer security researchers were able to track that person’s movements by serving location-based ads: at home (real location not shown), a coffee shop, bus stop and office. The team found that a target needed to stay in one location for roughly **four minutes** before an ad was served, which is why no red dots appear along the individual’s bus commute (dashed line) or walking route (solid line.)*University of Washington*" width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/commute_leak.jpeg" caption="This map represents an individual’s morning commute. Red dots reflect the places where the UW computer security researchers were able to track that person’s movements by serving location-based ads: at home (real location not shown), a coffee shop, bus stop and office. The team found that a target needed to stay in one location for roughly **four minutes** before an ad was served, which is why no red dots appear along the individual’s bus commute (dashed line) or walking route (solid line.)*University of Washington*" width="88%">}}
 
 > The researchers discovered that an individual ad purchaser can, under certain circumstances, **see when a person visits a predetermined sensitive location** — a suspected rendezvous spot for an affair, the office of a company that a venture capitalist might be interested in or a hospital where someone might be receiving treatment — within 10 minutes of that person’s arrival. They were also able to **track a person’s movements across the city during a morning commute by serving location-based ads to the target’s phone**.
 >

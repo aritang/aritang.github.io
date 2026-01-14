@@ -20,12 +20,12 @@ Just a little bit more about the song. *Hero* is an Andante, the pace is like so
 
 Mariah Carey is more expressive in her live performances. She sang extra decorating high notes and utilize advanced vocal techniques to enrich the performance. Well, that's what you aim for in a 90s diva's live performance, instead of some off-pitch shits on YT today.
 
-{{< figure align="center" src="/tattooed_heart/mc_1.jpeg" caption="Mariah Carey's 1993 live performance at Proctor's Theatre. This version only hits a E3 at the near-end climax of the song. But the overall musical intepretation is more consistent." >}}
+{{< figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/mc_1.jpeg" caption="Mariah Carey's 1993 live performance at Proctor's Theatre. This version only hits a E3 at the near-end climax of the song. But the overall musical intepretation is more consistent." >}}
 
 Two other outstanding live performances include:
 
-{{< figure align="center" src="/tattooed_heart/mc_2.jpeg" caption="1995 at Madison Graden. This time, a full huge chorus sang the backup for her. But MC nailed it, almost outshone all else people and presented a glorious high finish." >}}
+{{< figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/mc_2.jpeg" caption="1995 at Madison Graden. This time, a full huge chorus sang the backup for her. But MC nailed it, almost outshone all else people and presented a glorious high finish." >}}
 
-{{< figure align="center" src="/tattooed_heart/mc_3.jpeg" caption="MC in Tokyo 1995. Remarkable artistic maturity. Finished with a glimmering G5 at the end." >}}
+{{< figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/mc_3.jpeg" caption="MC in Tokyo 1995. Remarkable artistic maturity. Finished with a glimmering G5 at the end." >}}
 
 In the later two performances, she hits a dazzling G5 note. I can't help but listen to the song repeatedly because of her rich runs and riffs. Every time you listen, you discover something new, and her incredible vocal ability never ceases to amaze. She's almost otherworldly.

@@ -12,6 +12,6 @@ Do Chinese people really drink that much milk tea?
 >
 > CNBC
 
-{{<figure align="center" src="/wine/chagee_tea.jpeg" caption="Chagee in Shanghai—yes it's everywhere, almost like Starbucks." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/chagee_tea.jpeg" caption="Chagee in Shanghai—yes it's everywhere, almost like Starbucks." width="100%">}}
 
 Beverage brands that went public: Nayuki's Tea, Chabaidao, and Guming—all in HK. Recently, MiXue joined (see this blog: ***[The giant bubble tea chain Mixue IPO in HK](/posts/mixues_ipo/)***). Cotti is competing fiercely with Luckin (See  blog***[The intensified price war between COTTI and Luckin](/posts/between_cotti_and_luckin/)***). Will it be next?

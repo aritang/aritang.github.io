@@ -13,17 +13,17 @@ $$
 $$
 Setup:
 
-{{<figure align="center" src="/online/usvt_setup.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_setup.jpeg" caption="" width="100%">}}
 
 The *Universal Singular Value Thresholding* (USVT) estimator are:
 
-{{<figure align="center" src="/online/usvt_provess.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_provess.jpeg" caption="" width="100%">}}
 
-{{<figure align="center" src="/online/usvt_provess1.jpeg" caption="" width="80%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_provess1.jpeg" caption="" width="80%">}}
 
 The paper's coolest part, in my pov, is the following Theorem:
 
-{{<figure align="center" src="/online/usvt_theorem1.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_theorem1.jpeg" caption="" width="100%">}}
 
 ### Proof Sketch of Theorem 1.1
 
@@ -66,7 +66,7 @@ E_1:=\lbrace\Vert Y - pM\Vert \le (2 + \frac \eta2)\sqrt{np}\rbrace \tag{2}
 $$
 Basically, this event says that under nice sampling, Y and M are sufficiently similar with high probability (Theorem 3: $\Pr[E_1] > 1 - Ce^{-cnp}$). Then if $E_1$ happen, we are able to upperbound $\hat M - M$'s Frobenius norm by combining (1) and (2):
 
-{{<figure align="center" src="/online/usvt_proof_steps.jpeg" caption="Slay." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_proof_steps.jpeg" caption="Slay." width="100%">}}
 
 And, recall that MSE is just 1/mn times Frobenius norm
 $$

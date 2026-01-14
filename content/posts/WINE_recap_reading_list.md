@@ -15,7 +15,7 @@ cover:
 
 Don't read the last page. This year's [WINE](https://wine2023.shanghaitech.edu.cn/) reached an end. I've learnt so much from the work presented and the people there. Btw, Jason's keynote is amazing. Will write about it in the future.
 
-{{<figure align="center" src="/auction_houses/jason.jpeg" caption="Hao Li, Qun Hu, Ariana T. (Me), Jason Hartline and Nick Gravin, during tea break.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/jason.jpeg" caption="Hao Li, Qun Hu, Ariana T. (Me), Jason Hartline and Nick Gravin, during tea break.">}}
 
 And, here's the reading list. All are my favorite talks over the past week.
 

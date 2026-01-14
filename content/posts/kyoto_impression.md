@@ -8,7 +8,7 @@ Kyoto is Japan’s ancient capital, carrying centuries of history and cultural r
 
 I had high expectations for Kyoto’s famed architecture, temples and Karesansui. However, with my parents’ energy and enthusiasm for a ten-temple marathon understandably limited, we opted for a more relaxed itinerary: a cozy day trip to the mountains to visit the region’s most iconic site, **Kiyomizu-dera Temple**.
 
-{{<figure align="center" src="/wabisabi/kiyomizu_temple.jpeg" caption="Kiyomizu-dera Temple in Kyoto is a masterpiece of Japanese architecture and a UNESCO World Heritage. The name *Kiyomizu*—“pure water”—comes from the Otowa Waterfall that runs beneath the temple. Visitors drink from its three streams, each believed to grant blessings: longevity, success, or love. The temple's wooden stage is built without a single nail." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wabisabi/kiyomizu_temple.jpeg" caption="Kiyomizu-dera Temple in Kyoto is a masterpiece of Japanese architecture and a UNESCO World Heritage. The name *Kiyomizu*—“pure water”—comes from the Otowa Waterfall that runs beneath the temple. Visitors drink from its three streams, each believed to grant blessings: longevity, success, or love. The temple's wooden stage is built without a single nail." width="100%">}}
 
 ### Some art history lesson
 
@@ -20,6 +20,6 @@ Japanese gardens embody this ethos through their *kare-sansui* (dry landscape) s
 
 **Chinese gardens symbolize abundance and life. They overflow with lush vegetation, intricate pavilions, and meandering paths, offering a vibrant, almost theatrical expression of thought and vitality. Japanese gardens, in contrast, strive for restraint and void. They find beauty in emptiness, impermanence, and the silence that lingers between what is present and what has faded away.**
 
-{{<figure align="center" src="/wabisabi/garden_comparison.jpeg" caption="Which is which?" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wabisabi/garden_comparison.jpeg" caption="Which is which?" width="100%">}}
 
 *Kiyomizu-dera Temple* and reflect the philosophy of *wabi-sabi* and the soul of Kyoto—just like its name, "beauty written in water".

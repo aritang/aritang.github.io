@@ -23,7 +23,7 @@ Note: Google now has three major ad products: (i) the lucrative **Google AdWords
 
 Focusing on display advertising and Google Ad Manager, the current market according to DOJ, looks like
 
-{{<figure align="center" src="/google_ad_gossip/ad_market_graphic.jpeg" caption="Google now controls the digital tool that nearly every major website publisher uses to sell ads on their websites (publisher ad server); it controls the dominant advertiser tool that helps millions of large and small advertisers buy ad inventory (advertiser ad network); and it controls the largest advertising exchange (ad exchange), a technology that runs real-time auctions to match buyers and sellers of online advertising." width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/ad_market_graphic.jpeg" caption="Google now controls the digital tool that nearly every major website publisher uses to sell ads on their websites (publisher ad server); it controls the dominant advertiser tool that helps millions of large and small advertisers buy ad inventory (advertiser ad network); and it controls the largest advertising exchange (ad exchange), a technology that runs real-time auctions to match buyers and sellers of online advertising." width="96%">}}
 
 Google’s anticompetitive conduct has included, according to DOJ:
 
@@ -34,7 +34,7 @@ Google’s anticompetitive conduct has included, according to DOJ:
 
 The complaint filed by DOJ states that, according Google's internal files, all of its intermediate service gets to keep about **35%** of every dollar spent on digital advertising.
 
-{{<figure align="center" src="/google_ad_gossip/35_percent_revenue.jpeg" caption="35% of ad spending goes to Google" width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/35_percent_revenue.jpeg" caption="35% of ad spending goes to Google" width="96%">}}
 
 I mean, there's still \$65 left for the publishers, not entirely bad for a monopoly two-sided platform. Like come on, DOJ might want to take a look at some other monopoly two-sided platforms, like PinDuoDuo...
 

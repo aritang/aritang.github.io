@@ -8,7 +8,7 @@ draft: false
 >
 > Interlude, Frances Wilson |  March 11th, 2021
 
-{{<figure align="center" src="/art/barcarolle.jpeg" caption="Two oars. One moonlit lake. Who rows deeper? Courtsey to ChatGPT" width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/barcarolle.jpeg" caption="Two oars. One moonlit lake. Who rows deeper? Courtsey to ChatGPT" width="88%">}}
 
 Famous barcarolles:
 

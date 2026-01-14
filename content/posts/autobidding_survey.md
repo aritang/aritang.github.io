@@ -6,7 +6,7 @@ draft: false
 
 This survey comprehensively covers the recent developments over the past two decades in autobidding within the online advertising ecosystem:
 
-{{<figure align="center" src="/google_ad_gossip/autobidding.jpeg" caption="Most research focuses on specific interactions between two of these components, often through the lenses of mechanism or algorithm design. Alimohammadi (2023)." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/autobidding.jpeg" caption="Most research focuses on specific interactions between two of these components, often through the lenses of mechanism or algorithm design. Alimohammadi (2023)." width="88%">}}
 
 The complexity of the system is evident as it integrates various components—the advertisers, the autioneer, the auto-bidding agents—they are rarely analyzed collectively.
 
@@ -16,7 +16,7 @@ The key areas of focus in the survey are divided into three main perspectives:
 
 Autobidding agents take high-level inputs (value, budget, RoS targets) and bids into auctions on behalf their delegating advertisers. Autobidder's problem is largely an LP, and its dual helps:
 
-{{<figure align="center" src="/google_ad_gossip/autobidding_LP.jpeg" caption="excerpts from Aggarwal et al. (2024)" width="99%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/autobidding_LP.jpeg" caption="excerpts from Aggarwal et al. (2024)" width="99%">}}
 
 ### Online Learning for autobidders
 

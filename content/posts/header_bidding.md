@@ -14,11 +14,11 @@ Related blogs about DOJ vs. Google: [DOJ's complaints overview](/posts/dojs_comp
 
 *A quick look at the complete market:*
 
-{{<figure align="center" src="/google_ad_gossip/advertiser_buying_tool.jpeg" caption="The 'ad-tech **stack**', from the left (publishers) selling to the left (advertisers)" width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/advertiser_buying_tool.jpeg" caption="The 'ad-tech **stack**', from the left (publishers) selling to the left (advertisers)" width="96%">}}
 
 Today we focus on ad-exchanges, when they compete to buy impressions from publisher's ad-server:
 
-{{<figure align="center" src="/google_ad_gossip/ad_exchange.jpeg" caption="Today we focus on **Ad server** selling impressions to **ad exchanges** (and general buyers who purchase impressions, like demand-side platforms)." width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/ad_exchange.jpeg" caption="Today we focus on **Ad server** selling impressions to **ad exchanges** (and general buyers who purchase impressions, like demand-side platforms)." width="96%">}}
 
 Google's monopolistic maneuvers are mostly straightforward: acquire every piece of the vertical market puzzle—ad servers for publishers, ad exchanges in the middle, and advertiser buying tools (ad networks and demand-side platforms). 
 

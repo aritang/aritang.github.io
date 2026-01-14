@@ -8,7 +8,7 @@ cover:
 
 I recently attended the Joffrey Ballet’s production of *Carmen*, and while I had the privilege of watching from a perfect front-row, center seat (thanks to a remarkable $30 ticket), I left the theater somewhat unsettled. The dancers’ technique was solid, the orchestra gave a nice performance, and yet — something about the production went fundamentally astray.
 
-{{<figure align="center" src="/art/carmen_joffery_poster.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/carmen_joffery_poster.jpeg" caption="" width="100%">}}
 
 ---
 
@@ -32,7 +32,7 @@ The orchestral adaptation, too, raised questions. For instance, the beloved *Ent
 
 And then there was Escamillo. Traditionally, the toreador should exude swagger, allure, and effortless dominance — the kind of charisma that might tempt Carmen away from José’s tortured devotion. Here, though, he was portrayed with crude gestures and a rough manner more reminiscent of a street brawler than the adored hero of the arena. Far from captivating, he seemed almost parodic.
 
-{{<figure align="center" src="/art/carmen_bow.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/carmen_bow.jpeg" caption="" width="100%">}}
 
 ---
 
@@ -40,6 +40,6 @@ And then there was Escamillo. Traditionally, the toreador should exude swagger, 
 
 In the end, I can’t be too harsh on Joffrey. For all its missteps, the production was still a meaningful cultural experience — one that brought Chicago’s ballet community together in a lively, shared space. (ie. **it's 100% worth a night at the Lyric Opera House with your loved ones**)
 
-{{<figure align="center" src="/art/carmen_preconcert.jpeg" caption="The Carmen-inspired sangria at intermission was delightful!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/carmen_preconcert.jpeg" caption="The Carmen-inspired sangria at intermission was delightful!" width="100%">}}
 
 I loved the touches of festivity: there was a live band before curtain and during every intermission. The Lyric Opera is a packed hall buzzing with energy, a sense of occasion that made the evening feel special. With that kind of atmosphere, you find yourself forgiving the flaws — and even looking forward to what they’ll try next.

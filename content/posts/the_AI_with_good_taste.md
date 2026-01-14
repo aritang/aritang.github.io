@@ -10,7 +10,7 @@ Jony Ive has really good taste. Now, will OpenAI also have good taste?
 
 And now Jony Ive teams up with OpenAI. The news is all over the internet. Interestingly it somewhat looks like a planned marketing campaign. When I searched "Jony Ive San Altman" on Google, an **ads** pop up:
 
-{{<figure align="center" src="/wabisabi/openai_ad.jpeg" caption="Ah ha! OpenAI is intentionally promoting this." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wabisabi/openai_ad.jpeg" caption="Ah ha! OpenAI is intentionally promoting this." width="66%">}}
 
 Anyway. It seems OpenAI is building some **hardware**, and they want Jony Ive to be in charge of the design—is OpenAI trying to walk Apple's old path?
 
@@ -18,7 +18,7 @@ Anyway. It seems OpenAI is building some **hardware**, and they want Jony Ive to
 >
 > May 21, 2025 | OpenAI | https://openai.com/sam-and-jony/
 >
-> {{<figure align="left" src="/wabisabi/sam_n_jony_portrait.jpeg" caption="This is so sweet..." width="66%">}}
+> {{<figure align="left" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wabisabi/sam_n_jony_portrait.jpeg" caption="This is so sweet..." width="66%">}}
 >
 > This is an extraordinary moment.
 >

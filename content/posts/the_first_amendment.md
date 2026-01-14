@@ -32,4 +32,4 @@ Today marks the end of the Chinese New Year's grand holiday. Reflections and dre
 
 Here's to the stories we've shared and the adventures that await💖. And happy a belated new year.
 
-{{<figure align="center" src="/yes_and/chinese_c.jpeg" caption="Chinese calligraphy written by my grandmother. I went back to visit her during the holiday. She is an inspire to me. Btw, I'm extremely good at copperplate, perhaps the sense for calligraphy runs in the blood.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/yes_and/chinese_c.jpeg" caption="Chinese calligraphy written by my grandmother. I went back to visit her during the holiday. She is an inspire to me. Btw, I'm extremely good at copperplate, perhaps the sense for calligraphy runs in the blood.">}}

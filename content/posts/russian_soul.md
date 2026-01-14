@@ -18,4 +18,4 @@ One of the most heartbreaking things he said shortly before his death in 1943 wa
 
 That’s why his music **feels so vulnerable and real**—it’s the voice of someone who lost everything except his ability to express that loss through music.
 
-{{<figure align="center" src="/art/an_hour_with_rachmaninov.jpeg" caption="The performance was very very successful—all seats are taken, with people standing on the back. The audience can't help but to applaud between movements. Lévy got more flowers than a ballerina really..." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/an_hour_with_rachmaninov.jpeg" caption="The performance was very very successful—all seats are taken, with people standing on the back. The audience can't help but to applaud between movements. Lévy got more flowers than a ballerina really..." width="88%">}}

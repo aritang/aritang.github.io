@@ -8,7 +8,7 @@ cover:
 
 A publisher, an ad exchange, an advertiser and an ad server walk into a courtroom...
 
-{{<figure align="center" src="/google_ad_gossip/google_doj_court_in_session.jpeg" caption="[source](https://www.adexchanger.com/wp-content/uploads/2024/09/Google-DOJ-ad-tech-antitrust-trial-courtroom-Judge-Brinkema-comic-2048x1873.png). " width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/google_doj_court_in_session.jpeg" caption="[source](https://www.adexchanger.com/wp-content/uploads/2024/09/Google-DOJ-ad-tech-antitrust-trial-courtroom-Judge-Brinkema-comic-2048x1873.png). " width="66%">}}
 
 > Google will spend the next four to six weeks in a Virginia courtroom defending itself against allegations that it operates a monopoly over the digital advertising industry.
 

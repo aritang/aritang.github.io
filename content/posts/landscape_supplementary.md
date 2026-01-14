@@ -8,7 +8,7 @@ draft: false
 
 The online advertising market is dominated by a few major players, with significant regional variations. The global online advertising industry continues to grow, at about \$600 ~ \$700 billion today, and showing no signs of slowing down [6].
 
-{{<figure align="center" src="/google_ad_gossip/global_market.jpeg" caption="Global market size of digital advertising. [Source](https://www.statista.com/study/169023/walled-gardens/).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/global_market.jpeg" caption="Global market size of digital advertising. [Source](https://www.statista.com/study/169023/walled-gardens/).">}}
 
 The market is **highly concentrated**. Based on data in 2019, **Google and Facebook (Meta)** account for approximately half of the digital advertising global revenue [2].
 
@@ -26,7 +26,7 @@ Back in 2019, (some) people are still talking about the digital ad industry to b
 
 And when is goes to 2023:
 
-{{<figure align="center" src="/google_ad_gossip/global_market_share_2023.jpeg" caption="Global landscape of digital advertising 2023. [Source](https://www.statista.com/study/169023/walled-gardens/).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/global_market_share_2023.jpeg" caption="Global landscape of digital advertising 2023. [Source](https://www.statista.com/study/169023/walled-gardens/).">}}
 
 > According to eMarketer, Google and Facebook are responsible for around half of digital advertising revenue. The two tech giants owe this to the market-dominating position of their online platforms (including Google, YouTube, Facebook and Instagram). Alibaba follows in third place. Analysts assume that the Chinese will increase their share of online advertising revenue to over ten percent by 2019. Snapchat is also trending towards growth. The company's advertising revenue could triple, albeit only from 0.3 to 0.9 percent.
 >
@@ -44,9 +44,9 @@ And when is goes to 2023:
 
 Market size of the digital advertising industry across India from 2016 to 2023, with estimates until 2025:
 
-{{<figure align="center" src="/google_ad_gossip/india_ad_market.jpeg" caption="Market size of india. [source](https://www.statista.com/statistics/795262/india-market-size-of-digital-advertising-industry/).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/india_ad_market.jpeg" caption="Market size of india. [source](https://www.statista.com/statistics/795262/india-market-size-of-digital-advertising-industry/).">}}
 
-{{<figure align="center" src="/google_ad_gossip/india_ad_market_share.jpeg" caption="Distribution of digital advertising market in India in financial year 2021 and 2022, by platform ecosystem. [source](https://www.statista.com/statistics/1426300/india-digital-ad-market-by-platform-ecosystem/).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/india_ad_market_share.jpeg" caption="Distribution of digital advertising market in India in financial year 2021 and 2022, by platform ecosystem. [source](https://www.statista.com/statistics/1426300/india-digital-ad-market-by-platform-ecosystem/).">}}
 
 ## China
 
@@ -54,21 +54,21 @@ China has a different internet landscape—to use most internet services one has
 
 According to Statista's report on social media advertising and marketing in China ([source](https://www.statista.com/study/143866/social-media-marketing-in-china/)):
 
-{{<figure align="center" src="/google_ad_gossip/china_ad_market.jpeg" caption="Market share of online advertising in China in 2022 and 2023, with estimates until 2025, by ad category.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/china_ad_market.jpeg" caption="Market share of online advertising in China in 2022 and 2023, with estimates until 2025, by ad category.">}}
 
 Most of the time, retail media ads goes through social media apps—because China's social media app (yes, e.g. the notoriously famous WeChat) are all comprehensive bundles that can do everything—ride hailing, financing, news feeds, food delivery, ordering, browsing websites, games, etc.. So, the landscape of social media ads would be reflective of the market as a whole:
 
-{{<figure align="center" src="/google_ad_gossip/china_ad_market.jpeg" caption="**Social media** advertising revenue in China from 2012 to 2020 with a forecast until 2023 (**in billion yuan**)">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/china_ad_market.jpeg" caption="**Social media** advertising revenue in China from 2012 to 2020 with a forecast until 2023 (**in billion yuan**)">}}
 
 Just to get a glimpse of the popularity landscape of China social media:
 
-{{<figure align="center" src="/google_ad_gossip/social_media_status_quo.jpeg" caption="**Social media** advertising revenue in China from 2012 to 2020 with a forecast until 2023 (**in billion yuan**)">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/social_media_status_quo.jpeg" caption="**Social media** advertising revenue in China from 2012 to 2020 with a forecast until 2023 (**in billion yuan**)">}}
 
 > In China, recommendation-based marketing, or "zhongcao", was among the most effective forms of marketing. The Chinese social commerce platform Xiaohongshu was the most popular channel to post zhongcao content. In 2022, it contributed over half of such posts among five major social media platforms measured. Short video giant Douyin came in second. [Read more](http://www.statista.com/statistics/1411928/china-social-media-market-share-of-recommendation-based-marketing)
 
 Lastly, market shares (in some way):
 
-{{<figure align="center" src="/google_ad_gossip/china_spending.jpeg" caption="How much do advertisers spend in different social media platforms, in September 2023, by internet platform.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/china_spending.jpeg" caption="How much do advertisers spend in different social media platforms, in September 2023, by internet platform.">}}
 
 ### reference
 

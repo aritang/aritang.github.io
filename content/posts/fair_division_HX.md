@@ -32,4 +32,4 @@ The algorithm and proof is long, filling a single linespace 30-page paper, hence
 
 I didn't quite understand completely if the ridge sequence of picking order can be calculated efficiently or only existence is guaranteed. But let's mark it here, and maybe in the future we'll have the opportunity that takes inspire from this problem.
 
-{{<figure align="center" src="/tattooed_heart/rem_bum.jpeg" caption="coolness, i actually liked it, despite fair division really sounds like some cliché idea...">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/rem_bum.jpeg" caption="coolness, i actually liked it, despite fair division really sounds like some cliché idea...">}}

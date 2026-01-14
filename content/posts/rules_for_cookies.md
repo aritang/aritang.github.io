@@ -18,7 +18,7 @@ Cookies store general information about user interactions with a website, allowi
 
 Therefore, Cookies makes up for HTTP to keep information across time. And makes the following function available: session management, personalization (eg. language preference) and **tracking**.
 
-{{<figure align="center" src="/google_ad_gossip/cookie_n_http.jpeg" caption="Cookies transmit information **across** browsing sessions.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/cookie_n_http.jpeg" caption="Cookies transmit information **across** browsing sessions.">}}
 
 ## who make the rule for Cookies?
 

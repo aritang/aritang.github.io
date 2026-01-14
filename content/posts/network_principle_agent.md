@@ -29,7 +29,7 @@ The principle has **preferences over the underlying behaviors** taken by decisio
 
 Algorithmic aspect comes in when the paper models the relationship between actions and observations as an **effort graph**, shown in below.
 
-{{<figure align="center" src="/who_do_we_blame/effort_graph.jpeg" caption="effort variables $x_1, \ldots, x_m$, which are the $m$ actions the agent can take. features $F_1, \ldots, F_n$ is the $n$-dimensional feature vector the decision maker actually observes.">}} 
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/who_do_we_blame/effort_graph.jpeg" caption="effort variables $x_1, \ldots, x_m$, which are the $m$ actions the agent can take. features $F_1, \ldots, F_n$ is the $n$-dimensional feature vector the decision maker actually observes.">}} 
 
 In particular, each edge between $x_j$ and $F_i$ contains a parameter $\alpha_{ji}$ indicating the degree to which action $j$ increases feature $i$. Formally
 $$
@@ -48,7 +48,7 @@ s.t.\ & \sum_{j = 1}^m x_j \le B  & (\forall i)\cr
 $$
 As the designer, we are insterested in whether a particular action (i.e. effort invested) $x^* \in \mathbb{R}{}_{\ge 0}^m$ (or, its support $S(x^*)$) is incentivizable via some scoring rule design of $M(\cdot)$. The result is:
 
-{{<figure align="center" src="/who_do_we_blame/linear_incentives.jpeg" caption="linear mechanisms are optimal in the following sense: whenever a 'reasonable' mechanism can incentivize a particular behavior, there is a linear mechanism that can do so as well.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/who_do_we_blame/linear_incentives.jpeg" caption="linear mechanisms are optimal in the following sense: whenever a 'reasonable' mechanism can incentivize a particular behavior, there is a linear mechanism that can do so as well.">}}
 
 Moreover, let's say, we'd like to optimize for a set of desirable actions $D\subset [m]$. Let $\mathcal X_D  = \{x | S(x) \subset D\}$ (i.e. the set of effort profiles that is only supported on $D$, that we wish to incentivize).
 $$
@@ -57,7 +57,7 @@ $$
 s.t.\ x \text{ is incentivizable}
 \end{align}
 $$
-{{<figure align="center" src="/who_do_we_blame/linear_incentives_1.jpeg" caption="it can be hard to incentivize a complex set of behaviors while also optimizing other objectives.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/who_do_we_blame/linear_incentives_1.jpeg" caption="it can be hard to incentivize a complex set of behaviors while also optimizing other objectives.">}}
 
 ### reference
 

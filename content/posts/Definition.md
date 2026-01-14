@@ -11,7 +11,7 @@ summary: In memory of the midsummer night's dream of 2023.
 
 We dream in summer.
 
-![green_corridor](/definition/green_corridor.jpeg)
+![green_corridor](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/definition/green_corridor.jpeg)
 
 During the summer of 2023, I visited Stanford University and was very fortunate to meet several brilliant human beings who undoubtedly influenced me so much that in certain way, changed my life. 
 

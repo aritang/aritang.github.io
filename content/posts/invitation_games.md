@@ -22,4 +22,4 @@ This task is far from trivial, as it requires a delicate balance between incenti
 
 These theoretical models find an interesting, if not perfectly aligned, reflection in the real world. Take, for example, a promotional strategy used by Meituan, a popular food delivery app:
 
-{{<figure align="center" src="/new_plan/coupon.jpeg" caption="a promo of Meituan. the rule is that, on inviting one more friend to 'click' the link (and thus joining the collecting coupon game), one get a ¥2 increment on their own coupon. and u can imagine how viral it becomes once spread out.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/coupon.jpeg" caption="a promo of Meituan. the rule is that, on inviting one more friend to 'click' the link (and thus joining the collecting coupon game), one get a ¥2 increment on their own coupon. and u can imagine how viral it becomes once spread out.">}}

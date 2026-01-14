@@ -7,7 +7,7 @@ summary: "Professor Nicolas Lambert recently gave a talk at SUFE on 'Paying for 
 
 Professor Nicolas Lambert recently gave a talk at SUFE on “Paying for Estimates: Incentives in Statistical Reporting.”
 
-{{<figure align="center" src="/online/elicitability.jpeg" caption="Conference room on the 8th floor — fancy!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/elicitability.jpeg" caption="Conference room on the 8th floor — fancy!" width="100%">}}
 
 I don’t think the paper is publicly available yet, but if you’re curious, try googling "Elicitability" along with the authors’ names — you may find what you need.
 
@@ -51,7 +51,7 @@ Other results in the talk include more direct conditions under which certain dis
 
 I like these concrete examples — they show the limits of what can be inferred from limited outcome data, depending on model structure. And it makes people take pictures:
 
-{{<figure align="center" src="/online/elicitable.jpeg" caption="Conference room on the 8th floor — fancy!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/elicitable.jpeg" caption="Conference room on the 8th floor — fancy!" width="100%">}}
 
 The last part of the talk introduced an "elicitation order" — a way to compare experiments based on how much they can elicit:
 

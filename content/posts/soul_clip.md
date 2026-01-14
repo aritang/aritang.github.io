@@ -25,4 +25,4 @@ This is one of the scenes that resonates with my current phase and inspires me a
 
 ### See you tomorrow.
 
-{{<figure align="center" src="/tattooed_heart/fish_and_ocean.jpeg" caption="left—Dorothea; right—Joe.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/fish_and_ocean.jpeg" caption="left—Dorothea; right—Joe.">}}

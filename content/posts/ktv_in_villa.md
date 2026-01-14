@@ -6,7 +6,7 @@ draft: false
 
 Recently I noticed a weirdly popular TikTok trend: 
 
-{{<figure align="center" src="/art/ktv_in_villa.jpeg" caption="It's gone viral internationally" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/ktv_in_villa.jpeg" caption="It's gone viral internationally" width="100%">}}
 
 The original choreography is by 不齐舞团: [Watch on YouTube](https://youtube.com/shorts/IIVRm-sQkVo?si=eHaSvBGUov6LEFxs), based on a Chinese-Cantonese rap song:
 

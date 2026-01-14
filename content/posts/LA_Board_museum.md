@@ -8,7 +8,7 @@ I used to be really into modern art—especially the 1960s—when I was in high 
 
 Back then, visiting a modern art museum was at the top of 17-year-old Ariana’s bucket list. It’s funny how just a few years later, at 22, I walked right past The Broad in L.A. without even planning to go inside. But when I did, the art struck me as ridiculously expressive—almost shockingly explicit, maybe even disturbing. Ninety percent of the gallery was basically a jarring experience, but I guess that’s exactly what those artists aimed for.
 
-{{<figure align="center" src="/art/ruscha_psycho_spaghetti_western_5.jpeg" caption="*Psycho Spaghetti Western #5* by Jim Shaw—an unfiltered take on American consumer culture. It's " width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/ruscha_psycho_spaghetti_western_5.jpeg" caption="*Psycho Spaghetti Western #5* by Jim Shaw—an unfiltered take on American consumer culture. It's " width="100%">}}
 
 One piece that really impacted me was **“Psycho Spaghetti Western.”** It felt like a direct punch to the gut—wildly chaotic but also strangely reflective of our culture’s consumerism and confusion. It was both fascinating and unsettling, which I suppose is the point.
 

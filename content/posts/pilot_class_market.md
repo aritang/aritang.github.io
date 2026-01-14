@@ -28,7 +28,7 @@ Interestingly, four of the five pilot class programs scheduled their math exams 
 
 Wait, the story isn’t over yet. Currently, as a member of one of the pilot class programs, I have to share a bit more about the admission offering that follows. After the math exam and the interview, on the night before the term starts, I received a phone call from the program’s committee, informing me that I had been accepted - precisely when I was having dinner with my family. It was a bit of a surprise and a shock because enrolling in a program means waiving one’s original major and getting transferred to a new trajectory. It’s a crossroad of life. But the people on the phone were so impatient. As I tried to say, “Yeah sure sorry but can I get back to you a little later…” a man on the other side of the call yelled in the background, “Take it or leave it, now!” They were insistent on an immediate answer. The situation was intimidating.
 
-![matrix_pic](/pilot_class_market/matrix.jpeg)
+![matrix_pic](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/pilot_class_market/matrix.jpeg)
 
 For me, I got in with almost no hesitation because my parents forced me to study economics, but I hated it and wanted to escape - so I took my chance - and now I’m doing market design, behavioral economics, and game theory… But after all the choice was tough in general, for a young, 18-year-old college freshman to decide his/her future in less than a minute.
 

@@ -8,7 +8,7 @@ cover:
 
 In an enchanting solo that captures the essence of Frederick Ashton's choreographic genius, Marianela Nunez transforms the stage into a canvas of poetic motion in her rendition of the Female Variation from "Les Rendezvous." Recorded unofficially and shared on Bilibili, Nunez's performance is a masterclass in balletic expression, marrying the technical with the emotional in a dance that feels like a living artwork.
 
-{{<figure align="center" src="/tattooed_heart/les_rendezvous_nela.jpeg" caption="The dance is light-heartedly sweet. Nela showed of her brilliance in mastering the emotion while displaying superior technique. [Watch here.](https://www.bilibili.com/video/BV1Ux4y147nz/?share_source=copy_web&vd_source=7d9988cd6152d87ab6877f7dea245a0b)">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/les_rendezvous_nela.jpeg" caption="The dance is light-heartedly sweet. Nela showed of her brilliance in mastering the emotion while displaying superior technique. [Watch here.](https://www.bilibili.com/video/BV1Ux4y147nz/?share_source=copy_web&vd_source=7d9988cd6152d87ab6877f7dea245a0b)">}}
 
 Nunez exemplifies what it means to embody the music. The flutter of her delicate arms aligns perfectly with the flute's playful solos. Her movements are both airy and precise, a fluidity that seems almost ethereal yet grounded in formidable skill—silky smooth with a poetic rhythm, rich in detail and vibrant in layers of expression. As she turns, her skirt twirls lightly with each graceful step, falling softly as if reluctant to leave the air.
 

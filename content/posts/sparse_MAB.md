@@ -7,7 +7,7 @@ summary: "The visible world is no longer a reality and the unseen world no longe
 
 > The visible world is no longer a reality and the unseen world no longer a dream (Kandinsky)
 
-{{<figure align="center" src="/online/kandinsky.jpeg" caption="Circles in a Circle (1923) Vasily Kandinsky" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/kandinsky.jpeg" caption="Circles in a Circle (1923) Vasily Kandinsky" width="100%">}}
 
 In the classical MAB problem, $K$ arms are available to the decision maker who pulls them sequentially. To maximize total reward, UCB algorithms achieves regret which scales linearly with $K$: $O(K\log T)$.
 
@@ -28,7 +28,7 @@ where the notation $\lesssim$ means that the inequality holds up to some univers
 
 `SparseUCB` has three phases that it can be in at $t$: denoted as $w(t) \in \lbrace\tau, f, u\rbrace$:
 
-{{<figure align="center" src="/online/sparse_ucb.jpeg" caption="Screenshot from Kwon et al. Section 4.1" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/sparse_ucb.jpeg" caption="Screenshot from Kwon et al. Section 4.1" width="100%">}}
 
 > Input: total $K$ arms and known quantity of good arms $L$.
 >
@@ -44,7 +44,7 @@ where the notation $\lesssim$ means that the inequality holds up to some univers
 
 The design idea of `SparseUCB` is to first quickly identify $L$ good arms, then pull them according to UCB rule. The design of the Phase $f$ (termed the force-log phase) is as followed, as explained by the paper
 
-{{<figure align="center" src="/online/sparse_ucb_1.jpeg" caption="One more screenshot from Kwon et al. Section 4.1" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/sparse_ucb_1.jpeg" caption="One more screenshot from Kwon et al. Section 4.1" width="100%">}}
 
 It guarantees regret (Theorem 2 from Kwon et al (2017)).
 $$

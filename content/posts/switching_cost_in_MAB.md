@@ -46,7 +46,7 @@ $$
 $$
 Then,
 
-{{<figure align="center" src="/online/switching_cost_MAB.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/switching_cost_MAB.jpeg" caption="" width="100%">}}
 
 Thus every tear-down cost has been absorbed into the initial switch-in cost plus a constant offset to the reward.
 

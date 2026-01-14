@@ -29,7 +29,7 @@ But it was history with the slamming of the door. Things happen. It's like ex-bo
 
 (With the interdisciplinary of operational research, behavioral economics, game theory and so on...)
 
-![IMG_0442](/bio/IMG_0442.jpg)
+![IMG_0442](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/IMG_0442.jpg)
 *i wrote this when i was 18 during a ceremony - taking an oath to adulthood. never thought it'd come true though. fuck.*
 
 

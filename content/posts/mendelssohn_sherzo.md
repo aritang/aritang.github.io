@@ -12,7 +12,7 @@ Mendelssohn is a big fan of Shakespeare and particular the Midsummer play.
 
 Mendelssohn composed the *Overture* [Op. 21] to *A Midsummer Night's Dream* when he was just 17 years old. Later, at the age of 33, the King of Prussia commissioned him to write the full incidental music (Op. 61).
 
-{{<figure align="center" src="/art/mendelssohn_midsummer_bso.jpeg" caption="The ***Scherzo*** from the incidental music is the first piece in the collection." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/mendelssohn_midsummer_bso.jpeg" caption="The ***Scherzo*** from the incidental music is the first piece in the collection." width="100%">}}
 
 Mendelssohn's *A Midsummer Night's Dream* is, in many ways, the epitome of fairy music. It’s not just about stacking flute, harp, and airy violin pizzicatos to create a dreamy atmosphere. While Dvořák's *Rusalka* (see a previous [blog](/posts/rusalka/)), the 'Apparition de Myrthe et évocation magique' from Act II of *Giselle*, and Debussy’s *Clair de Lune* are all dreamy in their own right, Mendelssohn's take stands out for the composer's eh, personal background.
 

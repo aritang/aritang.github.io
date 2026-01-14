@@ -28,6 +28,6 @@ From an undergraduate perspective, I find the ArguGPT tool they developed somewh
 >
 > **Moreover, I believe that game theorists need to be sensitive to cultural and psychological factors to understand the incentives and constraints that people face. (90% AI)** Acute perception, mathematical skills and a deep sense of empathy embodies the essence of a modern economist, and is what I'm committed to becoming.
 
-{{<figure align="center" src="/new_plan/ArguGPT.jpeg" caption="the prediction result of ArguGPT">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/ArguGPT.jpeg" caption="the prediction result of ArguGPT">}}
 
 According to ArguGPT, the essay appears to be entirely human-written, with only one sentence flagged as potentially AI-generated. But here's the twist: that lone sentence is actually the only part that is not written by GPT. Ha!

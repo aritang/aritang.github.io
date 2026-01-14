@@ -8,7 +8,7 @@ draft: false
 
 Preview from problem set 2, question 4: ([link to original file](https://www.fuhuthu.com/Mechanism24/ps2.pdf))
 
-{{<figure align="center" src="/seminars/mechanism_seminar_ps4_e4.jpeg" caption="" width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/seminars/mechanism_seminar_ps4_e4.jpeg" caption="" width="88%">}}
 
 This gives a reduction: [submodular welfare maximization] <= [maximize a monotone submodular function s.t. matroid constarint].
 

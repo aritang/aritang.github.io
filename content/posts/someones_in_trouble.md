@@ -13,7 +13,7 @@ A Bilibili influencer recently posted a scathing critique of a major Chinese str
   
   Some apps even slap ads directly on their logos just to squeeze out more exposure.  
   
-    {{<figure align="center" src="/google_ad_gossip/logo_ads.jpeg" caption="Ewww." width="66%">}}
+    {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/logo_ads.jpeg" caption="Ewww." width="66%">}}
   
     > These logo-banner ads even show up in the App Store. Imagine Apple spending decades perfecting its ecosystem, only to have Chinese apps free-riding on their storefront real estate. Tim Cook probably couldn’t have imagined this level of “creativity.”
   

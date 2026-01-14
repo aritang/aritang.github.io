@@ -11,7 +11,7 @@ cover:
 
 Hi, this is Ariana. Welcome to my corner of the internet!
 
-{{<figure align="center" src="/bio/profile_photo.jpeg" caption="August, 2023, Stanford. Taken by a Canon EOS M50m2.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/profile_photo.jpeg" caption="August, 2023, Stanford. Taken by a Canon EOS M50m2.">}}
 
 Download My CV [***here***](/files/ariana_tang_cv.pdf). You are welcomed to contact me anytime for anything at `ariana_tang AT outlook DOT com`.
 
@@ -35,7 +35,7 @@ Acute perception, mathematical skills and a deep sense of empathy embodies the e
 
 This blog serves as a gateway into my world of research, creativity, and everyday thoughts. I started it inspired by Alvin Roth's market design blog.
 
-{{<figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan, at the SITE session of behavioral econ, it kinda solidified my passion for market design. Pic taken 2023 summer." >}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Al and me and Alex Chan, at the SITE session of behavioral econ, it kinda solidified my passion for market design. Pic taken 2023 summer." >}}
 
 It updates on a daily basis. Here are some selected blog posts about ideas worth sharing:
 
@@ -43,7 +43,7 @@ I love Ariana Grande and the concept that her ***Sweetener*** album delivers:
 
 > **it's kind of about bringing light to a situation or to someone's life or somebody else brings life to your life. sweetening the situation.**
 
-{{<figure align="center" src="/tattooed_heart/work_ethic.jpeg" caption="the post about [***my work ethics***](/posts/b_graph/): the more authentic and genuine it is, the better it will work for you">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/work_ethic.jpeg" caption="the post about [***my work ethics***](/posts/b_graph/): the more authentic and genuine it is, the better it will work for you">}}
 
 ### art and music
 

@@ -29,7 +29,7 @@ Btw, Ariana Grande is an expert in this, as she sings in one of her hit single *
 >
 > And you realize she's right there, and you're at home like "Damn, she can't compare."
 
-![bkwyg1](/high_school_admission/bkwyg1.jpeg)
+![bkwyg1](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/high_school_admission/bkwyg1.jpeg)
 
 Chill. In a bilateral matching market, it's been proven that a stable matching always exists. Denote the set of all possible stable matchings as $\mathcal S$, $\mathcal S\ne \empty$.
 

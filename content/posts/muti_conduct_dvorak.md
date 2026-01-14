@@ -6,7 +6,7 @@ draft: false
 
 After surviving a macro midterm where the True/False section felt like coin flipping, I rushed downtown for Dvořák’s Symphony No. 9 with the Chicago Symphony Orchestra under **Sir Riccardo Muti** ([Concert Note digital version](https://issuu.com/chicagosymphony/docs/program_book_-_muti_conducts_strauss_hindemith_))
 
-{{<figure align="center" src="/art/r_muti.jpeg" caption="Can you believe that Muti's 84?! And he probably definitely counts bars better than I do." width="66%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/r_muti.jpeg" caption="Can you believe that Muti's 84?! And he probably definitely counts bars better than I do." width="66%">}}
 
 I sat in the center front row of the Terrace—right behind the stage. That seat feels almost illicit, as if you’ve joined the orchestra. Muti’s expressions are right there in front of you; his every gesture, every cue, goes directly under your eyes. He is astonishingly clear. Every motion carries intention—he shakes for trills, marks beats for the horns, molds phrases with his hands. His precision and humor are inseparable. It’s a masterclass in detail. Honestly, that seat should cost more when Muti’s conducting—**as a orchestra flute player myself I'd say he's the best conductor one could hope for.**
 

@@ -8,8 +8,8 @@ So are advertisement good or bad? There's no fixed answer. One view says it's gr
 
 Nevertheless, it seems now the market is a bit overly saturated (with a lot of money flowing) but yet mismatched (a lot of efficiency too) cause now there are **ad blockers that pays you to view ads**:
 
-{{<figure align="center" src="/google_ad_gossip/paid_ad_blocker.jpeg" caption="Pie Ad Blocker: Browse ad-free with Pie Adblock and earn cash rewards for the ads you choose to see." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/paid_ad_blocker.jpeg" caption="Pie Ad Blocker: Browse ad-free with Pie Adblock and earn cash rewards for the ads you choose to see." width="100%">}}
 
 One the good side, this 'Block Ads, Get Paid' model seems to be giving user back control over ads and privacy (here's [a video](https://youtu.be/S1qO7vn4Us8?si=NMu5FVJOZ3r855Sz) of their founder explaining their business model). On the other hand, I learnt about Pie because ***my YouTube ads showed Pie to me, meanwhile Pie claims that they can block YouTube ads***...
 
-{{<figure align="center" src="/google_ad_gossip/excuse_me.jpeg" caption="" width="50%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/excuse_me.jpeg" caption="" width="50%">}}

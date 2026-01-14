@@ -4,7 +4,7 @@ date: 2025-04-03T10:52:02+08:00
 draft: false
 ---
 
-{{<figure align="center" src="/eternal_sunshine/es_acappella.jpeg" caption="18 Ariana Grande studio acappellas—it's like listening to the angel sing for 90 minutes straight!!!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/es_acappella.jpeg" caption="18 Ariana Grande studio acappellas—it's like listening to the angel sing for 90 minutes straight!!!" width="100%">}}
 
 Buy it. But it. [Link to official website for the album](https://shop.arianagrande.com/products/eternal-sunshine-deluxe-brighter-days-ahead-digital-album-a-cappella-version?srsltid=AfmBOoop6_tcNJt0D0NdhqaM8r2acDaLQMRhMQMm_DRVx1bo5wxfluvF).
 
@@ -16,7 +16,7 @@ I genuinely appreciate when artists release genuinely distinct album versions—
 
 Take, for example, Taylor Swift's 'Midnights' Rainbow collection:
 
-{{<figure align="center" src="/complaints/midnights_grid.jpeg" caption="For Ms Swift's 'Midnights' a total of 35 physical products, each with its own UPC code, were sold in the United States." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/complaints/midnights_grid.jpeg" caption="For Ms Swift's 'Midnights' a total of 35 physical products, each with its own UPC code, were sold in the United States." width="100%">}}
 
 > The Rolling Stones released at least 43 variants of their 2023 album *Hackney Diamonds* with different colored LPs and artwork—yet each contained the exact same tracklist.
 >

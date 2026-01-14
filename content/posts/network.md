@@ -7,7 +7,7 @@ cover:
 summary: The profound evolution of football tactics, from traditional direct play to the modern possession style, and how Pep Guardiola's influence reshaped the game as we know it.
 ---
 
-![IMG_2902](/new_plan/IMG_2902.jpeg)
+![IMG_2902](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/IMG_2902.jpeg)
 
 *history in the making! taken June 11 2023, at Man City fan club Shanghai*
 
@@ -25,6 +25,6 @@ Overall, it's a mutual evolution for the players and managers, intertwined with 
 
 What's next for Man City and Pep Guardiola? Haha, personally, I just wish they keep putting out well-designed jerseys. As a fan, that would be enough.
 
-![IMG_0461](/new_plan/IMG_0461.jpeg)
+![IMG_0461](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/IMG_0461.jpeg)
 
 *2023-24 season away jersey replica. go Man City!*

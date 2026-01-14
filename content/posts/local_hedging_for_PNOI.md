@@ -41,4 +41,4 @@ And at last Weitzman's index policy is run.
 
 Notes for the theory results that I get from the reading group today: the 4/3 approximation is proved for each box (then combined), something like this:
 
-{{<figure align="center" src="/online/local_hedging.jpeg" caption="The proof is really pretty. I wish I could fully understand it though but clearly it takes more time..." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/local_hedging.jpeg" caption="The proof is really pretty. I wish I could fully understand it though but clearly it takes more time..." width="100%">}}

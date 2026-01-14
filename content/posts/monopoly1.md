@@ -8,7 +8,7 @@ In the thrilling contest of high-frequency trading,  my squad is called 'MONOPOL
 
 I spent the whole day diving into developing a DRL algorithm for our HFT contest — it's both a blast and a bit of a time sink, considering opportunity cost. But anyway, I got our code up and running and even churned out some early results.
 
-{{<figure align="center" src="/bio/HFT_trading.png" caption="at least it's getting positive rewards...">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/HFT_trading.png" caption="at least it's getting positive rewards...">}}
 
 This contest keeps things simple: create an algorithm that knows when to hit 'sell' or 'buy' for each stock at the right minute. It's so straightforward, someone might just win by throwing darts at a board—randomly, but hey, that's not my style. I tried wrapping my head around some dense HFT literature, but it felt like reading a foreign language, so eventually I just go with DRL.
 

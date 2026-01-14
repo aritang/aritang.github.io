@@ -6,7 +6,7 @@ draft: false
 
 Happy Sunday! Unlike sophisticated, beautifully depressed Brahms or Schubert impromptus, here's a bit of a jolly music:
 
-{{<figure align="center" src="/art/forellePerlman.jpeg" caption="Whoever came up with this project deserves the highest honor of classical manager. You will find the best resolution available on Medici tv.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/forellePerlman.jpeg" caption="Whoever came up with this project deserves the highest honor of classical manager. You will find the best resolution available on Medici tv.">}}
 
 The hero was ***Christopher Nupen***:
 

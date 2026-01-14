@@ -15,6 +15,6 @@ What I desire is to challenge myself to become familiar with the theories of mar
 
 Let's do something crazy and extraordinary in the upcoming 10 weeks.
 
-![keep_singing](/new_plan/keep_singing.jpeg)
+![keep_singing](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/new_plan/keep_singing.jpeg)
 
 *one of Ariana Grande's inspire to me: she fell off the stage and almost died. then she got rid off the tangled belts on her, picked up her mic, walked back on the stage by the side stairs and continued the show.*

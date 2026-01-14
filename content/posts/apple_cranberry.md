@@ -13,7 +13,7 @@ As fall wanes, a tale of two harvests unfolds: apples in ShaanXi and cranberries
 
 ## **Apples of ShaanXi: A Struggle Against Odds**
 
-{{<figure align="center" src="/auction_houses/apples.jpeg" caption="ShaanXi province overcamed poverty, benefited from the apple growing industry over the last 40 year, after the opening up of Xiaoping Deng">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/apples.jpeg" caption="ShaanXi province overcamed poverty, benefited from the apple growing industry over the last 40 year, after the opening up of Xiaoping Deng">}}
 
 In the rugged terrain of ShaanXi, family-owned apple farms face a relentless battle. The market here features a complex weave of decentralized transactions between the apple farmers and the merchants, dancing around fluctuating demand and unpredictable, competitive pricing.
 
@@ -39,7 +39,7 @@ But the problem isn't really the shortminded-ness of the farmers. When a design 
 
 ## **Cranberries: A Success Story**
 
-{{<figure align="center" src="/auction_houses/cranberry.jpeg" caption="The famous 'flood' harvest of cranberries.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/auction_houses/cranberry.jpeg" caption="The famous 'flood' harvest of cranberries.">}}
 
 Contrastingly, the world of cranberries tells a tale of innovation and success. Ocean Spray, a leading cranberry cooperative, epitomizes this narrative. Accounting for 65% of the world’s cranberry supply, the company exempt from antitrust regulations due to a 1922 federal law, benefits from collective scale and power:
 

@@ -12,7 +12,7 @@ draft: false
 
 The paper invited authors to contribute to metadata of their papers (e.g. keywords classification) by sending out email, and studies the variation of such email content and its effect on participation rate.
 
-{{<figure align="center" src="/maguerite/email_prompt_metadata.jpeg" caption="the email highlight different benefit of contributing to meta data. though i think every person has their own opinion on this." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/maguerite/email_prompt_metadata.jpeg" caption="the email highlight different benefit of contributing to meta data. though i think every person has their own opinion on this." width="100%">}}
 
 One difficulty of the study is that coauthor networks are contagious—so that treatment would have spillover effect particularly when users forward their email. The problem is solved by nice design of sampling on the coauthor network graph to isolate components where treatments and control can be safely applied without spillovers.
 

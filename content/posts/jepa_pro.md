@@ -8,7 +8,7 @@ I was feeling a bit nostalgic (and hungry) today after the weekly Friday macroec
 
 There happened to be an AI seminar right after, with lunch — I grabbed a sandwich, fully expecting myself to sit in the back, eating my feelings while absorbing some comforting high-level vibes. Instead, it turns out to be one of the most interesting theoretical advances at the forefront of self-supervised learning.
 
-{{<figure align="center" src="/online/lejepa.jpeg" caption="Slay">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/lejepa.jpeg" caption="Slay">}}
 
 The paper was live on ArXiv two days ago:
 

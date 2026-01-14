@@ -6,7 +6,7 @@ draft: false
 
 *On the Waterfront* (1954) is an epic movie. Its soundtrack is composed by Leonard Bernstein and is nominated for an academy award (the movie won 8 in total).
 
-{{<figure align="center" width="100%" src="/art/onTheWaterfrontAcademy.jpeg" caption="Source: [Wikipedia](https://en.wikipedia.org/wiki/On_the_Waterfront#Screenplay_and_political_context). Impressive, right?">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/onTheWaterfrontAcademy.jpeg" caption="Source: [Wikipedia](https://en.wikipedia.org/wiki/On_the_Waterfront#Screenplay_and_political_context). Impressive, right?">}}
 
 Interestingly, the opening main motif of the soundtrack has a repeating theme (listen below) ♭B-♭A-B—F—
 

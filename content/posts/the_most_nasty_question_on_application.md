@@ -4,7 +4,7 @@ date: 2024-11-26T23:35:28+08:00
 draft: false
 ---
 
-{{<figure align="center" src="/wine/MIT_list_other.jpeg" caption="An example of MIT Sloan" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/MIT_list_other.jpeg" caption="An example of MIT Sloan" width="100%">}}
 
 Shriram Krishnamurthi's response on Quora succinctly explains why the "List other institutions" question isn’t particularly meaningful:
 

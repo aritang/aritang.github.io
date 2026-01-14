@@ -6,7 +6,7 @@ draft: false
 
 The Art Institute of Chicago boasts one of the world's finest collections of Impressionist and Post-Impressionist art. If you're a frequent gallery visitor, one Monet won't be too much of a surprise. But a walls of Monet's Wheatstacks would still be impressive... The following is one of my favourite.
 
-{{<figure align="center" src="/art/monet_winter_haystack.jpeg" caption="One of Monet's 25 [Haystacks](https://en.wikipedia.org/wiki/Haystacks_(Monet_series)) painting (1888-1891)." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/monet_winter_haystack.jpeg" caption="One of Monet's 25 [Haystacks](https://en.wikipedia.org/wiki/Haystacks_(Monet_series)) painting (1888-1891)." width="100%">}}
 
 Btw, really good short introduction for impressionism:
 

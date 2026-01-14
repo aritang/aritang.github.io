@@ -16,5 +16,5 @@ An explanation I came across sheds light on this transformation:
 
 Not a good news for me. So at least, I just ate hand-made dumplines at my school's dining hall.
 
-{{<figure align="center" src="/21/dumplings.jpeg" caption="with my friend we ate at the dining hall. despite there was a long queue and, i gotta say, the dumplings are nice and the atmosphere was so lovely. we sat at a window seat, under the sun, spending time with great food and friend.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/21/dumplings.jpeg" caption="with my friend we ate at the dining hall. despite there was a long queue and, i gotta say, the dumplings are nice and the atmosphere was so lovely. we sat at a window seat, under the sun, spending time with great food and friend.">}}
 

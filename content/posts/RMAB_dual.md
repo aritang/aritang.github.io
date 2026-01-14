@@ -14,7 +14,7 @@ Prelims:
 > $$
 > where $S_i $ is the state space, $A_i = \lbrace 0, 1 \rbrace$ the action space, $r_{i}$ and $\mathcal P_{i}$ denote the reward and transition kernels arm $i$. 
 >
-> Given the budget constraints, the decision make seek the policy $\pi: S \mapsto A$ that maximizes long-term average reward subject to budget constraints: {{<figure align="center" src="/art/rmab_eq_1.jpeg" caption="" width="100%">}}
+> Given the budget constraints, the decision make seek the policy $\pi: S \mapsto A$ that maximizes long-term average reward subject to budget constraints: {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/rmab_eq_1.jpeg" caption="" width="100%">}}
 >
 > If the budget constraint is "soft"—i.e. on average the actions don't exceed a given budget:
 > $$
@@ -50,10 +50,10 @@ V_i(s_i) + \nu_i  = r_i(s_i, 0) + \sum_{s_i'}V_i(s_i')P[s_i\to s_i'\mid a_i = 0]
 $$
 Which can be written in compact form, but more intuitive:
 
-{{<figure align="center" src="/art/rmab_eq_2.jpeg" caption="" width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/rmab_eq_2.jpeg" caption="" width="88%">}}
 
 I think the intuitive here is beautiful. If you formulate a constrained-resource-allocation-type problem directly as linear programming (or MIP-relaxed), its dual variables often resemble "shadow prices", or, simply, opportunity costs (e.g. try knapsack). It's similar here.
 
 The textbook's section 6.3 breezes past this with, 'It is ***interesting*** to see how (6.6) can be obtained from (6.1)–(6.4)...'
 
-{{<figure align="center" src="/art/RMAB_skip.jpeg" caption="Interesting? Absolutely. Obvious? Oh, totally—if you squint hard enough!" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/RMAB_skip.jpeg" caption="Interesting? Absolutely. Obvious? Oh, totally—if you squint hard enough!" width="100%">}}

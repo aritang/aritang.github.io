@@ -21,5 +21,5 @@ The market was estimated at 6-billion dollar, before October 22 2025 it announce
 
 So it's like, before you can only dig up gold but now you can make 1kg of gold out of 5kg of silver. And the market plummeted half:
 
-{{<figure align="center" src="/google_ad_gossip/csgo.jpeg" caption="Source: Pricempire" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/csgo.jpeg" caption="Source: Pricempire" width="100%">}}
 

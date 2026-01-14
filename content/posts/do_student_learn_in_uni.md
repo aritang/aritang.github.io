@@ -15,4 +15,4 @@ Here's an interesting paper answering an interesting question where the answer c
 
 TLDR:
 
-{{<figure align="center" width="100%" src="/google_ad_gossip/skill_compare.jpeg" caption="Source: [nature](https://www.nature.com/articles/s41562-021-01062-3). All rights belong to the publisher/authors.">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/skill_compare.jpeg" caption="Source: [nature](https://www.nature.com/articles/s41562-021-01062-3). All rights belong to the publisher/authors.">}}

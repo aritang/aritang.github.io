@@ -9,9 +9,9 @@ I spent the day hiking up a valley, tracing a stream until it cascaded into a wa
 **“清泉石上流”**
 *(Over mossy stones, the crystal stream glides.)*
 
-{{<figure align="center" src="/wine/water_in_the_hill.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/water_in_the_hill.jpeg" caption="" width="100%">}}
 
 The beauty was undeniable—but as a metropolitan indoor person, I’ll admit the *aesthetic* was more rewarding than the *activity*.
 
-{{<figure align="center" src="/wine/stream_on_stones.jpeg" caption="Pro tip: Wear proper hiking shoes and athletic gear. **Not** designer dresses—unless you enjoy wrestling in waterfalls with couture and crocs sandals." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/stream_on_stones.jpeg" caption="Pro tip: Wear proper hiking shoes and athletic gear. **Not** designer dresses—unless you enjoy wrestling in waterfalls with couture and crocs sandals." width="100%">}}
 

@@ -10,11 +10,11 @@ cover:
 
 Continuing from our previous discussion, Google's ad tech dominance didn't just materialize overnight. It's been meticulously crafted through a series of calculated moves that have systematically cornered the ad tech market and stifled competition. Let's delve into some pivotal tactics outlined in the DOJ's complaint under Part **IV.** of DOJ's complaint **GOOGLE’S SCHEME TO DOMINATE THE AD TECH STACK**:
 
-{{<figure align="center" src="/google_ad_gossip/nah_taylor.jpeg" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/nah_taylor.jpeg" width="100%">}}
 
 Sorry, there we go:
 
-{{<figure align="center" src="/google_ad_gossip/monopolys_playbook.jpeg" caption="Source: DOJ." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/monopolys_playbook.jpeg" caption="Source: DOJ." width="100%">}}
 
 ### 1. Buying Control of Key Tools That Link Publishers and Advertisers
 
@@ -22,7 +22,7 @@ Google's journey to the top of the ad tech food chain began with strategic acqui
 
 > *Whoever said money can't solve problems clearly didn't have Google's budget.*
 
-{{<figure align="center" src="/google_ad_gossip/money_problem.jpeg" caption="whoever said money can't solve their problem, must not have had enough moeny to solve 'em" width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/money_problem.jpeg" caption="whoever said money can't solve their problem, must not have had enough moeny to solve 'em" width="96%">}}
 
 ### 2. Leveraging Acquisitions to Lock Out Rivals and Control Each Key Ad Tech Tool
 
@@ -32,7 +32,7 @@ But buying the tools was just the first step. Google then used its dominant posi
 
 It's a classic case of mutual reinforcement. By restricting access to its products, Google ensured that both publishers and advertisers had little choice but to use its services—even if it wasn't in their best interest.
 
-{{<figure align="center" src="/google_ad_gossip/locked.jpeg" caption="Why share the playground when you can have it all to yourself?" width="96%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/locked.jpeg" caption="Why share the playground when you can have it all to yourself?" width="96%">}}
 
 ### 3. Extinguishing Potential Threats and Locking Down Technology
 

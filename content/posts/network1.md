@@ -29,7 +29,7 @@ The search stops when they reach the target, where the chain is typically comple
 
 But the network's job isn't finished yet. After that, the patient herself and all the doctors in the plea chain will have to repay the favor, in the backward order, resulting in another round of those dinner parties with "too much drinks."
 
-![IMG_8680](/procrastinator/IMG_8680.jpeg)
+![IMG_8680](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/procrastinator/IMG_8680.jpeg)
 
 *pro tip of attending a dinner party if you don't want to drink alcohol: just keep eating.*
 

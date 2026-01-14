@@ -16,11 +16,11 @@ I first encountered matrix completion duing undergrad in Advance Operations cour
 
 The method is extremely straightforward: suppose the matrix is $M$, in shape $m\times n$ with $m < n$. Its observed entries are $X$ (*Note*: observation $X$ may have noise factor added). USVT estimator is obtained by:
 
-{{<figure align="center" src="/online/usvt_provess.jpeg" caption="First half USVT — thresholding and throw away the too-small singular values." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_provess.jpeg" caption="First half USVT — thresholding and throw away the too-small singular values." width="100%">}}
 
 Basically, singular values are discarded up to a universal threshold *independent* of the matrix. And the estimator $\hat M$ ($\hat m_{ij}$) is obtained from:
 
-{{<figure align="center" src="/online/usvt_provess1.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_provess1.jpeg" caption="" width="100%">}}
 
 The intuition is, singular value thresholding (i) maintains the key info for recovering the matrix while (ii) filter out the noise.
 
@@ -28,7 +28,7 @@ The intuition is, singular value thresholding (i) maintains the key info for rec
 
 First theorem links the MSE error with the nuclear norm of $M$ ($\|M\|_*$) (the sum of singular values).
 
-{{<figure align="center" src="/online/usvt_theorem1.jpeg" caption="Half of Theorem 1 from Chatterjee (2015). The bound can be improved if variance of the noisy observation $X$ is known." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/usvt_theorem1.jpeg" caption="Half of Theorem 1 from Chatterjee (2015). The bound can be improved if variance of the noisy observation $X$ is known." width="100%">}}
 
 There's also a minimax lower bound that matches the upperbound for the estimator. I'll cover the details of the math later :)
 

@@ -28,7 +28,7 @@ These orders usually involve distances of 20–40 km within a city. A single del
 
 This category primarily involves urgent items such as food or medicine. The shipping cost per order is typically **3–5 CNY**.
 
-{{<figure align="center" src="/maguerite/delivery_people.jpeg" caption="btw, the delivery people in China are trapped in algorithms that supress their wages at minimum. see [here](/posts/blowing_in_the_wind/) for a previous post about it." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/maguerite/delivery_people.jpeg" caption="btw, the delivery people in China are trapped in algorithms that supress their wages at minimum. see [here](/posts/blowing_in_the_wind/) for a previous post about it." width="100%">}}
 
 ### Comparing the Advantages
 

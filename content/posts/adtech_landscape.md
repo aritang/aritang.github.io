@@ -16,7 +16,7 @@ The key of everything is programmatic advertising, and it is the main tool that 
 
 The AdTech ecosystem includes the following players (ordered from demand [advertisers] to supply [publishers]): advertisers, agency trading desks (ATDs), demand-side platforms (DSP), ad exchange, supply-side platform (SSP), ad server, and finally, publishers.
 
-{{<figure align="center" src="/google_ad_gossip/adtech_landscape.jpeg" caption="landscape of the AdTech industry. source: amazon Guide | [What is adtech and why is it important?](https://advertising.amazon.com/library/guides/what-is-adtech#:~:text=Advertising%20technology%2C%20also%20known%20as,to%20manage%20integrated%20campaigns%20effectively.) Btw, Ad Networks are more premium and exclusive (e.g. Yahoo! Publisher Network, Bing Ads). See a comparison [here](https://www.spiceworks.com/marketing/programmatic-advertising/articles/ad-network-vs-ad-exchange-key-differences-and-similarities/).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/adtech_landscape.jpeg" caption="landscape of the AdTech industry. source: amazon Guide | [What is adtech and why is it important?](https://advertising.amazon.com/library/guides/what-is-adtech#:~:text=Advertising%20technology%2C%20also%20known%20as,to%20manage%20integrated%20campaigns%20effectively.) Btw, Ad Networks are more premium and exclusive (e.g. Yahoo! Publisher Network, Bing Ads). See a comparison [here](https://www.spiceworks.com/marketing/programmatic-advertising/articles/ad-network-vs-ad-exchange-key-differences-and-similarities/).">}}
 
 ### Agency Trading Desk (ATD) aka 中间商 (intermediary consultants)
 

@@ -12,7 +12,7 @@ draft: false
 
 Lately, I’ve been revisiting *Harry Potter and the Prisoner of Azkaban*. There’s one particular quote in the movie that resonates deeply:
 
-{{<figure align="center" src="/eternal_sunshine/albus.jpeg" caption="Albus Dumbledore" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/eternal_sunshine/albus.jpeg" caption="Albus Dumbledore" width="100%">}}
 
 > Happiness can be found even in the darkest of times, if one only remembers to turn on the light
 >

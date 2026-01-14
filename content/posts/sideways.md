@@ -9,7 +9,7 @@ tags: ['movie', 'art', 'pop']
 
 *Sideways* is a movie about wine. "Two men reaching middle age with not much to show but disappointment, embark on a week-long road trip through Californiaʼs wine country, just as one is about to take a trip down the aisle."
 
-{{<figure align="center" src="/wine/sideways_poster.jpeg" caption="source: [Amazon](https://www.amazon.com/Sideways-Full-Screen-Paul-Giamatti/dp/B0007TKOA0/ref=asc_df_B0007TKOA0/?tag=hyprod-20&linkCode=df0&hvadid=692875362841&hvpos=&hvnetw=g&hvrand=3312292067867194307&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031967&hvtargid=pla-2281435178058&psc=1&mcid=dfb486c46b1a37c18c5188ac3beb1c65&hvocijid=3312292067867194307-B0007TKOA0-&hvexpln=73&gad_source=1)">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/sideways_poster.jpeg" caption="source: [Amazon](https://www.amazon.com/Sideways-Full-Screen-Paul-Giamatti/dp/B0007TKOA0/ref=asc_df_B0007TKOA0/?tag=hyprod-20&linkCode=df0&hvadid=692875362841&hvpos=&hvnetw=g&hvrand=3312292067867194307&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031967&hvtargid=pla-2281435178058&psc=1&mcid=dfb486c46b1a37c18c5188ac3beb1c65&hvocijid=3312292067867194307-B0007TKOA0-&hvexpln=73&gad_source=1)">}}
 
 The movie was a huge success on a petite budget. It was made on a **$16 million** budget but earned over $100 million at the box office worldwide. The movie has 5 nominations and won "best adapted screenplay" at the 77th Academy Award (2005). Moreover, its success influenced California's viticulture in a substantial and unexpected way.
 

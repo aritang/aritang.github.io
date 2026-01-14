@@ -15,7 +15,7 @@ Now, let's delve into the intriguing nomination and award process, focusing on t
 
 Navigating this process may seem complex. At least the voting mechanism doesn't seem straightforwardly truthful to me. But if the ultimate goal is to determine the very top player, the voting process should yield the desired outcome with large possibility...right? Moreover, though the Ballon d'Or typically goes to the best and most popular player on the planet for that year — but everyone nominated is already deserving for being in the shortlist.
 
-![leo](/data_vis/leo.jpeg)
+![leo](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/leo.jpeg)
 
 *Nobody is "above" Leo Messi, except for Mr. Martinez (at least in this epic world cup victory shot)... Btw, Lautaro Martinez is also in 2023's Ballon d'Or shortlist.*
 

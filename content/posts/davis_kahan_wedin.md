@@ -93,7 +93,7 @@ Basically, it bounds $\Vert \sin \Theta(U, \hat U)\Vert$ by $\Vert A  -\hat A \V
 
 And you can get much better bounds for a little bit more assumptions. For example, when the error $E:= A - \hat A$ are standard Gaussian. Denote as $\sigma_{i}$ the i^th singular value of $A$. Denote as $U_i$ the columns of $U$ corresponding to $i$ largest singular values:
 
-{{<figure align="center" src="/online/ovw_theorem7.jpeg" caption="From O'Rourke, Vu and Wang (2023), coursey to the authors." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/ovw_theorem7.jpeg" caption="From O'Rourke, Vu and Wang (2023), coursey to the authors." width="100%">}}
 
 ### reference
 

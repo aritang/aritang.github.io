@@ -6,11 +6,11 @@ draft: false
 
 In the standard discounted multi‑armed bandit (MAB) with binary “play/rest” decisions, Gittins’ index gives a provably optimal per‑arm priority rule.
 
-{{<figure align="center" src="/online/superprocess_model.jpeg" caption="Section 3.2 of Q. Zhao (2021)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/superprocess_model.jpeg" caption="Section 3.2 of Q. Zhao (2021)" width="100%">}}
 
 For general bandit super process, index-based policy no longer works. Counterexample:
 
-{{<figure align="center" src="/online/superprocess_counterexample.jpeg" caption="Section 3.2 of Q. Zhao (2021)" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/superprocess_counterexample.jpeg" caption="Section 3.2 of Q. Zhao (2021)" width="100%">}}
 
 Actually, in many cases, the index is not even *defined*. But somehow if the problem is "indexable" satisfying the following condition, Index Policy still is optimal
 

@@ -15,7 +15,7 @@ Her research focuses on gender equality. Fantastic! It feels like the summer's B
 
 Btw, there's been a lot of debate recently about the decency of Lisa's bold stripper dance performance. Is it art, freedom, or just another way of objectifying women? Personally, I support Lisa and admire her courage and dedication. Most of the criticism regarding her performance seems to come from her most loyal fans who projected their own desired image onto her and must be quite frustrated when she broke away from it. Sorry, it can be harsh. 
 
-{{< figure align="center" src="/tattooed_heart/lisa.jpeg" caption="comments under Lisa\'s Ins post. they're polarized. but i like her anyway. wish someday we'll be able to see the video of that dance. seriously, i wanna see how good she did that 'stock market' one." >}}
+{{< figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/lisa.jpeg" caption="comments under Lisa\'s Ins post. they're polarized. but i like her anyway. wish someday we'll be able to see the video of that dance. seriously, i wanna see how good she did that 'stock market' one." >}}
 
 However, from another point of view regarding to this wave of voices, it's important to realize the fact that the public is discussing it, in a serious manner within the context of feminism, sexual freedom, and women's rights. People care and are paying attention, that's all that matters. Cause as Doja Cat sings in her new song *Attention*
 

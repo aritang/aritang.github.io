@@ -20,13 +20,13 @@ The project code is released. Here's its public repository: https://github.com/t
 
 > Scammers can turn off the comments but they can’t turn off community notes 💀
 >
-> {{<figure align="center" src="/google_ad_gossip/cn_example.jpeg" caption="source: https://t.co/jNoX7AqPMd" width="100%">}}
+> {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/cn_example.jpeg" caption="source: https://t.co/jNoX7AqPMd" width="100%">}}
 >
 > — Community Notes FTW (@BestOfCNotes), June 1, 2023.
 
 People also really seems to like roasting ***Elon Musk***, check Newsweek's [Elon Musk Hit With More Community Notes Than Russia's State News Agency](https://www.newsweek.com/elon-musk-hit-more-community-notes-russian-state-news-agency-1966468). 
 
-{{<figure align="center" src="/google_ad_gossip/cn_example_1.jpeg" caption="source: https://thunderdungeon.com/2024/04/12/funniest-community-notes/" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/google_ad_gossip/cn_example_1.jpeg" caption="source: https://thunderdungeon.com/2024/04/12/funniest-community-notes/" width="100%">}}
 
 And, there's even a leaderboard (https://community-notes-leaderboard.com/). "It shows all the deranged dumb fucks that get community noted the most and to no one surprise it is mostly from prominent right-wing accounts. ([reddit](https://www.reddit.com/r/Destiny/comments/1fyaqmf/apparently_theres_a_community_notes_leaderboard/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button))". Elon Musk ranks #47...
 

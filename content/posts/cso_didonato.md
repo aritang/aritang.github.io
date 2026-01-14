@@ -6,7 +6,7 @@ draft: false
 
 The Chicago Symphony Orchestra’s celebratory fundraising concert took place on September 20, opening the 2025–26 season with a sense of homecoming. Symphony Center was filled to the brim, the audience bubbling with anticipation and festive spirits, rather like the champagne glasses at the pre-concert reception.
 
-{{<figure align="center" src="/art/cso_20250920.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/cso_20250920.jpeg" caption="" width="100%">}}
 
 The [program](https://cso.org/performances/25-26/cso-featured-concerts/joyce-didonato-and-the-cso/) was elegant and lighthearted curated. We began with Weber’s *Oberon* Overture, followed by Mendelssohn’s *A Midsummer Night’s Dream* — the *Scherzo* and the famous *Wedding March*.
 

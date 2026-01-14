@@ -11,7 +11,7 @@ summary: Matplotlib or any other tools are never superior to one another. But lo
 
 I've been doing data cleaning and visualization for my project these days. I would say it’s boring as well as enjoyable, but it’s certainly a waste of time. What's even more annoying is that none of my teammates are as skilled as I am in this area, so I'll have to do it anyway.
 
-![my_work](/data_vis/my_work.jpeg)
+![my_work](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/data_vis/my_work.jpeg)
 *hehe. i know i'm good at this - combining my aesthetic and research*
 
 What about it then? There's a saying that data visualization is an art. Hmm, I would pause to re-consider that opinion. People often label everything they find hard to explain or that has multiple criteria for success as an art. Debating this, however, requires tracing back to the philosophical definition of art and the characterization of what exactly data visualization is. Let's just admit that data visualization is a comprehensive process that involves multiple disciplines: computer science, design, psychology, and whatever else might be relevant.

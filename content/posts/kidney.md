@@ -15,7 +15,7 @@ Reading the blog [here](http://marketdesigner.blogspot.com/2023/09/organ-transpl
 
 Even more exciting is the central role that my hometown, **Guangzhou**, plays in the field of transplantation throughout China. This discovery came as quite a surprise to me. While I was aware of Guangzhou's excellent medical infrastructure, I had always assumed Shanghai would be the pioneer in this area. Nevertheless, congratulations to my hometown!
 
-![organ_trans](/bio/organ_trans.jpeg)
+![organ_trans](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/organ_trans.jpeg)
 
 *(The First Affiliated Hospital of Sun Yat-sen University in Guangzhou, where a lot of the transplantation took place, is one of the most recognized academic medical centers in China.)*
 

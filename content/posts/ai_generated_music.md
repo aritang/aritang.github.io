@@ -6,7 +6,7 @@ draft: false
 
 AI can now make decent, impressive music. Check out [Tunee](https://www.tunee.ai/home) and their [example projects](https://www.tunee.ai/project/EP8TbBxgduXoZVNeW).
 
-{{<figure align="center" src="/art/tunee_example.jpeg" caption="Tunee’s interface features a conversational input, a project diagram, and options to preview AI-generated music with lyrics. However, there’s no way to export stems or sheet music yet." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/tunee_example.jpeg" caption="Tunee’s interface features a conversational input, a project diagram, and options to preview AI-generated music with lyrics. However, there’s no way to export stems or sheet music yet." width="100%">}}
 
 Out of curiosity, I impatiently splashed some random prompts on my keyboards into Tunee: the results were *decent Bach*, *whimsical bouncy cool woodwinds*, and a few suspiciously catchy *ballads*—of course, since AI is now quite good at generating lyrics:
 

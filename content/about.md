@@ -11,7 +11,7 @@ cover:
 
 Hi, this is Ariana. Welcome to my corner of the internet!
 
-{{<figure align="center" src="/definition/zoom_screenshot.jpeg" caption="Download My CV [***here***](/files/ariana_tang_cv.pdf). If there is anything I can help, my email is `ariana_tang AT uchicago DOT edu`.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/definition/zoom_screenshot.jpeg" caption="Download My CV [***here***](/files/ariana_tang_cv.pdf). If there is anything I can help, my email is `ariana_tang AT uchicago DOT edu`.">}}
 
 ## research
 
@@ -33,7 +33,7 @@ Acute perception, mathematical skills and a deep sense of empathy embodies the e
 
 This blog is a gateway into my world of research, art, and everyday thoughts. I started it because Professor Alvin Roth's amazing market design blog.
 
-{{<figure align="center" src="/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Professor Roth and me and Alex Chan, at the SITE session of behavioral econ, 2023 summer. Professor Roth inspired me to start this blog." >}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Professor Roth and me and Alex Chan, at the SITE session of behavioral econ, 2023 summer. Professor Roth inspired me to start this blog." >}}
 
 Please do try searching for any keywords you might be interested in. I have probably wrote something abot it. If not, please feel free to contact me for the interesting topic on your mind :)
 
@@ -47,7 +47,7 @@ I'm really interested in classical music and ballet. As the blog updates on a da
 
 My favorite composer is Pyotr Ilyich Tchaikovsky (1840-1893), whom my cat is named after. My favourite piece is Mendelssohn's *A Midsummer Night's Dream* — specifically, the *Overture* (Op. 21) and the *Scherzo* (No. 1 Op. 61). I also play the flute.
 
-{{<figure align="center" src="/bio/tchai_cat.jpeg" caption="Tchaikovsky (2025-)">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/tchai_cat.jpeg" caption="Tchaikovsky (2025-)">}}
 
 ## life
 
@@ -55,4 +55,4 @@ I am greatly inspired by Ariana Grande's album ***Sweetener***:
 
 > **It's kind of about bringing light to a situation or to someone's life or somebody else brings light to your life, like, sweetening the situation.**
 
-{{<figure align="center" src="/tattooed_heart/work_ethic.jpeg" caption="Learn more about [*my work ethic*](/posts/my_work_ethic/): the more authentic and genuine it is, the better it will work for you.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/work_ethic.jpeg" caption="Learn more about [*my work ethic*](/posts/my_work_ethic/): the more authentic and genuine it is, the better it will work for you.">}}

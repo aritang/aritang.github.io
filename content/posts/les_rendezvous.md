@@ -28,11 +28,11 @@ Les Rendezvous was Ashton's first substantial classical composition and an exult
 
 Frederick Ashton’s knitted the charm of Shakespeare and Mendelssohn’s gossamer-light music into *The Dream*—a ballet production of summer.
 
-{{<figure align="center" src="/tattooed_heart/the_dream.jpeg" caption="Titania: “Out of this wood do not desire to go. Thou shalt remain here whether thou wilt or no”">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/the_dream.jpeg" caption="Titania: “Out of this wood do not desire to go. Thou shalt remain here whether thou wilt or no”">}}
 
 And more fairies:
 
-{{<figure align="center" src="/tattooed_heart/fairies.jpeg" caption="Mendelssohn is becoming Mariah Carey of June.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/fairies.jpeg" caption="Mendelssohn is becoming Mariah Carey of June.">}}
 
 ## Rhapsody
 

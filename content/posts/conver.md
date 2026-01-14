@@ -11,7 +11,7 @@ It’s cheat day of the week, let’s do something special.
 
 I have some memories of enlightening conversations - moments between friends that resonate with truth and wisdom. Here’s one, and there’ll be more of them in the future.
 
-![friend](/conversations/friend.jpeg)
+![friend](https://raw.githubusercontent.com/aritang/aritangPictures/main/static/conversations/friend.jpeg)
 
 > Me: u know, i have had a very tumultuous era of my life, lost and bored. the solution then was retail therapy. so i used to shop a lot, like really hours and hours walking aimlessly between fancy stores.
 

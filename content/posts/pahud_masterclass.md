@@ -8,7 +8,7 @@ The concert hall hosted a public workshop featuring the Berlin Philharmonic Quar
 
 And who would pass up a free masterclass? Especially one led by musicians who live and breathe chamber music. The joy of deep musical conversation was more than enough to offset the... shall we say, *colorful distractions* of the event’s host — whose long-winded, self-important commentary made many of us long for the mute button. Let’s just say: not every question needs to be asked, and not every moment needs a monologue.
 
-{{<figure align="center" src="/art/pahud_masterclass.jpeg" caption="It was really generous for Xinhai Concert hall to host a master class by Emmanuel Pahud, for **free**." width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/pahud_masterclass.jpeg" caption="It was really generous for Xinhai Concert hall to host a master class by Emmanuel Pahud, for **free**." width="100%">}}
 
 ### A few takeaways I jotted down:
 

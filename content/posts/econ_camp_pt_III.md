@@ -77,7 +77,7 @@ An *experiment* $\mathcal{E}$ maps states $\omega \in \Omega$ into signals, whic
 >
 > An experiment $\mathcal{E}_1$ **Blackwell dominates** $\mathcal{E}_2$ if, for every prior $\mu_0$, every action set $X$, and every state-dependent utility $u : X \times \Omega \to \mathbb{R}$, we have
 >
-> {{<figure align="center" src="/online/blackwell_dominance.jpeg" caption="" width="100%">}}
+> {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/blackwell_dominance.jpeg" caption="" width="100%">}}
 
 ---
 
@@ -97,8 +97,8 @@ $$
 
 > **Claim.** If for some interior prior $\mu_0$ we have $\lang \mathcal E_1 \mid \mu_0 \rang$ $\succeq_{\text{SOSD}} \lang \mathcal{E}_2 \mid \mu_0 \rang$, then for all prior $\mu$,
 >
-> {{<figure align="center" src="/online/blackwell_dominance_1.jpeg" caption="" width="88%">}}
+> {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/blackwell_dominance_1.jpeg" caption="" width="88%">}}
 
 > **Theorem.** $\mathcal{E}_1$ Blackwell dominates $\mathcal{E}_2$ iff $\lang \mathcal{E}_1 \mid \cdot \rang$ is a mean-preserving spread of $\lang \mathcal{E}_2 \mid \cdot \rang$, which is also equivalent to
 >
-> {{<figure align="center" src="/online/blackwell_dominance_2.jpeg" caption="" width="88%">}}
+> {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/blackwell_dominance_2.jpeg" caption="" width="88%">}}

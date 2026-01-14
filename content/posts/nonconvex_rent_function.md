@@ -62,6 +62,6 @@ R_\phi'(t) = -\frac{g_t}{g_R} = -w.
 $$
 So every individual's optimization problem is essentially "pushing up their affine indifference curve with slope $w$ until it first tangent with $R(t)$"
 
-{{<figure align="center" src="/online/tenant_convex.jpeg" caption="" width="100%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/tenant_convex.jpeg" caption="" width="100%">}}
 
 And the **realized** rent curve is convex.

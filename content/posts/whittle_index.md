@@ -22,11 +22,11 @@ Consider a platform coordinating volunteers for various tasks, where each volunt
 
 Meanwhile, at each time point, a task arrives randomly, and the platform must decide whom to notify (activate) based on the likelihood of acceptance and the potential reward. This setup forms a basic RMAB model, with each volunteer representing an 'arm' of the bandit:
 
-{{<figure align="center" src="/who_do_we_blame/volunteer_transition.jpeg" caption="the state transitions of volunteers based on actions and associated probabilities. Active volunteers ($s_t = 1$), when no action is taken ($y_t = 0$) remains active. If action is taken ($y_t = 1$), they might generate a reward w.p. $p_i$ and become inactive, or stay active without generating a reward. Inactive volunteer return to activity based on specific probabilities ($q_i$).">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/who_do_we_blame/volunteer_transition.jpeg" caption="the state transitions of volunteers based on actions and associated probabilities. Active volunteers ($s_t = 1$), when no action is taken ($y_t = 0$) remains active. If action is taken ($y_t = 1$), they might generate a reward w.p. $p_i$ and become inactive, or stay active without generating a reward. Inactive volunteer return to activity based on specific probabilities ($q_i$).">}}
 
 The following figure illustrates a typical transition from $t$ to $t + 1$. Decision maker (platform) chooses a subset of volunteers to notify, and the volunteers generate rewards/transition according to their intrinsic probabilities $p_{i, k}, q_i$ and the current type $k$ of the job:
 
-{{<figure align="center" src="/who_do_we_blame/RMAB_volunteer.jpeg" caption="from $t$ to $t + 1$, the platform's action and associated transitions">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/who_do_we_blame/RMAB_volunteer.jpeg" caption="from $t$ to $t + 1$, the platform's action and associated transitions">}}
 
 - **Green Volunteers ($s_t = 1$)**: Represent active volunteers.
     - When no action is taken ($y_t = 0$), the volunteer remains active in the next period ($s_{t+1} = 1$).

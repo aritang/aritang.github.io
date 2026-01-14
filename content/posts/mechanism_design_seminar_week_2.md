@@ -8,7 +8,7 @@ Following up on [last week's introduction](/posts/mechanism_design_seminar_week_
 
 One general idea is to start with an arbitrary price vector. If an item is demanded by more than one agent, we increase its price; if no agent demands it, we decrease its price.  We then sit back, and pray that the process terminates:
 
-{{<figure align="center" src="/seminars/walrasian_tatonnement.jpeg" caption="A simple representation of the Tatônnement process—starting from $\mathbf{p} = 0$ and allocating everything to one person first." width="88%">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/seminars/walrasian_tatonnement.jpeg" caption="A simple representation of the Tatônnement process—starting from $\mathbf{p} = 0$ and allocating everything to one person first." width="88%">}}
 
 Just kidding. Naturally, we ask whether the **Walrasian Tatônnement** process, if it terminates, results in a desirable allocation—ideally, an equilibrium.
 

@@ -6,7 +6,7 @@ draft: false
 
 Berlioz definitely enjoys gossip and writing, apart from the famous I-write-my-own-program-note of the *Symphony Fantastique*. He has a memoir, and a frictional book:
 
-{{<figure align="center" width="66%"  src="/art/berlioz_evening.jpeg" caption="U of C Press: [link](https://press.uchicago.edu/ucp/books/book/chicago/E/bo3634189.html).">}}
+{{<figure align="center" width="66%"  src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/berlioz_evening.jpeg" caption="U of C Press: [link](https://press.uchicago.edu/ucp/books/book/chicago/E/bo3634189.html).">}}
 
 > During the performances of fashionable operas in an unidentified but “civilized” town in northern Europe, the musicians (with the exception of the conscientious bass drummer) tell tales, read stories, and exchange gossip to relieve the tedium of the bad music they are paid to perform. In this delightful and now classic narrative written by the brilliant composer and critic Hector Berlioz, we are privy to twenty-five highly entertaining evenings with a fascinating group of distracted performers.
 

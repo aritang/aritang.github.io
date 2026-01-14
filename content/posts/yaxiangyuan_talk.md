@@ -26,4 +26,4 @@ The discussion then shifted to modern algorithms that leverage burgeoning comput
 
 The event concluded on a high note, when my friend and I was very fortunate to have an opportunity to meet one of the most prominent scholars in the field–we chatted for a while off-the-stage-and-camera after the event:
 
-{{<figure align="center" src="/definition/yxy.jpeg" caption="Professor Yuan's openness and patience with almost all questions, whether mainstream or peripheral, added a personal touch that made the afternoon truly memorable.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/definition/yxy.jpeg" caption="Professor Yuan's openness and patience with almost all questions, whether mainstream or peripheral, added a personal touch that made the afternoon truly memorable.">}}

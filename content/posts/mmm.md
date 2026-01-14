@@ -17,7 +17,7 @@ Here are three standout aspects of MMM that underscore its brilliance and serve 
 
 The wardrobe of Midge Maisel is nothing short of fabulous, reminiscent of a nostalgic "Mean Girls" (2004), where characters wear their clothes rather than being overshadowed by them. Midge's ever-changing outfits are a testament to the show's attention to detail and dedication to period authenticity. In a delightful nod to this wardrobe feat, season five, episode two humorously acknowledges the sheer volume of costumes acquired.
 
-{{<figure align="center" src="/tattooed_heart/sell_them_all.png" caption="S5E02. The then-famous Midge announced that she will auction all her clothes for charity, walking down a long isle to cutely addressing the maximalism of her wardrobe.">}}
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/sell_them_all.png" caption="S5E02. The then-famous Midge announced that she will auction all her clothes for charity, walking down a long isle to cutely addressing the maximalism of her wardrobe.">}}
 
 Donna Zakowska, the two-time Emmy award-winning costume designer, masterfully uses color to reflect Midge's emotional journey, likening her coats to "multi-colored armor" or a superhero's cape, empowering her as she navigates her comedy career.
 
