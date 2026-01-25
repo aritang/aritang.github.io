@@ -94,14 +94,14 @@
    =========================== */
 
 /* Base glass look in dark mode */
-.dark .post-entry {
+[data-theme="dark"] .post-entry {
   background: rgba(40, 40, 45, 0.35);
   border: 0.24px solid rgba(102, 101, 101, 0.15);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover in dark mode: cooler blue edge + stronger glow */
-.dark .post-entry:hover {
+[data-theme="dark"] .post-entry:hover {
   background: rgba(40, 40, 45, 0.35);
   border-color: rgba(132, 169, 224, 0.45);
   box-shadow: 0 12px 34px rgba(120, 160, 255, 0.25);
@@ -126,7 +126,7 @@
 }
 
 /* Dark mode press: same idea, tuned for dark background */
-.dark .post-entry:active {
+[data-theme="dark"] .post-entry:active {
   transform: scale(0.985);
   background: rgba(70, 90, 120, 0.45);
   border-color: rgba(120, 160, 220, 0.35);

@@ -1,0 +1,36 @@
+/* Apple Music Embed */
+.music-embed {
+  max-width: 660px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.music-embed iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* Alignment */
+.music-embed.left {
+  margin-right: auto;
+}
+
+.music-embed.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music-embed.right {
+  margin-left: auto;
+}
+
+/* Width modifiers */
+.music-embed.small {
+  max-width: 400px;
+}
+
+.music-embed.full {
+  max-width: 100%;
+}

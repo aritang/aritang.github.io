@@ -1,3 +1,8 @@
 public/
 resources/
 *.bak
+blog-chatbot/email_digest.py
+blog-chatbot/questions.log
+blog-chatbot/chroma_db/
+blog-chatbot/venv/
+blog-chatbot/cron.log

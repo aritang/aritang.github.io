@@ -24,3 +24,181 @@
     </footer>
 </article>
 {{- end -}}
+
+<!-- Chatbot Widget -->
+<article class="post-entry">
+    <header class="entry-header">
+        <h2>ask me anything</h2>
+    </header>
+    <div id="chat-widget">
+        <div id="chat-messages"></div>
+        <div id="chat-input-row">
+            <input type="text" id="chat-input" placeholder="Ask me anything about Ariana's writing..." />
+            <button id="chat-btn">Ask</button>
+        </div>
+    </div>
+</article>
+
+<style>
+#chat-widget {
+    padding: 1rem 0;
+}
+
+#chat-messages {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.msg {
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    max-width: 85%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.msg.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #a8c8ff 0%, #c4b5fd 100%);
+    color: #2d3748;
+}
+
+[data-theme="dark"] .msg.user {
+    background: linear-gradient(135deg, #0c2044 0%, #033a99 100%);
+    color: #ffffff;
+}
+
+.msg.bot {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #fdc9e0 0%, #ffe9ef 100%);
+    color: #2d3748;
+}
+
+[data-theme="dark"] .msg.bot {
+    background: linear-gradient(135deg, #67354b 0%, #503965 100%);
+    color: #ffffff;
+}
+
+#chat-input-row {
+    display: flex;
+    gap: 0.6rem;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#chat-input:focus {
+    border-color: #667eea;
+}
+
+[data-theme="dark"] #chat-input {
+    background: rgba(60, 60, 65, 0.5);
+    border-color: rgba(100, 100, 100, 0.3);
+    color: inherit;
+}
+
+#chat-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    background: linear-gradient(135deg, #a8c8ff 0%, #c4b5fd 100%);
+    color: black;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] #chat-btn {
+    background: linear-gradient(135deg, #0c2044 0%, #033a99 100%);
+    color: white;
+}
+
+#chat-btn:hover {
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+}
+
+#chat-btn:active {
+    transform: scale(0.97);
+}
+
+#chat-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+</style>
+
+<script>
+const messages = [];
+const MAX_MESSAGES = 16;
+let isLoading = false;
+
+const messagesEl = document.getElementById("chat-messages");
+const inputEl = document.getElementById("chat-input");
+const btnEl = document.getElementById("chat-btn");
+
+btnEl.addEventListener("click", ask);
+inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
+
+function render() {
+    messagesEl.innerHTML = messages.map(m => 
+        '<div class="msg ' + m.role + '">' + m.text + '</div>'
+    ).join("");
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+async function ask() {
+    const q = inputEl.value.trim();
+    if (!q || isLoading) return;
+
+    if (messages.length >= MAX_MESSAGES) {
+        messages.length = 0;
+    }
+
+    messages.push({ role: "user", text: q });
+    messages.push({ role: "bot", text: "on it..." });
+    render();
+
+    inputEl.value = "";
+    isLoading = true;
+    btnEl.disabled = true;
+
+    try {
+        const res = await fetch("http://localhost:8000/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ q })
+        });
+
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let botMsg = "";
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            botMsg += decoder.decode(value);
+            messages[messages.length - 1].text = botMsg;
+            render();
+        }
+    } catch (e) {
+        messages[messages.length - 1].text = "Ariana's assistant is offline right now.";
+        render();
+    }
+
+    isLoading = false;
+    btnEl.disabled = false;
+}
+
+</script>
