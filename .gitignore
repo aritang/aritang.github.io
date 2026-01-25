@@ -6,3 +6,4 @@ blog-chatbot/questions.log
 blog-chatbot/chroma_db/
 blog-chatbot/venv/
 blog-chatbot/cron.log
+blog-chatbot/.env

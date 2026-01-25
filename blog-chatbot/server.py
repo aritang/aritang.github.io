@@ -4,12 +4,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, JSONResponse
 from pydantic import BaseModel
-import ollama
+import anthropic
 import datetime
 import smtplib
 from email.mime.text import MIMEText
 from collections import deque
 import time
+import os
 
 app = FastAPI()
 
@@ -24,10 +25,14 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 chroma = chromadb.PersistentClient(path="./chroma_db")
 collection = chroma.get_collection("blog_posts")
 
+# Anthropic client
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "your-api-key-here")
+client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+
 # Rate limiting
 request_times = deque()
 RATE_LIMIT = 20
-RATE_WINDOW = 60  # seconds
+RATE_WINDOW = 60
 freeze_until = 0
 
 # Hostility detection
@@ -41,7 +46,7 @@ HOSTILE_KEYWORDS = [
 MAIL_HOST = "smtp.gmail.com"
 PORT = 587
 SEND_BY = "sleepingbotti@gmail.com"
-PASSWORD = "zqjv fega bnqa zkat"  # Same as in email_digest.py
+PASSWORD = os.environ.get("EMAIL_PASSWORD", "your-app-password")
 SEND_TO = "ariana_tang@outlook.com"
 
 SYSTEM_PROMPT = """You are Ariana's blog assistant — a dry-witted, intellectual deputy who represents her and her writing.
@@ -95,7 +100,7 @@ def check_rate_limit() -> bool:
         request_times.popleft()
     
     if len(request_times) >= RATE_LIMIT:
-        freeze_until = now + 300  # 5 minutes
+        freeze_until = now + 300
         send_alert("Rate limit triggered", f"More than {RATE_LIMIT} requests in {RATE_WINDOW}s. Frozen for 5 minutes.")
         return False
     
@@ -106,16 +111,13 @@ def check_rate_limit() -> bool:
 def ask(question: Question):
     global freeze_until
     
-    # Check freeze
     if time.time() < freeze_until:
         remaining = int(freeze_until - time.time())
         return JSONResponse({"answer": f"Taking a short break. Back in {remaining} seconds."})
     
-    # Check rate limit
     if not check_rate_limit():
         return JSONResponse({"answer": "Too many questions — taking a 5 minute break."})
     
-    # Check hostility
     if is_hostile(question.q):
         log_question(question.q, flagged=True)
         send_alert("Hostile query detected", f"Query: {question.q}")
@@ -137,15 +139,13 @@ def ask(question: Question):
 Question: {question.q}"""
 
     def generate():
-        stream = ollama.chat(
-            model="llama3.1:8b",
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": prompt}
-            ],
-            stream=True
-        )
-        for chunk in stream:
-            yield chunk["message"]["content"]
+        with client.messages.stream(
+            model="claude-sonnet-4-20250514",
+            max_tokens=500,
+            system=SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": prompt}]
+        ) as stream:
+            for text in stream.text_stream:
+                yield text
 
     return StreamingResponse(generate(), media_type="text/plain")
