@@ -6,7 +6,7 @@ draft: false
 
 Meet my new PR *Sleepingbot*, an intelligent assistant that answers questions about all my historical blogposts.
 
-{{<figure align="center" width="50%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/chicago/sleepingbot.jpeg" caption="">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/chicago/sleepingbot.jpeg" caption="">}}
 
 Its high-level architecture is:
 
