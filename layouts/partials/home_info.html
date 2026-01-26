@@ -28,18 +28,20 @@
 <!-- Chatbot Widget -->
 <article class="post-entry">
     <header class="entry-header">
-        <h2>ask me anything</h2>
+        <h2><span style="font-family: 'Dancing Script', cursive; font-size: 1.8rem;">Sleepingbot</span></h2>
     </header>
     <div id="chat-widget">
         <div id="chat-messages"></div>
         <div id="chat-input-row">
-            <input type="text" id="chat-input" placeholder="Ask me anything about Ariana's writing..." />
+            <input type="text" id="chat-input" placeholder="Who is Ariana's favourite composer?" />
             <button id="chat-btn">Ask</button>
         </div>
     </div>
 </article>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+font-family: 'Cormorant Garamond', serif;
 #chat-widget {
     padding: 1rem 0;
 }
@@ -193,7 +195,7 @@ async function ask() {
             render();
         }
     } catch (e) {
-        messages[messages.length - 1].text = "Ariana's assistant is offline right now.";
+        messages[messages.length - 1].text = "Sleepingbot is offline right now.";
         render();
     }
 
