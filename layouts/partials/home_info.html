@@ -153,7 +153,7 @@ inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
 
 function render() {
     messagesEl.innerHTML = messages.map(m => 
-        '<div class="msg ' + m.role + '">' + m.text + '</div>'
+        '<div class="msg ' + m.role + '">' + m.text.replace(/\n/g, '<br>') + '</div>'
     ).join("");
     messagesEl.scrollTop = messagesEl.scrollHeight;
 }
