@@ -1,6 +1,4 @@
 fastapi
 uvicorn
 anthropic
-chromadb
-sentence-transformers
 pydantic
