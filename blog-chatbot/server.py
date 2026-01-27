@@ -25,7 +25,7 @@ client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 # Email config
 MAIL_HOST = "smtp.gmail.com"
-MAIL_PORT = 587
+MAIL_PORT = 465
 SEND_BY = os.environ.get("EMAIL_ADDRESS", "")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
 SEND_TO = "ariana_tang@outlook.com"
