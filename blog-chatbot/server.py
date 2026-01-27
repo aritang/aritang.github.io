@@ -1,6 +1,6 @@
 import os
 import smtplib
-from email.mime.text import MIMEText
+import resend
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, JSONResponse
@@ -26,8 +26,7 @@ client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 # Email config
 MAIL_HOST = "smtp.gmail.com"
 MAIL_PORT = 465
-SEND_BY = os.environ.get("EMAIL_ADDRESS", "")
-EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
+resend.api_key = os.environ.get("RESEND_API_KEY", "")
 SEND_TO = "ariana_tang@outlook.com"
 
 # Store questions for daily digest
@@ -109,20 +108,16 @@ class Question(BaseModel):
     q: str
 
 def send_alert(subject, body):
-    if not EMAIL_PASSWORD:
-        print(f"Email skipped (no password): {subject}")
+    if not resend.api_key:
+        print(f"Email skipped (no API key): {subject}")
         return
     try:
-        message = MIMEText(body, "plain", "utf-8")
-        message["From"] = SEND_BY
-        message["To"] = SEND_TO
-        message["Subject"] = f"[Sleepingbot] {subject}"
-        smtp = smtplib.SMTP(MAIL_HOST, MAIL_PORT)
-        smtp.ehlo()
-        smtp.starttls()
-        smtp.login(SEND_BY, EMAIL_PASSWORD)
-        smtp.sendmail(SEND_BY, SEND_TO, message.as_string())
-        smtp.quit()
+        r = resend.Emails.send({
+            "from": "Sleepingbot <onboarding@resend.dev>",
+            "to": SEND_TO,
+            "subject": f"[Sleepingbot] {subject}",
+            "text": body
+        })
         print(f"Alert sent: {subject}")
     except Exception as e:
         print(f"Email failed: {e}")
@@ -272,7 +267,7 @@ def send_digest(secret: str = ""):
     return {"message": f"Digest sent with {count} questions"}
 
 def send_startup_notification():
-    if EMAIL_PASSWORD and SEND_BY:
+    if resend.api_key:
         try:
             timestamp = datetime.datetime.now().isoformat()
             body = f"Sleepingbot deployed successfully at {timestamp}\n\n"
@@ -284,6 +279,7 @@ def send_startup_notification():
         except Exception as e:
             print(f"✗ Startup email failed: {e}")
     else:
-        print("⚠ WARNING: EMAIL_ADDRESS or EMAIL_PASSWORD not set")
+        print("⚠ WARNING: RESEND_API_KEY not set")
+
 
 send_startup_notification()
