@@ -1,4 +1,6 @@
 import os
+import smtplib
+from email.mime.text import MIMEText
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, JSONResponse
@@ -20,6 +22,16 @@ app.add_middleware(
 )
 
 client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+
+# Email config
+MAIL_HOST = "smtp.gmail.com"
+MAIL_PORT = 587
+SEND_BY = os.environ.get("EMAIL_ADDRESS", "")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
+SEND_TO = "ariana_tang@outlook.com"
+
+# Store questions for daily digest
+DAILY_QUESTIONS = []
 
 POSTS = []
 
@@ -64,8 +76,8 @@ SYSTEM_PROMPT = """You are a very intelligent blog assistant for Ariana Tang —
 
 Your personality:
 - Warm and present, like a good friend who really listens
-- Gently curious about the person you're talking with
 - A touch of dry wit, but always kind
+- Gently curious about the person you're talking with
 - You speak naturally, the way you'd talk over coffee
 
 Important context:
@@ -96,10 +108,39 @@ Formatting:
 class Question(BaseModel):
     q: str
 
-def log_question(q: str, flagged: bool = False):
+def send_alert(subject, body):
+    if not EMAIL_PASSWORD:
+        print(f"Email skipped (no password): {subject}")
+        return
+    try:
+        message = MIMEText(body, "plain", "utf-8")
+        message["From"] = SEND_BY
+        message["To"] = SEND_TO
+        message["Subject"] = f"[Sleepingbot] {subject}"
+        smtp = smtplib.SMTP(MAIL_HOST, MAIL_PORT)
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.login(SEND_BY, EMAIL_PASSWORD)
+        smtp.sendmail(SEND_BY, SEND_TO, message.as_string())
+        smtp.quit()
+        print(f"Alert sent: {subject}")
+    except Exception as e:
+        print(f"Email failed: {e}")
+
+def log_question(q: str, flagged: bool = False, answer: str = ""):
     timestamp = datetime.datetime.now().isoformat()
     flag = "[FLAGGED] " if flagged else ""
-    print(f"{timestamp}\t{flag}{q}")
+    print(f"{timestamp}\t{flag}Q: {q}")
+    if answer:
+        print(f"{timestamp}\tA: {answer[:100]}...")
+    DAILY_QUESTIONS.append({
+        "time": timestamp, 
+        "question": q, 
+        "answer": answer,
+        "flagged": flagged
+    })
+    if flagged:
+        send_alert("Hostile query detected", f"Query: {q}")
 
 def is_hostile(q: str) -> bool:
     return any(kw in q.lower() for kw in HOSTILE_KEYWORDS)
@@ -113,6 +154,7 @@ def check_rate_limit() -> bool:
         request_times.popleft()
     if len(request_times) >= RATE_LIMIT:
         freeze_until = now + 300
+        send_alert("Rate limit triggered", f"More than {RATE_LIMIT} requests in {RATE_WINDOW}s. Frozen for 5 minutes.")
         return False
     request_times.append(now)
     return True
@@ -136,7 +178,7 @@ Available blog post titles:
 
 Task: Return a JSON array of up to 4 post titles most likely to contain relevant information.
 - Match keywords, topics, or themes from the question to post titles
-- Not only consider synonyms and related concepts, but also the underlying intent of the question.
+- Consider synonyms and related concepts
 - If asking about music → look for posts with music/composer/classical/ballet keywords
 - If asking about research → look for posts with econ/market/paper keywords
 - If unclear, pick diverse posts that might help
@@ -190,6 +232,7 @@ A visitor asks: "{question.q}"
 Please answer warmly and helpfully based on what Ariana has written."""
 
     def generate():
+        full_response = []
         with client.messages.stream(
             model="claude-sonnet-4-20250514",
             max_tokens=300,
@@ -197,6 +240,50 @@ Please answer warmly and helpfully based on what Ariana has written."""
             messages=[{"role": "user", "content": prompt}]
         ) as stream:
             for text in stream.text_stream:
+                full_response.append(text)
                 yield text
+        # Log after streaming completes
+        DAILY_QUESTIONS[-1]["answer"] = "".join(full_response)
 
     return StreamingResponse(generate(), media_type="text/plain")
+
+@app.get("/digest")
+def send_digest(secret: str = ""):
+    if secret != os.environ.get("DIGEST_SECRET", ""):
+        return JSONResponse({"error": "Unauthorized"}, status_code=401)
+    
+    if not DAILY_QUESTIONS:
+        send_alert("Daily Digest", "No questions today!")
+        return {"message": "No questions today"}
+    
+    body = f"Daily Digest: {len(DAILY_QUESTIONS)} conversations\n\n"
+    body += "=" * 40 + "\n\n"
+    for i, q in enumerate(DAILY_QUESTIONS, 1):
+        flag = "[FLAGGED] " if q["flagged"] else ""
+        body += f"{i}. {flag}Q: {q['question']}\n"
+        body += f"   A: {q.get('answer', 'No answer')[:200]}...\n"
+        body += f"   ({q['time']})\n\n"
+    
+    send_alert(f"Daily Digest - {len(DAILY_QUESTIONS)} questions", body)
+    
+    count = len(DAILY_QUESTIONS)
+    DAILY_QUESTIONS.clear()
+    
+    return {"message": f"Digest sent with {count} questions"}
+
+def send_startup_notification():
+    if EMAIL_PASSWORD and SEND_BY:
+        try:
+            timestamp = datetime.datetime.now().isoformat()
+            body = f"Sleepingbot deployed successfully at {timestamp}\n\n"
+            body += f"Loaded {len(POSTS)} posts\n"
+            body += f"Email alerts: Enabled\n"
+            body += f"Digest endpoint: Ready"
+            send_alert("Deployed Successfully ✓", body)
+            print("✓ Startup email sent")
+        except Exception as e:
+            print(f"✗ Startup email failed: {e}")
+    else:
+        print("⚠ WARNING: EMAIL_ADDRESS or EMAIL_PASSWORD not set")
+
+send_startup_notification()
