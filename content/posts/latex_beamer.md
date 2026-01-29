@@ -6,7 +6,7 @@ draft: false
 
 I designed a beamer latex template. Here's [the overleaf link](https://www.overleaf.com/read/cxypnbzgjsch#c690f9) and here's [the demo pdf](/files/pink_beamer_demo.pdf).
 
-{{<figure align="center" src="/files/pink_beamer_demo.pdf" caption="See [the pdf](/files/pink_beamer_demo.pdf) for other pages of the demo." width="66%">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/wine/pinkBeamerDemo.jpeg" caption="See [the pdf](/files/pink_beamer_demo.pdf) for other pages of the demo.">}}
 
 Design idea:
 
