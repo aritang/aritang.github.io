@@ -1,7 +1,7 @@
 ---
 title: "Does supply side or demand side structural change drive growth?"
 date: 2026-01-30T10:00:08-06:00
-draft: true
+draft: false
 ---
 
 Our macroeconomic class introduced and discussed this paper, in the middle of a series of discussion on growth studied under the framework of neoclassical growth model. 
@@ -19,51 +19,52 @@ Both mechanism's intuition feels right. But the demand-side's *Stone-Geary prefe
 >
 > *ABSTRACT* We present a new multi-sector growth model that features **nonhomothetic, constant elasticity of substitution preferences**, and accommodates long-run demand and supply drivers of structural change for an arbitrary number of sectors. The model is consistent with the decline in agriculture, the hump-shaped evolution of manufacturing, and the rise of services over time. We estimate the demand system derived from the model using household-level data from the United States and India, as well as historical aggregate-level panel data for 39 countries during the postwar period. The estimated model parsimoniously accounts for the broad patterns of sectoral reallocation observed among rich, miracle, and developing economies. Our estimates support the presence of strong nonhomotheticity across time, income levels, and countries. We find that income effects account for the bulk of the within-country evolution of sectoral reallocation.
 
-## Just another (really comprehensive) neoclassical growth model
+### Note on consumer's homothetic/nonhomothetic preferences:
 
-### Preferences: Nonhomothetic CES for unit period:
-
+Intuitively, we expect people's consumption ratio on different sectors shifts as their income increases — eg the percentage spent on basic food decreases while luxury good consumption increases as income goes up. Concretely, consider a household's (simplified) problem in the following form
 $$
-F(C) := \lbrace \sum_{i=1}^{I} \Upsilon_i^{1/\sigma} \left( \frac{C_i}{g(U)^{\varepsilon_i}} \right)^{\frac{\sigma-1}{\sigma}} = 1\rbrace
+\max_{\lbrace c_t\rbrace_{t\in \N}}\sum_{t\in [\N]}\beta^t U(\vec c_t)\quad s.t. \sum_{i}p_{ti}c_{ti}\le B_t, \forall t.
+$$
+(Note: formally, we write the budget constraint to include capital/investment decisions... but thats another story)
+$$
+K_{t+1} + \sum_{i=1}^{I} p_{it}C_{it} \leq w_t + (R_t + 1 - \delta)K_t, \forall t.
+$$
+One can show that, fix $B_t\equiv 1$ let the optimal solution be $ \vec c^\star_t$. If $U(\cdot)$ is homothetic, for any $B_t$, the optimal solution would just be $B_t \vec c_t^\star$. How bubbly an assumption!
+
+A non-homothetic *Stone-Geary* Utility Function doesn't solve the problem either: it's defined by fix constants $ \sum_i \alpha_i = 0$ and $\bar C_i > 0, \forall $i
+$$
+U(\vec c) = \prod_i (c_i - \bar C_i)^{\alpha_i} \qquad \text{(Stone-Geary)}
+$$
+Squint your eyes" S-G utility function is close to homothetic as all $c_i$ goes large. Therefore, as income -> infinity, it converge to show property of homothetic preference function where **expenditure share** becomes constant. (Why I'm not surprised). (Detail: take log (so the utility function is $\sum_i \alpha \log(c_i - \bar C_i)$ and easy to take derivative), solve the standard consumer's intratemperal problem, you will see that optimal expenditure share:
+$$
+\frac{p_i c_i^\star}{B} = \frac{p_i \bar C_i}{B} + \alpha_i(1 - \frac{\sum_i p_i \bar C_i}{B}) \xrightarrow{B\to \infty}\alpha_i.
+$$
+CLM21' proposed using **Nonhomothetic CES** utility function. Consider $U(\vec C)$ defined as the following:
+$$
+U(\vec C) := \lbrace U: \sum_{i=1}^{I} \Upsilon_i^{1/\sigma} \left( \frac{C_i}{g(U)^{\varepsilon_i}} \right)^{\frac{\sigma-1}{\sigma}} = 1\rbrace\tag{NH-CES}
 $$
 
-- $\sigma \in (0,1) \cup (1,\infty)$: elasticity of substitution
-- $\varepsilon_i > 0$: nonhomotheticity parameter (governs income elasticity)
-- $\Upsilon_i > 0$: taste shifters
-- $g(\cdot)$: positive, monotonically increasing
+where $\sigma \in (0,1) \cup (1,\infty)$, $\varepsilon_i > 0$, $\Upsilon_i > 0$ are fixed constants. $g(\cdot)$ is positive & increasing. And household's utility function is implicitly defined, as follows:
 
-**Key property:** Income effects don't vanish as $U \to \infty$:
-$$
-\frac{\partial \log(C_i/C_j)}{\partial \log g(U)} = (1-\sigma)(\varepsilon_i - \varepsilon_j).
-$$
-
-### Household problem:
 
 $$
 \begin{align}
-\max_{\{C_t, A_{t+1}\}_{t=0}^{\infty}} & \sum_{t=0}^{\infty} \beta^t \frac{F(C_t)^{1 - \theta} - 1}{1 - \theta} \\
-\text{s.t.}&\  K_{t+1} + \sum_{i=1}^{I} p_{it}C_{it} \leq w_t + (R_t + 1 - \delta)K_t.
+\max_{\lbrace C_t\rbrace} & \sum_{t=0}^{\infty} \beta^t \frac{U(C_t)^{1 - \theta} - 1}{1 - \theta} \\
+s.t. & \  \sum_{i = 1}^I p_{it}C_{it} \le B_t.
 \end{align}
 $$
 
-(Note: the paper uses $A_t = K_t$ (asset=capital). The no arbitrage condition ($1 + r_t = R_t + 1 - \delta$) + market clearing gives equivalence. I like it this way, one less notation)
-
-### Firm's problem
-
-Sector $i \in \{0, 1, \ldots, I\}$, perfect competition, sector 0 produces investment goods:
+Let $\tilde U(\vec C) = \frac{U(\vec C)^{1 - \theta} - 1}{1 - \theta}$ where $U(\vec C)$ is given by (NH-CES). By implicit function theorem, we will have, after a lot of algebra:
 $$
-\begin{align}
-&\max_{K_{it}, L_{it}} \; p_{it} A_{it} K_{it}^{\alpha_i} L_{it}^{1-\alpha_i} - R_t K_{it} - w_t L_{it}, \forall i.
-\end{align}
+\frac{\partial_{C_i}\tilde U}{\partial_{C_j}\tilde U} = (\frac{\Upsilon_i}{\Upsilon_j})^{1/\sigma}(\frac{C_j}{C_i})^{1/\sigma}g(U)^{\frac{(\sigma - 1)}{\sigma}(\epsilon_j - \epsilon_i)}.
 $$
-Productivity $\lbrace A_{it}\rbrace_{i, t}$ is exogenous:
+First-order condition from consumer's intratemperal optimization ($\frac{\partial_{C_i}\tilde U}{\partial_{C_j}\tilde U}(\vec C) = \frac{p_{i}}{p_{j}}$) gives:
 $$
-A_{it+1} = (1+\gamma_i)A_{it}, \forall i, t.
+\frac{C_i}{C_j} =\frac{\Upsilon_i}{\Upsilon_j}(\frac{p_j}{p_i})^\sigma g(U)^{(\sigma -1)(\epsilon_i - \epsilon_j)}.
 $$
-
-### Market clearing:
-
+Fix $p_j/p_i$, as $B\to \infty$, $U\to \infty$ (?) and $g(U)\to \infty$ so $C_i/C_j$ will be changing unless $\epsilon_i = \epsilon_j$ or that $g(U)$ converge. Differentiate with respect to $\log g(U)$:
 $$
-\sum_{i=0}^{I} K_{it} = K_t, \quad \sum_{i=0}^{I} L_{it} = 1.
+\frac{\partial \log(C_i/C_j)}{\partial \log g(U)} = (\sigma-1)(\varepsilon_i - \varepsilon_j).
 $$
+This is **constant** in $U$. It doesn't decay.
 
