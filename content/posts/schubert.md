@@ -11,7 +11,7 @@ draft: false
 Franz Schubert was born today 229 years ago. He composed more than 1500 works in his short career (He died 1828, aged 31)
 
 
-{{<figure align="center" width="88%" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Franz_Schubert_by_Kriehuber_1846.jpg" caption="">}}
+{{<figure align="center" width="88%" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Franz_Schubert_by_Kriehuber_1846.jpg" caption="Courtesy of Wikipedia. I don't own copyright!">}}
 
 Some of my favourites include *Die Forelle*, and the *Impromptus* (No. 3 in G Flat Major). 
 
