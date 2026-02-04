@@ -1,7 +1,7 @@
 ---
 title: "Implicit Updating of HJB deja-vu de Newton's Method"
 date: 2026-01-28T22:27:47-06:00
-draft: true
+draft: false
 ---
 
 Interestingly, when using implicit updating to solve a continuous time system (of a certain structure), it coincide with Newton's Method
@@ -11,9 +11,13 @@ Interestingly, when using implicit updating to solve a continuous time system (o
 Consider a household with state $(a, z) \in \mathcal{A} \times \mathcal{Z}$, where $a$ denotes assets and $z$ follows a Poisson process with intensity matrix $\Lambda$.
 
 **Hamilton-Jacobi-Bellman Equation:**
+
+
 $$
-\rho v(a,z) = \max_c \left\{ u(c) + \partial_a v(a,z) \cdot s(a,z) + \sum_{z'} \lambda_{zz'} v(a,z') \right\}
+\rho v(a,z) = \max_c \left \lbrace u(c) + \partial_a v(a,z) \cdot s(a,z) + \sum_{z'} \lambda_{zz'} v(a,z') \right\rbrace
 $$
+
+
 where savings $s(a,z) = ra + wz - c(a,z)$.
 
 **First-Order Condition:** $u'(c) = \partial_a v$, yielding $c = (u')^{-1}(\partial_a v)$.
@@ -29,7 +33,7 @@ $$
 
 ## Discretization
 
-Discretize the state space on grids $\{a_i\}_{i=1}^{N_a}$ and $\{z_j\}_{j=1}^{N_z}$. Stack values into vectors $\mathbf{v}, \mathbf{g} \in \mathbb{R}^{N_a N_z}$.
+Discretize the state space on grids $\lbrace a_i\rbrace_{i=1}^{N_a}$ and $\lbrace z_j\rbrace_{j=1}^{N_z}$. Stack values into vectors $\mathbf{v}, \mathbf{g} \in \mathbb{R}^{N_a N_z}$.
 
 The discretized HJB (after substituting the FOC) becomes:
 $$
@@ -59,8 +63,9 @@ $$
 $$
 
 *Proof sketch:* Differentiate the HJB w.r.t. $a$. The envelope theorem implies that the indirect effect of $\mathbf{v}$ through the optimal policy $c(\mathbf{v})$ vanishes:
+
 $$
-\frac{\partial}{\partial v_j}\left[ u(c_i) + A_{ik}v_k \right] = \underbrace{\left(u'(c_i) - \partial_a v_i\right)}_{=0 \text{ by FOC}} \frac{\partial c_i}{\partial v_j} + A_{ij}
+\frac{\partial}{\partial v_j}\left[ u(c_i) + A_{ik}v_k \right] = {\left(u'(c_i) - \partial_a v_i\right)}\frac{\partial c_i}{\partial v_j} + A_{ij}
 $$
 
 Thus $\nabla \mathbf{F} = \mathbf{A} - \rho \mathbf{I}$. $\square$
