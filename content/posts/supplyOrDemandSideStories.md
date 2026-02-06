@@ -49,7 +49,7 @@ where $\sigma \in (0,1) \cup (1,\infty)$, $\varepsilon_i > 0$, $\Upsilon_i > 0$ 
 
 $$
 \begin{align}
-\max_{\lbrace C_t\rbrace} & \sum_{t=0}^{\infty} \beta^t \frac{U(C_t)^{1 - \theta} - 1}{1 - \theta} \\
+\max_{\lbrace C_t\rbrace} & \sum_{t=0}^{\infty} \beta^t \frac{U(C_t)^{1 - \theta} - 1}{1 - \theta} \cr
 s.t. & \  \sum_{i = 1}^I p_{it}C_{it} \le B_t.
 \end{align}
 $$
