@@ -17,26 +17,29 @@ params:
   homeInfoParams:
     Title: "a blog about research, art and life 💋"
     Content:
-      - you know me better than i do.*
+      # - you know me better than i do.*
       - hey, what happened to the butterflies?
       # - imagine a world like that.
-      - say it's tricky at the top,*
-        gotta have a slim ego for a thick wallet.
+      # - say it's tricky at the top,*
+      #   gotta have a slim ego for a thick wallet.
       # - if i were you, i'd wanna be me too.*
       - Hey, you gotta take care of your body!*
       - Just know that there's up and downs and there's drops.
-      - Unfollow fear and just say,*
-        "You're blocked"
+      # - Unfollow fear and just say,*
+      #   "You're blocked"
       - One of those days you've had enough,*
         I'll be there.
-      - i don't know what i'll do without you in my life*
-        it'd be so sour*
-        i'm hopin' that everybody can experience what we have in ours*
-      - treat my goals like properties*
-        collect them like monopoly
-      - craziness with discipline.
-      - it's not like i'd ever change a thing* 
-        cause i'm right here where i meant to be.
+      # - i don't know what i'll do without you in my life*
+      #   it'd be so sour*
+      #   i'm hopin' that everybody can experience what we have in ours*
+      # - treat my goals like properties*
+      #   collect them like monopoly
+      # - craziness with discipline.
+      # - it's not like i'd ever change a thing* 
+      #   cause i'm right here where i meant to be.
+      - don't try, just be
+      - how do you get to carnegie hall?
+      - if you learn something slowly, you forget it slowly
 
 
   fuseOpts:
