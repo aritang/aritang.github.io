@@ -1,9 +1,9 @@
 ---
-title: "Collection | Blog Posts About Classical Music"
+title: "Catalogue | Blog Posts About Classical Music"
 date: 2025-02-24T23:04:09+08:00
 draft: false
 cover:
-    image: art/monet_winter_haystack.jpeg
+    image: https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/monet_winter_haystack.jpeg
 ---
 
 I’d love to keep track of all the classical pieces and composers I’ve written about—whether from concert reflections or deep-dive listening sessions that make me curious about a piece’s background.
