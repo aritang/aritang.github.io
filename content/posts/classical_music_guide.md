@@ -9,7 +9,7 @@ cover:
 summary: "A loosely sorted and lightly annotated catalogue of through the music posts on this blog."
 ---
 
-This is a loosely sorted and lightly annotated catalogue of through the music posts on this blog — meant to be browsed the way you'd flip through a record collection at a friend's apartment. I write about classical music when life gets hectic, so if you notice a cluster of posts, that's me running on caffeine and Tchaikovsky.
+This is a loosely sorted and lightly annotated catalogue of through the music posts on this blog — meant to be browsed the way you'd flip through a record collection at a friend's apartment. I write about classical music when life gets hectic, so if you notice a cluster of posts, that's my life running on prestissississimo...
 
 {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/fluteKing.jpeg" caption="" width="100%">}}
 

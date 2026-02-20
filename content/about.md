@@ -35,17 +35,19 @@ This blog is a gateway into my world of research, art, and everyday thoughts. I 
 
 {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/tattooed_heart/al_and_chen_and_me.jpeg" caption="A picture of Professor Roth and me and Alex Chan, at the SITE session of behavioral econ, 2023 summer. Professor Roth inspired me to start this blog." >}}
 
-Please do try searching for any keywords you might be interested in. I have probably wrote something abot it. If not, please feel free to contact me for the interesting topic on your mind :)
+You would be able to use the [search](/search/) page to find posts of relevant interest. I also created a chatbot, the *SleepingBot* (available on the blog's front page) to help efficiently sort through extensive blogs to find the one you want. Feel free to explore around.
 
 ## art
 
-I'm really interested in classical music and ballet. As the blog updates on a daily basis, while I usually prioritize academic posts over musical ones — when things get hectic, I turn to music. So if you spot a flurry of music posts, that’s me in full-on busy mode.
+I'm interested in classical music. I play the flute (and piccolo, unfortunately), and, thanks to the CSO's generous student tickets, sit through more world-class concerts at premium seats than I probably deserve. As the blog updates on a daily basis, while I usually prioritize academic posts over musical ones — a sudden spike in music posts is simply my life running at prestissississimo.
 
+> [Blog Posts About Classical Music](/posts/classical_music_guide/)
+>
 > [Collection | Blog Posts About Ballet](/posts/ballet_posts_collection/)
 >
 > [Collection | Blog Posts About Classical Music](/posts/updated_classical_music_series/)
 
-My favorite composer is Pyotr Ilyich Tchaikovsky (1840-1893), whom my cat is named after. My favourite piece is Mendelssohn's *A Midsummer Night's Dream* — specifically, the *Overture* (Op. 21) and the *Scherzo* (No. 1 Op. 61). I also play the flute.
+My favorite composer is Pyotr Ilyich Tchaikovsky (1840-1893), whom my cat is named after. My favourite piece is Mendelssohn's *A Midsummer Night's Dream* — specifically, the *Overture* (Op. 21) and the *Scherzo* (No. 1 Op. 61).
 
 {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/tchai_cat.jpeg" caption="Tchaikovsky (2025-)">}}
 
