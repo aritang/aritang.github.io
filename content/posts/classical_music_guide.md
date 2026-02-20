@@ -1,13 +1,15 @@
 ---
-title: "Classical Music Blogs Catalog"
+title: "Blog Posts About Classical Music"
 date: 2026-02-16T20:00:00+08:00
 draft: false
+weight: 1
 cover:
     image: https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/fluteKing.jpeg
-summary: 
+
+summary: "A loosely sorted and lightly annotated catalogue of through the music posts on this blog."
 ---
 
-This is a loosely sorted and lightly annotated catalogue of through the music posts on this blog — meant to be browsed the way you'd flip through a record collection at a friend's apartment. I write about classical music when life gets hectic, so if you notice a cluster of posts, that's me running on caffeine and Tchaikovsky. Here's the map.
+This is a loosely sorted and lightly annotated catalogue of through the music posts on this blog — meant to be browsed the way you'd flip through a record collection at a friend's apartment. I write about classical music when life gets hectic, so if you notice a cluster of posts, that's me running on caffeine and Tchaikovsky.
 
 {{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/art/fluteKing.jpeg" caption="" width="100%">}}
 
