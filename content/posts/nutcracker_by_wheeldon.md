@@ -1,5 +1,5 @@
 ---
-title: "Nutcracker by Christopher Wheeldon and the Joffery Ballet"
+title: "Nutcracker by Christopher Wheeldon and the Joffrey Ballet"
 date: 2025-12-05T21:41:34-06:00
 draft: false
 ---
