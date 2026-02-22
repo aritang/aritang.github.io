@@ -1,6 +1,6 @@
 ---
 title: "Correlated Equilibrium in Fashion"
-date: 2026-02-22T20:47:39-06:00
+date: 2026-02-22T00:47:39-06:00
 draft: false
 ---
 
