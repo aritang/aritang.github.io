@@ -36,7 +36,7 @@ POSTS = []
 
 def load_posts():
     global POSTS
-    content_dir = "./content"
+    content_dir = os.path.join(os.path.dirname(__file__), "content")
     
     about_path = os.path.join(content_dir, "about.md")
     if os.path.exists(about_path):
