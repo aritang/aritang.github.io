@@ -1,0 +1,180 @@
+---
+title: "Topics in Information Economics | Collage of the Last Three Lectures"
+date: 2025-12-02T18:10:34-06:00
+draft: false
+---
+
+## Costly Persuasion with Posterior-Separable Costs
+
+In the costly persuasion model, there is a cost $c(E)$ for experiment $E$. Assume it's *posterior separable*:
+$$
+c(E)=\mathbb E_{\mu\sim\langle E\mid\mu_0\rangle}[k(\mu)],
+$$
+The sender chooses not only *what* information to reveal but also *how much* information to acquire. The entire problem collapses back into the familiar concavification framework: the sender’s interim value becomes
+$$
+\hat v(\mu)=\mathbb E_\mu[v(a^*(\mu),\omega)]-k(\mu),
+$$
+and optimal persuasion reduces to choosing a distribution of posteriors with mean $\mu_0$ to maximize its expectation. 
+
+The implication is pleasantly simple: since the cost of information can be written as an expected function of posteriors, persuasion with costly signals behaves almost exactly like standard Bayesian persuasion, just with an adjusted payoff function.
+
+------
+
+## Rational Inattention (Caplin & Dean 2015)
+
+Rational Inattention (RI) models decision makers who choose what information to acquire, trading off the expected gains from better decisions against the costs of reducing uncertainty. In contrast to Bayesian persuasion—where an external designer chooses an experiment to influence actions—RI treats the decision maker (DM) as the designer of their own information structure.
+
+RI fits naturally into the information-design formalism once we interpret experiments as costly and set sender and receiver utilities equal ($v=u$).
+
+### Model Setup
+
+###### Note: there are technically two systems of notations. The Anscombe–Aumann framework, and the info-design framework (cf. Professor Kamenica's approach). We go with the latter one:
+
+State-dependent utility (our usual info design model): States $\Omega$, actions $A$, and utility: $u : \Omega \times A \to \mathbb R$. An experiment $E:\Omega\to\Delta(S)$ induces a distribution over posteriors $\langle E\mid\mu_0\rangle$. But, there is **a cost function**:
+$$
+K:\mathcal E \to \mathbb R\cup\lbrace\infty\rbrace, \qquad K(E)<\infty \text{ for some }E.
+$$
+
+Gross payoff is kinda "quasi-linear": it is defined as utility **minus** the information cost
+$$
+G(A,E)=W_{(A,u,\mu_0)}(E)-K(E),
+$$
+where $W(E)$ is the DM’s expected utility after optimally responding to the realized posterior.
+
+### More Setup: Rational Inattention Representation of a Dataset
+
+A dataset consists of (i) the menu of decision problems the econometrician sees the DM face, and (ii) the state-dependent choice probabilities exhibited under each problem.
+
+
+
+A dataset $(D,P)$ has a **costly information representation** if there exist:
+
+> **Recall:**  
+> - $D$ is the collection of decision problems the econometrician observes the DM face (each $A\in D$ is a subset of available actions).  
+> - $P=\lbraceP_A\rbrace_{A\in D}$ is the collection of *state-dependent choice frequencies*, where $P_A(a,\omega)$ is the probability the DM chooses action $a$ in state $\omega$ when the available menu is $A$.  
+
+1. **A cost function**  
+   $$K:\mathcal E\to\mathbb R\cup\lbrace\infty\rbrace,$$
+
+2. **An attention (experiment) choice** for each decision problem  
+   $$\lbraceE_A\rbrace_{A\in D},\qquad E_A\in\mathcal E,$$
+
+3. **A choice rule** describing optimal action choice given a posterior,  
+   $$
+   c_A : \Delta(\Omega)\to\Delta(A),
+   $$
+
+such that conditions (i)–(iii) hold (optimal attention, optimal actions, and consistency with observed choice frequencies).
+
+
+> **Definition** A *dataset* $(D,P)$ is defined by
+>
+> - $D$: the collection of decision problems the econometrician observes the DM face (each $A\in D$ is a subset of available actions).
+> - $P=\lbraceP_A\rbrace_{A\in D}$, the collection of *state-dependent choice frequencies*, where $P_A(a,\omega)$ is the probability the DM chooses action $a$ in state $\omega$ when the available menu is $A$.  
+
+
+> **Definition** A dataset has a *costly information representation* if there exist:
+>
+> 1. A cost function  $K:\mathcal E\to\mathbb R\cup\lbrace\infty\rbrace,$
+>
+> 2. An attention (experiment) choice for each decision problem  $\lbraceE_A\rbrace_{A\in D}$
+>     
+> 3. A choice rule describing optimal action choice given a posterior $c_A : \Delta(\Omega)\to\Delta(A),$
+>
+> such that the following conditions hold for every $A\in D$:
+>
+> - (i) Optimal Attention: the DM chooses an experiment maximizing their gross payoff:
+>     $$
+>     E_A \in \arg\max_{E\in\mathcal E} G(A,E).
+>     $$
+>     
+> - (ii) Optimal Actions Conditional on Posteriors: for any posterior $\mu_s \in \mathrm{supp}(\langle E_A\mid\mu_0\rangle)$ and any action chosen with positive probability,
+>     $$
+>     \mathbb E_{\mu_s}[u(a,\omega)] \ge \mathbb E_{\mu_s}[u(a',\omega)] \quad \forall a'\in A.
+>     $$
+> 
+> - (iii) Observed Choice Frequencies Are Generated by Attention + Choice—For all $A\in D$, $\omega\in\Omega$, $a\in A$,
+>     $$
+>     P_A(a,\omega) = \sum_{s\in S_A} E_A(s\mid \omega)\; c_A(a\mid \mu_s).
+>    $$
+> 
+
+
+
+### Key
+
+Since the econometrician observes **actions**, not the DM’s actual posterior. Nonetheless, rational inattention implies a natural way to construct a **reduced-form experiment** consistent with observed choices.
+
+
+
+> **Definition** For each $A\in D$ and each action $a$ chosen with positive probability, its *revealed posterior* is
+> $$
+> \bar\gamma^A_a(\omega) = \frac{\mu_0(\omega)P_A(a\mid\omega)} {\sum_{\omega'}\mu_0(\omega')P_A(a\mid\omega')}.
+> $$
+>
+
+> **Definition** The *revealed experiment* $\bar E_A$ is the minimal experiment consistent with behavior, directly formulated from the revealed posterior:
+> $$
+> \bar E_A(\gamma\mid\omega) = \sum_{\lbracea:\bar\gamma^A_a=\gamma\rbrace} P_A(a\mid\omega).
+> $$
+> 
+
+### Results
+
+Caplin–Dean show that two simple, testable inequalities completely characterize whether a dataset is rationalizable by costly information acquisition.
+
+> **NIAS: No Improving Action Switches**
+>
+> For any decision problem $A$, any action $a \in \mathrm{supp}(P_A)$, and any $b\in A$:
+> $$
+> \sum_{\omega\in\Omega} \mu_0(\omega) P_A(a\mid\omega) [u(a,\omega)-u(b,\omega)] \ge 0.
+> $$
+>
+
+> **NIAC: No Improving Attention Cycles**
+>
+> For any cycle of decision problems $A^1,\dots,A^J$ with $A^1=A^J$:
+> $$
+> \sum_{j=1}^{J-1} W(A^j,u,\mu_0)(\bar E_{A^j}) \ge \sum_{j=1}^{J-1} W(A^j,u,\mu_0)(\bar E_{A^{j+1}}).
+> $$
+>
+
+NIAS ensures that choices are consistent with optimal actions given beliefs. NIAC ensures that attention choices across problems are consistent with optimal attention under a single cost function. Putting everything together, C&D shows that in their paper:
+
+> A dataset $(D,P)$ has a costly information representation iff it satisfies NIAS and NIAC.
+
+I think it's so elegant: cause despite the unobservability of beliefs and attention, the rational inattention admits a precise revealed-preference characterization.
+
+------
+
+## Limits of Price Discrimination (BBM 2015)
+
+Imagine a third party who is allowed to design *any* signal about consumers’ valuations and then hands this information to a monopoly firm, which sets a single price conditional on the signal. So the information de facto allocates surplus between consumers and the firm.
+
+{{<figure align="center" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/online/bbm_discrimination.jpeg" caption="Key result (in my pov) is the triangle bound of consumer vs. firm surplus. Every point in the triangle is a possible outcome under some experiment.">}}
+
+It’s super cool—worth reading the paper in its full glory for the beauty of the argument.
+
+----
+
+## A Partition-Based Framework for Modeling Information
+
+Another elegant way to model information is to represent a signal as a **finite partition of**  
+$$
+\Omega \times [0,1].
+$$
+
+
+Formally, a signal $\pi = \lbrace s_i\rbrace_{i=1}^K$ is a collection of disjoint, nonempty, measurable subsets whose union is the entire space. Nature draws the state $\omega$, and an independent auxiliary variable $X\sim \mathrm{Unif}[0,1]$; the realized signal is whichever cell $s_i$ contains the pair $(\omega,x)$. Conditional on $\omega$, the likelihood of observing a particular signal is proportional to the Lebesgue measure of the slice of $s_i$ lying above $\omega$. 
+
+This construction embeds all Bayes-plausible signal structures into a single geometric object—partitions of a product space—making it easy to reason about correlation/mixtures/refinements in a unified way.
+
+----
+
+## Reading List (other topics covered in class)
+
+*When are signals complements or substitutes?* Börgers, Hernando-Veciana, Krähmer. 2012. JET. https://doi.org/10.1016/j.jet.2012.12.012
+
+Brooks, Benjamin, Alexander Frankel, and Emir Kamenica. 2024. "Comparisons of Signals." *American Economic Review*. DOI: 10.1257/aer.20230430
+
+Competition in Persuasion Matthew Gentzkow, Emir Kamenica *The Review of Economic Studies*, 2017, https://doi.org/10.1093/restud/rdw052
