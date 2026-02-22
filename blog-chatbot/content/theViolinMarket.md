@@ -1,6 +1,6 @@
 ---
 title: "The Violin Market, and Strad as an Investment"
-date: 2026-02-23T21:10:44-06:00
+date: 2026-02-23T20:10:44-06:00
 draft: false
 ---
 
