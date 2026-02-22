@@ -13,7 +13,7 @@ jobs:
 
       - name: Copy posts to chatbot content dir
         run: |
-          rsync -av --delete content/posts/ blog-chatbot/content/
+          rsync -av --delete content/posts/ blog-chatbot/content/posts/
 
       - name: Commit and push if changed
         run: |
