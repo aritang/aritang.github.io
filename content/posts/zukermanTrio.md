@@ -1,6 +1,6 @@
 ---
 title: "Zukerman Trio at the CSO | When the piano glitters"
-date: 2026-03-08T23:52:30-05:00
+date: 2026-03-07T23:52:30-05:00
 draft: false
 ---
 

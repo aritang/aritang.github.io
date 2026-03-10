@@ -1,3 +1,13 @@
+/* h5 and h6 as small remarks */
+.post-content h5,
+.post-content h6 {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: var(--secondary);
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
 /* Apple Music Embed */
 .music-embed {
   max-width: 660px;
