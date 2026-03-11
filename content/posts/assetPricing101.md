@@ -39,14 +39,14 @@ This means: for any contingent payoff profile across states, there exists a port
 
 Write as $e_i(s_t)$ the endowment of consumer $i$ when current shock is $s_t$, which is exogenous (aka fixed given $s_t$). Write as $c_{i,t}(s^t)$ the consumption of $i$ in history $s^t$ — though it's technically a choice variable, it is pinned down given $s^t$ and price. Further:
 
-| Symbol             | Description                                                  | Determined by      |
-| ------------------ | ------------------------------------------------------------ | ------------------ |
-| $e_i(s_t)$         | Endowment of consumer $i$ when current shock is $s_t$        | Fixed (exogenous)  |
-| $c_{i,t}(s^t)$     | Consumption of agent $i$ in history $s^t$                    | Choice variable    |
-| $B_i^{AD}(s^t)$    | Agent $i$'s holding of Arrow-Debreu security for history $s^t$ | Choice variable    |
-| $B_{i,t}(s^{t+1})$ | Agent $i$'s holding of Arrow security for $s^{t+1}$, purchased in $s^t$ | Choice variable    |
-| $Q^{AD}(s^t)$      | Price of an Arrow-Debreu security paying \$1 in $s^t$        | Equilibrium object |
-| $Q_t(s^{t+1}|s^t)$ | Price of an Arrow security paying \$1 in $s^{t+1}$, traded in $s^t$ | Equilibrium object |
+| Symbol                 | Description                                                  | Determined by      |
+| ---------------------- | ------------------------------------------------------------ | ------------------ |
+| $e_i(s_t)$             | Endowment of consumer $i$ when current shock is $s_t$        | Fixed (exogenous)  |
+| $c_{i,t}(s^t)$         | Consumption of agent $i$ in history $s^t$                    | Choice variable    |
+| $B_i^{AD}(s^t)$        | Agent $i$'s holding of Arrow-Debreu security for history $s^t$ | Choice variable    |
+| $B_{i,t}(s^{t+1})$     | Agent $i$'s holding of Arrow security for $s^{t+1}$, purchased in $s^t$ | Choice variable    |
+| $Q^{AD}(s^t)$          | Price of an Arrow-Debreu security paying \$1 in $s^t$        | Equilibrium object |
+| $Q_t(s^{t+1}\mid s^t)$ | Price of an Arrow security paying 1usd in $s^{t+1}$, traded in $s^t$ | Equilibrium object |
 
 ---
 
@@ -56,7 +56,7 @@ We consider two equivalent formulations of complete markets. They differ in **wh
 
 ### Arrow-Debreu (A-D) Securities
 
-**Definition.** An Arrow-Debreu security $B^{AD}(s^t)$ is a claim that pays **\$1 if and only if history $s^t$ is realized**, and \$0 otherwise. One such security exists for every possible history $s^t$, $t \geq 1$.
+**Definition.** An Arrow-Debreu security $B^{AD}(s^t)$ is a claim that pays **1 if and only if history $s^t$ is realized**, and 0 otherwise. One such security exists for every possible history $s^t$, $t \geq 1$.
 
 **Trading protocol:** All A-D securities are traded **once**, at date 0, at prices $Q^{AD}(s^t)$. After the portfolio is chosen, no further trading occurs; consumption is determined by endowments plus security payoffs.
 
