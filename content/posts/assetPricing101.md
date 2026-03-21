@@ -4,14 +4,7 @@ date: 2026-03-03T18:39:28-05:00
 draft: false
 ---
 
-## Motivation
-
-We want a unified framework to answer two questions in a *stochastic* economy:
-
-1. **How do agents price any asset** (bonds, stocks, firms)?
-2. **What objective function should a firm maximize?**
-
-The key insight: under complete markets, Arrow-Debreu prices pin down a unique **stochastic discount factor (SDF)**, which prices every asset via a single formula. In a representative-agent economy, completeness imposes no additional restrictions on allocations (zero net supply clears trivially), but it gives us clean pricing machinery.
+We will analyze a representative agent economy and see how shocks and intertemporal discounted tradeoff drives asset prices.
 
 ## Stochastic Environment
 
@@ -31,7 +24,7 @@ $$\Pr(s^{t+1} | s^t) = \frac{\Pr(s^{t+1})}{\Pr(s^t)} \quad \text{if } s^{t+1} \g
 
 **Assumption (Complete Markets).** There exist enough securities (in zero net supply) to span every possible realization of shocks.
 
-This means: for any contingent payoff profile across states, there exists a portfolio of traded securities that replicates it exactly.
+In other words for any contingent payoff profile across states, there exists a portfolio of traded securities that replicates it exactly. This imposes **no arbitrage**.
 
 -----
 
@@ -86,9 +79,11 @@ $$
 & \text{s.t.} \quad c_{i,t}(s^t) + \sum_{s^{t+1} \geq s^t} Q_t(s^{t+1}|s^t)\, B_{i,t}(s^{t+1}) \leq e_i(s_t) + B_{i,t-1}(s^t) \quad \forall s^t.
 \end{aligned}
 $$
-**Market clearing:**
+Market clearing:
 
-$$\sum_{i=1}^{I} B_{i,t-1}(s^t) = 0 \quad \text{for all } s^t.$$
+$$
+\sum_{i=1}^{I} B_{i,t-1}(s^t) = 0 \quad \text{for all } s^t.
+$$
 
 ----
 
@@ -123,15 +118,26 @@ $$Q^{AD}(s^t) = Q_0(s^1|s^0) \times Q_1(s^2|s^1) \times \cdots \times Q_{t-1}(s^
 
 Note it satisfies the recursion $M_{t,t+k} = M_{t,t+1} \cdot M_{t+1,t+k}$.
 
+Define **return** $R_{t + 1}$ of a general asset with price $P_t$ and defined divident stream $\{D_{\tau}\}$ as:
+$$
+R_{t + 1} = \frac{P_{t + 1} + D_{t + 1}}{P_t}
+$$
+where $P_{t + 1}, P_{t}$ are prices at time $t, t + 1$ resp and $D_{t + 1}$ is period $t + 1$ dividend.
+
+> **Corollary**
+> $$
+> 1 = \mathbb E_t[M_{t, t + 1}R_{t + 1}].
+> $$
+
 ---
 
-## Asset Pricing
+## Some Common Asset's Pricing
 
 The central pricing principle under the representative agent complete market assumption: any asset's price equals **the expected discounted value of its payoffs under the SDF**. Below, all expectations $\mathbb{E}_t[\cdot]$ are conditional on history $s^t$.
 
 ### One-Period Risk-Free Bond
 
-A bond purchased in $s^t$ that pays \$1 in every $s^{t+1} \geq s^t$. Its price equals the sum of Arrow prices over all continuations:
+A bond purchased in $s^t$ that pays 1 in every $s^{t+1} \geq s^t$. Its price equals the sum of Arrow prices over all continuations:
 
 $$Q_t^{rf} = \sum_{s^{t+1}\geq s^t} Q_t(s^{t+1}|s^t) = \mathbb{E}_t\!\left[\beta \frac{U_{c,t+1}}{U_{c,t}}\right] = \mathbb{E}_t[M_{t,t+1}].$$
 
@@ -139,7 +145,7 @@ The one-period risk-free gross interest rate is $R_t^{rf} = 1 / Q_t^{rf}$.
 
 ### Two-Period Risk-Free Bond
 
-A bond purchased in $s^t$ that pays \$1 in every $s^{t+2} \geq s^t$. Replicate by backward induction using Arrow securities:
+A bond purchased in $s^t$ that pays 1 in every $s^{t+2} \geq s^t$. Replicate by backward induction using Arrow securities:
 
 $$Q_t^{rf,2} = \sum_{s^{t+2}\geq s^t} \Pr(s^{t+2}|s^t) \frac{\beta^2 U_c(s^{t+2})}{U_c(s^t)} = \mathbb{E}_t[M_{t,t+2}] = \mathbb{E}_t\!\left[\frac{\beta^2 U_{c,t+2}}{U_{c,t}}\right].$$
 
