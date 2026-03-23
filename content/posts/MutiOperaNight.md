@@ -1,7 +1,7 @@
 ---
 title: "Muti Reprimanded the Late Audience and Continued to Deliver Chicago's Best Opera Night"
 date: 2026-03-20T09:45:36-05:00
-draft: true
+draft: false
 ---
 I cannot help but feel a little jealous of CSO patrons from 2010 to 2023. The Muti years is a golden chapter in the orchestra's history, crowned by performances that critics and audiences alike placed among the finest of their time. His recording of Verdi’s *Messa da Requiem* with the CSO and Chorus even carried home two Grammy Awards in 2011.
 
