@@ -29,6 +29,10 @@ FOC implies
 $$
 \frac{{\partial U}/{\partial c_M}}{\partial U /\partial c_A}\cdot \frac{\partial F_M/\partial L_M}{\partial F_A/\partial L_A}=1 \tag{1}
 $$
+> ###### **Remark.** Substitute the resource constraints $K_A = K - K_M$, $L_A = L - L_M$ and the production functions $c_i = F_i$ directly into the objective to reduce the planner's problem to an unconstrained maximization over $(K_M, L_M)$. The FOC with respect to $L_M$ applies the chain rule through both channels of utility — the gain from raising $c_M$ and the cost of lowering $c_A$ — yields $(\partial U/\partial c_M)(\partial F_M/\partial L_M) = (\partial U/\partial c_A)(\partial F_A/\partial L_A)$, which in ratio form is equation (1).
+>
+> ###### The condition admits a clean interpretation: the MRS between the two goods must exactly equal the ratio of marginal products of labor across sectors, so that no reallocation of a single worker can improve welfare — the demand-side valuation and the supply-side transformation rate are in perfect balance.
+
 Consumer's optimization 
 $$
 \begin{align*}
@@ -62,7 +66,7 @@ FOC \Rightarrow & \begin{cases}
 \end{align*}
 $$
 
-Some algebras on the FOC would yield that $\alpha$:
+Some algebras on the FOC plus using the fact that $Y = A K^\alpha L^{1 - \alpha}$ would imply
 
 $${\frac{wL}{Y}} = 1 - \alpha \qquad \text{and} \qquad \underbrace{\frac{rK}{Y}}_{\text{capital share}} = \alpha$$
 
@@ -70,5 +74,4 @@ This is a special and convenient property of Cobb-Douglas that really, does not 
 
 ----
 
-So from the data, we can verify IF an economy satisfies Cobb Douglas, if it's efficient.
-
+So from the data, we can verify whether an economy that is assumed to satisfy Cobb Douglas is efficient.
