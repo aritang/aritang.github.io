@@ -40,9 +40,10 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Dart Sass
-        uses: dart-sass/setup-sass@v1
-        with:
-          sass-version: "latest"
+        run: |
+          curl -LO https://github.com/sass/dart-sass/releases/latest/download/dart-sass-linux-x64.tar.gz
+          tar -xzf dart-sass-linux-x64.tar.gz
+          sudo cp -r dart-sass/* /usr/local/bin/
       - name: Checkout
         uses: actions/checkout@v3
         with:
