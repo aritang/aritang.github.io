@@ -1,12 +1,12 @@
 ---
 title: "Talk Note | Pandora Box + Prior Ambiguity + MinMax Regret = Choice Overload"
 date: 2026-04-24T15:01:10-05:00
-draft: true
+draft: false
 ---
 
 Professor Auster came to Chicago to give a talk in our theory seminar. Turns out for Pandora's box, if boxes' prior are ambiguous and decision maker seeks to minimize maximum regret against a clairvoyant oracle (an oracle who knows all the real reward of the boxes), the decision maker would exihbit **choice overload** (theoretically).
 
-Some additional notes:
+Some additional notes on how to think about it using Yao's (or Neumann's) minmax lemma:
 
 ### Setup
 
