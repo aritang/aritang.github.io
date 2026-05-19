@@ -14,16 +14,17 @@
         <input type="text" id="chat-input" placeholder="what's on your mind?" autofocus />
         <button id="chat-btn">Ask</button>
       </div>
+      <div id="sb-meta">
+        <p class="sb-disclaimer">the bot makes mistakes. when in doubt, read the actual post and refer to reliable sources.</p>
+        <p class="sb-footer">built over time —
+          <a href="/posts/sleepingbot">v1</a>,
+          <a href="/posts/sleepingbotfix">bug fix</a>,
+          <a href="/posts/sleepingbot_technical">how it works</a>,
+          <a href="/posts/sleepingbot_page">this page</a>
+        </p>
+      </div>
     </div>
   </div>
-
-  <footer class="sb-footer">
-    built over time —
-    <a href="/posts/sleepingbot">v1</a>,
-    <a href="/posts/sleepingbotfix">bug fix</a>,
-    <a href="/posts/sleepingbot_technical">how it works</a>,
-    <a href="/posts/sleepingbot_page">this page</a>
-  </footer>
 </div>
 
 <style>
@@ -33,8 +34,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 3rem 1rem;
+  padding: 25vh 1rem 2rem;
   min-height: 70vh;
+  transition: padding-top 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sleepingbot-page.has-messages {
+  padding-top: 3rem;
 }
 
 .sb-container {
@@ -68,6 +74,12 @@
   color: var(--secondary);
   font-size: 0.95rem;
   margin-top: 0.25rem;
+  transition: opacity 0.5s ease;
+}
+
+.sleepingbot-page.has-messages .sb-subtitle {
+  opacity: 0;
+  pointer-events: none;
 }
 
 #chat-widget {
@@ -190,11 +202,21 @@
 .msg p + p { margin-top: 0.4em; }
 .msg a { color: inherit; text-decoration: underline; }
 
-.sb-footer {
-  margin-top: 2.5rem;
+#sb-meta {
   text-align: center;
-  font-size: 0.78rem;
-  opacity: 0.4;
+  margin-top: 1rem;
+  transition: opacity 0.6s ease;
+}
+
+#sb-meta.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sb-disclaimer, .sb-footer {
+  font-size: 0.75rem;
+  opacity: 0.35;
+  margin: 0.3rem 0;
 }
 .sb-footer a { color: inherit; text-decoration: underline; }
 </style>
@@ -222,6 +244,10 @@ refreshBtn.addEventListener("click", () => {
 });
 
 function render() {
+  if (messages.length > 0) {
+    document.querySelector(".sleepingbot-page").classList.add("has-messages");
+    document.getElementById("sb-meta").classList.add("hidden");
+  }
   messagesEl.innerHTML = messages.map(m => {
     const content = m.role === "bot"
       ? marked.parse(m.text)

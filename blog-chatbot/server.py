@@ -1,4 +1,5 @@
 import os
+import re
 import smtplib
 import resend
 from fastapi import FastAPI
@@ -47,13 +48,15 @@ def load_posts():
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
             title = os.path.basename(filepath).replace(".md", "")
-            POSTS.append({"title": title, "content": content})
+            date_match = re.search(r'^date:\s*(\d{4}-\d{2}-\d{2})', content, re.MULTILINE)
+            date = date_match.group(1) if date_match else "unknown"
+            POSTS.append({"title": title, "content": content, "date": date})
     
     print(f"Loaded {len(POSTS)} posts")
 
 load_posts()
 
-POST_TITLES = "\n".join([f"- {p['title']}" for p in POSTS])
+POST_TITLES = "\n".join([f"- {p['date']} | {p['title']}" for p in POSTS])
 
 request_times = deque()
 RATE_LIMIT = 20
@@ -148,13 +151,12 @@ Available blog post titles:
 {POST_TITLES}
 
 Task: Return a JSON array of up to 4 post titles most likely to contain relevant information.
-- Match keywords, topics, or themes from the question to post titles
+- Each entry in the list is formatted as "date | title" — use only the title in your response
+- Match keywords, topics, or themes from the question
+- If the question asks about something recent ("latest", "last", "newest", "recent"), prefer posts with later dates
 - Consider synonyms and related concepts
-- If asking about music → look for posts with music/composer/classical/ballet keywords
-- If asking about research → look for posts with econ/market/paper keywords
-- If unclear, pick diverse posts that might help
 
-Return ONLY a JSON array, no explanation. Example: ["post-title-1", "post-title-2"]"""
+Return ONLY a JSON array of titles (no dates), no explanation. Example: ["post-title-1", "post-title-2"]"""
         }]
     )
     

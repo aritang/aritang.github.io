@@ -1,3 +1,9 @@
+/* prevent wide math from blowing out mobile page width */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 /* h5 and h6 as small remarks */
 .post-content h5,
 .post-content h6 {

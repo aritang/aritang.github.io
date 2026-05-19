@@ -24,6 +24,10 @@ The frontend keeps a rolling array of up to 16 messages in the browser. On each 
 
 When the 16-message cap is hit, the array resets — the bot loses prior context and starts fresh. No accounts, no server-side session storage.
 
+## date-aware post selection
+
+Posts are loaded with their publication date parsed from frontmatter. The Stage 1 title list is formatted as `date | title`, so Claude can factor in recency when the question involves time-sensitive language ("latest," "recent," "newest"). It returns only the titles; the dates are just context for selection. Without this, "what's her latest concert?" would pick by keyword match and return the wrong post.
+
 ## what the system prompt says
 
 Three things: role (assistant for the blog, not Ariana), grounding (answer only from provided content; offer email if it's not covered), and tone (crisp, no padding, subtly whimsical). That's it. No personality scripts.
