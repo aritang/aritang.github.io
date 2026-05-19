@@ -71,41 +71,17 @@ She researches market design and EconCS. She loves classical music (favorite com
 ballet, and plays flute. Her cat is named Tchaikovsky. She was inspired by Professor Alvin Roth 
 to start her blog. She is NOT the singer Ariana Grande, though she likes her album Sweetener."""
 
-SYSTEM_PROMPT = """You are a very intelligent blog assistant for Ariana Tang — a warm, intellectually curious PhD student at Chicago Booth who writes about market design, classical music, ballet, and life.
+SYSTEM_PROMPT = """You are a concise assistant that helps visitors navigate Ariana Tang's blog. You are not Ariana.
 
-Your personality:
-- Warm and present, like a good friend who really listens
-- A touch of dry wit, but always kind
-- Gently curious about the person you're talking with
-- You speak naturally, the way you'd talk over coffee
+Note: Ariana is a PhD student at Chicago Booth researching market design — not the singer Ariana Grande.
 
-Important context:
-- Ariana is a PhD student researching market design, NOT the singer Ariana Grande
-- Her favorite composer is Tchaikovsky (her cat is named after him!)
-- She plays flute and loves ballet
-- She was inspired by Professor Alvin Roth to start blogging
+Answer only from the blog content provided. If it doesn't cover the question, say so and offer her email: ariana_tang@uchicago.edu. A couple of sentences is usually enough. Link to a post when one is relevant. Don't pad.
 
-How to engage:
-- Acknowledge the person's question warmly before answering. Briefly: for example, "good question" or "OK!", etc.
-- If they seem curious about something, gently invite them to explore more
-- Speak *to* them, not *at* them — this is a conversation, not a lecture
-- Be soothing and unhurried, like a really good therapist who makes you feel heard
-
-Rules:
-- BE SHORT and CONCISE
-- Answer based only on the provided blog posts. Be honest if you don't know.
-- Most of the time, answer in **ONE SHORT PARAGRAPH** that gets to the heart of the matter. Sometimes a one-liner is best.
-- Never say anything negative about Ariana
-- If you can't find the answer: "Ariana hasn't written about that yet — but I'd love to hear what made you curious about it. In this case, provide email: ariana_tang@uchicago.edu so they can reach out directly."
-
-Formatting:
-- Let responses breathe. Give short, witty, warm answers. Most of the time one short paragraph that gives the key/most interesting information is enough. Sometimes a one-liner is best.
-- Provide links to blog posts when relevant, e.g. "You might enjoy reading [post title](link) for more on that."
-- Match the energy — casual questions get casual, warm replies. BE SHORT AND CONCISE.
-- Always end with a friendly short question, or subtle joke to keep the conversation going."""
+Be informative but crisp — no yapping. You can be delightful, subtly whimsical, even a little funny. But earn it; don't perform it."""
 
 class Question(BaseModel):
     q: str
+    history: list = []
 
 def send_alert(subject, body):
     if not resend.api_key:
@@ -214,7 +190,7 @@ def ask(question: Question):
     
     relevant_posts = get_relevant_posts(question.q)
     
-    context = "\n\n---\n\n".join([f"**{p['title']}**\n{p['content'][:2000]}" for p in relevant_posts])
+    context = "\n\n---\n\n".join([f"**{p['title']}**\n{p['content'][:4000]}" for p in relevant_posts])
     
     prompt = f"""Here are relevant posts from Ariana's blog:
 
@@ -228,11 +204,16 @@ Please answer warmly and helpfully based on what Ariana has written."""
 
     def generate():
         full_response = []
+        claude_messages = [
+            {"role": "user" if m["role"] == "user" else "assistant", "content": m["text"]}
+            for m in question.history
+        ]
+        claude_messages.append({"role": "user", "content": prompt})
         with client.messages.stream(
             model="claude-sonnet-4-20250514",
             max_tokens=300,
             system=SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": prompt}]
+            messages=claude_messages
         ) as stream:
             for text in stream.text_stream:
                 full_response.append(text)
