@@ -27,11 +27,13 @@
 
 <!-- Chatbot Widget -->
 <article class="post-entry">
-    <header class="entry-header">
+    <header class="entry-header" style="display: flex; align-items: baseline; justify-content: space-between;">
         <h2><span style="font-family: 'Dancing Script', cursive; font-size: 1.8rem;">Sleepingbot</span></h2>
+        <a href="/sleepingbot" style="font-size: 0.8rem; opacity: 0.5; text-decoration: none;">open full page →</a>
     </header>
     <div id="chat-widget">
         <div id="chat-messages"></div>
+        <button id="refresh-btn" style="display:none">start fresh</button>
         <div id="chat-input-row">
             <input type="text" id="chat-input" placeholder="Ask the sleeping bot anything, especially about the blog posts" />
             <button id="chat-btn">Ask</button>
@@ -142,24 +144,56 @@ font-family: 'Cormorant Garamond', serif;
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+#refresh-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    padding: 0.5rem;
+    border: 1px dashed rgba(150, 150, 150, 0.4);
+    border-radius: 1rem;
+    background: transparent;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+#refresh-btn:hover { opacity: 1; }
+
+.msg p { margin: 0; }
+.msg p + p { margin-top: 0.4em; }
+.msg a { color: inherit; text-decoration: underline; }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 const messages = [];
-const MAX_MESSAGES = 16;
+const MAX_MESSAGES = 8;
 let isLoading = false;
 
 const messagesEl = document.getElementById("chat-messages");
 const inputEl = document.getElementById("chat-input");
 const btnEl = document.getElementById("chat-btn");
+const refreshBtn = document.getElementById("refresh-btn");
 
 btnEl.addEventListener("click", ask);
 inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
+refreshBtn.addEventListener("click", () => {
+    messages.length = 0;
+    refreshBtn.style.display = "none";
+    inputEl.disabled = false;
+    btnEl.disabled = false;
+    render();
+    inputEl.focus();
+});
 
 function render() {
-    messagesEl.innerHTML = messages.map(m => 
-        '<div class="msg ' + m.role + '">' + m.text.replace(/\n/g, '<br>') + '</div>'
-    ).join("");
+    messagesEl.innerHTML = messages.map(m => {
+        const content = m.role === "bot"
+            ? marked.parse(m.text)
+            : m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        return '<div class="msg ' + m.role + '">' + content + '</div>';
+    }).join("");
     messagesEl.scrollTop = messagesEl.scrollHeight;
 }
 
@@ -168,7 +202,10 @@ async function ask() {
     if (!q || isLoading) return;
 
     if (messages.length >= MAX_MESSAGES) {
-        messages.length = 0;
+        inputEl.disabled = true;
+        btnEl.disabled = true;
+        refreshBtn.style.display = "block";
+        return;
     }
 
     messages.push({ role: "user", text: q });

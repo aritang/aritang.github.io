@@ -198,9 +198,7 @@ def ask(question: Question):
 
 ---
 
-A visitor asks: "{question.q}"
-
-Please answer warmly and helpfully based on what Ariana has written."""
+A visitor asks: "{question.q}" """
 
     def generate():
         full_response = []

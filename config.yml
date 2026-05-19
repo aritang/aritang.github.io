@@ -82,8 +82,8 @@ menu:
     - name: about me
       url: /about
       weight: 11
-    - name: "random"
-      pageRef: "/random"
+    - name: "sleepingbot"
+      url: /sleepingbot
       weight: 99
 
 
