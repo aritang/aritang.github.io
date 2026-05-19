@@ -202,6 +202,28 @@
 .msg p + p { margin-top: 0.4em; }
 .msg a { color: inherit; text-decoration: underline; }
 
+.typing-indicator {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 2px 0;
+}
+.typing-indicator span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.4;
+  animation: bubble-bounce 1.2s infinite;
+}
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bubble-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-5px); opacity: 1; }
+}
+
 #sb-meta {
   text-align: center;
   margin-top: 1rem;
@@ -232,6 +254,61 @@ const inputEl = document.getElementById("chat-input");
 const btnEl = document.getElementById("chat-btn");
 const refreshBtn = document.getElementById("refresh-btn");
 
+// typewriter state
+let rawBotMsg = "";
+let displayedMsg = "";
+let streamDone = false;
+let typewriterTimer = null;
+
+function startTypewriter() {
+  if (typewriterTimer) return;
+  typewriterTimer = setInterval(() => {
+    if (displayedMsg.length < rawBotMsg.length) {
+      const lag = rawBotMsg.length - displayedMsg.length;
+      const step = lag > 80 ? 6 : 3; // speed up if falling behind
+      displayedMsg = rawBotMsg.slice(0, displayedMsg.length + step);
+      messages[messages.length - 1].text = displayedMsg;
+      renderPlain();
+    } else if (streamDone) {
+      clearInterval(typewriterTimer);
+      typewriterTimer = null;
+      messages[messages.length - 1].text = rawBotMsg;
+      render();
+    }
+  }, 20);
+}
+
+const TYPING_HTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
+
+function botContent(m, markdown) {
+  if (m.role !== "bot") return m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  if (m.text === "") return TYPING_HTML;
+  if (markdown) return marked.parse(m.text);
+  return m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+}
+
+function renderPlain() {
+  if (messages.length > 0) {
+    document.querySelector(".sleepingbot-page").classList.add("has-messages");
+    document.getElementById("sb-meta").classList.add("hidden");
+  }
+  messagesEl.innerHTML = messages.map(m =>
+    '<div class="msg ' + m.role + '">' + botContent(m, false) + '</div>'
+  ).join("");
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function render() {
+  if (messages.length > 0) {
+    document.querySelector(".sleepingbot-page").classList.add("has-messages");
+    document.getElementById("sb-meta").classList.add("hidden");
+  }
+  messagesEl.innerHTML = messages.map(m =>
+    '<div class="msg ' + m.role + '">' + botContent(m, true) + '</div>'
+  ).join("");
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
 btnEl.addEventListener("click", ask);
 inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
 refreshBtn.addEventListener("click", () => {
@@ -242,20 +319,6 @@ refreshBtn.addEventListener("click", () => {
   render();
   inputEl.focus();
 });
-
-function render() {
-  if (messages.length > 0) {
-    document.querySelector(".sleepingbot-page").classList.add("has-messages");
-    document.getElementById("sb-meta").classList.add("hidden");
-  }
-  messagesEl.innerHTML = messages.map(m => {
-    const content = m.role === "bot"
-      ? marked.parse(m.text)
-      : m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    return '<div class="msg ' + m.role + '">' + content + '</div>';
-  }).join("");
-  messagesEl.scrollTop = messagesEl.scrollHeight;
-}
 
 async function ask() {
   const q = inputEl.value.trim();
@@ -269,12 +332,16 @@ async function ask() {
   }
 
   messages.push({ role: "user", text: q });
-  messages.push({ role: "bot", text: "on it..." });
+  messages.push({ role: "bot", text: "" });
   render();
 
   inputEl.value = "";
   isLoading = true;
   btnEl.disabled = true;
+
+  rawBotMsg = "";
+  displayedMsg = "";
+  streamDone = false;
 
   try {
     const res = await fetch("https://aritanggithubio-production.up.railway.app/ask", {
@@ -285,16 +352,18 @@ async function ask() {
 
     const reader = res.body.getReader();
     const decoder = new TextDecoder();
-    let botMsg = "";
+
+    startTypewriter();
 
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
-      botMsg += decoder.decode(value);
-      messages[messages.length - 1].text = botMsg;
-      render();
+      rawBotMsg += decoder.decode(value);
     }
+    streamDone = true;
   } catch (e) {
+    clearInterval(typewriterTimer);
+    typewriterTimer = null;
     messages[messages.length - 1].text = "Sleepingbot is offline right now.";
     render();
   }

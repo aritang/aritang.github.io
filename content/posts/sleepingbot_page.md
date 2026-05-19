@@ -27,3 +27,11 @@ Bot responses are now parsed with [marked.js](https://marked.im) before being in
 The frontend keeps a rolling array of up to 8 messages. On each send, the prior exchanges are included in the POST body as `history`. The backend formats them as alternating `user`/`assistant` messages before the current question, so the bot has full within-session context.
 
 When the cap is hit, the input locks and a "start fresh" button appears above it. The conversation stays visible until the user explicitly clicks it — nothing is wiped silently.
+
+## typewriter effect
+
+Streaming responses don't render directly — they feed into a raw buffer. A 20ms interval drains the buffer 3 characters at a time (6 if it's falling behind) and displays plain text while typing. When the stream ends and the typewriter catches up, the full response is swapped to markdown-rendered output.
+
+## loading indicator
+
+While waiting for the first bytes, the bot bubble shows three bouncing dots (staggered CSS animation). They disappear the moment the typewriter starts.
