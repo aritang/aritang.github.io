@@ -1,7 +1,10 @@
-/* prevent wide math from blowing out mobile page width */
-.katex-display {
+/* prevent wide content from blowing out mobile page width */
+.katex-display,
+pre,
+table {
   overflow-x: auto;
   overflow-y: hidden;
+  max-width: 100%;
 }
 
 /* h5 and h6 as small remarks */
