@@ -14,9 +14,7 @@ $$
 $$
 
 > **Definition.** The stationary process $\{X_k\}$ is **ergodic** if for every bounded function $f: S \to \mathbb{R}$ the following convergence hold a.s.:
-> $$
-> \frac{1}{n}\sum_{k=0}^{n-1} f(X_k) \xrightarrow{a.s.} \mathbb{E}_\pi[f] = \sum_{i \in S} f(i)\,\pi(i)..
-> $$
+> $$ \frac{1}{n}\sum_{k=0}^{n-1} f(X_k) \xrightarrow{a.s.} \mathbb{E}_\pi[f] = \sum_{i \in S} f(i)\,\pi(i).$$
 
 Equivalently
 
