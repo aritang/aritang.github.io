@@ -27,11 +27,13 @@
 
 <!-- Chatbot Widget -->
 <article class="post-entry">
-    <header class="entry-header">
+    <header class="entry-header" style="display: flex; align-items: baseline; justify-content: space-between;">
         <h2><span style="font-family: 'Dancing Script', cursive; font-size: 1.8rem;">Sleepingbot</span></h2>
+        <a href="/sleepingbot" style="font-size: 0.8rem; opacity: 0.5; text-decoration: none;">open full page →</a>
     </header>
     <div id="chat-widget">
         <div id="chat-messages"></div>
+        <button id="refresh-btn" style="display:none">start fresh</button>
         <div id="chat-input-row">
             <input type="text" id="chat-input" placeholder="Ask the sleeping bot anything, especially about the blog posts" />
             <button id="chat-btn">Ask</button>
@@ -142,62 +144,162 @@ font-family: 'Cormorant Garamond', serif;
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+#refresh-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    padding: 0.5rem;
+    border: 1px dashed rgba(150, 150, 150, 0.4);
+    border-radius: 1rem;
+    background: transparent;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+#refresh-btn:hover { opacity: 1; }
+
+.msg p { margin: 0; }
+.msg p + p { margin-top: 0.4em; }
+.msg a { color: inherit; text-decoration: underline; }
+
+.typing-indicator {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 2px 0;
+}
+.typing-indicator span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.4;
+    animation: bubble-bounce 1.2s infinite;
+}
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bubble-bounce {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+    30% { transform: translateY(-5px); opacity: 1; }
+}
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 const messages = [];
-const MAX_MESSAGES = 16;
+const MAX_MESSAGES = 8;
 let isLoading = false;
 
 const messagesEl = document.getElementById("chat-messages");
 const inputEl = document.getElementById("chat-input");
 const btnEl = document.getElementById("chat-btn");
+const refreshBtn = document.getElementById("refresh-btn");
 
-btnEl.addEventListener("click", ask);
-inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
+// typewriter state
+let rawBotMsg = "";
+let displayedMsg = "";
+let streamDone = false;
+let typewriterTimer = null;
 
-function render() {
-    messagesEl.innerHTML = messages.map(m => 
-        '<div class="msg ' + m.role + '">' + m.text.replace(/\n/g, '<br>') + '</div>'
+function startTypewriter() {
+    if (typewriterTimer) return;
+    typewriterTimer = setInterval(() => {
+        if (displayedMsg.length < rawBotMsg.length) {
+            const lag = rawBotMsg.length - displayedMsg.length;
+            const step = lag > 80 ? 6 : 3;
+            displayedMsg = rawBotMsg.slice(0, displayedMsg.length + step);
+            messages[messages.length - 1].text = displayedMsg;
+            renderPlain();
+        } else if (streamDone) {
+            clearInterval(typewriterTimer);
+            typewriterTimer = null;
+            messages[messages.length - 1].text = rawBotMsg;
+            render();
+        }
+    }, 20);
+}
+
+const TYPING_HTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
+
+function botContent(m, markdown) {
+    if (m.role !== "bot") return m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    if (m.text === "") return TYPING_HTML;
+    if (markdown) return marked.parse(m.text);
+    return m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+}
+
+function renderPlain() {
+    messagesEl.innerHTML = messages.map(m =>
+        '<div class="msg ' + m.role + '">' + botContent(m, false) + '</div>'
     ).join("");
     messagesEl.scrollTop = messagesEl.scrollHeight;
 }
+
+function render() {
+    messagesEl.innerHTML = messages.map(m =>
+        '<div class="msg ' + m.role + '">' + botContent(m, true) + '</div>'
+    ).join("");
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+btnEl.addEventListener("click", ask);
+inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
+refreshBtn.addEventListener("click", () => {
+    messages.length = 0;
+    refreshBtn.style.display = "none";
+    inputEl.disabled = false;
+    btnEl.disabled = false;
+    render();
+    inputEl.focus();
+});
 
 async function ask() {
     const q = inputEl.value.trim();
     if (!q || isLoading) return;
 
     if (messages.length >= MAX_MESSAGES) {
-        messages.length = 0;
+        inputEl.disabled = true;
+        btnEl.disabled = true;
+        refreshBtn.style.display = "block";
+        return;
     }
 
     messages.push({ role: "user", text: q });
-    messages.push({ role: "bot", text: "on it..." });
+    messages.push({ role: "bot", text: "" });
     render();
 
     inputEl.value = "";
     isLoading = true;
     btnEl.disabled = true;
 
+    rawBotMsg = "";
+    displayedMsg = "";
+    streamDone = false;
+
     try {
         const res = await fetch("https://aritanggithubio-production.up.railway.app/ask", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ q })
+            body: JSON.stringify({ q, history: messages.slice(0, -2) })
         });
 
         const reader = res.body.getReader();
         const decoder = new TextDecoder();
-        let botMsg = "";
+
+        startTypewriter();
 
         while (true) {
             const { done, value } = await reader.read();
             if (done) break;
-            botMsg += decoder.decode(value);
-            messages[messages.length - 1].text = botMsg;
-            render();
+            rawBotMsg += decoder.decode(value);
         }
+        streamDone = true;
     } catch (e) {
+        clearInterval(typewriterTimer);
+        typewriterTimer = null;
         messages[messages.length - 1].text = "Sleepingbot is offline right now.";
         render();
     }
@@ -205,5 +307,4 @@ async function ask() {
     isLoading = false;
     btnEl.disabled = false;
 }
-
 </script>

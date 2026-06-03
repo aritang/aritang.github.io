@@ -1,3 +1,12 @@
+/* prevent wide content from blowing out mobile page width */
+.katex-display,
+pre,
+table {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
 /* h5 and h6 as small remarks */
 .post-content h5,
 .post-content h6 {

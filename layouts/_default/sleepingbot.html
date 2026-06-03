@@ -1,0 +1,376 @@
+{{- define "main" }}
+
+<div class="sleepingbot-page">
+  <div class="sb-container">
+    <header class="sb-header">
+      <h1><span class="sb-title">Sleepingbot</span></h1>
+      <p class="sb-subtitle">ask me anything about the blog</p>
+    </header>
+
+    <div id="chat-widget">
+      <div id="chat-messages"></div>
+      <button id="refresh-btn" style="display:none">start fresh</button>
+      <div id="chat-input-row">
+        <input type="text" id="chat-input" placeholder="what's on your mind?" autofocus />
+        <button id="chat-btn">Ask</button>
+      </div>
+      <div id="sb-meta">
+        <p class="sb-disclaimer">the bot makes mistakes. when in doubt, read the actual post and refer to reliable sources.</p>
+        <p class="sb-footer">built over time —
+          <a href="/posts/sleepingbot">v1</a>,
+          <a href="/posts/sleepingbotfix">bug fix</a>,
+          <a href="/posts/sleepingbot_technical">how it works</a>,
+          <a href="/posts/sleepingbot_page">this page</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.sleepingbot-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25vh 1rem 2rem;
+  min-height: 70vh;
+  transition: padding-top 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sleepingbot-page.has-messages {
+  padding-top: 3rem;
+}
+
+.sb-container {
+  width: 100%;
+  max-width: 680px;
+  animation: sb-zoom-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes sb-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.sb-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sb-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+}
+
+.sb-subtitle {
+  color: var(--secondary);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  transition: opacity 0.5s ease;
+}
+
+.sleepingbot-page.has-messages .sb-subtitle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#chat-widget {
+  padding: 0;
+}
+
+#chat-messages {
+  max-height: 520px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.msg {
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  max-width: 85%;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #a8c8ff 0%, #c4b5fd 100%);
+  color: #2d3748;
+}
+
+[data-theme="dark"] .msg.user {
+  background: linear-gradient(135deg, #0c2044 0%, #033a99 100%);
+  color: #ffffff;
+}
+
+.msg.bot {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #fdc9e0 0%, #ffe9ef 100%);
+  color: #2d3748;
+}
+
+[data-theme="dark"] .msg.bot {
+  background: linear-gradient(135deg, #67354b 0%, #503965 100%);
+  color: #ffffff;
+}
+
+#chat-input-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(150, 150, 150, 0.3);
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#chat-input:focus {
+  border-color: #667eea;
+}
+
+[data-theme="dark"] #chat-input {
+  background: rgba(60, 60, 65, 0.5);
+  border-color: rgba(100, 100, 100, 0.3);
+  color: inherit;
+}
+
+#chat-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  background: linear-gradient(135deg, #a8c8ff 0%, #c4b5fd 100%);
+  color: #2d3748;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] #chat-btn {
+  background: linear-gradient(135deg, #0c2044 0%, #033a99 100%);
+  color: white;
+}
+
+#chat-btn:hover {
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+}
+
+#chat-btn:active {
+  transform: scale(0.97);
+}
+
+#chat-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#refresh-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  padding: 0.5rem;
+  border: 1px dashed rgba(150, 150, 150, 0.4);
+  border-radius: 1rem;
+  background: transparent;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+#refresh-btn:hover { opacity: 1; }
+
+.msg p { margin: 0; }
+.msg p + p { margin-top: 0.4em; }
+.msg a { color: inherit; text-decoration: underline; }
+
+.typing-indicator {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 2px 0;
+}
+.typing-indicator span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.4;
+  animation: bubble-bounce 1.2s infinite;
+}
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bubble-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-5px); opacity: 1; }
+}
+
+#sb-meta {
+  text-align: center;
+  margin-top: 1rem;
+  transition: opacity 0.6s ease;
+}
+
+#sb-meta.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sb-disclaimer, .sb-footer {
+  font-size: 0.75rem;
+  opacity: 0.35;
+  margin: 0.3rem 0;
+}
+.sb-footer a { color: inherit; text-decoration: underline; }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+const messages = [];
+const MAX_MESSAGES = 8;
+let isLoading = false;
+
+const messagesEl = document.getElementById("chat-messages");
+const inputEl = document.getElementById("chat-input");
+const btnEl = document.getElementById("chat-btn");
+const refreshBtn = document.getElementById("refresh-btn");
+
+// typewriter state
+let rawBotMsg = "";
+let displayedMsg = "";
+let streamDone = false;
+let typewriterTimer = null;
+
+function startTypewriter() {
+  if (typewriterTimer) return;
+  typewriterTimer = setInterval(() => {
+    if (displayedMsg.length < rawBotMsg.length) {
+      const lag = rawBotMsg.length - displayedMsg.length;
+      const step = lag > 80 ? 6 : 3; // speed up if falling behind
+      displayedMsg = rawBotMsg.slice(0, displayedMsg.length + step);
+      messages[messages.length - 1].text = displayedMsg;
+      renderPlain();
+    } else if (streamDone) {
+      clearInterval(typewriterTimer);
+      typewriterTimer = null;
+      messages[messages.length - 1].text = rawBotMsg;
+      render();
+    }
+  }, 20);
+}
+
+const TYPING_HTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
+
+function botContent(m, markdown) {
+  if (m.role !== "bot") return m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  if (m.text === "") return TYPING_HTML;
+  if (markdown) return marked.parse(m.text);
+  return m.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+}
+
+function renderPlain() {
+  if (messages.length > 0) {
+    document.querySelector(".sleepingbot-page").classList.add("has-messages");
+    document.getElementById("sb-meta").classList.add("hidden");
+  }
+  messagesEl.innerHTML = messages.map(m =>
+    '<div class="msg ' + m.role + '">' + botContent(m, false) + '</div>'
+  ).join("");
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function render() {
+  if (messages.length > 0) {
+    document.querySelector(".sleepingbot-page").classList.add("has-messages");
+    document.getElementById("sb-meta").classList.add("hidden");
+  }
+  messagesEl.innerHTML = messages.map(m =>
+    '<div class="msg ' + m.role + '">' + botContent(m, true) + '</div>'
+  ).join("");
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+btnEl.addEventListener("click", ask);
+inputEl.addEventListener("keypress", e => { if (e.key === "Enter") ask(); });
+refreshBtn.addEventListener("click", () => {
+  messages.length = 0;
+  refreshBtn.style.display = "none";
+  inputEl.disabled = false;
+  btnEl.disabled = false;
+  render();
+  inputEl.focus();
+});
+
+async function ask() {
+  const q = inputEl.value.trim();
+  if (!q || isLoading) return;
+
+  if (messages.length >= MAX_MESSAGES) {
+    inputEl.disabled = true;
+    btnEl.disabled = true;
+    refreshBtn.style.display = "block";
+    return;
+  }
+
+  messages.push({ role: "user", text: q });
+  messages.push({ role: "bot", text: "" });
+  render();
+
+  inputEl.value = "";
+  isLoading = true;
+  btnEl.disabled = true;
+
+  rawBotMsg = "";
+  displayedMsg = "";
+  streamDone = false;
+
+  try {
+    const res = await fetch("https://aritanggithubio-production.up.railway.app/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ q, history: messages.slice(0, -2) })
+    });
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+
+    startTypewriter();
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      rawBotMsg += decoder.decode(value);
+    }
+    streamDone = true;
+  } catch (e) {
+    clearInterval(typewriterTimer);
+    typewriterTimer = null;
+    messages[messages.length - 1].text = "Sleepingbot is offline right now.";
+    render();
+  }
+
+  isLoading = false;
+  btnEl.disabled = false;
+}
+</script>
+
+{{- end }}
