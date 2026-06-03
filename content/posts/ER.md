@@ -4,7 +4,7 @@ date: 2026-06-02T23:19:46-05:00
 draft: false
 ---
 
-{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/UChicagoMedicineER.jpeg" caption="">}}
+{{<figure align="center" width="100%" src="https://raw.githubusercontent.com/aritang/aritangPictures/main/static/bio/UChicagoMedicineER1.jpeg" caption="">}}
 
 I thought I had appendicitis and ended up at UChicago's emergency room 😔
 
