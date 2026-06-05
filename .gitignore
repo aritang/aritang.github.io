@@ -1,6 +1,7 @@
 public/
 resources/
 *.bak
+CLAUDE.md
 blog-chatbot/email_digest.py
 blog-chatbot/questions.log
 blog-chatbot/chroma_db/
