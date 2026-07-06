@@ -1,0 +1,213 @@
+<!-- <style>
+/* Map the widget's variables onto PaperMod's theme variables.
+   PaperMod already defines --primary, --secondary, --border, --code-bg, --radius. */
+.mgw {
+  --text-primary: var(--primary);
+  --text-secondary: var(--secondary);
+  --text-muted: var(--secondary);
+  --surface-1: var(--code-bg);
+  --border-stronger: var(--border);
+}
+.mgw button {
+  font: inherit;
+  font-size: 13px;
+  color: var(--primary);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.mgw button:hover { border-color: var(--secondary); }
+.mgw input[type="range"] { width: 100%; }
+</style> -->
+
+<div class="mgw">
+
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Full martingale decomposition pipeline: parameter controls, four extraction step charts on one shock path, and the resulting four-component decomposition of Y with a central limit theorem check.</h2>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:12px 18px; margin:0 0 0.75rem;">
+  <div style="display:flex; flex-direction:column; gap:4px;">
+    <label style="font-size:13px; color:var(--text-secondary);">a (persistence) = <span id="aOut" style="color:var(--text-primary); font-weight:500;">0.90</span></label>
+    <input type="range" id="pa" min="0" max="0.96" step="0.02" value="0.9" />
+  </div>
+  <div style="display:flex; flex-direction:column; gap:4px;">
+    <label style="font-size:13px; color:var(--text-secondary);">d (state loading) = <span id="dOut" style="color:var(--text-primary); font-weight:500;">0.30</span></label>
+    <input type="range" id="pd" min="-1" max="1" step="0.05" value="0.3" />
+  </div>
+  <div style="display:flex; flex-direction:column; gap:4px;">
+    <label style="font-size:13px; color:var(--text-secondary);">F (direct shock) = <span id="fOut" style="color:var(--text-primary); font-weight:500;">0.50</span></label>
+    <input type="range" id="pf" min="-1" max="1" step="0.05" value="0.5" />
+  </div>
+  <div style="display:flex; flex-direction:column; gap:4px;">
+    <label style="font-size:13px; color:var(--text-secondary);">&nu; (drift) = <span id="nuOut" style="color:var(--text-primary); font-weight:500;">0.10</span></label>
+    <input type="range" id="pnu" min="-0.3" max="0.3" step="0.02" value="0.1" />
+  </div>
+</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap; margin:0 0 1.25rem;">
+  <button id="resample">&#8635; New shock draw</button>
+  <button id="degen">Set &kappa;&#8344; = 0 (degenerate case)</button>
+</div>
+
+<div style="border-left:3px solid #2a78d6; border-radius:0; padding:2px 0 2px 12px; margin:0 0 0.25rem;">
+  <p style="font-size:14px; font-weight:500; margin:0;">Step 1 &mdash; demean: &kappa;&#8322; = &kappa; &minus; E[&kappa;|X&#8348;]</p>
+  <p style="font-size:13px; color:var(--text-secondary); margin:2px 0 0;">Split each increment into what you knew at t (amber) and pure surprise (blue). &kappa;&#8322; is already a martingale difference. The amber wiggle is the remaining problem.</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:6px 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span class="swInk" style="width:10px; height:10px; border-radius:2px;"></span>&kappa; = Y&#8348;&#8330;&#8321;&minus;Y&#8348;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#eda100;"></span>E[&kappa;|X&#8348;] = &nu;+dX&#8348;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#2a78d6;"></span>&kappa;&#8322; = FW&#8348;&#8330;&#8321;</span>
+</div>
+<div style="position:relative; width:100%; height:170px; margin-bottom:1.5rem;">
+  <canvas id="cs1" role="img" aria-label="Line chart splitting the increment into predictable and surprise parts">Step 1 chart.</canvas>
+</div>
+
+<div style="border-left:3px solid #eb6834; border-radius:0; padding:2px 0 2px 12px; margin:0 0 0.25rem;">
+  <p style="font-size:14px; font-weight:500; margin:0;">Steps 2&ndash;3 &mdash; f(X&#8348;) = E[&kappa;|X&#8348;]&minus;&nu; and g(X&#8348;) = &Sigma;&#11388;&#8202;E[f(X&#8348;&#8330;&#11388;)|X&#8348;]</p>
+  <p style="font-size:13px; color:var(--text-secondary); margin:2px 0 0;">f = predictable mean-zero part. g = its total future contribution: same shape, amplified 1/(1&minus;a) = <span id="ampOut" style="color:var(--text-primary); font-weight:500;">10.0</span>&times;. Push a up and watch g explode while f stays put.</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:6px 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#eda100;"></span>f(X&#8348;) = dX&#8348;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#eb6834;"></span>g(X&#8348;) = d/(1&minus;a)&middot;X&#8348;</span>
+</div>
+<div style="position:relative; width:100%; height:170px; margin-bottom:1.5rem;">
+  <canvas id="cs2" role="img" aria-label="Line chart comparing f of X with its amplified long-run forecast g of X">Steps 2 and 3 chart.</canvas>
+</div>
+
+<div style="border-left:3px solid #1baf7a; border-radius:0; padding:2px 0 2px 12px; margin:0 0 0.25rem;">
+  <p style="font-size:14px; font-weight:500; margin:0;">Step 3b &mdash; &kappa;&#8321; = g(X&#8348;&#8330;&#8321;) &minus; g(X&#8348;) + f(X&#8348;)</p>
+  <p style="font-size:13px; color:var(--text-secondary); margin:2px 0 0;">The trick: adding the forecast revision converts persistent amber into iid teal. Same information, repackaged as surprise. Autocorrelation drops from &asymp;a to &asymp;0 (see cards below).</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:6px 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#eda100;"></span>f(X&#8348;) persistent</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#1baf7a;"></span>&kappa;&#8321; = (d/(1&minus;a))W&#8348;&#8330;&#8321; iid</span>
+</div>
+<div style="position:relative; width:100%; height:170px; margin-bottom:1.5rem;">
+  <canvas id="cs3" role="img" aria-label="Line chart contrasting persistent f with white noise kappa one">Step 3b chart.</canvas>
+</div>
+
+<div style="border-left:3px solid #4a3aa7; border-radius:0; padding:2px 0 2px 12px; margin:0 0 0.25rem;">
+  <p style="font-size:14px; font-weight:500; margin:0;">Step 4 &mdash; &kappa;&#8344; = &kappa;&#8321; + &kappa;&#8322;: indirect + direct channel of one shock</p>
+  <p style="font-size:13px; color:var(--text-secondary); margin:2px 0 0;">One iid increment carrying the full permanent effect of W&#8348;&#8330;&#8321;: through the state (&kappa;&#8321;) and directly (&kappa;&#8322;). Identity: &kappa; = &nu; + &kappa;&#8344; &minus; [g(X&#8348;&#8330;&#8321;)&minus;g(X&#8348;)].</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:6px 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#1baf7a;"></span>&kappa;&#8321;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#2a78d6;"></span>&kappa;&#8322;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#4a3aa7;"></span>&kappa;&#8344; = &kappa;&#8321;+&kappa;&#8322;</span>
+</div>
+<div style="position:relative; width:100%; height:170px; margin-bottom:1.5rem;">
+  <canvas id="cs4" role="img" aria-label="Line chart showing kappa one, kappa two, and their sum kappa m">Step 4 chart.</canvas>
+</div>
+
+<div style="border-left:3px solid var(--border-stronger); border-radius:0; padding:2px 0 2px 12px; margin:0 0 0.25rem;">
+  <p style="font-size:14px; font-weight:500; margin:0;">Outcome &mdash; Y&#8348; = (Y&#8320;+g(X&#8320;)) + t&nu; + &Sigma;&kappa;&#8344; &minus; g(X&#8348;)</p>
+  <p style="font-size:13px; color:var(--text-secondary); margin:2px 0 0;">Sum the identity over t. The four lines add up to Y&#8348; exactly at every date. Only the martingale grows in variance &mdash; it alone survives 1/&radic;N scaling in the CLT.</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:6px 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span class="swInk" style="width:10px; height:10px; border-radius:2px;"></span>Y&#8348;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#898781;"></span>trend t&nu;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#4a3aa7;"></span>martingale &Sigma;&kappa;&#8344;</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#eb6834;"></span>&minus;g(X&#8348;) stationary</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#e87ba4;"></span>constant Y&#8320;+g(X&#8320;)</span>
+</div>
+<div style="position:relative; width:100%; height:240px; margin-bottom:1rem;">
+  <canvas id="cs5" role="img" aria-label="Line chart of Y over time and its four components: constant, trend, martingale, and stationary">Outcome chart.</canvas>
+</div>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin:0 0 1rem;">
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">&kappa;&#8344; coefficient d/(1&minus;a)+F</div>
+    <div id="kmC" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">CLT variance E[&kappa;&#8344;&sup2;]</div>
+    <div id="lrv" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">Autocorr: f(X&#8348;) vs &kappa;&#8344;</div>
+    <div id="acs" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">Max |parts &minus; Y&#8348;|</div>
+    <div id="err" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+</div>
+
+</div><!-- /.mgw -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+var T=140, W=[];
+function bm(){var u=0,v=0;while(u===0)u=Math.random();while(v===0)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+function draw(){W=[];for(var t=0;t<=T+1;t++)W.push(bm());}
+draw();
+// PaperMod toggles dark mode via a class on <body>, not the OS preference.
+var isDark=document.body.classList.contains('dark');
+var ink=isDark?'#ffffff':'#0b0b0b';
+document.querySelectorAll('.swInk').forEach(function(s){s.style.background=ink;});
+var grid=isDark?'#2c2c2a':'#e1e0d9';
+var charts={};
+function opts(){return {responsive:true, maintainAspectRatio:false, animation:false,
+  interaction:{mode:'index', intersect:false},
+  plugins:{legend:{display:false}, tooltip:{callbacks:{label:function(c){return c.dataset.label+': '+c.parsed.y.toFixed(2);}}}},
+  scales:{x:{grid:{display:false}, ticks:{color:'#898781', maxTicksLimit:8}},
+          y:{grid:{color:grid}, ticks:{color:'#898781', callback:function(v){return Number(v).toFixed(1);}}}}};}
+function setC(id,labels,ds){
+  if(charts[id]){charts[id].data.labels=labels;charts[id].data.datasets=ds;charts[id].update('none');}
+  else charts[id]=new Chart(document.getElementById(id),{type:'line',data:{labels:labels,datasets:ds},options:opts()});}
+function ac1(x){var n=x.length,m=0;for(var i=0;i<n;i++)m+=x[i];m/=n;var nu=0,de=0;
+  for(var i=0;i<n-1;i++)nu+=(x[i]-m)*(x[i+1]-m);for(var i=0;i<n;i++)de+=(x[i]-m)*(x[i]-m);return nu/de;}
+function L(l,d,c,w,dash){return{label:l,data:d,borderColor:c,borderWidth:w||2,borderDash:dash||[],pointRadius:0,tension:0};}
+var blue=isDark?'#3987e5':'#2a78d6', coral=isDark?'#d95926':'#eb6834', teal=isDark?'#199e70':'#1baf7a', violet=isDark?'#9085e9':'#4a3aa7', pink=isDark?'#d55181':'#e87ba4';
+function sim(){
+  var a=parseFloat(document.getElementById('pa').value);
+  var d=parseFloat(document.getElementById('pd').value);
+  var F=parseFloat(document.getElementById('pf').value);
+  var nu=parseFloat(document.getElementById('pnu').value);
+  document.getElementById('aOut').textContent=a.toFixed(2);
+  document.getElementById('dOut').textContent=d.toFixed(2);
+  document.getElementById('fOut').textContent=F.toFixed(3);
+  document.getElementById('nuOut').textContent=nu.toFixed(2);
+  var amp=1/(1-a);
+  document.getElementById('ampOut').textContent=amp.toFixed(1);
+  var kmC=d*amp+F;
+  document.getElementById('kmC').textContent=kmC.toFixed(3);
+  document.getElementById('lrv').textContent=(kmC*kmC).toFixed(3);
+  var X=[Math.sqrt(1/(1-a*a))*W[0]], Y=[0];
+  for(var t=0;t<=T;t++){Y.push(Y[t]+nu+d*X[t]+F*W[t+1]); X.push(a*X[t]+W[t+1]);}
+  var kap=[],pred=[],k2=[],fS=[],gS=[],k1=[],km=[];
+  for(var t=0;t<T;t++){
+    kap.push(nu+d*X[t]+F*W[t+1]); pred.push(nu+d*X[t]); k2.push(F*W[t+1]);
+    fS.push(d*X[t]); gS.push(amp*d*X[t]);
+    var kk1=amp*d*X[t+1]-amp*d*X[t]+d*X[t];
+    k1.push(kk1); km.push(kk1+F*W[t+1]);
+  }
+  var constant=Y[0]+amp*d*X[0];
+  var trend=[],mart=[],statn=[],cArr=[],tot=[],mAcc=0,maxErr=0;
+  for(var t=0;t<=T;t++){
+    if(t>0)mAcc+=km[t-1];
+    trend.push(t*nu); mart.push(mAcc); statn.push(-amp*d*X[t]); cArr.push(constant); tot.push(Y[t]);
+    var e=Math.abs(constant+t*nu+mAcc-amp*d*X[t]-Y[t]); if(e>maxErr)maxErr=e;
+  }
+  document.getElementById('err').textContent=maxErr.toExponential(1);
+  document.getElementById('acs').textContent=ac1(fS).toFixed(2)+' vs '+ac1(km).toFixed(2);
+  var li=[];for(var t=1;t<=T;t++)li.push(t);
+  var lt=[];for(var t=0;t<=T;t++)lt.push(t);
+  setC('cs1',li,[L('kappa',kap,ink,2.5),L('E[k|X]',pred,'#eda100',2),L('kappa_2',k2,blue,2)]);
+  setC('cs2',li,[L('f',fS,'#eda100',2),L('g',gS,coral,2)]);
+  setC('cs3',li,[L('f',fS,'#eda100',2),L('kappa_1',k1,teal,2)]);
+  setC('cs4',li,[L('kappa_1',k1,teal,1.5),L('kappa_2',k2,blue,1.5),L('kappa_m',km,violet,2.5)]);
+  setC('cs5',lt,[L('Y_t',tot,ink,2.5),L('trend',trend,'#898781',2,[6,4]),L('martingale',mart,violet,2),L('-g(X_t)',statn,coral,2),L('constant',cArr,pink,1.5,[2,3])]);
+}
+['pa','pd','pf','pnu'].forEach(function(id){document.getElementById(id).addEventListener('input',sim);});
+document.getElementById('resample').addEventListener('click',function(){draw();sim();});
+document.getElementById('degen').addEventListener('click',function(){
+  var a=parseFloat(document.getElementById('pa').value);
+  var d=parseFloat(document.getElementById('pd').value);
+  var need=-d/(1-a);
+  var el=document.getElementById('pf');
+  el.min=Math.min(-1,Math.floor(need*100)/100); el.max=Math.max(1,Math.ceil(need*100)/100);
+  el.step=0.001; el.value=need; sim();
+});
+sim();
+</script>

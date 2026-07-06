@@ -1,5 +1,5 @@
 baseURL: ""
-languageCode: en-us
+locale: en-us
 title: ariana's blog
 theme: PaperMod
 math: true
@@ -17,6 +17,10 @@ markup:
           inline:
             - - '$'
               - '$'
+security:
+  allowContent:
+    - '^text/markdown$'
+    - '^text/html$'
 
 params:
   env: production

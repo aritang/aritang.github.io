@@ -1,0 +1,112 @@
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Simulation comparing log likelihood ratio paths with a misspecified numerator decaying at minus KL and a correctly specified numerator growing at plus KL, plus level paths showing collapse versus the martingale average.</h2>
+
+<p style="font-size:13px; color:var(--text-secondary); margin:0 0 0.75rem;">Data: x ~ N(0,1) (true model p). Wrong model q: N(&mu;&#8322;, &sigma;&#8322;&sup2;). Same 40 data paths evaluated by both ratios.</p>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:12px 18px; margin:0 0 0.75rem;">
+  <div style="display:flex; flex-direction:column; gap:4px;">
+    <label style="font-size:13px; color:var(--text-secondary);">&mu;&#8322; = <span id="mOut" style="color:var(--text-primary); font-weight:500;">0.30</span></label>
+    <input type="range" id="pm" min="-1" max="1" step="0.05" value="0.3" />
+  </div>
+  <div style="display:flex; flex-direction:column; gap:4px;">
+    <label style="font-size:13px; color:var(--text-secondary);">&sigma;&#8322; = <span id="sOut" style="color:var(--text-primary); font-weight:500;">1.00</span></label>
+    <input type="range" id="ps" min="0.5" max="2" step="0.05" value="1" />
+  </div>
+  <div style="display:flex; align-items:flex-end;">
+    <button id="resample"><i class="ti ti-refresh" style="font-size:16px; vertical-align:-2px;" aria-hidden="true"></i> New draws</button>
+  </div>
+</div>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin:0 0 1rem;">
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">KL(p&#8214;q)</div>
+    <div id="kl" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">Mean slope: wrong / correct</div>
+    <div id="slope" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+  <div style="background:var(--surface-1); border-radius:var(--radius); padding:0.75rem 1rem;">
+    <div style="font-size:12px; color:var(--text-muted);">Cross-path mean of q/p ratio at T</div>
+    <div id="meanL" style="font-size:22px; font-weight:500;">&mdash;</div>
+  </div>
+</div>
+
+<p style="font-size:14px; font-weight:500; margin:0 0 0.25rem;">ln LR: correctly specified numerator grows at +KL&middot;t, misspecified decays at &minus;KL&middot;t</p>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:0 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#1baf7a; opacity:0.6;"></span>ln(p/q): correct numerator</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#2a78d6; opacity:0.6;"></span>ln(q/p): wrong numerator</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#eb6834;"></span>&plusmn;KL&middot;t (theory)</span>
+</div>
+<div style="position:relative; width:100%; height:250px; margin-bottom:1.25rem;">
+  <canvas id="c1" role="img" aria-label="Fan of log likelihood ratio paths: green paths grow along plus KL times t, blue paths decay along minus KL times t">Log likelihood ratio paths for both models.</canvas>
+</div>
+
+<p style="font-size:14px; font-weight:500; margin:0 0 0.25rem;">Levels of the wrong-numerator ratio q/p: collapse vs martingale mean</p>
+<div style="display:flex; flex-wrap:wrap; gap:14px; margin:0 0 4px; font-size:12px; color:var(--text-secondary);">
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#2a78d6; opacity:0.6;"></span>individual paths</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#4a3aa7;"></span>cross-path average</span>
+  <span style="display:flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:2px; background:#898781;"></span>E = 1 (martingale)</span>
+</div>
+<div style="position:relative; width:100%; height:230px;">
+  <canvas id="c2" role="img" aria-label="Likelihood ratio level paths collapsing to zero while their average stays near one">Level paths.</canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+var T=300, P=40, Z=[];
+function bm(){var u=0,v=0;while(u===0)u=Math.random();while(v===0)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+function draw(){Z=[];for(var p=0;p<P;p++){var r=[];for(var t=0;t<T;t++)r.push(bm());Z.push(r);}}
+draw();
+var isDark=matchMedia('(prefers-color-scheme: dark)').matches;
+var grid=isDark?'#2c2c2a':'#e1e0d9';
+var blue=isDark?'#3987e5':'#2a78d6', coral=isDark?'#d95926':'#eb6834', violet=isDark?'#9085e9':'#4a3aa7', teal=isDark?'#199e70':'#1baf7a';
+var ch1=null, ch2=null;
+function opts(){return {responsive:true, maintainAspectRatio:false, animation:false,
+  plugins:{legend:{display:false}, tooltip:{enabled:false}},
+  scales:{x:{grid:{display:false}, ticks:{color:'#898781', maxTicksLimit:8}},
+          y:{grid:{color:grid}, ticks:{color:'#898781'}}}};}
+function sim(){
+  var m=parseFloat(document.getElementById('pm').value);
+  var s=parseFloat(document.getElementById('ps').value);
+  document.getElementById('mOut').textContent=m.toFixed(2);
+  document.getElementById('sOut').textContent=s.toFixed(2);
+  var KL=Math.log(s)+(1+m*m)/(2*s*s)-0.5;
+  document.getElementById('kl').textContent=KL.toFixed(4);
+  var wrongPaths=[], corrPaths=[], lvlPaths=[], lvlAvg=new Array(T+1).fill(0);
+  var slW=0, slC=0;
+  for(var p=0;p<P;p++){
+    var lw=[0], lc=[0], lvl=[1], acc=0;
+    for(var t=0;t<T;t++){
+      var x=Z[p][t];
+      var inc=(-Math.log(s)-((x-m)*(x-m))/(2*s*s))+(x*x)/2;
+      acc+=inc; lw.push(acc); lc.push(-acc); lvl.push(Math.exp(acc));
+    }
+    wrongPaths.push(lw); corrPaths.push(lc); lvlPaths.push(lvl);
+    for(var t=0;t<=T;t++)lvlAvg[t]+=lvl[t]/P;
+    slW+=acc/T; slC-=acc/T;
+  }
+  document.getElementById('slope').textContent=(slW/P).toFixed(3)+' / +'+(slC/P).toFixed(3);
+  document.getElementById('meanL').textContent=lvlAvg[T].toFixed(2);
+  var labels=[];for(var t=0;t<=T;t++)labels.push(t);
+  var ds1=[];
+  wrongPaths.forEach(function(pth){ds1.push({data:pth, borderColor:blue+'55', borderWidth:1, pointRadius:0, tension:0});});
+  corrPaths.forEach(function(pth){ds1.push({data:pth, borderColor:teal+'55', borderWidth:1, pointRadius:0, tension:0});});
+  var thD=[], thU=[];
+  for(var t=0;t<=T;t++){thD.push(-KL*t); thU.push(KL*t);}
+  ds1.push({data:thD, borderColor:coral, borderWidth:2.5, pointRadius:0, tension:0});
+  ds1.push({data:thU, borderColor:coral, borderWidth:2.5, pointRadius:0, tension:0});
+  var ds2=lvlPaths.map(function(pth){return {data:pth, borderColor:blue+'55', borderWidth:1, pointRadius:0, tension:0};});
+  ds2.push({data:lvlAvg, borderColor:violet, borderWidth:2.5, pointRadius:0, tension:0});
+  var one=[];for(var t=0;t<=T;t++)one.push(1);
+  ds2.push({data:one, borderColor:'#898781', borderWidth:1.5, borderDash:[6,4], pointRadius:0, tension:0});
+  if(ch1){ch1.data.labels=labels;ch1.data.datasets=ds1;ch1.update('none');}
+  else ch1=new Chart(document.getElementById('c1'),{type:'line',data:{labels:labels,datasets:ds1},options:opts()});
+  var o2=opts(); o2.scales.y.min=0; o2.scales.y.max=3;
+  if(ch2){ch2.data.labels=labels;ch2.data.datasets=ds2;ch2.update('none');}
+  else ch2=new Chart(document.getElementById('c2'),{type:'line',data:{labels:labels,datasets:ds2},options:o2});
+}
+document.getElementById('pm').addEventListener('input',sim);
+document.getElementById('ps').addEventListener('input',sim);
+document.getElementById('resample').addEventListener('click',function(){draw();sim();});
+sim();
+</script>
