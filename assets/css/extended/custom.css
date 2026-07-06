@@ -53,3 +53,24 @@ table {
 .music-embed.full {
   max-width: 100%;
 }
+
+/* Shim for interactive math widgets (.mgw) */
+.mgw {
+  --text-primary: var(--primary);
+  --text-secondary: var(--secondary);
+  --text-muted: var(--secondary);
+  --surface-1: var(--code-bg);
+  --border-stronger: var(--border);
+}
+.mgw button {
+  font: inherit;
+  font-size: 13px;
+  color: var(--primary);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.mgw button:hover { border-color: var(--secondary); }
+.mgw input[type="range"] { width: 100%; } 
