@@ -24,7 +24,7 @@ security:
 
 params:
   env: production
-  hideSummary: true
+  # hideSummary: true
   author: "Ariana Tang"
   math: true
   enableEmoji: true
