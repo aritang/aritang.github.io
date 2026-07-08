@@ -8,6 +8,7 @@ markup:
     renderer:
       unsafe: true
     extensions:
+      strikethrough: false
       passthrough:
         enable: true
         delimiters:
