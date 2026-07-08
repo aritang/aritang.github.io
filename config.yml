@@ -8,7 +8,6 @@ markup:
     renderer:
       unsafe: true
     extensions:
-      strikethrough: false
       passthrough:
         enable: true
         delimiters:
@@ -25,6 +24,7 @@ security:
 
 params:
   env: production
+  hideSummary: true
   author: "Ariana Tang"
   math: true
   enableEmoji: true
