@@ -24,6 +24,7 @@ security:
 
 params:
   env: production
+  author: "Ariana Tang"
   math: true
   enableEmoji: true
   ShowCodeCopyButtons : true

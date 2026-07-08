@@ -142,7 +142,11 @@ function bm(){var u=0,v=0;while(u===0)u=Math.random();while(v===0)v=Math.random(
 function draw(){W=[];for(var t=0;t<=T+1;t++)W.push(bm());}
 draw();
 // PaperMod toggles dark mode via a class on <body>, not the OS preference.
-var isDark=document.body.classList.contains('dark');
+// var isDark=document.body.classList.contains('dark');
+var rootTheme = document.documentElement.getAttribute('data-theme');
+var isDark = document.body.classList.contains('dark')
+  || rootTheme === 'dark'
+  || (rootTheme === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
 var ink=isDark?'#ffffff':'#0b0b0b';
 document.querySelectorAll('.swInk').forEach(function(s){s.style.background=ink;});
 var grid=isDark?'#2c2c2a':'#e1e0d9';

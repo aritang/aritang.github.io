@@ -73,4 +73,18 @@ table {
   cursor: pointer;
 }
 .mgw button:hover { border-color: var(--secondary); }
-.mgw input[type="range"] { width: 100%; } 
+.mgw input[type="range"] { width: 100%; } /* Custom styling for the card's exterior */
+.card-exterior {
+    background-color: gray; /* Change this to your desired exterior color */
+    padding: 10px; /* Add padding or other styling as needed */
+    /* Add any other custom styling for the card's exterior */
+}
+
+body, button, input, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-font {
+    font-family: 'Poppins', sans-serif; /* Replace 'Your Font Name' */
+    font-weight: bold; /* Adjust as needed */
+}

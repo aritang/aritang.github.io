@@ -1,7 +1,8 @@
 ---
 title: "The Martingale Decomposition Step by Step"
-date: 2026-07-05
-draft: true
+date: 2026-07-05T23:40:08-05:00
+draft: false
+math: true
 summary: "Interactive walkthrough of the four-step martingale decomposition of an additive functional, with a CLT check."
 ---
 

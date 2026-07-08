@@ -1,12 +1,12 @@
 ---
 title: "Likelihood Shrink"
 date: 2026-07-04T23:40:08-05:00
-draft: true
-summary: "The likelihood ratio under a misspecified model is a martingale with mean one, and it collapses to zero almost surely."
+draft: false
+summary: "The likelihood ratio of a misspecified model is a martingale that collapses to zero almost surely — a hands-on look at why."
 ---
 
 This was one of my favourite during Empirical Analysis III course.
-
+<!--more-->
 
 Suppose we have data $x_1, x_2, \dots$ iid draws from density $p$ (model 1, **true**). A competing model claims density $q$ (model 2, **false**), with $p \neq q$ on some set of positive probability. Both are proper densities: $\int p = \int q = 1$.
 

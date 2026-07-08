@@ -1,4 +1,4 @@
-{{- /* Deprecate site.Author.email in favor of site.Params.author.email */}}
+{{- /* Deprecate site.Params.author.email in favor of site.Params.author.email */}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
@@ -7,13 +7,13 @@
     {{- end }}
   {{- end }}
 {{- else }}
-  {{- with site.Author.email }}
+  {{- with site.Params.author.email }}
     {{- $authorEmail = . }}
     {{- warnf "The author key in site configuration is deprecated. Use params.author.email instead." }}
   {{- end }}
 {{- end }}
 
-{{- /* Deprecate site.Author.name in favor of site.Params.author.name */}}
+{{- /* Deprecate site.Params.author.name in favor of site.Params.author.name */}}
 {{- $authorName := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
@@ -24,7 +24,7 @@
     {{- $authorName  = . }}
   {{- end }}
 {{- else }}
-  {{- with site.Author.name }}
+  {{- with site.Params.author.name }}
     {{- $authorName = . }}
     {{- warnf "The author key in site configuration is deprecated. Use params.author.name instead." }}
   {{- end }}
@@ -56,7 +56,7 @@
     </image>
     {{- end }}
     <generator>Hugo -- {{ hugo.Version }}</generator>
-    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
+    <language>{{ site.Language.Locale }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
     <copyright>{{ . | markdownify | plainify | strings.TrimPrefix "© " }}</copyright>{{ end }}{{ if not .Date.IsZero }}
