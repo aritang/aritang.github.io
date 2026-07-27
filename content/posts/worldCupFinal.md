@@ -20,6 +20,6 @@ This year's world cup comes with a complementary halftime show
 >
 > ...
 
-The halftime show can bring more audience and more fun during the break. It's a great change, and should have happened 
+The halftime show utilize the attention of the game and I think would be a great improvement. Nevertheless, I'm still surprised that it took so long for it to happen.
 
 Wish me luck with the wifi. Vamos Argentina!!!
