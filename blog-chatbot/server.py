@@ -137,7 +137,7 @@ def get_relevant_posts(question: str) -> list:
     about_post = next((p for p in POSTS if p["title"] == "about"), None)
     
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-opus-4-6",
         max_tokens=200,
         messages=[{
             "role": "user",
@@ -210,7 +210,7 @@ A visitor asks: "{question.q}" """
         ]
         claude_messages.append({"role": "user", "content": prompt})
         with client.messages.stream(
-            model="claude-sonnet-4-20250514",
+            model="claude-opus-4-6",
             max_tokens=300,
             system=SYSTEM_PROMPT,
             messages=claude_messages
