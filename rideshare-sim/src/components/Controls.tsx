@@ -23,6 +23,17 @@ const BTN_BASE: React.CSSProperties = {
   transition: 'all 0.15s',
 };
 
+// Play/Pause is the one control a first-time visitor has to find, so it is
+// sized up. A fixed minWidth keeps the two labels the same width, so the
+// buttons beside it do not shift when the state toggles.
+const BTN_PRIMARY: React.CSSProperties = {
+  ...BTN_BASE,
+  padding: '11px 28px',
+  fontSize: 15,
+  minWidth: 130,
+  borderRadius: 9,
+};
+
 export function Controls({ t, tMax, playing, done, speed, onPlay, onPause, onStep, onReset, onSpeedChange }: Props) {
   const progress = Math.min(100, (t / tMax) * 100);
 
@@ -55,7 +66,12 @@ export function Controls({ t, tMax, playing, done, speed, onPlay, onPause, onSte
       <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
         {!playing ? (
           <button
-            style={{ ...BTN_BASE, background: done ? '#f1f5f9' : '#3b82f6', color: done ? '#9ca3af' : '#fff' }}
+            style={{
+              ...BTN_PRIMARY,
+              background: done ? '#f1f5f9' : '#2563eb',
+              color: done ? '#9ca3af' : '#fff',
+              boxShadow: done ? 'none' : '0 2px 10px rgba(37, 99, 235, 0.35)',
+            }}
             onClick={onPlay}
             disabled={done}
           >
@@ -63,7 +79,7 @@ export function Controls({ t, tMax, playing, done, speed, onPlay, onPause, onSte
           </button>
         ) : (
           <button
-            style={{ ...BTN_BASE, background: '#f1f5f9', color: '#6b7280' }}
+            style={{ ...BTN_PRIMARY, background: '#e2e8f0', color: '#475569' }}
             onClick={onPause}
           >
             ⏸ Pause

@@ -1,6 +1,6 @@
 # Rideshare Platform Simulation
 
-A live, animated agent-based market simulation of two competing rideshare platforms (Uber vs. Lyft). Built for a business school presentation — runs entirely in the browser with no backend.
+A live, animated agent-based market simulation of two competing rideshare platforms (Platform 1 vs. Platform 2). Built for a business school presentation — runs entirely in the browser with no backend.
 
 ## How to run
 
@@ -60,7 +60,7 @@ rideshare-sim/
     │
     └── components/         React UI components
         ├── LiveMarketViz.tsx  Main animated visualization:
-        │                        two-column layout (Uber | Lyft),
+        │                        two-column layout (P1 | P2),
         │                        riders stack above divider, drivers below,
         │                        fly-in animation for new arrivals,
         │                        switch-pulse for platform switchers,
@@ -93,4 +93,4 @@ Each tick the engine:
 6. Removes matched agents; records match revenue
 7. Draws Poisson arrivals (`λ_R`, `λ_D`) and assigns them to a platform by default preference (`π`)
 
-Color coding: **Uber = black**, **Lyft = pink**. Filled circles = riders; outlined rings = drivers.
+Color coding: **Platform 1 = black**, **Platform 2 = pink**. Filled circles = riders; outlined rings = drivers.

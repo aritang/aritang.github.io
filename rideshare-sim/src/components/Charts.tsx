@@ -71,10 +71,10 @@ function seriesMax(rows: TimeSeriesPoint[], keys: Array<keyof TimeSeriesPoint>):
   return m;
 }
 
-const UBER = '#111111';
-const LYFT = '#ec4899';
-const UBER_LIGHT = '#6b7280';
-const LYFT_LIGHT = '#f9a8d4';
+const P1 = '#111111';
+const P2 = '#ec4899';
+const P1_LIGHT = '#6b7280';
+const P2_LIGHT = '#f9a8d4';
 const SURGE_COLOR = '#f97316';
 
 const GRID = '#e5e7eb';
@@ -147,7 +147,7 @@ export function SimCharts({ timeSeries, tMax }: Props) {
   const activeMax = niceMax(seriesMax(timeSeries, ['activeRiders', 'activeDrivers']), 20);
   const zMax = niceMax(seriesMax(timeSeries, ['z']), 0.5);
 
-  // Uber's share of cumulative matches. Null until the first match, so the line
+  // Platform 1's share of cumulative matches. Null until the first match, so the line
   // starts where it becomes meaningful instead of sitting at a made-up 0 or 0.5.
   const base = timeSeries.map(p => {
     const tot = p.cumulativeMatchesA + p.cumulativeMatchesB;
@@ -199,13 +199,13 @@ export function SimCharts({ timeSeries, tMax }: Props) {
                 in the synchronised-search scenario this oscillation IS the
                 result. No legend entries; they would double the legend. */}
             {win > 1 && <>
-              <Line type="linear" dataKey="pA" stroke={UBER} dot={false} strokeWidth={0.75} opacity={0.28} legendType="none" name="Uber price (raw)" />
-              <Line type="linear" dataKey="pB" stroke={LYFT} dot={false} strokeWidth={0.75} opacity={0.28} legendType="none" name="Lyft price (raw)" />
+              <Line type="linear" dataKey="pA" stroke={P1} dot={false} strokeWidth={0.75} opacity={0.28} legendType="none" name="Platform 1 price (raw)" />
+              <Line type="linear" dataKey="pB" stroke={P2} dot={false} strokeWidth={0.75} opacity={0.28} legendType="none" name="Platform 2 price (raw)" />
             </>}
-            <Line type="monotone" dataKey={smoothKey('pA')} name="Uber Price" stroke={UBER} dot={false} strokeWidth={2} />
-            <Line type="monotone" dataKey={smoothKey('pB')} name="Lyft Price" stroke={LYFT} dot={false} strokeWidth={2} />
-            <Line type="monotone" dataKey={smoothKey('wA')} name="Uber Wage" stroke={UBER_LIGHT} dot={false} strokeWidth={1.5} strokeDasharray="4 2" />
-            <Line type="monotone" dataKey={smoothKey('wB')} name="Lyft Wage" stroke={LYFT_LIGHT} dot={false} strokeWidth={1.5} strokeDasharray="4 2" />
+            <Line type="monotone" dataKey={smoothKey('pA')} name="Platform 1 Price" stroke={P1} dot={false} strokeWidth={2} />
+            <Line type="monotone" dataKey={smoothKey('pB')} name="Platform 2 Price" stroke={P2} dot={false} strokeWidth={2} />
+            <Line type="monotone" dataKey={smoothKey('wA')} name="Platform 1 Wage" stroke={P1_LIGHT} dot={false} strokeWidth={1.5} strokeDasharray="4 2" />
+            <Line type="monotone" dataKey={smoothKey('wB')} name="Platform 2 Wage" stroke={P2_LIGHT} dot={false} strokeWidth={1.5} strokeDasharray="4 2" />
           </LineChart>
         </ResponsiveContainer>
       </ChartCard>
@@ -220,10 +220,10 @@ export function SimCharts({ timeSeries, tMax }: Props) {
               domain={[0, queueMax]} allowDataOverflow />
             <Tooltip content={<CustomTooltip />} />
             <Legend wrapperStyle={{ fontSize: 11, color: '#6b7280' }} />
-            <Area type="monotone" dataKey={smoothKey('qRA')} name="Uber Riders" stroke={UBER} fill={UBER + '30'} dot={false} strokeWidth={1.5} />
-            <Area type="monotone" dataKey={smoothKey('qDA')} name="Uber Drivers" stroke={UBER_LIGHT} fill={UBER_LIGHT + '20'} dot={false} strokeWidth={1.5} />
-            <Area type="monotone" dataKey={smoothKey('qRB')} name="Lyft Riders" stroke={LYFT} fill={LYFT + '30'} dot={false} strokeWidth={1.5} />
-            <Area type="monotone" dataKey={smoothKey('qDB')} name="Lyft Drivers" stroke={LYFT_LIGHT} fill={LYFT_LIGHT + '20'} dot={false} strokeWidth={1.5} />
+            <Area type="monotone" dataKey={smoothKey('qRA')} name="Platform 1 Riders" stroke={P1} fill={P1 + '30'} dot={false} strokeWidth={1.5} />
+            <Area type="monotone" dataKey={smoothKey('qDA')} name="Platform 1 Drivers" stroke={P1_LIGHT} fill={P1_LIGHT + '20'} dot={false} strokeWidth={1.5} />
+            <Area type="monotone" dataKey={smoothKey('qRB')} name="Platform 2 Riders" stroke={P2} fill={P2 + '30'} dot={false} strokeWidth={1.5} />
+            <Area type="monotone" dataKey={smoothKey('qDB')} name="Platform 2 Drivers" stroke={P2_LIGHT} fill={P2_LIGHT + '20'} dot={false} strokeWidth={1.5} />
           </AreaChart>
         </ResponsiveContainer>
       </ChartCard>
@@ -235,7 +235,7 @@ export function SimCharts({ timeSeries, tMax }: Props) {
             you can read it at a glance — where two rising cumulative lines make
             you estimate a ratio by eye. The underlying counts stay in the
             tooltip. Fixed axis, so this one cannot wiggle either. */}
-        <ChartCard title="Match Share — Uber">
+        <ChartCard title="Match Share — Platform 1">
           <ResponsiveContainer width="100%" height={140}>
             <LineChart data={rows} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
@@ -245,11 +245,11 @@ export function SimCharts({ timeSeries, tMax }: Props) {
                 tickFormatter={v => `${(100 * v).toFixed(0)}%`} />
               <Tooltip content={<CustomTooltip />} />
               <ReferenceLine y={0.5} stroke="#cbd5e1" strokeDasharray="4 3" strokeWidth={1} />
-              <Line type="monotone" dataKey="matchShare" name="Uber share" stroke={UBER}
+              <Line type="monotone" dataKey="matchShare" name="Platform 1 share" stroke={P1}
                 dot={false} strokeWidth={2} connectNulls={false} />
               {/* Kept only so the counts appear in the tooltip, not drawn. */}
-              <Line dataKey="cumulativeMatchesA" name="Uber matches" stroke="none" dot={false} legendType="none" />
-              <Line dataKey="cumulativeMatchesB" name="Lyft matches" stroke="none" dot={false} legendType="none" />
+              <Line dataKey="cumulativeMatchesA" name="Platform 1 matches" stroke="none" dot={false} legendType="none" />
+              <Line dataKey="cumulativeMatchesB" name="Platform 2 matches" stroke="none" dot={false} legendType="none" />
             </LineChart>
           </ResponsiveContainer>
         </ChartCard>

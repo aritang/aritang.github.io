@@ -7,8 +7,8 @@ import { SimCharts } from './components/Charts';
 import { Controls } from './components/Controls';
 import { ConfigPanel } from './components/ConfigPanel';
 
-const UBER_C = '#111111';
-const LYFT_C = '#ec4899';
+const P1_C = '#111111';
+const P2_C = '#ec4899';
 
 function makeEmpty(): SimSnapshot {
   return {
@@ -203,8 +203,8 @@ export default function App() {
           {/* Platform stats */}
           <div style={{ padding: '14px 16px', borderBottom: '1px solid #e5e7eb' }}>
             <PlatformStats
-              label="Uber"
-              color={UBER_C}
+              label="Platform 1"
+              color={P1_C}
               textColor="#f1f5f9"
               price={platforms.A.price}
               wage={platforms.A.wage}
@@ -216,9 +216,9 @@ export default function App() {
             />
             <div style={{ height: 1, background: '#e5e7eb', margin: '12px 0' }} />
             <PlatformStats
-              label="Lyft"
-              color={LYFT_C}
-              textColor={LYFT_C}
+              label="Platform 2"
+              color={P2_C}
+              textColor={P2_C}
               price={platforms.B.price}
               wage={platforms.B.wage}
               tau={config.tauB}

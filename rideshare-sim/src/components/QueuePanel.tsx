@@ -5,10 +5,10 @@ interface Props {
   snapshot: SimSnapshot;
 }
 
-// Uber = white (brand: black/white; white is legible on dark bg)
-// Lyft = pink
-const UBER_COLOR = '#f1f5f9';
-const LYFT_COLOR = '#ec4899';
+// P1 = white (legible on the dark bg), P2 = pink. Neutral labels: the model
+// is about market structure, not any particular company.
+const P1_COLOR = '#f1f5f9';
+const P2_COLOR = '#ec4899';
 
 const MAX_CIRCLES = 72;
 
@@ -194,11 +194,11 @@ export function QueueViz({ snapshot }: Props) {
 
       {/* Platform labels */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-        <div style={{ textAlign: 'center', color: UBER_COLOR, fontWeight: 800, fontSize: 13, letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.9 }}>
-          ■ UBER
+        <div style={{ textAlign: 'center', color: P1_COLOR, fontWeight: 800, fontSize: 13, letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.9 }}>
+          ■ PLATFORM 1
         </div>
-        <div style={{ textAlign: 'center', color: LYFT_COLOR, fontWeight: 800, fontSize: 13, letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.9 }}>
-          ■ LYFT
+        <div style={{ textAlign: 'center', color: P2_COLOR, fontWeight: 800, fontSize: 13, letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.9 }}>
+          ■ PLATFORM 2
         </div>
       </div>
 
@@ -209,7 +209,7 @@ export function QueueViz({ snapshot }: Props) {
           priceLabel={`Price $${platforms.A.price.toFixed(2)}`}
           count={platforms.A.riderQueue.length}
           ids={platforms.A.riderQueue}
-          color={UBER_COLOR}
+          color={P1_COLOR}
           isDriver={false}
           switchedIds={switchedRiders}
           arrivedIds={arrivedRiders}
@@ -220,7 +220,7 @@ export function QueueViz({ snapshot }: Props) {
           priceLabel={`Price $${platforms.B.price.toFixed(2)}`}
           count={platforms.B.riderQueue.length}
           ids={platforms.B.riderQueue}
-          color={LYFT_COLOR}
+          color={P2_COLOR}
           isDriver={false}
           switchedIds={switchedRiders}
           arrivedIds={arrivedRiders}
@@ -231,7 +231,7 @@ export function QueueViz({ snapshot }: Props) {
           priceLabel={`Wage $${platforms.A.wage.toFixed(2)}`}
           count={platforms.A.driverQueue.length}
           ids={platforms.A.driverQueue}
-          color={UBER_COLOR}
+          color={P1_COLOR}
           isDriver={true}
           switchedIds={switchedDrivers}
           arrivedIds={arrivedDrivers}
@@ -242,7 +242,7 @@ export function QueueViz({ snapshot }: Props) {
           priceLabel={`Wage $${platforms.B.wage.toFixed(2)}`}
           count={platforms.B.driverQueue.length}
           ids={platforms.B.driverQueue}
-          color={LYFT_COLOR}
+          color={P2_COLOR}
           isDriver={true}
           switchedIds={switchedDrivers}
           arrivedIds={arrivedDrivers}
@@ -260,20 +260,20 @@ export function QueueViz({ snapshot }: Props) {
         gap: '0 20px',
       }}>
         <div>
-          <div style={{ color: UBER_COLOR, fontSize: 10, fontWeight: 700, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.08em', opacity: 0.7 }}>
-            Uber
+          <div style={{ color: P1_COLOR, fontSize: 10, fontWeight: 700, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.08em', opacity: 0.7 }}>
+            Platform 1
           </div>
-          <StatRow label="Matches" value={stats.matchesA.toString()} color={UBER_COLOR} />
-          <StatRow label="Revenue" value={`$${stats.revA.toFixed(0)}`} color={UBER_COLOR} />
+          <StatRow label="Matches" value={stats.matchesA.toString()} color={P1_COLOR} />
+          <StatRow label="Revenue" value={`$${stats.revA.toFixed(0)}`} color={P1_COLOR} />
           <StatRow label="Price" value={`$${platforms.A.price.toFixed(2)}`} />
           <StatRow label="Wage" value={`$${platforms.A.wage.toFixed(2)}`} />
         </div>
         <div>
-          <div style={{ color: LYFT_COLOR, fontSize: 10, fontWeight: 700, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.08em', opacity: 0.85 }}>
-            Lyft
+          <div style={{ color: P2_COLOR, fontSize: 10, fontWeight: 700, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.08em', opacity: 0.85 }}>
+            Platform 2
           </div>
-          <StatRow label="Matches" value={stats.matchesB.toString()} color={LYFT_COLOR} />
-          <StatRow label="Revenue" value={`$${stats.revB.toFixed(0)}`} color={LYFT_COLOR} />
+          <StatRow label="Matches" value={stats.matchesB.toString()} color={P2_COLOR} />
+          <StatRow label="Revenue" value={`$${stats.revB.toFixed(0)}`} color={P2_COLOR} />
           <StatRow label="Price" value={`$${platforms.B.price.toFixed(2)}`} />
           <StatRow label="Wage" value={`$${platforms.B.wage.toFixed(2)}`} />
         </div>

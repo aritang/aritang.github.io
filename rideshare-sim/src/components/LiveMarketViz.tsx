@@ -31,8 +31,8 @@ import type { SimSnapshot, PlatformId } from '../engine/types';
 //   exit    → drops out perpendicular, away from the lane, and falls off-board
 // ─────────────────────────────────────────────────────────────────────────────
 
-const UBER_C = '#111111';
-const LYFT_C = '#ec4899';
+const P1_C = '#111111';
+const P2_C = '#ec4899';
 const BOARD_BG = '#f8fafc';
 const RULE_C = '#e2e8f0';
 const MUTED = '#94a3b8';
@@ -109,7 +109,7 @@ function makeLayout(w: number, h: number): Layout {
       rider:  { cy: riderCY,  y: riderCY - d / 2,  outY: riderCY - d / 2 - out },
       driver: { cy: driverCY, y: driverCY - d / 2, outY: driverCY - d / 2 + out },
       mergeY: (riderCY + driverCY) / 2,
-      color: platform === 'A' ? UBER_C : LYFT_C,
+      color: platform === 'A' ? P1_C : P2_C,
     };
   });
 
@@ -739,7 +739,7 @@ function reconcile(
     rj.push({
       key: `rj-${a.role}-${a.id}-${s.t}`,
       x: Math.max(2, L.entryX - L.slot * 0.6 - spread), y: ln.y, fall: a.role === 'r' ? -L.d * 2 : L.d * 2,
-      role: a.role, color: a.platform === 'A' ? UBER_C : LYFT_C, dur: rejDur,
+      role: a.role, color: a.platform === 'A' ? P1_C : P2_C, dur: rejDur,
     });
   }
   sink.setRejects(rj);
@@ -758,7 +758,7 @@ function reconcile(
         const ln = lane(L, p, role);
         fl.push({
           key: `fl-${key}-${s.t}`, x: slotX(i, L), y: ln.y, role,
-          color: p === 'A' ? LYFT_C : UBER_C,
+          color: p === 'A' ? P2_C : P1_C,
         });
       });
     }
@@ -805,7 +805,7 @@ function AgentDot({ e, L }: { e: Ent; L: Layout }) {
 function BlockFrame({ b, L, snapshot }: { b: Block; L: Layout; snapshot: SimSnapshot }) {
   const p = snapshot.platforms[b.platform];
   const matched = snapshot.matchRecords.reduce((n, m) => n + (m.platform === b.platform ? 1 : 0), 0);
-  const name = b.platform === 'A' ? 'Uber' : 'Lyft';
+  const name = b.platform === 'A' ? 'Platform 1' : 'Platform 2';
   return (
     <>
       {b.top > 0 && (

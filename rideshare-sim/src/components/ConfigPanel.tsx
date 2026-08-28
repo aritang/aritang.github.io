@@ -381,18 +381,18 @@ export function ConfigPanel({ config, onChange }: Props) {
       </Section>
 
       <Section title="Platform Economics">
-        <SliderRow label="Uber take rate" sym="τ_A" value={config.tauA} min={0} max={0.6} step={0.01}
+        <SliderRow label="Platform 1 take rate" sym="τ_A" value={config.tauA} min={0} max={0.6} step={0.01}
           onChange={v => set({ tauA: v })}
           format={v => `wage = ${((1 - v) * 100).toFixed(0)}% of price`}
           hint="the only durable two-sided advantage in this model" />
-        <SliderRow label="Lyft take rate" sym="τ_B" value={config.tauB} min={0} max={0.6} step={0.01}
+        <SliderRow label="Platform 2 take rate" sym="τ_B" value={config.tauB} min={0} max={0.6} step={0.01}
           onChange={v => set({ tauB: v })}
           format={v => `wage = ${((1 - v) * 100).toFixed(0)}% of price`} />
-        <SliderRow label="Uber opening price" sym="p₀ᴬ" value={config.p0A} min={3} max={60} step={0.5}
+        <SliderRow label="Platform 1 opening price" sym="p₀ᴬ" value={config.p0A} min={3} max={60} step={0.5}
           onChange={v => set({ p0A: v })}
           format={v => `$${v.toFixed(2)} → wage $${((1 - config.tauA) * v).toFixed(2)}`}
           hint="TRANSIENT ONLY — the arrival ratio sets the clearing price" />
-        <SliderRow label="Lyft opening price" sym="p₀ᴮ" value={config.p0B} min={3} max={60} step={0.5}
+        <SliderRow label="Platform 2 opening price" sym="p₀ᴮ" value={config.p0B} min={3} max={60} step={0.5}
           onChange={v => set({ p0B: v })}
           format={v => `$${v.toFixed(2)} → wage $${((1 - config.tauB) * v).toFixed(2)}`} />
         <SliderRow label="Price floor" sym="p_min" value={config.pMin} min={1} max={20} step={0.5}
@@ -403,16 +403,16 @@ export function ConfigPanel({ config, onChange }: Props) {
       </Section>
 
       <Section title="Pricing Dynamics">
-        <SliderRow label="Uber imbalance resp." sym="η_A" value={config.etaA} min={0} max={0.5} step={0.005}
+        <SliderRow label="Platform 1 imbalance resp." sym="η_A" value={config.etaA} min={0} max={0.5} step={0.005}
           onChange={v => set({ etaA: v })}
           hint="above ~0.10 the price path visibly two-cycles" />
-        <SliderRow label="Lyft imbalance resp." sym="η_B" value={config.etaB} min={0} max={0.5} step={0.005}
+        <SliderRow label="Platform 2 imbalance resp." sym="η_B" value={config.etaB} min={0} max={0.5} step={0.005}
           onChange={v => set({ etaB: v })} />
-        <SliderRow label="Uber surge pass-thru" sym="γ_A" value={config.gammaA} min={0} max={0.5} step={0.005}
+        <SliderRow label="Platform 1 surge pass-thru" sym="γ_A" value={config.gammaA} min={0} max={0.5} step={0.005}
           onChange={v => set({ gammaA: v })}
           format={v => config.etaA > 0 ? `γ/η = ${(v / config.etaA).toFixed(2)}` : 'η_A = 0: fixed fare'}
           hint="pins the idle-driver ratio, NOT the price. Keep γ/η in 0.5–1.0" />
-        <SliderRow label="Lyft surge pass-thru" sym="γ_B" value={config.gammaB} min={0} max={0.5} step={0.005}
+        <SliderRow label="Platform 2 surge pass-thru" sym="γ_B" value={config.gammaB} min={0} max={0.5} step={0.005}
           onChange={v => set({ gammaB: v })}
           format={v => config.etaB > 0 ? `γ/η = ${(v / config.etaB).toFixed(2)}` : 'η_B = 0: fixed fare'} />
         <SliderRow label="Imbalance damping" sym="ε" value={config.epsilon} min={0.5} max={5} step={0.5}
@@ -421,11 +421,11 @@ export function ConfigPanel({ config, onChange }: Props) {
       </Section>
 
       <Section title="Matching & Time">
-        <SliderRow label="Uber match rate" sym="μ_A" value={config.muMatchA} min={0.005} max={1} step={0.005}
+        <SliderRow label="Platform 1 match rate" sym="μ_A" value={config.muMatchA} min={0.005} max={1} step={0.005}
           onChange={v => set({ muMatchA: v })}
           format={v => `q = ${(1 - Math.exp(-v * config.dt)).toFixed(3)} · pickup ${(MIN_PER_TICK / (1 - Math.exp(-v * config.dt))).toFixed(1)} min`}
           hint="matching liquidity — the density externality lives here" />
-        <SliderRow label="Lyft match rate" sym="μ_B" value={config.muMatchB} min={0.005} max={1} step={0.005}
+        <SliderRow label="Platform 2 match rate" sym="μ_B" value={config.muMatchB} min={0.005} max={1} step={0.005}
           onChange={v => set({ muMatchB: v })}
           format={v => `q = ${(1 - Math.exp(-v * config.dt)).toFixed(3)} · pickup ${(MIN_PER_TICK / (1 - Math.exp(-v * config.dt))).toFixed(1)} min`} />
         <SliderRow label="Horizon" sym="T" value={config.tMax} min={20} max={400} step={10}
@@ -517,8 +517,8 @@ function Equations({ config }: { config: SimConfig }) {
 
       <Eq title="Initial homing — one draw, at birth"
         lines={[
-          'P(home = Uber) = π_R   (riders)',
-          'P(home = Uber) = π_D   (drivers)',
+          'P(home = P1) = π_R   (riders)',
+          'P(home = P1) = π_D   (drivers)',
         ]}
         note="i.i.d. per agent, independent of WTP and of market state. Never re-drawn: π does not respond to who is winning, so there is no adoption feedback. Homing shifts only by switching." />
 
@@ -659,10 +659,10 @@ function Derived({ config }: { config: SimConfig }) {
       <Row k="Accepted at p₀" note="riders" v={`${(100 * accR).toFixed(1)}%`} />
       <Row k="Accepted at w₀" note="drivers" v={`${(100 * accD).toFixed(1)}%`} />
       <Row k="Match hazard" note="q_A / q_B" v={`${qA.toFixed(3)} / ${qB.toFixed(3)}`} />
-      <Row k="Mean pickup" note="Uber / Lyft" v={`${(MIN_PER_TICK / qA).toFixed(1)} / ${(MIN_PER_TICK / qB).toFixed(1)} min`} />
+      <Row k="Mean pickup" note="P1 / P2" v={`${(MIN_PER_TICK / qA).toFixed(1)} / ${(MIN_PER_TICK / qB).toFixed(1)} min`} />
       <Row k="Abandonment" note="riders / drivers" v={`${(100 * config.lambdaR / (config.lambdaR + qA)).toFixed(1)}% / ${(100 * config.lambdaD / (config.lambdaD + qA)).toFixed(1)}%`} />
-      <Row k="Predicted queue Q*" note="Uber R / D" v={`${qStarR.toFixed(1)} / ${qStarD.toFixed(1)}`} />
-      <Row k="Homing inflow" note="Uber:Lyft" v={`${(config.piR / Math.max(1e-9, 1 - config.piR)).toFixed(1)} : 1`} />
+      <Row k="Predicted queue Q*" note="P1 R / D" v={`${qStarR.toFixed(1)} / ${qStarD.toFixed(1)}`} />
+      <Row k="Homing inflow" note="P1:P2" v={`${(config.piR / Math.max(1e-9, 1 - config.piR)).toFixed(1)} : 1`} />
       {config.searchRule === 'bernoulli' ? (
         <Row k="Search ratio" note="c_D/c_R" v={config.cR > 0 ? `${(config.cD / config.cR).toFixed(1)}×` : '—'} />
       ) : (
@@ -709,11 +709,11 @@ function Derived({ config }: { config: SimConfig }) {
             `${(config.beliefSigmaX ?? Math.sqrt(config.sigmaShockR ** 2 + config.sigmaShockD ** 2 + config.sigmaQ ** 2)).toFixed(3)} / ${(config.beliefRho ?? ((config.sigmaShockR ** 2 + config.sigmaShockD ** 2 + config.sigmaQ ** 2) > 0 ? (config.rhoShockR * config.sigmaShockR ** 2 + config.rhoShockD * config.sigmaShockD ** 2) / (config.sigmaShockR ** 2 + config.sigmaShockD ** 2 + config.sigmaQ ** 2) : 0)).toFixed(3)}`} />
         </>
       )}
-      <Row k="Idle-driver ratio" note="e^(γz/η), Uber" v={idleRatio.toFixed(2)} />
+      <Row k="Idle-driver ratio" note="e^(γz/η), P1" v={idleRatio.toFixed(2)} />
       <Row k="Run length" v={`${config.tMax} ticks = ${(config.tMax * MIN_PER_TICK).toFixed(0)} min`} />
       <Row k="Tick Δt" note="fixed — not adjustable" v={`${config.dt} = 30 s`} />
       <div style={{ color: '#a9b2c0', fontSize: 9.5, lineHeight: 1.35, marginTop: 5 }}>
-        Q* is per platform for Uber and is accurate to roughly ±20%: it ignores
+        Q* is for P1 and is accurate to roughly ±20%: it ignores
         switching, and the accept rate is convex in a price that fluctuates.
         Δt is fixed because every minute-figure in this panel converts through
         it — changing it would silently invalidate all of them.
