@@ -1,0 +1,24 @@
+{{- $src := .Get "src" | default "/rideshare-sim/" | relURL -}}
+{{- $height := .Get "height" | default "820" -}}
+<div class="app-embed">
+  <iframe
+    src="{{ $src }}"
+    title="rideshare simulation"
+    loading="lazy"
+    style="width:100%;height:{{ $height }}px;border:1px solid var(--border);border-radius:6px;background:#fff"
+    allowfullscreen></iframe>
+  <p style="font-size:.85em;opacity:.7;margin:.5em 0 0">
+    cramped? <a href="{{ $src }}" target="_blank" rel="noopener">open it full screen &rarr;</a>
+  </p>
+</div>
+<style>
+/* The sim wants more room than the post column. Break out of it on wide
+   screens; fall back to the column width on narrow ones. */
+.app-embed {
+  width: min(96vw, 1400px);
+  margin-inline: calc(50% - min(48vw, 700px));
+}
+@media (max-width: 900px) {
+  .app-embed { width: 100%; margin-inline: 0; }
+}
+</style>

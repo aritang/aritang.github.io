@@ -1,0 +1,37 @@
+{
+  "name": "rideshare-sim",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "baseline:write": "esbuild scripts/baseline.mts --bundle --platform=node --format=esm --outfile=scripts/.baseline.mjs --log-level=error && node scripts/.baseline.mjs write",
+    "baseline:check": "esbuild scripts/baseline.mts --bundle --platform=node --format=esm --outfile=scripts/.baseline.mjs --log-level=error && node scripts/.baseline.mjs check",
+    "verify:search": "esbuild scripts/verify-search.mts --bundle --platform=node --format=esm --outfile=scripts/.verify-search.mjs --log-level=error && node scripts/.verify-search.mjs",
+    "check": "npm run baseline:check && npm run verify:search && npm run build",
+    "start": "vite preview --port ${PORT:-4173}",
+    "build:embed": "tsc -b && vite build --base=./ --outDir dist-embed --emptyOutDir",
+    "build:hugo": "tsc -b && vite build --base=./ --outDir ../static/rideshare-sim --emptyOutDir"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2",
+    "esbuild": "^0.28.2"
+  }
+}

@@ -1,0 +1,522 @@
+{
+ "DEFAULT|seed42": {
+  "hash": "b13ad738614c00cf6ef4d663785645fb",
+  "matches": 623
+ },
+ "DEFAULT|seed7": {
+  "hash": "a60b561d41a975d6c29df43ea0cbcdfa",
+  "matches": 604
+ },
+ "DEFAULT|seed101": {
+  "hash": "6870f4ce82730fb04f5d2f13bd989fd9",
+  "matches": 707
+ },
+ "DEFAULT|seed555": {
+  "hash": "335edc75418ac0b4c9a6e7e152cf1f20",
+  "matches": 646
+ },
+ "DEFAULT|seed2024": {
+  "hash": "3739b47c6551e1a9e3c1f96cf499b26b",
+  "matches": 676
+ },
+ "DEFAULT|seed13": {
+  "hash": "8c40e56685450896fc2324c4d8196953",
+  "matches": 634
+ },
+ "DEFAULT|seed88": {
+  "hash": "5c12633ec39f13ee36627c6d7366aa30",
+  "matches": 678
+ },
+ "DEFAULT|seed907": {
+  "hash": "2be976451f3ca6a3efec7126ee14b718",
+  "matches": 695
+ },
+ "DEFAULT|seed31": {
+  "hash": "25c8cf14bfd3cb823dfcbcc3315e7b65",
+  "matches": 607
+ },
+ "DEFAULT|seed604": {
+  "hash": "a7ef31e0eb8d381c3b9eeaa446fdfe85",
+  "matches": 622
+ },
+ "DEFAULT|seed1234": {
+  "hash": "939f152219b6b55ee4e8e37878735c6e",
+  "matches": 604
+ },
+ "DEFAULT|seed77": {
+  "hash": "6462e244d2623b3a783eeab59231ece2",
+  "matches": 638
+ },
+ "DEFAULT|seed43": {
+  "hash": "13f1b87099a1e3dbfa8146c263094264",
+  "matches": 631
+ },
+ "DEFAULT|seed44": {
+  "hash": "0e84282677354053738a37939662f5d7",
+  "matches": 583
+ },
+ "DEFAULT|seed45": {
+  "hash": "a788330a4a2a89fac0285679aa81b5bb",
+  "matches": 709
+ },
+ "DEFAULT|seed46": {
+  "hash": "eee09cbdf45b428692810fd92211ef97",
+  "matches": 617
+ },
+ "DEFAULT|seed47": {
+  "hash": "c6ab05cd2b7368f68952fc602fb7bec1",
+  "matches": 587
+ },
+ "DEFAULT|seed48": {
+  "hash": "238fe69b36785f787fd7f68962bfeaf1",
+  "matches": 603
+ },
+ "DEFAULT|seed49": {
+  "hash": "687bb687c2154058c3641c5defd0a781",
+  "matches": 632
+ },
+ "DEFAULT|seed50": {
+  "hash": "e90509a7e3ad65ebd74db21e8063737c",
+  "matches": 651
+ },
+ "DEFAULT|seed51": {
+  "hash": "f464a24eb74823b02eda06713d03183b",
+  "matches": 620
+ },
+ "DEFAULT|seed52": {
+  "hash": "99c35703d232ef3aa7a685dde20cc03a",
+  "matches": 768
+ },
+ "DEFAULT|seed53": {
+  "hash": "170702d584969ce6cb0e05ad49fd4cf4",
+  "matches": 668
+ },
+ "Dense urban peak|seed42": {
+  "hash": "b13ad738614c00cf6ef4d663785645fb",
+  "matches": 623
+ },
+ "Dense urban peak|seed7": {
+  "hash": "a60b561d41a975d6c29df43ea0cbcdfa",
+  "matches": 604
+ },
+ "Dense urban peak|seed101": {
+  "hash": "6870f4ce82730fb04f5d2f13bd989fd9",
+  "matches": 707
+ },
+ "Dense urban peak|seed555": {
+  "hash": "335edc75418ac0b4c9a6e7e152cf1f20",
+  "matches": 646
+ },
+ "Dense urban peak|seed2024": {
+  "hash": "3739b47c6551e1a9e3c1f96cf499b26b",
+  "matches": 676
+ },
+ "Dense urban peak|seed13": {
+  "hash": "8c40e56685450896fc2324c4d8196953",
+  "matches": 634
+ },
+ "Dense urban peak|seed88": {
+  "hash": "5c12633ec39f13ee36627c6d7366aa30",
+  "matches": 678
+ },
+ "Dense urban peak|seed907": {
+  "hash": "2be976451f3ca6a3efec7126ee14b718",
+  "matches": 695
+ },
+ "Dense urban peak|seed31": {
+  "hash": "25c8cf14bfd3cb823dfcbcc3315e7b65",
+  "matches": 607
+ },
+ "Dense urban peak|seed604": {
+  "hash": "a7ef31e0eb8d381c3b9eeaa446fdfe85",
+  "matches": 622
+ },
+ "Dense urban peak|seed1234": {
+  "hash": "939f152219b6b55ee4e8e37878735c6e",
+  "matches": 604
+ },
+ "Dense urban peak|seed77": {
+  "hash": "6462e244d2623b3a783eeab59231ece2",
+  "matches": 638
+ },
+ "Dense urban peak|seed43": {
+  "hash": "13f1b87099a1e3dbfa8146c263094264",
+  "matches": 631
+ },
+ "Dense urban peak|seed44": {
+  "hash": "0e84282677354053738a37939662f5d7",
+  "matches": 583
+ },
+ "Dense urban peak|seed45": {
+  "hash": "a788330a4a2a89fac0285679aa81b5bb",
+  "matches": 709
+ },
+ "Dense urban peak|seed46": {
+  "hash": "eee09cbdf45b428692810fd92211ef97",
+  "matches": 617
+ },
+ "Dense urban peak|seed47": {
+  "hash": "c6ab05cd2b7368f68952fc602fb7bec1",
+  "matches": 587
+ },
+ "Dense urban peak|seed48": {
+  "hash": "238fe69b36785f787fd7f68962bfeaf1",
+  "matches": 603
+ },
+ "Dense urban peak|seed49": {
+  "hash": "687bb687c2154058c3641c5defd0a781",
+  "matches": 632
+ },
+ "Dense urban peak|seed50": {
+  "hash": "e90509a7e3ad65ebd74db21e8063737c",
+  "matches": 651
+ },
+ "Dense urban peak|seed51": {
+  "hash": "f464a24eb74823b02eda06713d03183b",
+  "matches": 620
+ },
+ "Dense urban peak|seed52": {
+  "hash": "99c35703d232ef3aa7a685dde20cc03a",
+  "matches": 768
+ },
+ "Dense urban peak|seed53": {
+  "hash": "170702d584969ce6cb0e05ad49fd4cf4",
+  "matches": 668
+ },
+ "Rural thin market|seed42": {
+  "hash": "936f768d7717e98540e2b5feac2385ae",
+  "matches": 32
+ },
+ "Rural thin market|seed7": {
+  "hash": "6757c9e74401978e0b00f18e6e5bd392",
+  "matches": 24
+ },
+ "Rural thin market|seed101": {
+  "hash": "195e1180d29a13a8a5ff226076817085",
+  "matches": 40
+ },
+ "Rural thin market|seed555": {
+  "hash": "86ee9983a433a934356c6757532ee733",
+  "matches": 30
+ },
+ "Rural thin market|seed2024": {
+  "hash": "22bbf6d63fd4b8ed913a81c0c0445658",
+  "matches": 34
+ },
+ "Rural thin market|seed13": {
+  "hash": "0c42622ae8d73f98ae739cba88b128d3",
+  "matches": 40
+ },
+ "Rural thin market|seed88": {
+  "hash": "57b20d4d0f45e43abe8babf79995113b",
+  "matches": 34
+ },
+ "Rural thin market|seed907": {
+  "hash": "13e5bb58567c3e4c622d7840620b3b8a",
+  "matches": 41
+ },
+ "Rural thin market|seed31": {
+  "hash": "b31ff3f867053f4e5449c344a2548286",
+  "matches": 29
+ },
+ "Rural thin market|seed604": {
+  "hash": "c7ab6816ab2daa1675ae7fda51261b4b",
+  "matches": 34
+ },
+ "Rural thin market|seed1234": {
+  "hash": "4451efdecc3d307c4f9cad760b0fab1f",
+  "matches": 30
+ },
+ "Rural thin market|seed77": {
+  "hash": "46ce8cb9d99329e750e7bbb9337400a7",
+  "matches": 39
+ },
+ "Rural thin market|seed43": {
+  "hash": "15a967cc7213240d1fa73aee903616a3",
+  "matches": 29
+ },
+ "Rural thin market|seed44": {
+  "hash": "3a6571443e0b85e608b864a3bc1cef7b",
+  "matches": 30
+ },
+ "Rural thin market|seed45": {
+  "hash": "03285116327db040b9b8567cca713558",
+  "matches": 34
+ },
+ "Rural thin market|seed46": {
+  "hash": "5893a6fe9704682ee065ad8f769ac7b6",
+  "matches": 29
+ },
+ "Rural thin market|seed47": {
+  "hash": "eeb8f2fcb2e115fdbb6a216b8850f356",
+  "matches": 31
+ },
+ "Rural thin market|seed48": {
+  "hash": "eaeb89f95b307f84b593f4d120e1ada4",
+  "matches": 33
+ },
+ "Rural thin market|seed49": {
+  "hash": "d4e9aab217476ce65fd310d6a98a75ca",
+  "matches": 33
+ },
+ "Rural thin market|seed50": {
+  "hash": "4a59060e6a5e7f203a49b7771a98b5df",
+  "matches": 32
+ },
+ "Rural thin market|seed51": {
+  "hash": "7d2415e64d2e67eaafade5bcbd94aeea",
+  "matches": 34
+ },
+ "Rural thin market|seed52": {
+  "hash": "dc2918aa5f4969244adf40e5d35d706e",
+  "matches": 35
+ },
+ "Rural thin market|seed53": {
+  "hash": "c3620cfe6c38e8ea8c9806698421b112",
+  "matches": 41
+ },
+ "Concert let-out surge|seed42": {
+  "hash": "4288568d6ced5ef83742c8e06a43ca8c",
+  "matches": 209
+ },
+ "Concert let-out surge|seed7": {
+  "hash": "5c6ae50e4397d088c31fc79e9f0f374c",
+  "matches": 210
+ },
+ "Concert let-out surge|seed101": {
+  "hash": "a08a9c42f213f37b9c868bcb0ed341a5",
+  "matches": 278
+ },
+ "Concert let-out surge|seed555": {
+  "hash": "97e600e0d7a890d33bbe94dc2ce2f9e8",
+  "matches": 201
+ },
+ "Concert let-out surge|seed2024": {
+  "hash": "ea6053b5f605feb94e7223d1a7980fee",
+  "matches": 206
+ },
+ "Concert let-out surge|seed13": {
+  "hash": "006b247839266bf0ee09acdf2fe45041",
+  "matches": 220
+ },
+ "Concert let-out surge|seed88": {
+  "hash": "53b255a232325eb694834a94fb3732a6",
+  "matches": 208
+ },
+ "Concert let-out surge|seed907": {
+  "hash": "75cc60704e70f8c688c77b0f1f85154c",
+  "matches": 223
+ },
+ "Concert let-out surge|seed31": {
+  "hash": "ce61cdce137be6d0fe5859500f022425",
+  "matches": 182
+ },
+ "Concert let-out surge|seed604": {
+  "hash": "ce96a571eaa53a6a6ecfcad4ee7fa52a",
+  "matches": 219
+ },
+ "Concert let-out surge|seed1234": {
+  "hash": "6d6ada555644ee9108c8f80feba537c1",
+  "matches": 220
+ },
+ "Concert let-out surge|seed77": {
+  "hash": "636a465760a28f14b2d0f1489c08fbf0",
+  "matches": 244
+ },
+ "Concert let-out surge|seed43": {
+  "hash": "001e2e772dbc64c4885e594fdc1595dd",
+  "matches": 244
+ },
+ "Concert let-out surge|seed44": {
+  "hash": "8ebe5bad90b356be0624aaffb99a1b72",
+  "matches": 194
+ },
+ "Concert let-out surge|seed45": {
+  "hash": "6dc4f761b3090888b2a97b450d28e15e",
+  "matches": 222
+ },
+ "Concert let-out surge|seed46": {
+  "hash": "ec576141782d0de989d455ad67b47698",
+  "matches": 184
+ },
+ "Concert let-out surge|seed47": {
+  "hash": "4381f0d7906bd29cbacefaa9501f5c3d",
+  "matches": 186
+ },
+ "Concert let-out surge|seed48": {
+  "hash": "2f13bb1961b437a10a5d5ca141f8a932",
+  "matches": 235
+ },
+ "Concert let-out surge|seed49": {
+  "hash": "9e3d53fe28383ff03cdb5e566c064aad",
+  "matches": 229
+ },
+ "Concert let-out surge|seed50": {
+  "hash": "b24b70fd51eec830856b86efc9a794d8",
+  "matches": 200
+ },
+ "Concert let-out surge|seed51": {
+  "hash": "199d2f4dc59f4cf8981628a7eab6d9d8",
+  "matches": 201
+ },
+ "Concert let-out surge|seed52": {
+  "hash": "114eb6be84edf4b7412884b4cd5d6ea6",
+  "matches": 237
+ },
+ "Concert let-out surge|seed53": {
+  "hash": "191f535a2b8f193c841e13486e962c80",
+  "matches": 248
+ },
+ "Counterexample: synchronised search|seed42": {
+  "hash": "400b85824523629b2be78c44ef81243f",
+  "matches": 237
+ },
+ "Counterexample: synchronised search|seed7": {
+  "hash": "e83a90d28b9276833e9afd78a7b13296",
+  "matches": 200
+ },
+ "Counterexample: synchronised search|seed101": {
+  "hash": "b48790469502d9b865f38a21736415c7",
+  "matches": 125
+ },
+ "Counterexample: synchronised search|seed555": {
+  "hash": "ad676f67ca12029274dbe39c31247478",
+  "matches": 305
+ },
+ "Counterexample: synchronised search|seed2024": {
+  "hash": "749c5b4bd3ea73c58aa0fa3a179e46db",
+  "matches": 200
+ },
+ "Counterexample: synchronised search|seed13": {
+  "hash": "256060259e0370410f38fa506783d27d",
+  "matches": 79
+ },
+ "Counterexample: synchronised search|seed88": {
+  "hash": "d38c8f6079f4c4f2323236facdd21d88",
+  "matches": 207
+ },
+ "Counterexample: synchronised search|seed907": {
+  "hash": "135f4dc095d3d3c93f8059a6b7d68925",
+  "matches": 57
+ },
+ "Counterexample: synchronised search|seed31": {
+  "hash": "26b2c52993f73b08c99cc9ee4f093f38",
+  "matches": 239
+ },
+ "Counterexample: synchronised search|seed604": {
+  "hash": "39b7fc464f1c54d507e5d9ebebc73f96",
+  "matches": 70
+ },
+ "Counterexample: synchronised search|seed1234": {
+  "hash": "e3a95097b0cf456f14f9eab5f8a43aa3",
+  "matches": 137
+ },
+ "Counterexample: synchronised search|seed77": {
+  "hash": "b2117dde4a64a4ea5f969aa8cf8f3192",
+  "matches": 91
+ },
+ "Counterexample: synchronised search|seed43": {
+  "hash": "f2fc84d2aaf833c5e33ebd6aa605d159",
+  "matches": 135
+ },
+ "Counterexample: synchronised search|seed44": {
+  "hash": "01dfcc3db26b58d3406320d100282290",
+  "matches": 198
+ },
+ "Counterexample: synchronised search|seed45": {
+  "hash": "106ee9538822de7d89f13fa13e67b39b",
+  "matches": 125
+ },
+ "Counterexample: synchronised search|seed46": {
+  "hash": "84fe51f0fa23372c1db0a171322f8962",
+  "matches": 125
+ },
+ "Counterexample: synchronised search|seed47": {
+  "hash": "8c812a18b5f96fd38e632a803bc05de8",
+  "matches": 177
+ },
+ "Counterexample: synchronised search|seed48": {
+  "hash": "6038b3ad7b1f42beeebba4ae66c99b63",
+  "matches": 126
+ },
+ "Counterexample: synchronised search|seed49": {
+  "hash": "aa6fba80269ff612791b206806888985",
+  "matches": 167
+ },
+ "Counterexample: synchronised search|seed50": {
+  "hash": "7406cbeb8d0e66316d4fe0549274f33d",
+  "matches": 94
+ },
+ "Counterexample: synchronised search|seed51": {
+  "hash": "1bd754db6cd5fd48c8b0f8188478b3bc",
+  "matches": 258
+ },
+ "Counterexample: synchronised search|seed52": {
+  "hash": "a848dcea47312db4ae60299820faa7f9",
+  "matches": 341
+ },
+ "Counterexample: synchronised search|seed53": {
+  "hash": "c99e6e8a864d2df0f725de23c793b91f",
+  "matches": 148
+ },
+ "surge:No surge|seed42": {
+  "hash": "b13ad738614c00cf6ef4d663785645fb",
+  "matches": 623
+ },
+ "surge:No surge|seed7": {
+  "hash": "a60b561d41a975d6c29df43ea0cbcdfa",
+  "matches": 604
+ },
+ "surge:No surge|seed101": {
+  "hash": "6870f4ce82730fb04f5d2f13bd989fd9",
+  "matches": 707
+ },
+ "surge:Moderate (z=0.5) — ~1.2x, the modal real surge|seed42": {
+  "hash": "3e8f2161f7c20d0bff35e85eefc78429",
+  "matches": 624
+ },
+ "surge:Moderate (z=0.5) — ~1.2x, the modal real surge|seed7": {
+  "hash": "f341957ad499806d8950869cb1c430a2",
+  "matches": 594
+ },
+ "surge:Moderate (z=0.5) — ~1.2x, the modal real surge|seed101": {
+  "hash": "635f82e8fce76717b41c9c8b2bb906b7",
+  "matches": 662
+ },
+ "surge:High (z=1.0)|seed42": {
+  "hash": "2f6624e06faff01a0e7680a29cd16b8e",
+  "matches": 532
+ },
+ "surge:High (z=1.0)|seed7": {
+  "hash": "6bb2c3a7dd153d545e3df04203557b37",
+  "matches": 511
+ },
+ "surge:High (z=1.0)|seed101": {
+  "hash": "106e2f2498abc737d3b8b197cd8439cf",
+  "matches": 591
+ },
+ "surge:Event let-out (z=1.5, t=40-70, decays to 110)|seed42": {
+  "hash": "46ced3054a81d90e341f4a34e7bcb3b2",
+  "matches": 570
+ },
+ "surge:Event let-out (z=1.5, t=40-70, decays to 110)|seed7": {
+  "hash": "af4c96ed5197612c58236083e0291b4c",
+  "matches": 562
+ },
+ "surge:Event let-out (z=1.5, t=40-70, decays to 110)|seed101": {
+  "hash": "107e4cba1cbda59dc5d8f010b73c4683",
+  "matches": 637
+ },
+ "surge:Gradual ramp|seed42": {
+  "hash": "f010c7a00b2218b0b10a36cd73c48de7",
+  "matches": 545
+ },
+ "surge:Gradual ramp|seed7": {
+  "hash": "7ae9040e282be17eb5c9bfa7171ed713",
+  "matches": 522
+ },
+ "surge:Gradual ramp|seed101": {
+  "hash": "0ab6685b38d5177139ee481672eb7637",
+  "matches": 613
+ }
+}

@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+input[type="range"] {
+  height: 4px;
+}
+
+/* Search is the only event with no motion: a rival-coloured overlay pulses
+   twice over the agent, in place. It is a separate element from the agent, so
+   it can never disturb the agent's own transform. */
+@keyframes searchPulse {
+  0%, 100% { opacity: 0; }
+  20%      { opacity: 1; }
+  50%      { opacity: 0.12; }
+  75%      { opacity: 0.95; }
+}
+
+/* An agent rejected at spawn drops away from the door it never got through. */
+@keyframes rejectFall {
+  0%   { opacity: 0;    transform: translate3d(var(--x), var(--y), 0) scale(0.7); }
+  20%  { opacity: 0.95; transform: translate3d(var(--x), var(--y), 0) scale(1); }
+  55%  { opacity: 0.95; transform: translate3d(var(--x), var(--y), 0) scale(1); }
+  100% { opacity: 0;    transform: translate3d(var(--x), calc(var(--y) + var(--fall)), 0) scale(0.85); }
+}
+
+/* The tether joining one matched pair appears only once the two are aligned. */
+@keyframes tetherIn {
+  from { opacity: 0; }
+  to   { opacity: 0.5; }
+}
+
+/* The gate acknowledges each completed match. */
+@keyframes gateFlash {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+button {
+  transition: opacity 0.15s;
+}
+button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}

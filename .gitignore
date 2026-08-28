@@ -9,3 +9,6 @@ blog-chatbot/venv/
 blog-chatbot/cron.log
 blog-chatbot/.env
 .DS_Store
+
+# built by rideshare-sim/`npm run build:hugo` (and by CI); not committed
+static/rideshare-sim/
