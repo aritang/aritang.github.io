@@ -15,9 +15,9 @@ Hi, this is Ariana. Welcome to my corner of the internet!
 
 ## research
 
-I am a first-year PhD at the Booth School of Business, University of Chicago. I obtained my Bachelor's degree at Shanghai University of Finance and Economics, where I was co-advised by Prof. Pinyan Lu and by Prof. Hu Fu. During then, I was very lucky to be advised by and collaborating with [Prof. Ryan Shi](https://ryanzshi.github.io) and [Prof. Modibo Camara](https://mkcamara.github.io).
+I am a first-year PhD at the Booth School of Business, University of Chicago. I obtained my Bachelor's degree at Shanghai University of Finance and Economics.
 
-My research focuses on market design. I'm also interested in EconCS in general.
+My research focuses on market design.
 
 > **I believe that game theorists [also] need to be sensitive to cultural and psychological factors to better understand the incentives and constraints that people face.**
 >
@@ -26,8 +26,6 @@ My research focuses on market design. I'm also interested in EconCS in general.
 Acute perception, mathematical skills and a deep sense of empathy embodies the essence of a modern economist, and is what I'm committed to becoming. And here are the papers:
 
 > Price Stability and Improved Buyer Utility with Presentation Design: A Theoretical Study of the Amazon Buy Box. Ophir Friedler, Hu Fu, Anna Karlin, **Ariana Tang**. Accepted at The Web Conference 2025. [paper pdf](/files/Friedler_et_al_PriceStabilityPresentation-WWW.pdf) [poster](/files/bottle_of_bubbles-poster.pdf)
-
-> Contextual Budget Allocation for Food Rescue Volunteer Engagement. Ariana Tang, Naveen Raman, Fei Fang, and Ryan Shi. 2025. [ https://doi.org/10.48550/arXiv.2509.10777](https://doi.org/10.48550/arXiv.2509.10777)
 
 ### "a blog about my research, art and life"
 
